@@ -1,0 +1,35 @@
+#map {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#mylocation-button {
+    position: absolute;
+    left: 19px;
+    cursor: pointer;
+    z-index: 1000;
+    background: rgb(81, 116, 161, 0.7);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+#home-button {
+    position: absolute;
+    left: 19px;
+    cursor: pointer;
+    z-index: 1000;
+    background: rgba(81, 116, 161, 0.7);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+#addLayer-button {
+    position: absolute;
+    left: 19px;
+    cursor: pointer;
+    z-index: 1000;
+    background: rgba(81, 116, 161, 0.7);
+    padding: 3px;
+    border-radius: 2px;
+}
