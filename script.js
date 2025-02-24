@@ -3,7 +3,8 @@ const CONFIG = {
     HONG_KONG_CENTER: [114.1095, 22.3964],
     HK80_PROJECTION: 'EPSG:2326',
     WGS84_PROJECTION: 'EPSG:4326',
-    DEFAULT_ZOOM: 10.3
+    DEFAULT_ZOOM: 10.3,
+	GITHUB_API_URL: 'https://api.github.com/repos/cysyiu/LiberMap/contents/Data_JSON'
 };
 
 // Register HK80 projection
@@ -16,6 +17,11 @@ class MapManager {
         this.map = this.initializeMap();
         this.locationMarker = null;
         this.vectorSource = null;
+		this.categories = {
+            'Land & Housing': 'Data_JSON/Land%20%26%20Housing',
+            'Conservation': 'Data_JSON/Conservation',
+            'Planning Data from HK Government': 'Data_JSON/Planning%20data%20from%20HK%20Government'
+        };
     }
 
     initializeMap() {
@@ -114,26 +120,27 @@ class MapManager {
     }
 
     processGeoJSON(content) {
-        try {
-            const geojson = JSON.parse(content);
-            const features = new ol.format.GeoJSON().readFeatures(geojson, {
-                dataProjection: CONFIG.HK80_PROJECTION,
-                featureProjection: 'EPSG:3857'
-            });
+		try {
+			const geojson = JSON.parse(content);
+			const features = new ol.format.GeoJSON().readFeatures(geojson, {
+				dataProjection: 'EPSG:4326',
+				featureProjection: 'EPSG:3857'
+			});
 
-            const vectorSource = new ol.source.Vector({ features });
-            const vectorLayer = new ol.layer.Vector({
-                source: vectorSource,
-                style: this.createStyleFunction()
-            });
+			const vectorSource = new ol.source.Vector({ features });
+			const vectorLayer = new ol.layer.Vector({
+				source: vectorSource,
+				style: this.createStyleFunction()
+			});
 
-            this.map.addLayer(vectorLayer);
-            this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
-        } catch (error) {
-            alert('Invalid GeoJSON format.');
-            console.error('Invalid GeoJSON format: ', error);
-        }
-    }
+			this.map.addLayer(vectorLayer);
+			this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
+		} catch (error) {
+			alert('Invalid GeoJSON format.');
+			console.error('Invalid GeoJSON format: ', error);
+		}
+	}
+
 
     createStyleFunction() {
         return (feature) => {
@@ -158,7 +165,234 @@ class MapManager {
             });
         };
     }
+	
+	createPopupInfo() {
+		const overlayContainerElement = document.createElement('div');
+		overlayContainerElement.className = 'popup-container';
+		document.body.appendChild(overlayContainerElement);
+
+		const closeButton = document.createElement('div');
+		closeButton.className = 'popup-close-button';
+		closeButton.innerHTML = '&times;';
+		closeButton.onclick = () => {
+			overlayContainerElement.style.display = 'none';
+		};
+		overlayContainerElement.appendChild(closeButton);
+
+		const overlayLayer = new ol.Overlay({
+			element: overlayContainerElement,
+			positioning: 'bottom-center',
+			stopEvent: false,
+			offset: [0, -10]
+		});
+		this.map.addOverlay(overlayLayer);
+
+		this.map.on('click', (event) => {
+			const feature = this.map.forEachFeatureAtPixel(event.pixel, (feature) => feature);
+			if (feature) {
+				const properties = feature.getProperties();
+				const popupTable = this.createPropertiesTable(properties);
+
+				overlayContainerElement.innerHTML = '';
+				overlayContainerElement.appendChild(closeButton);
+				overlayContainerElement.appendChild(popupTable);
+
+				overlayLayer.setPosition(event.coordinate);
+				overlayContainerElement.style.display = 'block';
+			} else {
+				overlayContainerElement.style.display = 'none';
+			}
+		});
+	}
+
+	createPropertiesTable(properties) {
+		const table = document.createElement('table');
+		table.className = 'popup-table';
+
+		Object.keys(properties).forEach((key) => {
+			const row = document.createElement('tr');
+
+			const keyCell = document.createElement('td');
+			keyCell.className = 'popup-table-key';
+			keyCell.textContent = key;
+
+			const valueCell = document.createElement('td');
+			valueCell.className = 'popup-table-value';
+			valueCell.textContent = properties[key];
+
+			row.appendChild(keyCell);
+			row.appendChild(valueCell);
+			table.appendChild(row);
+		});
+
+		return table;
+	}
+	
+
+
+	async fetchGithubContents(path) {
+        const baseUrl = 'https://api.github.com/repos/cysyiu/LiberMap/contents/';
+        const response = await fetch(baseUrl + path);
+        if (!response.ok) {
+            throw new Error('Error fetching contents');
+        }
+        return await response.json();
+    }
+
+    createExpandableLists() {
+		const categoryConfigs = [
+			{
+				id: 'land-housing',
+				name: 'Land & Housing',
+				path: 'Data_JSON/Land%20%26%20Housing'
+			},
+			{
+				id: 'conservation',
+				name: 'Conservation',
+				path: 'Data_JSON/Conservation'
+			},
+			{
+				id: 'planning',
+				name: 'Planning Data',
+				path: 'Data_JSON/Planning%20data%20from%20HK%20Government'
+			}
+		];
+
+		categoryConfigs.forEach(config => {
+			const container = document.createElement('div');
+			container.className = 'category-container';
+			container.id = config.id;
+
+			const header = document.createElement('div');
+			header.className = 'category-header';
+			header.textContent = config.name;
+
+			const content = document.createElement('div');
+			content.className = 'category-content';
+			content.style.display = 'none';
+
+			header.onclick = () => {
+				content.style.display = content.style.display === 'none' ? 'block' : 'none';
+				if (content.children.length === 0) {
+					this.loadFolderContents(config.path, content);
+				}
+			};
+
+			container.appendChild(header);
+			container.appendChild(content);
+			document.body.appendChild(container);
+		});
+	}
+
+
+    async createCategorySection(name, path, container) {
+        const section = document.createElement('div');
+        section.className = 'category-section';
+
+        const header = document.createElement('div');
+        header.className = 'category-header';
+        header.textContent = name;
+
+        const content = document.createElement('div');
+        content.className = 'category-content';
+        content.style.display = 'none';
+
+        header.onclick = () => {
+            content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            if (content.children.length === 0) {
+                this.loadFolderContents(path, content);
+            }
+        };
+
+        section.appendChild(header);
+        section.appendChild(content);
+        container.appendChild(section);
+    }
+
+    async loadFolderContents(path, container) {
+        try {
+            const contents = await this.fetchGithubContents(path);
+            const list = document.createElement('ul');
+            list.className = 'folder-list';
+
+            contents.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.className = 'folder-item';
+                
+                if (item.type === 'dir') {
+                    // Folder handling remains the same
+                    const folderHeader = document.createElement('div');
+                    folderHeader.className = 'folder-header';
+                    folderHeader.textContent = item.name;
+                    
+                    const folderContent = document.createElement('div');
+                    folderContent.className = 'folder-content';
+                    folderContent.style.display = 'none';
+
+                    folderHeader.onclick = (e) => {
+                        e.stopPropagation();
+                        folderContent.style.display = folderContent.style.display === 'none' ? 'block' : 'none';
+                        if (folderContent.children.length === 0) {
+                            this.loadFolderContents(item.path, folderContent);
+                        }
+                    };
+
+                    listItem.appendChild(folderHeader);
+                    listItem.appendChild(folderContent);
+                } else {
+                    // File item with add button
+                    const itemContainer = document.createElement('div');
+                    itemContainer.className = 'file-item-container';
+
+                    const itemName = document.createElement('span');
+                    itemName.textContent = item.name;
+                    itemName.className = 'file-name';
+
+                    const addButton = document.createElement('button');
+                    addButton.textContent = '+';
+                    addButton.className = 'add-layer-button';
+                    addButton.onclick = (e) => {
+                        e.stopPropagation();
+                        this.loadGeoJSONFile(item.download_url);
+                    };
+
+                    itemContainer.appendChild(itemName);
+                    itemContainer.appendChild(addButton);
+                    listItem.appendChild(itemContainer);
+                }
+
+                list.appendChild(listItem);
+            });
+
+            container.appendChild(list);
+        } catch (error) {
+            console.error('Error loading folder contents:', error);
+        }
+    }
+
+    async loadGeoJSONFile(url) {
+        try {
+            const response = await fetch(url);
+            const geojsonData = await response.json();
+            const features = new ol.format.GeoJSON().readFeatures(geojsonData, {
+                dataProjection: 'EPSG:4326',
+                featureProjection: 'EPSG:3857'
+            });
+
+            const vectorSource = new ol.source.Vector({ features });
+            const vectorLayer = new ol.layer.Vector({
+                source: vectorSource,
+                style: this.createStyleFunction()
+            });
+
+            this.map.addLayer(vectorLayer);
+            this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
+        } catch (error) {
+            console.error('Error loading GeoJSON:', error);
+        }
+    }
 }
+
 
 // UI Manager
 class UIManager {
@@ -211,9 +445,12 @@ class UIManager {
     }
 }
 
-// Initialize application
+
+// Initialize expandable lists
 document.addEventListener('DOMContentLoaded', () => {
     const mapManager = new MapManager();
     const uiManager = new UIManager(mapManager);
     setTimeout(() => uiManager.adjustButtonPositions(), 100);
+    mapManager.createPopupInfo();
+    mapManager.createExpandableLists();
 });
