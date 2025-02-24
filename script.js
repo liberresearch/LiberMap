@@ -15,6 +15,7 @@ ol.proj.proj4.register(proj4);
 class MapManager {
     constructor() {
         this.map = this.initializeMap();
+		this.activeLayers = new Map();
         this.locationMarker = null;
         this.vectorSource = null;
 		this.categories = {
@@ -310,63 +311,106 @@ class MapManager {
     }
 
     async loadFolderContents(path, container) {
-        try {
-            const contents = await this.fetchGithubContents(path);
-            const list = document.createElement('ul');
-            list.className = 'folder-list';
+		try {
+			const contents = await this.fetchGithubContents(path);
+			const list = document.createElement('ul');
+			list.className = 'folder-list';
 
-            contents.forEach(item => {
-                const listItem = document.createElement('li');
-                listItem.className = 'folder-item';
+			contents.forEach(item => {
+				const listItem = document.createElement('li'); // Create listItem here
+				listItem.className = 'folder-item';
+
+				if (item.type === 'dir') {
+					const folderHeader = document.createElement('div');
+					folderHeader.className = 'folder-header';
+					folderHeader.textContent = item.name;
+					
+					const folderContent = document.createElement('div');
+					folderContent.className = 'folder-content';
+					folderContent.style.display = 'none';
+
+					folderHeader.onclick = (e) => {
+						e.stopPropagation();
+						folderContent.style.display = folderContent.style.display === 'none' ? 'block' : 'none';
+						if (folderContent.children.length === 0) {
+							this.loadFolderContents(item.path, folderContent);
+						}
+					};
+
+					listItem.appendChild(folderHeader);
+					listItem.appendChild(folderContent);
+				} else {
+					const itemContainer = document.createElement('div');
+					itemContainer.className = 'file-item-container';
+
+					const itemName = document.createElement('span');
+					itemName.textContent = item.name;
+					itemName.className = 'file-name';
+
+					const toggleButton = document.createElement('button');
+					toggleButton.textContent = '+';
+					toggleButton.className = 'layer-toggle-button add';
+					toggleButton.onclick = (e) => {
+						e.stopPropagation();
+						this.toggleLayer(item.download_url, toggleButton);
+					};
+
+					itemContainer.appendChild(itemName);
+					itemContainer.appendChild(toggleButton);
+					listItem.appendChild(itemContainer);
+				}
+
+				list.appendChild(listItem);
+			});
+
+			container.appendChild(list);
+		} catch (error) {
+			console.error('Error loading folder contents:', error);
+		}
+	}
+
+	
+	async toggleLayer(url, button) {
+        if (this.activeLayers.has(url)) {
+            // Remove layer
+            const layerInfo = this.activeLayers.get(url);
+            this.map.removeLayer(layerInfo.layer);
+            this.activeLayers.delete(url);
+            
+            // Reset button
+            button.textContent = '+';
+            button.className = 'layer-toggle-button add';
+        } else {
+            // Add layer
+            try {
+                const response = await fetch(url);
+                const geojsonData = await response.json();
+                const features = new ol.format.GeoJSON().readFeatures(geojsonData, {
+                    dataProjection: 'EPSG:4326',
+                    featureProjection: 'EPSG:3857'
+                });
+
+                const vectorSource = new ol.source.Vector({ features });
+                const vectorLayer = new ol.layer.Vector({
+                    source: vectorSource,
+                    style: this.createStyleFunction()
+                });
+
+                this.map.addLayer(vectorLayer);
+                this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
                 
-                if (item.type === 'dir') {
-                    // Folder handling remains the same
-                    const folderHeader = document.createElement('div');
-                    folderHeader.className = 'folder-header';
-                    folderHeader.textContent = item.name;
-                    
-                    const folderContent = document.createElement('div');
-                    folderContent.className = 'folder-content';
-                    folderContent.style.display = 'none';
-
-                    folderHeader.onclick = (e) => {
-                        e.stopPropagation();
-                        folderContent.style.display = folderContent.style.display === 'none' ? 'block' : 'none';
-                        if (folderContent.children.length === 0) {
-                            this.loadFolderContents(item.path, folderContent);
-                        }
-                    };
-
-                    listItem.appendChild(folderHeader);
-                    listItem.appendChild(folderContent);
-                } else {
-                    // File item with add button
-                    const itemContainer = document.createElement('div');
-                    itemContainer.className = 'file-item-container';
-
-                    const itemName = document.createElement('span');
-                    itemName.textContent = item.name;
-                    itemName.className = 'file-name';
-
-                    const addButton = document.createElement('button');
-                    addButton.textContent = '+';
-                    addButton.className = 'add-layer-button';
-                    addButton.onclick = (e) => {
-                        e.stopPropagation();
-                        this.loadGeoJSONFile(item.download_url);
-                    };
-
-                    itemContainer.appendChild(itemName);
-                    itemContainer.appendChild(addButton);
-                    listItem.appendChild(itemContainer);
-                }
-
-                list.appendChild(listItem);
-            });
-
-            container.appendChild(list);
-        } catch (error) {
-            console.error('Error loading folder contents:', error);
+                // Update button
+                button.textContent = '-';
+                button.className = 'layer-toggle-button remove';
+                
+                // Store layer reference
+                this.activeLayers.set(url, {
+                    layer: vectorLayer,
+                    button: button
+                });
+            } catch (error) {
+                console.error('Error loading GeoJSON:', error);
+            }
         }
     }
 
