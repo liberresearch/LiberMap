@@ -199,3 +199,34 @@
 .add-layer-button:hover {
     background: #45a049;
 }
+
+.layer-toggle-button {
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.layer-toggle-button.add {
+    background: #4CAF50;
+    color: white;
+}
+
+.layer-toggle-button.remove {
+    background: #f44336;
+    color: white;
+}
+
+.layer-toggle-button:hover.add {
+    background: #45a049;
+}
+
+.layer-toggle-button:hover.remove {
+    background: #d32f2f;
+}
