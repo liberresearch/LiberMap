@@ -33,3 +33,169 @@
     padding: 3px;
     border-radius: 2px;
 }
+
+.popup-container {
+    position: absolute;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.popup-close-button {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.popup-table-key {
+    font-weight: bold;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+.popup-table-value {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.expandable-section {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.expandable-header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.expandable-content {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.expandable-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expandable-content li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-container {
+    position: absolute;
+    bottom: 20px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    width: 300px;
+}
+
+#land-housing {
+    left: 20px;
+}
+
+#conservation {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#planning {
+    right: 20px;
+}
+
+.category-content {
+    max-height: 60vh;
+    overflow-y: auto;
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+}
+
+.category-header {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.folder-header {
+    padding: 8px;
+    cursor: pointer;
+    background: #f5f5f5;
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+.category-header:hover, .folder-header:hover {
+    background: #e0e0e0;
+}
+
+.category-content, .folder-content {
+    margin-left: 20px;
+}
+
+.folder-item {
+    list-style: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.folder-item:hover {
+    background: #f0f0f0;
+}
+
+.folder-list {
+    padding-left: 0;
+}
+
+.file-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+}
+
+.file-name {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.add-layer-button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.add-layer-button:hover {
+    background: #45a049;
+}
