@@ -14,6 +14,10 @@
     border-radius: 2px;
 }
 
+#mylocation-button:hover {
+    background: rgba(81, 116, 161, 0.9);
+}
+
 #home-button {
     position: absolute;
     left: 19px;
@@ -24,6 +28,10 @@
     border-radius: 2px;
 }
 
+#home-button:hover {
+    background: rgba(81, 116, 161, 0.9);
+}
+
 #addLayer-button {
     position: absolute;
     left: 19px;
@@ -32,6 +40,10 @@
     background: rgba(81, 116, 161, 0.7);
     padding: 3px;
     border-radius: 2px;
+}
+
+#addLayer-button:hover {
+    background: rgba(81, 116, 161, 0.9);
 }
 
 .popup-container {
@@ -236,19 +248,23 @@
     background: rgba(81, 116, 161, 0.9);
 }
 
-@media print {
-    .ol-control,
-    #mylocation-button,
-    #home-button,
-    #addLayer-button,
-    #print-button,
-    .popup-container {
-        display: none !important;
-    }
-    
-    #map {
-        width: 100% !important;
-        height: 100vh !important;
-    }
+.search-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
 }
 
+#search-input {
+    padding: 8px 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 14px;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
