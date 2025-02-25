@@ -24,6 +24,9 @@ class MapManager {
             'Planning Data from HK Government': 'Data_JSON/Planning%20data%20from%20HK%20Government'
         };
 		this.initializeSearchTool();
+		this.createLegendPanel();
+		
+		
     }
 
     initializeMap() {
@@ -466,48 +469,42 @@ class MapManager {
 
 	
 	async toggleLayer(url, button) {
-        if (this.activeLayers.has(url)) {
-            // Remove layer
-            const layerInfo = this.activeLayers.get(url);
-            this.map.removeLayer(layerInfo.layer);
-            this.activeLayers.delete(url);
-            
-            // Reset button
-            button.textContent = '+';
-            button.className = 'layer-toggle-button add';
-        } else {
-            // Add layer
-            try {
-                const response = await fetch(url);
-                const geojsonData = await response.json();
-                const features = new ol.format.GeoJSON().readFeatures(geojsonData, {
-                    dataProjection: 'EPSG:4326',
-                    featureProjection: 'EPSG:3857'
-                });
+		if (this.activeLayers.has(url)) {
+			const layerInfo = this.activeLayers.get(url);
+			this.map.removeLayer(layerInfo.layer);
+			this.activeLayers.delete(url);
+			button.textContent = '+';
+			button.className = 'layer-toggle-button add';
+		} else {
+			try {
+				const response = await fetch(url);
+				const geojsonData = await response.json();
+				const features = new ol.format.GeoJSON().readFeatures(geojsonData, {
+					dataProjection: 'EPSG:4326',
+					featureProjection: 'EPSG:3857'
+				});
+				const vectorSource = new ol.source.Vector({ features });
+				const vectorLayer = new ol.layer.Vector({
+					source: vectorSource,
+					style: this.createStyleFunction()
+				});
+				this.map.addLayer(vectorLayer);
+				this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
+				
+				button.textContent = '-';
+				button.className = 'layer-toggle-button remove';
+				
+				this.activeLayers.set(url, {
+					layer: vectorLayer,
+					button: button
+				});
+			} catch (error) {
+				console.error('Error loading GeoJSON:', error);
+			}
+			this.updateLegend(document.querySelector('.legend-content'));
+		}
+	}
 
-                const vectorSource = new ol.source.Vector({ features });
-                const vectorLayer = new ol.layer.Vector({
-                    source: vectorSource,
-                    style: this.createStyleFunction()
-                });
-
-                this.map.addLayer(vectorLayer);
-                this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
-                
-                // Update button
-                button.textContent = '-';
-                button.className = 'layer-toggle-button remove';
-                
-                // Store layer reference
-                this.activeLayers.set(url, {
-                    layer: vectorLayer,
-                    button: button
-                });
-            } catch (error) {
-                console.error('Error loading GeoJSON:', error);
-            }
-        }
-    }
 
     async loadGeoJSONFile(url) {
         try {
@@ -547,6 +544,60 @@ class MapManager {
 		} catch (error) {
 			console.error('Error downloading file:', error);
 		}
+	}
+	
+	createLegendPanel() {
+		const legendPanel = document.createElement('div');
+		legendPanel.id = 'legend-panel';
+		legendPanel.className = 'legend-panel';
+
+		const header = document.createElement('div');
+		header.className = 'legend-header';
+		
+		const title = document.createElement('span');
+		title.textContent = 'Legend';
+		
+		const toggleButton = document.createElement('span');
+		toggleButton.className = 'legend-toggle';
+		toggleButton.textContent = '▼';
+		
+		const content = document.createElement('div');
+		content.className = 'legend-content';
+		
+		header.appendChild(title);
+		header.appendChild(toggleButton);
+		legendPanel.appendChild(header);
+		legendPanel.appendChild(content);
+		
+		toggleButton.onclick = () => {
+			content.style.display = content.style.display === 'none' ? 'block' : 'none';
+			toggleButton.textContent = content.style.display === 'none' ? '▶' : '▼';
+		};
+
+		this.updateLegend(content);
+		document.body.appendChild(legendPanel);
+	}
+
+	updateLegend(content) {
+		content.innerHTML = '';
+		this.activeLayers.forEach((layerInfo, url) => {
+			const layerItem = document.createElement('div');
+			layerItem.className = 'legend-item';
+			
+			const checkbox = document.createElement('input');
+			checkbox.type = 'checkbox';
+			checkbox.checked = layerInfo.layer.getVisible();
+			checkbox.onchange = () => {
+				layerInfo.layer.setVisible(checkbox.checked);
+			};
+			
+			const label = document.createElement('span');
+			label.textContent = url.split('/').pop().replace('.geojson', '');
+			
+			layerItem.appendChild(checkbox);
+			layerItem.appendChild(label);
+			content.appendChild(layerItem);
+		});
 	}
 	
 }
