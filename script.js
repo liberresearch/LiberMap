@@ -99,6 +99,51 @@ class MapManager {
         });
     }
 
+	printMap() {
+		// Create a new map instance for printing
+		const printContainer = document.createElement('div');
+		printContainer.style.width = '800px';
+		printContainer.style.height = '600px';
+		document.body.appendChild(printContainer);
+
+		// Create a new map with crossOrigin enabled
+		const printMap = new ol.Map({
+			target: printContainer,
+			layers: [
+				new ol.layer.Tile({
+					source: new ol.source.XYZ({
+						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/basemap/wgs84/{z}/{x}/{y}.png',
+						crossOrigin: 'anonymous'
+					})
+				}),
+				new ol.layer.Tile({
+					source: new ol.source.XYZ({
+						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/en/wgs84/{z}/{x}/{y}.png',
+						crossOrigin: 'anonymous'
+					})
+				}),
+				...Array.from(this.activeLayers.values()).map(info => info.layer)
+			],
+			view: new ol.View({
+				center: this.map.getView().getCenter(),
+				zoom: this.map.getView().getZoom(),
+				rotation: this.map.getView().getRotation()
+			})
+		});
+
+		// Wait for the map to render
+		setTimeout(() => {
+			const canvas = printContainer.querySelector('canvas');
+			const link = document.createElement('a');
+			link.download = `map-export-${Date.now()}.png`;
+			link.href = canvas.toDataURL('image/png');
+			link.click();
+			
+			// Cleanup
+			document.body.removeChild(printContainer);
+		}, 500);
+	}
+
     addLayerToMap() {
         const inputElement = document.createElement('input');
         inputElement.type = 'file';
@@ -209,26 +254,32 @@ class MapManager {
 	createPropertiesTable(properties) {
 		const table = document.createElement('table');
 		table.className = 'popup-table';
-
+		
+		// Define columns to exclude
+		const excludedColumns = ['geometry', 'GlobalID','Shape__Are','Shape__Len'];
+		
 		Object.keys(properties).forEach((key) => {
-			const row = document.createElement('tr');
-
-			const keyCell = document.createElement('td');
-			keyCell.className = 'popup-table-key';
-			keyCell.textContent = key;
-
-			const valueCell = document.createElement('td');
-			valueCell.className = 'popup-table-value';
-			valueCell.textContent = properties[key];
-
-			row.appendChild(keyCell);
-			row.appendChild(valueCell);
-			table.appendChild(row);
+			// Only create row if key is not in excluded columns
+			if (!excludedColumns.includes(key)) {
+				const row = document.createElement('tr');
+				
+				const keyCell = document.createElement('td');
+				keyCell.className = 'popup-table-key';
+				keyCell.textContent = key;
+				
+				const valueCell = document.createElement('td');
+				valueCell.className = 'popup-table-value';
+				valueCell.textContent = properties[key];
+				
+				row.appendChild(keyCell);
+				row.appendChild(valueCell);
+				table.appendChild(row);
+			}
 		});
-
+		
 		return table;
 	}
-	
+		
 
 
 	async fetchGithubContents(path) {
@@ -254,7 +305,7 @@ class MapManager {
 			},
 			{
 				id: 'planning',
-				name: 'Planning Data',
+				name: 'Planning Data from HK Government',
 				path: 'Data_JSON/Planning%20data%20from%20HK%20Government'
 			}
 		];
@@ -355,8 +406,18 @@ class MapManager {
 						this.toggleLayer(item.download_url, toggleButton);
 					};
 
-					itemContainer.appendChild(itemName);
+					// Add download button
+					const downloadButton = document.createElement('button');
+					downloadButton.textContent = '↓';
+					downloadButton.className = 'download-button';
+					downloadButton.onclick = (e) => {
+						e.stopPropagation();
+						this.downloadGeoJSON(item.download_url, item.name);
+					};
+
 					itemContainer.appendChild(toggleButton);
+					itemContainer.appendChild(itemName);
+					itemContainer.appendChild(downloadButton);
 					listItem.appendChild(itemContainer);
 				}
 
@@ -430,11 +491,30 @@ class MapManager {
             });
 
             this.map.addLayer(vectorLayer);
-            this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
+            this.map.getView().fit(vectorSource.getExtent(), { duration: 1000 });
         } catch (error) {
             console.error('Error loading GeoJSON:', error);
         }
     }
+	
+	async downloadGeoJSON(url, filename) {
+		try {
+			const response = await fetch(url);
+			const data = await response.json();
+			const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+			const downloadUrl = URL.createObjectURL(blob);
+			const link = document.createElement('a');
+			link.href = downloadUrl;
+			link.download = filename;
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+			URL.revokeObjectURL(downloadUrl);
+		} catch (error) {
+			console.error('Error downloading file:', error);
+		}
+	}
+	
 }
 
 
@@ -452,6 +532,8 @@ class UIManager {
             () => this.mapManager.goToHome());
         this.createButton('addLayer-button', './img/addLayer.png', 'Add Layer', 
             () => this.mapManager.addLayerToMap());
+		this.createButton('print-button', './img/print.png', 'Print Map', 
+			() => this.mapManager.printMap());
     }
 
     createButton(id, src, alt, onClick) {
@@ -472,7 +554,8 @@ class UIManager {
         const buttons = [
             document.getElementById('mylocation-button'),
             document.getElementById('home-button'),
-            document.getElementById('addLayer-button')
+            document.getElementById('addLayer-button'),
+			document.getElementById('print-button') 
         ];
 
         const buttonWidth = (zoomOutButton.getBoundingClientRect().width * 0.8) + 'px';
@@ -481,12 +564,16 @@ class UIManager {
         let previousBottom = zoomOutButton.getBoundingClientRect().bottom;
 
         buttons.forEach(button => {
-            button.style.width = buttonWidth;
-            button.style.height = buttonHeight;
-            button.style.top = (previousBottom + 1) + 'px';
-            previousBottom = button.getBoundingClientRect().bottom;
+			if(button){
+				button.style.width = buttonWidth;
+				button.style.height = buttonHeight;
+				button.style.top = (previousBottom + 1) + 'px';
+				previousBottom = button.getBoundingClientRect().bottom;
+			}
         });
     }
+	
+	
 }
 
 
