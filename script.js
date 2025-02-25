@@ -23,6 +23,7 @@ class MapManager {
             'Conservation': 'Data_JSON/Conservation',
             'Planning Data from HK Government': 'Data_JSON/Planning%20data%20from%20HK%20Government'
         };
+		this.initializeSearchTool();
     }
 
     initializeMap() {
@@ -143,7 +144,40 @@ class MapManager {
 			document.body.removeChild(printContainer);
 		}, 500);
 	}
+	
+	initializeSearchTool() {
+		const searchContainer = document.createElement('div');
+		searchContainer.id = 'search-container';
+		searchContainer.className = 'search-container';
+		
+		const searchInput = document.createElement('input');
+		searchInput.id = 'search-input';
+		searchInput.type = 'text';
+		searchInput.placeholder = 'Search location...';
+		
+		searchContainer.appendChild(searchInput);
+		document.body.appendChild(searchContainer);
+		
+		const searchBox = new google.maps.places.SearchBox(searchInput);
+		
+		searchBox.addListener('places_changed', () => {
+			const places = searchBox.getPlaces();
+			if (places.length === 0) return;
+			
+			const place = places[0];
+			const coordinates = [place.geometry.location.lng(), place.geometry.location.lat()];
+			const transformedCoords = ol.proj.fromLonLat(coordinates);
+			
+			this.map.getView().animate({
+				center: transformedCoords,
+				zoom: 15,
+				duration: 1000
+			});
+		});
+	}
 
+	
+	
     addLayerToMap() {
         const inputElement = document.createElement('input');
         inputElement.type = 'file';
