@@ -4,31 +4,40 @@ const CONFIG = {
     HK80_PROJECTION: 'EPSG:2326',
     WGS84_PROJECTION: 'EPSG:4326',
     DEFAULT_ZOOM: 10.3,
-	GITHUB_API_URL: 'https://api.github.com/repos/cysyiu/LiberMap/contents/Data_JSON'
+    GITHUB_API_URL: 'https://api.github.com/repos/cysyiu/LiberMap/contents/Data_JSON'
 };
 
 // Register HK80 projection
 proj4.defs(CONFIG.HK80_PROJECTION, "+proj=tmerc +lat_0=22.31213333333333 +lon_0=114.1785555555556 +k=1 +x_0=836694.05 +y_0=819069.8 +datum=HK80 +units=m +no_defs");
 ol.proj.proj4.register(proj4);
 
-// Map initialization
 class MapManager {
     constructor() {
         this.map = this.initializeMap();
-		this.activeLayers = new Map();
+        this.setupMapAccessibility();
+        this.initializeComponents();
+    }
+
+    setupMapAccessibility() {
+        this.map.getTargetElement().setAttribute('role', 'application');
+        this.map.getTargetElement().setAttribute('aria-label', 'Interactive map of Hong Kong');
+        this.activeLayers = new Map();
         this.locationMarker = null;
         this.vectorSource = null;
-		this.categories = {
+    }
+	
+	initializeComponents() {
+        this.categories = {
             'Land & Housing': 'Data_JSON/Land%20%26%20Housing',
             'Conservation': 'Data_JSON/Conservation',
             'Planning Data from HK Government': 'Data_JSON/Planning%20data%20from%20HK%20Government'
         };
-		this.initializeSearchTool();
-		this.createLegendPanel();
-		
-		
+        this.initializeSearchTool();
+        this.createLegendPanel();
+        this.createPopupInfo();
     }
 
+	
     initializeMap() {
         return new ol.Map({
             target: 'map',
@@ -182,29 +191,27 @@ class MapManager {
 	
 	
     addLayerToMap() {
-        const inputElement = document.createElement('input');
-        inputElement.type = 'file';
-        inputElement.accept = '.geojson,.json';
-        inputElement.onchange = this.handleFileUpload.bind(this);
-        inputElement.click();
-    }
+		const inputElement = document.createElement('input');
+		inputElement.type = 'file';
+		inputElement.accept = '.geojson,.json';
+		inputElement.onchange = this.handleFileUpload.bind(this);
+		inputElement.click();
+	}
 
-    handleFileUpload(event) {
-        const file = event.target.files[0];
-        if (!file) return;
 
-        const reader = new FileReader();
-        reader.onload = (e) => this.processGeoJSON(e.target.result);
-        reader.onerror = (error) => {
-            console.error('File reading error: ', error);
-            alert('Error reading file.');
-        };
-        reader.readAsText(file);
-    }
-
-    processGeoJSON(content) {
+	processGeoJSON(content) {
 		try {
 			const geojson = JSON.parse(content);
+			if (geojson.crs && geojson.crs.properties.name === "EPSG:2326") {
+				geojson.features.forEach(feature => {
+					const coords = feature.geometry.coordinates[0];
+					const transformedCoords = coords.map(coord => 
+						proj4("EPSG:2326", "EPSG:4326", coord)
+					);
+					feature.geometry.coordinates[0] = transformedCoords;
+				});
+			}
+
 			const features = new ol.format.GeoJSON().readFeatures(geojson, {
 				dataProjection: 'EPSG:4326',
 				featureProjection: 'EPSG:3857'
@@ -216,38 +223,103 @@ class MapManager {
 				style: this.createStyleFunction()
 			});
 
+			// Get the file name from the upload
+			const fileName = this.currentFileName || 'uploaded-layer.geojson';
+			
+			// Add layer to map and active layers
 			this.map.addLayer(vectorLayer);
+			this.activeLayers.set(fileName, { 
+				layer: vectorLayer, 
+				button: null 
+			});
+
+			// Update the legend
+			const legendContent = document.querySelector('.legend-content');
+			if (legendContent) {
+				this.updateLegend(legendContent);
+			}
+
 			this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
 		} catch (error) {
-			alert('Invalid GeoJSON format.');
-			console.error('Invalid GeoJSON format: ', error);
+			console.error('GeoJSON processing error:', error);
 		}
 	}
 
+	handleFileUpload(event) {
+		const file = event.target.files[0];
+		if (!file) return;
+		
+		// Store the file name
+		this.currentFileName = file.name;
+		
+		const reader = new FileReader();
+		reader.onload = (e) => this.processGeoJSON(e.target.result);
+		reader.onerror = (error) => {
+			console.error('File reading error: ', error);
+			alert('Error reading file.');
+		};
+		reader.readAsText(file);
+	}
 
-    createStyleFunction() {
-        return (feature) => {
-            const properties = feature.getProperties();
-            if (properties.icon) {
-                return new ol.style.Style({
-                    image: new ol.style.Icon({
-                        src: properties.icon,
-                        scale: properties['icon-scale'] || 1,
-                        anchor: [0.5, 1]
-                    })
-                });
-            }
-            return new ol.style.Style({
-                fill: new ol.style.Fill({
-                    color: properties.fill || 'rgba(255, 255, 255, 0.6)'
-                }),
-                stroke: new ol.style.Stroke({
-                    color: properties.stroke || '#319FD3',
-                    width: properties['stroke-width'] || 1
-                })
-            });
-        };
-    }
+
+
+	createStyleFunction() {
+		return (feature) => {
+			const properties = feature.getProperties();
+			
+			// Handle nested style object
+			if (properties.style) {
+				const fillColor = properties.style.fill || '#ffffff';
+				// Convert hex to rgba with 0.7 opacity
+				const rgbaFill = this.convertToRGBA(fillColor, 0.7);
+				
+				return new ol.style.Style({
+					fill: new ol.style.Fill({
+						color: rgbaFill
+					}),
+					stroke: new ol.style.Stroke({
+						color: properties.style.stroke || '#319FD3',
+						width: properties.style['stroke-width'] || 1
+					})
+				});
+			}
+			
+			// Handle direct style properties
+			const fillColor = properties.fill || '#ffffff';
+			const rgbaFill = this.convertToRGBA(fillColor, 0.7);
+			
+			return new ol.style.Style({
+				fill: new ol.style.Fill({
+					color: rgbaFill
+				}),
+				stroke: new ol.style.Stroke({
+					color: properties.stroke || '#319FD3',
+					width: properties['stroke-width'] || 1
+				})
+			});
+		};
+	}
+
+	// Helper method to convert hex/rgb to rgba
+	convertToRGBA(color, opacity) {
+		// If already rgba, return as is
+		if (color.startsWith('rgba')) return color;
+		
+		// If rgb, convert to rgba
+		if (color.startsWith('rgb')) {
+			return color.replace('rgb', 'rgba').replace(')', `, ${opacity})`);
+		}
+		
+		// Convert hex to rgba
+		const hex = color.replace('#', '');
+		const r = parseInt(hex.substring(0, 2), 16);
+		const g = parseInt(hex.substring(2, 4), 16);
+		const b = parseInt(hex.substring(4, 6), 16);
+		
+		return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+	}
+
+
 	
 	createPopupInfo() {
 		const overlayContainerElement = document.createElement('div');
@@ -329,49 +401,65 @@ class MapManager {
     }
 
     createExpandableLists() {
-		const categoryConfigs = [
-			{
-				id: 'land-housing',
-				name: 'Land & Housing',
-				path: 'Data_JSON/Land%20%26%20Housing'
-			},
-			{
-				id: 'conservation',
-				name: 'Conservation',
-				path: 'Data_JSON/Conservation'
-			},
-			{
-				id: 'planning',
-				name: 'Planning Data from HK Government',
-				path: 'Data_JSON/Planning%20data%20from%20HK%20Government'
-			}
-		];
+        const categoryConfigs = [
+            {
+                id: 'land-housing',
+                name: 'Land & Housing',
+                path: 'Data_JSON/Land%20%26%20Housing'
+            },
+            {
+                id: 'conservation',
+                name: 'Conservation',
+                path: 'Data_JSON/Conservation'
+            },
+            {
+                id: 'planning',
+                name: 'Planning Data from HK Government',
+                path: 'Data_JSON/Planning%20data%20from%20HK%20Government'
+            }
+        ];
 
-		categoryConfigs.forEach(config => {
-			const container = document.createElement('div');
-			container.className = 'category-container';
-			container.id = config.id;
+        categoryConfigs.forEach(config => {
+            const container = document.createElement('div');
+            container.className = 'category-container';
+            container.id = config.id;
+            container.setAttribute('role', 'region');
+            container.setAttribute('aria-label', `${config.name} category`);
 
-			const header = document.createElement('div');
-			header.className = 'category-header';
-			header.textContent = config.name;
+            const header = document.createElement('div');
+            header.className = 'category-header';
+            header.textContent = config.name;
+            header.setAttribute('role', 'button');
+            header.setAttribute('aria-expanded', 'false');
+            header.setAttribute('tabindex', '0');
 
-			const content = document.createElement('div');
-			content.className = 'category-content';
-			content.style.display = 'none';
+            const content = document.createElement('div');
+            content.className = 'category-content';
+            content.style.display = 'none';
+            content.setAttribute('role', 'region');
+            content.setAttribute('aria-label', `${config.name} content`);
 
-			header.onclick = () => {
-				content.style.display = content.style.display === 'none' ? 'block' : 'none';
-				if (content.children.length === 0) {
-					this.loadFolderContents(config.path, content);
-				}
-			};
+            header.onclick = () => {
+                const isExpanded = content.style.display !== 'none';
+                header.setAttribute('aria-expanded', !isExpanded);
+                content.style.display = isExpanded ? 'none' : 'block';
+                if (content.children.length === 0) {
+                    this.loadFolderContents(config.path, content);
+                }
+            };
 
-			container.appendChild(header);
-			container.appendChild(content);
-			document.body.appendChild(container);
-		});
-	}
+            header.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    header.click();
+                }
+            });
+
+            container.appendChild(header);
+            container.appendChild(content);
+            document.body.appendChild(container);
+        });
+    }
 
 
     async createCategorySection(name, path, container) {
@@ -475,6 +563,7 @@ class MapManager {
 			this.activeLayers.delete(url);
 			button.textContent = '+';
 			button.className = 'layer-toggle-button add';
+			this.updateLegend(document.querySelector('.legend-content')); // Update legend when layer is removed
 		} else {
 			try {
 				const response = await fetch(url);
@@ -490,20 +579,16 @@ class MapManager {
 				});
 				this.map.addLayer(vectorLayer);
 				this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
-				
 				button.textContent = '-';
 				button.className = 'layer-toggle-button remove';
-				
-				this.activeLayers.set(url, {
-					layer: vectorLayer,
-					button: button
-				});
+				this.activeLayers.set(url, { layer: vectorLayer, button: button });
 			} catch (error) {
 				console.error('Error loading GeoJSON:', error);
 			}
-			this.updateLegend(document.querySelector('.legend-content'));
+			this.updateLegend(document.querySelector('.legend-content')); // Update legend when layer is added
 		}
 	}
+
 
 
     async loadGeoJSONFile(url) {
@@ -547,59 +632,182 @@ class MapManager {
 	}
 	
 	createLegendPanel() {
-		const legendPanel = document.createElement('div');
-		legendPanel.id = 'legend-panel';
-		legendPanel.className = 'legend-panel';
+        const legendPanel = document.createElement('div');
+        legendPanel.id = 'legend-panel';
+        legendPanel.className = 'legend-panel';
+        legendPanel.setAttribute('role', 'complementary');
+        legendPanel.setAttribute('aria-label', 'Map legend');
 
-		const header = document.createElement('div');
-		header.className = 'legend-header';
-		
-		const title = document.createElement('span');
-		title.textContent = 'Legend';
-		
-		const toggleButton = document.createElement('span');
-		toggleButton.className = 'legend-toggle';
-		toggleButton.textContent = '▼';
-		
-		const content = document.createElement('div');
-		content.className = 'legend-content';
-		
-		header.appendChild(title);
-		header.appendChild(toggleButton);
-		legendPanel.appendChild(header);
-		legendPanel.appendChild(content);
-		
-		toggleButton.onclick = () => {
-			content.style.display = content.style.display === 'none' ? 'block' : 'none';
-			toggleButton.textContent = content.style.display === 'none' ? '▶' : '▼';
-		};
+        const header = document.createElement('div');
+        header.className = 'legend-header';
+        header.setAttribute('role', 'button');
+        header.setAttribute('aria-expanded', 'false');
+        header.setAttribute('tabindex', '0');
 
-		this.updateLegend(content);
-		document.body.appendChild(legendPanel);
-	}
+        const title = document.createElement('span');
+        title.textContent = 'Legend';
+
+        const toggleButton = document.createElement('span');
+        toggleButton.className = 'legend-toggle';
+        toggleButton.textContent = '▶';
+        toggleButton.setAttribute('aria-hidden', 'true');
+
+        const content = document.createElement('div');
+        content.className = 'legend-content';
+        content.style.display = 'none';
+        content.setAttribute('role', 'region');
+        content.setAttribute('aria-label', 'Legend content');
+
+        header.onclick = () => {
+            const isExpanded = content.style.display !== 'none';
+            header.setAttribute('aria-expanded', !isExpanded);
+            content.style.display = isExpanded ? 'none' : 'block';
+            toggleButton.textContent = isExpanded ? '▶' : '▼';
+        };
+
+        header.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                header.click();
+            }
+        });
+
+        header.appendChild(title);
+        header.appendChild(toggleButton);
+        legendPanel.appendChild(header);
+        legendPanel.appendChild(content);
+
+        this.updateLegend(content);
+        document.body.appendChild(legendPanel);
+    }
 
 	updateLegend(content) {
 		content.innerHTML = '';
 		this.activeLayers.forEach((layerInfo, url) => {
 			const layerItem = document.createElement('div');
 			layerItem.className = 'legend-item';
-			
+
+			// Create container for legend graphics and controls
+			const legendContainer = document.createElement('div');
+			legendContainer.className = 'legend-container';
+
+			// Add checkbox for layer visibility
 			const checkbox = document.createElement('input');
 			checkbox.type = 'checkbox';
 			checkbox.checked = layerInfo.layer.getVisible();
+			checkbox.id = `layer-${url.split('/').pop()}`;
+			checkbox.setAttribute('aria-label', `Toggle ${url.split('/').pop()} layer visibility`);
+
+			// Add label with layer name
+			const label = document.createElement('label');
+			label.htmlFor = checkbox.id;
+			label.textContent = url.split('/').pop().replace('.geojson', '');
+
+			// Create legend graphic container
+			const legendGraphic = document.createElement('div');
+			legendGraphic.className = 'legend-graphic';
+
+			// Get legend graphic from WMS if available
+			if (url.includes('wms')) {
+				const legendUrl = this.getLegendGraphicUrl(url);
+				const img = document.createElement('img');
+				img.src = legendUrl;
+				img.alt = `Legend for ${label.textContent}`;
+				legendGraphic.appendChild(img);
+			} else {
+				// Create custom legend for vector layers
+				this.createVectorLegend(legendGraphic, layerInfo.layer);
+			}
+
 			checkbox.onchange = () => {
 				layerInfo.layer.setVisible(checkbox.checked);
 			};
-			
-			const label = document.createElement('span');
-			label.textContent = url.split('/').pop().replace('.geojson', '');
-			
-			layerItem.appendChild(checkbox);
-			layerItem.appendChild(label);
+
+			legendContainer.appendChild(checkbox);
+			legendContainer.appendChild(label);
+			legendContainer.appendChild(legendGraphic);
+			layerItem.appendChild(legendContainer);
 			content.appendChild(layerItem);
 		});
 	}
+
+	getLegendGraphicUrl(wmsUrl) {
+		const url = new URL(wmsUrl);
+		url.searchParams.set('SERVICE', 'WMS');
+		url.searchParams.set('VERSION', '1.3.0');
+		url.searchParams.set('REQUEST', 'GetLegendGraphic');
+		url.searchParams.set('FORMAT', 'image/png');
+		url.searchParams.set('LAYER', url.searchParams.get('LAYERS'));
+		url.searchParams.set('STYLE', url.searchParams.get('STYLES') || '');
+		return url.toString();
+	}
+
+	createVectorLegend(container, layer) {
+		const styleFunction = layer.getStyle();
+		const canvas = document.createElement('canvas');
+		canvas.width = 20;
+		canvas.height = 20;
+		const ctx = canvas.getContext('2d');
+
+		// Get the actual style from the style function
+		let style;
+		if (typeof styleFunction === 'function') {
+			const features = layer.getSource().getFeatures();
+			if (features.length > 0) {
+				style = styleFunction(features[0]);
+			}
+		} else {
+			style = styleFunction;
+		}
+
+		// Draw vector style representation
+		if (style) {
+			const fill = style.getFill();
+			const stroke = style.getStroke();
+			
+			ctx.beginPath();
+			ctx.rect(2, 2, 16, 16);
+			
+			if (fill) {
+				ctx.fillStyle = fill.getColor() || 'rgba(255, 255, 255, 0.4)';
+				ctx.fill();
+			}
+			
+			if (stroke) {
+				ctx.strokeStyle = stroke.getColor() || '#3399CC';
+				ctx.lineWidth = stroke.getWidth() || 1.25;
+				ctx.stroke();
+			}
+		}
+
+		container.appendChild(canvas);
+	}
+
+
 	
+	createButton(id, src, alt, onClick) {
+        const button = document.createElement('button');
+        button.id = id;
+        button.className = 'map-control-button';
+        button.setAttribute('aria-label', alt);
+        
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = '';
+        img.setAttribute('role', 'presentation');
+        
+        button.appendChild(img);
+        button.onclick = onClick;
+        
+        button.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                onClick();
+            }
+        });
+        
+        return button;
+    }
 }
 
 
@@ -611,62 +819,84 @@ class UIManager {
     }
 
     createButtons() {
-        this.createButton('mylocation-button', './img/myLocation.png', 'My Location', 
-            () => this.mapManager.useMyLocation());
-        this.createButton('home-button', './img/home.png', 'Home', 
-            () => this.mapManager.goToHome());
-        this.createButton('addLayer-button', './img/addLayer.png', 'Add Layer', 
-            () => this.mapManager.addLayerToMap());
-		this.createButton('print-button', './img/print.png', 'Print Map', 
-			() => this.mapManager.printMap());
-    }
+        const buttons = [
+            {
+                id: 'mylocation-button',
+                src: './img/myLocation.png',
+                alt: 'My Location',
+                onClick: () => this.mapManager.useMyLocation()
+            },
+            {
+                id: 'home-button',
+                src: './img/home.png',
+                alt: 'Home',
+                onClick: () => this.mapManager.goToHome()
+            },
+            {
+                id: 'addLayer-button',
+                src: './img/addLayer.png',
+                alt: 'Add Layer',
+                onClick: () => this.mapManager.addLayerToMap()
+            },
+            {
+                id: 'print-button',
+                src: './img/print.png',
+                alt: 'Print Map',
+                onClick: () => this.mapManager.printMap()
+            }
+        ];
 
-    createButton(id, src, alt, onClick) {
-        const button = document.createElement('img');
-        button.id = id;
-        button.src = src;
-        button.alt = alt;
-        button.onclick = onClick;
-        document.body.appendChild(button);
+        buttons.forEach(buttonConfig => {
+            const button = this.mapManager.createButton(
+                buttonConfig.id,
+                buttonConfig.src,
+                buttonConfig.alt,
+                buttonConfig.onClick
+            );
+            document.body.appendChild(button);
+        });
     }
 
     adjustButtonPositions() {
-        const zoomInButton = document.querySelector('.ol-zoom-in');
-        const zoomOutButton = document.querySelector('.ol-zoom-out');
-        
-        if (!zoomInButton || !zoomOutButton) return;
+        const checkControls = () => {
+            const zoomInButton = document.querySelector('.ol-zoom-in');
+            const zoomOutButton = document.querySelector('.ol-zoom-out');
+            
+            if (!zoomInButton || !zoomOutButton) {
+                setTimeout(checkControls, 100);
+                return;
+            }
+            
+            const buttons = [
+                document.getElementById('mylocation-button'),
+                document.getElementById('home-button'),
+                document.getElementById('addLayer-button'),
+                document.getElementById('print-button')
+            ];
+            
+            const buttonWidth = (zoomOutButton.getBoundingClientRect().width) + 'px';
+            const buttonHeight = (zoomOutButton.getBoundingClientRect().height) + 'px';
+            let previousBottom = zoomOutButton.getBoundingClientRect().bottom;
+            
+            buttons.forEach(button => {
+                if (button) {
+                    button.style.width = buttonWidth;
+                    button.style.height = buttonHeight;
+                    button.style.top = (previousBottom + 2) + 'px';
+                    previousBottom = button.getBoundingClientRect().bottom;
+                }
+            });
+        };
 
-        const buttons = [
-            document.getElementById('mylocation-button'),
-            document.getElementById('home-button'),
-            document.getElementById('addLayer-button'),
-			document.getElementById('print-button') 
-        ];
-
-        const buttonWidth = (zoomOutButton.getBoundingClientRect().width * 0.8) + 'px';
-        const buttonHeight = (zoomOutButton.getBoundingClientRect().height * 0.8) + 'px';
-
-        let previousBottom = zoomOutButton.getBoundingClientRect().bottom;
-
-        buttons.forEach(button => {
-			if(button){
-				button.style.width = buttonWidth;
-				button.style.height = buttonHeight;
-				button.style.top = (previousBottom + 1) + 'px';
-				previousBottom = button.getBoundingClientRect().bottom;
-			}
-        });
+        checkControls();
     }
-	
-	
 }
 
-
-// Initialize expandable lists
+// Update initialization
 document.addEventListener('DOMContentLoaded', () => {
     const mapManager = new MapManager();
     const uiManager = new UIManager(mapManager);
-    setTimeout(() => uiManager.adjustButtonPositions(), 100);
+    uiManager.adjustButtonPositions();
     mapManager.createPopupInfo();
     mapManager.createExpandableLists();
 });
