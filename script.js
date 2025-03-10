@@ -28,8 +28,8 @@ class MapManager {
 	
 	initializeComponents() {
         this.categories = {
-            'Land & Housing': 'Data_JSON/Land%20%26%20Housing',
-            'Conservation': 'Data_JSON/Conservation',
+            'Land & Housing': 'Data_GML/土地房屋%Land%20%26%20Housing',
+            'Conservation': 'Data_GML/保育%Conservation',
             'Planning Data from HK Government': 'Data_JSON/Planning%20data%20from%20HK%20Government'
         };
         this.initializeSearchTool();
