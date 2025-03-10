@@ -1,0 +1,4326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>納米map</name>
+    <Style id="icon-1899-006064-normal">
+      <IconStyle>
+        <color>ff646000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-006064-highlight">
+      <IconStyle>
+        <color>ff646000</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-006064">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-006064-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-006064-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-01579B-normal">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-01579B-highlight">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-01579B">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-01579B-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-01579B-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-097138-normal">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-097138-highlight">
+      <IconStyle>
+        <color>ff387109</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-097138">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-097138-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-097138-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-1A237E-normal">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-1A237E-highlight">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-1A237E">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-1A237E-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-1A237E-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-558B2F-normal">
+      <IconStyle>
+        <color>ff2f8b55</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-558B2F-highlight">
+      <IconStyle>
+        <color>ff2f8b55</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-558B2F">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-558B2F-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-558B2F-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-673AB7-normal">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-673AB7-highlight">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-673AB7">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-673AB7-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-673AB7-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-817717-normal">
+      <IconStyle>
+        <color>ff177781</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-817717-highlight">
+      <IconStyle>
+        <color>ff177781</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-817717">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-817717-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-817717-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-880E4F-normal">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-880E4F-highlight">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-880E4F">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-880E4F-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-880E4F-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-C2185B-normal">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-C2185B-highlight">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-C2185B">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-C2185B-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-C2185B-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-E65100-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-E65100-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-E65100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-E65100-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-E65100-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FBC02D-normal">
+      <IconStyle>
+        <color>ff2dc0fb</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FBC02D-highlight">
+      <IconStyle>
+        <color>ff2dc0fb</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FBC02D">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FBC02D-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FBC02D-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FF5252-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FF5252-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>九龍建業</name>
+      <description><![CDATA[original address: 福澤街18－20號<br>returned address: 18 Fuk Chak St, Tai Kok Tsui, Hong Kong<br>latitude: 22.32038<br>longitude: 114.1613<br>項目名稱: 奧城‧西岸<br>地盤地址: 福澤街18－20號<br>地區: 油尖旺<br>落成年份: 2016<br>納米樓單位數目: 2]]></description>
+      <styleUrl>#icon-1899-880E4F</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>福澤街18－20號</value>
+        </Data>
+        <Data name="returned address">
+          <value>18 Fuk Chak St, Tai Kok Tsui, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.32038</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1613</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>奧城‧西岸</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>福澤街18－20號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2016</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>2.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1613,22.32038,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>九龍建業</name>
+      <description><![CDATA[original address: 薄扶林道 63號<br>returned address: 63 Pokfulam Road, 63 Pok Fu Lam Rd, Sai Wan, Hong Kong<br>latitude: 22.28533<br>longitude: 114.138<br>項目名稱: 63POKFULAM<br>地盤地址: 薄扶林道 63號<br>地區: 中西區<br>落成年份: 樓花<br>納米樓單位數目: 48]]></description>
+      <styleUrl>#icon-1899-880E4F</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>薄扶林道 63號</value>
+        </Data>
+        <Data name="returned address">
+          <value>63 Pokfulam Road, 63 Pok Fu Lam Rd, Sai Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.28533</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.138</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>63POKFULAM</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>薄扶林道 63號</value>
+        </Data>
+        <Data name="地區">
+          <value>中西區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>48.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.138,22.28533,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>九龍建業</name>
+      <description><![CDATA[original address: 登豐街1號<br>returned address: 1-11 Tang Fung Street, 1-11 Tang Fung St, Tin Wan, Hong Kong<br>latitude: 22.2494<br>longitude: 114.1496<br>項目名稱: 登峰．南岸<br>地盤地址: 登豐街1號<br>地區: 南區<br>落成年份: 2016<br>納米樓單位數目: 100]]></description>
+      <styleUrl>#icon-1899-880E4F</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>登豐街1號</value>
+        </Data>
+        <Data name="returned address">
+          <value>1-11 Tang Fung Street, 1-11 Tang Fung St, Tin Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2494</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1496</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>登峰．南岸</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>登豐街1號</value>
+        </Data>
+        <Data name="地區">
+          <value>南區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2016</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>100.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1496,22.2494,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>九龍建業</name>
+      <description><![CDATA[original address: 鯉魚門徑1號<br>returned address: 1 Lei Yue Mun Path, Yau Tong, Hong Kong<br>latitude: 22.29272<br>longitude: 114.2385<br>項目名稱: 海傲灣<br>地盤地址: 鯉魚門徑1號<br>地區: 觀塘<br>落成年份: 2019<br>納米樓單位數目: 104]]></description>
+      <styleUrl>#icon-1899-880E4F</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>鯉魚門徑1號</value>
+        </Data>
+        <Data name="returned address">
+          <value>1 Lei Yue Mun Path, Yau Tong, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.29272</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2385</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>海傲灣</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>鯉魚門徑1號</value>
+        </Data>
+        <Data name="地區">
+          <value>觀塘</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>104.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2385,22.29272,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>九龍建業</name>
+      <description><![CDATA[original address: 崇安街2號<br>returned address: 2 Sung On St, Hung Hom, Hong Kong<br>latitude: 22.3128769<br>longitude: 114.1893655<br>項目名稱: 環海．東岸<br>地盤地址: 崇安街2號<br>地區: 九龍城<br>落成年份: 2018<br>納米樓單位數目: 478]]></description>
+      <styleUrl>#icon-1899-880E4F</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>崇安街2號</value>
+        </Data>
+        <Data name="returned address">
+          <value>2 Sung On St, Hung Hom, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3128769</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1893655</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>環海．東岸</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>崇安街2號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>478.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1893655,22.3128769,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>中國數碼世界</name>
+      <description><![CDATA[original address: 業旺路101號<br>returned address: 101 Yip Wong Rd, Tuen Mun, Hong Kong<br>latitude: 22.3864828<br>longitude: 113.9689016<br>項目名稱: 弦海<br>地盤地址: 業旺路101號<br>地區: 屯門<br>落成年份: 樓花<br>納米樓單位數目: 233]]></description>
+      <styleUrl>#icon-1899-A52714</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>業旺路101號</value>
+        </Data>
+        <Data name="returned address">
+          <value>101 Yip Wong Rd, Tuen Mun, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3864828</value>
+        </Data>
+        <Data name="longitude">
+          <value>113.9689016</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>弦海</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>業旺路101號</value>
+        </Data>
+        <Data name="地區">
+          <value>屯門</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>233.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          113.9689016,22.3864828,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>市建局</name>
+      <description><![CDATA[original address: 九龍城道6-8號，浙江街44號<br>returned address: Hong Kong, To Kwa Wan, Kowloon City Rd, 44號九龍城道6、8號及浙江街<br>latitude: 22.31565<br>longitude: 114.1882<br>項目名稱: 津匯<br>地盤地址: 九龍城道6-8號，浙江街44號<br>地區: 九龍城<br>落成年份: 2017<br>納米樓單位數目: 17]]></description>
+      <styleUrl>#icon-1899-E65100</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>九龍城道6-8號，浙江街44號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Hong Kong, To Kwa Wan, Kowloon City Rd, 44號九龍城道6、8號及浙江街</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.31565</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1882</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>津匯</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>九龍城道6-8號，浙江街44號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2017</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>17.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1882,22.31565,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>市建局</name>
+      <description><![CDATA[original address: 福全街33-39號<br>returned address: 33 Fuk Tsun St, Tai Kok Tsui, Hong Kong<br>latitude: 22.3212588<br>longitude: 114.163962<br>項目名稱: 奧朗‧御峰<br>地盤地址: 福全街33-39號<br>地區: 油尖旺<br>落成年份: 2014<br>納米樓單位數目: 36]]></description>
+      <styleUrl>#icon-1899-E65100</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>福全街33-39號</value>
+        </Data>
+        <Data name="returned address">
+          <value>33 Fuk Tsun St, Tai Kok Tsui, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3212588</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.163962</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>奧朗‧御峰</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>福全街33-39號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2014</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>36.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.163962,22.3212588,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>市建局</name>
+      <description><![CDATA[original address: 北帝街123號<br>returned address: 123 Pak Tai St, Ma Tau Chung, Hong Kong<br>latitude: 22.32309<br>longitude: 114.1892<br>項目名稱: 喜點<br>地盤地址: 北帝街123號<br>地區: 九龍城<br>落成年份: 2015<br>納米樓單位數目: 64]]></description>
+      <styleUrl>#icon-1899-E65100</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>北帝街123號</value>
+        </Data>
+        <Data name="returned address">
+          <value>123 Pak Tai St, Ma Tau Chung, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.32309</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1892</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>喜點</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>北帝街123號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2015</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>64.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1892,22.32309,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>市建局</name>
+      <description><![CDATA[original address: 必嘉圍8號<br>returned address: Baker Residences, 8 Baker Ct, Hung Hom, Hong Kong<br>latitude: 22.30668<br>longitude: 114.1836<br>項目名稱: 御悅<br>地盤地址: 必嘉圍8號<br>地區: 九龍城<br>落成年份: 2011<br>納米樓單位數目: 68]]></description>
+      <styleUrl>#icon-1899-E65100</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>必嘉圍8號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Baker Residences, 8 Baker Ct, Hung Hom, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.30668</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1836</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>御悅</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>必嘉圍8號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2011</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>68.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1836,22.30668,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>永泰地產</name>
+      <description><![CDATA[original address: 掃管笏路108號<br>returned address: 108 S Kwun Wat Rd, So Kwun Wat, Hong Kong<br>latitude: 22.3720522<br>longitude: 114.0030465<br>項目名稱: OMAOMA<br>地盤地址: 掃管笏路108號<br>地區: 屯門<br>落成年份: 樓花<br>納米樓單位數目: 1]]></description>
+      <styleUrl>#icon-1899-FFD600</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>掃管笏路108號</value>
+        </Data>
+        <Data name="returned address">
+          <value>108 S Kwun Wat Rd, So Kwun Wat, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3720522</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.0030465</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>OMAOMA</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>掃管笏路108號</value>
+        </Data>
+        <Data name="地區">
+          <value>屯門</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.0030465,22.3720522,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>永泰地產</name>
+      <description><![CDATA[original address: 大欖青山公路大欖段168號<br>returned address: 168 Castle Peak Road (Tai Lam), Tai Lam, Hong Kong<br>latitude: 22.36843<br>longitude: 114.0002<br>項目名稱: THECARMEL<br>地盤地址: 大欖青山公路大欖段168號<br>地區: 屯門<br>落成年份: 樓花<br>納米樓單位數目: 1]]></description>
+      <styleUrl>#icon-1899-FFD600</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>大欖青山公路大欖段168號</value>
+        </Data>
+        <Data name="returned address">
+          <value>168 Castle Peak Road (Tai Lam), Tai Lam, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.36843</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.0002</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>THECARMEL</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>大欖青山公路大欖段168號</value>
+        </Data>
+        <Data name="地區">
+          <value>屯門</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.0002,22.36843,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>永義集團</name>
+      <description><![CDATA[original address: 喇沙利道6號<br>returned address: 6 La Salle Rd, Kowloon Tsai, Hong Kong<br>latitude: 22.3261835<br>longitude: 114.1821295<br>項目名稱: 晟林<br>地盤地址: 喇沙利道6號<br>地區: 九龍城<br>落成年份: 2018<br>納米樓單位數目: 1]]></description>
+      <styleUrl>#icon-1899-FFD600</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>喇沙利道6號</value>
+        </Data>
+        <Data name="returned address">
+          <value>6 La Salle Rd, Kowloon Tsai, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3261835</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1821295</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>晟林</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>喇沙利道6號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1821295,22.3261835,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>永義集團</name>
+      <description><![CDATA[original address: 勝利道1號<br>returned address: One Victory, 1 Victory Ave, Ho Man Tin, Hong Kong<br>latitude: 22.31847<br>longitude: 114.1747<br>項目名稱: 勝利道1號<br>地盤地址: 勝利道1號<br>地區: 九龍城<br>落成年份: 2011<br>納米樓單位數目: 20]]></description>
+      <styleUrl>#icon-1899-FFD600</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>勝利道1號</value>
+        </Data>
+        <Data name="returned address">
+          <value>One Victory, 1 Victory Ave, Ho Man Tin, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.31847</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1747</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>勝利道1號</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>勝利道1號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2011</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>20.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1747,22.31847,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>有利集團</name>
+      <description><![CDATA[original address: 浙江街16-18號<br>returned address: 16 Chi Kiang St, To Kwa Wan, Hong Kong<br>latitude: 22.314728<br>longitude: 114.1901962<br>項目名稱: 利．港灣18<br>地盤地址: 浙江街16-18號<br>地區: 九龍城<br>落成年份: 2015<br>納米樓單位數目: 14]]></description>
+      <styleUrl>#icon-1899-817717</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>浙江街16-18號</value>
+        </Data>
+        <Data name="returned address">
+          <value>16 Chi Kiang St, To Kwa Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.314728</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1901962</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>利．港灣18</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>浙江街16-18號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2015</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>14.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1901962,22.314728,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>百利保</name>
+      <description><![CDATA[original address: 丹桂村路65號<br>returned address: 65 Tan Kwai Tsuen Rd, Hung Shui Kiu, Hong Kong<br>latitude: 22.4294387<br>longitude: 113.9985057<br>項目名稱: 尚築<br>地盤地址: 丹桂村路65號<br>地區: 元朗<br>落成年份: 2015<br>納米樓單位數目: 126]]></description>
+      <styleUrl>#icon-1899-558B2F</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>丹桂村路65號</value>
+        </Data>
+        <Data name="returned address">
+          <value>65 Tan Kwai Tsuen Rd, Hung Shui Kiu, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.4294387</value>
+        </Data>
+        <Data name="longitude">
+          <value>113.9985057</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>尚築</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>丹桂村路65號</value>
+        </Data>
+        <Data name="地區">
+          <value>元朗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2015</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>126.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          113.9985057,22.4294387,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>宏安</name>
+      <description><![CDATA[original address: 營盤街142號<br>returned address: 142-146 Camp Street, 142-146 Camp St, Lei Cheng Uk, Hong Kong<br>latitude: 22.33522<br>longitude: 114.1612<br>項目名稱: 薈悅<br>地盤地址: 營盤街142號<br>地區: 深水埗<br>落成年份: 2015<br>納米樓單位數目: 1]]></description>
+      <styleUrl>#icon-1899-097138</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>營盤街142號</value>
+        </Data>
+        <Data name="returned address">
+          <value>142-146 Camp Street, 142-146 Camp St, Lei Cheng Uk, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.33522</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1612</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>薈悅</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>營盤街142號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2015</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1612,22.33522,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>宏安</name>
+      <description><![CDATA[original address: 桂香街1號<br>returned address: 1 Kwai Heung St, Sai Wan, Hong Kong<br>latitude: 22.2873396<br>longitude: 114.1430429<br>項目名稱: 薈臻<br>地盤地址: 桂香街1號<br>地區: 中西區<br>落成年份: 2014<br>納米樓單位數目: 46]]></description>
+      <styleUrl>#icon-1899-097138</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>桂香街1號</value>
+        </Data>
+        <Data name="returned address">
+          <value>1 Kwai Heung St, Sai Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2873396</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1430429</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>薈臻</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>桂香街1號</value>
+        </Data>
+        <Data name="地區">
+          <value>中西區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2014</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>46.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1430429,22.2873396,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>宏安</name>
+      <description><![CDATA[original address: 大埔公路大圍段7838號<br>returned address: Tai Po Road (Tai Wai), Hong Kong<br>latitude: 22.3720388<br>longitude: 114.1729151<br>項目名稱: 薈蕎<br>地盤地址: 大埔公路大圍段7838號<br>地區: 沙田<br>落成年份: 2018<br>納米樓單位數目: 95]]></description>
+      <styleUrl>#icon-1899-097138</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>大埔公路大圍段7838號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Tai Po Road (Tai Wai), Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3720388</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1729151</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>薈蕎</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>大埔公路大圍段7838號</value>
+        </Data>
+        <Data name="地區">
+          <value>沙田</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>95.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1729151,22.3720388,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>宏安</name>
+      <description><![CDATA[original address: 北拱街 8 號<br>returned address: 8 Pak Kung St, Hung Hom, Hong Kong<br>latitude: 22.31135<br>longitude: 114.1867<br>項目名稱: 薈點<br>地盤地址: 北拱街 8 號<br>地區: 九龍城<br>落成年份: 2013<br>納米樓單位數目: 101]]></description>
+      <styleUrl>#icon-1899-097138</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>北拱街 8 號</value>
+        </Data>
+        <Data name="returned address">
+          <value>8 Pak Kung St, Hung Hom, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.31135</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1867</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>薈點</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>北拱街 8 號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2013</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>101.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1867,22.31135,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>宏安</name>
+      <description><![CDATA[original address: 恆光街15號<br>returned address: 15 Hang Kwong St, Ma On Shan, Hong Kong<br>latitude: 22.42228<br>longitude: 114.2285<br>項目名稱: 薈晴<br>地盤地址: 恆光街15號<br>地區: 沙田<br>落成年份: 2017<br>納米樓單位數目: 196]]></description>
+      <styleUrl>#icon-1899-097138</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>恆光街15號</value>
+        </Data>
+        <Data name="returned address">
+          <value>15 Hang Kwong St, Ma On Shan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.42228</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2285</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>薈晴</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>恆光街15號</value>
+        </Data>
+        <Data name="地區">
+          <value>沙田</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2017</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>196.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2285,22.42228,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>宏安</name>
+      <description><![CDATA[original address: 馬錦街沙田市地段第599號<br>returned address: Ma Kam St, Ma On Shan, Hong Kong<br>latitude: 22.4250391<br>longitude: 114.2344486<br>項目名稱: 薈朗<br>地盤地址: 馬錦街沙田市地段第599號<br>地區: 沙田<br>落成年份: 2017<br>納米樓單位數目: 293]]></description>
+      <styleUrl>#icon-1899-097138</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>馬錦街沙田市地段第599號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Ma Kam St, Ma On Shan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.4250391</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2344486</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>薈朗</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>馬錦街沙田市地段第599號</value>
+        </Data>
+        <Data name="地區">
+          <value>沙田</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2017</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>293.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2344486,22.4250391,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>宏基資本</name>
+      <description><![CDATA[original address: 官涌街7號<br>returned address: 7 Kwun Chung St, Jordan, Hong Kong<br>latitude: 22.3034992<br>longitude: 114.1685664<br>項目名稱: 匯萃<br>地盤地址: 官涌街7號<br>地區: 油尖旺<br>落成年份: 2016<br>納米樓單位數目: 66]]></description>
+      <styleUrl>#icon-1899-006064</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>官涌街7號</value>
+        </Data>
+        <Data name="returned address">
+          <value>7 Kwun Chung St, Jordan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3034992</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1685664</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>匯萃</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>官涌街7號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2016</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>66.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1685664,22.3034992,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>協成行</name>
+      <description><![CDATA[original address: 筲箕灣東大街23號<br>returned address: 23 Shau Kei Wan Main St E, Shau Kei Wan, Hong Kong<br>latitude: 22.28056<br>longitude: 114.2309<br>項目名稱: 遠晴<br>地盤地址: 筲箕灣東大街23號<br>地區: 東區<br>落成年份: 2014<br>納米樓單位數目: 2]]></description>
+      <styleUrl>#icon-1899-01579B</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>筲箕灣東大街23號</value>
+        </Data>
+        <Data name="returned address">
+          <value>23 Shau Kei Wan Main St E, Shau Kei Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.28056</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2309</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>遠晴</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>筲箕灣東大街23號</value>
+        </Data>
+        <Data name="地區">
+          <value>東區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2014</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>2.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2309,22.28056,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>林昍家族</name>
+      <description><![CDATA[original address: 筲箕灣道 180號<br>returned address: 180 Shau Kei Wan Road, 180 Shau Kei Wan Rd, Shau Kei Wan, Hong Kong<br>latitude: 22.280673<br>longitude: 114.2232215<br>項目名稱: OneEighty<br>地盤地址: 筲箕灣道 180號<br>地區: 東區<br>落成年份: 樓花<br>納米樓單位數目: 39]]></description>
+      <styleUrl>#icon-1899-1A237E</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>筲箕灣道 180號</value>
+        </Data>
+        <Data name="returned address">
+          <value>180 Shau Kei Wan Road, 180 Shau Kei Wan Rd, Shau Kei Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.280673</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2232215</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>OneEighty</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>筲箕灣道 180號</value>
+        </Data>
+        <Data name="地區">
+          <value>東區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>39.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2232215,22.280673,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>金朝陽集團</name>
+      <description><![CDATA[original address: 華倫街23號<br>returned address: Warrenwoods, 23 Warren St, Tai Hang, Hong Kong<br>latitude: 22.27816<br>longitude: 114.1916<br>項目名稱: 尚巒<br>地盤地址: 華倫街23號<br>地區: 灣仔<br>落成年份: 2012<br>納米樓單位數目: 2]]></description>
+      <styleUrl>#icon-1899-673AB7</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>華倫街23號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Warrenwoods, 23 Warren St, Tai Hang, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.27816</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1916</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>尚巒</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>華倫街23號</value>
+        </Data>
+        <Data name="地區">
+          <value>灣仔</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2012</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>2.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1916,22.27816,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>長實</name>
+      <description><![CDATA[original address: 鳳園路9號<br>returned address: Mont Vert Clubhouse, 9 Fung Yuen Rd, Tai Po, Hong Kong<br>latitude: 22.46454<br>longitude: 114.179<br>項目名稱: 嵐山II<br>地盤地址: 鳳園路9號<br>地區: 大埔<br>落成年份: 2015<br>納米樓單位數目: 47]]></description>
+      <styleUrl>#icon-1899-C2185B</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>鳳園路9號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Mont Vert Clubhouse, 9 Fung Yuen Rd, Tai Po, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.46454</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.179</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>嵐山II</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>鳳園路9號</value>
+        </Data>
+        <Data name="地區">
+          <value>大埔</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2015</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>47.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.179,22.46454,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>長實</name>
+      <description><![CDATA[original address: 鳳園路9號<br>returned address: Mont Vert Clubhouse, 9 Fung Yuen Rd, Tai Po, Hong Kong<br>latitude: 22.46454<br>longitude: 114.179<br>項目名稱: 嵐山I<br>地盤地址: 鳳園路9號<br>地區: 大埔<br>落成年份: 2014<br>納米樓單位數目: 196]]></description>
+      <styleUrl>#icon-1899-C2185B</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>鳳園路9號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Mont Vert Clubhouse, 9 Fung Yuen Rd, Tai Po, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.46454</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.179</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>嵐山I</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>鳳園路9號</value>
+        </Data>
+        <Data name="地區">
+          <value>大埔</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2014</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>196.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.179,22.46454,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>俊和</name>
+      <description><![CDATA[original address: 青棉徑2號<br>returned address: 2 Tsing Min Path, Tuen Mun, Hong Kong<br>latitude: 22.4041353<br>longitude: 113.9785778<br>項目名稱: 菁雋<br>地盤地址: 青棉徑2號<br>地區: 屯門<br>落成年份: 2019<br>納米樓單位數目: 313]]></description>
+      <styleUrl>#icon-1899-FF5252</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>青棉徑2號</value>
+        </Data>
+        <Data name="returned address">
+          <value>2 Tsing Min Path, Tuen Mun, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.4041353</value>
+        </Data>
+        <Data name="longitude">
+          <value>113.9785778</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>菁雋</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>青棉徑2號</value>
+        </Data>
+        <Data name="地區">
+          <value>屯門</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>313.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          113.9785778,22.4041353,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>保利置業</name>
+      <description><![CDATA[original address: 沐寧街9號<br>returned address: 9 Muk Ning St, Kai Tak, Hong Kong<br>latitude: 22.32793<br>longitude: 114.2007<br>項目名稱: 龍譽<br>地盤地址: 沐寧街9號<br>地區: 九龍城<br>落成年份: 2018<br>納米樓單位數目: 65]]></description>
+      <styleUrl>#icon-1899-FBC02D</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>沐寧街9號</value>
+        </Data>
+        <Data name="returned address">
+          <value>9 Muk Ning St, Kai Tak, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.32793</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2007</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>龍譽</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>沐寧街9號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>65.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2007,22.32793,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>信和</name>
+      <description><![CDATA[original address: 和豐街28號<br>returned address: 28 Wo Fung St, Fanling, Hong Kong<br>latitude: 22.4984617<br>longitude: 114.1428621<br>項目名稱: 囍逸<br>地盤地址: 和豐街28號<br>地區: 北區<br>落成年份: 2018<br>納米樓單位數目: 34]]></description>
+      <styleUrl>#icon-1899-FFEA00</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>和豐街28號</value>
+        </Data>
+        <Data name="returned address">
+          <value>28 Wo Fung St, Fanling, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.4984617</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1428621</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>囍逸</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>和豐街28號</value>
+        </Data>
+        <Data name="地區">
+          <value>北區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>34.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1428621,22.4984617,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>信和</name>
+      <description><![CDATA[original address: 侯王道12號<br>returned address: 12-18 Hau Wong Rd, Kowloon City, Hong Kong<br>latitude: 22.32838<br>longitude: 114.1888<br>項目名稱: TheAvery<br>地盤地址: 侯王道12號<br>地區: 九龍城<br>落成年份: 2014<br>納米樓單位數目: 39]]></description>
+      <styleUrl>#icon-1899-FFEA00</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>侯王道12號</value>
+        </Data>
+        <Data name="returned address">
+          <value>12-18 Hau Wong Rd, Kowloon City, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.32838</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1888</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>TheAvery</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>侯王道12號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2014</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>39.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1888,22.32838,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>南豐</name>
+      <description><![CDATA[original address: 良德街3號<br>returned address: 3 Leung Tak St, Tuen Mun, Hong Kong<br>latitude: 22.409021<br>longitude: 113.9681399<br>項目名稱: 豐連<br>地盤地址: 良德街3號<br>地區: 屯門<br>落成年份: 2018<br>納米樓單位數目: 24]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>良德街3號</value>
+        </Data>
+        <Data name="returned address">
+          <value>3 Leung Tak St, Tuen Mun, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.409021</value>
+        </Data>
+        <Data name="longitude">
+          <value>113.9681399</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>豐連</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>良德街3號</value>
+        </Data>
+        <Data name="地區">
+          <value>屯門</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>24.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          113.9681399,22.409021,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>南豐</name>
+      <description><![CDATA[original address: 興芳路178號<br>returned address: Government Quarter, 178 Hing Fong Rd, Kwai Chung, Hong Kong<br>latitude: 22.3598977<br>longitude: 114.1282349<br>項目名稱: 豐寓<br>地盤地址: 興芳路178號<br>地區: 葵青<br>落成年份: 2018<br>納米樓單位數目: 69]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>興芳路178號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Government Quarter, 178 Hing Fong Rd, Kwai Chung, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3598977</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1282349</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>豐寓</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>興芳路178號</value>
+        </Data>
+        <Data name="地區">
+          <value>葵青</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>69.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1282349,22.3598977,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>建灝</name>
+      <description><![CDATA[original address: 沐寧街1號<br>returned address: 8 Muk Ning St, Kai Tak, Hong Kong<br>latitude: 22.3287723<br>longitude: 114.2018725<br>項目名稱: 天寰<br>地盤地址: 沐寧街1號<br>地區: 九龍城<br>落成年份: 2018<br>納米樓單位數目: 1]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>沐寧街1號</value>
+        </Data>
+        <Data name="returned address">
+          <value>8 Muk Ning St, Kai Tak, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3287723</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2018725</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>天寰</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>沐寧街1號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2018725,22.3287723,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恆大</name>
+      <description><![CDATA[original address: 東京街 29號<br>returned address: 29 Tonkin St, Cheung Sha Wan, Hong Kong<br>latitude: 22.33601<br>longitude: 114.158<br>項目名稱: 恆大‧睿峰<br>地盤地址: 東京街 29號<br>地區: 深水埗<br>落成年份: 樓花<br>納米樓單位數目: 38]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>東京街 29號</value>
+        </Data>
+        <Data name="returned address">
+          <value>29 Tonkin St, Cheung Sha Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.33601</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.158</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>恆大‧睿峰</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>東京街 29號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>38.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.158,22.33601,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 廣東道600號<br>returned address: Jade Suites, 600 Canton Rd, Yau Ma Tei, Hong Kong<br>latitude: 22.3081<br>longitude: 114.1687<br>項目名稱: 翠匯軒<br>地盤地址: 廣東道600號<br>地區: 油尖旺<br>落成年份: 2010<br>納米樓單位數目: 1]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>廣東道600號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Jade Suites, 600 Canton Rd, Yau Ma Tei, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3081</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1687</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>翠匯軒</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>廣東道600號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2010</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1687,22.3081,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 大埔道 188號<br>returned address: 188 Tai Po Rd, Sham Shui Po, Hong Kong<br>latitude: 22.3317399<br>longitude: 114.1649261<br>項目名稱: 曉尚<br>地盤地址: 大埔道 188號<br>地區: 深水埗<br>落成年份: 2014<br>納米樓單位數目: 1]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>大埔道 188號</value>
+        </Data>
+        <Data name="returned address">
+          <value>188 Tai Po Rd, Sham Shui Po, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3317399</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1649261</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>曉尚</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>大埔道 188號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2014</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1649261,22.3317399,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 新界元朗十八鄉路33號<br>returned address: 33 Shap Pat Heung Rd, Yuen Long, Hong Kong<br>latitude: 22.43811<br>longitude: 114.0308<br>項目名稱: 尚悅．方<br>地盤地址: 新界元朗十八鄉路33號<br>地區: 元朗<br>落成年份: 2019<br>納米樓單位數目: 23]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>新界元朗十八鄉路33號</value>
+        </Data>
+        <Data name="returned address">
+          <value>33 Shap Pat Heung Rd, Yuen Long, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.43811</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.0308</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>尚悅．方</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>新界元朗十八鄉路33號</value>
+        </Data>
+        <Data name="地區">
+          <value>元朗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>23.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.0308,22.43811,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 羅便臣道 62C號<br>returned address: 62c Robinson Road, 62C Robinson Rd, Mid-Levels, Hong Kong<br>latitude: 22.2810066<br>longitude: 114.1500262<br>項目名稱: TheRichmond<br>地盤地址: 羅便臣道 62C號<br>地區: 中西區<br>落成年份: 樓花<br>納米樓單位數目: 40]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>羅便臣道 62C號</value>
+        </Data>
+        <Data name="returned address">
+          <value>62c Robinson Road, 62C Robinson Rd, Mid-Levels, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2810066</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1500262</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>TheRichmond</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>羅便臣道 62C號</value>
+        </Data>
+        <Data name="地區">
+          <value>中西區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>40.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1500262,22.2810066,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 賈炳達道33號<br>returned address: 33 Carpenter Rd, Kowloon City, Hong Kong<br>latitude: 22.33036<br>longitude: 114.1926<br>項目名稱: 曉薈<br>地盤地址: 賈炳達道33號<br>地區: 九龍城<br>落成年份: 2014<br>納米樓單位數目: 50]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>賈炳達道33號</value>
+        </Data>
+        <Data name="returned address">
+          <value>33 Carpenter Rd, Kowloon City, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.33036</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1926</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>曉薈</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>賈炳達道33號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2014</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>50.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1926,22.33036,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 木星街 23號<br>returned address: 23 Jupiter Street, 23 Jupiter St, Causeway Bay, Hong Kong<br>latitude: 22.2861826<br>longitude: 114.1919571<br>項目名稱: 維峯．浚匯<br>地盤地址: 木星街 23號<br>地區: 東區<br>落成年份: 樓花<br>納米樓單位數目: 53]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>木星街 23號</value>
+        </Data>
+        <Data name="returned address">
+          <value>23 Jupiter Street, 23 Jupiter St, Causeway Bay, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2861826</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1919571</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>維峯．浚匯</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>木星街 23號</value>
+        </Data>
+        <Data name="地區">
+          <value>東區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>53.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1919571,22.2861826,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 通州街208號<br>returned address: 208 Tung Chau St, Sham Shui Po, Hong Kong<br>latitude: 22.3267<br>longitude: 114.1602<br>項目名稱: 海柏匯<br>地盤地址: 通州街208號<br>地區: 深水埗<br>落成年份: 2018<br>納米樓單位數目: 70]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>通州街208號</value>
+        </Data>
+        <Data name="returned address">
+          <value>208 Tung Chau St, Sham Shui Po, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3267</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1602</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>海柏匯</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>通州街208號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>70.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1602,22.3267,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 元州街 342-356號<br>returned address: 342-356 Un Chau Street, 342-356 Un Chau St, Cheung Sha Wan, Hong Kong<br>latitude: 22.33787<br>longitude: 114.1564<br>項目名稱: 家壹<br>地盤地址: 元州街 342-356號<br>地區: 深水埗<br>落成年份: 樓花<br>納米樓單位數目: 79]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>元州街 342-356號</value>
+        </Data>
+        <Data name="returned address">
+          <value>342-356 Un Chau Street, 342-356 Un Chau St, Cheung Sha Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.33787</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1564</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>家壹</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>元州街 342-356號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>79.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1564,22.33787,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 福華街571號<br>returned address: 571 Fuk Wa St, Lai Chi Kok, Hong Kong<br>latitude: 22.33878<br>longitude: 114.1528<br>項目名稱: 曉悅<br>地盤地址: 福華街571號<br>地區: 深水埗<br>落成年份: 2016<br>納米樓單位數目: 92]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>福華街571號</value>
+        </Data>
+        <Data name="returned address">
+          <value>571 Fuk Wa St, Lai Chi Kok, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.33878</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1528</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>曉悅</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>福華街571號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2016</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>92.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1528,22.33878,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 馬頭圍道196-202號<br>returned address: 196 Ma Tau Wai Rd, Lo Lung Hang, Hong Kong<br>latitude: 22.31307<br>longitude: 114.1874<br>項目名稱: 傲形<br>地盤地址: 馬頭圍道196-202號<br>地區: 九龍城<br>落成年份: 2017<br>納米樓單位數目: 96]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>馬頭圍道196-202號</value>
+        </Data>
+        <Data name="returned address">
+          <value>196 Ma Tau Wai Rd, Lo Lung Hang, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.31307</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1874</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>傲形</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>馬頭圍道196-202號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2017</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>96.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1874,22.31307,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 田灣街12號<br>returned address: 12 Tin Wan St, Tin Wan, Hong Kong<br>latitude: 22.24951<br>longitude: 114.1493<br>項目名稱: 南津•迎岸<br>地盤地址: 田灣街12號<br>地區: 南區<br>落成年份: 樓花<br>納米樓單位數目: 119]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>田灣街12號</value>
+        </Data>
+        <Data name="returned address">
+          <value>12 Tin Wan St, Tin Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.24951</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1493</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>南津•迎岸</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>田灣街12號</value>
+        </Data>
+        <Data name="地區">
+          <value>南區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>119.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1493,22.24951,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 月園街1號<br>returned address: 1 Yuet Yuen St, North Point, Hong Kong<br>latitude: 22.2914<br>longitude: 114.1961<br>項目名稱: 尚譽<br>地盤地址: 月園街1號<br>地區: 東區<br>落成年份: 2018<br>納米樓單位數目: 127]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>月園街1號</value>
+        </Data>
+        <Data name="returned address">
+          <value>1 Yuet Yuen St, North Point, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2914</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1961</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>尚譽</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>月園街1號</value>
+        </Data>
+        <Data name="地區">
+          <value>東區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>127.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1961,22.2914,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 勝利道7號<br>returned address: 7a Victory Ave, Ho Man Tin, Hong Kong<br>latitude: 22.3194859<br>longitude: 114.1744024<br>項目名稱: 加多利軒<br>地盤地址: 勝利道7號<br>地區: 九龍城<br>落成年份: 2018<br>納米樓單位數目: 128]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>勝利道7號</value>
+        </Data>
+        <Data name="returned address">
+          <value>7a Victory Ave, Ho Man Tin, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3194859</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1744024</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>加多利軒</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>勝利道7號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>128.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1744024,22.3194859,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 忠正街8號<br>returned address: 8 Chung Ching St, Sai Wan, Hong Kong<br>latitude: 22.2873899<br>longitude: 114.1411563<br>項目名稱: 藝里坊．1號<br>地盤地址: 忠正街8號<br>地區: 中西區<br>落成年份: 2019<br>納米樓單位數目: 144]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>忠正街8號</value>
+        </Data>
+        <Data name="returned address">
+          <value>8 Chung Ching St, Sai Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2873899</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1411563</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>藝里坊．1號</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>忠正街8號</value>
+        </Data>
+        <Data name="地區">
+          <value>中西區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>144.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1411563,22.2873899,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 英皇道856號<br>returned address: 856 King's Road, 856 King's Rd, Quarry Bay, Hong Kong<br>latitude: 22.28978<br>longitude: 114.2092<br>項目名稱: 君豪峰<br>地盤地址: 英皇道856號<br>地區: 東區<br>落成年份: 2019<br>納米樓單位數目: 151]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>英皇道856號</value>
+        </Data>
+        <Data name="returned address">
+          <value><![CDATA[856 King's Road, 856 King's Rd, Quarry Bay, Hong Kong]]></value>
+        </Data>
+        <Data name="latitude">
+          <value>22.28978</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2092</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>君豪峰</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>英皇道856號</value>
+        </Data>
+        <Data name="地區">
+          <value>東區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>151.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2092,22.28978,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 馬頭角道50號<br>returned address: 50-64 Ma Tau Kok Road, 50-64 Ma Tau Kok Rd, Ma Tau Chung, Hong Kong<br>latitude: 22.32189<br>longitude: 114.1903<br>項目名稱: 迎豐<br>地盤地址: 馬頭角道50號<br>地區: 九龍城<br>落成年份: 2017<br>納米樓單位數目: 154]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>馬頭角道50號</value>
+        </Data>
+        <Data name="returned address">
+          <value>50-64 Ma Tau Kok Road, 50-64 Ma Tau Kok Rd, Ma Tau Chung, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.32189</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1903</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>迎豐</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>馬頭角道50號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2017</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>154.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1903,22.32189,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 馬頭圍道 63號<br>returned address: 63 Ma Tau Wai Rd, Hung Hom, Hong Kong<br>latitude: 22.31212<br>longitude: 114.1879<br>項目名稱: 啟岸<br>地盤地址: 馬頭圍道 63號<br>地區: 九龍城<br>落成年份: 樓花<br>納米樓單位數目: 161]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>馬頭圍道 63號</value>
+        </Data>
+        <Data name="returned address">
+          <value>63 Ma Tau Wai Rd, Hung Hom, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.31212</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1879</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>啟岸</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>馬頭圍道 63號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>161.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1879,22.31212,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 馬寶道3號<br>returned address: 3 Marble Rd, North Point, Hong Kong<br>latitude: 22.29172<br>longitude: 114.1992<br>項目名稱: 君譽峰<br>地盤地址: 馬寶道3號<br>地區: 東區<br>落成年份: 樓花<br>納米樓單位數目: 172]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>馬寶道3號</value>
+        </Data>
+        <Data name="returned address">
+          <value>3 Marble Rd, North Point, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.29172</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1992</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>君譽峰</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>馬寶道3號</value>
+        </Data>
+        <Data name="地區">
+          <value>東區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>172.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1992,22.29172,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 成安街33號<br>returned address: 33 Shing On St, Sai Wan Ho, Hong Kong<br>latitude: 22.28142<br>longitude: 114.2209<br>項目名稱: 柏匯<br>地盤地址: 成安街33號<br>地區: 東區<br>落成年份: 2017<br>納米樓單位數目: 184]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>成安街33號</value>
+        </Data>
+        <Data name="returned address">
+          <value>33 Shing On St, Sai Wan Ho, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.28142</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2209</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>柏匯</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>成安街33號</value>
+        </Data>
+        <Data name="地區">
+          <value>東區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2017</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>184.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2209,22.28142,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 皇后大道西460號<br>returned address: 460 Queen's Rd W, Shek Tong Tsui, Hong Kong<br>latitude: 22.2856193<br>longitude: 114.1367111<br>項目名稱: 翰林峰<br>地盤地址: 皇后大道西460號<br>地區: 中西區<br>落成年份: 2019<br>納米樓單位數目: 329]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>皇后大道西460號</value>
+        </Data>
+        <Data name="returned address">
+          <value><![CDATA[460 Queen's Rd W, Shek Tong Tsui, Hong Kong]]></value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2856193</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1367111</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>翰林峰</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>皇后大道西460號</value>
+        </Data>
+        <Data name="地區">
+          <value>中西區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>329.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1367111,22.2856193,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 利得街 11 號<br>returned address: 11 Li Tak St, Tai Kok Tsui, Hong Kong<br>latitude: 22.3207457<br>longitude: 114.1614241<br>項目名稱: 利奧坊‧曉岸<br>地盤地址: 利得街 11 號<br>地區: 油尖旺<br>落成年份: 2017<br>納米樓單位數目: 324]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>利得街 11 號</value>
+        </Data>
+        <Data name="returned address">
+          <value>11 Li Tak St, Tai Kok Tsui, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3207457</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1614241</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>利奧坊‧曉岸</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>利得街 11 號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2017</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>324.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1614241,22.3207457,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>恒基</name>
+      <description><![CDATA[original address: 嘉善街 18號<br>returned address: 18 Ka Shin St, Tai Kok Tsui, Hong Kong<br>latitude: 22.32009<br>longitude: 114.1614<br>項目名稱: 利奧坊．凱岸<br>地盤地址: 嘉善街 18號<br>地區: 油尖旺<br>落成年份: 2019<br>納米樓單位數目: 370]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>嘉善街 18號</value>
+        </Data>
+        <Data name="returned address">
+          <value>18 Ka Shin St, Tai Kok Tsui, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.32009</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1614</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>利奧坊．凱岸</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>嘉善街 18號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>370.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1614,22.32009,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>派盈</name>
+      <description><![CDATA[original address: 青山道197-203號<br>returned address: 197 Castle Peak Rd, Hong Kong<br>latitude: 22.3360369<br>longitude: 114.1591759<br>項目名稱: 青薈<br>地盤地址: 青山道197-203號<br>地區: 深水埗<br>落成年份: 2016<br>納米樓單位數目: 38]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>青山道197-203號</value>
+        </Data>
+        <Data name="returned address">
+          <value>197 Castle Peak Rd, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3360369</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1591759</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>青薈</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>青山道197-203號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2016</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>38.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1591759,22.3360369,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>英皇集團</name>
+      <description><![CDATA[original address: 成安街18號<br>returned address: 18 Upper East, 18 Shing On St, Sai Wan Ho, Hong Kong<br>latitude: 22.2813<br>longitude: 114.2211<br>項目名稱: 港島‧東18<br>地盤地址: 成安街18號<br>地區: 東區<br>落成年份: 2012<br>納米樓單位數目: 7]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>成安街18號</value>
+        </Data>
+        <Data name="returned address">
+          <value>18 Upper East, 18 Shing On St, Sai Wan Ho, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2813</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2211</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>港島‧東18</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>成安街18號</value>
+        </Data>
+        <Data name="地區">
+          <value>東區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2012</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>7.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2211,22.2813,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>香港興業</name>
+      <description><![CDATA[original address: 湖安街8號<br>returned address: 8 Wu On St, Tuen Mun, Hong Kong<br>latitude: 22.3760183<br>longitude: 113.9677062<br>項目名稱: 䨇寓<br>地盤地址: 湖安街8號<br>地區: 屯門<br>落成年份: 2018<br>納米樓單位數目: 1]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>湖安街8號</value>
+        </Data>
+        <Data name="returned address">
+          <value>8 Wu On St, Tuen Mun, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3760183</value>
+        </Data>
+        <Data name="longitude">
+          <value>113.9677062</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>䨇寓</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>湖安街8號</value>
+        </Data>
+        <Data name="地區">
+          <value>屯門</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>1.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          113.9677062,22.3760183,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>高譽投資</name>
+      <description><![CDATA[original address: 美善同道78-80號<br>returned address: 78-80 Maidstone Road, 78-80 Maidstone Rd, To Kwa Wan, Hong Kong<br>latitude: 22.3178<br>longitude: 114.1868<br>項目名稱: 翰畋<br>地盤地址: 美善同道78-80號<br>地區: 九龍城<br>落成年份: 2019<br>納米樓單位數目: 2]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>美善同道78-80號</value>
+        </Data>
+        <Data name="returned address">
+          <value>78-80 Maidstone Road, 78-80 Maidstone Rd, To Kwa Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3178</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1868</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>翰畋</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>美善同道78-80號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>2.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1868,22.3178,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>莊士機構</name>
+      <description><![CDATA[original address: 蕪湖街111號<br>returned address: Wuhu Residence, 111 Wuhu St, Hung Hom, Hong Kong<br>latitude: 22.30737<br>longitude: 114.1855<br>項目名稱: 蕪湖居<br>地盤地址: 蕪湖街111號<br>地區: 九龍城<br>落成年份: 2011<br>納米樓單位數目: 98]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>蕪湖街111號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Wuhu Residence, 111 Wuhu St, Hung Hom, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.30737</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1855</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>蕪湖居</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>蕪湖街111號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2011</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>98.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1855,22.30737,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>莊士機構</name>
+      <description><![CDATA[original address: 白加士街101號<br>returned address: 101 Parkes St, Yau Ma Tei, Hong Kong<br>latitude: 22.30619<br>longitude: 114.1707<br>項目名稱: 珀軒<br>地盤地址: 白加士街101號<br>地區: 油尖旺<br>落成年份: 2015<br>納米樓單位數目: 114]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>白加士街101號</value>
+        </Data>
+        <Data name="returned address">
+          <value>101 Parkes St, Yau Ma Tei, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.30619</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1707</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>珀軒</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>白加士街101號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2015</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>114.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1707,22.30619,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>華人置地</name>
+      <description><![CDATA[original address: 南里1號<br>returned address: 1 South Lane, 1 South Ln, Sai Wan, Hong Kong<br>latitude: 22.28519<br>longitude: 114.135<br>項目名稱: 南里壹號<br>地盤地址: 南里1號<br>地區: 中西區<br>落成年份: 2016<br>納米樓單位數目: 66]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>南里1號</value>
+        </Data>
+        <Data name="returned address">
+          <value>1 South Lane, 1 South Ln, Sai Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.28519</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.135</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>南里壹號</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>南里1號</value>
+        </Data>
+        <Data name="地區">
+          <value>中西區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2016</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>66.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.135,22.28519,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>雅士圖遠東置業</name>
+      <description><![CDATA[original address: 元州街 310號<br>returned address: 310 Un Chau St, Cheung Sha Wan, Hong Kong<br>latitude: 22.33652<br>longitude: 114.1581<br>項目名稱: 悅雅<br>地盤地址: 元州街 310號<br>地區: 深水埗<br>落成年份: 2019<br>納米樓單位數目: 94]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>元州街 310號</value>
+        </Data>
+        <Data name="returned address">
+          <value>310 Un Chau St, Cheung Sha Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.33652</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1581</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>悅雅</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>元州街 310號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>94.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1581,22.33652,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>新世界</name>
+      <description><![CDATA[original address: 鄉事會路88號<br>returned address: 88 Tuen Mun Heung Sze Wui Rd, Tuen Mun, Hong Kong<br>latitude: 22.3970569<br>longitude: 113.975004<br>項目名稱: 天生樓<br>地盤地址: 鄉事會路88號<br>地區: 屯門<br>落成年份: 2018<br>納米樓單位數目: 2]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>鄉事會路88號</value>
+        </Data>
+        <Data name="returned address">
+          <value>88 Tuen Mun Heung Sze Wui Rd, Tuen Mun, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3970569</value>
+        </Data>
+        <Data name="longitude">
+          <value>113.975004</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>天生樓</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>鄉事會路88號</value>
+        </Data>
+        <Data name="地區">
+          <value>屯門</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>2.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          113.975004,22.3970569,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>新世界</name>
+      <description><![CDATA[original address: 元朗十八鄉路99號<br>returned address: 99 Shap Pat Heung Rd, Yuen Long, Hong Kong<br>latitude: 22.4381017<br>longitude: 114.0221791<br>項目名稱: 瑧頤<br>地盤地址: 元朗十八鄉路99號<br>地區: 元朗<br>落成年份: 樓花<br>納米樓單位數目: 63]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>元朗十八鄉路99號</value>
+        </Data>
+        <Data name="returned address">
+          <value>99 Shap Pat Heung Rd, Yuen Long, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.4381017</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.0221791</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>瑧頤</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>元朗十八鄉路99號</value>
+        </Data>
+        <Data name="地區">
+          <value>元朗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>63.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.0221791,22.4381017,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>新世界</name>
+      <description><![CDATA[original address: 西源里1號<br>returned address: 1 Sai Yuen Ln, Sai Wan, Hong Kong<br>latitude: 22.287339<br>longitude: 114.1418544<br>項目名稱: 瑧蓺<br>地盤地址: 西源里1號<br>地區: 中西區<br>落成年份: 2018<br>納米樓單位數目: 150]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>西源里1號</value>
+        </Data>
+        <Data name="returned address">
+          <value>1 Sai Yuen Ln, Sai Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.287339</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1418544</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>瑧蓺</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>西源里1號</value>
+        </Data>
+        <Data name="地區">
+          <value>中西區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>150.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1418544,22.287339,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>新世界及恒地</name>
+      <description><![CDATA[original address: 窩打老道 74號<br>returned address: 74 Waterloo Rd, Ho Man Tin, Hong Kong<br>latitude: 22.31788<br>longitude: 114.175<br>項目名稱: 瑧樺<br>地盤地址: 窩打老道 74號<br>地區: 油尖旺<br>落成年份: 樓花<br>納米樓單位數目: 96]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>窩打老道 74號</value>
+        </Data>
+        <Data name="returned address">
+          <value>74 Waterloo Rd, Ho Man Tin, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.31788</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.175</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>瑧樺</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>窩打老道 74號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>96.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.175,22.31788,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>新世界及恒基</name>
+      <description><![CDATA[original address: 大棠路99A號<br>returned address: 99 Tai Tong Rd, Yuen Long, Hong Kong<br>latitude: 22.4366556<br>longitude: 114.0313633<br>項目名稱: 尚悅．嶺<br>地盤地址: 大棠路99A號<br>地區: 元朗<br>落成年份: 樓花<br>納米樓單位數目: 146]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>大棠路99A號</value>
+        </Data>
+        <Data name="returned address">
+          <value>99 Tai Tong Rd, Yuen Long, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.4366556</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.0313633</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>尚悅．嶺</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>大棠路99A號</value>
+        </Data>
+        <Data name="地區">
+          <value>元朗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>146.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.0313633,22.4366556,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>新鴻基</name>
+      <description><![CDATA[original address: 景秀里 8號<br>returned address: King Sau Ln, San Hui, Hong Kong<br>latitude: 22.4057923<br>longitude: 113.981485<br>項目名稱: 御半山II<br>地盤地址: 景秀里 8號<br>地區: 屯門<br>落成年份: 樓花<br>納米樓單位數目: 27]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>景秀里 8號</value>
+        </Data>
+        <Data name="returned address">
+          <value>King Sau Ln, San Hui, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.4057923</value>
+        </Data>
+        <Data name="longitude">
+          <value>113.981485</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>御半山II</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>景秀里 8號</value>
+        </Data>
+        <Data name="地區">
+          <value>屯門</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>27.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          113.981485,22.4057923,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>新鴻基</name>
+      <description><![CDATA[original address: 青山公路潭尾段18號<br>returned address: 18 Castle Peak Road (Tam Mei), Kam Tin, Hong Kong<br>latitude: 22.4511336<br>longitude: 114.0549696<br>項目名稱: ParkYOHOGenova<br>地盤地址: 青山公路潭尾段18號<br>地區: 元朗<br>落成年份: 2017<br>納米樓單位數目: 29]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>青山公路潭尾段18號</value>
+        </Data>
+        <Data name="returned address">
+          <value>18 Castle Peak Road (Tam Mei), Kam Tin, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.4511336</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.0549696</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>ParkYOHOGenova</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>青山公路潭尾段18號</value>
+        </Data>
+        <Data name="地區">
+          <value>元朗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2017</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>29.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.0549696,22.4511336,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>新鴻基</name>
+      <description><![CDATA[original address: 青山公路潭尾段18號<br>returned address: 18 Castle Peak Road (Tam Mei), Kam Tin, Hong Kong<br>latitude: 22.45126<br>longitude: 114.0524<br>項目名稱: PARKYOHOMILANO<br>地盤地址: 青山公路潭尾段18號<br>地區: 元朗<br>落成年份: 樓花<br>納米樓單位數目: 52]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>青山公路潭尾段18號</value>
+        </Data>
+        <Data name="returned address">
+          <value>18 Castle Peak Road (Tam Mei), Kam Tin, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.45126</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.0524</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>PARKYOHOMILANO</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>青山公路潭尾段18號</value>
+        </Data>
+        <Data name="地區">
+          <value>元朗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>52.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.0524,22.45126,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>新鴻基</name>
+      <description><![CDATA[original address: 青山公路潭尾段18號<br>returned address: 18 Castle Peak Road (Tam Mei), Kam Tin, Hong Kong<br>latitude: 22.451146<br>longitude: 114.0558279<br>項目名稱: PARKYOHONAPOLI<br>地盤地址: 青山公路潭尾段18號<br>地區: 元朗<br>落成年份: 樓花<br>納米樓單位數目: 58]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>青山公路潭尾段18號</value>
+        </Data>
+        <Data name="returned address">
+          <value>18 Castle Peak Road (Tam Mei), Kam Tin, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.451146</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.0558279</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>PARKYOHONAPOLI</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>青山公路潭尾段18號</value>
+        </Data>
+        <Data name="地區">
+          <value>元朗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>58.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.0558279,22.451146,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>會德豐</name>
+      <description><![CDATA[original address: 唐俊街23號<br>returned address: 23 Tong Chun St, Tseung Kwan O, Hong Kong<br>latitude: 22.3026211<br>longitude: 114.2618153<br>項目名稱: Monterey<br>地盤地址: 唐俊街23號<br>地區: 西貢<br>落成年份: 2018<br>納米樓單位數目: 2]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>唐俊街23號</value>
+        </Data>
+        <Data name="returned address">
+          <value>23 Tong Chun St, Tseung Kwan O, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3026211</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2618153</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>Monterey</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>唐俊街23號</value>
+        </Data>
+        <Data name="地區">
+          <value>西貢</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>2.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2618153,22.3026211,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>會德豐</name>
+      <description><![CDATA[original address: 筲箕灣道163號<br>returned address: 163 Shau Kei Wan Rd, Shau Kei Wan, Hong Kong<br>latitude: 22.2808757<br>longitude: 114.2237349<br>項目名稱: IslandResidence<br>地盤地址: 筲箕灣道163號<br>地區: 東區<br>落成年份: 2018<br>納米樓單位數目: 24]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>筲箕灣道163號</value>
+        </Data>
+        <Data name="returned address">
+          <value>163 Shau Kei Wan Rd, Shau Kei Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2808757</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2237349</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>IslandResidence</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>筲箕灣道163號</value>
+        </Data>
+        <Data name="地區">
+          <value>東區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>24.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2237349,22.2808757,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>楊海成</name>
+      <description><![CDATA[original address: 大角咀道 247號<br>returned address: 247 Tai Kok Tsui Rd, Sham Shui Po, Hong Kong<br>latitude: 22.32589<br>longitude: 114.1617<br>項目名稱: 尚璽<br>地盤地址: 大角咀道 247號<br>地區: 油尖旺<br>落成年份: 樓花<br>納米樓單位數目: 76]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>大角咀道 247號</value>
+        </Data>
+        <Data name="returned address">
+          <value>247 Tai Kok Tsui Rd, Sham Shui Po, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.32589</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1617</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>尚璽</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>大角咀道 247號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>76.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1617,22.32589,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>萬科</name>
+      <description><![CDATA[original address: 西邊街 15號<br>returned address: 15 Western St, Sai Wan, Hong Kong<br>latitude: 22.2859<br>longitude: 114.1406<br>項目名稱: 15WesternStreet<br>地盤地址: 西邊街 15號<br>地區: 中西區<br>落成年份: 樓花<br>納米樓單位數目: 40]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>西邊街 15號</value>
+        </Data>
+        <Data name="returned address">
+          <value>15 Western St, Sai Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2859</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1406</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>15WesternStreet</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>西邊街 15號</value>
+        </Data>
+        <Data name="地區">
+          <value>中西區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>40.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1406,22.2859,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>資本策略</name>
+      <description><![CDATA[original address: 啟發徑8號<br>returned address: Hong Kong, Tuen Mun, 啓發徑8號<br>latitude: 22.3950665<br>longitude: 113.9760226<br>項目名稱: 城．點<br>地盤地址: 啟發徑8號<br>地區: 屯門<br>落成年份: 樓花<br>納米樓單位數目: 102]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>啟發徑8號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Hong Kong, Tuen Mun, 啓發徑8號</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3950665</value>
+        </Data>
+        <Data name="longitude">
+          <value>113.9760226</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>城．點</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>啟發徑8號</value>
+        </Data>
+        <Data name="地區">
+          <value>屯門</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>102.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          113.9760226,22.3950665,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>嘉里</name>
+      <description><![CDATA[original address: 興漢道23號<br>returned address: 23 Hing Hon Rd, Sai Ying Pun, Hong Kong<br>latitude: 22.28473<br>longitude: 114.1394<br>項目名稱: 高士台<br>地盤地址: 興漢道23號<br>地區: 中西區<br>落成年份: 2013<br>納米樓單位數目: 8]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>興漢道23號</value>
+        </Data>
+        <Data name="returned address">
+          <value>23 Hing Hon Rd, Sai Ying Pun, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.28473</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1394</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>高士台</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>興漢道23號</value>
+        </Data>
+        <Data name="地區">
+          <value>中西區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2013</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>8.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1394,22.28473,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>嘉里</name>
+      <description><![CDATA[original address: 國瑞路168號<br>returned address: 168 Kwok Shui Rd, Kwai Chung, Hong Kong<br>latitude: 22.3719373<br>longitude: 114.1300228<br>項目名稱: 縉庭山<br>地盤地址: 國瑞路168號<br>地區: 荃灣<br>落成年份: 2010<br>納米樓單位數目: 20]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>國瑞路168號</value>
+        </Data>
+        <Data name="returned address">
+          <value>168 Kwok Shui Rd, Kwai Chung, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3719373</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1300228</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>縉庭山</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>國瑞路168號</value>
+        </Data>
+        <Data name="地區">
+          <value>荃灣</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2010</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>20.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1300228,22.3719373,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>嘉華國際</name>
+      <description><![CDATA[original address: 擴業街8號<br>returned address: 8 Kwong Yip St, Yuen Long, Hong Kong<br>latitude: 22.4483008<br>longitude: 114.0266176<br>項目名稱: 朗屏8號<br>地盤地址: 擴業街8號<br>地區: 元朗<br>落成年份: 2018<br>納米樓單位數目: 56]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>擴業街8號</value>
+        </Data>
+        <Data name="returned address">
+          <value>8 Kwong Yip St, Yuen Long, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.4483008</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.0266176</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>朗屏8號</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>擴業街8號</value>
+        </Data>
+        <Data name="地區">
+          <value>元朗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>56.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.0266176,22.4483008,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>嘉華國際</name>
+      <description><![CDATA[original address: 科進路16號<br>returned address: 16 Fo Chun Rd, Tai Po, Hong Kong<br>latitude: 22.42956<br>longitude: 114.2053<br>項目名稱: 嘉熙<br>地盤地址: 科進路16號<br>地區: 大埔<br>落成年份: 2019<br>納米樓單位數目: 104]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>科進路16號</value>
+        </Data>
+        <Data name="returned address">
+          <value>16 Fo Chun Rd, Tai Po, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.42956</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2053</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>嘉熙</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>科進路16號</value>
+        </Data>
+        <Data name="地區">
+          <value>大埔</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>104.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2053,22.42956,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>遠東發展</name>
+      <description><![CDATA[original address: 海壇街229A-G號<br>returned address: Hoi Sang Building, 229 Hai Tan St, Sham Shui Po, Hong Kong<br>latitude: 22.32914<br>longitude: 114.1575<br>項目名稱: 傲凱<br>地盤地址: 海壇街229A-G號<br>地區: 深水埗<br>落成年份: 2018<br>納米樓單位數目: 18]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>海壇街229A-G號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Hoi Sang Building, 229 Hai Tan St, Sham Shui Po, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.32914</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1575</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>傲凱</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>海壇街229A-G號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>18.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1575,22.32914,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>遠東發展</name>
+      <description><![CDATA[original address: 西洋菜北街289號<br>returned address: 289 Sai Yeung Choi St N, Tong Mi, Hong Kong<br>latitude: 22.33019<br>longitude: 114.1666<br>項目名稱: 晉嶺<br>地盤地址: 西洋菜北街289號<br>地區: 深水埗<br>落成年份: 2014<br>納米樓單位數目: 27]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>西洋菜北街289號</value>
+        </Data>
+        <Data name="returned address">
+          <value>289 Sai Yeung Choi St N, Tong Mi, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.33019</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1666</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>晉嶺</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>西洋菜北街289號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2014</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>27.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1666,22.33019,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>遠東發展</name>
+      <description><![CDATA[original address: 美田路28號<br>returned address: 28號 Mei Tin Rd, Tai Wai, Hong Kong<br>latitude: 22.3747694<br>longitude: 114.1765483<br>項目名稱: 珀玥<br>地盤地址: 美田路28號<br>地區: 沙田<br>落成年份: 樓花<br>納米樓單位數目: 80]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>美田路28號</value>
+        </Data>
+        <Data name="returned address">
+          <value>28號 Mei Tin Rd, Tai Wai, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3747694</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1765483</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>珀玥</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>美田路28號</value>
+        </Data>
+        <Data name="地區">
+          <value>沙田</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>80.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1765483,22.3747694,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>遠東發展</name>
+      <description><![CDATA[original address: 環鳳街68號<br>returned address: Aspen Crest, 68-86 Wan Fung St, Chuk Un, Hong Kong<br>latitude: 22.34493<br>longitude: 114.1986<br>項目名稱: 鑽嶺<br>地盤地址: 環鳳街68號<br>地區: 黃大仙<br>落成年份: 2018<br>納米樓單位數目: 125]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>環鳳街68號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Aspen Crest, 68-86 Wan Fung St, Chuk Un, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.34493</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1986</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>鑽嶺</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>環鳳街68號</value>
+        </Data>
+        <Data name="地區">
+          <value>黃大仙</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2018</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>125.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1986,22.34493,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>億京發展</name>
+      <description><![CDATA[original address: 楊屋道88號<br>returned address: 88 Yeung Uk Rd, Tsuen Wan, Hong Kong<br>latitude: 22.3675008<br>longitude: 114.1156243<br>項目名稱: 映日灣<br>地盤地址: 楊屋道88號<br>地區: 荃灣<br>落成年份: 樓花<br>納米樓單位數目: 174]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>楊屋道88號</value>
+        </Data>
+        <Data name="returned address">
+          <value>88 Yeung Uk Rd, Tsuen Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3675008</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1156243</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>映日灣</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>楊屋道88號</value>
+        </Data>
+        <Data name="地區">
+          <value>荃灣</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>174.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1156243,22.3675008,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>億京發展</name>
+      <description><![CDATA[original address: 創新路18號<br>returned address: Hong Kong, 大埔科進路18號<br>latitude: 22.43022<br>longitude: 114.2075<br>項目名稱: 海日灣2<br>地盤地址: 創新路18號<br>地區: 大埔<br>落成年份: 樓花<br>納米樓單位數目: 204]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>創新路18號</value>
+        </Data>
+        <Data name="returned address">
+          <value>Hong Kong, 大埔科進路18號</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.43022</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.2075</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>海日灣2</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>創新路18號</value>
+        </Data>
+        <Data name="地區">
+          <value>大埔</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>204.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.2075,22.43022,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>盧華</name>
+      <description><![CDATA[original address: 德輔道西128號<br>returned address: 128 Des Voeux Rd W, Sheung Wan, Hong Kong<br>latitude: 22.2876955<br>longitude: 114.1450113<br>項目名稱: AVA128<br>地盤地址: 德輔道西128號<br>地區: 中西區<br>落成年份: 2016<br>納米樓單位數目: 42]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>德輔道西128號</value>
+        </Data>
+        <Data name="returned address">
+          <value>128 Des Voeux Rd W, Sheung Wan, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.2876955</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1450113</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>AVA128</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>德輔道西128號</value>
+        </Data>
+        <Data name="地區">
+          <value>中西區</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2016</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>42.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1450113,22.2876955,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>盧華</name>
+      <description><![CDATA[original address: 啟德道55號<br>returned address: 55 Kai Tak Rd, Kowloon City, Hong Kong<br>latitude: 22.3297602<br>longitude: 114.1919429<br>項目名稱: Ava55<br>地盤地址: 啟德道55號<br>地區: 九龍城<br>落成年份: 2019<br>納米樓單位數目: 66]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>啟德道55號</value>
+        </Data>
+        <Data name="returned address">
+          <value>55 Kai Tak Rd, Kowloon City, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3297602</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1919429</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>Ava55</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>啟德道55號</value>
+        </Data>
+        <Data name="地區">
+          <value>九龍城</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>66.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1919429,22.3297602,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>盧華</name>
+      <description><![CDATA[original address: 上海街62號<br>returned address: 62 Shanghai St, Yau Ma Tei, Hong Kong<br>latitude: 22.30462<br>longitude: 114.1693<br>項目名稱: AVA62<br>地盤地址: 上海街62號<br>地區: 油尖旺<br>落成年份: 2017<br>納米樓單位數目: 88]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>上海街62號</value>
+        </Data>
+        <Data name="returned address">
+          <value>62 Shanghai St, Yau Ma Tei, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.30462</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1693</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>AVA62</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>上海街62號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2017</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>88.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1693,22.30462,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>盧華</name>
+      <description><![CDATA[original address: 大埔道61號<br>returned address: 61 Tai Po Rd, Un Chau, Hong Kong<br>latitude: 22.3315978<br>longitude: 114.1646571<br>項目名稱: Ava61<br>地盤地址: 大埔道61號<br>地區: 深水埗<br>落成年份: 樓花<br>納米樓單位數目: 138]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>大埔道61號</value>
+        </Data>
+        <Data name="returned address">
+          <value>61 Tai Po Rd, Un Chau, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3315978</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1646571</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>Ava61</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>大埔道61號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>138.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1646571,22.3315978,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>盧華</name>
+      <description><![CDATA[original address: 大南街228號<br>returned address: 228 Tai Nan St, Sham Shui Po, Hong Kong<br>latitude: 22.3277875<br>longitude: 114.1626624<br>項目名稱: Ava228<br>地盤地址: 大南街228號<br>地區: 深水埗<br>落成年份: 樓花<br>納米樓單位數目: 160]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>大南街228號</value>
+        </Data>
+        <Data name="returned address">
+          <value>228 Tai Nan St, Sham Shui Po, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3277875</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1626624</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>Ava228</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>大南街228號</value>
+        </Data>
+        <Data name="地區">
+          <value>深水埗</value>
+        </Data>
+        <Data name="落成年份">
+          <value>樓花</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>160.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1626624,22.3277875,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>麗新發展</name>
+      <description><![CDATA[original address: 基隆街50號<br>returned address: 50 Ki Lung St, Mong Kok, Hong Kong<br>latitude: 22.3254093<br>longitude: 114.1664624<br>項目名稱: 逸新<br>地盤地址: 基隆街50號<br>地區: 油尖旺<br>落成年份: 2019<br>納米樓單位數目: 115]]></description>
+      <styleUrl>#icon-1899-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="original address">
+          <value>基隆街50號</value>
+        </Data>
+        <Data name="returned address">
+          <value>50 Ki Lung St, Mong Kok, Hong Kong</value>
+        </Data>
+        <Data name="latitude">
+          <value>22.3254093</value>
+        </Data>
+        <Data name="longitude">
+          <value>114.1664624</value>
+        </Data>
+        <Data name="項目名稱">
+          <value>逸新</value>
+        </Data>
+        <Data name="地盤地址">
+          <value>基隆街50號</value>
+        </Data>
+        <Data name="地區">
+          <value>油尖旺</value>
+        </Data>
+        <Data name="落成年份">
+          <value>2019</value>
+        </Data>
+        <Data name="納米樓單位數目">
+          <value>115.0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          114.1664624,22.3254093,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

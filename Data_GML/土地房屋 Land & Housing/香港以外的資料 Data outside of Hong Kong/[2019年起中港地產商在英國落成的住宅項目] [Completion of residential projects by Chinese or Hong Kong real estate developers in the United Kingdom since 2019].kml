@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>在英房地產_joined</name>
+    <Style id="icon-1603-E65100-labelson">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>Meyer Homes (1)</name>
+      <description><![CDATA[項目名稱：Meyer Homes <br>發展商： 萬科<br>其他發展商： Meyer Bergman and AIMCO<br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：Meyer Homes的13個項目合共提供超過3,000個單位<br>參考資料：https://uk.vanke.com/investments/meyer-homes/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -2.3597072,51.3789424,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes, Gabriel Square, St Albans</name>
+      <description><![CDATA[項目名稱：Meyer Homes, Gabriel Square, St Albans<br>發展商： 萬科 <br> 其他發展商： Meyer Bergman and AIMCO <br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：80 (在Meyer Homes 13個項目超過3,000個單位當中)<br>參考資料：<br>https://gabrielsquare.com/brochure-download/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.326687,51.750563,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes (2)</name>
+      <description><![CDATA[項目名稱：Meyer Homes <br>發展商： 萬科<br>其他發展商： Meyer Bergman and AIMCO<br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：Meyer Homes的13個項目合共提供超過3,000個單位<br>參考資料：https://uk.vanke.com/investments/meyer-homes/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.168437,51.650688,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes (3)</name>
+      <description><![CDATA[項目名稱：Meyer Homes<br>發展商： 萬科<br>其他發展商： Meyer Bergman and AIMCO<br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：Meyer Homes的13個項目合共提供超過3,000個單位<br>參考資料：https://uk.vanke.com/investments/meyer-homes/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.000184,51.608211,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes Woolwich</name>
+      <description><![CDATA[項目名稱：Meyer Homes Woolwich<br>發展商： 萬科 <br> 其他發展商： Meyer Bergman and AIMCO<br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：700 (在Meyer Homes 13個項目超過3,000個單位當中)<br> 資料來源： http://www.meyerhomes.com/?portfolio=woolwich]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          0.068063,51.489813,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes, Dartford</name>
+      <description><![CDATA[項目名稱：Meyer Homes, Dartford<br> 發展商： 萬科 <br> 其他發展商： Meyer Bergman and AIMCO<br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br> (擬建)單位數目： 548 (在Meyer Homes 13個項目超過3,000個單位當中)<br> 參考資料： http://www.meyerhomes.com/?portfolio=dartford]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          0.217188,51.442688,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes Lewisham</name>
+      <description><![CDATA[項目名稱： Meyer Homes Lewisham<br>發展商： 萬科 <br> 其他發展商： Meyer Bergman and AIMCO <br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：Meyer Homes的13個項目合共提供超過3,000個單位<br>資料來源： http://www.meyerhomes.com/?portfolio=lewisham-2]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.012312,51.464188,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes (4)</name>
+      <description><![CDATA[項目名稱： Meyer Homes <br>發展商： 萬科<br>其他發展商： Meyer Bergman and AIMCO<br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：Meyer Homes的13個項目合共提供超過3,000個單位<br>參考資料：https://uk.vanke.com/investments/meyer-homes/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.140437,51.519313,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes, Bishop’s Gate, Fulham</name>
+      <description><![CDATA[項目名稱：Meyer Homes, Bishop’s Gate, Fulham<br> 發展商： 萬科 <br> 其他發展商： Meyer Bergman and AIMCO <br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：58 (在Meyer Homes 13個項目超過3,000個單位當中)<br>參考資料：http://www.meyerhomes.com/?portfolio=fulham]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.210312,51.469813,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes Hounslow</name>
+      <description><![CDATA[項目名稱： Meyer Homes Hounslow<br>發展商： 萬科 <br> 其他發展商： Meyer Bergman and AIMCO <br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：293 (在Meyer Homes 13個項目超過3,000個單位當中)<br> 參考資料：http://www.meyerhomes.com/?portfolio=hounslow]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.354812,51.470813,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes Tolworth</name>
+      <description><![CDATA[項目名稱：Meyer Homes Tolworth<br>發展商： 萬科 <br> 其他發展商： Meyer Bergman and AIMCO <br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：Meyer Homes的13個項目合共提供超過3,000個單位<br>參考資料：http://www.meyerhomes.com/?portfolio=tolworth]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.279312,51.377063,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes (5)</name>
+      <description><![CDATA[項目名稱： Meyer Homes <br>發展商： 萬科<br>其他發展商： Meyer Bergman and AIMCO<br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：Meyer Homes的13個項目合共提供超過3,000個單位<br>參考資料：https://uk.vanke.com/investments/meyer-homes/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.260312,51.334563,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Meyer Homes Hillingdon</name>
+      <description><![CDATA[項目名稱： Meyer Homes Hillingdon<br>發展商： 萬科 <br> 其他發展商： Meyer Bergman and AIMCO <br>(預計)落成年份：Meyer Homes的項目將於2020年建成<br>(擬建)單位數目：Meyer Homes的13個項目合共提供超過3,000個單位<br>參考資料：<br>http://www.meyerhomes.com/?portfolio=hillingdon]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.4472548,51.5526889,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Hornsey Town Hall</name>
+      <description><![CDATA[樓盤名稱： London, Hornsey Town Hall <br> 發展商： 遠東發展 <br> 其他發展商： - <br>(預計)落成年份：2020<br> (擬建)單位數目： 146 <br> 參考資料： https://fecil.uk/residential/hornsey-town-hall/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.122317,51.578874,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Aspen at Consort Place</name>
+      <description><![CDATA[樓盤名稱： London, Aspen at Consort Place <br> 發展商：遠東發展<br> 其他發展商： - <br>(預計)落成年份：2023<br> (擬建)單位數目： 634 <br> 參考資料： https://fecil.uk/residential/consort-place/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.022814,51.500907,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Redevelopment of Whitechapel Square</name>
+      <description><![CDATA[樓盤名稱： London, Redevelopment of Whitechapel Square <br>發展商：遠東發展<br> 其他發展商： Sainsbury's<br>(預計)落成年份：未知<br> (擬建)單位數目： 471<br> 參考資料： https://www.fecil.com.hk/Product_Photo/files/press-release/20200221/p200220.pdf]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.0584013,51.5211302,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ensign House</name>
+      <description><![CDATA[樓盤名稱： London, Ensign House <br> 發展商： 遠東發展<br> 其他發展商： - <br>(預計)落成年份：2023<br> (擬建)單位數目： N/A <br> 參考資料：https://www.fecil.com.hk/Product_Photo/files/press-release/20200210/p200210.pdf]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.021027,51.501335,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chelsea Waterfront </name>
+      <description><![CDATA[樓盤名稱： London, Chelsea Waterfront <br>發展商： 長實 <br> 其他發展商： - <br> (預計)落成年份：2019<br>(擬建)單位數目：706 <br> 參考資料：https://www.ckh.com.hk/upload/attachments/en/journal/34_Newsbite_e.pdf]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.1821862,51.4770158,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Greenwich Peninsula </name>
+      <description><![CDATA[樓盤名稱： London, Greenwich Peninsula <br>發展商： 新世界/ Knight Dragon <br> 其他發展商： - <br>(預計)落成年份：2018入伙，整個項目2032全部落成<br>(擬建)單位數目：17,487<br>參考資料：<br> https://www.london.gov.uk/sites/default/files/public%3A//public%3A//PAWS/media_id_480426///greenwich_peninsula_masterplan_2019_report.pdf]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          0.0074949,51.4969132,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Millharbour Quarter </name>
+      <description><![CDATA[樓盤名稱： London, Millharbour Quarter <br>發展商： 新鴻基/郭氏家族基金 <br> 其他發展商： Ballymore<br>(預計)落成年份：2018<br> (擬建)單位數目：1,513<br>參考資料：<br>https://www.egi.co.uk/news/kwoks-and-ballymore-in-1bn-canary-wharf-resi-push/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.0186774,51.4998591,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Goodluck Hope </name>
+      <description><![CDATA[樓盤名稱： London, Goodluck Hope <br>發展商： 新鴻基/郭氏家族基金 <br> 其他發展商： Ballymore <br>(預計)落成年份：2020<br>(擬建)單位數目： 804 <br> 參考資料：<br> https://www.goodluckhope.com/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          0.00664,51.508645,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Redevelopment of former Whiteleys shopping centre </name>
+      <description><![CDATA[樓盤名稱： London, Redevelopment of former Whiteleys shopping centre<br>發展商： 中渝置地 <br> 其他發展商： Meyers Bergman<br>(預計)落成年份：2023<br>(擬建)單位數目： 153<br> 資料來源： https://www.constructionnews.co.uk/financial/hong-kong-firm-invests-in-850m-london-shopping-centre-revamp-23-12-2019/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.188465,51.514588,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Pendleton </name>
+      <description><![CDATA[樓盤名稱： Manchester, The Pendleton <br>發展商： 百達林國際 <br> 其他發展商： - <br>(預計)落成年份：2019<br>(擬建)單位數目： 71<br>參考資料：<br>https://platinum-rise.com/project-listings/manchester-the-pendleton]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -2.2842576,53.4922802,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cashmere Residences</name>
+      <description><![CDATA[樓盤名稱： Liverpool, Cashmere Residences <br>發展商： 百達林國際 <br> 其他發展商： - <br>(預計)落成年份：2019<br>(擬建)單位數目： 144<br>參考資料：<br> https://platinum-rise.com/project-listings/liverpool-cashmere-residences]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -2.971789,53.4110826,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Satin Residences </name>
+      <description><![CDATA[樓盤名稱： Liverpool, Satin Residences <br>發展商： 百達林國際<br> 其他發展商： - <br>(預計)落成年份：2019<br>(擬建)單位數目： 219<br>參考資料：https://platinum-rise.com/project-listings/liverpool-satin-residences]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -2.9716978,53.4111434,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>22 Dunster Gardens </name>
+      <description><![CDATA[樓盤名稱： London, 22 Dunster Gardens <br>發展商： 百達林國際 <br> 其他發展商： - <br>(預計)落成年份：2019<br>(擬建)單位數目： 3<br>參考資料：<br>https://platinum-rise.com/project-listings/london-22-dunster-gardens]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.2014,51.543387,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Franklin</name>
+      <description><![CDATA[樓盤名稱： Birmingham, The Franklin <br>發展商： 凱卓發展/ 得寶資本集團 <br> 其他發展商： Court Collaboration<br>(預計)落成年份：2016<br>(擬建)單位數目： 79<br> 參考資料： http://headlanddevelopment.com/projects/projects-united-kingdom/united-kingdom-the-franklin/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -1.929444,52.426947,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Axium </name>
+      <description><![CDATA[樓盤名稱： Birmingham, The Axium <br>發展商： 得寶資本集團 <br> 其他發展商： Court Collaboration<br>(預計)落成年份：2019<br>(擬建)單位數目： 304<br>參考資料：<br>https://topcapgroup.com/projects/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -1.9016856,52.4736499,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Arden Gate </name>
+      <description><![CDATA[樓盤名稱：Birmingham, Arden Gate <br>發展商： 得寶資本集團<br> 其他發展商： Court Collaboration<br>(預計)落成年份：2019<br>(擬建)單位數目：230<br>參考資料：<br>https://topcapgroup.com/projects/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -1.911251,52.473498,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>One Nine Elms </name>
+      <description><![CDATA[樓盤名稱： London, One Nine Elms <br>發展商： 富力地產 <br> 其他發展商： - <br>(預計)落成年份：2022<br>(擬建)單位數目：494<br>參考資料：<br>https://www.rfnineelms.co.uk/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.1275101,51.4840599,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Spire London</name>
+      <description><![CDATA[樓盤名稱： London, Spire London<br>發展商： 綠地控股集團 <br> 其他發展商： - <br>(預計)落成年份：2020<br>(擬建)單位數目：861<br>參考資料：<br>http://spirelondon.com/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.024737,51.507078,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nine Elms Square </name>
+      <description><![CDATA[樓盤名稱： London, Nine Elms Square <br>發展商： 富力地產、中渝置地 <br> 其他發展商： - <br>(預計)落成年份：2021<br>(擬建)單位數目：1,900<br>參考資料：<br>http://www.ccland.com.hk/en/DP_NineElmsSquare.php]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.128546,51.48315,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Vauxhall Square </name>
+      <description><![CDATA[樓盤名稱： London, Vauxhall Square <br>發展商： 富力地產 <br> 其他發展商： - <br>(預計)落成年份：2022<br>(擬建)單位數目：578<br>參考資料：<br>https://www.glass-canvas.co.uk/case-studies/vauxhall-square/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.1261846,51.4834571,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Stage </name>
+      <description><![CDATA[樓盤名稱： London,The Stage <br>發展商： 萬科<br> 其他發展商： Cain International, Galliard Homes and McCourt Global Investors<br>(預計)落成年份：2021<br>(擬建)單位數目：412<br>參考資料：<br>https://uk.vanke.com/investments/the-stage/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.080656,51.523753,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ailsa Wharf </name>
+      <description><![CDATA[樓盤名稱：London, Ailsa Wharf <br>發展商： 碧桂園 <br> 其他發展商： - <br>(預計)落成年份：2021<br>(擬建)單位數目：782<br>參考資料：<br>https://www.london.gov.uk/sites/default/files/public%3A//public%3A//PAWS/media_id_311922///ailsa_wharf_report.pdf]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.007735,51.518239,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Madison </name>
+      <description><![CDATA[樓盤名稱： London, The Madison <br>發展商： 鑫苑中國 <br> 其他發展商： LBS Properties<br>(預計)落成年份：2020<br>(擬建)單位數目：423<br>參考資料：<br>https://www.themadison.co.uk/pdf/The%20Madison%20Investor%20Guide.pdf]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.0136027,51.5000387,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>One Heritage Tower, Salford </name>
+      <description><![CDATA[樓盤名稱：Manchester, One Heritage Tower, Salford <br>發展商： 太一地產發展 <br> 其他發展商： - <br>(預計)落成年份：2023<br>(擬建)單位數目：545<br>參考資料：<br>https://sccdemocracy.salford.gov.uk/documents/s20806/74205%20-%20Land%20Corner%20New%20Bridge%20Street%20and%20Greengate.pdf]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -2.2484117,53.4876012,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lincoln House, Bolton </name>
+      <description><![CDATA[樓盤名稱： Manchester, Lincoln House, Bolton <br>發展商： 太一地產發展 <br> 其他發展商： - <br>(預計)落成年份：2021<br>(擬建)單位數目：88<br>參考資料：<br>https://www.singtaoopo.com/propertydb/83710/lincoln-house/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -2.422809,53.5686323,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Millbrook Park </name>
+      <description><![CDATA[樓盤名稱：London, Millbrook Park <br>發展商：保利地產 <br> 其他發展商： - <br>(預計)落成年份：2021<br>(擬建)單位數目：788<br>參考資料：<br>https://millbrookpark.com/sites/default/files/2019-02/Millbrook_Park_Phase_Plan.pdf]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.2088591,51.6095069,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Northern Gateway </name>
+      <description><![CDATA[項目名稱： Manchester, Northern Gateway <br>發展商： 遠東發展 <br> 其他發展商： - <br>(預計)落成年份：2020起開始落成<br>(擬建)單位數目：20,000<br> 參考資料：<br>http://northerngatewaymanchester.co.uk/development/<br>https://www1.hkej.com/features/article?q=%23%E6%8A%95%E8%B3%87%E7%A7%BB%E6%B0%91%23&suid=1071409701]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -2.2217,53.4959218,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Convoys Wharf </name>
+      <description><![CDATA[項目名稱：London, Convoys Wharf <br>發展商： 長實 <br> 其他發展商： - <br>(預計)落成年份：2022-24逐漸落成<br>(擬建)單位數目：3,500 <br>參考資料：<br>https://www.ckah.com/uploaded_files/news/1066_e_content.pdf]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.0281822,51.4859714,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lillie Square </name>
+      <description><![CDATA[項目名稱：Lillie Square <br>發展商：新鴻基/郭氏家族基金 <br> 其他發展商： Capital & Counties Properties<br>(預計)落成年份：2016-2020<br>(擬建)單位數目：808 <br>參考資料：<br>https://www.knightfrank.com.hk/residential/uk-properties/buying/lillie-square]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.194754,51.485129,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Queens Square, Croydon </name>
+      <description><![CDATA[項目名稱：Queens Square, Croydon <br>發展商： 富力地產 <br> 其他發展商： - <br>(預計)落成年份：2021<br>(擬建)單位數目：900<br>參考資料：<br>http://www.queens-sq.com/media/1106/1909398-qs-a4-fact-sheet-v6-lr.pdf<br>https://democracy.croydon.gov.uk/mgConvert2PDF.aspx?ID=10419]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -0.0992273,51.3728056,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>New Cross Central Manchester</name>
+      <description><![CDATA[項目名稱：New Cross Central Manchester<br>發展商： 遠東發展 <br> 其他發展商： - <br>(預計)落成年份：2022<br> (擬建)單位數目： 80 <br> 參考資料： https://fecil.uk/residential/new-cross-central/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -2.2339982,53.4871006,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Spenbrook Mill</name>
+      <description><![CDATA[項目名稱：Spenbrook Mill<br>發展商：太一地產發展<br>其他發展商： -<br>(預計)落成年份：2020<br>(擬建)單位數目：29<br>參考資料：<br>https://one-heritage.com/group-institution/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -2.2706762,53.8504261,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Box (exact location unknown)</name>
+      <description><![CDATA[項目名稱： The Box<br>發展商： 太一地產發展<br>其他發展商： Meyer Bergman and AIMCO<br>(預計)落成年份：2019<br>(擬建)單位數目：51<br>***只知道此項目在Ashton Under-Lyne一帶，確實地址不明。<br>參考資料：https://one-heritage.com/group-institution/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -2.0942258,53.4914796,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The Green </name>
+      <description><![CDATA[樓盤名稱： Birmingham, The Green <br>發展商： 凱卓發展/ 得寶資本集團 <br> 其他發展商： - <br>(預計)落成年份：2016<br>(擬建)單位數目： 11<br>參考資料：<br>https://topcapgroup.com/project/the-green/]]></description>
+      <styleUrl>#icon-1603-E65100-labelson</styleUrl>
+      <Point>
+        <coordinates>
+          -1.8226571,52.4439492,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

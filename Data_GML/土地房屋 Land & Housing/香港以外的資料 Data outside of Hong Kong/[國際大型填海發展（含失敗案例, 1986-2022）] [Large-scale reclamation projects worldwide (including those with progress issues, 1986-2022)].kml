@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>問題島途：從全球大型填海工程看明日大嶼計劃的危機 Map of Large Scale Reclamation Projects Worldwide</name>
+    <description>是次研究在全球一共發現52個用途為居住、商業或旅遊、填海8 面積達100公頃的人工島或填海面積達400公頃的近岸填海項目。52個填海項目之中，38個為人工島項目，10個為近岸填海/湖/河項目，4個項目為混合類型，即同時有人工島及近岸填海的部分。這些項目的填海面積及性質分佈如下：</description>
+    <Style id="icon-1899-01579B-normal">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-01579B-highlight">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-01579B">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-01579B-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-01579B-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-A52714-normal">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-A52714-highlight">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-A52714">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-A52714-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-A52714-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>已動工 (動工年份)</name>
+      <Placemark>
+        <name>哈扎爾島 Khazar Island (2015)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUScuP4cnrLZTnesasFoSxMwL4DeCGqk2EqmXK5642kQrLpv_GrnYnvBOY3V55_OVbGzHLna5MeFPz-S3AhbP7_ceyCIcEkoE0RCWCGO6jEG3Rw8WYeYGrHH7-ROIkIoTvWqwu0fHtfINOSvkX9DDHrKdsAopAzMURESfKPs1xey9u6oiDXlJG5awhvnAGreZ09jgzLL2qbOA?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕阿塞拜彊<br>面積﹕3,000公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發長商：Avesta<br>完成度問題：原訂2015年完成填海，延誤最少六年；填海進度2016年起停滯<br><br>財務問題：易受外來經濟風險影響<br>2014 年油價下跌導致經濟收縮，有報導指亦令私人投資的基建項目，包括哈扎爾島大型填海項目，難以吸納投資而令項目難以繼續。]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUScuP4cnrLZTnesasFoSxMwL4DeCGqk2EqmXK5642kQrLpv_GrnYnvBOY3V55_OVbGzHLna5MeFPz-S3AhbP7_ceyCIcEkoE0RCWCGO6jEG3Rw8WYeYGrHH7-ROIkIoTvWqwu0fHtfINOSvkX9DDHrKdsAopAzMURESfKPs1xey9u6oiDXlJG5awhvnAGreZ09jgzLL2qbOA?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            49.6427878,40.2301859,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>諾拉納島 Nurana Islands (2009)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAV6oKLJQeWfirtoICO6jHuDssrEzR8sbKQ4rmhXiOlp5rO9rqYbI03uf5uunQyUnj0IdXt2lij_ffiq8QJ8HRz-0BKUiMsJArhV0NsgR7B7xCL0wIlob35bYdifC1PBEx6xfw6k88yyZqbOolO7GheMP1XSUxAQcRIyiwBZoj2M7uNTPaSlJepqh-VKnyFgpHjzgtCVSiZRLw?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕巴林<br>面積﹕200公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：NS Holdings & by Manara Developments<br>完成度問題：2010年完成第一期填海後停滯<br><br>圖片來源﹕Construction Week網頁 https://www.constructionweekonline.com/projects-tenders/article-5679-master-plan-revealed-for-us-1bn-bahraini-project]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAV6oKLJQeWfirtoICO6jHuDssrEzR8sbKQ4rmhXiOlp5rO9rqYbI03uf5uunQyUnj0IdXt2lij_ffiq8QJ8HRz-0BKUiMsJArhV0NsgR7B7xCL0wIlob35bYdifC1PBEx6xfw6k88yyZqbOolO7GheMP1XSUxAQcRIyiwBZoj2M7uNTPaSlJepqh-VKnyFgpHjzgtCVSiZRLw?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            50.5034316,26.2497941,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>ING City (2007)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVrI44zwae9BVP01cSUg_l0sjpVhNcXikeD3GUzG8IDEQAqwz-EqP_ZZMX4uOT7iwr2G2K1vn-OzP771ateJi8trUFcW6op-XQScDxnvWCTRUOmSIqURtsZkq4Eex2ZVNG6hrPNyyP_zhNErq6-I9_o4InX5-q-3t_Uc3Yi-nKvuQO7FucTGY6WN0cUpIpP7nTkne1qD4QaJA?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕柬埔寨<br>面積﹕1,673公頃<br>填海類型﹕近岸填湖<br>發展商：私人主導<br>發展商：ING Holdings<br>國際建築/工程/規劃顧問：Surbana<br><br>環境問題：水浸問題<br>金邊附近的濕地遭ING City在內的房屋及工業發展摧毀，100萬人面臨洪水及失去生計的威脅。<br>（資料來源：中央廣播電臺 (台灣) (2020年7月27日), 柬埔寨首都擴張摧毀溼地 逾百萬人安全生計堪憂，https://bit.ly/3DXuWJX）<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUISCMeZr6BEYNFZs720cZYCnbjC4aOUVSCR_CojlstxsP7yjOv9VvcFoG1lJlwBbj2eV9_TCepWrmzWgcVmiNN-kPJ-JDLeCF0ya7rpRRIrVKIU1kISkRmQ7z7coNW_he0V42Vo_OtQ1TIt1q5cc2siu1of3CeRw8rePTOB-iZao_L7TB2ykpyUcJAACPYeiD1VyaxhpfFmg?authuser=0&fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVrI44zwae9BVP01cSUg_l0sjpVhNcXikeD3GUzG8IDEQAqwz-EqP_ZZMX4uOT7iwr2G2K1vn-OzP771ateJi8trUFcW6op-XQScDxnvWCTRUOmSIqURtsZkq4Eex2ZVNG6hrPNyyP_zhNErq6-I9_o4InX5-q-3t_Uc3Yi-nKvuQO7FucTGY6WN0cUpIpP7nTkne1qD4QaJA?authuser=0&fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUISCMeZr6BEYNFZs720cZYCnbjC4aOUVSCR_CojlstxsP7yjOv9VvcFoG1lJlwBbj2eV9_TCepWrmzWgcVmiNN-kPJ-JDLeCF0ya7rpRRIrVKIU1kISkRmQ7z7coNW_he0V42Vo_OtQ1TIt1q5cc2siu1of3CeRw8rePTOB-iZao_L7TB2ykpyUcJAACPYeiD1VyaxhpfFmg?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            104.9182707,11.5109658,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>曹妃甸國際生態城 Caofeidian International Eco-city (2005)</name>
+        <description><![CDATA[國家﹕中國<br>面積﹕3,000公頃<br>填海類型﹕近岸填海<br>發展模式：政府主導<br>發展商：唐山市政府<br>國際建築/工程/規劃顧問：SWECO<br>完成度問題：填海進度2018年起停滯<br><br>規劃問題：規劃功能重疊造成空置<br>唐山市曹妃甸項目在原訂計劃中，透過工業、港口帶動當地發展成一個完整的城區；但由於同期推出眾多類似的計劃，且預期之中工業需求並未實現，作為開荒牛的首鋼集團在曹妃甸項目錄得虧損。進駐當地吸引力大跌下，島上建築工程自2014年起停擺，至今仍有大量土地空置，有指各爛尾項目合共負債以千億元人民幣計。<br><br>規劃問題：配套未完善 居民成開荒牛<br>首鋼集團2007年在曹妃甸設廠，至2014年仍有媒體稱曹妃甸往來最近城市唐山站的公共交通在傍晚六時便會中止，之後須依靠無牌的士出入；高鐵2019年才在曹妃甸設站，接通唐山及北京。]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            118.583421,39.1732371,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>如意島 Ruyi Island (2016)</name>
+        <description><![CDATA[國家﹕中國<br>面積﹕716公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：佳兆業<br>完成度問題：填海進度2017年起停滯<br><br>規劃問題：本地政策難以持續「配合」<br>2017年由中國政府啟動《海洋督察方案》組成國家海洋督察組，並於2018年初宣佈實施「最嚴格」的填海管制，如意島被中央海洋督察組批評工程在未取得完整許可下開始填海，被勒令停工。<br><br>違規問題：發展繞過既定程序<br>如意島項目第三期工程在 2017 年被指在未取得許可下開工，並被要求「退還」海域、恢復原狀，卻在 2021 年再被發現違法填海面積擴大；項目須進行生態修復後才可復工。]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            110.3593247,20.0855542,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>濰坊濱海旅遊度假區 Weifang Coastal Tourism Resort (2009)</name>
+        <description><![CDATA[國家﹕中國<br>面積﹕2,546公頃<br>填海類型﹕近岸填海<br>發展模式：政府主導<br>發展商：濰坊濱海旅遊集團<br>完成度問題：填海進度2018年起停滯]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            119.2110099,37.2181043,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>白沙灣 Baisha Bay (2013)</name>
+        <description><![CDATA[國家﹕中國<br>面積﹕158公頃<br>填海類型﹕人工島<br>發展模式：政府主導]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            121.0986294,40.8635309,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>龍口人工島 Longkou Artificial Islands (2011)</name>
+        <description><![CDATA[國家﹕中國<br>面積﹕3,523公頃<br>填海類型﹕人工島<br>發展模式：公私合營<br>發展商：南山集團<br>完成度問題：原訂2014年完成填海，延誤最少七年<br><br>環境問題：海岸侵蝕或淤積<br>由於水流緩慢，人工島與土地之間的水道出現每年12厘米的沉積物，該水道深度為兩米，預計16年後會出現嚴重的淤積。<br><br>環境問題：化學物污染<br>填海工程使海灣的面積收窄，引致水流減慢及波浪減弱等問題。海灣內的沉積物增加的同時，污染物亦因為水流減弱無法有效散去：重金屬依附在沉積物顆粒上，並在海灣內積聚。<br>（資料來源：Ren P., Zhu H., Sun Z., & Wang C. (2020). Effects of Artificial Islands Construction on the Spatial Distribution and Risk Assessment of Heavy Metals in the Surface Sediments from a Semi-closed Bay (Longkou Bay), China. Bulletin of Environmental Contamination and Toxicology, 106(1), 44–50）]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            120.2643316,37.5963003,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Cité du Fleuve (2009)
+</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVWBRgkLiq4v3Q-MO-yyYgw6vv0JzdMSTeIwv8XnGUBHQt81ZLhpvYECJVbmQf6wB_3U1Nrd8JZ4lmpD4_U6rwBOZgd4kT5TI5P9HHSPdIRS_Uh4CMUalz8vETYgmbeErF391q4VRwACdGMLLmBDkGAes5Nc3xI3qCFeVUs8EfNFTAQ13bwidoOMxf0B-cn8Qh8JkL092Fxdw?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕剛果民主共和國<br>面積﹕400公頃<br>填海類型﹕近岸填河<br>發展模式：私人主導<br>發展商：Hawkwood Properties SPRL]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVWBRgkLiq4v3Q-MO-yyYgw6vv0JzdMSTeIwv8XnGUBHQt81ZLhpvYECJVbmQf6wB_3U1Nrd8JZ4lmpD4_U6rwBOZgd4kT5TI5P9HHSPdIRS_Uh4CMUalz8vETYgmbeErF391q4VRwACdGMLLmBDkGAes5Nc3xI3qCFeVUs8EfNFTAQ13bwidoOMxf0B-cn8Qh8JkL092Fxdw?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            15.3529824,-4.3266182,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lynetteholm (2022)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWyc_L58gmYBVducd4EIj5udWH-m5cDiUNaifmjqQtnJQ7C8qIGSJ_JngmB68MbbFR6P-VYyehc-NcW2y_XoJXYR5LbPi78NIePOMg_uknLTq-kj9t1-gbf6uvM6Yp0PH6OfFuwe7cjy46F8SIgCePO-qLp6wMLiJHKyhpxoubNZruXWTvTTU1rHFMD8fuFjwYSjWOCfJz-hw?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕丹麥<br>面積﹕275公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：哥本哈根城市與港口發展公司<br>國際建築/工程/規劃顧問：COWI, Arkitema & Tredje Natur<br><br>財務問題：公帑補貼付鈔<br>工程開始後數星期，發展商宣佈填海範圍邊界的第一期工程，會由原預算的 4,000 萬歐羅，超支至 6,600 萬歐羅。雖然人工島計劃聲稱由開發公司自負盈虧進行，但當地市政府預留了 5,300 萬歐羅作虧損保證金亦引起批評。<br><br>環境問題：海岸侵蝕或淤積<br>鄰國瑞典的沿岸社區擔憂填海會令沉積物及污染物擴散、改變水流導致海岸侵蝕及改變自然景觀影響旅遊業。<br><br>環境問題：破壞生境<br>環保團體因憂慮填海計劃破壞海洋環境，包括準備地基時會挖掘海床淤泥並在鄰近海域棄置，將會破壞海洋生物如海豚的生境。<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAW_YPj5xo_cx0P3NWbxTqFvUB4Cx7GrChqrl81fAZisHDvUc34RYemA98aY1zrBzZ8efz9b8wVsmVmT3TGtiLCWmCkQYkX2b3T0E0z-qz9mXkKRaHd_U3VCboinSFHDFPq5NOVL6a1GOc4e5pvFwycgEUSIQ3p41dAF-UuYCdPpGWCfLiWz4WBXxHU2FqXApJRWUHh6KQNygA?authuser=0&fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWyc_L58gmYBVducd4EIj5udWH-m5cDiUNaifmjqQtnJQ7C8qIGSJ_JngmB68MbbFR6P-VYyehc-NcW2y_XoJXYR5LbPi78NIePOMg_uknLTq-kj9t1-gbf6uvM6Yp0PH6OfFuwe7cjy46F8SIgCePO-qLp6wMLiJHKyhpxoubNZruXWTvTTU1rHFMD8fuFjwYSjWOCfJz-hw?authuser=0&fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAW_YPj5xo_cx0P3NWbxTqFvUB4Cx7GrChqrl81fAZisHDvUc34RYemA98aY1zrBzZ8efz9b8wVsmVmT3TGtiLCWmCkQYkX2b3T0E0z-qz9mXkKRaHd_U3VCboinSFHDFPq5NOVL6a1GOc4e5pvFwycgEUSIQ3p41dAF-UuYCdPpGWCfLiWz4WBXxHU2FqXApJRWUHh6KQNygA?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            12.6351079,55.6975988,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>松島 Songdo (2004)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUDylWx0pex5DKeMs2TENHhYHw_rl3EqnI16W3lU6QoJtbzC5L5UXI50DUPgKggADIdnQUfQj_TjL3jYLRu82ECs4eDIucrGKQ9Z7lIwp9AsEhehafBIeo4grMrJ6QTRXRXnwhvcMT2YsHnYNpeJn_hNQ9ctRcNtVt169ePChc5anTzaMWABvw3TrYxhmBGHlgMdOhpMDlvwg?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕南韓<br>面積﹕5,340公頃<br>填海類型﹕近岸填海<br>發展模式：公私合營<br>發展商：松島國際城市發展公司<br>國際建築/工程/規劃顧問：KPF<br>完成度問題：原訂2014年完成填海，延誤最少七年<br><br>規劃問題：規劃功能重疊造成空置<br>韓國政府在2008年增設三個自由經濟區，令全國數目倍增至六個，當中黃海自由經濟區與松島國際都市所在的仁川自由經濟區更是只有一小時車程距離。有學者指多個性質相近的項目同時湧現，加上當時經濟衰退，造成激烈競爭並分薄外來投資。<br><br>規劃問題：配套未完善 居民成開荒牛<br>因為市政府財政問題，數項接駁松島的交通基建都延誤數年。以 NSIC 韓國公司合伙人 POSCO E&C 負責的首爾二號環狀公路（The 2nd Seoul Belt Expressway）為例，其落成時間就由 2008 年延至 2012 年 11 月。根據 2018 年報道，由於社區設施配套不足，仍有不少人選擇居住仁川市其他地區以至首爾，再通勤進出松島國際都市。整個國際都市建設原本計劃 2015 年完成，屆時有 30 萬人居住，但至 2022 年人口仍不足 20 萬人。<br><br>違規問題：不良財政操作<br>2015年起合資公司兩名股東韓國財閥 POSCO E&C 及美國發展商 Gale Internationl 糾紛不斷：韓國監查院指 Gale 沒有吸引足夠外資，並且不當收受款項，隨後仁川市政府收回項目土地、POSCO 單方面出售 Gale 股份；Gale 亦對 POSCO 及韓國政府提出訴訟，指前者濫收工程費用、後者挪用資金。而項目在爭拗下結果繼續空置。<br><br>財務問題：公帑補貼付鈔<br>填海土地上的辦公室空置率高企，仁川市政府以發展商股東 Gale 沒有吸引足夠外資而違約、不當收受款項為由，回購項目本來以優惠地價售予發展商 Gale 的土地。合資公司 NSIC 以填海土地作為貸款抵押，有報道指仁川市政府在承接松島相關債務後錄得赤字，而在原訂公私合營安排下應由合資公司承擔98.4%開支。<br><br>環境問題：破壞生境<br>松島填海處位於潮灘，受影響的物種包括黑臉琵鷺和東部蠣鷸等。]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUDylWx0pex5DKeMs2TENHhYHw_rl3EqnI16W3lU6QoJtbzC5L5UXI50DUPgKggADIdnQUfQj_TjL3jYLRu82ECs4eDIucrGKQ9Z7lIwp9AsEhehafBIeo4grMrJ6QTRXRXnwhvcMT2YsHnYNpeJn_hNQ9ctRcNtVt169ePChc5anTzaMWABvw3TrYxhmBGHlgMdOhpMDlvwg?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            126.6463686,37.3834326,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>澳門新城區 Macau New Urban Zone (2009)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVZgr95fFvuyD1aluDRW2vMP47XAaxjucGS--zkmA4xwwXHJh9rbVs9BBOxFITChghGsTPdmMfrfgVO9HJqGTNrn7lRuJffSvT4T1K6WE4mr40SsWtM0xfzxt_LqwoB8nC9jdZxId6CedtP0HqjT8E7IgSAZGiZfl8tQxMGGiskgyntr9cvExhrjP1z34iPS52TZy9urO27dw?authuser=0&fife=s16383" height="200" width="auto" /><br><br>地區﹕澳門<br>面積﹕350公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>國際建築/工程/規劃顧問：Arup]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVZgr95fFvuyD1aluDRW2vMP47XAaxjucGS--zkmA4xwwXHJh9rbVs9BBOxFITChghGsTPdmMfrfgVO9HJqGTNrn7lRuJffSvT4T1K6WE4mr40SsWtM0xfzxt_LqwoB8nC9jdZxId6CedtP0HqjT8E7IgSAZGiZfl8tQxMGGiskgyntr9cvExhrjP1z34iPS52TZy9urO27dw?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            113.5669666,22.2000227,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>森林城市 Forest City (2014)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUisiR7ID9uRBbB5_9Tni7CneAja2YZWWgvI3LwL9BRpMZ4Yr2sEociqdWEUanWdiSfKPt6dlpR9XSpf73RmNNPTiJ8mfUwRqtjCngjKIMjQQPFkGPRobTUoXpaX4T9yMQcsHSxMhoCI3xZauKHKsm5cMNF0r3rfHq4HQw9OJvKev2VUO2J--G_synUpRcBIbFILVs-PYaRjhM?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕馬來西亞<br>面積﹕1,386公頃<br>填海類型﹕人工島<br>發展模式：公私合營<br>發展商：碧桂園、Esplanade Danga 88 Sdn Bhd<br>國際建築/工程/規劃顧問：Sasaki Associates<br>完成度問題：填海進度2018年起停滯<br><br>規劃問題：房屋豪宅化<br>森林城市島上有國際學校及渡假村等設施，一個住宅單位的售價是其位處的柔佛州平均樓價八倍，目標買家來自中國、新加坡等。外媒指，碧桂園為賠償漁民損失設立的基金被當地人士私吞。<br><br>規劃問題：本地政策難以持續「配合」<br>柔佛州部分地產項目九成買家來自中國，當中森林城市的發展商碧桂園會組織中國買家組團到當地旅遊買樓，以較便宜的樓價可以到新加坡通勤作招徠。但中國在2017年起實施外匯管制，加上馬來西亞總理馬哈蒂爾在2018年宣佈禁止外國人購買森林城市的物業，導致買家數目大幅減少。直至 2022 年，森林城市合共出售二萬個單位，但原本目標為 70 萬個，而島上只有 2,000 人居住。<br><br>違規問題：不良財政操作<br>項目發展商凱傑發展被指沒有建築大型工程項目經驗，而外媒引述當地人士稱凱傑發展負責人與批准項目的總理納吉布所屬政黨關係密切。<br><br>環境問題：水質混濁<br>填海以及伴隨的浚挖工程導致水質混濁，並引致當地漁民漁獲減少。<br><br>環境問題：海岸侵蝕或淤積<br>柔佛森林城市造成的淤積問題主要源自兩個因素：第一，工程期間的填充物料滲漏，向附近區域形成沉積物羽流（sediment plumes）使海床出現淤積，而承建商被揭發沒有打開可以阻止滲漏的屏幕；第二，人工島及其連接堤道使該處水流減慢，令沉積物及污染物難以消散。<br><br>環境問題：破壞生境<br>柔佛森林城市計劃由四個人工島組成，人工島與陸地之間興建了堤道（CG Causeway）連接，該堤道分割了當區最大的海草草甸，棲息的大型物種包括海牛及海龜。人工島及堤道阻礙了水流自然流動，使污染物難以流走，該區充斥沉積物及巨型海藻。最終，基於工程帶來的嚴重生態改變，需要拆除整條海堤。<br><br>工程問題：錯誤預判土地沉降速度<br>發展商以快速完成填海工程作為招徠，但島上落成建築物出現裂痕、道路沉降及地陷，專家歸咎工程在未完成沉降的土地進行，引起安全疑慮。]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUisiR7ID9uRBbB5_9Tni7CneAja2YZWWgvI3LwL9BRpMZ4Yr2sEociqdWEUanWdiSfKPt6dlpR9XSpf73RmNNPTiJ8mfUwRqtjCngjKIMjQQPFkGPRobTUoXpaX4T9yMQcsHSxMhoCI3xZauKHKsm5cMNF0r3rfHq4HQw9OJvKev2VUO2J--G_synUpRcBIbFILVs-PYaRjhM?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            103.5899371,1.3377918,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>斯里丹絨檳榔第二期 Seri Tanjung Pinang Phase 2 (2016)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVN1kos4_KphCuQstjlPTw8Vojue--BxywU4njicmBU1hzA2XaCFVxTI2z9eaWmuKUpxTdKNNA-v2dXk0gzkLwIzix01yqpwhIPVCBFWNU1tvQ_p1Av8lv2_Q7qgxOHFUrX6cyqn_ajnsFxF14SKVyHM3-RX9hnjx-RnJnI2sRYGdV3zzD197G2npPvHmxc3T2LN7jdcWMO_g?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕馬來西亞<br>面積﹕760公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：Eastern & Oriental Berhad<br>國際建築/工程/規劃顧問：WATG<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVr3gNPK2XflYj4Eu8rou41YvmLTwv9Dy2g9H7AUeAjbL3N5Zru0X0op6UGtHIP2FD_hOfMcRYZdXnADbOX69mJBomhQw4CmfOChrjWPKPoipg41Xb5ve3DQ6dG4PLiRr6smZCJu-N8gZ-uD1VPeQL8n8ZZRlzHLcy6jyg8I-ZgT1gGLBsmZKlJ8PaRsXIgPEYLt9T7aKFAm1Y?authuser=0&fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVN1kos4_KphCuQstjlPTw8Vojue--BxywU4njicmBU1hzA2XaCFVxTI2z9eaWmuKUpxTdKNNA-v2dXk0gzkLwIzix01yqpwhIPVCBFWNU1tvQ_p1Av8lv2_Q7qgxOHFUrX6cyqn_ajnsFxF14SKVyHM3-RX9hnjx-RnJnI2sRYGdV3zzD197G2npPvHmxc3T2LN7jdcWMO_g?authuser=0&fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVr3gNPK2XflYj4Eu8rou41YvmLTwv9Dy2g9H7AUeAjbL3N5Zru0X0op6UGtHIP2FD_hOfMcRYZdXnADbOX69mJBomhQw4CmfOChrjWPKPoipg41Xb5ve3DQ6dG4PLiRr6smZCJu-N8gZ-uD1VPeQL8n8ZZRlzHLcy6jyg8I-ZgT1gGLBsmZKlJ8PaRsXIgPEYLt9T7aKFAm1Y?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            100.3204021,5.447836,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Eko Atlantic (2008)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUm6cMphvOByy-PJVHqoC8o3hKW4MUP1NHukTb8kySowhSaaCZ7DvfUcc4HlwAaozFDe4nNXM-8zn4JkYIXRjeNcN6twhS0uyRMoAsFbPn4bFi_sSsoVCN3F-DB8rAuFshhoPl7EWZdwbjtJUTgMd7n5wQQzTzvzGRjsVQ_LNJwhyB1ECY7q45PGMccj1vok27U8RKDe6DXUA?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕尼日利亞<br>面積﹕1,000公頃<br>填海類型﹕近岸填海<br>發展模式：私人主導<br>發展商：Chagoury Group<br>國際建築/工程/規劃顧問：Dar<br>完成度問題：原訂2015年完成填海，延誤最少六年；填海進度2017年起停滯<br><br>規劃問題：本地政策難以持續「配合」<br>在填海土地興建的豪宅主要顧客群體是政客主導，但近年打擊貪污的政策令需求減少，其他主要豪宅區亦有兩至三成空置。<br><br>財務問題：易受外來經濟風險影響<br>尼日利亞是非洲第一大原油出口的國家，2014 年油價下跌導致經濟收縮，工程進度減慢。<br><br>環境問題：水浸問題<br>Eko Atlantic附近的海岸線受氣候變化威脅，在2012年，風暴潮便曾破壞建築物及造成多人傷亡。雖然Eko Atlantic設有數公里長的防波堤，但氣候專家指防波堤會改變水流方向，反令旁邊沿岸村落面對的風暴潮風險加劇。]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUm6cMphvOByy-PJVHqoC8o3hKW4MUP1NHukTb8kySowhSaaCZ7DvfUcc4HlwAaozFDe4nNXM-8zn4JkYIXRjeNcN6twhS0uyRMoAsFbPn4bFi_sSsoVCN3F-DB8rAuFshhoPl7EWZdwbjtJUTgMd7n5wQQzTzvzGRjsVQ_LNJwhyB1ECY7q45PGMccj1vok27U8RKDe6DXUA?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            3.4163934,6.410068,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gracefield Island (2015)
+</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUjpXGTlkhpOauYGBmJZ0Gsij-TNJjvjAUFzIhRDRuwmAxNVdgnjRFEbF8ZaWRHjBSVgQievgt9FyEErYBt1GDrEH2dduE75L9IkHilZYwGrqBJ6z9rHyfnmOtrVi8MXFzf1BYEoMbgP4CrUiJ6nFzOakB2CcplOgAECVNqdjHXedQBtxxcAsLGBD54oWvr50C9WZe5rWm-6g?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕尼日利亞<br>面積﹕100公頃<br>填海類型﹕人工島<br>發展模式：公私合營<br>發展商：Gravitas Investments Limited<br>國際建築/工程/規劃顧問：Aurecon, Stauch Vorster Architects<br>完成度問題：原訂2015年完成填海，延誤最少六年]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUjpXGTlkhpOauYGBmJZ0Gsij-TNJjvjAUFzIhRDRuwmAxNVdgnjRFEbF8ZaWRHjBSVgQievgt9FyEErYBt1GDrEH2dduE75L9IkHilZYwGrqBJ6z9rHyfnmOtrVi8MXFzf1BYEoMbgP4CrUiJ6nFzOakB2CcplOgAECVNqdjHXedQBtxxcAsLGBD54oWvr50C9WZe5rWm-6g?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            3.5218891,6.476087,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Navotas City Coastal Bay Reclamation (2019)</name>
+        <description><![CDATA[國家﹕菲律賓<br>面積﹕650公頃<br>填海類型﹕近岸填海<br>發展模式：政府主導<br>國際建築/工程/規劃顧問：Surbana Jurong]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            120.9186661,14.6802852,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Horizon Manila (2021)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAU4zdToQSMwuB1vmDkN-3ug0SllHiaNwxc4e4WW4mmK62toDGp84Jql0SkEJCfoSWjoS8E4ri5cdScUxnTyLa5_qFSdkuw7COsw1yNtWoeOJbx-AFnmZPiqWGF7PelxomxGwIAasBT1pvDeeHNFQdNPdAAX57XmPxqWL8Ql21jkZYw4zxjtOmpMxNj4p5iNsLxaoRs6N0o-Fg?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕菲律賓<br>面積﹕419公頃<br>填海類型﹕人工島<br>發展模式：公私合營<br>發展商：J-Bros Construction Corp]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAU4zdToQSMwuB1vmDkN-3ug0SllHiaNwxc4e4WW4mmK62toDGp84Jql0SkEJCfoSWjoS8E4ri5cdScUxnTyLa5_qFSdkuw7COsw1yNtWoeOJbx-AFnmZPiqWGF7PelxomxGwIAasBT1pvDeeHNFQdNPdAAX57XmPxqWL8Ql21jkZYw4zxjtOmpMxNj4p5iNsLxaoRs6N0o-Fg?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            120.943014,14.563797,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marine Facade (2006)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWzoj_NW2D8WDlnMcsIpipFc_PdbQ3rnrE5DaA54qMu3UsTdX9udjcdE99mtsULJEVgGqPqo7NUklJ84tVcAEmcQAwMs9EH2ox5ypZjqMxvDSF8YRd05H6eTyMaRDjOfW-R1hT_TmckIXjuOlI0jnY8mXSKsWdo5jv0jKiLagAu6ClDsGX6n5Ae1Kg667XmE7sBOYiUHrj3Cw?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕俄羅斯<br>面積﹕476公頃<br>填海類型﹕近岸填海 + 人工島<br>發展模式：公私合營<br>發展商：Marine Facade Management Company<br><br><img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAV5Vl-0wKdg8tmHzjTPt7O-iPKzyF2E1F7421lc4zQz6cOQV1maPX7JTOILTZNFWtMY9r-soSqJYK6W8jnpYV17Tw-zsCFuKTPTNoV1PY2fq5YgshtlISI7zw7UWd1mVKmFD3RzTHCMSXPOB5dnzQMykSr5XlfDYy8faMaecGLLi4vk08FWuKNszSkUImCW21dE7G8diuOlwg?authuser=0&fife=s16383" height="200" width="auto" />]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWzoj_NW2D8WDlnMcsIpipFc_PdbQ3rnrE5DaA54qMu3UsTdX9udjcdE99mtsULJEVgGqPqo7NUklJ84tVcAEmcQAwMs9EH2ox5ypZjqMxvDSF8YRd05H6eTyMaRDjOfW-R1hT_TmckIXjuOlI0jnY8mXSKsWdo5jv0jKiLagAu6ClDsGX6n5Ae1Kg667XmE7sBOYiUHrj3Cw?authuser=0&fife=s16383 https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAV5Vl-0wKdg8tmHzjTPt7O-iPKzyF2E1F7421lc4zQz6cOQV1maPX7JTOILTZNFWtMY9r-soSqJYK6W8jnpYV17Tw-zsCFuKTPTNoV1PY2fq5YgshtlISI7zw7UWd1mVKmFD3RzTHCMSXPOB5dnzQMykSr5XlfDYy8faMaecGLLi4vk08FWuKNszSkUImCW21dE7G8diuOlwg?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            30.1927125,59.9462573,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Can Gio Tourist City (2022)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWVSppxNgs3CPbWEkFJGAL2AmzmN9a5Pnk3N8UR1GCVyznyoMgg9iDC9XMugThuelCi9vMlpExOKmfCOImLgQQrlfYZ-nK8JP8tmysuUT_7dmdcFAieRRm72meP0FK6Z9hAPKkvw_xSJpHHOi4XZ79GBltcJQi9RSar8Uous3neeCNDU7vwravFBB-VQtK1uVgo1NQiMQL-qQ?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕越南<br>面積﹕2,870公頃<br>填海類型﹕近岸填海 + 人工島<br>發展模式：私人主導<br>發展商：Vigroup<br>國際建築/工程/規劃顧問：TOWNLAND<br><br>違規問題：發展繞過既定程序<br>越南環境保護法例要求發展商及政府部門均須公開工程資料，但有關 Can Gio Tourist City 的文件多數被歸入敏感資料，令公眾難以參與諮詢。自然資源與環境部的環評對於是否批准項目不置可否，而是將決定權交予總理，卸去其本身法律責任。<br><br>環境問題：破壞生境<br>填海範圍毗鄰聯合國教科文組織紅樹林生物圈保護區的緩衝區，將會對紅樹林造成破壞。]]></description>
+        <styleUrl>#icon-1899-FFD600</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWVSppxNgs3CPbWEkFJGAL2AmzmN9a5Pnk3N8UR1GCVyznyoMgg9iDC9XMugThuelCi9vMlpExOKmfCOImLgQQrlfYZ-nK8JP8tmysuUT_7dmdcFAieRRm72meP0FK6Z9hAPKkvw_xSJpHHOi4XZ79GBltcJQi9RSar8Uous3neeCNDU7vwravFBB-VQtK1uVgo1NQiMQL-qQ?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            106.9306727,10.3767007,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>已擱置或部分擱置  (擱置年份)</name>
+      <Placemark>
+        <name>日月灣 Riyue Bay (2020)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVIQCTq3caBYweBI4uCEXmImTLQoAYFKI-9w8hHmzsWwDHowCjDVLd9hnnmdn7Df8UfwBbPRUOz6p6VlFbMv4Bc8tKa76TDbGl-R6tTtia6RjtEPD-SseBzCWwZKiSPktugaNzVANrQDm1_3AZjWpH4ApImh6dgWTZuGJVUiyF5_KUZiOZhkneMKrWoRh44igOIdtK6iwY0gQ?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕中國<br>面積﹕109公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：融創中國<br>完成度問題：部分落成，2020年起部分擱置<br><br>規劃問題：本地政策難以持續「配合」<br>自2015年，融創集團籌備在海南日月灣的填海項目，然而，2017年由中國政府啟動《海洋督察方案》組成國家海洋督察組，並於2018年初宣佈實施「最嚴格」的填海管制，日月灣被中央海洋督察組批評工程在未取得完整許可下開始填海，在 2018 年起被勒令停工，而當中月島更被要求拆除。另外，在島上已開始建築的日島 2018 年亦受海南省對外省買家的限購政策影響，失去由北方城市避寒而來的顧客。<br><br>違規問題：發展繞過既定程序<br>日月灣填海項目中，月島在 2015 年未取得環評下開工，而融創集團委託的第一間環評公司，認為工程很可能造成圍邊岸灘出現大面積淤積，形成「連島沙壩」(tied bar)，將影響海洋自然風貌。融創集團其後更換另一間環評公司並順利通過環評，最終月島在 2020 年被勒令拆除。另外，日月灣位於生態保護 II 類紅線區內，禁止房地產發展；環評卻將項目歸類為「生態旅遊」，使其順利開工。<br><br>環境問題：海岸侵蝕或淤積<br>月島工程使其西南面長1.7公里的沙灘發生海岸侵蝕，侵蝕最嚴重達22米；日島工程連接橋樑附近則發生淤積，淤積形成的沙灘達340米。<br><br>環境問題：化學物污染<br>日月灣填海所使用的填充物料來自移平山坡取得的粘土沉積物，該物料倒進大海後會使海水酸鹼值下降，並使原本依附在海底淤泥的重金屬釋放到水中，造成重金屬污染。]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVIQCTq3caBYweBI4uCEXmImTLQoAYFKI-9w8hHmzsWwDHowCjDVLd9hnnmdn7Df8UfwBbPRUOz6p6VlFbMv4Bc8tKa76TDbGl-R6tTtia6RjtEPD-SseBzCWwZKiSPktugaNzVANrQDm1_3AZjWpH4ApImh6dgWTZuGJVUiyF5_KUZiOZhkneMKrWoRh44igOIdtK6iwY0gQ?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            110.2004836,18.6109442,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>蓬萊西海岸文化旅遊區 Penglai West Coast Marine Cultural and Tourism Area (2017)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWrGiAguIMSX91Dpz8ls869w1yFGbfpU-N_9B3rVPOeMHikoK0ysT_oCRqKZ08MLx0oBslSWsEOtb283TCOyjIeAIWzy96L7MnTQHdrpVH5Wui34u-7ZLulssWdpapjGPXMSV997uYW7yivgdvv0Y5VkGG0bYpv3-ZA_K0HwrmTEaQA7NavWMk4XWbK7E0Kx7kXXPTP8fRAyw?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕中國<br>面積﹕677公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：蓬萊西海岸海洋文化旅遊產業開發<br>完成度問題：2014年動工，2017年起擱置<br><br>違規問題：發展繞過既定程序<br>開發公司未獲批准私自填填海 203.6 公頃，收到山東省政府發出的停工令後，仍持續施工近一年。最終省政府命令禁止人員車輛進入填海範圍，項目實際上無限期停工，甚至封存項目的填海土地。<br><br>環境問題：水質混濁<br>人工島及近岸填海改變附近水域的水流，近岸水道內的水流流速緩慢，造成懸浮擴散緩慢。<br><br>環境問題：海岸侵蝕或淤積<br>填海區內新落成的人工海灘發生海岸侵蝕。海灘東西兩側從西北方向和東北方向被海浪沖走。<br><br>環境問題：化學物污染<br>人工島以及近岸填海之間的水道內水流速度慢，工程承建商更基於方便運輸填料，填出草圖沒有的行車路進一步窒礙水流，使水中的污染物以及懸浮粒子無法有效散去，使水質惡化。]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWrGiAguIMSX91Dpz8ls869w1yFGbfpU-N_9B3rVPOeMHikoK0ysT_oCRqKZ08MLx0oBslSWsEOtb283TCOyjIeAIWzy96L7MnTQHdrpVH5Wui34u-7ZLulssWdpapjGPXMSV997uYW7yivgdvv0Y5VkGG0bYpv3-ZA_K0HwrmTEaQA7NavWMk4XWbK7E0Kx7kXXPTP8fRAyw?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            120.6938833,37.8203951,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Benoa Bay (2019)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUmR3vb45FsRiPR5JRO0BKrMHgzHsIhwv4UUOXoBeW0bWfa-FxAzRySiW2MBM_B_knIu5XF6T3yU0eew8mFdP3BokLUoxPXMxZcr6BUEJJGFhPmDaISzUPcm6BbVwJrIldWLIW8RWiElPvAF1KmSDf8olQBIzNq4q3yhp9QGoSJHWcOeh75NVl4SWsx1PcFS7ZvNiijUzJoog?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕印尼<br>面積﹕700公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：PT Tirta Wahana Bali Internasional<br>國際建築/工程/規劃顧問：Townland<br>完成度問題：2019年擱置，從未動工<br><br>環境問題：水浸問題<br>當地沿岸地區的居民擔心填海計劃會加劇水浸等問題：在計劃擱置前，當地曾有長達三年的反對運動。計劃最終隨海事部門將Benoa Bay納入保育區，而變相宣告擱置。<br>（資料來源：Anton Muhajir (2015, September/October), “The puputan struggle against the Benoa Bay reclamation project”, Third World Resurgence, https://bit.ly/37LXc6o）]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUmR3vb45FsRiPR5JRO0BKrMHgzHsIhwv4UUOXoBeW0bWfa-FxAzRySiW2MBM_B_knIu5XF6T3yU0eew8mFdP3BokLUoxPXMxZcr6BUEJJGFhPmDaISzUPcm6BbVwJrIldWLIW8RWiElPvAF1KmSDf8olQBIzNq4q3yhp9QGoSJHWcOeh75NVl4SWsx1PcFS7ZvNiijUzJoog?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            115.2030545,-8.765901,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>National Capital Integrated Coastal Development (2018)</name>
+        <description><![CDATA[國家﹕印尼<br>面積﹕5,155公頃<br>填海類型﹕近岸填海 + 人工島<br>發展模式：公私合營<br>發展商：PT Kapuk Naga Indah, PT Jakarta Propertindo, PT Agung Podomoro Land<br>國際建築/工程/規劃顧問：Witteveen+Bos, Grontmij, Kuiper Compagnons, Deltares<br>完成度問題：部分落成，2018年部分擱置<br><br>規劃問題：房屋豪宅化<br>人工島 Pantai Maju 的發展商在島上建造「高爾夫球城」，而 Pluit City 填海範圍則被發展商規劃作「杜拜式」的新城；據報導當初人工島預留作公共用途的用地佔百分之十五，後來降至只佔百分之五。早在填海完成時，已有專家質疑新區會變成獨立於雅加達的封閉社區，一般人無法享用。當地公民團體預計，雅加達灣填海會令數以萬計漁民失去生計；根據政府估算，若暫停雅加達灣的捕魚活動，每年將造成超過5,000 萬歐元損失。<br><br>規劃問題：本地政策難以持續「配合」<br>2017 年雅加達省長選舉勝出的候選人在競選期間，曾承諾叫停雅加達灣填海，避免填海影響當地漁業。最終 17 個人工島計劃中，13 個在 2018 年以在未取得環評下開工為由被叫停，只餘四個已開始或已完成填海的人工島。<br><br>違規問題：發展繞過既定程序<br>NCICD 計劃中 17 個人工島的填海許可由雅加達省政府批出，但被媒體質疑欠缺環評等文件支持，以至作出決定的權力在省政府範圍之外。最終，換屆後的省政府在 2018 年以工程繞過環評為由，叫停 13 個人工島的填海。<br><br>違規問題：不良財政操作<br>一位當地議員因收取發展商 86,000 美元賄款被捕，當時雅加達議會正討論填海地區的規劃，而議員所屬政黨掌握議會中百分之 14 的票數。當地傳媒指，發展商希望下調填海土地撥給地方政府興建廉價房屋的比例。<br><br>財務問題：易受外來經濟風險影響<br>雅加達大型填海計劃最早出現於 1995 年，於 1997 年遇上經濟不景而長期擱置，直至2008年才於國家資本綜合海岸發展（NCICD）的規劃大綱重新提出築建海堤。<br><br>財務問題：公帑補貼付鈔<br>項目預期七成資金將會來自私人投資者，但提出先由政府保證投入一定資金，變相承擔項目主要風險；另外，估算所需的資金被批評未計算如污水處理系統等先決公共建設在內，公帑支出很可能比預期高。<br><br>環境問題：海岸侵蝕或淤積<br>大迦樓羅海堤的環境影響研究顯示，項目建造的巨型海堤會影響海堤以外的水流，有機會令雅加達灣西面的海島因海岸侵蝕而消失，而該等小島屬印尼的古蹟並已劃入考古公園之內。<br><br>環境問題：化學物污染<br>大迦樓羅海堤的規劃是一條長40公里、橫跨雅加達灣、印尼國徽巨型金鷹形狀的人工島，當地環保專家預計該島會將13條流入雅加達灣河流的水困住，使海灣的自我淨化能力下降，積聚污染物並危及海洋生態。<br><br>環境問題：破壞生境<br>當地環境部門進行的環境影響研究顯示，填海將破壞珊瑚礁及雅加達灣的魚類棲息地，影響當地漁民生計。]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            106.7381315,-6.082769,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>皇京港 Melaka Gateway (2020)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWpXijYfP501OR-eVhQBYNuw6lWzxc5Gy302Lc0pPP-qYY4S8IM5mrKQS4Ds42H-BOR-WfOced-RefYE-535QCOjbC1MCXSIIALFoTD71CaZdCGaw9hZNobtp6k7-1LHRKoA5nvCvRsdWVG1Q2I_x6PTfVTtW56lR0_PYYPN5_01wT95kgLXlGwDUXvHyk6OlyyptgTfRDUSQ?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕馬來西亞<br>面積﹕552公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：馬來西亞凱傑發展<br>國際建築/工程/規劃顧問：Broadway Malyan<br>完成度問題：2017年動工，2020年起擱置<br><br>環境問題：海岸侵蝕或淤積<br>馬六甲的皇京港填海發展所造成的淤積問題，直接影響沿岸的葡裔漁村社區（kristang）：海岸出現二、三呎的淤積使泥灘覆蓋水面，令漁船難以靠岸、泥灘傳出惡臭。<br>（資料來源：New Mandala (2020 April 8). “Reclaiming the sea from the Melaka Gateway”, https://bit.ly/38UzE01）<br><br>環境問題：破壞生境<br>皇京港填海工程需要在附近海床浚挖取得海沙，騷擾海洋生物的活動，導致附近烏貝島的玳瑁海龜出現次數大幅減少。<br>（資料來源：Dudhraj A. (2019). Understanding the environmental Implications of Belt and Road Initiative Projects : A Focus on Southeast Asia. [Master Thesis: Flinders University, South Australia].https://bit.ly/3PQ5xaC）]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWpXijYfP501OR-eVhQBYNuw6lWzxc5Gy302Lc0pPP-qYY4S8IM5mrKQS4Ds42H-BOR-WfOced-RefYE-535QCOjbC1MCXSIIALFoTD71CaZdCGaw9hZNobtp6k7-1LHRKoA5nvCvRsdWVG1Q2I_x6PTfVTtW56lR0_PYYPN5_01wT95kgLXlGwDUXvHyk6OlyyptgTfRDUSQ?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            102.2618347,2.1747799,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Markerwaard (2003)</name>
+        <description><![CDATA[國家﹕荷蘭<br>面積﹕41,000公頃<br>填海類型﹕近岸填湖<br>發展模式：政府主導<br>完成度問題：1990年起擱置，從未動工]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            5.2063214,52.5645725,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mega Harbour (2017)</name>
+        <description><![CDATA[國家﹕菲律賓<br>面積﹕419公頃<br>填海類型﹕人工島<br>發展模式：公私合營<br>發展商：RII - Builders<br>完成度問題：2017年起擱置，從未動工]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <Point>
+          <coordinates>
+            125.6323078,7.0594443,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>杜拜島 Dubai Islands (2009)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVlBZCJAHm0jESGa4fltSBS5PW04G_ga6o3dYYiwCMBLi_OE01Q7gJC0F9Npk1TS-vCIQk7YiLsbIQ9XShRUzCvW_Arg9VZ5qM0Yw9cYgfJzkW8H3ZatXYKJi9jADllDt01PI4a_gG6wX7LAtBfrfReGdKAxSq7pwaLNRSHICT7xc7_we1ZlawRx4zlK46V2u0oQApbQa1TNiE?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕阿聯酋<br>面積﹕4,635公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：Nakheel<br>國際建築/工程/規劃顧問：AE7<br>完成度問題：部分落成，2022年起部分擱置<br><br>財務問題：易受外來經濟風險影響<br>杜拜島原為德拉棕櫚島，計劃面積逾 4,000 公頃，為三個棕櫚島項目中最大。同樣受金融海嘯影響，項目在 2008 年10月停工時仍未完成填海，發展商多次圍繞已填海土地重推計劃，截至 2022 年8月填海規模將縮減至原有約三分一。]]></description>
+        <styleUrl>#icon-1899-A52714</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVlBZCJAHm0jESGa4fltSBS5PW04G_ga6o3dYYiwCMBLi_OE01Q7gJC0F9Npk1TS-vCIQk7YiLsbIQ9XShRUzCvW_Arg9VZ5qM0Yw9cYgfJzkW8H3ZatXYKJi9jADllDt01PI4a_gG6wX7LAtBfrfReGdKAxSq7pwaLNRSHICT7xc7_we1ZlawRx4zlK46V2u0oQApbQa1TNiE?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            55.2631472,25.344578,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>已完成填海 (完成年份)</name>
+      <Placemark>
+        <name>杜拉特·巴林 Durrat Al Bahrain (2008)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUqG89MrMtizRAV-VUjBaYUwEiIc0JQ1x0Vn9QMvWqEuc6Y9r63aOwbrparslSGO2KLxpqSaGDzFhQykFxWVtNIyjk8xaHkQ2FEzCNSYSB5o_pChJESyX0InjEXJc_XNhlwCYky83iifIUMm0_EiQLMqtEwWeaIdZXk-GCq3QqCv2lEZ2bdqZUlQfx1M9PMEHH4yUK3O1gNKw?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕巴林<br>面積﹕500公頃<br>填海類型﹕人工島<br>發展模式：公私合營<br>發展商：Bahrain Gov. & Kuwait Finance House<br>國際建築/工程/規劃顧問：Atkins]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUqG89MrMtizRAV-VUjBaYUwEiIc0JQ1x0Vn9QMvWqEuc6Y9r63aOwbrparslSGO2KLxpqSaGDzFhQykFxWVtNIyjk8xaHkQ2FEzCNSYSB5o_pChJESyX0InjEXJc_XNhlwCYky83iifIUMm0_EiQLMqtEwWeaIdZXk-GCq3QqCv2lEZ2bdqZUlQfx1M9PMEHH4yUK3O1gNKw?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            50.6070024,25.8361168,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>巴林灣 Bahrain Bay (2011)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWJRkNGGBrKq0PFkrYytXJ2pxw0AjuYZMTTEjdez1Gd9GNh00GzHMfemhnmQ2lTWyatridnAtBpjrDnPmDmO_ymBj7dayz5X6PJ1IW4RAtgDx-qMFAu6WkMFzlOqzNxquaaLKXV9Rzp9AGgEKr8j0J07_DcKSVuGTPijkepV2-TmY4hqIrRb961Co95h9VOcLs0J6LTgylDUg?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕巴林<br>面積﹕135公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：Premier Group, Islamic banks etc.<br>國際建築/工程/規劃顧問：<br>Skidmore Ownings & Merrill (SOM)<br><br>違規問題：不良財務操作<br>有填海水域（underwater plots）被轉移至王室的私人公司 Premier Group 持有，其間沒有交易紀錄顯示王室私人公司有就這些水域轉移向政府繳付任何金額。Premier Group 在多項人工島工程為吸引外國投資者，提供土地以換取合資公司股份。<br>（資料來源：tps://www.ft.com/content/b6d081a2-74b8-11e4-8321-00144feabdc0）]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWJRkNGGBrKq0PFkrYytXJ2pxw0AjuYZMTTEjdez1Gd9GNh00GzHMfemhnmQ2lTWyatridnAtBpjrDnPmDmO_ymBj7dayz5X6PJ1IW4RAtgDx-qMFAu6WkMFzlOqzNxquaaLKXV9Rzp9AGgEKr8j0J07_DcKSVuGTPijkepV2-TmY4hqIrRb961Co95h9VOcLs0J6LTgylDUg?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            50.5794971,26.2493084,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>迪亞爾·穆哈拉格 Diyar Al Muharraq (2014)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAU3abqjYNjPbEzAx0Xk67_UsSVX0oDH5Wb72Ya1s03gXqSYNtRAbzodCRZocm0FlQVRYLCgfaR0zTuWK07LDVtBMjYwD380DaPMmn1HJtd_afzMJu_Gk5R638nCmyiXZn35dUWWTIO8SUHsLhTY60ELnTbfc5N4BurlgexmwdIVSj5LtLbO7KObokHZflC9HHQ1DQ60Ue8ljQ?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕巴林<br>面積﹕1200公頃<br>填海類型﹕近岸填海<br>發展模式：私人主導<br>發展商：Stone, Kuwait Finance House etc.<br>國際建築/工程/規劃顧問：AECOM<br><br>違規問題：不良財務操作<br>有填海水域（underwater plots）被轉移至王室的私人公司 Premier Group 持有，其間沒有交易紀錄顯示王室私人公司有就這些水域轉移向政府繳付任何金額。Premier Group 在多項人工島工程為吸引外國投資者，提供土地以換取合資公司股份。<br>（資料來源：tps://www.ft.com/content/b6d081a2-74b8-11e4-8321-00144feabdc0）]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAU3abqjYNjPbEzAx0Xk67_UsSVX0oDH5Wb72Ya1s03gXqSYNtRAbzodCRZocm0FlQVRYLCgfaR0zTuWK07LDVtBMjYwD380DaPMmn1HJtd_afzMJu_Gk5R638nCmyiXZn35dUWWTIO8SUHsLhTY60ELnTbfc5N4BurlgexmwdIVSj5LtLbO7KObokHZflC9HHQ1DQ60Ue8ljQ?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            50.6348652,26.3119118,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>安瓦吉島 Amwaj Islands (2003)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVAMR6ayeyC0KVf560CD48PCqSv65GdoukEVPRF5JuvT1h5KPYnrEzzOk3_-Jb6plSbgHcaKBSWGOiZ85ODcf-vKfPZm-0qubdxq-JVjvwQ8HeIcXW1iMdQCPcQDXPpOOu5VK-3TcrI_gUkPL6JvCe8GLSwhZNJ8n2mjZr2LlbeD50LPMetvK_gz8FWW6aEkZUe-LeL1m12lQ?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕巴林<br>面積﹕279公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：Oasis Property]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVAMR6ayeyC0KVf560CD48PCqSv65GdoukEVPRF5JuvT1h5KPYnrEzzOk3_-Jb6plSbgHcaKBSWGOiZ85ODcf-vKfPZm-0qubdxq-JVjvwQ8HeIcXW1iMdQCPcQDXPpOOu5VK-3TcrI_gUkPL6JvCe8GLSwhZNJ8n2mjZr2LlbeD50LPMetvK_gz8FWW6aEkZUe-LeL1m12lQ?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            50.6640764,26.2912832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>北部城市 Madinat Salman (2011)</name>
+        <description><![CDATA[國家﹕巴林<br>面積﹕700公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：巴林政府房屋部<br>國際建築/工程/規劃顧問：<br>AECOM]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            50.4549028,26.2379714,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>東錫特拉 East Sitra City (2016)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUkyJ0Khko4XG28EnT_enZ8_UNAO7NkmQG6e2jVAPxrOh_8gEaDbTyFG6WRS7JHJAAxP3mMiukF7ey4yMeAEgdfzct4SxJBoKkZUNieSjRP8v0M4YjjIssjPrXFWu2rNuax8CYvx0MuXb_CB-SUAxRyB2ch71tAV-_ZTAnQIa3jyxBcqZif_aIWKAKknLRtcEq4bwnQ5dDyMVM?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕巴林<br>面積﹕253公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：巴林政府房屋部<br>國際建築/工程/規劃顧問：<br>Atkins, AECOM, 中設集團<br><br>圖片來源﹕巴林房屋部網頁﹕https://www.housing.gov.bh/projects/city/3/details]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUkyJ0Khko4XG28EnT_enZ8_UNAO7NkmQG6e2jVAPxrOh_8gEaDbTyFG6WRS7JHJAAxP3mMiukF7ey4yMeAEgdfzct4SxJBoKkZUNieSjRP8v0M4YjjIssjPrXFWu2rNuax8CYvx0MuXb_CB-SUAxRyB2ch71tAV-_ZTAnQIa3jyxBcqZif_aIWKAKknLRtcEq4bwnQ5dDyMVM?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            50.6407872,26.1658285,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>海花島 Ocean Flower Island (2019)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXV3BCdlnYKnrz7P_RD9nW2g7HueAPPCCyjE7fdLENCMgPKZBWZCaQIW_v4PyCZFtx4jldgMUpd6mkpUFA1MtLoPLPYG1vgJ5aKVEWMYd5OBniEYc9tWurcc_aHYEMasI8BH2AQinHnlnL2Npr40jmYdCg6cZLDuTh7Pf4Lrs9hcGTPL4Yxi4aTAf-xI5X7k6QGtEcGkt6CNA?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕中國<br>面積﹕783公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：恒大集團<br><br>規劃問題：配套未完善 居民成開荒牛<br>雖然海花島規劃人口為 11 萬人，但吸引的買家主要為投資者和由東北南下避寒旅遊的人士，因此島上在淡季人煙稀少、房屋空置率高。有媒體指島上缺乏生活配套，除餐飲及地產代理外沒有商戶，如果所有人口同時居住配套設施會不堪負荷。<br><br>規劃問題：本地政策難以持續「配合」<br>2010年10月14日，儋州市政府通過招商引資與恆大集團簽訂了《海南省儋州市白馬井填海項目投資開發框架協議》，合作開發海花島填海項目，並在2013年通過國家海洋局的「配號」，取得全部《海域使用權證書》。然而，到2017年中國政府啟動《海洋督察方案》並組成國家海洋督察組，同年更進駐及點名批評海南省，並於2018年初宣佈實施「最嚴格」的填海管制。雖然海花島申請建設時獲儋州市政府協助繞過既定審批程序，最終儋州市委書記在 2019 年受查，而恒大在其中一個人工島上的建築許可證被裁定屬違法取得並充公處理。<br><br>違規問題：發展繞過既定程序<br>中紀委指時任儋州市委書記張琦將 783 公頃的填海項目，斬件成 36 個面積小於 27 公頃的項目，以避開大規模填海工程一般所需的審批。恒大在其中一個人工島上的 39 棟建築，被裁定許可證屬違法取得並勒令拆除，後來改為充公。<br><br>環境問題：破壞生境<br>中國中央第四環境保護督察組在2017年指，儋州市政府審批海花島項目過程不當，工程破壞大面積珊瑚礁和白蝶貝。]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXV3BCdlnYKnrz7P_RD9nW2g7HueAPPCCyjE7fdLENCMgPKZBWZCaQIW_v4PyCZFtx4jldgMUpd6mkpUFA1MtLoPLPYG1vgJ5aKVEWMYd5OBniEYc9tWurcc_aHYEMasI8BH2AQinHnlnL2Npr40jmYdCg6cZLDuTh7Pf4Lrs9hcGTPL4Yxi4aTAf-xI5X7k6QGtEcGkt6CNA?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            109.1750349,19.664922,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>雙魚島 Double Happiness Island (2013)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWdMWRiNVdyGMVOlbOnXjzfnQApLozrGMHwcGVHyxv4sfjelsqyv7qtX83PlDCSIRZ3sMqjPtt2wYUOyq4sZsQN8u8Sco8GIwjYBBJMZKUiYWHWHOagaROJY_FCiyugPZQSz2ou7btHyv1Q34D2p4eTrP1YGsZByJ5N1bGMQd96V1_ceDqAML3a8MVMPEq_WHHpxg1Knzbc4Q?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕中國<br>面積﹕182公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：招商局及漳州市政府]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWdMWRiNVdyGMVOlbOnXjzfnQApLozrGMHwcGVHyxv4sfjelsqyv7qtX83PlDCSIRZ3sMqjPtt2wYUOyq4sZsQN8u8Sco8GIwjYBBJMZKUiYWHWHOagaROJY_FCiyugPZQSz2ou7btHyv1Q34D2p4eTrP1YGsZByJ5N1bGMQd96V1_ceDqAML3a8MVMPEq_WHHpxg1Knzbc4Q?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            118.074651,24.3760316,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>明珠島 Pearl Island (2016)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUuXMg0gjyKFyiv9Jsyu8gPQUayAxN_BNwvGmyN6LcFWBqJ59x_KD87OgNYOoHui-2bXQCK-kdOh2bwLSuTrG09IyCK7r5U09BZOd0QavJ1sXtgsxte6mWfuenS9BocCcmp1MIgv8NNVfOv5abp0kRkygTHr1yg05YGxHqetOyPvbE7XOptgSPD6pny1OvQhTebT7q5Uj9SbA?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕中國<br>面積﹕265公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：海南發展控股置業集團<br>完成度問題：2018年起島上工程擱置，空置至今<br><br>規劃問題：本地政策難以持續「配合」<br>2017年由中國政府啟動《海洋督察方案》組成國家海洋督察組，並於2018年初宣佈實施「最嚴格」的填海管制，在 2018 年起被勒令停工。另外，明珠島 2018 年亦受海南省對外省買家的限購政策影響，失去由北方城市避寒而來的顧客。]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUuXMg0gjyKFyiv9Jsyu8gPQUayAxN_BNwvGmyN6LcFWBqJ59x_KD87OgNYOoHui-2bXQCK-kdOh2bwLSuTrG09IyCK7r5U09BZOd0QavJ1sXtgsxte6mWfuenS9BocCcmp1MIgv8NNVfOv5abp0kRkygTHr1yg05YGxHqetOyPvbE7XOptgSPD6pny1OvQhTebT7q5Uj9SbA?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            110.2323424,20.0725057,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>星光島 Starlight Island (2015)</name>
+        <description><![CDATA[國家﹕中國<br>面積﹕210公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：萬達集團]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            120.1119142,35.8947062,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>小窯灣國際商務區 Xiaoyaowan International Business Region (2017)</name>
+        <description><![CDATA[國家﹕中國<br>面積﹕461公頃<br>填海類型﹕近岸填海 + 人工島<br>發展模式：政府主導]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            121.9003946,39.0589155,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>連理島 Lianli Island (2016)</name>
+        <description><![CDATA[國家﹕中國<br>面積﹕183公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：内蒙古萬通路橋集團]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            121.1864374,36.6597564,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centre Point of Indonesia (2018)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVRUczVGP7AGPuSF279m89V9hIpAR2CU90czvAjfOZXR2700v71HWtZTvwtylqTgdyFlFHHqquXvxoeUEy9gvsFaf4rs4joO2FBec2MduHfSLtAutpZDgj06uj5hFJSYGCAlQJdSqhBULT4e_xClofNO8V-KG4VNmWng4ph-r6TEMIRGkzIn0XX2Fon4y_lZ98W1SpATvhfcA?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕印尼<br>面積﹕157公頃<br>填海類型﹕人工島<br>發展模式：公私合營<br>發展商：KSO Ciputra Yasmin<br>國際建築/工程/規劃顧問：Witteveen + Bos<br><br>違規問題：發展繞過既定程序<br>項目在 2013 年動工時在法院被挑戰，指批准施工的環評已過期。工程在 2015 年初一度被地方政府叫停，但地方政府卻在同年將違規填海範圍納入其規劃圖之中，而工程隨後亦繼續。<br><br>環境問題：海岸侵蝕或淤積<br>附近的海岸原本由近岸的珊瑚礁、海草及海沙保護。填海工程大量挖走海沙導致海岸侵蝕，令21間房屋受影響、當地墓園遭海浪破壞，另外當地漁獲亦減少八成。]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVRUczVGP7AGPuSF279m89V9hIpAR2CU90czvAjfOZXR2700v71HWtZTvwtylqTgdyFlFHHqquXvxoeUEy9gvsFaf4rs4joO2FBec2MduHfSLtAutpZDgj06uj5hFJSYGCAlQJdSqhBULT4e_xClofNO8V-KG4VNmWng4ph-r6TEMIRGkzIn0XX2Fon4y_lZ98W1SpATvhfcA?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            119.4007876,-5.1443861,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>島城 Island City (2005)</name>
+        <description><![CDATA[國家﹕日本<br>面積﹕401公頃<br>填海類型﹕人工島<br>發展模式：政府主導]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <Point>
+          <coordinates>
+            130.4082276,33.6641281,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>路氹填海區 Cotai (2016)
+</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWr7FowHmgm0UwhawggiBifkgJJJTuDtb7GHLP9sHM4IG0V8pdvxgDxSWWbL0_B-CYfMiic9dd0K_601BN3CneJHi5zkmO1VeozhFySe8XOAhFbyoM1M-BTOLVZ5gknRfJty7MTjOx5xoTRLCa6Wkz7eJPP5w0Gg6y1qgjYaXKYf-J_Zs7KKniB7gYB6RuqURyMO7RIPl6lqA?authuser=0&fife=s16383" height="200" width="auto" /><br><br>地區﹕澳門<br>面積﹕600公頃<br>填海類型﹕近岸填海<br>發展模式：政府主導]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWr7FowHmgm0UwhawggiBifkgJJJTuDtb7GHLP9sHM4IG0V8pdvxgDxSWWbL0_B-CYfMiic9dd0K_601BN3CneJHi5zkmO1VeozhFySe8XOAhFbyoM1M-BTOLVZ5gknRfJty7MTjOx5xoTRLCa6Wkz7eJPP5w0Gg6y1qgjYaXKYf-J_Zs7KKniB7gYB6RuqURyMO7RIPl6lqA?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            113.5646355,22.1425946,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>胡魯馬累島 Hulhumalé 1 (2002)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWVYbFL1TJTSVMZ3ZBWiTR4SNOcEMBO10-8mPE00yyNTyBVAhU4dbLwOB2QWoRLQMAyILhhNTV8ZBN1m2Om4kmqWWnArs5JgBEdTPNBYAnyt_IEu7Mtz1OMRe9kTk-BsOgO3CJJ7unTgkGmYpWTCBd-Y3iU7GMS4ffWOBLjaY7RAqsXHXMSon75pihasca92wc6U4GO-uw_wg?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕馬爾代夫<br>面積﹕188公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：Housing Development Corporation<br>國際建築/工程/規劃顧問：AMC Architects, Binnie Black and Veatch<br><br>環境問題：破壞生境<br>填海工程令水質混濁，威脅珊瑚礁生存，而過往移植珊瑚礁的成功率亦不高。]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWVYbFL1TJTSVMZ3ZBWiTR4SNOcEMBO10-8mPE00yyNTyBVAhU4dbLwOB2QWoRLQMAyILhhNTV8ZBN1m2Om4kmqWWnArs5JgBEdTPNBYAnyt_IEu7Mtz1OMRe9kTk-BsOgO3CJJ7unTgkGmYpWTCBd-Y3iU7GMS4ffWOBLjaY7RAqsXHXMSon75pihasca92wc6U4GO-uw_wg?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            73.5402363,4.2133482,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>胡魯馬累島 Hulhumalé 2 (2015)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWBHUSB4vTRtad7fpVH83iG-ZR4OujQNAmPcgPgIyWN2rVO2A0yOuruI1WvhVP9BvPcXbYcDdgqRnhtOwca97WG6fdMiqN7N10ZcOGkV6lVbOAzRxIFi466lCNOHhnrIU9mJ5cTu2CNyGi8LZT3PI75Db_cql02b151X4OYhil1yhSn93seELYsd6A9Le_q1UI6bVI8AK4XuBk?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕馬爾代夫<br>面積﹕244公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：Housing Development Corporation<br>國際建築/工程/規劃顧問：AMC Architects, Binnie Black and Veatch<br><br>環境問題：破壞生境<br>填海工程令水質混濁，威脅珊瑚礁生存，而過往移植珊瑚礁的成功率亦不高。]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWBHUSB4vTRtad7fpVH83iG-ZR4OujQNAmPcgPgIyWN2rVO2A0yOuruI1WvhVP9BvPcXbYcDdgqRnhtOwca97WG6fdMiqN7N10ZcOGkV6lVbOAzRxIFi466lCNOHhnrIU9mJ5cTu2CNyGi8LZT3PI75Db_cql02b151X4OYhil1yhSn93seELYsd6A9Le_q1UI6bVI8AK4XuBk?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            73.5448712,4.2312149,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>卡塔爾之珠 The Pearl-Qatar (2006)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVq_NWmI2mFbFk0xlrMgYDSXQzZCDXeQQaSRVW-jX-JuuiOEB5PHQeMPTZuZ9C2SykJ_YL3Sqio8Mp2GUcVvSu5hyWz7rnBFIGxdYQNMM8PPbc1brkHeBfVCBUt0GfcWmYYymLdo6OVvfB3W52YSr746rs0Zf7Br001IFY713lR6dx_yx69wGDdfWNRyD1mFwNsrZCcw0Z-gA?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕卡塔爾<br>面積﹕400公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：United Development<br>國際建築/工程/規劃顧問：Callison<br><br>規劃問題：房屋豪宅化<br>島上的地產項目早有指並非主打本地人，島上規劃設計被指行「西方風格」（westernized design），針對潛在對象是美國及歐洲人等外來遊客。島上項目並無配合當地穆斯林的社群之餘，貴價奢華豪宅的房屋供應，令本地人卻步。<br><br>違規問題：不良財政操作<br>財團 AlRajhi 的關聯公司原聲稱在 The Pearl-Qatar 興建十三座商住大廈，在主要投資者投入1億 4,500 萬美金按金後，AlRajhi 並沒有開展工程，關閉作為計劃發展商的關聯公司並轉移走資金。<br>（資料來源：Billion Dollar Middle East Fraud Goes Uninvestigated”, Global Justice Foundation, https://bit.ly/3Lktvbd）]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVq_NWmI2mFbFk0xlrMgYDSXQzZCDXeQQaSRVW-jX-JuuiOEB5PHQeMPTZuZ9C2SykJ_YL3Sqio8Mp2GUcVvSu5hyWz7rnBFIGxdYQNMM8PPbc1brkHeBfVCBUt0GfcWmYYymLdo6OVvfB3W52YSr746rs0Zf7Br001IFY713lR6dx_yx69wGDdfWNRyD1mFwNsrZCcw0Z-gA?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            51.5490554,25.3713318,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Qetaifan Islands (2019)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWVfLrHeQq43cRRpLCOAn7BgOiasQ95Z2xllgkgr3dzXvC4Cg-ksQMM61gL2Zx1O2ur2JqTFn_8lyfnGKWuGI6V--MS9u6LtNC6SmVBxFD0XtqDkQF9jxu6jMgjo8LKhC2JaDsO_IrqzmHj4XbHfGSGVVEShQgGvjBGqSTPcVi63opJOwQxG_lQrQVHNG6wBxps_gZ9KugXPQ?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕卡塔爾<br>面積﹕260公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：Qetaifan Projects<br>國際建築/工程/規劃顧問：Atkins, Cundall]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWVfLrHeQq43cRRpLCOAn7BgOiasQ95Z2xllgkgr3dzXvC4Cg-ksQMM61gL2Zx1O2ur2JqTFn_8lyfnGKWuGI6V--MS9u6LtNC6SmVBxFD0XtqDkQF9jxu6jMgjo8LKhC2JaDsO_IrqzmHj4XbHfGSGVVEShQgGvjBGqSTPcVi63opJOwQxG_lQrQVHNG6wBxps_gZ9KugXPQ?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            51.5259831,25.4219852,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Taparura (2008)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAV3lW4nUw8FUAwZINg5QJOGbKoWgzXy8Sg27Q6-c7H4f6HkmHtzPBJng3iQ6Z8EYzVx5aLupbyCPjIkd8rH5Px0g3XphnAxS12TNMMdV42_yBO5gWT2vSZHewcXOTroOLZOWYdsytIOPB5MWfW4TdNrYMwM5Kuh90QzLm5PN6B9utpPV2vL7a-cJ-_Cnyqy16CKaA3zZuzbjAE?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕突尼西亞<br>面積﹕420公頃<br>填海類型﹕近岸填海<br>發展模式：政府主導<br>發展商：Sfax Northern Coast Planning & Development Company<br>國際建築/工程/規劃顧問：PACE, ArchiComp<br>完成度問題：2008年落成後空置至今]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAV3lW4nUw8FUAwZINg5QJOGbKoWgzXy8Sg27Q6-c7H4f6HkmHtzPBJng3iQ6Z8EYzVx5aLupbyCPjIkd8rH5Px0g3XphnAxS12TNMMdV42_yBO5gWT2vSZHewcXOTroOLZOWYdsytIOPB5MWfW4TdNrYMwM5Kuh90QzLm5PN6B9utpPV2vL7a-cJ-_Cnyqy16CKaA3zZuzbjAE?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            10.778992,34.7386987,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>朱美拉棕櫚島 Palm Jumeirah (2006)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAW3KlK5RTzlNZ43ENTdTyYPqOanirBxQiW0_VzZtPRYlc1bcWFuQkFtzmchcB21axiN9PFfUkhDFuVCib8KpA1Luf2pSdBcu2STHqH_mLvxh2LVsLYM7l8kaAVbLbEDaGx_CFr9VbWD83RegVg7bLEUJQnkomVGSZR23tn6gapG4R3ExYne9VfYumam6fbkTNdYjFgExrwKRw?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕阿聯酋<br>面積﹕560公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：Nakheel<br>國際建築/工程/規劃顧問：HHCP<br>完成度問題：原訂2003年完成填海，延誤最少兩年<br><br>環境問題：水質混濁<br>朱美拉棕櫚島工程期間填充物料擴散及浚挖令水質混濁，工程造成的懸浮物沉積在附近的珊瑚礁和底棲生物身上，令它們被活埋及窒息。<br><br>環境問題：海岸侵蝕或淤積<br>朱美拉棕櫚島阻擋波浪，破壞了人工島東面沙灘的沉積物運輸，海灘沙粒減少因而發生嚴重的海岸侵蝕；填海工程使海表面床出現兩寸厚的沉積物，覆蓋珊瑚礁、牡蠣床和海草草甸。<br><br>工程問題：錯誤預判土地沉降速度<br>朱美拉棕櫚島填海工程在 2003 年完成後，發現造出的陸地未足以支撐計劃中的建設，須再以振動方式擠密海砂加固陸地。儘管如此，美國太空總署 2009 年的衛星圖像顯示，朱美拉棕櫚島正以每年五毫米的速度下沉 。]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAW3KlK5RTzlNZ43ENTdTyYPqOanirBxQiW0_VzZtPRYlc1bcWFuQkFtzmchcB21axiN9PFfUkhDFuVCib8KpA1Luf2pSdBcu2STHqH_mLvxh2LVsLYM7l8kaAVbLbEDaGx_CFr9VbWD83RegVg7bLEUJQnkomVGSZR23tn6gapG4R3ExYne9VfYumam6fbkTNdYjFgExrwKRw?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            55.1325276,25.1188456,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>世界島 The World Islands (2008)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVKLqgATgi3ZGh6StZeUZ1Gwr6KGe0K0l1fsDYoR2r5B5WTNyV90mEggH3U55rS8G3enaUkhhINxDJ_S-mb4BTzRrLHIlg_-ZvEibjWThe8o_egMprEERBIjmX4T0gYf9jCTxQPneJSQCfSeTVAPzD1uhk38D4dJGeWcKFOPR8MCTQd8Wtns6o8VrK4psKHWuSgOZsz3jUiTg?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕阿聯酋<br>面積﹕900公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：Nakheel<br>完成度問題：2008年落成後大部分空置至今<br><br>財務問題：易受外來經濟風險影響<br>2008 年金融海嘯令杜拜的地產需求減少，發展商 Nakheel 亦面對債務困難。世界島的三百個島嶼在 2008 年初完成填海，截至 2022 年8月有建築物的島嶼只有單位數。<br><br>工程問題：錯誤預判土地沉降速度<br>2010 年，負責世界島的物流及運輸服務的 Penguin Marine 承建商警告，世界島正在沉降。有報道指由於建島的海砂已逐漸流失，更從2010 年 2 月的一張國際太空站（International Space Station）的衛星圖顯示，波斯灣水域確實正在上漲，島嶼開始消失。而項目發展商 Nakheel 否認了所有這些指控。]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVKLqgATgi3ZGh6StZeUZ1Gwr6KGe0K0l1fsDYoR2r5B5WTNyV90mEggH3U55rS8G3enaUkhhINxDJ_S-mb4BTzRrLHIlg_-ZvEibjWThe8o_egMprEERBIjmX4T0gYf9jCTxQPneJSQCfSeTVAPzD1uhk38D4dJGeWcKFOPR8MCTQd8Wtns6o8VrK4psKHWuSgOZsz3jUiTg?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            55.1714631,25.2240477,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>傑貝勒阿里棕櫚島 Palm Jebel Ali (2007)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVeFJ-qvrwFLSUv7Nv8nEQ5caB-4v2-ZIlQqhlM2VLDdIlEn8nLkuGJ-77hql3HblPaSFT3s_xjXPG-U5wr24Dd0di5DMiXK17eoVpuxQcXz7N9ZH0j7_RYwq-rKm3MOnRiCOebTJgZXqWDZM3XoLGlKPdcz2BppGgTies4d3VXzpKaqX6bSRSby4OUBWSR-FWjsJVSG_T73w?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕阿聯酋<br>面積﹕840公頃<br>填海類型﹕人工島<br>發展模式：政府主導<br>發展商：Nakheel<br>國際建築/工程/規劃顧問：BMT, Roberts Day<br>完成度問題：2007年落成後空置至今<br><br>財務問題：易受外來經濟風險影響<br>2008 年金融海嘯令杜拜的地產需求減少，發展商 Nakheel 亦面對債務困難。傑貝勒阿里棕櫚島僅完成填海，在 2009 年停工至今，填海土地維持空置。]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVeFJ-qvrwFLSUv7Nv8nEQ5caB-4v2-ZIlQqhlM2VLDdIlEn8nLkuGJ-77hql3HblPaSFT3s_xjXPG-U5wr24Dd0di5DMiXK17eoVpuxQcXz7N9ZH0j7_RYwq-rKm3MOnRiCOebTJgZXqWDZM3XoLGlKPdcz2BppGgTies4d3VXzpKaqX6bSRSby4OUBWSR-FWjsJVSG_T73w?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.9873513,25.0088622,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>艾露露島 Al Lulu Island (1992)</name>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVq3o67DCFnhDeHPPe_-zfyG2X76yt6-UCsBjM_9m96CzUMPlfB1UGiN_U9gJiVoIFvahsFuvuzSaA3gHUODFapJzIJneuAGAWBwLRJ1Xn6b9n2075uxOaVedzbqljJ-YhvXFp9XHYHFvnCMlEY_mkM71IQHx_c4FJAI2IYgriatW_CdOJbL3XbOZORdlXm8Unj81M9eYehxg?authuser=0&fife=s16383" height="200" width="auto" /><br><br>國家﹕阿聯酋<br>面積﹕420公頃<br>填海類型﹕人工島<br>發展模式：私人主導<br>發展商：Sorouh Real Estate P.J.S.C.<br>國際建築/工程/規劃顧問：Sasaki<br>完成度問題：1992年落成後空置至今<br><br>規劃問題：規劃功能重疊造成空置<br>人工島在1992年已完成填海，原本項目提出興建酒店、海邊住宅、單軌列車、水族館等設施，及後2003、2006、2010年分別再有發展商提出康樂、商住康樂混合性質發展計劃，最後均沒有實現。這些計劃與其他康樂用途人工島（如亞斯島）重疊，成本高昂下被視為沒有逼切性而一直擱置，現已成為「隱世郊遊地點」，以未被開發的「淨土」聞名。]]></description>
+        <styleUrl>#icon-1899-01579B</styleUrl>
+        <ExtendedData>
+          <Data name="gx_media_links">
+            <value><![CDATA[https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVq3o67DCFnhDeHPPe_-zfyG2X76yt6-UCsBjM_9m96CzUMPlfB1UGiN_U9gJiVoIFvahsFuvuzSaA3gHUODFapJzIJneuAGAWBwLRJ1Xn6b9n2075uxOaVedzbqljJ-YhvXFp9XHYHFvnCMlEY_mkM71IQHx_c4FJAI2IYgriatW_CdOJbL3XbOZORdlXm8Unj81M9eYehxg?authuser=0&fife=s16383]]></value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            54.3441318,24.4997232,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
