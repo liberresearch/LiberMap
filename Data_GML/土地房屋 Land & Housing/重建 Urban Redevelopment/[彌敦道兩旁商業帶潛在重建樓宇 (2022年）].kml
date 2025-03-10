@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>彌敦道兩旁商業帶潛在重建樓宇</name>
+    <description><![CDATA[彌敦道兩旁商業帶全幢物業業權及後街十層或以下的樓宇<br>列表：https://bit.ly/3AcIBwm]]></description>
+    <Style id="icon-1899-E65100-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-E65100-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-E65100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-E65100-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-E65100-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FFEA00-normal">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FFEA00-highlight">
+      <IconStyle>
+        <color>ff00eaff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FFEA00">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FFEA00-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FFEA00-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>彌敦道兩旁商業帶全幢物業業權及後街十層或以下的樓宇(出街)</name>
+      <Placemark>
+        <name>/</name>
+        <address>南京街11號至21號</address>
+        <description><![CDATA[地址: 南京街11號至21號<br>買家/相關公司（附連結）: 樂風集團及財團]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>南京街11號至21號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>樂風集團及財團</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>/</name>
+        <address>彌敦道310號</address>
+        <description><![CDATA[地址: 彌敦道310號<br>買家/相關公司（附連結）: (2019年全幢標售)]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道310號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>(2019年全幢標售)</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>/</name>
+        <address>長樂街22至28號</address>
+        <description><![CDATA[地址: 長樂街22至28號<br>買家/相關公司（附連結）: 大鴻輝興業]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>長樂街22至28號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>大鴻輝興業</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>東亞銀行旺角大廈</name>
+        <address>彌敦道638-640號</address>
+        <description><![CDATA[地址: 彌敦道638-640號<br>買家/相關公司（附連結）: 東亞銀行]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道638-640號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>東亞銀行</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>「香港體檢中心」</name>
+        <address>彌敦道241-243號</address>
+        <description><![CDATA[地址: 彌敦道241-243號<br>買家/相關公司（附連結）: 資本策略]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道241-243號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>資本策略</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>禮基大廈</name>
+        <address>彌敦道523號</address>
+        <description><![CDATA[地址: 彌敦道523號<br>買家/相關公司（附連結）: YMCA]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道523號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>YMCA</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>金漢大廈</name>
+        <address>彌敦道317至321號</address>
+        <description><![CDATA[地址: 彌敦道317至321號<br>買家/相關公司（附連結）: 永倫集團]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道317至321號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>永倫集團</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>/</name>
+        <address>彌敦道315號</address>
+        <description><![CDATA[地址: 彌敦道315號<br>買家/相關公司（附連結）: 永倫集團]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道315號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>永倫集團</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>Casa Hotel</name>
+        <address>彌敦道487至489號</address>
+        <description><![CDATA[地址: 彌敦道487至489號<br>買家/相關公司（附連結）: （一個美資基金）]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道487至489號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>（一個美資基金）</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>旺角滙豐大廈</name>
+        <address>彌敦道673號</address>
+        <description><![CDATA[地址: 彌敦道673號<br>買家/相關公司（附連結）: 滙豐]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道673號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>滙豐</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>宏利公積金大廈</name>
+        <address>彌敦道343-349號</address>
+        <description><![CDATA[地址: 彌敦道343-349號<br>買家/相關公司（附連結）: 永安集團]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道343-349號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>永安集團</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>艾麗大廈</name>
+        <address>彌敦道579號</address>
+        <description><![CDATA[地址: 彌敦道579號<br>買家/相關公司（附連結）: 周大福有關人士]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道579號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>周大福有關人士</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>大鴻輝(旺角)中心</name>
+        <address>彌敦道721至725號</address>
+        <description><![CDATA[地址: 彌敦道721至725號<br>買家/相關公司（附連結）: 大鴻輝 (至少60%)]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道721至725號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>大鴻輝 (至少60%)</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>旺角中心</name>
+        <address>彌敦道688號</address>
+        <description><![CDATA[地址: 彌敦道688號<br>買家/相關公司（附連結）: 九龍建業]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道688號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>九龍建業</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>信和中心</name>
+        <address>彌敦道582-592號</address>
+        <description><![CDATA[地址: 彌敦道582-592號<br>買家/相關公司（附連結）: 九龍建業]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道582-592號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>九龍建業</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>荷里活商業中心</name>
+        <address>彌敦道610號</address>
+        <description><![CDATA[地址: 彌敦道610號<br>買家/相關公司（附連結）: 恆隆地產]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道610號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>恆隆地產</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>九龍行</name>
+        <address>彌敦道555號</address>
+        <description><![CDATA[地址: 彌敦道555號<br>買家/相關公司（附連結）: 大鴻輝興業]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道555號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>大鴻輝興業</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>雅蘭中心</name>
+        <address>彌敦道625及639 號</address>
+        <description><![CDATA[地址: 彌敦道625及639 號<br>買家/相關公司（附連結）: 恆隆地產]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道625及639 號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>恆隆地產</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>銀行中心</name>
+        <address>彌敦道636 號</address>
+        <description><![CDATA[地址: 彌敦道636 號<br>買家/相關公司（附連結）: 招商永隆銀行]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道636 號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>招商永隆銀行</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>始創中心</name>
+        <address>彌敦道750號</address>
+        <description><![CDATA[地址: 彌敦道750號<br>買家/相關公司（附連結）: 九龍建業]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道750號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>九龍建業</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>飛達商業中心</name>
+        <address>彌敦道611-615號</address>
+        <description><![CDATA[地址: 彌敦道611-615號<br>買家/相關公司（附連結）: 「小巴大王」馬亞木]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道611-615號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>「小巴大王」馬亞木</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>富時中心</name>
+        <address>彌敦道585號</address>
+        <description><![CDATA[地址: 彌敦道585號<br>買家/相關公司（附連結）: 陽光房地產基金]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道585號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>陽光房地產基金</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>豐怡中心
+(前名豐順商業大廈)</name>
+        <address>彌敦道591號</address>
+        <description><![CDATA[地址: 彌敦道591號<br>買家/相關公司（附連結）: 陽光房地產基金]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道591號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>陽光房地產基金</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>彩鴻酒店</name>
+        <address>西貢街23號</address>
+        <description><![CDATA[地址: 西貢街23號<br>買家/相關公司（附連結）: 大鴻輝興業]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>西貢街23號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>大鴻輝興業</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>逸林酒店</name>
+        <address>茂林街2號</address>
+        <description><![CDATA[地址: 茂林街2號 <br>買家/相關公司（附連結）: 一內地業主]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>茂林街2號 </value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>一內地業主</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>藍馬之城</name>
+        <address>彌敦道761號</address>
+        <description><![CDATA[地址: 彌敦道761號<br>買家/相關公司（附連結）: 藍馬集團]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道761號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>藍馬集團</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>惠豐中心</name>
+        <address>彌敦道664號</address>
+        <description><![CDATA[地址: 彌敦道664號<br>買家/相關公司（附連結）: 中建企業許氏家族]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道664號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>中建企業許氏家族</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>(前九龍諾富特酒店)</name>
+        <address>彌敦道348號</address>
+        <description><![CDATA[地址: 彌敦道348號<br>買家/相關公司（附連結）: 資本策略地產有限公司]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <ExtendedData>
+          <Data name="地址">
+            <value>彌敦道348號</value>
+          </Data>
+          <Data name="買家/相關公司（附連結）">
+            <value>資本策略地產有限公司</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>彌敦道兩旁商業帶全幢物業業權及後街十層或以下的樓宇(出街)</name>
+      <Placemark>
+        <name>永星里2A號</name>
+        <address>永星里2A號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1962]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1962.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>永星里5號</name>
+        <address>永星里5號</address>
+        <description><![CDATA[現有層數: 5<br>建築年份: 1972]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>5.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1972.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>白加士街66號</name>
+        <address>白加士街66號</address>
+        <description><![CDATA[現有層數: 10<br>建築年份: 1964]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>10.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1964.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>白加士街68-70號</name>
+        <address>白加士街68-70號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1970]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1970.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>白加士街86-90號</name>
+        <address>白加士街86-90號</address>
+        <description><![CDATA[現有層數: 9<br>建築年份: 1962]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>9.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1962.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>石壁道11號</name>
+        <address>石壁道11號</address>
+        <description><![CDATA[現有層數: 5<br>建築年份: 1954]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>5.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1954.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>石壁道15號</name>
+        <address>石壁道15號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1978]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1978.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>石壁道5-7A號</name>
+        <address>石壁道5-7A號</address>
+        <description><![CDATA[現有層數: 7<br>建築年份: 1970]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>7.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1970.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>西洋菜北街165號</name>
+        <address>西洋菜北街165號</address>
+        <description><![CDATA[現有層數: 5<br>建築年份: 1964]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>5.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1964.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>西洋菜北街175-177號</name>
+        <address>西洋菜北街175-177號</address>
+        <description><![CDATA[現有層數: 10<br>建築年份: 1964]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>10.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1964.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>西洋菜北街179-179A號</name>
+        <address>西洋菜北街179-179A號</address>
+        <description><![CDATA[現有層數: 10<br>建築年份: 1964]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>10.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1964.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>西洋菜北街181-185號</name>
+        <address>西洋菜北街181-185號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1961]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1961.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>西洋菜南街103-109號</name>
+        <address>西洋菜南街103-109號</address>
+        <description><![CDATA[現有層數: 9<br>建築年份: 1965]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>9.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1965.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>西洋菜南街55號</name>
+        <address>西洋菜南街55號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1963]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1963.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>西貢街11號</name>
+        <address>西貢街11號</address>
+        <description><![CDATA[現有層數: 5<br>建築年份: 1961]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>5.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1961.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>西貢街13號</name>
+        <address>西貢街13號</address>
+        <description><![CDATA[現有層數: 5<br>建築年份: 1961]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>5.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1961.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>西貢街7號</name>
+        <address>西貢街7號</address>
+        <description><![CDATA[現有層數: 3<br>建築年份: 1962]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>3.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1962.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>西貢街9號</name>
+        <address>西貢街9號</address>
+        <description><![CDATA[現有層數: 3<br>建築年份: 1962]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>3.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1962.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>志和街13號</name>
+        <address>志和街13號</address>
+        <description><![CDATA[現有層數: 3<br>建築年份: 1950]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>3.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1950.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>旺角道39-39B號/砵蘭街320號</name>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1958]]></description>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1958.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>長樂街6-12A號</name>
+        <address>長樂街6-12A號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1966]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1966.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>南京街23-25號</name>
+        <address>南京街23-25號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1960]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1960.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>南京街3-5號</name>
+        <address>南京街3-5號</address>
+        <description><![CDATA[現有層數: 10<br>建築年份: 1970]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>10.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1970.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>界限街38A號</name>
+        <address>界限街38A號</address>
+        <description><![CDATA[現有層數: 5<br>建築年份: 1961]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>5.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1961.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街202-204號</name>
+        <address>砵蘭街202-204號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1958]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1958.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街282號</name>
+        <address>砵蘭街282號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1945]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1945.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街284-286號</name>
+        <address>砵蘭街284-286號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1959]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1959.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街288-290號</name>
+        <address>砵蘭街288-290號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1962]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1962.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街292-294號</name>
+        <address>砵蘭街292-294號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1966]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1966.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街296-298號</name>
+        <address>砵蘭街296-298號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1958]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1958.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街300號</name>
+        <address>砵蘭街300號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1975]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1975.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街302號</name>
+        <address>砵蘭街302號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1959]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1959.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街304-306號</name>
+        <address>砵蘭街304-306號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1965]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1965.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街310-312號</name>
+        <address>砵蘭街310-312號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1974]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1974.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街314-316號</name>
+        <address>砵蘭街314-316號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1967]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1967.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街318號</name>
+        <address>砵蘭街318號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1964]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1964.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街324號</name>
+        <address>砵蘭街324號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1963]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1963.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街326號</name>
+        <address>砵蘭街326號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1959]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1959.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街328-330號</name>
+        <address>砵蘭街328-330號</address>
+        <description><![CDATA[現有層數: 8<br>建築年份: 1959]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>8.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1959.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街336號</name>
+        <address>砵蘭街336號</address>
+        <description><![CDATA[現有層數: 7<br>建築年份: 1962]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>7.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1962.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街338號</name>
+        <address>砵蘭街338號</address>
+        <description><![CDATA[現有層數: 7<br>建築年份: 1962]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>7.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1962.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街354-362號</name>
+        <address>砵蘭街354-362號</address>
+        <description><![CDATA[現有層數: 4<br>建築年份: 1948]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>4.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1948.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街364-366號</name>
+        <address>砵蘭街364-366號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1975]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1975.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街372號</name>
+        <address>砵蘭街372號</address>
+        <description><![CDATA[現有層數: 3<br>建築年份: 1953]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>3.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1953.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街378A號</name>
+        <address>砵蘭街378A號</address>
+        <description><![CDATA[現有層數: 4<br>建築年份: 1953]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>4.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1953.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街380-386號</name>
+        <address>砵蘭街380-386號</address>
+        <description><![CDATA[現有層數: 9<br>建築年份: 1965]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>9.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1965.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街392號-398號</name>
+        <address>砵蘭街392號-398號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1973]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1973.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街414號</name>
+        <address>砵蘭街414號</address>
+        <description><![CDATA[現有層數: 9<br>建築年份: 1965]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>9.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1965.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街416-418號</name>
+        <address>砵蘭街416-418號</address>
+        <description><![CDATA[現有層數: 10<br>建築年份: 1969]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>10.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1969.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街420號</name>
+        <address>砵蘭街420號</address>
+        <description><![CDATA[現有層數: 5<br>建築年份: 1967]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>5.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1967.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街424-428號</name>
+        <address>砵蘭街424-428號</address>
+        <description><![CDATA[現有層數: 9<br>建築年份: 1966]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>9.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1966.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街430-436A號</name>
+        <address>砵蘭街430-436A號</address>
+        <description><![CDATA[現有層數: 10<br>建築年份: 1966]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>10.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1966.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街438-440號</name>
+        <address>砵蘭街438-440號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1969]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1969.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街442-444號</name>
+        <address>砵蘭街442-444號</address>
+        <description><![CDATA[現有層數: 9<br>建築年份: 1965]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>9.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1965.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街446-448號</name>
+        <address>砵蘭街446-448號</address>
+        <description><![CDATA[現有層數: 5<br>建築年份: 1965]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>5.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1965.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>砵蘭街456號</name>
+        <address>砵蘭街456號</address>
+        <description><![CDATA[現有層數: 5<br>建築年份: 1961]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>5.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1961.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>荔枝角道15-21號</name>
+        <address>荔枝角道15-21號</address>
+        <description><![CDATA[現有層數: 9<br>建築年份: 1958]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>9.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1958.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>寧波街27號</name>
+        <address>寧波街27號</address>
+        <description><![CDATA[現有層數: 5<br>建築年份: 1965]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>5.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1965.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>鴉蘭街2-4號</name>
+        <address>鴉蘭街2-4號</address>
+        <description><![CDATA[現有層數: 6<br>建築年份: 1979]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>6.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1979.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+      <Placemark>
+        <name>鴉蘭街6號</name>
+        <address>鴉蘭街6號</address>
+        <description><![CDATA[現有層數: 3<br>建築年份: 1945]]></description>
+        <styleUrl>#icon-1899-FFEA00</styleUrl>
+        <ExtendedData>
+          <Data name="現有層數">
+            <value>3.0</value>
+          </Data>
+          <Data name="建築年份">
+            <value>1945.0</value>
+          </Data>
+        </ExtendedData>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
