@@ -190,77 +190,62 @@ class MapManager {
 
 	
 	
-    addLayerToMap() {
+	addLayerToMap() {
 		const inputElement = document.createElement('input');
 		inputElement.type = 'file';
-		inputElement.accept = '.geojson,.json';
+		inputElement.accept = '.kml'; // Changed from .geojson,.json
 		inputElement.onchange = this.handleFileUpload.bind(this);
 		inputElement.click();
 	}
 
 
-	processGeoJSON(content) {
-		try {
-			const geojson = JSON.parse(content);
-			if (geojson.crs && geojson.crs.properties.name === "EPSG:2326") {
-				geojson.features.forEach(feature => {
-					const coords = feature.geometry.coordinates[0];
-					const transformedCoords = coords.map(coord => 
-						proj4("EPSG:2326", "EPSG:4326", coord)
-					);
-					feature.geometry.coordinates[0] = transformedCoords;
-				});
-			}
 
-			const features = new ol.format.GeoJSON().readFeatures(geojson, {
-				dataProjection: 'EPSG:4326',
+	processKML(content) {
+		try {
+			const features = new ol.format.KML().readFeatures(content, {
 				featureProjection: 'EPSG:3857'
 			});
-
+	
 			const vectorSource = new ol.source.Vector({ features });
 			const vectorLayer = new ol.layer.Vector({
 				source: vectorSource,
 				style: this.createStyleFunction()
 			});
-
-			// Get the file name from the upload
-			const fileName = this.currentFileName || 'uploaded-layer.geojson';
+	
+			const fileName = this.currentFileName || 'uploaded-layer.kml';
 			
-			// Add layer to map and active layers
 			this.map.addLayer(vectorLayer);
 			this.activeLayers.set(fileName, { 
 				layer: vectorLayer, 
 				button: null 
 			});
-
-			// Update the legend
+	
 			const legendContent = document.querySelector('.legend-content');
 			if (legendContent) {
 				this.updateLegend(legendContent);
 			}
-
+	
 			this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
 		} catch (error) {
-			console.error('GeoJSON processing error:', error);
+			console.error('KML processing error:', error);
 		}
 	}
+	
 
 	handleFileUpload(event) {
 		const file = event.target.files[0];
 		if (!file) return;
 		
-		// Store the file name
 		this.currentFileName = file.name;
 		
 		const reader = new FileReader();
-		reader.onload = (e) => this.processGeoJSON(e.target.result);
+		reader.onload = (e) => this.processKML(e.target.result);
 		reader.onerror = (error) => {
 			console.error('File reading error: ', error);
 			alert('Error reading file.');
 		};
 		reader.readAsText(file);
 	}
-
 
 
 	createStyleFunction() {
@@ -563,55 +548,73 @@ class MapManager {
 			this.activeLayers.delete(url);
 			button.textContent = '+';
 			button.className = 'layer-toggle-button add';
-			this.updateLegend(document.querySelector('.legend-content')); // Update legend when layer is removed
+			this.updateLegend(document.querySelector('.legend-content'));
 		} else {
 			try {
 				const response = await fetch(url);
-				const geojsonData = await response.json();
-				const features = new ol.format.GeoJSON().readFeatures(geojsonData, {
-					dataProjection: 'EPSG:4326',
+				const kmlData = await response.text();
+				const features = new ol.format.KML().readFeatures(kmlData, {
 					featureProjection: 'EPSG:3857'
 				});
+				
 				const vectorSource = new ol.source.Vector({ features });
 				const vectorLayer = new ol.layer.Vector({
 					source: vectorSource,
 					style: this.createStyleFunction()
 				});
+				
 				this.map.addLayer(vectorLayer);
 				this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
 				button.textContent = '-';
 				button.className = 'layer-toggle-button remove';
 				this.activeLayers.set(url, { layer: vectorLayer, button: button });
 			} catch (error) {
-				console.error('Error loading GeoJSON:', error);
+				console.error('Error loading KML:', error);
 			}
-			this.updateLegend(document.querySelector('.legend-content')); // Update legend when layer is added
+			this.updateLegend(document.querySelector('.legend-content'));
 		}
 	}
 
 
-
-    async loadGeoJSONFile(url) {
-        try {
-            const response = await fetch(url);
-            const geojsonData = await response.json();
-            const features = new ol.format.GeoJSON().readFeatures(geojsonData, {
-                dataProjection: 'EPSG:4326',
-                featureProjection: 'EPSG:3857'
-            });
-
-            const vectorSource = new ol.source.Vector({ features });
-            const vectorLayer = new ol.layer.Vector({
-                source: vectorSource,
-                style: this.createStyleFunction()
-            });
-
-            this.map.addLayer(vectorLayer);
-            this.map.getView().fit(vectorSource.getExtent(), { duration: 1000 });
-        } catch (error) {
-            console.error('Error loading GeoJSON:', error);
-        }
-    }
+    async loadKMLFile(url) {
+		try {
+			const response = await fetch(url);
+			const kmlData = await response.text();
+			const features = new ol.format.KML().readFeatures(kmlData, {
+				featureProjection: 'EPSG:3857'
+			});
+	
+			const vectorSource = new ol.source.Vector({ features });
+			const vectorLayer = new ol.layer.Vector({
+				source: vectorSource,
+				style: this.createStyleFunction()
+			});
+	
+			this.map.addLayer(vectorLayer);
+			this.map.getView().fit(vectorSource.getExtent(), { duration: 1000 });
+		} catch (error) {
+			console.error('Error loading KML:', error);
+		}
+	}
+	
+	// Update downloadGeoJSON to downloadKML
+	async downloadKML(url, filename) {
+		try {
+			const response = await fetch(url);
+			const data = await response.text();
+			const blob = new Blob([data], { type: 'application/vnd.google-earth.kml+xml' });
+			const downloadUrl = URL.createObjectURL(blob);
+			const link = document.createElement('a');
+			link.href = downloadUrl;
+			link.download = filename;
+			document.body.appendChild(link);
+			link.click();
+			document.body.removeChild(link);
+			URL.revokeObjectURL(downloadUrl);
+		} catch (error) {
+			console.error('Error downloading file:', error);
+		}
+	}
 	
 	async downloadGeoJSON(url, filename) {
 		try {
@@ -808,6 +811,9 @@ class MapManager {
         
         return button;
     }
+
+	
+	
 }
 
 
@@ -899,4 +905,5 @@ document.addEventListener('DOMContentLoaded', () => {
     uiManager.adjustButtonPositions();
     mapManager.createPopupInfo();
     mapManager.createExpandableLists();
+    mapManager.loadGoogleMyMap(); // Add this line
 });
