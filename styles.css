@@ -262,3 +262,31 @@
     outline: 3px solid #4A90E2;
     outline-offset: 2px;
 }
+
+.historical-sites-control {
+    top: 265px;
+    left: .5em;
+    background: rgba(255,255,255,0.4);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.historical-sites-control button {
+    width: 1.375em;
+    height: 1.375em;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.14em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.layer-toggle-button.add {
+    background: #4CAF50;
+    color: white;
+}
+
+.layer-toggle-button.remove {
+    background: #f44336;
+    color: white;
+}
