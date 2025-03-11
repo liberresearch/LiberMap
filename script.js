@@ -35,6 +35,7 @@ class MapManager {
         this.initializeSearchTool();
         this.createLegendPanel();
         this.createPopupInfo();
+		this.createLiberDataPanel();
     }
 
 	
@@ -252,34 +253,30 @@ class MapManager {
 		return (feature) => {
 			const properties = feature.getProperties();
 			
-			// Handle nested style object
-			if (properties.style) {
-				const fillColor = properties.style.fill || '#ffffff';
-				// Convert hex to rgba with 0.7 opacity
-				const rgbaFill = this.convertToRGBA(fillColor, 0.7);
-				
+			// For point features - using OpenLayers default circle style
+			if (feature.getGeometry().getType() === 'Point') {
 				return new ol.style.Style({
-					fill: new ol.style.Fill({
-						color: rgbaFill
-					}),
-					stroke: new ol.style.Stroke({
-						color: properties.style.stroke || '#319FD3',
-						width: properties.style['stroke-width'] || 1
+					image: new ol.style.Circle({
+						radius: 7,
+						fill: new ol.style.Fill({
+							color: '#3399CC'
+						}),
+						stroke: new ol.style.Stroke({
+							color: '#fff',
+							width: 2
+						})
 					})
 				});
 			}
-			
-			// Handle direct style properties
-			const fillColor = properties.fill || '#ffffff';
-			const rgbaFill = this.convertToRGBA(fillColor, 0.7);
-			
+	
+			// For lines and polygons - using OpenLayers default styles
 			return new ol.style.Style({
 				fill: new ol.style.Fill({
-					color: rgbaFill
+					color: 'rgba(51, 153, 204, 0.7)'
 				}),
 				stroke: new ol.style.Stroke({
-					color: properties.stroke || '#319FD3',
-					width: properties['stroke-width'] || 1
+					color: '#3399CC',
+					width: 2
 				})
 			});
 		};
@@ -402,67 +399,87 @@ class MapManager {
         return await response.json();
     }
 
-    createExpandableLists() {
-        const categoryConfigs = [
-            {
-                id: 'land-housing',
-                name: 'Land & Housing',
-                path: 'Data_GML/土地房屋%20Land%20%26%20Housing'
-            },
-            {
-                id: 'conservation',
-                name: 'Conservation',
-                path: 'Data_GML/保育%20Conservation'
-            },
-            {
-                id: 'planning',
-                name: 'Planning Data from HK Government',
-                path: 'Data_JSON/Planning%20data%20from%20HK%20Government'
-            }
-        ];
 
-        categoryConfigs.forEach(config => {
-            const container = document.createElement('div');
-            container.className = 'category-container';
-            container.id = config.id;
-            container.setAttribute('role', 'region');
-            container.setAttribute('aria-label', `${config.name} category`);
-
-            const header = document.createElement('div');
-            header.className = 'category-header';
-            header.textContent = config.name;
-            header.setAttribute('role', 'button');
-            header.setAttribute('aria-expanded', 'false');
-            header.setAttribute('tabindex', '0');
-
-            const content = document.createElement('div');
-            content.className = 'category-content';
-            content.style.display = 'none';
-            content.setAttribute('role', 'region');
-            content.setAttribute('aria-label', `${config.name} content`);
-
-            header.onclick = () => {
-                const isExpanded = content.style.display !== 'none';
-                header.setAttribute('aria-expanded', !isExpanded);
-                content.style.display = isExpanded ? 'none' : 'block';
-                if (content.children.length === 0) {
-                    this.loadFolderContents(config.path, content);
-                }
-            };
-
-            header.addEventListener('keydown', (e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    header.click();
-                }
-            });
-
-            container.appendChild(header);
-            container.appendChild(content);
-            document.body.appendChild(container);
-        });
-    }
-
+	createLiberDataPanel() {
+		const liberDataButton = document.createElement('div');
+		liberDataButton.id = 'liber-data-button';
+		liberDataButton.className = 'liber-data-button';
+		liberDataButton.textContent = 'LiberData';
+		liberDataButton.setAttribute('role', 'button');
+		liberDataButton.setAttribute('aria-expanded', 'false');
+		
+		const categoryList = document.createElement('div');
+		categoryList.className = 'category-list';
+		categoryList.style.display = 'none';
+		
+		const categories = [
+			{
+				name: '土地房屋 Land & Housing',
+				path: 'Data_GML/土地房屋%20Land%20%26%20Housing'
+			},
+			{
+				name: '保育 Conservation',
+				path: 'Data_GML/保育%20Conservation'
+			},
+			{
+				name: 'Planning Data',
+				path: 'Data_JSON/Planning%20data%20from%20HK%20Government'
+			}
+		];
+		
+		categories.forEach(category => {
+			const categoryItem = this.createCategoryItem(category);
+			categoryList.appendChild(categoryItem);
+		});
+		
+		liberDataButton.onclick = () => {
+			const isExpanded = categoryList.style.display !== 'none';
+			liberDataButton.setAttribute('aria-expanded', !isExpanded);
+			categoryList.style.display = isExpanded ? 'none' : 'block';
+		};
+		
+		document.body.appendChild(liberDataButton);
+		document.body.appendChild(categoryList);
+	}
+	
+	createCategoryItem(category) {
+		const item = document.createElement('div');
+		item.className = 'category-item';
+		
+		const header = document.createElement('div');
+		header.className = 'category-header';
+		
+		// Add indicator for better UX
+		const indicator = document.createElement('span');
+		indicator.className = 'category-indicator';
+		indicator.textContent = '▶';
+		
+		const titleText = document.createElement('span');
+		titleText.textContent = category.name;
+		
+		header.appendChild(indicator);
+		header.appendChild(titleText);
+		
+		const content = document.createElement('div');
+		content.className = 'category-content';
+		content.style.display = 'none';
+		
+		header.onclick = (e) => {
+			e.stopPropagation();
+			const isExpanded = content.style.display !== 'none';
+			content.style.display = isExpanded ? 'none' : 'block';
+			indicator.textContent = isExpanded ? '▶' : '▼';
+			
+			// Load content if it's empty and being expanded
+			if (!isExpanded && content.children.length === 0) {
+				this.loadFolderContents(category.path, content);
+			}
+		};
+		
+		item.appendChild(header);
+		item.appendChild(content);
+		return item;
+	}
 
     async createCategorySection(name, path, container) {
         const section = document.createElement('div');
@@ -488,17 +505,18 @@ class MapManager {
         container.appendChild(section);
     }
 
-    async loadFolderContents(path, container) {
+	async loadFolderContents(path, container) {
 		try {
 			const contents = await this.fetchGithubContents(path);
 			const list = document.createElement('ul');
 			list.className = 'folder-list';
-
-			contents.forEach(item => {
-				const listItem = document.createElement('li'); // Create listItem here
+	
+			for (const item of contents) {
+				const listItem = document.createElement('li');
 				listItem.className = 'folder-item';
-
+	
 				if (item.type === 'dir') {
+					// Create expandable folder
 					const folderHeader = document.createElement('div');
 					folderHeader.className = 'folder-header';
 					folderHeader.textContent = item.name;
@@ -506,57 +524,76 @@ class MapManager {
 					const folderContent = document.createElement('div');
 					folderContent.className = 'folder-content';
 					folderContent.style.display = 'none';
-
+	
+					// Add expand/collapse indicator
+					const indicator = document.createElement('span');
+					indicator.className = 'folder-indicator';
+					indicator.textContent = '▶';
+					folderHeader.insertBefore(indicator, folderHeader.firstChild);
+	
 					folderHeader.onclick = (e) => {
 						e.stopPropagation();
-						folderContent.style.display = folderContent.style.display === 'none' ? 'block' : 'none';
-						if (folderContent.children.length === 0) {
+						const isExpanded = folderContent.style.display !== 'none';
+						folderContent.style.display = isExpanded ? 'none' : 'block';
+						indicator.textContent = isExpanded ? '▶' : '▼';
+						
+						if (!isExpanded && folderContent.children.length === 0) {
 							this.loadFolderContents(item.path, folderContent);
 						}
 					};
-
+	
 					listItem.appendChild(folderHeader);
 					listItem.appendChild(folderContent);
 				} else {
-					const itemContainer = document.createElement('div');
-					itemContainer.className = 'file-item-container';
-
-					const itemName = document.createElement('span');
-					itemName.textContent = item.name;
-					itemName.className = 'file-name';
-
-					const toggleButton = document.createElement('button');
-					toggleButton.textContent = '+';
-					toggleButton.className = 'layer-toggle-button add';
-					toggleButton.onclick = (e) => {
-						e.stopPropagation();
-						this.toggleLayer(item.download_url, toggleButton);
-					};
-
-					// Add download button
-					const downloadButton = document.createElement('button');
-					downloadButton.textContent = '↓';
-					downloadButton.className = 'download-button';
-					downloadButton.onclick = (e) => {
-						e.stopPropagation();
-						this.downloadKML(item.download_url, item.name);
-					};
-
-					itemContainer.appendChild(toggleButton);
-					itemContainer.appendChild(itemName);
-					itemContainer.appendChild(downloadButton);
-					listItem.appendChild(itemContainer);
+					// Create file item
+					const fileItem = this.createFileItem(item);
+					listItem.appendChild(fileItem);
 				}
-
+	
 				list.appendChild(listItem);
-			});
-
+			}
+	
 			container.appendChild(list);
 		} catch (error) {
 			console.error('Error loading folder contents:', error);
 		}
 	}
 
+	createFileItem(item) {
+		const itemContainer = document.createElement('div');
+		itemContainer.className = 'file-item-container';
+	
+		const itemName = document.createElement('span');
+		itemName.textContent = item.name;
+		itemName.className = 'file-name';
+	
+		const buttonContainer = document.createElement('div');
+		buttonContainer.className = 'file-buttons';
+	
+		const toggleButton = document.createElement('button');
+		toggleButton.textContent = '+';
+		toggleButton.className = 'layer-toggle-button add';
+		toggleButton.onclick = (e) => {
+			e.stopPropagation();
+			this.toggleLayer(item.download_url, toggleButton);
+		};
+	
+		const downloadButton = document.createElement('button');
+		downloadButton.textContent = '↓';
+		downloadButton.className = 'download-button';
+		downloadButton.onclick = (e) => {
+			e.stopPropagation();
+			this.downloadKML(item.download_url, item.name);
+		};
+	
+		buttonContainer.appendChild(toggleButton);
+		buttonContainer.appendChild(downloadButton);
+		
+		itemContainer.appendChild(itemName);
+		itemContainer.appendChild(buttonContainer);
+		
+		return itemContainer;
+	}
 	
 	async toggleLayer(url, button) {
 		if (this.activeLayers.has(url)) {
@@ -921,6 +958,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const uiManager = new UIManager(mapManager);
     uiManager.adjustButtonPositions();
     mapManager.createPopupInfo();
-    mapManager.createExpandableLists();
+    // mapManager.createExpandableLists();
     mapManager.loadGoogleMyMap(); // Add this line
 });
