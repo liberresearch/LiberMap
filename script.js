@@ -28,8 +28,8 @@ class MapManager {
 	
 	initializeComponents() {
         this.categories = {
-            '土地房屋 Land & Housing': 'Data_GML/土地房屋%Land%20%26%20Housing',
-            '保育 Conservation': 'Data_GML/保育%Conservation',
+            '土地房屋 Land & Housing': 'Data_GML/土地房屋%20Land%20%26%20Housing',
+            '保育 Conservation': 'Data_GML/保育%20Conservation',
             'Planning Data from HK Government': 'Data_JSON/Planning%20data%20from%20HK%20Government'
         };
         this.initializeSearchTool();
@@ -390,12 +390,12 @@ class MapManager {
             {
                 id: 'land-housing',
                 name: 'Land & Housing',
-                path: 'Data_GML/土地房屋%Land%20%26%20Housing'
+                path: 'Data_GML/土地房屋%20Land%20%26%20Housing'
             },
             {
                 id: 'conservation',
                 name: 'Conservation',
-                path: 'Data_GML/保育%Conservation'
+                path: 'Data_GML/保育%20Conservation'
             },
             {
                 id: 'planning',
