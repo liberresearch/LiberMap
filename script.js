@@ -322,7 +322,7 @@ class MapManager {
 		const overlayLayer = new ol.Overlay({
 			element: overlayContainerElement,
 			positioning: 'bottom-center',
-			stopEvent: false,
+			stopEvent: true, // Ensure the pop-up can handle its own events
 			offset: [0, -10]
 		});
 		this.map.addOverlay(overlayLayer);
@@ -331,17 +331,34 @@ class MapManager {
 			const feature = this.map.forEachFeatureAtPixel(event.pixel, (feature) => feature);
 			if (feature) {
 				const properties = feature.getProperties();
-				const popupTable = this.createPropertiesTable(properties);
+				const description = properties['description']; // Extract the 'description' column
 
 				overlayContainerElement.innerHTML = '';
 				overlayContainerElement.appendChild(closeButton);
-				overlayContainerElement.appendChild(popupTable);
+
+				if (description) {
+					const descriptionElement = document.createElement('div');
+					descriptionElement.className = 'popup-description';
+					descriptionElement.innerHTML = description; // Render HTML content
+					overlayContainerElement.appendChild(descriptionElement);
+				}
 
 				overlayLayer.setPosition(event.coordinate);
 				overlayContainerElement.style.display = 'block';
 			} else {
 				overlayContainerElement.style.display = 'none';
 			}
+		});
+
+		// Prevent map movement when interacting with the pop-up
+		overlayContainerElement.addEventListener('mousedown', (event) => {
+			event.stopPropagation();
+		});
+		overlayContainerElement.addEventListener('mousemove', (event) => {
+			event.stopPropagation();
+		});
+		overlayContainerElement.addEventListener('mouseup', (event) => {
+			event.stopPropagation();
 		});
 	}
 
