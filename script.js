@@ -539,7 +539,7 @@ class MapManager {
 					downloadButton.className = 'download-button';
 					downloadButton.onclick = (e) => {
 						e.stopPropagation();
-						this.downloadGeoJSON(item.download_url, item.name);
+						this.downloadKML(item.download_url, item.name);
 					};
 
 					itemContainer.appendChild(toggleButton);
