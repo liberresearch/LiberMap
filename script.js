@@ -422,8 +422,8 @@ class MapManager {
 				path: 'Data_GML/保育%20Conservation'
 			},
 			{
-				name: 'Planning Data',
-				path: 'Data_JSON/Planning%20data%20from%20HK%20Government'
+				name: '規劃資料 (資料源自香港政府）Planning data from HK Government',
+				path: 'Data_GML/規劃資料%20(資料源自香港政府）Planning%20data%20from%20HK%20Government'
 			}
 		];
 		
@@ -959,5 +959,5 @@ document.addEventListener('DOMContentLoaded', () => {
     uiManager.adjustButtonPositions();
     mapManager.createPopupInfo();
     // mapManager.createExpandableLists();
-    mapManager.loadGoogleMyMap(); // Add this line
+
 });
