@@ -642,3 +642,36 @@
 .ol-layer-grayscale {
     filter: grayscale(100%);
 }
+
+
+@media (max-width: 768px) {
+    .search-container {
+        width: 80%;
+        left: 10%;
+    }
+    
+    .legend-panel {
+        max-height: 30vh;
+        width: 80%;
+    }
+    
+    .popup-container {
+        max-width: 80%;
+        max-height: 40vh;
+        overflow-y: auto;
+    }
+    
+    .category-list {
+        max-height: 50vh;
+        overflow-y: auto;
+    }
+    
+    .map-control-button {
+        padding: 8px;
+    }
+    
+    .basemap-dropdown {
+        max-height: 40vh;
+        overflow-y: auto;
+    }
+}
