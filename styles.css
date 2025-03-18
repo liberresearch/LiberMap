@@ -472,3 +472,173 @@
     padding-left: 10px;
     border-left: 2px solid #dee2e6;
 }
+
+/* Search Container */
+.search-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+/* Dropdown Toggle */
+.search-dropdown-toggle {
+    padding: 8px 12px;
+    background: #2C3E50;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.search-dropdown-toggle:hover {
+    background: #1a2530;
+}
+
+/* Dropdown Menu */
+.search-dropdown-menu {
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1001;
+    width: 200px;
+}
+
+/* Search Engine Options */
+.search-engine-option {
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.search-engine-option:hover {
+    background: #f5f5f5;
+}
+
+/* Search Input Container */
+.search-input-container {
+    flex: 1;
+}
+
+/* Search Input */
+.search-input {
+    width: 250px;
+    padding: 8px 12px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Search Results Container */
+.search-results-container {
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Search Result Item */
+.search-result-item {
+    padding: 10px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+}
+
+.search-result-item:hover {
+    background: #f5f5f5;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+/* Accessibility Focus Styles */
+.search-dropdown-toggle:focus,
+.search-input:focus,
+.search-engine-option:focus,
+.search-result-item:focus {
+    outline: 3px solid #4A90E2;
+    outline-offset: -2px;
+}
+
+
+/* Basemap Button */
+.basemap-button {
+    background: rgba(81, 116, 161, 0.7);
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+}
+
+.basemap-button:hover {
+    background: rgba(81, 116, 161, 0.9);
+}
+
+.basemap-button img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+/* Basemap Dropdown */
+.basemap-dropdown {
+    position: absolute;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    width: 200px;
+    z-index: 1001;
+    overflow: hidden;
+}
+
+/* Basemap Option */
+.basemap-option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+}
+
+.basemap-option:last-child {
+    border-bottom: none;
+}
+
+.basemap-option:hover {
+    background: #f5f5f5;
+}
+
+.basemap-option.active {
+    background: #e6f0ff;
+}
+
+/* Basemap Thumbnail */
+.basemap-thumbnail {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+}
+
+/* Grayscale layer */
+.ol-layer-grayscale {
+    filter: grayscale(100%);
+}
