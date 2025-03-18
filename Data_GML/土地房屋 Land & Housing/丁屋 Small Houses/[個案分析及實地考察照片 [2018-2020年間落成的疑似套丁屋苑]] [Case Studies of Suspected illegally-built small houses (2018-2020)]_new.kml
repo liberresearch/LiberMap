@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__" id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+	<SimpleField name="id" type="string"></SimpleField>
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+	<SimpleField name="gx_media_links" type="string"></SimpleField>
+</Schema>
+<Folder><name>_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__</name>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.1">
+	<name>疑似新屋苑 (大棠)#1 實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAU8WxBEf542b4VoJZShpL16HFOalLTgUNUqNOAHOblzFERi66X4vrgjzEX1y87ywy8UPi-4x6Um0tZMfI62jkdl8ZVYJqeyEMFRuEyuFJ-6v3qF8yB9Y70_HWWct-nEgiZbJyk3MsPamz1dSzyCRSRmSb-U9I6-YxVC_qwp0hOdE8hKxH6HDEgBFUJT82syZq8u8mNvLeerWzw?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;某一丁屋的電箱，顯示興建之初已準備將丁屋分為多個單位，或不屬非自住用途&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAU8WxBEf542b4VoJZShpL16HFOalLTgUNUqNOAHOblzFERi66X4vrgjzEX1y87ywy8UPi-4x6Um0tZMfI62jkdl8ZVYJqeyEMFRuEyuFJ-6v3qF8yB9Y70_HWWct-nEgiZbJyk3MsPamz1dSzyCRSRmSb-U9I6-YxVC_qwp0hOdE8hKxH6HDEgBFUJT82syZq8u8mNvLeerWzw?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0223069,22.4156467,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.2">
+	<name>疑似新屋苑 (大棠)#1 實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUp1YpVs1V51zBZ4Vr4z0gIIrcP-LKwr1h4IZ3zpj3GOr_s3BU3cxQ2On8eqUk2rSvBbttcMw3ATjTjuQB3hbDDIdIwG-xgGSC_eDDXlJdoixHyISMLgO7oWL83eTZjPr575hq3TGHlWm9ZWRZLhthu4dI_-RKnKvgwjf_PGKMu-uQOOjNmdUpMZSsGIpw83q7ntv5dafKeVHY?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUp1YpVs1V51zBZ4Vr4z0gIIrcP-LKwr1h4IZ3zpj3GOr_s3BU3cxQ2On8eqUk2rSvBbttcMw3ATjTjuQB3hbDDIdIwG-xgGSC_eDDXlJdoixHyISMLgO7oWL83eTZjPr575hq3TGHlWm9ZWRZLhthu4dI_-RKnKvgwjf_PGKMu-uQOOjNmdUpMZSsGIpw83q7ntv5dafKeVHY?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0233195,22.4156783,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.3">
+	<name>疑似新屋苑 (大棠)#3 實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVvgvQ4xrc83mIfrolky3XWJmaU-282bIWt0l9TUH6Iv4rHnaw1GegV4Sxh28fxTeufvYNd7uCmgPwo9nNoeW-0k4jyBOGcjQfmhUrfWxyrp9BBNyJBwaSFTHWoXAB4MyHZavK6SPj0_S1cW8jMU9aGHtvVmUXK4PXoPy-2Z4E2gxCGgZV55T8jxjMZJdMzfHLmoVmm6bwQS8c?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVvgvQ4xrc83mIfrolky3XWJmaU-282bIWt0l9TUH6Iv4rHnaw1GegV4Sxh28fxTeufvYNd7uCmgPwo9nNoeW-0k4jyBOGcjQfmhUrfWxyrp9BBNyJBwaSFTHWoXAB4MyHZavK6SPj0_S1cW8jMU9aGHtvVmUXK4PXoPy-2Z4E2gxCGgZV55T8jxjMZJdMzfHLmoVmm6bwQS8c?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0239686,22.41578,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.4">
+	<name>疑似新屋苑 (大棠)#3 實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVN-VWMmjj_6MMalG6212cTHIGcrRKoKXrIzhWDoXMj6fMq9JPCRSO2aoxZVezAftPO_iZ_rhSytQJTad5fR2jIkkdFQ6dZtOFz6W_6HDqDSPMbOz6ByWE_PM4z_DCQ6_hXPdyTfMzT6rIL3QtW3LnJFxTPfwnyAdSg7jDIbL805EXhSSYPejsirE1E5ssV4TFEuARNnkie7mI?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVN-VWMmjj_6MMalG6212cTHIGcrRKoKXrIzhWDoXMj6fMq9JPCRSO2aoxZVezAftPO_iZ_rhSytQJTad5fR2jIkkdFQ6dZtOFz6W_6HDqDSPMbOz6ByWE_PM4z_DCQ6_hXPdyTfMzT6rIL3QtW3LnJFxTPfwnyAdSg7jDIbL805EXhSSYPejsirE1E5ssV4TFEuARNnkie7mI?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0239879,22.4157257,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.5">
+	<name>疑似新屋苑 (大棠)#3 實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUylRNbUMqsIyKAz3Vtiissftn4tomOlU_reR5TLJV2bQLgwj6gbVZgPhOL7zD9LHdy_0l1J56IDjZNqf3gs92SwN4pMNPaidcyo2skI9Ws_AtzBBaEDiRHzLBn76DH74_9lSYMHSheKi9hGc7XWkCNBR4fLNEzST2lXxDE8021v_-JHwxMTK6kQnYkYLn4ZHKbNYfmXpSKT2g?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUylRNbUMqsIyKAz3Vtiissftn4tomOlU_reR5TLJV2bQLgwj6gbVZgPhOL7zD9LHdy_0l1J56IDjZNqf3gs92SwN4pMNPaidcyo2skI9Ws_AtzBBaEDiRHzLBn76DH74_9lSYMHSheKi9hGc7XWkCNBR4fLNEzST2lXxDE8021v_-JHwxMTK6kQnYkYLn4ZHKbNYfmXpSKT2g?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0238612,22.4158506,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.6">
+	<name>疑似新屋苑 (大棠)#2實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUDBX-1ZUoXJoCbrVV8tG2Q0zZ31U2nJM5MSEkvls0-nbYFzTW3zLqmJTu5ZnX4EWLG0QcbdYD9vo6Fumbuq9BcLdwBTF9BQnfYOcmWZNn2Kpi8f5QIsElP7UlfBj8ngNetqgIix1b0UH1EhA2CSbKeCZTgey1kkvsx4dy9FvHU0rQtBzodxda1YQ5dsYK_oM_sNp4h7FEO_kY?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUDBX-1ZUoXJoCbrVV8tG2Q0zZ31U2nJM5MSEkvls0-nbYFzTW3zLqmJTu5ZnX4EWLG0QcbdYD9vo6Fumbuq9BcLdwBTF9BQnfYOcmWZNn2Kpi8f5QIsElP7UlfBj8ngNetqgIix1b0UH1EhA2CSbKeCZTgey1kkvsx4dy9FvHU0rQtBzodxda1YQ5dsYK_oM_sNp4h7FEO_kY?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0232613,22.4152645,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.7">
+	<name>疑似新屋苑 (大棠)#2實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWBVvOHNByuYnT6CfeybUddk0wGt5bzZ0ZXV6exWpJd1jxZvFMa7nCrtJWxiJd4wJX9BcyAxo448meuQnjDrOZXiTN11C-1e1Vs8426ZvWdl10-radOFl3bCcA3cwLXfmwNEHwUBNQtoVbCzbYjtgMAIdJKgSyTv16DsB32ok0Co0U-EZB8xYQN9_ESlqbELM4ak_VPaS_hdTY?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWBVvOHNByuYnT6CfeybUddk0wGt5bzZ0ZXV6exWpJd1jxZvFMa7nCrtJWxiJd4wJX9BcyAxo448meuQnjDrOZXiTN11C-1e1Vs8426ZvWdl10-radOFl3bCcA3cwLXfmwNEHwUBNQtoVbCzbYjtgMAIdJKgSyTv16DsB32ok0Co0U-EZB8xYQN9_ESlqbELM4ak_VPaS_hdTY?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0234061,22.4152679,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.8">
+	<name>疑似新屋苑 (大棠)#2實地考察圖
+</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXLbHyLATC0MOQxQWrfdbr8liRVLeEXsTBVqaxq5udWuo7EZCUItem0cN2HwHKDMiDcDTONX99yz5-CbvGk6n-JxaVfo8XoI1KFM6fnyjGsqIPyWMs1eq1eQk_0g63zkzeHGuCch1OYwt9o5y7akSiDAT1RhGkVt9mox3WkgqVS8lvVYs1EHU7xcBvA4YOygER8sUB_fuhF7TQ?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXLbHyLATC0MOQxQWrfdbr8liRVLeEXsTBVqaxq5udWuo7EZCUItem0cN2HwHKDMiDcDTONX99yz5-CbvGk6n-JxaVfo8XoI1KFM6fnyjGsqIPyWMs1eq1eQk_0g63zkzeHGuCch1OYwt9o5y7akSiDAT1RhGkVt9mox3WkgqVS8lvVYs1EHU7xcBvA4YOygER8sUB_fuhF7TQ?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.022852,22.415214,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.9">
+	<name>疑似新屋苑 (大棠)#2實地考察圖
+</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAX7j9-Bm1NQByxiJH9sJXLMVImXuT4pO1TUJorEEG816m0fme42BbptRFv-l32ZgIHUnOEN7T0ro7X3sjjdqJJ9j-Kx9UCjRK9H--_3XDLf5YNmATo8ZLVjF00RIfMCUn0hU1S7g5wyunYHwnMsE4bmdMINjKj8R9QxB387l3bQkM-MnLN6F4tmgT2MfmRJst-_PZ6b7YfJgJU?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;經查冊後，發現該丁屋並未獲完工證(Compliment letter)，但實地考察發現有入伙的跡象，懷疑已經有人正在居住。&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAX7j9-Bm1NQByxiJH9sJXLMVImXuT4pO1TUJorEEG816m0fme42BbptRFv-l32ZgIHUnOEN7T0ro7X3sjjdqJJ9j-Kx9UCjRK9H--_3XDLf5YNmATo8ZLVjF00RIfMCUn0hU1S7g5wyunYHwnMsE4bmdMINjKj8R9QxB387l3bQkM-MnLN6F4tmgT2MfmRJst-_PZ6b7YfJgJU?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0227627,22.4151985,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.10">
+	<name>疑似新屋苑 (白沙村)#1實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAW4eN_Jbn9tCljXbaK3qu55pHZDx50Edqkt7WFvKYuxKdg5kOwY-Io6Gfr-J1_fq5RYiul1c0XJTH49AcQG0gL7ZVV38f3LlNa50h1a7WmKmszRHIJgc-Pa6L9jWEqQ0nthfasPtNKEbpgwU1koR2kxl2u_cdKJk-qTojDSGu0zbCSv1Nk3oU7gi-xYjW3stpACzjFp_f7_E0o?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;實地考察發現丁屋屋苑有疑似自製變電站。&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAW4eN_Jbn9tCljXbaK3qu55pHZDx50Edqkt7WFvKYuxKdg5kOwY-Io6Gfr-J1_fq5RYiul1c0XJTH49AcQG0gL7ZVV38f3LlNa50h1a7WmKmszRHIJgc-Pa6L9jWEqQ0nthfasPtNKEbpgwU1koR2kxl2u_cdKJk-qTojDSGu0zbCSv1Nk3oU7gi-xYjW3stpACzjFp_f7_E0o?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0215133,22.420224,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.11">
+	<name>疑似新屋苑 (白沙村)#2實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUcQFVXd3ol5BVUipaUjthPBSJS0YxtvHLR47XDm8_DvhjnYHDqFechd45Iz7QKvG0E_kxtPnwTbamrQh-9EbbGHVMJ1C_Ps9tB5lYY22t04NzJuFZlt2-3KsQjwfMkzNJjE8mfK3LO861tJEAbLgWy0Wm93N8VCM171B62-jty48t4Eu-2nTcEhpVvr_CLBAkFCJwwtwLZQB0?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUcQFVXd3ol5BVUipaUjthPBSJS0YxtvHLR47XDm8_DvhjnYHDqFechd45Iz7QKvG0E_kxtPnwTbamrQh-9EbbGHVMJ1C_Ps9tB5lYY22t04NzJuFZlt2-3KsQjwfMkzNJjE8mfK3LO861tJEAbLgWy0Wm93N8VCM171B62-jty48t4Eu-2nTcEhpVvr_CLBAkFCJwwtwLZQB0?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.022345,22.4230351,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.12">
+	<name>疑似新屋苑 (白沙村)#2實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXA0PPyKk630RktOD8kvfkC0YA8xCB6o5VPFYHx35mFu4BYs1P485J5xKHCVlVy8_4Bpes_Wd4qEu8JS87d9oDFtJoh_3giPMfY8hCYPAAOkLZQc8GVubsDZJA775Rx2mOGOyUShzBj4WOg7cnOjl2umXHxx0Hy1Xy4NIS5gp1KjvfXQhiIfmCQA75qc735FvUMWs91jxiF_6A?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXA0PPyKk630RktOD8kvfkC0YA8xCB6o5VPFYHx35mFu4BYs1P485J5xKHCVlVy8_4Bpes_Wd4qEu8JS87d9oDFtJoh_3giPMfY8hCYPAAOkLZQc8GVubsDZJA775Rx2mOGOyUShzBj4WOg7cnOjl2umXHxx0Hy1Xy4NIS5gp1KjvfXQhiIfmCQA75qc735FvUMWs91jxiF_6A?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0223449,22.4231953,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.13">
+	<name>疑似新屋苑（下竹園）#1 實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVt1fl40O4NqaX2GkQBlEAJSxp-mYa9zhNkDdrrNMe45lyEyVVUtLRFzZ3l-TeQUxu-nwOmy8dZ5CSD7FzvymsuSiVzjOVwBN4jvS1wLtQjYCCtrzHsAHPFxbyRHMJaylcRrZtBDv8XYe9_NXqpGQaxG8h_6wpLk30NdAApQmxBDckB3T-nZvrgs6V6WytFw7DWgYoGhLoBWsI?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVt1fl40O4NqaX2GkQBlEAJSxp-mYa9zhNkDdrrNMe45lyEyVVUtLRFzZ3l-TeQUxu-nwOmy8dZ5CSD7FzvymsuSiVzjOVwBN4jvS1wLtQjYCCtrzHsAHPFxbyRHMJaylcRrZtBDv8XYe9_NXqpGQaxG8h_6wpLk30NdAApQmxBDckB3T-nZvrgs6V6WytFw7DWgYoGhLoBWsI?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.054389,22.476094,3.72</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.14">
+	<name>疑似新屋苑（下竹園）#1 實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUQznz7f0Gdx-HnqXUjmSWs6KGJyihRMtrNj6KpBlB_k7dohDATgHK2a62gEadj74udGda7zDlcQpqMW1RlpIX90T-XjkkSqQrc1lEOnCqSaFlX0MlGiR1pd8qlnUZ_JglQbV8SSqV3Gc_bxHO-aBbHZ2igazHnr5vnEm_odlgq-x5V94ZK5Pq-0gzsPnC4gKg6pgKm4FUqFs8?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUQznz7f0Gdx-HnqXUjmSWs6KGJyihRMtrNj6KpBlB_k7dohDATgHK2a62gEadj74udGda7zDlcQpqMW1RlpIX90T-XjkkSqQrc1lEOnCqSaFlX0MlGiR1pd8qlnUZ_JglQbV8SSqV3Gc_bxHO-aBbHZ2igazHnr5vnEm_odlgq-x5V94ZK5Pq-0gzsPnC4gKg6pgKm4FUqFs8?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.054314,22.475825,3.71</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.15">
+	<name>疑似新屋苑（下竹園）#2 實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXlnUxoZvlqgN5ICsqNhlifE_S2NFT0BM_F3WSNH75LphcOLLNF4h73ZkPqOS-2bwyfXQKivaXw9hzDk3FRdZpHXAtwQF04xh352x_rCbzZwxmXVzP5XVkeQ6cOu0Y5lqpUzN6hG9z05EIIWKbZu7c86Q00iTOgYkroopNjZ5rFo1pA2fCmcm8Dwx_TOUHwxhDjalJaXGXLNuY?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXlnUxoZvlqgN5ICsqNhlifE_S2NFT0BM_F3WSNH75LphcOLLNF4h73ZkPqOS-2bwyfXQKivaXw9hzDk3FRdZpHXAtwQF04xh352x_rCbzZwxmXVzP5XVkeQ6cOu0Y5lqpUzN6hG9z05EIIWKbZu7c86Q00iTOgYkroopNjZ5rFo1pA2fCmcm8Dwx_TOUHwxhDjalJaXGXLNuY?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0539624,22.4756826,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.16">
+	<name>疑似新屋苑(永平村)#1 實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXzI4KfD99NMbbljH8InGrBhOLie76CwfUciUCT3iRe5QfgmFcSoCwhza4pm_QKoM_JlicXWCIkpTONWs-ozABd80F-N9WZaUo3YOo_EQQA_jC3C3vxWxh8ekdzzBfLATereioCcnD0qbMeGQ9qRdhXYwpVkIpgg0R2q2R6IRHxKsXcz52q5jrsNTRYU7Plyyz0ItbhFBsFEPI?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXzI4KfD99NMbbljH8InGrBhOLie76CwfUciUCT3iRe5QfgmFcSoCwhza4pm_QKoM_JlicXWCIkpTONWs-ozABd80F-N9WZaUo3YOo_EQQA_jC3C3vxWxh8ekdzzBfLATereioCcnD0qbMeGQ9qRdhXYwpVkIpgg0R2q2R6IRHxKsXcz52q5jrsNTRYU7Plyyz0ItbhFBsFEPI?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0776195,22.501314,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.17">
+	<name>疑似新屋苑(永平村)#1 實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAViTLAaeeSFn2VQdbAX5FEn9Osal5WJI8rgd4gEyEIlnycIRlIIdUX1unnqsOv4KU6Y0o2P_t21kYLNnbDZWUUGpOeq0nF5eS8kjffyFE-Sq7PJd3t6OWZZqQHcWS7bcNbm4S6sbSbKt0hrqHkQHNlU5nhfmfqvlOIySa3fQ1lHIwmLCUk6eVkcj-w7EGpyb4ANXqtJhN_yEyY?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAViTLAaeeSFn2VQdbAX5FEn9Osal5WJI8rgd4gEyEIlnycIRlIIdUX1unnqsOv4KU6Y0o2P_t21kYLNnbDZWUUGpOeq0nF5eS8kjffyFE-Sq7PJd3t6OWZZqQHcWS7bcNbm4S6sbSbKt0hrqHkQHNlU5nhfmfqvlOIySa3fQ1lHIwmLCUk6eVkcj-w7EGpyb4ANXqtJhN_yEyY?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0773509,22.5012035,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.18">
+	<name>疑似新屋苑 (大棠)#1 高空俯瞰圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXCawFX6PyxUDGo_8ABtSf4lFbGZTQl5Ewryg2JQy1VvKSvn30zW2Y_NVOJtQMN9Ldma4sKAMaeDctNicc7rS-Y8cCR26QyvaGrtz_3IEx07bJkEXa51IMDxfDaRaCzNMClk52JJmbw0LokS_4RtC2O8seuoD0C10uiIk9181XTZtQwT8pe9vDIsCtoD5hglz7hsQ2yrT1gJcE?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXCawFX6PyxUDGo_8ABtSf4lFbGZTQl5Ewryg2JQy1VvKSvn30zW2Y_NVOJtQMN9Ldma4sKAMaeDctNicc7rS-Y8cCR26QyvaGrtz_3IEx07bJkEXa51IMDxfDaRaCzNMClk52JJmbw0LokS_4RtC2O8seuoD0C10uiIk9181XTZtQwT8pe9vDIsCtoD5hglz7hsQ2yrT1gJcE?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0225562,22.4157484,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.19">
+	<name>疑似新屋苑 (白沙村)#1高空俯覽圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWwqp9rkay23lNOCvJntK6boH4cFbnM7WG6-j_MAjqiUlsT0COf-Bqf9hBU7L17w3NKagcci41Wi665s6iQYl5VPVsAUGM_QQxypysQ_2Yt5vYa3XN3EuI9GppP3qVlvW-TNnlCssJu5GkmDaPcCwYYf7zIAFY4PTdME2hmCLhnNNT62ioIZX4yktsO2EsX_TLGUPb3xJZuOVs?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWwqp9rkay23lNOCvJntK6boH4cFbnM7WG6-j_MAjqiUlsT0COf-Bqf9hBU7L17w3NKagcci41Wi665s6iQYl5VPVsAUGM_QQxypysQ_2Yt5vYa3XN3EuI9GppP3qVlvW-TNnlCssJu5GkmDaPcCwYYf7zIAFY4PTdME2hmCLhnNNT62ioIZX4yktsO2EsX_TLGUPb3xJZuOVs?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0215026,22.4197417,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.20">
+	<name>疑似新屋苑 (大棠)#2高空俯覽圖
+</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUvtYxKq-KaZkZLmCVr1Kuu8gB2hGWRf5NKkJo7LJZ4kGuqLEN2fUlg70r9XtIDsfxdxbDdKfTAM-aS2O_FTBOsTBQCvAqFRg7aZ_buiQZFjD2PwoGKCnJ9R8JWuTpFbwyQVC7OLAN1jj2YpO7rQ2Di3lQwwbvtaXSf5qKGuRmaL-plyq7AVf6QbYYx9UndTh7TtxBt6VThuhA?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUvtYxKq-KaZkZLmCVr1Kuu8gB2hGWRf5NKkJo7LJZ4kGuqLEN2fUlg70r9XtIDsfxdxbDdKfTAM-aS2O_FTBOsTBQCvAqFRg7aZ_buiQZFjD2PwoGKCnJ9R8JWuTpFbwyQVC7OLAN1jj2YpO7rQ2Di3lQwwbvtaXSf5qKGuRmaL-plyq7AVf6QbYYx9UndTh7TtxBt6VThuhA?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0227703,22.4150577,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.21">
+	<name>疑似新屋苑 (白沙村)#1高空俯覽圖
+</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXHV_2d5vmoB9PY5xMD0XAu6FUc-FlA_32PT5Y0ZNo7_86AU0slmI5WAClbgWxRjqDq7LEFXCRd2YAf3aNWRghWU78Y0yWspA24B6eO9PLE5M85U1l1SBAw6TNUJdWZeZmupUugoWm_nkmILU00TcbNo_F4oJVpeYv9ANpZ8kfVH011nLvEA9ih9IipQrf6oLD7-wmOzHmulu8?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAXHV_2d5vmoB9PY5xMD0XAu6FUc-FlA_32PT5Y0ZNo7_86AU0slmI5WAClbgWxRjqDq7LEFXCRd2YAf3aNWRghWU78Y0yWspA24B6eO9PLE5M85U1l1SBAw6TNUJdWZeZmupUugoWm_nkmILU00TcbNo_F4oJVpeYv9ANpZ8kfVH011nLvEA9ih9IipQrf6oLD7-wmOzHmulu8?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0212212,22.419688,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.22">
+	<name>疑似新屋苑 (大棠)#1高空俯覽圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWKJnjIztufvd_hZvR7RhmkDNT1Zdo3SqPRfn9oLc3vnGvGHBcWu3b_PfEmqnAnFOn_LzYumpAgEaccDlQJonHIspvdY3QJ3LCibXaBSj79nZRhdxrQ5_TNiQJJV5GWnPxcBBtpbVXBYdpyzBWy2aEgzRzoadxqxIAeel2Pbbhik8i3Gh2qR2WCFnjD0Ab4C4BiiGZQ-gvH6FU?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAWKJnjIztufvd_hZvR7RhmkDNT1Zdo3SqPRfn9oLc3vnGvGHBcWu3b_PfEmqnAnFOn_LzYumpAgEaccDlQJonHIspvdY3QJ3LCibXaBSj79nZRhdxrQ5_TNiQJJV5GWnPxcBBtpbVXBYdpyzBWy2aEgzRzoadxqxIAeel2Pbbhik8i3Gh2qR2WCFnjD0Ab4C4BiiGZQ-gvH6FU?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0223837,22.4157978,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.23">
+	<name>疑似新屋苑 (大棠)#2 高空俯覽圖
+</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAX8amhi5n1p6tBtPQ4F-ZohUQM_RIQ6CePuKNDMsnCpwy1FmndKmmzPUXEvn_1L4qVs4u3MkwJN6_nN1n0Qcj1X6owSMcuwCklTbVNqBcb8hB5_OMr7AsaGTTgV_9MTbROrM7dJfbMip6HfsVdtvhBSDVQFnanI-AikyrT-YhlwW2d_EFMGpNKqUkj0suEBtoCKrohuy-S9nuM?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAX8amhi5n1p6tBtPQ4F-ZohUQM_RIQ6CePuKNDMsnCpwy1FmndKmmzPUXEvn_1L4qVs4u3MkwJN6_nN1n0Qcj1X6owSMcuwCklTbVNqBcb8hB5_OMr7AsaGTTgV_9MTbROrM7dJfbMip6HfsVdtvhBSDVQFnanI-AikyrT-YhlwW2d_EFMGpNKqUkj0suEBtoCKrohuy-S9nuM?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0235257,22.4151874,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.24">
+	<name>疑似新屋苑 (白沙村)#1實地考察圖</name>
+	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVNyRe0DXvcmNL1V3ZmAYxlhCn5rQFOuqUZrK8HCZR-oq5q7wCGAzkF08qqdHb3aNRXy5yDmnwmrjws_gjE7E_2cEQMmS7PQRi4wXZiEW8d6htrBt7CZdQHHdqADNADFb5P0m1FL5qB6LsmQ4tkUh5T5mow8pm38l8Vy4ECwh3gpokRUugNvmTxkkY6S3sYuxo7R1r4OQ1U4kk?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAVNyRe0DXvcmNL1V3ZmAYxlhCn5rQFOuqUZrK8HCZR-oq5q7wCGAzkF08qqdHb3aNRXy5yDmnwmrjws_gjE7E_2cEQMmS7PQRi4wXZiEW8d6htrBt7CZdQHHdqADNADFb5P0m1FL5qB6LsmQ4tkUh5T5mow8pm38l8Vy4ECwh3gpokRUugNvmTxkkY6S3sYuxo7R1r4OQ1U4kk?authuser=0&amp;fife=s16383</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0218327,22.4202979,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.25">
+	<name>「邊擴丁、邊套丁」(事例二)</name>
+	<description>北區上水鄉河上鄉&lt;br&gt;疑似新屋苑（河上鄉）&lt;br&gt;數量：7幢&lt;br&gt;&lt;br&gt;過往幾年有部份鄉村因缺乏興建丁屋用地而獲擴大可建丁屋的範圍（即「擴丁」），但卻同時出現將新建丁屋屋苑向不合資格人仕出售的情況，讓地產商有源源不絕的土地可供套丁，顯示政府部門容許「擴丁」有助長套丁的情況。&lt;br&gt;#河上鄉&lt;br&gt;&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.5段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.109035,22.509863,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.26">
+	<name>商鄉同體(事例一)</name>
+	<description>元朗區十八鄉大棠&lt;br&gt;疑似新屋苑 (元朗區十八鄉大棠)#1&lt;br&gt;數目：15幢&lt;br&gt;&lt;br&gt;著名鄉紳涉嫌參與套丁 疑有曾任職大型發展商人士參與：以往大眾理解套丁活動是由盤踞於鄉村、由鄉紳組成的小型地產商主導。是次研究首次發現有曾任職大型地產商人士與著名鄉紳合組公司，而該公司涉嫌參與發展丁屋屋苑，當中可能有未知的合作關係，值得進一步追查。&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.2段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0228541,22.4157394,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.27">
+	<name>「自發聚居」套丁假象(事例一)</name>
+	<description>元朗區八鄉石湖塘&lt;br&gt;疑似新屋苑（石湖塘）#2&lt;br&gt;數目：7幢&lt;br&gt;&lt;br&gt;《丁不厭詐：新界套丁研究報告2017》出版後，有鄉紳聲辯稱屋苑化的丁屋是由於原居民「自發聚居」，但研究團隊透過查冊，不難發現同一地產商主導位於不同鄉村的丁屋屋苑發展，甚至有懷疑空殼公司參與策劃，令人難以相信丁屋屋苑的出現純屬「自發聚居」。&lt;br&gt;&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.1段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.072944,22.425379,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.28">
+	<name>套丁「慣犯」(事例二)</name>
+	<description>疑似新屋苑（輞井村）&lt;br&gt; 數目：3幢&lt;br&gt;#元朗區&lt;br&gt;#屏山鄉&lt;br&gt;#輞井圍&lt;br&gt;#SUPREME TRADE DEVELOPMENT LIMITED 齊茂發展有限公司&lt;br&gt;出現套丁「慣犯」：《丁不厭詐：新界套丁研究報告2017》指出，自1990年起至少40多宗民事訴訟案件，香港法院判詞揭發了當中秘密合作協議的存在，涉嫌套丁罪行 ，但相關部門似乎未有跟進。是次研究發現，過往牽涉套丁行為的發展商／人士，過去兩年多繼續參與發展丁屋屋苑，顯示他們在案件後仍然繼續涉嫌參與套丁活動，相關部門亦未有多加阻撓。&lt;br&gt;&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.3段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.001307,22.478006,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.29">
+	<name>套丁「離岸化」(事例一)</name>
+	<description>元朗區新田鄉下竹園&lt;br&gt;疑似新屋苑（下竹園）#2&lt;br&gt;數目：5幢&lt;br&gt;&lt;br&gt;套丁「離岸化」：是次研究首度發現有離岸公司(簡稱 BVI 公司)疑似參與套丁，BVI 公司私隱度高，具隱匿性，公眾難以查閱公司董事和股權結構，令人更難得知丁屋屋苑背後發展商的背景，包括曾否參與其他套丁活動，使相關部門難以追查。&lt;br&gt;#CHARMFAIR INVESTMENT LTD 昌輝投資有限公司&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.4段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.053747,22.475683,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.30">
+	<name>套丁「離岸化」(事例二)</name>
+	<description>元朗區新田鄉下竹園&lt;br&gt;疑似新屋苑（下竹園）#3&lt;br&gt;數目：9幢&lt;br&gt;&lt;br&gt;套丁「離岸化」：是次研究首度發現有離岸公司(簡稱 BVI 公司)疑似參與套丁，BVI 公司私隱度高，具隱匿性，公眾難以查閱公司董事和股權結構，令人更難得知丁屋屋苑背後發展商的背景，包括曾否參與其他套丁活動，使相關部門難以追查。&lt;br&gt;#CHARMFAIR INVESTMENT LTD 昌輝投資有限公司&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.4段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.053833,22.474999,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.31">
+	<name>「自發聚居」套丁假象(事例二)</name>
+	<description>元朗區新田鄉永平村&lt;br&gt;疑似新屋苑 (元朗區新田鄉永平村)#1&lt;br&gt;數目：35幢&lt;br&gt;&lt;br&gt;《丁不厭詐：新界套丁研究報告2017》出版後，有鄉紳聲辯稱屋苑化的丁屋是由於原居民「自發聚居」，但研究團隊透過查冊，不難發現同一地產商主導位於不同鄉村的丁屋屋苑發展，甚至有懷疑空殼公司參與策劃，令人難以相信丁屋屋苑的出現純屬「自發聚居」。&lt;br&gt;#「丁屋大王」 王光榮&lt;br&gt;&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.1段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.077682,22.501027,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.32">
+	<name>商鄉同體(事例二)</name>
+	<description>元朗區十八鄉大棠疑似新屋苑（大棠）#2&lt;br&gt;數目：8幢&lt;br&gt;&lt;br&gt;著名鄉紳涉嫌參與套丁 疑有曾任職大型發展商人士參與：以往大眾理解套丁活動是由盤踞於鄉村、由鄉紳組成的小型地產商主導。是次研究首次發現有曾任職大型地產商人士與著名鄉紳合組公司，而該公司涉嫌參與發展丁屋屋苑，當中可能有未知的合作關係，值得進一步追查。&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.2段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0231081,22.4151341,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.33">
+	<name>「邊擴丁、邊套丁」(事例一)</name>
+	<description>屯門區屯門鄉青磚圍&lt;br&gt;疑似新屋苑 (青磚圍)#1&lt;br&gt;數目：6幢&lt;br&gt;疑似新屋苑 (青磚圍)#2&lt;br&gt;數目：6幢&lt;br&gt;&lt;br&gt;過往幾年有部份鄉村因缺乏興建丁屋用地而獲擴大可建丁屋的範圍（即「擴丁」），但卻同時出現將新建丁屋屋苑向不合資格人仕出售的情況，讓地產商有源源不絕的土地可供套丁，顯示政府部門容許「擴丁」有助長套丁的情況&lt;br&gt;&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.5段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>113.981975,22.424854,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.34">
+	<name>套丁「慣犯」(事例一)</name>
+	<description>元朗區新田鄉下竹園&lt;br&gt;疑似新屋苑（下竹園）#1&lt;br&gt;數目：34幢&lt;br&gt;&lt;br&gt;《丁不厭詐：新界套丁研究報告2017》指出，自1990年起至少40多宗民事訴訟案件，香港法院判詞揭發了當中秘密合作協議的存在，涉嫌套丁罪行 ，但相關部門似乎未有跟進。是次研究發現，過往牽涉套丁行為的發展商／人士，過去兩年多繼續參與發展丁屋屋苑，顯示他們在案件後仍然繼續涉嫌參與套丁活動，相關部門亦未有多加阻撓。&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.3段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.0548045,22.4760362,0</coordinates></Point>
+  </Placemark>
+  <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.35">
+	<name>「邊擴丁、邊套丁」(事例三)</name>
+	<description>元朗區廈村鄉鳳降村&lt;br&gt;疑似新屋苑(鳳降村)&lt;br&gt;數目：4幢&lt;br&gt;&lt;br&gt;過往幾年有部份鄉村因缺乏興建丁屋用地而獲擴大可建丁屋的範圍（即「擴丁」），但卻同時出現將新建丁屋屋苑向不合資格人仕出售的情況，讓地產商有源源不絕的土地可供套丁，顯示政府部門容許「擴丁」有助長套丁的情況&lt;br&gt;&lt;br&gt;詳情內容可見《新丁再現：新界套丁研究報告2020》第4.5段：https://bit.ly/2TmftN0</description>
+	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>113.985344,22.4576516,0</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
