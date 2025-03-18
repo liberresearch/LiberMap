@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_" id="_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_">
+	<SimpleField name="DATASET_EN" type="string"></SimpleField>
+	<SimpleField name="DATASET_TC" type="string"></SimpleField>
+	<SimpleField name="NAME_EN" type="string"></SimpleField>
+	<SimpleField name="ADDRESS_EN" type="string"></SimpleField>
+	<SimpleField name="NAME_TC" type="string"></SimpleField>
+	<SimpleField name="ADDRESS_TC" type="string"></SimpleField>
+	<SimpleField name="NSEARCH01_" type="string"></SimpleField>
+	<SimpleField name="NSEARCH011" type="string"></SimpleField>
+	<SimpleField name="NSEARCH02_" type="string"></SimpleField>
+	<SimpleField name="NSEARCH021" type="string"></SimpleField>
+	<SimpleField name="NSEARCH03_" type="string"></SimpleField>
+	<SimpleField name="NSEARCH031" type="string"></SimpleField>
+	<SimpleField name="NSEARCH04_" type="string"></SimpleField>
+	<SimpleField name="NSEARCH041" type="string"></SimpleField>
+	<SimpleField name="NSEARCH05_" type="string"></SimpleField>
+	<SimpleField name="NSEARCH051" type="string"></SimpleField>
+	<SimpleField name="NORTHING" type="string"></SimpleField>
+	<SimpleField name="EASTING" type="string"></SimpleField>
+	<SimpleField name="LATITUDE" type="string"></SimpleField>
+	<SimpleField name="LONGITUDE" type="string"></SimpleField>
+	<SimpleField name="LASTUPDATE" type="string"></SimpleField>
+</Schema>
+<Folder><name>_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_">
+		<SimpleData name="DATASET_EN">Marine Reserve</SimpleData>
+		<SimpleData name="DATASET_TC">海岸保護區</SimpleData>
+		<SimpleData name="NAME_EN">Cape D'Aguilar Marine Reserve</SimpleData>
+		<SimpleData name="ADDRESS_EN">Cape D'Aguilar</SimpleData>
+		<SimpleData name="NAME_TC">鶴咀海岸保護區</SimpleData>
+		<SimpleData name="ADDRESS_TC">鶴咀</SimpleData>
+		<SimpleData name="NSEARCH01_">1823</SimpleData>
+		<SimpleData name="NSEARCH011">1823</SimpleData>
+		<SimpleData name="NSEARCH02_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH021">N.A.</SimpleData>
+		<SimpleData name="NSEARCH03_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH031">N.A.</SimpleData>
+		<SimpleData name="NSEARCH04_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH041">N.A.</SimpleData>
+		<SimpleData name="NSEARCH05_">http://www.afcd.gov.hk/english/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NSEARCH051">https://www.afcd.gov.hk/tc_chi/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NORTHING">807605</SimpleData>
+		<SimpleData name="EASTING">844700</SimpleData>
+		<SimpleData name="LATITUDE">22.20704719</SimpleData>
+		<SimpleData name="LONGITUDE">114.25864973</SimpleData>
+		<SimpleData name="LASTUPDATE">2020/04/01 09:22:31</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.258649732959,22.2070471922413</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_">
+		<SimpleData name="DATASET_EN">Marine Parks</SimpleData>
+		<SimpleData name="DATASET_TC">海岸公園</SimpleData>
+		<SimpleData name="NAME_EN">South Lantau Marine Park</SimpleData>
+		<SimpleData name="ADDRESS_EN">South Lantau</SimpleData>
+		<SimpleData name="NAME_TC">南大嶼海岸公園</SimpleData>
+		<SimpleData name="ADDRESS_TC">南大嶼</SimpleData>
+		<SimpleData name="NSEARCH01_">1823</SimpleData>
+		<SimpleData name="NSEARCH011">1823</SimpleData>
+		<SimpleData name="NSEARCH02_">N/A</SimpleData>
+		<SimpleData name="NSEARCH021">N/A</SimpleData>
+		<SimpleData name="NSEARCH03_">N/A</SimpleData>
+		<SimpleData name="NSEARCH031">N/A</SimpleData>
+		<SimpleData name="NSEARCH05_">https://www.afcd.gov.hk/english/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NSEARCH051">https://www.afcd.gov.hk/tc_chi/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NORTHING">803761</SimpleData>
+		<SimpleData name="EASTING">809826</SimpleData>
+		<SimpleData name="LATITUDE">22.1721507</SimpleData>
+		<SimpleData name="LONGITUDE">113.92049918</SimpleData>
+		<SimpleData name="LASTUPDATE">2022/06/27 09:41:35</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>113.920499185092,22.1721509915717</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_">
+		<SimpleData name="DATASET_EN">Marine Parks</SimpleData>
+		<SimpleData name="DATASET_TC">海岸公園</SimpleData>
+		<SimpleData name="NAME_EN">Southwest Lantau Marine Park</SimpleData>
+		<SimpleData name="ADDRESS_EN">The Southwestern waters of Lantau</SimpleData>
+		<SimpleData name="NAME_TC">大嶼山西南海岸公園</SimpleData>
+		<SimpleData name="ADDRESS_TC">大嶼山西南面的水域</SimpleData>
+		<SimpleData name="NSEARCH01_">1823</SimpleData>
+		<SimpleData name="NSEARCH011">1823</SimpleData>
+		<SimpleData name="NSEARCH02_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH021">N.A.</SimpleData>
+		<SimpleData name="NSEARCH03_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH031">N.A.</SimpleData>
+		<SimpleData name="NSEARCH04_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH041">N.A.</SimpleData>
+		<SimpleData name="NSEARCH05_">http://www.afcd.gov.hk/english/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NSEARCH051">https://www.afcd.gov.hk/tc_chi/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NORTHING">807026</SimpleData>
+		<SimpleData name="EASTING">803498</SimpleData>
+		<SimpleData name="LATITUDE">22.20152539</SimpleData>
+		<SimpleData name="LONGITUDE">113.85907746</SimpleData>
+		<SimpleData name="LASTUPDATE">2020/05/06 15:53:39</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>113.859077468632,22.2015256811188</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_">
+		<SimpleData name="DATASET_EN">Marine Parks</SimpleData>
+		<SimpleData name="DATASET_TC">海岸公園</SimpleData>
+		<SimpleData name="NAME_EN">Sha Chau &amp; Lung Kwu Chau Marine Park</SimpleData>
+		<SimpleData name="ADDRESS_EN">Sha Chau &amp; Lung Kwu Chau</SimpleData>
+		<SimpleData name="NAME_TC">沙洲及龍鼓洲海岸公園</SimpleData>
+		<SimpleData name="ADDRESS_TC">沙洲及龍鼓洲</SimpleData>
+		<SimpleData name="NSEARCH01_">1823</SimpleData>
+		<SimpleData name="NSEARCH011">1823</SimpleData>
+		<SimpleData name="NSEARCH02_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH021">N.A.</SimpleData>
+		<SimpleData name="NSEARCH03_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH031">N.A.</SimpleData>
+		<SimpleData name="NSEARCH04_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH041">N.A.</SimpleData>
+		<SimpleData name="NSEARCH05_">http://www.afcd.gov.hk/english/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NSEARCH051">https://www.afcd.gov.hk/tc_chi/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NORTHING">826005</SimpleData>
+		<SimpleData name="EASTING">805700</SimpleData>
+		<SimpleData name="LATITUDE">22.3729592</SimpleData>
+		<SimpleData name="LONGITUDE">113.8800699</SimpleData>
+		<SimpleData name="LASTUPDATE">2020/04/01 09:27:08</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>113.880069903859,22.372959201169</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_">
+		<SimpleData name="DATASET_EN">Marine Parks</SimpleData>
+		<SimpleData name="DATASET_TC">海岸公園</SimpleData>
+		<SimpleData name="NAME_EN">Tung Ping Chau Marine Park</SimpleData>
+		<SimpleData name="ADDRESS_EN">Tung Ping Chau</SimpleData>
+		<SimpleData name="NAME_TC">東平洲海岸公園</SimpleData>
+		<SimpleData name="ADDRESS_TC">東平洲</SimpleData>
+		<SimpleData name="NSEARCH01_">1823</SimpleData>
+		<SimpleData name="NSEARCH011">1823</SimpleData>
+		<SimpleData name="NSEARCH02_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH021">N.A.</SimpleData>
+		<SimpleData name="NSEARCH03_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH031">N.A.</SimpleData>
+		<SimpleData name="NSEARCH04_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH041">N.A.</SimpleData>
+		<SimpleData name="NSEARCH05_">http://www.afcd.gov.hk/english/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NSEARCH051">https://www.afcd.gov.hk/tc_chi/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NORTHING">844905</SimpleData>
+		<SimpleData name="EASTING">862800</SimpleData>
+		<SimpleData name="LATITUDE">22.54369978</SimpleData>
+		<SimpleData name="LONGITUDE">114.43480672</SimpleData>
+		<SimpleData name="LASTUPDATE">2020/04/01 09:26:22</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.434806722721,22.5436997823126</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_">
+		<SimpleData name="DATASET_EN">Marine Parks</SimpleData>
+		<SimpleData name="DATASET_TC">海岸公園</SimpleData>
+		<SimpleData name="NAME_EN">Hoi Ha Wan Marine Park</SimpleData>
+		<SimpleData name="ADDRESS_EN">Hoi Ha Wan</SimpleData>
+		<SimpleData name="NAME_TC">海下灣海岸公園</SimpleData>
+		<SimpleData name="ADDRESS_TC">海下灣</SimpleData>
+		<SimpleData name="NSEARCH01_">1823</SimpleData>
+		<SimpleData name="NSEARCH011">1823</SimpleData>
+		<SimpleData name="NSEARCH02_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH021">N.A.</SimpleData>
+		<SimpleData name="NSEARCH03_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH031">N.A.</SimpleData>
+		<SimpleData name="NSEARCH04_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH041">N.A.</SimpleData>
+		<SimpleData name="NSEARCH05_">http://www.afcd.gov.hk/english/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NSEARCH051">https://www.afcd.gov.hk/tc_chi/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NORTHING">837005</SimpleData>
+		<SimpleData name="EASTING">852550</SimpleData>
+		<SimpleData name="LATITUDE">22.47248894</SimpleData>
+		<SimpleData name="LONGITUDE">114.33507996</SimpleData>
+		<SimpleData name="LASTUPDATE">2020/04/01 09:25:56</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.3350799604,22.4724889348184</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_">
+		<SimpleData name="DATASET_EN">Marine Parks</SimpleData>
+		<SimpleData name="DATASET_TC">海岸公園</SimpleData>
+		<SimpleData name="NAME_EN">Yan Chau Tong Marine Park</SimpleData>
+		<SimpleData name="ADDRESS_EN">Yan Chau Tong</SimpleData>
+		<SimpleData name="NAME_TC">印洲塘海岸公園</SimpleData>
+		<SimpleData name="ADDRESS_TC">印洲塘</SimpleData>
+		<SimpleData name="NSEARCH01_">1823</SimpleData>
+		<SimpleData name="NSEARCH011">1823</SimpleData>
+		<SimpleData name="NSEARCH02_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH021">N.A.</SimpleData>
+		<SimpleData name="NSEARCH03_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH031">N.A.</SimpleData>
+		<SimpleData name="NSEARCH04_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH041">N.A.</SimpleData>
+		<SimpleData name="NSEARCH05_">http://www.afcd.gov.hk/english/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NSEARCH051">https://www.afcd.gov.hk/tc_chi/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NORTHING">842101</SimpleData>
+		<SimpleData name="EASTING">847992</SimpleData>
+		<SimpleData name="LATITUDE">22.51854513</SimpleData>
+		<SimpleData name="LONGITUDE">114.2908295</SimpleData>
+		<SimpleData name="LASTUPDATE">2020/04/01 09:24:52</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>114.290829503765,22.5185451296613</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_">
+		<SimpleData name="DATASET_EN">Marine Parks</SimpleData>
+		<SimpleData name="DATASET_TC">海岸公園</SimpleData>
+		<SimpleData name="NAME_EN">The Brothers Marine Park</SimpleData>
+		<SimpleData name="ADDRESS_EN">The Brothers Marine Park</SimpleData>
+		<SimpleData name="NAME_TC">大小磨刀海岸公園</SimpleData>
+		<SimpleData name="ADDRESS_TC">大小磨刀海岸公園</SimpleData>
+		<SimpleData name="NSEARCH01_">1823</SimpleData>
+		<SimpleData name="NSEARCH011">1823</SimpleData>
+		<SimpleData name="NSEARCH02_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH021">N.A.</SimpleData>
+		<SimpleData name="NSEARCH03_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH031">N.A.</SimpleData>
+		<SimpleData name="NSEARCH04_">N.A.</SimpleData>
+		<SimpleData name="NSEARCH041">N.A.</SimpleData>
+		<SimpleData name="NSEARCH05_">http://www.afcd.gov.hk/english/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NSEARCH051">https://www.afcd.gov.hk/tc_chi/country/cou_vis/cou_vis_mar/cou_vis_mar_des/cou_vis_mar_des.html</SimpleData>
+		<SimpleData name="NORTHING">821554</SimpleData>
+		<SimpleData name="EASTING">815483</SimpleData>
+		<SimpleData name="LATITUDE">22.33290713</SimpleData>
+		<SimpleData name="LONGITUDE">113.9751128</SimpleData>
+		<SimpleData name="LASTUPDATE">2020/04/01 09:24:17</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>113.975112803576,22.3329071347767</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>
