@@ -13,6 +13,9 @@ ol.proj.proj4.register(proj4);
 
 class MapManager {
     constructor() {
+		this.isMobile = window.innerWidth <= 768 || 
+                   navigator.userAgent.match(/Android/i) || 
+                   navigator.userAgent.match(/iPhone|iPad|iPod/i);
         this.basemap = null;
         this.map = this.initializeMap();
         this.setupMapAccessibility();
@@ -21,6 +24,47 @@ class MapManager {
         this.currentBasemapId = 'greyscale';
         this.initializeBasemapSwitcher();
     }
+
+	setupOptimizedEventHandlers() {
+		// Use a debounce function for handlers that might fire frequently
+		const debounce = (func, delay) => {
+			let timeout;
+			return function() {
+				const context = this;
+				const args = arguments;
+				clearTimeout(timeout);
+				timeout = setTimeout(() => func.apply(context, args), delay);
+			};
+		};
+		
+		// Apply debounced handlers to map events
+		this.map.on('pointermove', debounce((event) => {
+			// Your existing pointermove logic
+		}, 100));
+		
+		// Similar approach for other handlers
+	}
+
+	cleanupUnusedResources() {
+		// Remove unused layers
+		if (this.activeLayers.size > 5) {
+			// Keep only the 5 most recently used layers
+			const layerEntries = Array.from(this.activeLayers.entries());
+			const oldestLayers = layerEntries.slice(0, layerEntries.length - 5);
+			
+			oldestLayers.forEach(([url, layerInfo]) => {
+				this.map.removeLayer(layerInfo.layer);
+				this.activeLayers.delete(url);
+				if (layerInfo.button) {
+					layerInfo.button.textContent = '+';
+					layerInfo.button.className = 'layer-toggle-button add';
+				}
+			});
+			
+			// Update legend
+			this.updateLegend(document.querySelector('.legend-content'));
+		}
+	}
 
     setupMapAccessibility() {
         this.map.getTargetElement().setAttribute('role', 'application');
@@ -38,28 +82,50 @@ class MapManager {
     }
 
 	
-    initializeMap() {
-        // Create initial basemap layer
-        this.basemap = new ol.layer.Group({
-            layers: [
+	initializeMap() {
+		// Create initial basemap layer
+		this.basemap = new ol.layer.Group({
+			layers: [
 				new ol.layer.Tile({
 					source: new ol.source.XYZ({
 						url: 'https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
 						attribution: '© OpenStreetMap contributors, © CARTO'
 					})
 				})
-            ]
-        });
+			]
+		});
 
-        return new ol.Map({
-            target: 'map',
-            layers: [this.basemap],
-            view: new ol.View({
-                center: ol.proj.fromLonLat(CONFIG.HONG_KONG_CENTER),
-                zoom: CONFIG.DEFAULT_ZOOM
-            })
-        });
-    }
+		// Create map with default controls
+		const map = new ol.Map({
+			target: 'map',
+			layers: [this.basemap],
+			view: new ol.View({
+				center: ol.proj.fromLonLat(CONFIG.HONG_KONG_CENTER),
+				zoom: CONFIG.DEFAULT_ZOOM
+			})
+		});
+
+		// For mobile optimization, we can selectively remove some controls
+		if (this.isMobile) {
+			// Get all controls
+			const controls = map.getControls().getArray();
+			
+			// Keep only essential controls (like zoom)
+			const controlsToKeep = controls.filter(control => 
+				control instanceof ol.control.Zoom
+			);
+			
+			// Remove all controls
+			map.getControls().clear();
+			
+			// Add back only the ones we want to keep
+			controlsToKeep.forEach(control => {
+				map.addControl(control);
+			});
+		}
+
+		return map;
+	}
 
     useMyLocation() {
         if (!navigator.geolocation) {
