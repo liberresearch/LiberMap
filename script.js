@@ -438,213 +438,262 @@ class MapManager {
 		
 	
 	initializeSearchTool() {
-		// Create main container with dropdown
-		const searchContainer = document.createElement('div');
-		searchContainer.id = 'search-container';
-		searchContainer.className = 'search-container';
+	  // Create main container with dropdown
+	  const searchContainer = document.createElement('div');
+	  searchContainer.id = 'search-container';
+	  searchContainer.className = 'search-container';
+
+	  // Create dropdown toggle button
+	  const dropdownToggle = document.createElement('div');
+	  dropdownToggle.className = 'search-dropdown-toggle';
+	  dropdownToggle.innerHTML = '▼';
+	  dropdownToggle.setAttribute('role', 'button');
+	  dropdownToggle.setAttribute('aria-label', 'Toggle search engines');
+	  dropdownToggle.setAttribute('tabindex', '0');
+
+	  // Create dropdown menu (initially hidden)
+	  const dropdownMenu = document.createElement('div');
+	  dropdownMenu.className = 'search-dropdown-menu';
+	  dropdownMenu.style.display = 'none';
+
+	  // Create search engines options
+	  const engines = [
+		{ id: 'google', name: 'Google Places' },
+		{ id: 'locationSearch', name: 'Location Search API' }
+	  ];
+	  engines.forEach(engine => {
+		const option = document.createElement('div');
+		option.className = 'search-engine-option';
+		option.textContent = engine.name;
+		option.setAttribute('data-engine', engine.id);
+		option.onclick = () => {
+		  setActiveEngine(engine.id);
+		  dropdownMenu.style.display = 'none';
+		};
+		dropdownMenu.appendChild(option);
+	  });
+
+	  // Create input container
+	  const inputContainer = document.createElement('div');
+	  inputContainer.className = 'search-input-container';
+
+	  // Create search inputs for each engine
+	  const googleSearchInput = document.createElement('input');
+	  googleSearchInput.id = 'google-search-input';
+	  googleSearchInput.className = 'search-input';
+	  googleSearchInput.type = 'text';
+	  googleSearchInput.placeholder = 'Search Google Places...';
+
+	  const locationSearchInput = document.createElement('input');
+	  locationSearchInput.id = 'location-search-input';
+	  locationSearchInput.className = 'search-input';
+	  locationSearchInput.type = 'text';
+	  locationSearchInput.placeholder = 'Search Location Search API...';
+	  locationSearchInput.style.display = 'none';
+
+	  // Add elements to containers
+	  inputContainer.appendChild(googleSearchInput);
+	  inputContainer.appendChild(locationSearchInput);
+	  searchContainer.appendChild(dropdownToggle);
+	  searchContainer.appendChild(inputContainer);
+	  document.body.appendChild(searchContainer);
+	  document.body.appendChild(dropdownMenu);
+
+	  // Create results container (initially empty)
+	  const resultContainer = document.createElement('div');
+	  resultContainer.className = 'search-results-container';
+	  resultContainer.style.display = 'none';
+	  document.body.appendChild(resultContainer);
+
+	  // Create a pin marker layer for search results
+	  const pinMarkerSource = new ol.source.Vector();
+	  const pinMarkerLayer = new ol.layer.Vector({
+		source: pinMarkerSource,
+		zIndex: 1000 // Ensure it's on top of other layers
+	  });
+	  this.map.addLayer(pinMarkerLayer);
+
+	  // Variable to store the current pin timer
+	  let pinTimer = null;
+
+	  // Function to add pin marker at a location
+	  const addPinMarker = (coordinates) => {
+		// Clear previous markers and any existing timer
+		pinMarkerSource.clear();
+		if (pinTimer) {
+		  clearTimeout(pinTimer);
+		}
 		
-		// Create dropdown toggle button
-		const dropdownToggle = document.createElement('div');
-		dropdownToggle.className = 'search-dropdown-toggle';
-		dropdownToggle.innerHTML = '▼';
-		dropdownToggle.setAttribute('role', 'button');
-		dropdownToggle.setAttribute('aria-label', 'Toggle search engines');
-		dropdownToggle.setAttribute('tabindex', '0');
-		
-		// Create dropdown menu (initially hidden)
-		const dropdownMenu = document.createElement('div');
-		dropdownMenu.className = 'search-dropdown-menu';
-		dropdownMenu.style.display = 'none';
-		
-		// Create search engines options
-		const engines = [
-			{ id: 'google', name: 'Google Places' },
-			{ id: 'locationSearch', name: 'Location Search API' }
-		];
-		
-		engines.forEach(engine => {
-			const option = document.createElement('div');
-			option.className = 'search-engine-option';
-			option.textContent = engine.name;
-			option.setAttribute('data-engine', engine.id);
-			option.onclick = () => {
-				setActiveEngine(engine.id);
-				dropdownMenu.style.display = 'none';
-			};
-			dropdownMenu.appendChild(option);
+		// Create marker feature
+		const marker = new ol.Feature({
+		  geometry: new ol.geom.Point(coordinates)
 		});
 		
-		// Create input container
-		const inputContainer = document.createElement('div');
-		inputContainer.className = 'search-input-container';
+		// Create marker style with pin image
+		const markerStyle = new ol.style.Style({
+		  image: new ol.style.Icon({
+			src: 'img/pin.png',
+			anchor: [0.5, 1], // Center bottom of the image
+			scale: 0.05 // Adjust scale as needed
+		  })
+		});
 		
-		// Create search inputs for each engine
-		const googleSearchInput = document.createElement('input');
-		googleSearchInput.id = 'google-search-input';
-		googleSearchInput.className = 'search-input';
-		googleSearchInput.type = 'text';
-		googleSearchInput.placeholder = 'Search Google Places...';
+		marker.setStyle(markerStyle);
+		pinMarkerSource.addFeature(marker);
 		
-		const locationSearchInput = document.createElement('input');
-		locationSearchInput.id = 'location-search-input';
-		locationSearchInput.className = 'search-input';
-		locationSearchInput.type = 'text';
-		locationSearchInput.placeholder = 'Search Location Search API...';
+		// Set timer to remove the pin after 5 seconds
+		pinTimer = setTimeout(() => {
+		  pinMarkerSource.clear();
+		  pinTimer = null;
+		}, 5000);
+	  };
+
+	  // Toggle dropdown when clicking the toggle button
+	  dropdownToggle.onclick = () => {
+		const isVisible = dropdownMenu.style.display !== 'none';
+		dropdownMenu.style.display = isVisible ? 'none' : 'block';
+		// Position the dropdown menu below the toggle button
+		if (!isVisible) {
+		  const rect = dropdownToggle.getBoundingClientRect();
+		  dropdownMenu.style.left = `${rect.left}px`;
+		  dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`;
+		}
+	  };
+
+	  // Keyboard accessibility
+	  dropdownToggle.addEventListener('keydown', (e) => {
+		if (e.key === 'Enter' || e.key === ' ') {
+		  e.preventDefault();
+		  dropdownToggle.click();
+		}
+	  });
+
+	  // Function to set active search engine
+	  const setActiveEngine = (engineId) => {
+		// Hide all inputs
+		googleSearchInput.style.display = 'none';
 		locationSearchInput.style.display = 'none';
 		
-		// Add elements to containers
-		inputContainer.appendChild(googleSearchInput);
-		inputContainer.appendChild(locationSearchInput);
+		// Show selected input
+		if (engineId === 'google') {
+		  googleSearchInput.style.display = 'block';
+		  dropdownToggle.setAttribute('aria-label', 'Google Places (click to change)');
+		} else if (engineId === 'locationSearch') {
+		  locationSearchInput.style.display = 'block';
+		  dropdownToggle.setAttribute('aria-label', 'Location Search API (click to change)');
+		}
 		
-		searchContainer.appendChild(dropdownToggle);
-		searchContainer.appendChild(inputContainer);
-		
-		document.body.appendChild(searchContainer);
-		document.body.appendChild(dropdownMenu);
-		
-		// Create results container (initially empty)
-		const resultContainer = document.createElement('div');
-		resultContainer.className = 'search-results-container';
+		// Clear any existing results
 		resultContainer.style.display = 'none';
-		document.body.appendChild(resultContainer);
+		resultContainer.innerHTML = '';
 		
-		// Toggle dropdown when clicking the toggle button
-		dropdownToggle.onclick = () => {
-			const isVisible = dropdownMenu.style.display !== 'none';
-			dropdownMenu.style.display = isVisible ? 'none' : 'block';
-			
-			// Position the dropdown menu below the toggle button
-			if (!isVisible) {
-				const rect = dropdownToggle.getBoundingClientRect();
-				dropdownMenu.style.left = `${rect.left}px`;
-				dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`;
-			}
-		};
-		
-		// Keyboard accessibility
-		dropdownToggle.addEventListener('keydown', (e) => {
-			if (e.key === 'Enter' || e.key === ' ') {
-				e.preventDefault();
-				dropdownToggle.click();
-			}
+		// Clear any existing pin markers and timer
+		pinMarkerSource.clear();
+		if (pinTimer) {
+		  clearTimeout(pinTimer);
+		  pinTimer = null;
+		}
+	  };
+
+	  // Initialize Google Places search
+	  let searchBox;
+	  const initGoogleSearch = () => {
+		searchBox = new google.maps.places.SearchBox(googleSearchInput);
+		searchBox.addListener('places_changed', () => {
+		  const places = searchBox.getPlaces();
+		  if (places.length === 0) return;
+		  
+		  const place = places[0];
+		  const coordinates = [place.geometry.location.lng(), place.geometry.location.lat()];
+		  const transformedCoords = ol.proj.fromLonLat(coordinates);
+		  
+		  // Add pin marker at the location
+		  addPinMarker(transformedCoords);
+		  
+		  // Animate to the location
+		  this.map.getView().animate({
+			center: transformedCoords,
+			zoom: 15,
+			duration: 1000
+		  });
 		});
-		
-		// Function to set active search engine
-		const setActiveEngine = (engineId) => {
-			// Hide all inputs
-			googleSearchInput.style.display = 'none';
-			locationSearchInput.style.display = 'none';
-			
-			// Show selected input
-			if (engineId === 'google') {
-				googleSearchInput.style.display = 'block';
-				dropdownToggle.setAttribute('aria-label', 'Google Places (click to change)');
-			} else if (engineId === 'locationSearch') {
-				locationSearchInput.style.display = 'block';
-				dropdownToggle.setAttribute('aria-label', 'Location Search API (click to change)');
-			}
-			
-			// Clear any existing results
-			resultContainer.style.display = 'none';
+	  };
+
+	  // Initialize Location Search API
+	  locationSearchInput.addEventListener('input', () => {
+		const query = locationSearchInput.value;
+		if (query.length < 2) {
+		  resultContainer.style.display = 'none';
+		  return;
+		}
+		fetchLocationSearch(query);
+	  });
+
+	  const fetchLocationSearch = query => {
+		const url = `https://geodata.gov.hk/gs/api/v1.0.0/locationSearch?q=${encodeURIComponent(query)}`;
+		fetch(url)
+		  .then(response => response.json())
+		  .then(data => {
+			const results = data.slice(0, 5);
 			resultContainer.innerHTML = '';
-		};
-		
-		// Initialize Google Places search
-		let searchBox;
-		const initGoogleSearch = () => {
-			searchBox = new google.maps.places.SearchBox(googleSearchInput);
-			searchBox.addListener('places_changed', () => {
-				const places = searchBox.getPlaces();
-				if (places.length === 0) return;
+			
+			if (results.length === 0) {
+			  resultContainer.style.display = 'none';
+			  return;
+			}
+			
+			results.forEach(result => {
+			  const resultItem = document.createElement('div');
+			  resultItem.className = 'search-result-item';
+			  resultItem.textContent = result.nameZH;
+			  resultItem.addEventListener('click', () => {
+				const hk1980Projection = 'EPSG:2326';
+				const mapProjection = this.map.getView().getProjection().getCode();
+				const x = result.x;
+				const y = result.y;
 				
-				const place = places[0];
-				const coordinates = [place.geometry.location.lng(), place.geometry.location.lat()];
-				const transformedCoords = ol.proj.fromLonLat(coordinates);
+				// Transform directly from HK1980 to the map's projection
+				const transformedCoords = ol.proj.transform([x, y], hk1980Projection, mapProjection);
 				
+				// Add pin marker at the location
+				addPinMarker(transformedCoords);
+				
+				// Animate to the location
 				this.map.getView().animate({
-					center: transformedCoords,
-					zoom: 15,
-					duration: 1000
+				  center: transformedCoords,
+				  zoom: 15,
+				  duration: 1000
 				});
+				
+				resultContainer.style.display = 'none';
+				locationSearchInput.value = result.nameZH;
+			  });
+			  resultContainer.appendChild(resultItem);
 			});
-		};
-		
-		// Initialize Location Search API
-		locationSearchInput.addEventListener('input', () => {
-			const query = locationSearchInput.value;
-			if (query.length < 2) {
-				resultContainer.style.display = 'none';
-				return;
-			}
 			
-			fetchLocationSearch(query);
-		});
-		
-		const fetchLocationSearch = query => {
-			const url = `https://geodata.gov.hk/gs/api/v1.0.0/locationSearch?q=${encodeURIComponent(query)}`;
-			fetch(url)
-				.then(response => response.json())
-				.then(data => {
-					const results = data.slice(0, 5);
-					
-					resultContainer.innerHTML = '';
-					
-					if (results.length === 0) {
-						resultContainer.style.display = 'none';
-						return;
-					}
-					
-					results.forEach(result => {
-						const resultItem = document.createElement('div');
-						resultItem.className = 'search-result-item';
-						resultItem.textContent = result.nameZH;
-						
-						resultItem.addEventListener('click', () => {
-							const hk1980Projection = 'EPSG:2326';
-							const mapProjection = this.map.getView().getProjection().getCode();
-							const x = result.x;
-							const y = result.y;
-							
-							// Transform directly from HK1980 to the map's projection
-							const transformedCoords = ol.proj.transform([x, y], hk1980Projection, mapProjection);
-							
-							this.map.getView().animate({
-								center: transformedCoords,
-								zoom: 15,
-								duration: 1000
-							});
-							
-							resultContainer.style.display = 'none';
-							locationSearchInput.value = result.nameZH;
-						});
-						
-						resultContainer.appendChild(resultItem);
-					});
-					
-					// Position and show results
-					const rect = locationSearchInput.getBoundingClientRect();
-					resultContainer.style.left = `${rect.left}px`;
-					resultContainer.style.top = `${rect.bottom + window.scrollY}px`;
-					resultContainer.style.width = `${rect.width}px`;
-					resultContainer.style.display = 'block';
-				})
-				.catch(error => console.error('Error fetching location search results:', error));
-		};
-		
-		// Initialize Google search by default
-		initGoogleSearch();
-		setActiveEngine('google');
-		
-		// Close dropdown and results when clicking elsewhere
-		document.addEventListener('click', (e) => {
-			if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-				dropdownMenu.style.display = 'none';
-			}
-			
-			if (!searchContainer.contains(e.target) && !resultContainer.contains(e.target)) {
-				resultContainer.style.display = 'none';
-			}
-		});
+			// Position and show results
+			const rect = locationSearchInput.getBoundingClientRect();
+			resultContainer.style.left = `${rect.left}px`;
+			resultContainer.style.top = `${rect.bottom + window.scrollY}px`;
+			resultContainer.style.width = `${rect.width}px`;
+			resultContainer.style.display = 'block';
+		  })
+		  .catch(error => console.error('Error fetching location search results:', error));
+	  };
+
+	  // Initialize Google search by default
+	  initGoogleSearch();
+	  setActiveEngine('google');
+
+	  // Close dropdown and results when clicking elsewhere
+	  document.addEventListener('click', (e) => {
+		if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+		  dropdownMenu.style.display = 'none';
+		}
+		if (!searchContainer.contains(e.target) && !resultContainer.contains(e.target)) {
+		  resultContainer.style.display = 'none';
+		}
+	  });
 	}
 
 
@@ -1180,54 +1229,80 @@ class MapManager {
 	}
 	
 	createLegendPanel() {
-        const legendPanel = document.createElement('div');
-        legendPanel.id = 'legend-panel';
-        legendPanel.className = 'legend-panel';
-        legendPanel.setAttribute('role', 'complementary');
-        legendPanel.setAttribute('aria-label', 'Map legend');
-
-        const header = document.createElement('div');
-        header.className = 'legend-header';
-        header.setAttribute('role', 'button');
-        header.setAttribute('aria-expanded', 'false');
-        header.setAttribute('tabindex', '0');
-
-        const title = document.createElement('span');
-        title.textContent = 'Legend';
-
-        const toggleButton = document.createElement('span');
-        toggleButton.className = 'legend-toggle';
-        toggleButton.textContent = '▶';
-        toggleButton.setAttribute('aria-hidden', 'true');
-
-        const content = document.createElement('div');
-        content.className = 'legend-content';
-        content.style.display = 'none';
-        content.setAttribute('role', 'region');
-        content.setAttribute('aria-label', 'Legend content');
-
-        header.onclick = () => {
-            const isExpanded = content.style.display !== 'none';
-            header.setAttribute('aria-expanded', !isExpanded);
-            content.style.display = isExpanded ? 'none' : 'block';
-            toggleButton.textContent = isExpanded ? '▶' : '▼';
-        };
-
-        header.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                header.click();
-            }
-        });
-
-        header.appendChild(title);
-        header.appendChild(toggleButton);
-        legendPanel.appendChild(header);
-        legendPanel.appendChild(content);
-
-        this.updateLegend(content);
-        document.body.appendChild(legendPanel);
-    }
+		// Create the legend button with circular background
+		const legendButton = document.createElement('div');
+		legendButton.id = 'legend-button';
+		legendButton.className = 'legend-button';
+		legendButton.setAttribute('role', 'button');
+		legendButton.setAttribute('aria-label', 'Toggle map legend');
+		legendButton.setAttribute('tabindex', '0');
+		
+		// Add the icon
+		const legendIcon = document.createElement('img');
+		legendIcon.src = 'img/legend.png';
+		legendIcon.alt = '';
+		legendIcon.setAttribute('role', 'presentation');
+		legendButton.appendChild(legendIcon);
+		
+		// Create the legend panel
+		const legendPanel = document.createElement('div');
+		legendPanel.id = 'legend-panel';
+		legendPanel.className = 'legend-panel';
+		legendPanel.style.display = 'none';
+		legendPanel.setAttribute('role', 'complementary');
+		legendPanel.setAttribute('aria-label', 'Map legend');
+		
+		// Create legend content
+		const content = document.createElement('div');
+		content.className = 'legend-content';
+		content.setAttribute('role', 'region');
+		content.setAttribute('aria-label', 'Legend content');
+		
+		// Add close button to the legend panel
+		const closeButton = document.createElement('div');
+		closeButton.className = 'legend-close-button';
+		closeButton.innerHTML = '&times;';
+		closeButton.setAttribute('aria-label', 'Close legend');
+		closeButton.setAttribute('role', 'button');
+		closeButton.setAttribute('tabindex', '0');
+		
+		// Add event listeners
+		legendButton.addEventListener('click', () => {
+			const isVisible = legendPanel.style.display !== 'none';
+			legendPanel.style.display = isVisible ? 'none' : 'block';
+			legendButton.setAttribute('aria-expanded', !isVisible);
+		});
+		
+		legendButton.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				legendButton.click();
+			}
+		});
+		
+		closeButton.addEventListener('click', () => {
+			legendPanel.style.display = 'none';
+			legendButton.setAttribute('aria-expanded', false);
+		});
+		
+		closeButton.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				closeButton.click();
+			}
+		});
+		
+		// Assemble the legend panel
+		legendPanel.appendChild(closeButton);
+		legendPanel.appendChild(content);
+		
+		// Update the legend content
+		this.updateLegend(content);
+		
+		// Add to the document
+		document.body.appendChild(legendButton);
+		document.body.appendChild(legendPanel);
+	}
 
 	updateLegend(content) {
 		content.innerHTML = '';
