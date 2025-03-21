@@ -4,7 +4,7 @@ const CONFIG = {
     HK80_PROJECTION: 'EPSG:2326',
     WGS84_PROJECTION: 'EPSG:4326',
     DEFAULT_ZOOM: 10.3,
-    GITHUB_API_URL: 'https://api.github.com/repos/cysyiu/LiberMap/contents/Data_GML'
+    GITHUB_API_URL: 'https://api.github.com/repos/liberresearch/LiberMap/contents/Data_GML'
 };
 
 // Register HK80 projection
@@ -903,7 +903,7 @@ class MapManager {
 
 
 	async fetchGithubContents(path) {
-        const baseUrl = 'https://api.github.com/repos/cysyiu/LiberMap/contents/';
+        const baseUrl = 'https://api.github.com/repos/liberresearch/LiberMap/contents/';
         const response = await fetch(baseUrl + path);
         if (!response.ok) {
             throw new Error('Error fetching contents');
