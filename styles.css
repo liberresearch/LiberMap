@@ -728,3 +728,21 @@
         overflow-y: auto;
     }
 }
+
+/* Download All Button */
+.download-all-button {
+    position: absolute;
+    bottom: 20px;
+    left: 180px; /* This will be overridden by the JS positioning */
+    background: #3f5aa3;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.download-all-button:hover {
+    background: #3f5aa3c9;
+}
