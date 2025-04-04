@@ -1436,7 +1436,40 @@ class MapManager {
 	
 }
 
-
+function createDownloadAllButton() {
+    const downloadAllButton = document.createElement('div');
+    downloadAllButton.id = 'download-all-button';
+    downloadAllButton.className = 'download-all-button';
+    downloadAllButton.textContent = 'Download All';
+    
+    // Add accessibility attributes
+    downloadAllButton.setAttribute('role', 'button');
+    downloadAllButton.setAttribute('tabindex', '0');
+    
+    // Add click handler
+    downloadAllButton.onclick = () => {
+        window.location.href = 'https://s3.licson.net/libreresearch/LibreMap-Dataset.zip';
+    };
+    
+    // Add keyboard handler for accessibility
+    downloadAllButton.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            downloadAllButton.click();
+        }
+    });
+    
+    document.body.appendChild(downloadAllButton);
+    
+    // Position the button next to liber-data-button
+    const liberDataButton = document.getElementById('liber-data-button');
+    if (liberDataButton) {
+        const liberRect = liberDataButton.getBoundingClientRect();
+        downloadAllButton.style.position = 'absolute';
+        downloadAllButton.style.bottom = '20px';
+        downloadAllButton.style.left = (liberRect.right + 10) + 'px';
+    }
+}
 
 
 
@@ -1530,5 +1563,5 @@ document.addEventListener('DOMContentLoaded', () => {
     const uiManager = new UIManager(mapManager);
     uiManager.adjustButtonPositions();
     mapManager.createPopupInfo();
-
+    createDownloadAllButton();
 });
