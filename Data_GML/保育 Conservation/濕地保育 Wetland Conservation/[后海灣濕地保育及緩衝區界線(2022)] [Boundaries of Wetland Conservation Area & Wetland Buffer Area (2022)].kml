@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
-<Schema name="_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022" id="_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022">
+<Schema name="_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022__" id="_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022__">
 	<SimpleField name="timestamp" type="string"></SimpleField>
 	<SimpleField name="begin" type="string"></SimpleField>
 	<SimpleField name="end" type="string"></SimpleField>
@@ -16,10 +16,10 @@
 	<SimpleField name="Shape_Leng" type="string"></SimpleField>
 	<SimpleField name="snippet" type="string"></SimpleField>
 </Schema>
-<Folder><name>_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022</name>
+<Folder><name>_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022__</name>
   <Placemark>
 	<name>kml_1</name>
-	<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor=&quot;#ff0134&quot;&gt;
+	<description>&lt;center&gt;&lt;table&gt;&lt;tr&gt;&lt;th colspan='2' align='center'&gt;&lt;em&gt;Attributes&lt;/em&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr bgcolor=&quot;#E3E3F3&quot;&gt;
 &lt;th&gt;NAME_ENG&lt;/th&gt;
 &lt;td&gt;Wetland Buffer Area&lt;/td&gt;
 &lt;/tr&gt;&lt;tr bgcolor=&quot;&quot;&gt;
@@ -29,8 +29,8 @@
 &lt;th&gt;Shape_Leng&lt;/th&gt;
 &lt;td&gt;25812.0441066&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
-	<Style><LineStyle><color>FF6f9b72</color><width>0.737006</width></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022">
+	<Style><LineStyle><color>FF0101ff</color><width>1.87086</width></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022__">
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>
@@ -53,8 +53,8 @@
 &lt;th&gt;Shape_Leng&lt;/th&gt;
 &lt;td&gt;42163.7604771&lt;/td&gt;
 &lt;/tr&gt;&lt;/table&gt;&lt;/center&gt;</description>
-	<Style><LineStyle><color>FF6f9b72</color><width>0.737006</width></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
-	<ExtendedData><SchemaData schemaUrl="#_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022">
+	<Style><LineStyle><color>FF0101ff</color><width>1.87086</width></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022__">
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>
