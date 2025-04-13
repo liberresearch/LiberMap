@@ -17,12 +17,21 @@
 <Folder><name>_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__</name>
   <Placemark id="_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__.1">
 	<name>疑似新屋苑 (大棠)#1 實地考察圖</name>
-	<description>&lt;img src=&quot;https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAU8WxBEf542b4VoJZShpL16HFOalLTgUNUqNOAHOblzFERi66X4vrgjzEX1y87ywy8UPi-4x6Um0tZMfI62jkdl8ZVYJqeyEMFRuEyuFJ-6v3qF8yB9Y70_HWWct-nEgiZbJyk3MsPamz1dSzyCRSRmSb-U9I6-YxVC_qwp0hOdE8hKxH6HDEgBFUJT82syZq8u8mNvLeerWzw?authuser=0&amp;fife=s16383&quot; height=&quot;200&quot; width=&quot;auto&quot; /&gt;&lt;br&gt;&lt;br&gt;某一丁屋的電箱，顯示興建之初已準備將丁屋分為多個單位，或不屬非自住用途&lt;br&gt;&lt;br&gt;考察日期：2020年9月24日</description>
+	<description>
+	  <![CDATA[
+		<img src="./個案分析及實地考察照片/疑似新屋苑 (大棠)#1 實地考察圖.png" height="200" width="auto" />
+		<br><br>
+		某一丁屋的電箱，顯示興建之初已準備將丁屋分為多個單位，或不屬非自住用途
+		<br><br>
+		考察日期：2020年9月24日
+	  ]]>
+	</description>
+
 	<ExtendedData><SchemaData schemaUrl="#_20182020_case_studies_of_suspected_illegallybuilt_small_houses_20182020__">
 		<SimpleData name="tessellate">-1</SimpleData>
 		<SimpleData name="extrude">0</SimpleData>
 		<SimpleData name="visibility">-1</SimpleData>
-		<SimpleData name="gx_media_links">https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAU8WxBEf542b4VoJZShpL16HFOalLTgUNUqNOAHOblzFERi66X4vrgjzEX1y87ywy8UPi-4x6Um0tZMfI62jkdl8ZVYJqeyEMFRuEyuFJ-6v3qF8yB9Y70_HWWct-nEgiZbJyk3MsPamz1dSzyCRSRmSb-U9I6-YxVC_qwp0hOdE8hKxH6HDEgBFUJT82syZq8u8mNvLeerWzw?authuser=0&amp;fife=s16383</SimpleData>
+		<SimpleData name="gx_media_links">./個案分析及實地考察照片/疑似新屋苑 (大棠)#1 實地考察圖.png</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.0223069,22.4156467,0</coordinates></Point>
   </Placemark>
