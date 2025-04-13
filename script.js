@@ -1,10 +1,10 @@
 // Constants and Configurations
 const CONFIG = {
-    HONG_KONG_CENTER: [114.1095, 22.3964],
-    HK80_PROJECTION: 'EPSG:2326',
-    WGS84_PROJECTION: 'EPSG:4326',
-    DEFAULT_ZOOM: 10.3,
-    GITHUB_API_URL: 'https://api.github.com/repos/liberresearch/LiberMap/contents/Data_GML'
+	HONG_KONG_CENTER: [114.1095, 22.3964],
+	HK80_PROJECTION: 'EPSG:2326',
+	WGS84_PROJECTION: 'EPSG:4326',
+	DEFAULT_ZOOM: 10.3,
+	GITHUB_API_URL: 'https://api.github.com/repos/liberresearch/LiberMap/contents/Data_GML'
 };
 
 // Register HK80 projection
@@ -12,46 +12,137 @@ proj4.defs(CONFIG.HK80_PROJECTION, "+proj=tmerc +lat_0=22.31213333333333 +lon_0=
 ol.proj.proj4.register(proj4);
 
 class MapManager {
-    constructor() {
-		this.isMobile = window.innerWidth <= 768 || 
-                   navigator.userAgent.match(/Android/i) || 
-                   navigator.userAgent.match(/iPhone|iPad|iPod/i);
-        this.basemap = null;
-        this.map = this.initializeMap();
-        this.setupMapAccessibility();
-        this.initializeComponents();
-        this.basemapLayers = [];
-        this.currentBasemapId = 'greyscale';
-        this.initializeBasemapSwitcher();
-    }
+	constructor() {
+		this.isMobile = window.innerWidth <= 768 ||
+			navigator.userAgent.match(/Android/i) ||
+			navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		this.basemap = null;
+		this.map = this.initializeMap();
+		this.setupMapAccessibility();
+		this.initializeComponents();
+		this.basemapLayers = [];
+		this.currentBasemapId = 'greyscale';
+		this.initializeBasemapSwitcher();
+	}
 
 	setupOptimizedEventHandlers() {
 		// Use a debounce function for handlers that might fire frequently
 		const debounce = (func, delay) => {
 			let timeout;
-			return function() {
+			return function () {
 				const context = this;
 				const args = arguments;
 				clearTimeout(timeout);
 				timeout = setTimeout(() => func.apply(context, args), delay);
 			};
 		};
-		
+
 		// Apply debounced handlers to map events
 		this.map.on('pointermove', debounce((event) => {
-			// Your existing pointermove logic
-		}, 100));
-		
-		// Similar approach for other handlers
+			// Change cursor style when hovering over features
+			const pixel = this.map.getEventPixel(event.originalEvent);
+			const hit = this.map.hasFeatureAtPixel(pixel);
+			this.map.getTargetElement().style.cursor = hit ? 'pointer' : '';
+		}, 50));
+
+		// Optimize map rendering for large datasets
+		this.map.on('movestart', () => {
+			// Reduce rendering quality during map movement for better performance
+			this.map.getLayers().forEach(layer => {
+				if (layer instanceof ol.layer.Vector) {
+					layer.setRenderBuffer(0);
+				}
+			});
+		});
+
+		this.map.on('moveend', () => {
+			// Restore rendering quality after movement stops
+			this.map.getLayers().forEach(layer => {
+				if (layer instanceof ol.layer.Vector) {
+					layer.setRenderBuffer(100);
+				}
+			});
+		});
+	}
+
+	// Improved layer management for large datasets
+	toggleLayer(url, button) {
+		if (this.activeLayers.has(url)) {
+			const layerInfo = this.activeLayers.get(url);
+			this.map.removeLayer(layerInfo.layer);
+			this.activeLayers.delete(url);
+			button.textContent = '+';
+			button.className = 'layer-toggle-button add';
+			this.updateLegend(document.querySelector('.legend-content'));
+		} else {
+			// Show loading indicator
+			button.textContent = '⏳';
+			button.disabled = true;
+
+			fetch(url)
+				.then(response => response.text())
+				.then(kmlData => {
+					// Process features in chunks to avoid UI freezing
+					setTimeout(() => {
+						const features = new ol.format.KML({
+							extractStyles: true,
+							showPointNames: false // Disable automatic labels for better performance
+						}).readFeatures(kmlData, {
+							featureProjection: 'EPSG:3857'
+						});
+
+						// Create vector source with optimized settings
+						const vectorSource = new ol.source.Vector({
+							features: features,
+							wrapX: false // Disable wrapping for better performance
+						});
+
+						// Create vector layer with optimized settings
+						const vectorLayer = new ol.layer.Vector({
+							source: vectorSource,
+							style: this.createStyleFunction(),
+							renderMode: 'image', // Use image rendering for better performance with large datasets
+							renderBuffer: 200
+						});
+
+						this.map.addLayer(vectorLayer);
+
+						// Only fit to extent if there aren't too many features
+						if (features.length < 1000) {
+							this.map.getView().fit(vectorSource.getExtent(), {
+								duration: 1500,
+								padding: [50, 50, 50, 50]
+							});
+						}
+
+						button.textContent = '-';
+						button.className = 'layer-toggle-button remove';
+						button.disabled = false;
+						this.activeLayers.set(url, { layer: vectorLayer, button: button });
+						this.updateLegend(document.querySelector('.legend-content'));
+
+						// Clean up unused resources if we have too many layers
+						this.cleanupUnusedResources();
+					}, 10); // Small timeout to allow UI to update
+				})
+				.catch(error => {
+					console.error('Error loading KML:', error);
+					button.textContent = '!';
+					setTimeout(() => {
+						button.textContent = '+';
+						button.disabled = false;
+					}, 2000);
+				});
+		}
 	}
 
 	cleanupUnusedResources() {
-		// Remove unused layers
+		// Remove unused layers if we have too many
 		if (this.activeLayers.size > 5) {
 			// Keep only the 5 most recently used layers
 			const layerEntries = Array.from(this.activeLayers.entries());
 			const oldestLayers = layerEntries.slice(0, layerEntries.length - 5);
-			
+
 			oldestLayers.forEach(([url, layerInfo]) => {
 				this.map.removeLayer(layerInfo.layer);
 				this.activeLayers.delete(url);
@@ -60,28 +151,28 @@ class MapManager {
 					layerInfo.button.className = 'layer-toggle-button add';
 				}
 			});
-			
+
 			// Update legend
 			this.updateLegend(document.querySelector('.legend-content'));
 		}
 	}
 
-    setupMapAccessibility() {
-        this.map.getTargetElement().setAttribute('role', 'application');
-        this.map.getTargetElement().setAttribute('aria-label', 'Interactive map of Hong Kong');
-        this.activeLayers = new Map();
-        this.locationMarker = null;
-        this.vectorSource = null;
-    }
-	
-	initializeComponents() {
-        this.initializeSearchTool();
-        this.createLegendPanel();
-        this.createPopupInfo();
-		this.createLiberDataPanel();
-    }
+	setupMapAccessibility() {
+		this.map.getTargetElement().setAttribute('role', 'application');
+		this.map.getTargetElement().setAttribute('aria-label', 'Interactive map of Hong Kong');
+		this.activeLayers = new Map();
+		this.locationMarker = null;
+		this.vectorSource = null;
+	}
 
-	
+	initializeComponents() {
+		this.initializeSearchTool();
+		this.createLegendPanel();
+		this.createPopupInfo();
+		this.createLiberDataPanel();
+	}
+
+
 	initializeMap() {
 		// Create initial basemap layer
 		this.basemap = new ol.layer.Group({
@@ -109,15 +200,15 @@ class MapManager {
 		if (this.isMobile) {
 			// Get all controls
 			const controls = map.getControls().getArray();
-			
+
 			// Keep only essential controls (like zoom)
-			const controlsToKeep = controls.filter(control => 
+			const controlsToKeep = controls.filter(control =>
 				control instanceof ol.control.Zoom
 			);
-			
+
 			// Remove all controls
 			map.getControls().clear();
-			
+
 			// Add back only the ones we want to keep
 			controlsToKeep.forEach(control => {
 				map.addControl(control);
@@ -127,154 +218,154 @@ class MapManager {
 		return map;
 	}
 
-    useMyLocation() {
-        if (!navigator.geolocation) {
-            alert('Geolocation is not supported by this browser.');
-            return;
-        }
+	useMyLocation() {
+		if (!navigator.geolocation) {
+			alert('Geolocation is not supported by this browser.');
+			return;
+		}
 
-        navigator.geolocation.getCurrentPosition((position) => {
-            const coords = [position.coords.longitude, position.coords.latitude];
-            const transformedCoords = ol.proj.fromLonLat(coords);
-            
-            this.locationMarker = new ol.Feature({
-                geometry: new ol.geom.Point(transformedCoords)
-            });
+		navigator.geolocation.getCurrentPosition((position) => {
+			const coords = [position.coords.longitude, position.coords.latitude];
+			const transformedCoords = ol.proj.fromLonLat(coords);
 
-            const iconStyle = new ol.style.Style({
-                image: new ol.style.Icon({
-                    src: './img/pin.png',
-                    scale: 0.07,
-                    anchor: [0.5, 1]
-                })
-            });
+			this.locationMarker = new ol.Feature({
+				geometry: new ol.geom.Point(transformedCoords)
+			});
 
-            this.locationMarker.setStyle(iconStyle);
-            this.vectorSource = new ol.source.Vector({
-                features: [this.locationMarker]
-            });
+			const iconStyle = new ol.style.Style({
+				image: new ol.style.Icon({
+					src: './img/pin.png',
+					scale: 0.07,
+					anchor: [0.5, 1]
+				})
+			});
 
-            const vectorLayer = new ol.layer.Vector({
-                source: this.vectorSource
-            });
+			this.locationMarker.setStyle(iconStyle);
+			this.vectorSource = new ol.source.Vector({
+				features: [this.locationMarker]
+			});
 
-            this.map.addLayer(vectorLayer);
-            this.animateToLocation(transformedCoords, 15);
-        });
-    }
+			const vectorLayer = new ol.layer.Vector({
+				source: this.vectorSource
+			});
 
-    goToHome() {
-        this.animateToLocation(ol.proj.fromLonLat(CONFIG.HONG_KONG_CENTER), CONFIG.DEFAULT_ZOOM);
-        if (this.locationMarker && this.vectorSource) {
-            this.vectorSource.removeFeature(this.locationMarker);
-            this.locationMarker = null;
-        }
-    }
+			this.map.addLayer(vectorLayer);
+			this.animateToLocation(transformedCoords, 15);
+		});
+	}
 
-    animateToLocation(center, zoom) {
-        this.map.getView().animate({
-            center: center,
-            zoom: zoom,
-            duration: 1500
-        });
-    }
+	goToHome() {
+		this.animateToLocation(ol.proj.fromLonLat(CONFIG.HONG_KONG_CENTER), CONFIG.DEFAULT_ZOOM);
+		if (this.locationMarker && this.vectorSource) {
+			this.vectorSource.removeFeature(this.locationMarker);
+			this.locationMarker = null;
+		}
+	}
+
+	animateToLocation(center, zoom) {
+		this.map.getView().animate({
+			center: center,
+			zoom: zoom,
+			duration: 1500
+		});
+	}
 
 	printMap() {
-        // Create a new map instance for printing
-        const printContainer = document.createElement('div');
-        printContainer.style.width = '800px';
-        printContainer.style.height = '600px';
-        document.body.appendChild(printContainer);
-        
-        // Get current basemap layers
-        const basemapLayers = this.basemap.getLayers().getArray();
-        
-        // Create a new map with crossOrigin enabled
-        const printMap = new ol.Map({
-            target: printContainer,
-            layers: [
-                ...basemapLayers.map(layer => {
-                    // Clone the layer with crossOrigin set to anonymous
-                    const source = layer.getSource();
-                    const newSource = new ol.source.XYZ({
-                        url: source.getUrls() ? source.getUrls()[0] : '',
-                        crossOrigin: 'anonymous',
-                        attributions: source.getAttributions()
-                    });
-                    
-                    return new ol.layer.Tile({
-                        source: newSource,
-                        zIndex: layer.getZIndex()
-                    });
-                }),
-                ...Array.from(this.activeLayers.values()).map(info => info.layer)
-            ],
-            view: new ol.View({
-                center: this.map.getView().getCenter(),
-                zoom: this.map.getView().getZoom(),
-                rotation: this.map.getView().getRotation()
-            })
-        });
-		
+		// Create a new map instance for printing
+		const printContainer = document.createElement('div');
+		printContainer.style.width = '800px';
+		printContainer.style.height = '600px';
+		document.body.appendChild(printContainer);
+
+		// Get current basemap layers
+		const basemapLayers = this.basemap.getLayers().getArray();
+
+		// Create a new map with crossOrigin enabled
+		const printMap = new ol.Map({
+			target: printContainer,
+			layers: [
+				...basemapLayers.map(layer => {
+					// Clone the layer with crossOrigin set to anonymous
+					const source = layer.getSource();
+					const newSource = new ol.source.XYZ({
+						url: source.getUrls() ? source.getUrls()[0] : '',
+						crossOrigin: 'anonymous',
+						attributions: source.getAttributions()
+					});
+
+					return new ol.layer.Tile({
+						source: newSource,
+						zIndex: layer.getZIndex()
+					});
+				}),
+				...Array.from(this.activeLayers.values()).map(info => info.layer)
+			],
+			view: new ol.View({
+				center: this.map.getView().getCenter(),
+				zoom: this.map.getView().getZoom(),
+				rotation: this.map.getView().getRotation()
+			})
+		});
+
 		// Wait for the map to render
-        setTimeout(() => {
-            const canvas = printContainer.querySelector('canvas');
-            const link = document.createElement('a');
-            link.download = `map-export-${Date.now()}.png`;
-            link.href = canvas.toDataURL('image/png');
-            link.click();
-            
-            // Cleanup
-            document.body.removeChild(printContainer);
-        }, 500);
-    }
-	
+		setTimeout(() => {
+			const canvas = printContainer.querySelector('canvas');
+			const link = document.createElement('a');
+			link.download = `map-export-${Date.now()}.png`;
+			link.href = canvas.toDataURL('image/png');
+			link.click();
+
+			// Cleanup
+			document.body.removeChild(printContainer);
+		}, 500);
+	}
+
 	initializeBasemapSwitcher() {
-        // Define basemap configurations
-        this.basemapConfigs = {
-            topographic: {
-                name: 'Topographic',
-                thumbnail: 'img/topographic.png',
-                layers: [
-                    {
-                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/basemap/wgs84/{z}/{x}/{y}.png',
-                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
-                    },
-                    {
-                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/en/wgs84/{z}/{x}/{y}.png',
-                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
-                    }
-                ]
-            },
-            imagery: {
-                name: 'Imagery',
-                thumbnail: 'img/imagery.png',
-                layers: [
-                    {
-                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/imagery/wgs84/{z}/{x}/{y}.png',
-                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
-                    },
-                    {
-                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/en/wgs84/{z}/{x}/{y}.png',
-                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
-                    }
-                ]
-            },
-            greyscale: {
-                name: 'Carto Light (Grayscale)',
-                thumbnail: 'img/carto-light.png',
-                layers: [
-                    {
-                        url: 'https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+		// Define basemap configurations
+		this.basemapConfigs = {
+			topographic: {
+				name: 'Topographic',
+				thumbnail: 'img/topographic.png',
+				layers: [
+					{
+						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/basemap/wgs84/{z}/{x}/{y}.png',
+						attribution: 'Lands Department © The Government of the Hong Kong SAR'
+					},
+					{
+						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/en/wgs84/{z}/{x}/{y}.png',
+						attribution: 'Lands Department © The Government of the Hong Kong SAR'
+					}
+				]
+			},
+			imagery: {
+				name: 'Imagery',
+				thumbnail: 'img/imagery.png',
+				layers: [
+					{
+						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/imagery/wgs84/{z}/{x}/{y}.png',
+						attribution: 'Lands Department © The Government of the Hong Kong SAR'
+					},
+					{
+						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/en/wgs84/{z}/{x}/{y}.png',
+						attribution: 'Lands Department © The Government of the Hong Kong SAR'
+					}
+				]
+			},
+			greyscale: {
+				name: 'Carto Light (Grayscale)',
+				thumbnail: 'img/carto-light.png',
+				layers: [
+					{
+						url: 'https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
 						attribution: '© OpenStreetMap contributors, © CARTO'
-                    }
-                ]
-            }
-        };
-        
-        // Initialize with the default basemap
+					}
+				]
+			}
+		};
+
+		// Initialize with the default basemap
 		this.applyBasemap(this.currentBasemapId);
-		
+
 		// Create basemap switcher button using the same pattern as other buttons
 		const basemapButton = this.createButton(
 			'basemap-button',
@@ -286,7 +377,7 @@ class MapManager {
 				if (dropdown) {
 					const isVisible = dropdown.style.display !== 'none';
 					dropdown.style.display = isVisible ? 'none' : 'block';
-					
+
 					// Position dropdown relative to button
 					if (!isVisible) {
 						const buttonRect = basemapButton.getBoundingClientRect();
@@ -297,403 +388,403 @@ class MapManager {
 				}
 			}
 		);
-		
+
 		// Position the button after the other control buttons
 		// This will be properly positioned by the UIManager.adjustButtonPositions method
 		document.body.appendChild(basemapButton);
-		
+
 		// Create dropdown menu
 		const dropdown = document.createElement('div');
 		dropdown.id = 'basemap-dropdown';
 		dropdown.className = 'basemap-dropdown';
 		dropdown.style.display = 'none';
-		
+
 		// Add basemap options to dropdown
 		Object.keys(this.basemapConfigs).forEach(id => {
 			const option = this.basemapConfigs[id];
 			const optionElement = document.createElement('div');
 			optionElement.className = 'basemap-option';
-			
+
 			// Add thumbnail preview
 			const thumbnail = document.createElement('div');
 			thumbnail.className = 'basemap-thumbnail';
 			thumbnail.style.backgroundImage = `url(${option.thumbnail})`;
 			optionElement.appendChild(thumbnail);
-			
+
 			// Add name
 			const name = document.createElement('span');
 			name.textContent = option.name;
 			optionElement.appendChild(name);
-			
+
 			// Set active class for current basemap
 			if (id === this.currentBasemapId) {
 				optionElement.classList.add('active');
 			}
-			
+
 			// Add click handler
 			optionElement.addEventListener('click', () => {
 				this.switchBasemap(id);
 				dropdown.style.display = 'none';
-				
+
 				// Update active class
 				document.querySelectorAll('.basemap-option').forEach(opt => {
 					opt.classList.remove('active');
 				});
 				optionElement.classList.add('active');
 			});
-			
+
 			dropdown.appendChild(optionElement);
 		});
-		
+
 		// Close dropdown when clicking outside
 		document.addEventListener('click', (e) => {
 			if (!basemapButton.contains(e.target) && !dropdown.contains(e.target)) {
 				dropdown.style.display = 'none';
 			}
 		});
-		
+
 		document.body.appendChild(dropdown);
 	}
 
-    // Method to apply a basemap
-    applyBasemap(basemapId) {
-        const config = this.basemapConfigs[basemapId];
-        if (!config) return;
-        
-        // Remove existing basemap layers
-        if (this.basemap) {
-            this.map.removeLayer(this.basemap);
-        }
-        
-        // Create new basemap layers
-        const newBasemapLayers = [];
-        
-        config.layers.forEach((layerConfig, index) => {
-            let layer;
-            
-            if (layerConfig.type === 'osm') {
-                // Create OSM layer
-                layer = new ol.layer.Tile({
-                    source: new ol.source.OSM(),
-                    className: layerConfig.className || '',
-                    zIndex: -100 + index // Ensure basemap layers are at the bottom
-                });
-            } else {
-                // Create XYZ layer
-                layer = new ol.layer.Tile({
-                    source: new ol.source.XYZ({
-                        url: layerConfig.url,
-                        attributions: layerConfig.attribution || ''
-                    }),
-                    zIndex: -100 + index // Ensure basemap layers are at the bottom
-                });
-            }
-            
-            newBasemapLayers.push(layer);
-        });
-        
-        // Create a new layer group for the basemap
-        this.basemap = new ol.layer.Group({
-            layers: newBasemapLayers
-        });
-        
-        // Add the new basemap to the map
-        this.map.addLayer(this.basemap);
-        
-        // Update the global basemap layers array for reference
-        this.basemapLayers = newBasemapLayers;
-    }
+	// Method to apply a basemap
+	applyBasemap(basemapId) {
+		const config = this.basemapConfigs[basemapId];
+		if (!config) return;
 
-    // Method to switch basemap
-    switchBasemap(basemapId) {
-        if (!this.basemapConfigs[basemapId] || basemapId === this.currentBasemapId) return;
-        
-        // Apply the new basemap
-        this.applyBasemap(basemapId);
-        
-        // Update current basemap ID
-        this.currentBasemapId = basemapId;
-        
-        console.log(`Switched basemap to: ${basemapId}`);
-        
-        // Dispatch a custom event that other tools can listen for
-        const event = new CustomEvent('basemapChanged', { 
-            detail: { 
-                basemapId: basemapId,
-                basemapLayers: this.basemapLayers 
-            } 
-        });
-        document.dispatchEvent(event);
-    }
-
-    // Method to get current basemap layers (for other tools to use)
-    getCurrentBasemapLayers() {
-        return this.basemapLayers;
-    }
-
-    // Method to get current basemap ID (for other tools to use)
-    getCurrentBasemapId() {
-        return this.currentBasemapId;
-    }
-		
-	
-	initializeSearchTool() {
-	  // Create main container with dropdown
-	  const searchContainer = document.createElement('div');
-	  searchContainer.id = 'search-container';
-	  searchContainer.className = 'search-container';
-
-	  // Create dropdown toggle button
-	  const dropdownToggle = document.createElement('div');
-	  dropdownToggle.className = 'search-dropdown-toggle';
-	  dropdownToggle.innerHTML = '▼';
-	  dropdownToggle.setAttribute('role', 'button');
-	  dropdownToggle.setAttribute('aria-label', 'Toggle search engines');
-	  dropdownToggle.setAttribute('tabindex', '0');
-
-	  // Create dropdown menu (initially hidden)
-	  const dropdownMenu = document.createElement('div');
-	  dropdownMenu.className = 'search-dropdown-menu';
-	  dropdownMenu.style.display = 'none';
-
-	  // Create search engines options
-	  const engines = [
-		{ id: 'google', name: 'Google Places' },
-		{ id: 'locationSearch', name: 'Location Search API' }
-	  ];
-	  engines.forEach(engine => {
-		const option = document.createElement('div');
-		option.className = 'search-engine-option';
-		option.textContent = engine.name;
-		option.setAttribute('data-engine', engine.id);
-		option.onclick = () => {
-		  setActiveEngine(engine.id);
-		  dropdownMenu.style.display = 'none';
-		};
-		dropdownMenu.appendChild(option);
-	  });
-
-	  // Create input container
-	  const inputContainer = document.createElement('div');
-	  inputContainer.className = 'search-input-container';
-
-	  // Create search inputs for each engine
-	  const googleSearchInput = document.createElement('input');
-	  googleSearchInput.id = 'google-search-input';
-	  googleSearchInput.className = 'search-input';
-	  googleSearchInput.type = 'text';
-	  googleSearchInput.placeholder = 'Search Google Places...';
-
-	  const locationSearchInput = document.createElement('input');
-	  locationSearchInput.id = 'location-search-input';
-	  locationSearchInput.className = 'search-input';
-	  locationSearchInput.type = 'text';
-	  locationSearchInput.placeholder = 'Search Location Search API...';
-	  locationSearchInput.style.display = 'none';
-
-	  // Add elements to containers
-	  inputContainer.appendChild(googleSearchInput);
-	  inputContainer.appendChild(locationSearchInput);
-	  searchContainer.appendChild(dropdownToggle);
-	  searchContainer.appendChild(inputContainer);
-	  document.body.appendChild(searchContainer);
-	  document.body.appendChild(dropdownMenu);
-
-	  // Create results container (initially empty)
-	  const resultContainer = document.createElement('div');
-	  resultContainer.className = 'search-results-container';
-	  resultContainer.style.display = 'none';
-	  document.body.appendChild(resultContainer);
-
-	  // Create a pin marker layer for search results
-	  const pinMarkerSource = new ol.source.Vector();
-	  const pinMarkerLayer = new ol.layer.Vector({
-		source: pinMarkerSource,
-		zIndex: 1000 // Ensure it's on top of other layers
-	  });
-	  this.map.addLayer(pinMarkerLayer);
-
-	  // Variable to store the current pin timer
-	  let pinTimer = null;
-
-	  // Function to add pin marker at a location
-	  const addPinMarker = (coordinates) => {
-		// Clear previous markers and any existing timer
-		pinMarkerSource.clear();
-		if (pinTimer) {
-		  clearTimeout(pinTimer);
+		// Remove existing basemap layers
+		if (this.basemap) {
+			this.map.removeLayer(this.basemap);
 		}
-		
-		// Create marker feature
-		const marker = new ol.Feature({
-		  geometry: new ol.geom.Point(coordinates)
-		});
-		
-		// Create marker style with pin image
-		const markerStyle = new ol.style.Style({
-		  image: new ol.style.Icon({
-			src: 'img/pin.png',
-			anchor: [0.5, 1], // Center bottom of the image
-			scale: 0.05 // Adjust scale as needed
-		  })
-		});
-		
-		marker.setStyle(markerStyle);
-		pinMarkerSource.addFeature(marker);
-		
-		// Set timer to remove the pin after 5 seconds
-		pinTimer = setTimeout(() => {
-		  pinMarkerSource.clear();
-		  pinTimer = null;
-		}, 5000);
-	  };
 
-	  // Toggle dropdown when clicking the toggle button
-	  dropdownToggle.onclick = () => {
-		const isVisible = dropdownMenu.style.display !== 'none';
-		dropdownMenu.style.display = isVisible ? 'none' : 'block';
-		// Position the dropdown menu below the toggle button
-		if (!isVisible) {
-		  const rect = dropdownToggle.getBoundingClientRect();
-		  dropdownMenu.style.left = `${rect.left}px`;
-		  dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`;
-		}
-	  };
+		// Create new basemap layers
+		const newBasemapLayers = [];
 
-	  // Keyboard accessibility
-	  dropdownToggle.addEventListener('keydown', (e) => {
-		if (e.key === 'Enter' || e.key === ' ') {
-		  e.preventDefault();
-		  dropdownToggle.click();
-		}
-	  });
+		config.layers.forEach((layerConfig, index) => {
+			let layer;
 
-	  // Function to set active search engine
-	  const setActiveEngine = (engineId) => {
-		// Hide all inputs
-		googleSearchInput.style.display = 'none';
-		locationSearchInput.style.display = 'none';
-		
-		// Show selected input
-		if (engineId === 'google') {
-		  googleSearchInput.style.display = 'block';
-		  dropdownToggle.setAttribute('aria-label', 'Google Places (click to change)');
-		} else if (engineId === 'locationSearch') {
-		  locationSearchInput.style.display = 'block';
-		  dropdownToggle.setAttribute('aria-label', 'Location Search API (click to change)');
-		}
-		
-		// Clear any existing results
-		resultContainer.style.display = 'none';
-		resultContainer.innerHTML = '';
-		
-		// Clear any existing pin markers and timer
-		pinMarkerSource.clear();
-		if (pinTimer) {
-		  clearTimeout(pinTimer);
-		  pinTimer = null;
-		}
-	  };
-
-	  // Initialize Google Places search
-	  let searchBox;
-	  const initGoogleSearch = () => {
-		searchBox = new google.maps.places.SearchBox(googleSearchInput);
-		searchBox.addListener('places_changed', () => {
-		  const places = searchBox.getPlaces();
-		  if (places.length === 0) return;
-		  
-		  const place = places[0];
-		  const coordinates = [place.geometry.location.lng(), place.geometry.location.lat()];
-		  const transformedCoords = ol.proj.fromLonLat(coordinates);
-		  
-		  // Add pin marker at the location
-		  addPinMarker(transformedCoords);
-		  
-		  // Animate to the location
-		  this.map.getView().animate({
-			center: transformedCoords,
-			zoom: 15,
-			duration: 1000
-		  });
-		});
-	  };
-
-	  // Initialize Location Search API
-	  locationSearchInput.addEventListener('input', () => {
-		const query = locationSearchInput.value;
-		if (query.length < 2) {
-		  resultContainer.style.display = 'none';
-		  return;
-		}
-		fetchLocationSearch(query);
-	  });
-
-	  const fetchLocationSearch = query => {
-		const url = `https://geodata.gov.hk/gs/api/v1.0.0/locationSearch?q=${encodeURIComponent(query)}`;
-		fetch(url)
-		  .then(response => response.json())
-		  .then(data => {
-			const results = data.slice(0, 5);
-			resultContainer.innerHTML = '';
-			
-			if (results.length === 0) {
-			  resultContainer.style.display = 'none';
-			  return;
+			if (layerConfig.type === 'osm') {
+				// Create OSM layer
+				layer = new ol.layer.Tile({
+					source: new ol.source.OSM(),
+					className: layerConfig.className || '',
+					zIndex: -100 + index // Ensure basemap layers are at the bottom
+				});
+			} else {
+				// Create XYZ layer
+				layer = new ol.layer.Tile({
+					source: new ol.source.XYZ({
+						url: layerConfig.url,
+						attributions: layerConfig.attribution || ''
+					}),
+					zIndex: -100 + index // Ensure basemap layers are at the bottom
+				});
 			}
-			
-			results.forEach(result => {
-			  const resultItem = document.createElement('div');
-			  resultItem.className = 'search-result-item';
-			  resultItem.textContent = result.nameZH;
-			  resultItem.addEventListener('click', () => {
-				const hk1980Projection = 'EPSG:2326';
-				const mapProjection = this.map.getView().getProjection().getCode();
-				const x = result.x;
-				const y = result.y;
-				
-				// Transform directly from HK1980 to the map's projection
-				const transformedCoords = ol.proj.transform([x, y], hk1980Projection, mapProjection);
-				
+
+			newBasemapLayers.push(layer);
+		});
+
+		// Create a new layer group for the basemap
+		this.basemap = new ol.layer.Group({
+			layers: newBasemapLayers
+		});
+
+		// Add the new basemap to the map
+		this.map.addLayer(this.basemap);
+
+		// Update the global basemap layers array for reference
+		this.basemapLayers = newBasemapLayers;
+	}
+
+	// Method to switch basemap
+	switchBasemap(basemapId) {
+		if (!this.basemapConfigs[basemapId] || basemapId === this.currentBasemapId) return;
+
+		// Apply the new basemap
+		this.applyBasemap(basemapId);
+
+		// Update current basemap ID
+		this.currentBasemapId = basemapId;
+
+		console.log(`Switched basemap to: ${basemapId}`);
+
+		// Dispatch a custom event that other tools can listen for
+		const event = new CustomEvent('basemapChanged', {
+			detail: {
+				basemapId: basemapId,
+				basemapLayers: this.basemapLayers
+			}
+		});
+		document.dispatchEvent(event);
+	}
+
+	// Method to get current basemap layers (for other tools to use)
+	getCurrentBasemapLayers() {
+		return this.basemapLayers;
+	}
+
+	// Method to get current basemap ID (for other tools to use)
+	getCurrentBasemapId() {
+		return this.currentBasemapId;
+	}
+
+
+	initializeSearchTool() {
+		// Create main container with dropdown
+		const searchContainer = document.createElement('div');
+		searchContainer.id = 'search-container';
+		searchContainer.className = 'search-container';
+
+		// Create dropdown toggle button
+		const dropdownToggle = document.createElement('div');
+		dropdownToggle.className = 'search-dropdown-toggle';
+		dropdownToggle.innerHTML = '▼';
+		dropdownToggle.setAttribute('role', 'button');
+		dropdownToggle.setAttribute('aria-label', 'Toggle search engines');
+		dropdownToggle.setAttribute('tabindex', '0');
+
+		// Create dropdown menu (initially hidden)
+		const dropdownMenu = document.createElement('div');
+		dropdownMenu.className = 'search-dropdown-menu';
+		dropdownMenu.style.display = 'none';
+
+		// Create search engines options
+		const engines = [
+			{ id: 'google', name: 'Google Places' },
+			{ id: 'locationSearch', name: 'Location Search API' }
+		];
+		engines.forEach(engine => {
+			const option = document.createElement('div');
+			option.className = 'search-engine-option';
+			option.textContent = engine.name;
+			option.setAttribute('data-engine', engine.id);
+			option.onclick = () => {
+				setActiveEngine(engine.id);
+				dropdownMenu.style.display = 'none';
+			};
+			dropdownMenu.appendChild(option);
+		});
+
+		// Create input container
+		const inputContainer = document.createElement('div');
+		inputContainer.className = 'search-input-container';
+
+		// Create search inputs for each engine
+		const googleSearchInput = document.createElement('input');
+		googleSearchInput.id = 'google-search-input';
+		googleSearchInput.className = 'search-input';
+		googleSearchInput.type = 'text';
+		googleSearchInput.placeholder = 'Search Google Places...';
+
+		const locationSearchInput = document.createElement('input');
+		locationSearchInput.id = 'location-search-input';
+		locationSearchInput.className = 'search-input';
+		locationSearchInput.type = 'text';
+		locationSearchInput.placeholder = 'Search Location Search API...';
+		locationSearchInput.style.display = 'none';
+
+		// Add elements to containers
+		inputContainer.appendChild(googleSearchInput);
+		inputContainer.appendChild(locationSearchInput);
+		searchContainer.appendChild(dropdownToggle);
+		searchContainer.appendChild(inputContainer);
+		document.body.appendChild(searchContainer);
+		document.body.appendChild(dropdownMenu);
+
+		// Create results container (initially empty)
+		const resultContainer = document.createElement('div');
+		resultContainer.className = 'search-results-container';
+		resultContainer.style.display = 'none';
+		document.body.appendChild(resultContainer);
+
+		// Create a pin marker layer for search results
+		const pinMarkerSource = new ol.source.Vector();
+		const pinMarkerLayer = new ol.layer.Vector({
+			source: pinMarkerSource,
+			zIndex: 1000 // Ensure it's on top of other layers
+		});
+		this.map.addLayer(pinMarkerLayer);
+
+		// Variable to store the current pin timer
+		let pinTimer = null;
+
+		// Function to add pin marker at a location
+		const addPinMarker = (coordinates) => {
+			// Clear previous markers and any existing timer
+			pinMarkerSource.clear();
+			if (pinTimer) {
+				clearTimeout(pinTimer);
+			}
+
+			// Create marker feature
+			const marker = new ol.Feature({
+				geometry: new ol.geom.Point(coordinates)
+			});
+
+			// Create marker style with pin image
+			const markerStyle = new ol.style.Style({
+				image: new ol.style.Icon({
+					src: 'img/pin.png',
+					anchor: [0.5, 1], // Center bottom of the image
+					scale: 0.05 // Adjust scale as needed
+				})
+			});
+
+			marker.setStyle(markerStyle);
+			pinMarkerSource.addFeature(marker);
+
+			// Set timer to remove the pin after 5 seconds
+			pinTimer = setTimeout(() => {
+				pinMarkerSource.clear();
+				pinTimer = null;
+			}, 5000);
+		};
+
+		// Toggle dropdown when clicking the toggle button
+		dropdownToggle.onclick = () => {
+			const isVisible = dropdownMenu.style.display !== 'none';
+			dropdownMenu.style.display = isVisible ? 'none' : 'block';
+			// Position the dropdown menu below the toggle button
+			if (!isVisible) {
+				const rect = dropdownToggle.getBoundingClientRect();
+				dropdownMenu.style.left = `${rect.left}px`;
+				dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`;
+			}
+		};
+
+		// Keyboard accessibility
+		dropdownToggle.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				dropdownToggle.click();
+			}
+		});
+
+		// Function to set active search engine
+		const setActiveEngine = (engineId) => {
+			// Hide all inputs
+			googleSearchInput.style.display = 'none';
+			locationSearchInput.style.display = 'none';
+
+			// Show selected input
+			if (engineId === 'google') {
+				googleSearchInput.style.display = 'block';
+				dropdownToggle.setAttribute('aria-label', 'Google Places (click to change)');
+			} else if (engineId === 'locationSearch') {
+				locationSearchInput.style.display = 'block';
+				dropdownToggle.setAttribute('aria-label', 'Location Search API (click to change)');
+			}
+
+			// Clear any existing results
+			resultContainer.style.display = 'none';
+			resultContainer.innerHTML = '';
+
+			// Clear any existing pin markers and timer
+			pinMarkerSource.clear();
+			if (pinTimer) {
+				clearTimeout(pinTimer);
+				pinTimer = null;
+			}
+		};
+
+		// Initialize Google Places search
+		let searchBox;
+		const initGoogleSearch = () => {
+			searchBox = new google.maps.places.SearchBox(googleSearchInput);
+			searchBox.addListener('places_changed', () => {
+				const places = searchBox.getPlaces();
+				if (places.length === 0) return;
+
+				const place = places[0];
+				const coordinates = [place.geometry.location.lng(), place.geometry.location.lat()];
+				const transformedCoords = ol.proj.fromLonLat(coordinates);
+
 				// Add pin marker at the location
 				addPinMarker(transformedCoords);
-				
+
 				// Animate to the location
 				this.map.getView().animate({
-				  center: transformedCoords,
-				  zoom: 15,
-				  duration: 1000
+					center: transformedCoords,
+					zoom: 15,
+					duration: 1000
 				});
-				
-				resultContainer.style.display = 'none';
-				locationSearchInput.value = result.nameZH;
-			  });
-			  resultContainer.appendChild(resultItem);
 			});
-			
-			// Position and show results
-			const rect = locationSearchInput.getBoundingClientRect();
-			resultContainer.style.left = `${rect.left}px`;
-			resultContainer.style.top = `${rect.bottom + window.scrollY}px`;
-			resultContainer.style.width = `${rect.width}px`;
-			resultContainer.style.display = 'block';
-		  })
-		  .catch(error => console.error('Error fetching location search results:', error));
-	  };
+		};
 
-	  // Initialize Google search by default
-	  initGoogleSearch();
-	  setActiveEngine('google');
+		// Initialize Location Search API
+		locationSearchInput.addEventListener('input', () => {
+			const query = locationSearchInput.value;
+			if (query.length < 2) {
+				resultContainer.style.display = 'none';
+				return;
+			}
+			fetchLocationSearch(query);
+		});
 
-	  // Close dropdown and results when clicking elsewhere
-	  document.addEventListener('click', (e) => {
-		if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-		  dropdownMenu.style.display = 'none';
-		}
-		if (!searchContainer.contains(e.target) && !resultContainer.contains(e.target)) {
-		  resultContainer.style.display = 'none';
-		}
-	  });
+		const fetchLocationSearch = query => {
+			const url = `https://geodata.gov.hk/gs/api/v1.0.0/locationSearch?q=${encodeURIComponent(query)}`;
+			fetch(url)
+				.then(response => response.json())
+				.then(data => {
+					const results = data.slice(0, 5);
+					resultContainer.innerHTML = '';
+
+					if (results.length === 0) {
+						resultContainer.style.display = 'none';
+						return;
+					}
+
+					results.forEach(result => {
+						const resultItem = document.createElement('div');
+						resultItem.className = 'search-result-item';
+						resultItem.textContent = result.nameZH;
+						resultItem.addEventListener('click', () => {
+							const hk1980Projection = 'EPSG:2326';
+							const mapProjection = this.map.getView().getProjection().getCode();
+							const x = result.x;
+							const y = result.y;
+
+							// Transform directly from HK1980 to the map's projection
+							const transformedCoords = ol.proj.transform([x, y], hk1980Projection, mapProjection);
+
+							// Add pin marker at the location
+							addPinMarker(transformedCoords);
+
+							// Animate to the location
+							this.map.getView().animate({
+								center: transformedCoords,
+								zoom: 15,
+								duration: 1000
+							});
+
+							resultContainer.style.display = 'none';
+							locationSearchInput.value = result.nameZH;
+						});
+						resultContainer.appendChild(resultItem);
+					});
+
+					// Position and show results
+					const rect = locationSearchInput.getBoundingClientRect();
+					resultContainer.style.left = `${rect.left}px`;
+					resultContainer.style.top = `${rect.bottom + window.scrollY}px`;
+					resultContainer.style.width = `${rect.width}px`;
+					resultContainer.style.display = 'block';
+				})
+				.catch(error => console.error('Error fetching location search results:', error));
+		};
+
+		// Initialize Google search by default
+		initGoogleSearch();
+		setActiveEngine('google');
+
+		// Close dropdown and results when clicking elsewhere
+		document.addEventListener('click', (e) => {
+			if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+				dropdownMenu.style.display = 'none';
+			}
+			if (!searchContainer.contains(e.target) && !resultContainer.contains(e.target)) {
+				resultContainer.style.display = 'none';
+			}
+		});
 	}
 
 
@@ -702,7 +793,7 @@ class MapManager {
 
 
 
-	
+
 	addLayerToMap() {
 		const inputElement = document.createElement('input');
 		inputElement.type = 'file';
@@ -718,39 +809,39 @@ class MapManager {
 			const features = new ol.format.KML().readFeatures(content, {
 				featureProjection: 'EPSG:3857'
 			});
-	
+
 			const vectorSource = new ol.source.Vector({ features });
 			const vectorLayer = new ol.layer.Vector({
 				source: vectorSource,
 				style: this.createStyleFunction()
 			});
-	
+
 			const fileName = this.currentFileName || 'uploaded-layer.kml';
-			
+
 			this.map.addLayer(vectorLayer);
-			this.activeLayers.set(fileName, { 
-				layer: vectorLayer, 
-				button: null 
+			this.activeLayers.set(fileName, {
+				layer: vectorLayer,
+				button: null
 			});
-	
+
 			const legendContent = document.querySelector('.legend-content');
 			if (legendContent) {
 				this.updateLegend(legendContent);
 			}
-	
+
 			this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
 		} catch (error) {
 			console.error('KML processing error:', error);
 		}
 	}
-	
+
 
 	handleFileUpload(event) {
 		const file = event.target.files[0];
 		if (!file) return;
-		
+
 		this.currentFileName = file.name;
-		
+
 		const reader = new FileReader();
 		reader.onload = (e) => this.processKML(e.target.result);
 		reader.onerror = (error) => {
@@ -764,7 +855,7 @@ class MapManager {
 	createStyleFunction() {
 		return (feature) => {
 			const properties = feature.getProperties();
-			
+
 			// For point features - using OpenLayers default circle style
 			if (feature.getGeometry().getType() === 'Point') {
 				return new ol.style.Style({
@@ -780,7 +871,7 @@ class MapManager {
 					})
 				});
 			}
-	
+
 			// For lines and polygons - using OpenLayers default styles
 			return new ol.style.Style({
 				fill: new ol.style.Fill({
@@ -798,118 +889,233 @@ class MapManager {
 	convertToRGBA(color, opacity) {
 		// If already rgba, return as is
 		if (color.startsWith('rgba')) return color;
-		
+
 		// If rgb, convert to rgba
 		if (color.startsWith('rgb')) {
 			return color.replace('rgb', 'rgba').replace(')', `, ${opacity})`);
 		}
-		
+
 		// Convert hex to rgba
 		const hex = color.replace('#', '');
 		const r = parseInt(hex.substring(0, 2), 16);
 		const g = parseInt(hex.substring(2, 4), 16);
 		const b = parseInt(hex.substring(4, 6), 16);
-		
+
 		return `rgba(${r}, ${g}, ${b}, ${opacity})`;
 	}
 
 
-	
+
 	createPopupInfo() {
+		// Create popup container with improved styling
 		const overlayContainerElement = document.createElement('div');
 		overlayContainerElement.className = 'popup-container';
+		overlayContainerElement.style.display = 'none';
 		document.body.appendChild(overlayContainerElement);
-
+	
+		// Create header with title and close button
+		const popupHeader = document.createElement('div');
+		popupHeader.className = 'popup-header';
+		const popupTitle = document.createElement('div');
+		popupTitle.className = 'popup-title';
+		popupHeader.appendChild(popupTitle);
 		const closeButton = document.createElement('div');
 		closeButton.className = 'popup-close-button';
 		closeButton.innerHTML = '&times;';
+		closeButton.setAttribute('aria-label', 'Close popup');
 		closeButton.onclick = () => {
 			overlayContainerElement.style.display = 'none';
 		};
-		overlayContainerElement.appendChild(closeButton);
-
-		const overlayLayer = new ol.Overlay({
+		popupHeader.appendChild(closeButton);
+		overlayContainerElement.appendChild(popupHeader);
+	
+		// Create content container
+		const popupContent = document.createElement('div');
+		popupContent.className = 'popup-content';
+		overlayContainerElement.appendChild(popupContent);
+	
+		// Add overlay to map
+		this.popupOverlay = new ol.Overlay({
 			element: overlayContainerElement,
 			positioning: 'bottom-center',
-			stopEvent: true, // Ensure the pop-up can handle its own events
-			offset: [0, -10]
-		});
-		this.map.addOverlay(overlayLayer);
-
-		this.map.on('click', (event) => {
-			const feature = this.map.forEachFeatureAtPixel(event.pixel, (feature) => feature);
-			if (feature) {
-				const properties = feature.getProperties();
-				const description = properties['description']; // Extract the 'description' column
-
-				overlayContainerElement.innerHTML = '';
-				overlayContainerElement.appendChild(closeButton);
-
-				if (description) {
-					const descriptionElement = document.createElement('div');
-					descriptionElement.className = 'popup-description';
-					descriptionElement.innerHTML = description; // Render HTML content
-					overlayContainerElement.appendChild(descriptionElement);
-				}
-
-				overlayLayer.setPosition(event.coordinate);
-				overlayContainerElement.style.display = 'block';
-			} else {
-				overlayContainerElement.style.display = 'none';
+			stopEvent: true,
+			offset: [0, -10],
+			autoPan: true,
+			autoPanAnimation: {
+				duration: 250
 			}
 		});
+		this.map.addOverlay(this.popupOverlay);
+	
+		// Store references to popup elements for reuse
+		this.popupElement = overlayContainerElement;
+		this.popupTitle = popupTitle;
+		this.popupContent = popupContent;
+		this.popupInitialized = true;
+	
+		// Handle map clicks with improved feature detection
+		this.map.on('click', (event) => {
+			// Hide popup initially
+			overlayContainerElement.style.display = 'none';
+			
+			// Use forEachFeatureAtPixel with a pixel buffer for easier clicking
+			let clickedFeature = null;
+			const pixel = event.pixel;
+			this.map.forEachFeatureAtPixel(pixel, (feature, layer) => {
+				if (!clickedFeature) {
+					clickedFeature = feature;
+					return true; // Stop after finding first feature
+				}
+			}, {
+				hitTolerance: 5 // Make it easier to click on features
+			});
+			
+			if (clickedFeature) {
+				const properties = clickedFeature.getProperties();
+				// Set popup title from name or title property
+				const title = properties['name'] || properties['title'] || properties['NAME'] || 'Feature Information';
+				popupTitle.textContent = title;
+				
+				// Clear previous content
+				popupContent.innerHTML = '';
+				
+				// Handle description HTML if available
+				if (properties['description']) {
+					const descriptionElement = document.createElement('div');
+					descriptionElement.className = 'popup-description';
+					// Safely render HTML content
+					const sanitizedHTML = DOMPurify ? DOMPurify.sanitize(properties['description']) : properties['description'];
+					descriptionElement.innerHTML = sanitizedHTML;
+					popupContent.appendChild(descriptionElement);
+				} else {
+					// Create properties table for other attributes
+					popupContent.appendChild(this.createPropertiesTable(properties));
+				}
+				
+				// Position and show popup
+				this.popupOverlay.setPosition(event.coordinate);
+				overlayContainerElement.style.display = 'block';
+			}
+		});
+	}
 
-		// Prevent map movement when interacting with the pop-up
-		overlayContainerElement.addEventListener('mousedown', (event) => {
-			event.stopPropagation();
-		});
-		overlayContainerElement.addEventListener('mousemove', (event) => {
-			event.stopPropagation();
-		});
-		overlayContainerElement.addEventListener('mouseup', (event) => {
-			event.stopPropagation();
-		});
+	createPopupContent(feature) {
+		const properties = feature.getProperties();
+		const content = document.createElement('div');
+		content.className = 'popup-content';
+		
+		// Add title if name property exists
+		if (properties.name) {
+			const title = document.createElement('h3');
+			title.className = 'popup-title';
+			title.textContent = properties.name;
+			content.appendChild(title);
+		}
+		
+		// Handle description - KML files often have HTML in descriptions
+		if (properties.description) {
+			const descriptionDiv = document.createElement('div');
+			descriptionDiv.className = 'popup-description';
+			
+			// Use DOMPurify to sanitize the HTML content
+			const sanitizedDescription = DOMPurify.sanitize(properties.description);
+			descriptionDiv.innerHTML = sanitizedDescription;
+			
+			content.appendChild(descriptionDiv);
+		}
+		
+		// Add other properties in a table
+		const table = this.createPropertiesTable(properties);
+		content.appendChild(table);
+		
+		return content;
 	}
 
 	createPropertiesTable(properties) {
 		const table = document.createElement('table');
 		table.className = 'popup-table';
 		
-		// Define columns to exclude
-		const excludedColumns = ['geometry', 'GlobalID','Shape__Are','Shape__Len'];
+		// Define columns to exclude (expanded list)
+		const excludedColumns = [
+			'geometry', 'GlobalID', 'Shape__Are', 'Shape__Len', 
+			'boundedBy', 'styleUrl', 'styleHash', 'Style', 'description',
+			'name' // Exclude name as we display it as title
+		];
 		
-		Object.keys(properties).forEach((key) => {
-			// Only create row if key is not in excluded columns
-			if (!excludedColumns.includes(key)) {
-				const row = document.createElement('tr');
-				
-				const keyCell = document.createElement('td');
-				keyCell.className = 'popup-table-key';
-				keyCell.textContent = key;
-				
-				const valueCell = document.createElement('td');
-				valueCell.className = 'popup-table-value';
-				valueCell.textContent = properties[key];
-				
-				row.appendChild(keyCell);
-				row.appendChild(valueCell);
-				table.appendChild(row);
+		// Get all property keys and sort them alphabetically
+		const keys = Object.keys(properties).filter(key => 
+			!excludedColumns.includes(key) && 
+			properties[key] !== undefined && 
+			properties[key] !== null &&
+			properties[key] !== ''
+		).sort();
+		
+		// Create table rows for each property
+		keys.forEach(key => {
+			const row = document.createElement('tr');
+			
+			const keyCell = document.createElement('th');
+			keyCell.className = 'popup-table-key';
+			keyCell.textContent = this.formatPropertyName(key);
+			
+			const valueCell = document.createElement('td');
+			valueCell.className = 'popup-table-value';
+			
+			// Format value based on type
+			const value = properties[key];
+			if (typeof value === 'number') {
+				valueCell.textContent = this.formatNumber(value);
+			} else if (value instanceof Date) {
+				valueCell.textContent = value.toLocaleDateString();
+			} else if (typeof value === 'boolean') {
+				valueCell.textContent = value ? 'Yes' : 'No';
+			} else if (typeof value === 'string' && value.startsWith('http')) {
+				const link = document.createElement('a');
+				link.href = value;
+				link.textContent = 'Link';
+				link.target = '_blank';
+				link.rel = 'noopener noreferrer';
+				valueCell.appendChild(link);
+			} else {
+				valueCell.textContent = value;
 			}
+			
+			row.appendChild(keyCell);
+			row.appendChild(valueCell);
+			table.appendChild(row);
 		});
 		
 		return table;
 	}
+	
+	// Helper method to format property names - moved outside of createPropertiesTable
+	formatPropertyName(name) {
+		// Convert camelCase or snake_case to Title Case With Spaces
+		return name
+			.replace(/_/g, ' ')
+			.replace(/([A-Z])/g, ' $1')
+			.replace(/^./, str => str.toUpperCase())
+			.trim();
+	}
+	
+	// Helper method to format numbers - moved outside of createPropertiesTable
+	formatNumber(num) {
+		if (Number.isInteger(num)) {
+			return num.toString();
+		} else {
+			return num.toFixed(2);
+		}
+	}
 		
 
-
 	async fetchGithubContents(path) {
-        const baseUrl = 'https://api.github.com/repos/liberresearch/LiberMap/contents/';
-        const response = await fetch(baseUrl + path);
-        if (!response.ok) {
-            throw new Error('Error fetching contents');
-        }
-        return await response.json();
-    }
+		const baseUrl = 'https://api.github.com/repos/liberresearch/LiberMap/contents/';
+		const response = await fetch(baseUrl + path);
+		if (!response.ok) {
+			throw new Error('Error fetching contents');
+		}
+		return await response.json();
+	}
 
 
 	createLiberDataPanel() {
@@ -917,17 +1123,17 @@ class MapManager {
 		liberDataButton.id = 'liber-data-button';
 		liberDataButton.className = 'liber-data-button';
 		liberDataButton.textContent = 'LiberData';
-		
+
 		// Add accessibility attributes
 		liberDataButton.setAttribute('role', 'button');
 		liberDataButton.setAttribute('aria-expanded', 'false');
 		liberDataButton.setAttribute('tabindex', '0');  // Make it focusable with tab
-		
+
 		const categoryList = document.createElement('div');
 		categoryList.className = 'category-list';
 		categoryList.style.display = 'none';
 		categoryList.setAttribute('aria-label', 'LiberData categories');
-		
+
 		const categories = [
 			{
 				name: '土地房屋 Land & Housing',
@@ -942,19 +1148,19 @@ class MapManager {
 				path: 'Data_GML/規劃資料%20(資料源自香港政府）Planning%20data%20from%20HK%20Government'
 			}
 		];
-		
+
 		categories.forEach(category => {
 			const categoryItem = this.createCategoryItem(category);
 			categoryList.appendChild(categoryItem);
 		});
-		
+
 		// Add click handler
 		liberDataButton.onclick = () => {
 			const isExpanded = categoryList.style.display !== 'none';
 			liberDataButton.setAttribute('aria-expanded', !isExpanded);
 			categoryList.style.display = isExpanded ? 'none' : 'block';
 		};
-		
+
 		// Add keyboard handler for accessibility
 		liberDataButton.addEventListener('keydown', (e) => {
 			if (e.key === 'Enter' || e.key === ' ') {
@@ -962,38 +1168,38 @@ class MapManager {
 				liberDataButton.click();
 			}
 		});
-		
+
 		document.body.appendChild(liberDataButton);
 		document.body.appendChild(categoryList);
 	}
-	
+
 	createCategoryItem(category) {
 		const item = document.createElement('div');
 		item.className = 'category-item';
-		
+
 		const header = document.createElement('div');
 		header.className = 'category-header';
 		header.setAttribute('role', 'button');
 		header.setAttribute('tabindex', '0');
 		header.setAttribute('aria-expanded', 'false');
-		
+
 		// Add indicator for better UX
 		const indicator = document.createElement('span');
 		indicator.className = 'category-indicator';
 		indicator.textContent = '▶';
 		indicator.setAttribute('aria-hidden', 'true');
-		
+
 		const titleText = document.createElement('span');
 		titleText.textContent = category.name;
-		
+
 		header.appendChild(indicator);
 		header.appendChild(titleText);
-		
+
 		const content = document.createElement('div');
 		content.className = 'category-content';
 		content.style.display = 'none';
 		content.setAttribute('aria-label', `${category.name} content`);
-		
+
 		// Add click handler
 		header.onclick = (e) => {
 			e.stopPropagation();
@@ -1001,13 +1207,13 @@ class MapManager {
 			content.style.display = isExpanded ? 'none' : 'block';
 			indicator.textContent = isExpanded ? '▶' : '▼';
 			header.setAttribute('aria-expanded', !isExpanded);
-			
+
 			// Load content if it's empty and being expanded
 			if (!isExpanded && content.children.length === 0) {
 				this.loadFolderContents(category.path, content);
 			}
 		};
-		
+
 		// Add keyboard handler
 		header.addEventListener('keydown', (e) => {
 			if (e.key === 'Enter' || e.key === ' ') {
@@ -1015,73 +1221,73 @@ class MapManager {
 				header.click();
 			}
 		});
-		
+
 		item.appendChild(header);
 		item.appendChild(content);
 		return item;
 	}
 
-    async createCategorySection(name, path, container) {
-        const section = document.createElement('div');
-        section.className = 'category-section';
+	async createCategorySection(name, path, container) {
+		const section = document.createElement('div');
+		section.className = 'category-section';
 
-        const header = document.createElement('div');
-        header.className = 'category-header';
-        header.textContent = name;
+		const header = document.createElement('div');
+		header.className = 'category-header';
+		header.textContent = name;
 
-        const content = document.createElement('div');
-        content.className = 'category-content';
-        content.style.display = 'none';
+		const content = document.createElement('div');
+		content.className = 'category-content';
+		content.style.display = 'none';
 
-        header.onclick = () => {
-            content.style.display = content.style.display === 'none' ? 'block' : 'none';
-            if (content.children.length === 0) {
-                this.loadFolderContents(path, content);
-            }
-        };
+		header.onclick = () => {
+			content.style.display = content.style.display === 'none' ? 'block' : 'none';
+			if (content.children.length === 0) {
+				this.loadFolderContents(path, content);
+			}
+		};
 
-        section.appendChild(header);
-        section.appendChild(content);
-        container.appendChild(section);
-    }
+		section.appendChild(header);
+		section.appendChild(content);
+		container.appendChild(section);
+	}
 
 	async loadFolderContents(path, container) {
 		try {
 			const contents = await this.fetchGithubContents(path);
 			const list = document.createElement('ul');
 			list.className = 'folder-list';
-	
+
 			for (const item of contents) {
 				const listItem = document.createElement('li');
 				listItem.className = 'folder-item';
-	
+
 				if (item.type === 'dir') {
 					// Create expandable folder
 					const folderHeader = document.createElement('div');
 					folderHeader.className = 'folder-header';
 					folderHeader.textContent = item.name;
-					
+
 					const folderContent = document.createElement('div');
 					folderContent.className = 'folder-content';
 					folderContent.style.display = 'none';
-	
+
 					// Add expand/collapse indicator
 					const indicator = document.createElement('span');
 					indicator.className = 'folder-indicator';
 					indicator.textContent = '▶';
 					folderHeader.insertBefore(indicator, folderHeader.firstChild);
-	
+
 					folderHeader.onclick = (e) => {
 						e.stopPropagation();
 						const isExpanded = folderContent.style.display !== 'none';
 						folderContent.style.display = isExpanded ? 'none' : 'block';
 						indicator.textContent = isExpanded ? '▶' : '▼';
-						
+
 						if (!isExpanded && folderContent.children.length === 0) {
 							this.loadFolderContents(item.path, folderContent);
 						}
 					};
-	
+
 					listItem.appendChild(folderHeader);
 					listItem.appendChild(folderContent);
 				} else {
@@ -1089,10 +1295,10 @@ class MapManager {
 					const fileItem = this.createFileItem(item);
 					listItem.appendChild(fileItem);
 				}
-	
+
 				list.appendChild(listItem);
 			}
-	
+
 			container.appendChild(list);
 		} catch (error) {
 			console.error('Error loading folder contents:', error);
@@ -1102,14 +1308,14 @@ class MapManager {
 	createFileItem(item) {
 		const itemContainer = document.createElement('div');
 		itemContainer.className = 'file-item-container';
-	
+
 		const itemName = document.createElement('span');
 		itemName.textContent = item.name;
 		itemName.className = 'file-name';
-	
+
 		const buttonContainer = document.createElement('div');
 		buttonContainer.className = 'file-buttons';
-	
+
 		const toggleButton = document.createElement('button');
 		toggleButton.textContent = '+';
 		toggleButton.className = 'layer-toggle-button add';
@@ -1117,7 +1323,7 @@ class MapManager {
 			e.stopPropagation();
 			this.toggleLayer(item.download_url, toggleButton);
 		};
-	
+
 		const downloadButton = document.createElement('button');
 		downloadButton.textContent = '↓';
 		downloadButton.className = 'download-button';
@@ -1125,16 +1331,16 @@ class MapManager {
 			e.stopPropagation();
 			this.downloadKML(item.download_url, item.name);
 		};
-	
+
 		buttonContainer.appendChild(toggleButton);
 		buttonContainer.appendChild(downloadButton);
-		
+
 		itemContainer.appendChild(itemName);
 		itemContainer.appendChild(buttonContainer);
-		
+
 		return itemContainer;
 	}
-	
+
 	async toggleLayer(url, button) {
 		if (this.activeLayers.has(url)) {
 			const layerInfo = this.activeLayers.get(url);
@@ -1150,13 +1356,13 @@ class MapManager {
 				const features = new ol.format.KML().readFeatures(kmlData, {
 					featureProjection: 'EPSG:3857'
 				});
-				
+
 				const vectorSource = new ol.source.Vector({ features });
 				const vectorLayer = new ol.layer.Vector({
 					source: vectorSource,
 					style: this.createStyleFunction()
 				});
-				
+
 				this.map.addLayer(vectorLayer);
 				this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
 				button.textContent = '-';
@@ -1170,27 +1376,31 @@ class MapManager {
 	}
 
 
-    async loadKMLFile(url) {
+	async loadKMLFile(url) {
 		try {
 			const response = await fetch(url);
 			const kmlData = await response.text();
 			const features = new ol.format.KML().readFeatures(kmlData, {
 				featureProjection: 'EPSG:3857'
 			});
-	
+			
 			const vectorSource = new ol.source.Vector({ features });
 			const vectorLayer = new ol.layer.Vector({
 				source: vectorSource,
 				style: this.createStyleFunction()
 			});
-	
+			
 			this.map.addLayer(vectorLayer);
 			this.map.getView().fit(vectorSource.getExtent(), { duration: 1000 });
+			
+			
+			return vectorLayer;
 		} catch (error) {
 			console.error('Error loading KML:', error);
 		}
 	}
-	
+
+
 	// downloadKML
 	async downloadKML(url, filename) {
 		try {
@@ -1209,7 +1419,7 @@ class MapManager {
 			console.error('Error downloading file:', error);
 		}
 	}
-	
+
 	async downloadGeoJSON(url, filename) {
 		try {
 			const response = await fetch(url);
@@ -1227,7 +1437,7 @@ class MapManager {
 			console.error('Error downloading file:', error);
 		}
 	}
-	
+
 	createLegendPanel() {
 		// Create the legend button with circular background
 		const legendButton = document.createElement('div');
@@ -1236,14 +1446,14 @@ class MapManager {
 		legendButton.setAttribute('role', 'button');
 		legendButton.setAttribute('aria-label', 'Toggle map legend');
 		legendButton.setAttribute('tabindex', '0');
-		
+
 		// Add the icon
 		const legendIcon = document.createElement('img');
 		legendIcon.src = 'img/legend.png';
 		legendIcon.alt = '';
 		legendIcon.setAttribute('role', 'presentation');
 		legendButton.appendChild(legendIcon);
-		
+
 		// Create the legend panel
 		const legendPanel = document.createElement('div');
 		legendPanel.id = 'legend-panel';
@@ -1251,13 +1461,13 @@ class MapManager {
 		legendPanel.style.display = 'none';
 		legendPanel.setAttribute('role', 'complementary');
 		legendPanel.setAttribute('aria-label', 'Map legend');
-		
+
 		// Create legend content
 		const content = document.createElement('div');
 		content.className = 'legend-content';
 		content.setAttribute('role', 'region');
 		content.setAttribute('aria-label', 'Legend content');
-		
+
 		// Add close button to the legend panel
 		const closeButton = document.createElement('div');
 		closeButton.className = 'legend-close-button';
@@ -1265,40 +1475,40 @@ class MapManager {
 		closeButton.setAttribute('aria-label', 'Close legend');
 		closeButton.setAttribute('role', 'button');
 		closeButton.setAttribute('tabindex', '0');
-		
+
 		// Add event listeners
 		legendButton.addEventListener('click', () => {
 			const isVisible = legendPanel.style.display !== 'none';
 			legendPanel.style.display = isVisible ? 'none' : 'block';
 			legendButton.setAttribute('aria-expanded', !isVisible);
 		});
-		
+
 		legendButton.addEventListener('keydown', (e) => {
 			if (e.key === 'Enter' || e.key === ' ') {
 				e.preventDefault();
 				legendButton.click();
 			}
 		});
-		
+
 		closeButton.addEventListener('click', () => {
 			legendPanel.style.display = 'none';
 			legendButton.setAttribute('aria-expanded', false);
 		});
-		
+
 		closeButton.addEventListener('keydown', (e) => {
 			if (e.key === 'Enter' || e.key === ' ') {
 				e.preventDefault();
 				closeButton.click();
 			}
 		});
-		
+
 		// Assemble the legend panel
 		legendPanel.appendChild(closeButton);
 		legendPanel.appendChild(content);
-		
+
 		// Update the legend content
 		this.updateLegend(content);
-		
+
 		// Add to the document
 		document.body.appendChild(legendButton);
 		document.body.appendChild(legendPanel);
@@ -1387,15 +1597,15 @@ class MapManager {
 		if (style) {
 			const fill = style.getFill();
 			const stroke = style.getStroke();
-			
+
 			ctx.beginPath();
 			ctx.rect(2, 2, 16, 16);
-			
+
 			if (fill) {
 				ctx.fillStyle = fill.getColor() || 'rgba(255, 255, 255, 0.4)';
 				ctx.fill();
 			}
-			
+
 			if (stroke) {
 				ctx.strokeStyle = stroke.getColor() || '#3399CC';
 				ctx.lineWidth = stroke.getWidth() || 1.25;
@@ -1407,69 +1617,70 @@ class MapManager {
 	}
 
 
-	
-	createButton(id, src, alt, onClick) {
-        const button = document.createElement('button');
-        button.id = id;
-        button.className = 'map-control-button';
-        button.setAttribute('aria-label', alt);
-        
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = '';
-        img.setAttribute('role', 'presentation');
-        
-        button.appendChild(img);
-        button.onclick = onClick;
-        
-        button.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                onClick();
-            }
-        });
-        
-        return button;
-    }
 
-	
-	
+	createButton(id, src, alt, onClick) {
+		const button = document.createElement('button');
+		button.id = id;
+		button.className = 'map-control-button';
+		button.setAttribute('aria-label', alt);
+
+		const img = document.createElement('img');
+		img.src = src;
+		img.alt = '';
+		img.setAttribute('role', 'presentation');
+
+		button.appendChild(img);
+		button.onclick = onClick;
+
+		button.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				onClick();
+			}
+		});
+
+		return button;
+	}
+
+
+
 }
 
 function createDownloadAllButton() {
-    const downloadAllButton = document.createElement('div');
-    downloadAllButton.id = 'download-all-button';
-    downloadAllButton.className = 'download-all-button';
-    downloadAllButton.textContent = 'Download All';
-    
-    // Add accessibility attributes
-    downloadAllButton.setAttribute('role', 'button');
-    downloadAllButton.setAttribute('tabindex', '0');
-    
-    // Add click handler
-    downloadAllButton.onclick = () => {
-        window.location.href = 'https://s3.licson.net/libreresearch/LibreMap-Dataset.zip';
-    };
-    
-    // Add keyboard handler for accessibility
-    downloadAllButton.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            downloadAllButton.click();
-        }
-    });
-    
-    document.body.appendChild(downloadAllButton);
-    
-    // Position the button next to liber-data-button
-    const liberDataButton = document.getElementById('liber-data-button');
-    if (liberDataButton) {
-        const liberRect = liberDataButton.getBoundingClientRect();
-        downloadAllButton.style.position = 'absolute';
-        downloadAllButton.style.bottom = '20px';
-        downloadAllButton.style.left = (liberRect.right + 10) + 'px';
-    }
+	const downloadAllButton = document.createElement('div');
+	downloadAllButton.id = 'download-all-button';
+	downloadAllButton.className = 'download-all-button';
+	downloadAllButton.textContent = 'Download All';
+
+	// Add accessibility attributes
+	downloadAllButton.setAttribute('role', 'button');
+	downloadAllButton.setAttribute('tabindex', '0');
+
+	// Add click handler
+	downloadAllButton.onclick = () => {
+		window.location.href = 'https://s3.licson.net/libreresearch/LibreMap-Dataset.zip';
+	};
+
+	// Add keyboard handler for accessibility
+	downloadAllButton.addEventListener('keydown', (e) => {
+		if (e.key === 'Enter' || e.key === ' ') {
+			e.preventDefault();
+			downloadAllButton.click();
+		}
+	});
+
+	document.body.appendChild(downloadAllButton);
+
+	// Position the button next to liber-data-button
+	const liberDataButton = document.getElementById('liber-data-button');
+	if (liberDataButton) {
+		const liberRect = liberDataButton.getBoundingClientRect();
+		downloadAllButton.style.position = 'absolute';
+		downloadAllButton.style.bottom = '20px';
+		downloadAllButton.style.left = (liberRect.right + 10) + 'px';
+	}
 }
+
 
 
 
@@ -1477,91 +1688,92 @@ function createDownloadAllButton() {
 
 // UI Manager
 class UIManager {
-    constructor(mapManager) {
-        this.mapManager = mapManager;
-        this.createButtons();
-    }
+	constructor(mapManager) {
+		this.mapManager = mapManager;
+		this.createButtons();
+	}
 
-    createButtons() {
-        const buttons = [
-            {
-                id: 'mylocation-button',
-                src: './img/myLocation.png',
-                alt: 'My Location',
-                onClick: () => this.mapManager.useMyLocation()
-            },
-            {
-                id: 'home-button',
-                src: './img/home.png',
-                alt: 'Home',
-                onClick: () => this.mapManager.goToHome()
-            },
-            {
-                id: 'addLayer-button',
-                src: './img/addLayer.png',
-                alt: 'Add Layer',
-                onClick: () => this.mapManager.addLayerToMap()
-            },
-            {
-                id: 'print-button',
-                src: './img/print.png',
-                alt: 'Print Map',
-                onClick: () => this.mapManager.printMap()
-            }
-        ];
+	createButtons() {
+		const buttons = [
+			{
+				id: 'mylocation-button',
+				src: './img/myLocation.png',
+				alt: 'My Location',
+				onClick: () => this.mapManager.useMyLocation()
+			},
+			{
+				id: 'home-button',
+				src: './img/home.png',
+				alt: 'Home',
+				onClick: () => this.mapManager.goToHome()
+			},
+			{
+				id: 'addLayer-button',
+				src: './img/addLayer.png',
+				alt: 'Add Layer',
+				onClick: () => this.mapManager.addLayerToMap()
+			},
+			{
+				id: 'print-button',
+				src: './img/print.png',
+				alt: 'Print Map',
+				onClick: () => this.mapManager.printMap()
+			}
+		];
 
-        buttons.forEach(buttonConfig => {
-            const button = this.mapManager.createButton(
-                buttonConfig.id,
-                buttonConfig.src,
-                buttonConfig.alt,
-                buttonConfig.onClick
-            );
-            document.body.appendChild(button);
-        });
-    }
+		buttons.forEach(buttonConfig => {
+			const button = this.mapManager.createButton(
+				buttonConfig.id,
+				buttonConfig.src,
+				buttonConfig.alt,
+				buttonConfig.onClick
+			);
+			document.body.appendChild(button);
+		});
+	}
 
-    adjustButtonPositions() {
-        const checkControls = () => {
-            const zoomInButton = document.querySelector('.ol-zoom-in');
-            const zoomOutButton = document.querySelector('.ol-zoom-out');
-            
-            if (!zoomInButton || !zoomOutButton) {
-                setTimeout(checkControls, 100);
-                return;
-            }
-            
-            const buttons = [
-                document.getElementById('mylocation-button'),
-                document.getElementById('home-button'),
-                document.getElementById('addLayer-button'),
-                document.getElementById('print-button'),
+	adjustButtonPositions() {
+		const checkControls = () => {
+			const zoomInButton = document.querySelector('.ol-zoom-in');
+			const zoomOutButton = document.querySelector('.ol-zoom-out');
+
+			if (!zoomInButton || !zoomOutButton) {
+				setTimeout(checkControls, 100);
+				return;
+			}
+
+			const buttons = [
+				document.getElementById('mylocation-button'),
+				document.getElementById('home-button'),
+				document.getElementById('addLayer-button'),
+				document.getElementById('print-button'),
 				document.getElementById('basemap-button')
-            ];
-            
-            const buttonWidth = (zoomOutButton.getBoundingClientRect().width) + 'px';
-            const buttonHeight = (zoomOutButton.getBoundingClientRect().height) + 'px';
-            let previousBottom = zoomOutButton.getBoundingClientRect().bottom;
-            
-            buttons.forEach(button => {
-                if (button) {
-                    button.style.width = buttonWidth;
-                    button.style.height = buttonHeight;
-                    button.style.top = (previousBottom + 2) + 'px';
-                    previousBottom = button.getBoundingClientRect().bottom;
-                }
-            });
-        };
+			];
 
-        checkControls();
-    }
+			const buttonWidth = (zoomOutButton.getBoundingClientRect().width) + 'px';
+			const buttonHeight = (zoomOutButton.getBoundingClientRect().height) + 'px';
+			let previousBottom = zoomOutButton.getBoundingClientRect().bottom;
+
+			buttons.forEach(button => {
+				if (button) {
+					button.style.width = buttonWidth;
+					button.style.height = buttonHeight;
+					button.style.top = (previousBottom + 2) + 'px';
+					previousBottom = button.getBoundingClientRect().bottom;
+				}
+			});
+		};
+
+		checkControls();
+	}
 }
 
 // Update initialization
 document.addEventListener('DOMContentLoaded', () => {
-    const mapManager = new MapManager();
-    const uiManager = new UIManager(mapManager);
-    uiManager.adjustButtonPositions();
-    mapManager.createPopupInfo();
-    createDownloadAllButton();
+	const mapManager = new MapManager();
+	const uiManager = new UIManager(mapManager);
+	uiManager.adjustButtonPositions();
+	mapManager.createPopupInfo();
+	createDownloadAllButton();
+
 });
