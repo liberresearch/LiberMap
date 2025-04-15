@@ -49,27 +49,6 @@
     right: 10px;
 }
 
-/* .category-content {
-    max-height: 60vh;
-    overflow-y: auto;
-    position: absolute;
-    bottom: 100%;
-    width: 100%;
-    background: white;
-    border-radius: 4px;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
-} */
-
-/* .category-header {
-    padding: 10px;
-    cursor: pointer;
-    text-align: center;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .folder-header {
     padding: 5px;
     cursor: pointer;
@@ -357,15 +336,9 @@
 
 /* Accessibility Focus Styles */
 .map-control-button:focus,
-/* .legend-header:focus, */
 #search-input:focus,
 .category-header:focus-visible,
 .folder-header:focus-visible,
-/* .legend-header:focus-visible, */
-/* .legend-toggle:focus-visible { */
-    /* outline: 3px solid #4A90E2; */
-    /* outline-offset: 2px; */
-/* } */
 .legend-button:focus,
 .legend-close-button:focus {
     outline: 3px solid #4A90E2;
@@ -731,51 +704,6 @@
 /* Grayscale layer */
 .ol-layer-grayscale {
     filter: grayscale(100%);
-}
-
-
-@media (max-width: 768px) {
-    .search-container {
-        width: 80%;
-        left: 10%;
-    }
-    
-    .legend-panel {
-        width: 80%;
-        max-height: 40vh;
-        right: 10%;
-        left: 10%;
-    }
-    
-    .legend-button {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .legend-button img {
-        width: 25px;
-        height: 25px;
-    }
-    
-    .popup-container {
-        max-width: 80%;
-        max-height: 40vh;
-        overflow-y: auto;
-    }
-    
-    .category-list {
-        max-height: 50vh;
-        overflow-y: auto;
-    }
-    
-    .map-control-button {
-        padding: 8px;
-    }
-    
-    .basemap-dropdown {
-        max-height: 40vh;
-        overflow-y: auto;
-    }
 }
 
 /* Download All Button */
