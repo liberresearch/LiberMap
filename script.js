@@ -65,77 +65,6 @@ class MapManager {
 		});
 	}
 
-	// Improved layer management for large datasets
-	// toggleLayer(url, button) {
-		// if (this.activeLayers.has(url)) {
-			// const layerInfo = this.activeLayers.get(url);
-			// this.map.removeLayer(layerInfo.layer);
-			// this.activeLayers.delete(url);
-			// button.textContent = '+';
-			// button.className = 'layer-toggle-button add';
-			// this.updateLegend(document.querySelector('.legend-content'));
-		// } else {
-			// // Show loading indicator
-			// button.textContent = '⏳';
-			// button.disabled = true;
-
-			// fetch(url)
-				// .then(response => response.text())
-				// .then(kmlData => {
-					// // Process features in chunks to avoid UI freezing
-					// setTimeout(() => {
-						// const features = new ol.format.KML({
-							// extractStyles: true,
-							// showPointNames: false // Disable automatic labels for better performance
-						// }).readFeatures(kmlData, {
-							// featureProjection: 'EPSG:3857'
-						// });
-
-						// // Create vector source with optimized settings
-						// const vectorSource = new ol.source.Vector({
-							// features: features,
-							// wrapX: false // Disable wrapping for better performance
-						// });
-
-						// // Create vector layer with optimized settings
-						// const vectorLayer = new ol.layer.Vector({
-							// source: vectorSource,
-							// style: this.createStyleFunction(),
-							// renderMode: 'image', // Use image rendering for better performance with large datasets
-							// renderBuffer: 200
-						// });
-
-						// this.map.addLayer(vectorLayer);
-
-						// // Only fit to extent if there aren't too many features
-						// if (features.length < 1000) {
-							// this.map.getView().fit(vectorSource.getExtent(), {
-								// duration: 1500,
-								// padding: [50, 50, 50, 50]
-							// });
-						// }
-
-						// button.textContent = '-';
-						// button.className = 'layer-toggle-button remove';
-						// button.disabled = false;
-						// this.activeLayers.set(url, { layer: vectorLayer, button: button });
-						// this.updateLegend(document.querySelector('.legend-content'));
-
-						// // Clean up unused resources if we have too many layers
-						// this.cleanupUnusedResources();
-					// }, 10); // Small timeout to allow UI to update
-				// })
-				// .catch(error => {
-					// console.error('Error loading KML:', error);
-					// button.textContent = '!';
-					// setTimeout(() => {
-						// button.textContent = '+';
-						// button.disabled = false;
-					// }, 2000);
-				// });
-		// }
-	// }
-
 	cleanupUnusedResources() {
 		// Remove unused layers if we have too many
 		if (this.activeLayers.size > 5) {
@@ -323,8 +252,8 @@ class MapManager {
 	initializeBasemapSwitcher() {
 		// Define basemap configurations
 		this.basemapConfigs = {
-			topographic: {
-				name: 'Topographic',
+			topographic_en: {
+				name: 'Topographic - English (Gov)',
 				thumbnail: 'img/topographic.png',
 				layers: [
 					{
@@ -337,8 +266,22 @@ class MapManager {
 					}
 				]
 			},
-			imagery: {
-				name: 'Imagery',
+			topographic_tc: {
+				name: 'Topographic - 中文 (Gov)',
+				thumbnail: 'img/topographic.png',
+				layers: [
+					{
+						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/basemap/wgs84/{z}/{x}/{y}.png',
+						attribution: 'Lands Department © The Government of the Hong Kong SAR'
+					},
+					{
+						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/tc/wgs84/{z}/{x}/{y}.png',
+						attribution: 'Lands Department © The Government of the Hong Kong SAR'
+					}
+				]
+			},
+			imagery_en: {
+				name: 'Imagery - Eng (Gov)',
 				thumbnail: 'img/imagery.png',
 				layers: [
 					{
@@ -351,16 +294,40 @@ class MapManager {
 					}
 				]
 			},
+			imagery_tc: {
+				name: 'Imagery - 中文 (Gov)',
+				thumbnail: 'img/imagery.png',
+				layers: [
+					{
+						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/imagery/wgs84/{z}/{x}/{y}.png',
+						attribution: 'Lands Department © The Government of the Hong Kong SAR'
+					},
+					{
+						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/tc/wgs84/{z}/{x}/{y}.png',
+						attribution: 'Lands Department © The Government of the Hong Kong SAR'
+					}
+				]
+			},
 			greyscale: {
 				name: 'Carto Light (Grayscale)',
 				thumbnail: 'img/carto-light.png',
 				layers: [
 					{
 						url: 'https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-						attribution: '© OpenStreetMap contributors, © CARTO'
+						attribution: '© CARTO'
 					}
 				]
-			}
+			},
+			OSM: {
+				name: 'Open Street Map',
+				thumbnail: 'img/osm.png', // Path to your OSM thumbnail image
+				layers: [
+					{
+					  url: 'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+					  attribution: '© OpenStreetMap contributors'
+					}
+				]
+			}	
 		};
 
 		// Initialize with the default basemap
