@@ -7,9 +7,6 @@
       <IconStyle>
         <color>ffb73a67</color>
         <scale>1</scale>
-        <Icon>
-          <href>https://github.com/liberresearch/LiberMap/blob/main/img/blank_point.png?raw=true</href>
-        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -19,9 +16,6 @@
       <IconStyle>
         <color>ffb73a67</color>
         <scale>1</scale>
-        <Icon>
-          <href>https://github.com/liberresearch/LiberMap/blob/main/img/blank_point.png?raw=true</href>
-        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -41,9 +35,6 @@
       <IconStyle>
         <color>ff1427a5</color>
         <scale>1</scale>
-        <Icon>
-          <href>https://github.com/liberresearch/LiberMap/blob/main/img/blank_point.png?raw=true</href>
-        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -53,9 +44,6 @@
       <IconStyle>
         <color>ff1427a5</color>
         <scale>1</scale>
-        <Icon>
-          <href>https://github.com/liberresearch/LiberMap/blob/main/img/blank_point.png?raw=true</href>
-        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -75,9 +63,6 @@
       <IconStyle>
         <color>ffd18802</color>
         <scale>1</scale>
-        <Icon>
-          <href>https://github.com/liberresearch/LiberMap/blob/main/img/blank_point.png?raw=true</href>
-        </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
@@ -91,9 +76,6 @@
       <IconStyle>
         <color>ffd18802</color>
         <scale>1</scale>
-        <Icon>
-          <href>https://github.com/liberresearch/LiberMap/blob/main/img/blank_point.png?raw=true</href>
-        </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
