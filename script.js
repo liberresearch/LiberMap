@@ -66,75 +66,75 @@ class MapManager {
 	}
 
 	// Improved layer management for large datasets
-	toggleLayer(url, button) {
-		if (this.activeLayers.has(url)) {
-			const layerInfo = this.activeLayers.get(url);
-			this.map.removeLayer(layerInfo.layer);
-			this.activeLayers.delete(url);
-			button.textContent = '+';
-			button.className = 'layer-toggle-button add';
-			this.updateLegend(document.querySelector('.legend-content'));
-		} else {
-			// Show loading indicator
-			button.textContent = '⏳';
-			button.disabled = true;
+	// toggleLayer(url, button) {
+		// if (this.activeLayers.has(url)) {
+			// const layerInfo = this.activeLayers.get(url);
+			// this.map.removeLayer(layerInfo.layer);
+			// this.activeLayers.delete(url);
+			// button.textContent = '+';
+			// button.className = 'layer-toggle-button add';
+			// this.updateLegend(document.querySelector('.legend-content'));
+		// } else {
+			// // Show loading indicator
+			// button.textContent = '⏳';
+			// button.disabled = true;
 
-			fetch(url)
-				.then(response => response.text())
-				.then(kmlData => {
-					// Process features in chunks to avoid UI freezing
-					setTimeout(() => {
-						const features = new ol.format.KML({
-							extractStyles: true,
-							showPointNames: false // Disable automatic labels for better performance
-						}).readFeatures(kmlData, {
-							featureProjection: 'EPSG:3857'
-						});
+			// fetch(url)
+				// .then(response => response.text())
+				// .then(kmlData => {
+					// // Process features in chunks to avoid UI freezing
+					// setTimeout(() => {
+						// const features = new ol.format.KML({
+							// extractStyles: true,
+							// showPointNames: false // Disable automatic labels for better performance
+						// }).readFeatures(kmlData, {
+							// featureProjection: 'EPSG:3857'
+						// });
 
-						// Create vector source with optimized settings
-						const vectorSource = new ol.source.Vector({
-							features: features,
-							wrapX: false // Disable wrapping for better performance
-						});
+						// // Create vector source with optimized settings
+						// const vectorSource = new ol.source.Vector({
+							// features: features,
+							// wrapX: false // Disable wrapping for better performance
+						// });
 
-						// Create vector layer with optimized settings
-						const vectorLayer = new ol.layer.Vector({
-							source: vectorSource,
-							style: this.createStyleFunction(),
-							renderMode: 'image', // Use image rendering for better performance with large datasets
-							renderBuffer: 200
-						});
+						// // Create vector layer with optimized settings
+						// const vectorLayer = new ol.layer.Vector({
+							// source: vectorSource,
+							// style: this.createStyleFunction(),
+							// renderMode: 'image', // Use image rendering for better performance with large datasets
+							// renderBuffer: 200
+						// });
 
-						this.map.addLayer(vectorLayer);
+						// this.map.addLayer(vectorLayer);
 
-						// Only fit to extent if there aren't too many features
-						if (features.length < 1000) {
-							this.map.getView().fit(vectorSource.getExtent(), {
-								duration: 1500,
-								padding: [50, 50, 50, 50]
-							});
-						}
+						// // Only fit to extent if there aren't too many features
+						// if (features.length < 1000) {
+							// this.map.getView().fit(vectorSource.getExtent(), {
+								// duration: 1500,
+								// padding: [50, 50, 50, 50]
+							// });
+						// }
 
-						button.textContent = '-';
-						button.className = 'layer-toggle-button remove';
-						button.disabled = false;
-						this.activeLayers.set(url, { layer: vectorLayer, button: button });
-						this.updateLegend(document.querySelector('.legend-content'));
+						// button.textContent = '-';
+						// button.className = 'layer-toggle-button remove';
+						// button.disabled = false;
+						// this.activeLayers.set(url, { layer: vectorLayer, button: button });
+						// this.updateLegend(document.querySelector('.legend-content'));
 
-						// Clean up unused resources if we have too many layers
-						this.cleanupUnusedResources();
-					}, 10); // Small timeout to allow UI to update
-				})
-				.catch(error => {
-					console.error('Error loading KML:', error);
-					button.textContent = '!';
-					setTimeout(() => {
-						button.textContent = '+';
-						button.disabled = false;
-					}, 2000);
-				});
-		}
-	}
+						// // Clean up unused resources if we have too many layers
+						// this.cleanupUnusedResources();
+					// }, 10); // Small timeout to allow UI to update
+				// })
+				// .catch(error => {
+					// console.error('Error loading KML:', error);
+					// button.textContent = '!';
+					// setTimeout(() => {
+						// button.textContent = '+';
+						// button.disabled = false;
+					// }, 2000);
+				// });
+		// }
+	// }
 
 	cleanupUnusedResources() {
 		// Remove unused layers if we have too many
@@ -806,29 +806,30 @@ class MapManager {
 
 	processKML(content) {
 		try {
-			const features = new ol.format.KML().readFeatures(content, {
+			const features = new ol.format.KML({
+				extractStyles: true  // Extract styles from KML
+			}).readFeatures(content, {
 				featureProjection: 'EPSG:3857'
 			});
-
+			
 			const vectorSource = new ol.source.Vector({ features });
 			const vectorLayer = new ol.layer.Vector({
 				source: vectorSource,
 				style: this.createStyleFunction()
 			});
-
+			
 			const fileName = this.currentFileName || 'uploaded-layer.kml';
-
 			this.map.addLayer(vectorLayer);
 			this.activeLayers.set(fileName, {
 				layer: vectorLayer,
 				button: null
 			});
-
+			
 			const legendContent = document.querySelector('.legend-content');
 			if (legendContent) {
 				this.updateLegend(legendContent);
 			}
-
+			
 			this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
 		} catch (error) {
 			console.error('KML processing error:', error);
@@ -854,13 +855,64 @@ class MapManager {
 
 	createStyleFunction() {
 		return (feature) => {
-			const properties = feature.getProperties();
-
-			// For point features - using OpenLayers default circle style
+			// Check if the feature has KML style information
+			const kmlStyle = feature.getStyleFunction();
+			
+			if (kmlStyle) {
+				// Get the KML style
+				const styles = kmlStyle(feature);
+				const style = Array.isArray(styles) ? styles[0] : styles;
+				
+				// If it's a point feature
+				if (feature.getGeometry().getType() === 'Point') {
+					// Check if the style has an icon
+					const iconStyle = style && style.getImage();
+					
+					// If it has an IconStyle (pin), extract its color and replace with circle
+					if (iconStyle && iconStyle instanceof ol.style.Icon) {
+						// Try to get color from KML style
+						let color = '#3399CC'; // Default color
+						
+						// Extract color from KML if available
+						const properties = feature.getProperties();
+						if (properties.Style && properties.Style.IconStyle && properties.Style.IconStyle.color) {
+							// KML colors are in AABBGGRR format, convert to CSS rgba
+							const kmlColor = properties.Style.IconStyle.color;
+							if (kmlColor && kmlColor.length === 8) {
+								const a = parseInt(kmlColor.substr(0, 2), 16) / 255;
+								const b = parseInt(kmlColor.substr(2, 2), 16);
+								const g = parseInt(kmlColor.substr(4, 2), 16);
+								const r = parseInt(kmlColor.substr(6, 2), 16);
+								color = `rgba(${r}, ${g}, ${b}, ${a})`;
+							}
+						}
+						
+						// Create a new style with circle but keep other style properties
+						return new ol.style.Style({
+							image: new ol.style.Circle({
+								radius: 5,
+								fill: new ol.style.Fill({
+									color: color
+								}),
+								stroke: new ol.style.Stroke({
+									color: '#fff',
+									width: 2
+								})
+							}),
+							text: style.getText()
+						});
+					}
+				}
+				
+				// For non-point features or points with non-icon styles, return the KML style
+				return style;
+			}
+			
+			// Default style if no KML style is found
 			if (feature.getGeometry().getType() === 'Point') {
 				return new ol.style.Style({
 					image: new ol.style.Circle({
-						radius: 7,
+						radius: 5,
 						fill: new ol.style.Fill({
 							color: '#3399CC'
 						}),
@@ -871,8 +923,8 @@ class MapManager {
 					})
 				});
 			}
-
-			// For lines and polygons - using OpenLayers default styles
+			
+			// Default style for lines and polygons
 			return new ol.style.Style({
 				fill: new ol.style.Fill({
 					color: 'rgba(51, 153, 204, 0.7)'
@@ -1351,27 +1403,43 @@ class MapManager {
 			this.updateLegend(document.querySelector('.legend-content'));
 		} else {
 			try {
+				// Show loading indicator
+				button.textContent = '⏳';
+				button.disabled = true;
+				
 				const response = await fetch(url);
 				const kmlData = await response.text();
-				const features = new ol.format.KML().readFeatures(kmlData, {
+				
+				// Extract styles from KML
+				const features = new ol.format.KML({
+					extractStyles: true
+				}).readFeatures(kmlData, {
 					featureProjection: 'EPSG:3857'
 				});
-
+				
 				const vectorSource = new ol.source.Vector({ features });
 				const vectorLayer = new ol.layer.Vector({
 					source: vectorSource,
 					style: this.createStyleFunction()
 				});
-
+				
 				this.map.addLayer(vectorLayer);
 				this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
+				
 				button.textContent = '-';
 				button.className = 'layer-toggle-button remove';
+				button.disabled = false;
+				
 				this.activeLayers.set(url, { layer: vectorLayer, button: button });
+				this.updateLegend(document.querySelector('.legend-content'));
 			} catch (error) {
 				console.error('Error loading KML:', error);
+				button.textContent = '!';
+				setTimeout(() => {
+					button.textContent = '+';
+					button.disabled = false;
+				}, 2000);
 			}
-			this.updateLegend(document.querySelector('.legend-content'));
 		}
 	}
 
@@ -1380,7 +1448,11 @@ class MapManager {
 		try {
 			const response = await fetch(url);
 			const kmlData = await response.text();
-			const features = new ol.format.KML().readFeatures(kmlData, {
+			
+			// Extract styles from KML
+			const features = new ol.format.KML({
+				extractStyles: true
+			}).readFeatures(kmlData, {
 				featureProjection: 'EPSG:3857'
 			});
 			
@@ -1392,7 +1464,6 @@ class MapManager {
 			
 			this.map.addLayer(vectorLayer);
 			this.map.getView().fit(vectorSource.getExtent(), { duration: 1000 });
-			
 			
 			return vectorLayer;
 		} catch (error) {
