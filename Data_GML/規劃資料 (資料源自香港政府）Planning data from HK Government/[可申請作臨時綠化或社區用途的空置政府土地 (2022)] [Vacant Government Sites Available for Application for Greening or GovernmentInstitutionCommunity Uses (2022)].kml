@@ -4,6 +4,19 @@
 <Document>
 <name>VacantGovernmentSite</name>
 <visibility>1</visibility>
+
+<Style id="brownStyle">
+  <LineStyle>
+	<color>ff214365</color>
+	<width>2</width>
+  </LineStyle>
+  <PolyStyle>
+	<color>b3214365</color>
+	<fill>1</fill>
+	<outline>1</outline>
+  </PolyStyle>
+</Style>
+	
 <Schema name="VacantGovernmentSite" id="kml_schema_ft_VacantGovernmentSite">
 <SimpleField type="xsd:int" name="OBJECTID">
 <displayName>OBJECTID</displayName>
@@ -182,6 +195,7 @@
 <th>SHAPE_Area</th>
 <td>104.35532376787273</td>
 </tr></table></center>]]></description>
+<styleUrl>#brownStyle</styleUrl>
 <ExtendedData>
 <SchemaData schemaUrl="#kml_schema_ft_VacantGovernmentSite">
 <SimpleData name="OBJECTID">1</SimpleData>
