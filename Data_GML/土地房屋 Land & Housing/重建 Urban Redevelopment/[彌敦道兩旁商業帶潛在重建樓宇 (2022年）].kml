@@ -8,7 +8,7 @@
         <color>ff0051e6</color>
         <scale>1</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
@@ -21,7 +21,7 @@
         <color>ff0051e6</color>
         <scale>1</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
@@ -44,7 +44,7 @@
         <color>ff00eaff</color>
         <scale>1</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
@@ -57,7 +57,7 @@
         <color>ff00eaff</color>
         <scale>1</scale>
         <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
