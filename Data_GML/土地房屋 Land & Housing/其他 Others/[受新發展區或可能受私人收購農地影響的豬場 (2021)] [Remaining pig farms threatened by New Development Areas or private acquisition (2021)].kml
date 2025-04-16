@@ -7,6 +7,9 @@
       <IconStyle>
         <color>ffb73a67</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/earth/images/stockicons/190201-2016-animal-paw_4x.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -73,7 +76,7 @@
         <color>ffd18802</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/earth/images/stockicons/190201-2016-animal-paw_4x.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
@@ -89,7 +92,7 @@
         <color>ffd18802</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/earth/images/stockicons/190201-2016-animal-paw_4x.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
