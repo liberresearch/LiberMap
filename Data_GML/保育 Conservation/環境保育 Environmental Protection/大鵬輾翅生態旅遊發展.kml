@@ -6,6 +6,9 @@
     <Style id="icon-123-normal">
       <IconStyle>
         <scale>1.1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
         <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
@@ -15,6 +18,9 @@
     <Style id="icon-123-highlight">
       <IconStyle>
         <scale>1.1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
         <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
@@ -34,6 +40,9 @@
     <Style id="icon-123-nodesc-normal">
       <IconStyle>
         <scale>1.1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
         <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
@@ -46,6 +55,9 @@
     <Style id="icon-123-nodesc-highlight">
       <IconStyle>
         <scale>1.1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
         <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
@@ -69,6 +81,9 @@
       <IconStyle>
         <color>ff9b5701</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -78,6 +93,9 @@
       <IconStyle>
         <color>ff9b5701</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -97,6 +115,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -106,6 +127,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -125,6 +149,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -134,6 +161,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -153,6 +183,9 @@
       <IconStyle>
         <color>ff9b5701</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -162,6 +195,9 @@
       <IconStyle>
         <color>ff9b5701</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -181,6 +217,9 @@
       <IconStyle>
         <color>ff9b5701</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -190,6 +229,9 @@
       <IconStyle>
         <color>ff9b5701</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -209,6 +251,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -218,6 +263,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -237,6 +285,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -246,6 +297,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -265,6 +319,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -274,6 +331,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -293,6 +353,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -302,6 +365,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -321,6 +387,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -330,6 +399,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -349,6 +421,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -358,6 +433,9 @@
       <IconStyle>
         <color>ff42b37c</color>
         <scale>1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+        </Icon>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -378,7 +456,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -390,7 +468,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -412,7 +490,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -424,7 +502,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -446,7 +524,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -458,7 +536,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -480,7 +558,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -492,7 +570,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -514,7 +592,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -526,7 +604,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -548,7 +626,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -560,7 +638,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -582,7 +660,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -594,7 +672,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -616,7 +694,7 @@
         <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -628,7 +706,7 @@
         <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -650,7 +728,7 @@
         <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -662,7 +740,7 @@
         <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -684,7 +762,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -696,7 +774,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -718,7 +796,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -730,7 +808,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -752,7 +830,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -764,7 +842,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -786,7 +864,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -798,7 +876,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -820,7 +898,7 @@
         <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -832,7 +910,7 @@
         <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -854,7 +932,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -866,7 +944,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -888,7 +966,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -900,7 +978,7 @@
         <color>ff42b37c</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -922,7 +1000,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -934,7 +1012,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -955,7 +1033,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/61-green-dot.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
       </IconStyle>
@@ -967,7 +1045,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/61-green-dot.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
       </IconStyle>
@@ -989,7 +1067,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/61-green-dot.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
       </IconStyle>
@@ -1004,7 +1082,7 @@
       <IconStyle>
         <scale>1.1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/61-green-dot.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
         </Icon>
         <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
       </IconStyle>
@@ -1333,7 +1411,7 @@
       </Placemark>
       <Placemark>
         <name>鹏瑞尚府（2021）</name>
-        <description><![CDATA[地址：盐田区盐田区田心东路与恩上路一巷交汇处<br><br>已整体发展为生活设施便利、滨海风光兼具、宜居宜业宜游的现代化城区。沙头角被定位为“深港国际旅游消费合作区”...合作区具体以田心工业区、沙头角口岸、中英街为主要载体...再比如沙头角口岸，这里拟规划重建，目标建设大型免税购物商业中心，试行“一地两检”通关模式，打造口岸通关、免税消费、旅游服务等一体的口岸综合体。一边是碧波万顷、惊涛拍岸的大海，一边是群峦叠嶂的山峰，满足绝大多数深圳人的梦想。<br><br>https://new.qq.com/omn/20211022/20211022A0EJ3V00.html<br><br>https://zhuanlan.zhihu.com/p/427330210 ]]></description>
+        <description><![CDATA[地址：盐田区盐田区田心东路与恩上路一巷交汇处<br><br>已整体发展为生活设施便利、滨海风光兼具、宜居宜业宜游的现代化城区。沙头角被定位为“深港国际旅游消费合作区”...合作区具体以田心工业区、沙头角口岸、中英街为主要载体...再比如沙头角口岸，这里拟规划重建，目标建设大型免税购物商业中心，试行“一地两检”通关模式，打造口岸通关、免税消费、旅游服务等一体的口岸综合体。一边是碧波万顷、惊涛拍岸的大海，一边是群峦叠嶂的山峰，满足绝大多数深圳人的梦想。<br><br>https://new.qq.com/omn/20211022/20211022A0EJ3V00.html<br><br>https://zhuanlan.zhihu.com/p/427330210 ]]></description>
         <styleUrl>#icon-1603-A52714</styleUrl>
         <Point>
           <coordinates>
@@ -1566,7 +1644,7 @@
       </Placemark>
       <Placemark>
         <name>吉澳新開張酒吧</name>
-        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUPcXC9PsR-3NjOnsC9ZeAKi1FQWjkmWcM6g42nnNuPivkYdxnThKaH3-8Uv6mTjcXB2AFoH9mK0zc3dR1fa5ZA5rmI3qwqqKutcpRqaiSuz9yNooRs5x1BjMEA_iOQCDbVIxBlYDQH-Rl0ZxIgmep-4ddF8QQsaYFZ0fDZ2H47q9CGbfMDVc4GMDAw66JQ4uXkHK9_nieaXf4?authuser=0&fife=s16383" height="200" width="auto" /><br><br>2022年1月考察發現； 影片：https://bit.ly/3rCC6h2 ]]></description>
+        <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3APRDMAUPcXC9PsR-3NjOnsC9ZeAKi1FQWjkmWcM6g42nnNuPivkYdxnThKaH3-8Uv6mTjcXB2AFoH9mK0zc3dR1fa5ZA5rmI3qwqqKutcpRqaiSuz9yNooRs5x1BjMEA_iOQCDbVIxBlYDQH-Rl0ZxIgmep-4ddF8QQsaYFZ0fDZ2H47q9CGbfMDVc4GMDAw66JQ4uXkHK9_nieaXf4?authuser=0&fife=s16383" height="200" width="auto" /><br><br>2022年1月考察發現； 影片：https://bit.ly/3rCC6h2 ]]></description>
         <styleUrl>#icon-1517-7CB342</styleUrl>
         <ExtendedData>
           <Data name="gx_media_links">
@@ -1636,7 +1714,7 @@
       </Placemark>
       <Placemark>
         <name>森林村落：梅子林及蛤塘永續鄉村計劃(2021-2024)</name>
-        <description><![CDATA[梅子林和蛤塘是位於新界東北的兩條高地客家村落，擁有超過三百年歷史。因居民逐漸遷出，從前充滿活力的社區現已式微，村民與大自然多樣化的互動不復再，生物多樣性和相應的生態價值亦因而慢慢改變和消失。<br><br>此項目旨在透過修復耕地、改善生境和適度再利用鄉郊資產，保育、活化和提升梅子林和蛤塘作為「森林村落」的自然、文化和景觀價值。項目會以協作和參與的方式與各界的持份者共同合作守護森林村落。<br><br>此項目將成為香港首個以高地森林為目標並同時保育自然與文化景觀的項目。 <br><br>https://www.epd.gov.hk/epd/sites/default/files/epd/tc_chi/environmentinhk/conservation/files/MA2_sustainable%20villages%28Chi%29.pdf]]></description>
+        <description><![CDATA[梅子林和蛤塘是位於新界東北的兩條高地客家村落，擁有超過三百年歷史。因居民逐漸遷出，從前充滿活力的社區現已式微，村民與大自然多樣化的互動不復再，生物多樣性和相應的生態價值亦因而慢慢改變和消失。<br><br>此項目旨在透過修復耕地、改善生境和適度再利用鄉郊資產，保育、活化和提升梅子林和蛤塘作為「森林村落」的自然、文化和景觀價值。項目會以協作和參與的方式與各界的持份者共同合作守護森林村落。<br><br>此項目將成為香港首個以高地森林為目標並同時保育自然與文化景觀的項目。 <br><br>https://www.epd.gov.hk/epd/sites/default/files/epd/tc_chi/environmentinhk/conservation/files/MA2_sustainable%20villages%28Chi%29.pdf]]></description>
         <styleUrl>#icon-1573-7CB342</styleUrl>
         <Point>
           <coordinates>
@@ -1686,7 +1764,7 @@
       </Placemark>
       <Placemark>
         <name>鄉郊保育資助計劃－保育與活化：沙頭角客家聚落空間環境的建築與地景研究（2021）</name>
-        <description><![CDATA[－項目倡議人：香港大學建築學院，中國建築與城市研究中心 <br>－項目名稱：保育與活化：沙頭角客家聚落空間環境的建築與地景研究<br> －目標地點：沙頭角內的四個村(南涌鄭屋村、鹿頸陳屋村、鳳坑村及谷埔老圍村)<br>－項目簡介*：沙頭角海以南，海背嶺以東分佈了十多個客家聚落，包括“沙頭角十約”南鹿社的南涌、東側的鹿頸、沿海灣延伸的鳳坑、谷埔，形成一個完整的人文自然生態體系。除了保存了大量磚石夯土的傳統民居建築，這些聚落及周邊農地魚塘的產業景觀，以及自然山體的風水樹林，結合了溪流與海水潮汐，形成豐富的沼澤濕地，與潮間帶的紅樹林生態。<br>面對人口老化與建築的空置衰敗，本計劃針對南涌鄭屋、鹿頸陳屋、鳳坑、谷埔老圍四個客家聚落的傳統建築、地景環境，社會文化進行研究，<br>探討在保育村落空間與景觀肌理的基礎上，修復活化傳統建築與聚落空間，注入文化旅遊與產業，形成可持續的建築環境策略，提高居民及公<br>眾對文化遺產與生態的關注，作為香港偏遠鄉郊村落復育與發展的參考框架。<br><br>https://www.epd.gov.hk/epd/sites/default/files/epd/tc_chi/environmentinhk/conservation/files/RA3_Hakka%20Village%20%28Chi%29.pdf]]></description>
+        <description><![CDATA[－項目倡議人：香港大學建築學院，中國建築與城市研究中心 <br>－項目名稱：保育與活化：沙頭角客家聚落空間環境的建築與地景研究<br> －目標地點：沙頭角內的四個村(南涌鄭屋村、鹿頸陳屋村、鳳坑村及谷埔老圍村)<br>－項目簡介*：沙頭角海以南，海背嶺以東分佈了十多個客家聚落，包括“沙頭角十約”南鹿社的南涌、東側的鹿頸、沿海灣延伸的鳳坑、谷埔，形成一個完整的人文自然生態體系。除了保存了大量磚石夯土的傳統民居建築，這些聚落及周邊農地魚塘的產業景觀，以及自然山體的風水樹林，結合了溪流與海水潮汐，形成豐富的沼澤濕地，與潮間帶的紅樹林生態。<br>面對人口老化與建築的空置衰敗，本計劃針對南涌鄭屋、鹿頸陳屋、鳳坑、谷埔老圍四個客家聚落的傳統建築、地景環境，社會文化進行研究，<br>探討在保育村落空間與景觀肌理的基礎上，修復活化傳統建築與聚落空間，注入文化旅遊與產業，形成可持續的建築環境策略，提高居民及公<br>眾對文化遺產與生態的關注，作為香港偏遠鄉郊村落復育與發展的參考框架。<br><br>https://www.epd.gov.hk/epd/sites/default/files/epd/tc_chi/environmentinhk/conservation/files/RA3_Hakka%20Village%20%28Chi%29.pdf]]></description>
         <styleUrl>#icon-1526-7CB342</styleUrl>
         <Point>
           <coordinates>
@@ -1756,7 +1834,7 @@
       </Placemark>
       <Placemark>
         <name>碼頭改善計劃（第一期）：東平洲 （2022）</name>
-        <description><![CDATA[* 與即將興建的粤港澳国际游艇旅游自由港－南澳口岸 相距僅5公里<br><br>狀態：完成可行性研究及環境影響評估<br><br>政府一直以來定期為全港公共碼頭進行檢查及維修，以確保其結構安全，然而，由於部份碼頭已使用多年，碼頭狀況未能滿足現時需要。 <br>／／https://www.pierimprovement-2-2018.gov.hk/02background.html<br><br><br>／／港府在2017年的《施政報告》提出「改善碼頭計劃」，旨在提升多個位於新界和離島偏遠地方的現有公共碼頭結構安全，以及改善現有碼頭設施，方便市民前往郊遊景點和自然遺產，同時亦照顧一些主要倚靠船隻出入的村民及漁民作業的基本需要。<br><br>／／據發展局向立法會財委會提交的文件，首階段涵蓋的其餘項目，有5個正進行詳細設計，包括糧船灣碼頭、深涌碼頭、石仔灣碼頭、二澳碼頭和榕樹灣公眾碼頭，而荔枝窩碼頭和東平洲公眾碼頭則已大致完成可行性研究及環境影響評估，這7個碼頭的動工時間表有待完成詳細設計後擬定。<br><br>https://www.am730.com.hk/news/%E6%96%B0%E8%81%9E/%E5%81%8F%E9%81%A0%E7%A2%BC%E9%A0%AD%EF%BD%9C%E8%8D%94%E6%9E%9D%E8%8E%8A%E7%A2%BC%E9%A0%AD%E6%94%B9%E5%96%84%E5%B7%A5%E7%A8%8B%E6%B6%89%E6%AC%BE%E9%80%BE%E5%84%84%E5%BE%85%E6%89%B9%E3%80%80%E7%AC%AC%E4%BA%8C%E9%9A%8E%E6%AE%B5%E6%B6%8913%E9%A0%85%E7%9B%AE-264691]]></description>
+        <description><![CDATA[* 與即將興建的粤港澳国际游艇旅游自由港－南澳口岸 相距僅5公里<br><br>狀態：完成可行性研究及環境影響評估<br><br>政府一直以來定期為全港公共碼頭進行檢查及維修，以確保其結構安全，然而，由於部份碼頭已使用多年，碼頭狀況未能滿足現時需要。 <br>／／https://www.pierimprovement-2-2018.gov.hk/02background.html<br><br><br>／／港府在2017年的《施政報告》提出「改善碼頭計劃」，旨在提升多個位於新界和離島偏遠地方的現有公共碼頭結構安全，以及改善現有碼頭設施，方便市民前往郊遊景點和自然遺產，同時亦照顧一些主要倚靠船隻出入的村民及漁民作業的基本需要。<br><br>／／據發展局向立法會財委會提交的文件，首階段涵蓋的其餘項目，有5個正進行詳細設計，包括糧船灣碼頭、深涌碼頭、石仔灣碼頭、二澳碼頭和榕樹灣公眾碼頭，而荔枝窩碼頭和東平洲公眾碼頭則已大致完成可行性研究及環境影響評估，這7個碼頭的動工時間表有待完成詳細設計後擬定。<br><br>https://www.am730.com.hk/news/%E6%96%B0%E8%81%9E/%E5%81%8F%E9%81%A0%E7%A2%BC%E9%A0%AD%EF%BD%9C%E8%8D%94%E6%9E%9D%E8%8E%8A%E7%A2%BC%E9%A0%AD%E6%94%B9%E5%96%84%E5%B7%A5%E7%A8%8B%E6%B6%89%E6%AC%BE%E9%80%BE%E5%84%84%E5%BE%85%E6%89%B9%E3%80%80%E7%AC%AC%E4%BA%8C%E9%9A%8E%E6%AE%B5%E6%B6%8913%E9%A0%85%E7%9B%AE-264691]]></description>
         <styleUrl>#icon-1537-7CB342</styleUrl>
         <Point>
           <coordinates>
@@ -4062,7 +4140,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>荔枝窩／蛤塘／ 梅子林  豪華露營山徑 (構思中）</name>
+        <name>荔枝窩／蛤塘／ 梅子林  豪華露營山徑 (構思中）</name>
         <description><![CDATA[2017年的《施政報告》提出動用10億港元展開鄉郊保育的工作，包括用作小型改善工程及復育鄉郊現有建築環境。環境保護署於2018年7月底於北區荔枝窩成立鄉郊保育辦公室（鄉郊辦），並視復育荔枝窩為頭炮之作。荔枝窩是新界東北地區歷史最悠久及保存得最完好的鄉村之一，目前其生物多樣性已重新提升。故鄉郊辦打算將復育概念應用於鄰近的兩個高地客家村落「梅子林」和「蛤塘」，例如鼓勵重新栽種果樹；同時游說相關村民釋出土地修築長約一公里的村路，成功將上述3個具有保育價植的鄉村打通起來，又研究日後加設「中途站」，引入豪華露營方便遊人借宿一宵，翌日早上再出發看日出，嘗試建立新旅遊模式，吸引市民前往。<br><br>https://hk.on.cc/hk/bkn/cnt/news/20211115/bkn-20211115105029137-1115_00822_001.html]]></description>
         <styleUrl>#line-FFEA00-5000</styleUrl>
         <LineString>
