@@ -5,10 +5,10 @@
     <description/>
     <Style id="icon-1507-673AB7-normal">
       <IconStyle>
-        <color>ffb73a67</color>
+        <color></color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/earth/images/stockicons/190201-2016-animal-paw_4x.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-stars.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -17,10 +17,10 @@
     </Style>
     <Style id="icon-1507-673AB7-highlight">
       <IconStyle>
-        <color>ffb73a67</color>
+        <color></color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/earth/images/stockicons/190201-2016-animal-paw_4x.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-stars.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -42,7 +42,7 @@
         <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/earth/images/stockicons/190201-2016-animal-paw_4x.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-stars.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
@@ -54,7 +54,7 @@
         <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/earth/images/stockicons/190201-2016-animal-paw_4x.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-stars.png</href>
         </Icon>
       </IconStyle>
       <LabelStyle>
