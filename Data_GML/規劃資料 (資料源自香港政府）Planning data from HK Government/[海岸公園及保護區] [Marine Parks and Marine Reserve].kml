@@ -34,8 +34,8 @@
 </Style>
 
 <Folder><name>_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_</name>
+<styleUrl>#parkIconStyle</styleUrl>
   <Placemark>
-	<styleUrl>#parkIconStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_海岸公園及保護區___Marine_Parks_and_Marine_Reserve_">
 		<SimpleData name="DATASET_EN">Marine Reserve</SimpleData>
 		<SimpleData name="DATASET_TC">海岸保護區</SimpleData>
