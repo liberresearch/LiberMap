@@ -8,7 +8,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
@@ -21,7 +21,7 @@
         <color>ff9b5701</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
@@ -44,7 +44,7 @@
         <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
@@ -57,7 +57,7 @@
         <color>ff1427a5</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
@@ -80,7 +80,7 @@
         <color>ff00d6ff</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
@@ -93,7 +93,7 @@
         <color>ff00d6ff</color>
         <scale>1</scale>
         <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
         </Icon>
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
