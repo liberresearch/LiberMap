@@ -1317,39 +1317,40 @@ createStyleFunction() {
 	}
 
 	createFileItem(item) {
-		const itemContainer = document.createElement('div');
-		itemContainer.className = 'file-item-container';
-
-		const itemName = document.createElement('span');
-		itemName.textContent = item.name;
-		itemName.className = 'file-name';
-
-		const buttonContainer = document.createElement('div');
-		buttonContainer.className = 'file-buttons';
-
-		const toggleButton = document.createElement('button');
-		toggleButton.textContent = '+';
-		toggleButton.className = 'layer-toggle-button add';
-		toggleButton.onclick = (e) => {
-			e.stopPropagation();
-			this.toggleLayer(item.download_url, toggleButton);
-		};
-
-		const downloadButton = document.createElement('button');
-		downloadButton.textContent = '↓';
-		downloadButton.className = 'download-button';
-		downloadButton.onclick = (e) => {
-			e.stopPropagation();
-			this.downloadKML(item.download_url, item.name);
-		};
-
-		buttonContainer.appendChild(toggleButton);
-		buttonContainer.appendChild(downloadButton);
-
-		itemContainer.appendChild(itemName);
-		itemContainer.appendChild(buttonContainer);
-
-		return itemContainer;
+	    const itemContainer = document.createElement('div');
+	    itemContainer.className = 'file-item-container';
+	    
+	    const itemName = document.createElement('span');
+	    // Remove .kml extension from display name
+	    const displayName = item.name.replace(/\.kml$/i, '');
+	    itemName.textContent = displayName;
+	    itemName.className = 'file-name';
+	    
+	    const buttonContainer = document.createElement('div');
+	    buttonContainer.className = 'file-buttons';
+	    
+	    const toggleButton = document.createElement('button');
+	    toggleButton.textContent = '+';
+	    toggleButton.className = 'layer-toggle-button add';
+	    toggleButton.onclick = (e) => {
+	        e.stopPropagation();
+	        this.toggleLayer(item.download_url, toggleButton);
+	    };
+	    
+	    const downloadButton = document.createElement('button');
+	    downloadButton.textContent = '↓';
+	    downloadButton.className = 'download-button';
+	    downloadButton.onclick = (e) => {
+	        e.stopPropagation();
+	        this.downloadKML(item.download_url, item.name);
+	    };
+	    
+	    buttonContainer.appendChild(toggleButton);
+	    buttonContainer.appendChild(downloadButton);
+	    itemContainer.appendChild(itemName);
+	    itemContainer.appendChild(buttonContainer);
+	    
+	    return itemContainer;
 	}
 
 	async toggleLayer(url, button) {
