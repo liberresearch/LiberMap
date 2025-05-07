@@ -1,1316 +1,729 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
-  <Document>
-    <name>彌敦道兩旁商業帶潛在重建樓宇</name>
-    <description><![CDATA[彌敦道兩旁商業帶全幢物業業權及後街十層或以下的樓宇<br>列表：https://bit.ly/3AcIBwm]]></description>
-    <Style id="icon-1899-E65100-normal">
-      <IconStyle>
-        <color>ff0051e6</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-    </Style>
-    <Style id="icon-1899-E65100-highlight">
-      <IconStyle>
-        <color>ff0051e6</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-    </Style>
-    <StyleMap id="icon-1899-E65100">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1899-E65100-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1899-E65100-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="icon-1899-FFEA00-normal">
-      <IconStyle>
-        <color>ff00eaff</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-    </Style>
-    <Style id="icon-1899-FFEA00-highlight">
-      <IconStyle>
-        <color>ff00eaff</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-    </Style>
-    <StyleMap id="icon-1899-FFEA00">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1899-FFEA00-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1899-FFEA00-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Folder>
-      <name>彌敦道兩旁商業帶全幢物業業權及後街十層或以下的樓宇(出街)</name>
-      <Placemark>
-        <name>/</name>
-        <address>南京街11號至21號</address>
-        <description><![CDATA[地址: 南京街11號至21號<br>買家/相關公司（附連結）: 樂風集團及財團]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>南京街11號至21號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>樂風集團及財團</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>/</name>
-        <address>彌敦道310號</address>
-        <description><![CDATA[地址: 彌敦道310號<br>買家/相關公司（附連結）: (2019年全幢標售)]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道310號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>(2019年全幢標售)</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>/</name>
-        <address>長樂街22至28號</address>
-        <description><![CDATA[地址: 長樂街22至28號<br>買家/相關公司（附連結）: 大鴻輝興業]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>長樂街22至28號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>大鴻輝興業</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>東亞銀行旺角大廈</name>
-        <address>彌敦道638-640號</address>
-        <description><![CDATA[地址: 彌敦道638-640號<br>買家/相關公司（附連結）: 東亞銀行]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道638-640號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>東亞銀行</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>「香港體檢中心」</name>
-        <address>彌敦道241-243號</address>
-        <description><![CDATA[地址: 彌敦道241-243號<br>買家/相關公司（附連結）: 資本策略]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道241-243號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>資本策略</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>禮基大廈</name>
-        <address>彌敦道523號</address>
-        <description><![CDATA[地址: 彌敦道523號<br>買家/相關公司（附連結）: YMCA]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道523號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>YMCA</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>金漢大廈</name>
-        <address>彌敦道317至321號</address>
-        <description><![CDATA[地址: 彌敦道317至321號<br>買家/相關公司（附連結）: 永倫集團]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道317至321號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>永倫集團</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>/</name>
-        <address>彌敦道315號</address>
-        <description><![CDATA[地址: 彌敦道315號<br>買家/相關公司（附連結）: 永倫集團]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道315號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>永倫集團</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>Casa Hotel</name>
-        <address>彌敦道487至489號</address>
-        <description><![CDATA[地址: 彌敦道487至489號<br>買家/相關公司（附連結）: （一個美資基金）]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道487至489號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>（一個美資基金）</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>旺角滙豐大廈</name>
-        <address>彌敦道673號</address>
-        <description><![CDATA[地址: 彌敦道673號<br>買家/相關公司（附連結）: 滙豐]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道673號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>滙豐</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>宏利公積金大廈</name>
-        <address>彌敦道343-349號</address>
-        <description><![CDATA[地址: 彌敦道343-349號<br>買家/相關公司（附連結）: 永安集團]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道343-349號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>永安集團</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>艾麗大廈</name>
-        <address>彌敦道579號</address>
-        <description><![CDATA[地址: 彌敦道579號<br>買家/相關公司（附連結）: 周大福有關人士]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道579號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>周大福有關人士</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>大鴻輝(旺角)中心</name>
-        <address>彌敦道721至725號</address>
-        <description><![CDATA[地址: 彌敦道721至725號<br>買家/相關公司（附連結）: 大鴻輝 (至少60%)]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道721至725號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>大鴻輝 (至少60%)</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>旺角中心</name>
-        <address>彌敦道688號</address>
-        <description><![CDATA[地址: 彌敦道688號<br>買家/相關公司（附連結）: 九龍建業]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道688號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>九龍建業</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>信和中心</name>
-        <address>彌敦道582-592號</address>
-        <description><![CDATA[地址: 彌敦道582-592號<br>買家/相關公司（附連結）: 九龍建業]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道582-592號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>九龍建業</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>荷里活商業中心</name>
-        <address>彌敦道610號</address>
-        <description><![CDATA[地址: 彌敦道610號<br>買家/相關公司（附連結）: 恆隆地產]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道610號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>恆隆地產</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>九龍行</name>
-        <address>彌敦道555號</address>
-        <description><![CDATA[地址: 彌敦道555號<br>買家/相關公司（附連結）: 大鴻輝興業]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道555號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>大鴻輝興業</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>雅蘭中心</name>
-        <address>彌敦道625及639 號</address>
-        <description><![CDATA[地址: 彌敦道625及639 號<br>買家/相關公司（附連結）: 恆隆地產]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道625及639 號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>恆隆地產</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>銀行中心</name>
-        <address>彌敦道636 號</address>
-        <description><![CDATA[地址: 彌敦道636 號<br>買家/相關公司（附連結）: 招商永隆銀行]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道636 號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>招商永隆銀行</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>始創中心</name>
-        <address>彌敦道750號</address>
-        <description><![CDATA[地址: 彌敦道750號<br>買家/相關公司（附連結）: 九龍建業]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道750號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>九龍建業</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>飛達商業中心</name>
-        <address>彌敦道611-615號</address>
-        <description><![CDATA[地址: 彌敦道611-615號<br>買家/相關公司（附連結）: 「小巴大王」馬亞木]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道611-615號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>「小巴大王」馬亞木</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>富時中心</name>
-        <address>彌敦道585號</address>
-        <description><![CDATA[地址: 彌敦道585號<br>買家/相關公司（附連結）: 陽光房地產基金]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道585號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>陽光房地產基金</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>豐怡中心
-(前名豐順商業大廈)</name>
-        <address>彌敦道591號</address>
-        <description><![CDATA[地址: 彌敦道591號<br>買家/相關公司（附連結）: 陽光房地產基金]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道591號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>陽光房地產基金</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>彩鴻酒店</name>
-        <address>西貢街23號</address>
-        <description><![CDATA[地址: 西貢街23號<br>買家/相關公司（附連結）: 大鴻輝興業]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>西貢街23號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>大鴻輝興業</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>逸林酒店</name>
-        <address>茂林街2號</address>
-        <description><![CDATA[地址: 茂林街2號 <br>買家/相關公司（附連結）: 一內地業主]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>茂林街2號 </value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>一內地業主</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>藍馬之城</name>
-        <address>彌敦道761號</address>
-        <description><![CDATA[地址: 彌敦道761號<br>買家/相關公司（附連結）: 藍馬集團]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道761號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>藍馬集團</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>惠豐中心</name>
-        <address>彌敦道664號</address>
-        <description><![CDATA[地址: 彌敦道664號<br>買家/相關公司（附連結）: 中建企業許氏家族]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道664號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>中建企業許氏家族</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>(前九龍諾富特酒店)</name>
-        <address>彌敦道348號</address>
-        <description><![CDATA[地址: 彌敦道348號<br>買家/相關公司（附連結）: 資本策略地產有限公司]]></description>
-        <styleUrl>#icon-1899-E65100</styleUrl>
-        <ExtendedData>
-          <Data name="地址">
-            <value>彌敦道348號</value>
-          </Data>
-          <Data name="買家/相關公司（附連結）">
-            <value>資本策略地產有限公司</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-    </Folder>
-    <Folder>
-      <name>彌敦道兩旁商業帶全幢物業業權及後街十層或以下的樓宇(出街)</name>
-      <Placemark>
-        <name>永星里2A號</name>
-        <address>永星里2A號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1962]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1962.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>永星里5號</name>
-        <address>永星里5號</address>
-        <description><![CDATA[現有層數: 5<br>建築年份: 1972]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>5.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1972.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>白加士街66號</name>
-        <address>白加士街66號</address>
-        <description><![CDATA[現有層數: 10<br>建築年份: 1964]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>10.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1964.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>白加士街68-70號</name>
-        <address>白加士街68-70號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1970]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1970.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>白加士街86-90號</name>
-        <address>白加士街86-90號</address>
-        <description><![CDATA[現有層數: 9<br>建築年份: 1962]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>9.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1962.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>石壁道11號</name>
-        <address>石壁道11號</address>
-        <description><![CDATA[現有層數: 5<br>建築年份: 1954]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>5.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1954.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>石壁道15號</name>
-        <address>石壁道15號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1978]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1978.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>石壁道5-7A號</name>
-        <address>石壁道5-7A號</address>
-        <description><![CDATA[現有層數: 7<br>建築年份: 1970]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>7.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1970.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>西洋菜北街165號</name>
-        <address>西洋菜北街165號</address>
-        <description><![CDATA[現有層數: 5<br>建築年份: 1964]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>5.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1964.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>西洋菜北街175-177號</name>
-        <address>西洋菜北街175-177號</address>
-        <description><![CDATA[現有層數: 10<br>建築年份: 1964]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>10.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1964.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>西洋菜北街179-179A號</name>
-        <address>西洋菜北街179-179A號</address>
-        <description><![CDATA[現有層數: 10<br>建築年份: 1964]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>10.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1964.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>西洋菜北街181-185號</name>
-        <address>西洋菜北街181-185號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1961]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1961.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>西洋菜南街103-109號</name>
-        <address>西洋菜南街103-109號</address>
-        <description><![CDATA[現有層數: 9<br>建築年份: 1965]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>9.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1965.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>西洋菜南街55號</name>
-        <address>西洋菜南街55號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1963]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1963.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>西貢街11號</name>
-        <address>西貢街11號</address>
-        <description><![CDATA[現有層數: 5<br>建築年份: 1961]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>5.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1961.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>西貢街13號</name>
-        <address>西貢街13號</address>
-        <description><![CDATA[現有層數: 5<br>建築年份: 1961]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>5.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1961.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>西貢街7號</name>
-        <address>西貢街7號</address>
-        <description><![CDATA[現有層數: 3<br>建築年份: 1962]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>3.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1962.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>西貢街9號</name>
-        <address>西貢街9號</address>
-        <description><![CDATA[現有層數: 3<br>建築年份: 1962]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>3.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1962.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>志和街13號</name>
-        <address>志和街13號</address>
-        <description><![CDATA[現有層數: 3<br>建築年份: 1950]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>3.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1950.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>旺角道39-39B號/砵蘭街320號</name>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1958]]></description>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1958.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>長樂街6-12A號</name>
-        <address>長樂街6-12A號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1966]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1966.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>南京街23-25號</name>
-        <address>南京街23-25號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1960]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1960.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>南京街3-5號</name>
-        <address>南京街3-5號</address>
-        <description><![CDATA[現有層數: 10<br>建築年份: 1970]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>10.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1970.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>界限街38A號</name>
-        <address>界限街38A號</address>
-        <description><![CDATA[現有層數: 5<br>建築年份: 1961]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>5.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1961.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街202-204號</name>
-        <address>砵蘭街202-204號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1958]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1958.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街282號</name>
-        <address>砵蘭街282號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1945]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1945.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街284-286號</name>
-        <address>砵蘭街284-286號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1959]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1959.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街288-290號</name>
-        <address>砵蘭街288-290號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1962]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1962.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街292-294號</name>
-        <address>砵蘭街292-294號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1966]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1966.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街296-298號</name>
-        <address>砵蘭街296-298號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1958]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1958.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街300號</name>
-        <address>砵蘭街300號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1975]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1975.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街302號</name>
-        <address>砵蘭街302號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1959]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1959.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街304-306號</name>
-        <address>砵蘭街304-306號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1965]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1965.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街310-312號</name>
-        <address>砵蘭街310-312號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1974]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1974.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街314-316號</name>
-        <address>砵蘭街314-316號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1967]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1967.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街318號</name>
-        <address>砵蘭街318號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1964]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1964.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街324號</name>
-        <address>砵蘭街324號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1963]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1963.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街326號</name>
-        <address>砵蘭街326號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1959]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1959.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街328-330號</name>
-        <address>砵蘭街328-330號</address>
-        <description><![CDATA[現有層數: 8<br>建築年份: 1959]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>8.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1959.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街336號</name>
-        <address>砵蘭街336號</address>
-        <description><![CDATA[現有層數: 7<br>建築年份: 1962]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>7.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1962.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街338號</name>
-        <address>砵蘭街338號</address>
-        <description><![CDATA[現有層數: 7<br>建築年份: 1962]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>7.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1962.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街354-362號</name>
-        <address>砵蘭街354-362號</address>
-        <description><![CDATA[現有層數: 4<br>建築年份: 1948]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>4.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1948.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街364-366號</name>
-        <address>砵蘭街364-366號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1975]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1975.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街372號</name>
-        <address>砵蘭街372號</address>
-        <description><![CDATA[現有層數: 3<br>建築年份: 1953]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>3.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1953.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街378A號</name>
-        <address>砵蘭街378A號</address>
-        <description><![CDATA[現有層數: 4<br>建築年份: 1953]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>4.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1953.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街380-386號</name>
-        <address>砵蘭街380-386號</address>
-        <description><![CDATA[現有層數: 9<br>建築年份: 1965]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>9.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1965.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街392號-398號</name>
-        <address>砵蘭街392號-398號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1973]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1973.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街414號</name>
-        <address>砵蘭街414號</address>
-        <description><![CDATA[現有層數: 9<br>建築年份: 1965]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>9.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1965.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街416-418號</name>
-        <address>砵蘭街416-418號</address>
-        <description><![CDATA[現有層數: 10<br>建築年份: 1969]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>10.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1969.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街420號</name>
-        <address>砵蘭街420號</address>
-        <description><![CDATA[現有層數: 5<br>建築年份: 1967]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>5.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1967.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街424-428號</name>
-        <address>砵蘭街424-428號</address>
-        <description><![CDATA[現有層數: 9<br>建築年份: 1966]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>9.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1966.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街430-436A號</name>
-        <address>砵蘭街430-436A號</address>
-        <description><![CDATA[現有層數: 10<br>建築年份: 1966]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>10.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1966.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街438-440號</name>
-        <address>砵蘭街438-440號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1969]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1969.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街442-444號</name>
-        <address>砵蘭街442-444號</address>
-        <description><![CDATA[現有層數: 9<br>建築年份: 1965]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>9.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1965.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街446-448號</name>
-        <address>砵蘭街446-448號</address>
-        <description><![CDATA[現有層數: 5<br>建築年份: 1965]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>5.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1965.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>砵蘭街456號</name>
-        <address>砵蘭街456號</address>
-        <description><![CDATA[現有層數: 5<br>建築年份: 1961]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>5.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1961.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>荔枝角道15-21號</name>
-        <address>荔枝角道15-21號</address>
-        <description><![CDATA[現有層數: 9<br>建築年份: 1958]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>9.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1958.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>寧波街27號</name>
-        <address>寧波街27號</address>
-        <description><![CDATA[現有層數: 5<br>建築年份: 1965]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>5.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1965.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>鴉蘭街2-4號</name>
-        <address>鴉蘭街2-4號</address>
-        <description><![CDATA[現有層數: 6<br>建築年份: 1979]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>6.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1979.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-      <Placemark>
-        <name>鴉蘭街6號</name>
-        <address>鴉蘭街6號</address>
-        <description><![CDATA[現有層數: 3<br>建築年份: 1945]]></description>
-        <styleUrl>#icon-1899-FFEA00</styleUrl>
-        <ExtendedData>
-          <Data name="現有層數">
-            <value>3.0</value>
-          </Data>
-          <Data name="建築年份">
-            <value>1945.0</value>
-          </Data>
-        </ExtendedData>
-      </Placemark>
-    </Folder>
-  </Document>
-</kml>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><Style id="style02">
+        <IconStyle>
+          <color>ff0741ed</color>
+          <scale>1</scale>
+          <heading>0</heading>
+          <Icon>
+            <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+          </Icon>
+        </IconStyle>
+        <LabelStyle>
+          <scale>0</scale>
+        </LabelStyle>
+      </Style><Style id="style01">
+        <IconStyle>
+          <color>ff00f7ff</color>
+          <scale>1</scale>
+          <heading>0</heading>
+          <Icon>
+            <href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href>
+          </Icon>
+        </IconStyle>
+        <LabelStyle>
+          <scale>0</scale>
+        </LabelStyle>
+      </Style><Placemark xmlns="http://www.opengis.net/kml/2.2" id="3">
+            <name>南京街11號至21號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: /
+Address: 南京街11號至21號
+買家/相關公司（附相關報導連結）: 樂風集團及財團</description>
+            <Point id="2">
+                <coordinates>114.1711619621858,22.30592032732513,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="5">
+            <name>彌敦道310號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: /
+Address: 彌敦道310號
+買家/相關公司（附相關報導連結）: (2019年全幢標售)</description>
+            <Point id="4">
+                <coordinates>114.1717986206536,22.30595345335756,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="7">
+            <name>長樂街22至28號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: /
+Address: 長樂街22至28號
+買家/相關公司（附相關報導連結）: 大鴻輝興業</description>
+            <Point id="6">
+                <coordinates>114.17204789779574,22.306572057612357,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="9">
+            <name>彌敦道638-640號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 東亞銀行旺角大廈
+Address: 彌敦道638-640號
+買家/相關公司（附相關報導連結）: 東亞銀行</description>
+            <Point id="8">
+                <coordinates>114.16976963723435,22.31848785380957,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="11">
+            <name>彌敦道241-243號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 「香港體檢中心」
+Address: 彌敦道241-243號
+買家/相關公司（附相關報導連結）: 資本策略</description>
+            <Point id="10">
+                <coordinates>114.17136192797624,22.305077470075798,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="13">
+            <name>彌敦道523號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 禮基大廈
+Address: 彌敦道523號
+買家/相關公司（附相關報導連結）: YMCA</description>
+            <Point id="12">
+                <coordinates>114.17044931207904,22.31273539067224,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="15">
+            <name>彌敦道317至321號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 金漢大廈
+Address: 彌敦道317至321號
+買家/相關公司（附相關報導連結）: 永倫集團</description>
+            <Point id="14">
+                <coordinates>114.17168213006671,22.30677523511097,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="17">
+            <name>彌敦道315號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: /
+Address: 彌敦道315號
+買家/相關公司（附相關報導連結）: 永倫集團</description>
+            <Point id="16">
+                <coordinates>114.17126483525912,22.30616113993812,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="19">
+            <name>彌敦道487至489號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: Casa Hotel
+Address: 彌敦道487至489號
+買家/相關公司（附相關報導連結）: （一個美資基金）</description>
+            <Point id="18">
+                <coordinates>114.17168213006671,22.30677523511097,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="21">
+            <name>彌敦道673號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 旺角滙豐大廈
+Address: 彌敦道673號
+買家/相關公司（附相關報導連結）: 滙豐</description>
+            <Point id="20">
+                <coordinates>114.16918726125684,22.318885173592708,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="23">
+            <name>彌敦道343-349號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 宏利公積金大廈
+Address: 彌敦道343-349號
+買家/相關公司（附相關報導連結）: 永安集團</description>
+            <Point id="22">
+                <coordinates>114.17116773303272,22.307443482968623,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="25">
+            <name>彌敦道579號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 艾麗大廈
+Address: 彌敦道579號
+買家/相關公司（附相關報導連結）: 周大福有關人士</description>
+            <Point id="24">
+                <coordinates>114.16990567136092,22.315417456660995,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="27">
+            <name>彌敦道721至725號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 大鴻輝(旺角)中心
+Address: 彌敦道721至725號
+買家/相關公司（附相關報導連結）: 大鴻輝 (至少60%)</description>
+            <Point id="26">
+                <coordinates>114.17168213006671,22.30677523511097,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="29">
+            <name>彌敦道688號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 旺角中心
+Address: 彌敦道688號
+買家/相關公司（附相關報導連結）: 九龍建業</description>
+            <Point id="28">
+                <coordinates>114.16956573002484,22.320095290623893,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="31">
+            <name>彌敦道582-592號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 信和中心
+Address: 彌敦道582-592號
+買家/相關公司（附相關報導連結）: 九龍建業</description>
+            <Point id="30">
+                <coordinates>114.170284160985,22.316112828458884,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="33">
+            <name>彌敦道610號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 荷里活商業中心
+Address: 彌敦道610號
+買家/相關公司（附相關報導連結）: 恆隆地產</description>
+            <Point id="32">
+                <coordinates>114.17020647670714,22.3169255790875,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="35">
+            <name>彌敦道555號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 九龍行
+Address: 彌敦道555號
+買家/相關公司（附相關報導連結）: 大鴻輝興業</description>
+            <Point id="34">
+                <coordinates>114.1701677850755,22.31415318370929,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="37">
+            <name>彌敦道625及639 號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 雅蘭中心
+Address: 彌敦道625及639 號
+買家/相關公司（附相關報導連結）: 恆隆地產</description>
+            <Point id="36">
+                <coordinates>114.16936700125729,22.31811520099012,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="39">
+            <name>彌敦道636 號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 銀行中心
+Address: 彌敦道636 號
+買家/相關公司（附相關報導連結）: 招商永隆銀行</description>
+            <Point id="38">
+                <coordinates>114.16981818345336,22.318153723879576,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="41">
+            <name>彌敦道750號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 始創中心
+Address: 彌敦道750號
+買家/相關公司（附相關報導連結）: 九龍建業</description>
+            <Point id="40">
+                <coordinates>114.16902204437127,22.322768320619687,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="43">
+            <name>彌敦道611-615號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 飛達商業中心
+Address: 彌敦道611-615號
+買家/相關公司（附相關報導連結）: 「小巴大王」馬亞木</description>
+            <Point id="42">
+                <coordinates>114.1695464707494,22.31715131571083,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="45">
+            <name>彌敦道585號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 富時中心
+Address: 彌敦道585號
+買家/相關公司（附相關報導連結）: 陽光房地產基金</description>
+            <Point id="44">
+                <coordinates>114.169828013653,22.315661279490648,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="47">
+            <name>彌敦道591號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 豐怡中心(前名豐順商業大廈)
+Address: 彌敦道591號
+買家/相關公司（附相關報導連結）: 陽光房地產基金</description>
+            <Point id="46">
+                <coordinates>114.16977947149614,22.31593219533893,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="49">
+            <name>西貢街23號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 彩鴻酒店
+Address: 西貢街23號
+買家/相關公司（附相關報導連結）: 大鴻輝興業</description>
+            <Point id="48">
+                <coordinates>114.17233236543908,22.306964897214574,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="51">
+            <name>茂林街2號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 逸林酒店
+Address: 茂林街2號
+買家/相關公司（附相關報導連結）: 一內地業主</description>
+            <Point id="50">
+                <coordinates>114.17192472940556,22.30757896673727,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="53">
+            <name>彌敦道761號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 藍馬之城
+Address: 彌敦道761號
+買家/相關公司（附相關報導連結）: 藍馬集團</description>
+            <Point id="52">
+                <coordinates>114.1680124808016,22.32465566207248,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="55">
+            <name>彌敦道664號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: 惠豐中心
+Address: 彌敦道664號
+買家/相關公司（附相關報導連結）: 中建企業許氏家族</description>
+            <Point id="54">
+                <coordinates>114.16972107340447,22.319165146314205,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="57">
+            <name>彌敦道348號</name><styleUrl>#style02</styleUrl>
+            <description>大廈名稱: (前九龍諾富特酒店)
+Address: 彌敦道348號
+買家/相關公司（附相關報導連結）: 資本策略地產有限公司</description>
+            <Point id="56">
+                <coordinates>114.17193444714624,22.307217742721512,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="61">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 西貢街7號
+現有層數: 3
+建築年份: 1962</description>
+            <Point id="60">
+                <coordinates>114.1718956355212,22.306964884519683,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="63">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 西貢街9號
+現有層數: 3
+建築年份: 1962</description>
+            <Point id="62">
+                <coordinates>114.17193445784662,22.30691070204633,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="65">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 志和街13號
+現有層數: 3
+建築年份: 1950</description>
+            <Point id="64">
+                <coordinates>114.17242942020955,22.30684750196839,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="67">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街372號
+現有層數: 3
+建築年份: 1953</description>
+            <Point id="66">
+                <coordinates>114.1679834329696,22.32352683684684,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="69">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 鴉蘭街6號
+現有層數: 3
+建築年份: 1945</description>
+            <Point id="68">
+                <coordinates>114.16809993723264,22.32305725248094,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="71">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街354-362號
+現有層數: 4
+建築年份: 1948</description>
+            <Point id="70">
+                <coordinates>114.16836209676008,22.32154012707476,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="73">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街378A號
+現有層數: 4
+建築年份: 1953</description>
+            <Point id="72">
+                <coordinates>114.16797372443575,22.32356295867575,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="75">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 永星里5號
+現有層數: 5
+建築年份: 1972</description>
+            <Point id="74">
+                <coordinates>114.17064932106372,22.311019583895828,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="77">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 石壁道11號
+現有層數: 5
+建築年份: 1954</description>
+            <Point id="76">
+                <coordinates>114.17157522468096,22.310766759626237,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="79">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 西洋菜北街165號
+現有層數: 5
+建築年份: 1964</description>
+            <Point id="78">
+                <coordinates>114.16846861330347,22.325748387380138,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="81">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 西貢街11號
+現有層數: 5
+建築年份: 1961</description>
+            <Point id="80">
+                <coordinates>114.1719829843091,22.30688361167848,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="83">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 西貢街13號
+現有層數: 5
+建築年份: 1961</description>
+            <Point id="82">
+                <coordinates>114.17202180194188,22.306964888307878,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="85">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 界限街38A號
+現有層數: 5
+建築年份: 1961</description>
+            <Point id="84">
+                <coordinates>114.1673911631572,22.326326285787765,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="87">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街420號
+現有層數: 5
+建築年份: 1967</description>
+            <Point id="86">
+                <coordinates>114.1675950502708,22.325540636455106,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="89">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街446-448號
+現有層數: 5
+建築年份: 1965</description>
+            <Point id="88">
+                <coordinates>114.16745911975106,22.32615470858248,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="91">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街456號
+現有層數: 5
+建築年份: 1961</description>
+            <Point id="90">
+                <coordinates>114.1673911631572,22.326326285787765,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="93">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 寧波街27號
+現有層數: 5
+建築年份: 1965</description>
+            <Point id="92">
+                <coordinates>114.17103189458749,22.306630723439877,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="95">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 石壁道15號
+現有層數: 6
+建築年份: 1978</description>
+            <Point id="94">
+                <coordinates>114.1716334532374,22.31086609814542,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="97">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 旺角道39-39B號/砵蘭街320號
+現有層數: 6
+建築年份: 1958</description>
+            <Point id="96">
+                <coordinates>114.16845446612834,22.32042044016454,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="99">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 長樂街6-12A號
+現有層數: 6
+建築年份: 1966</description>
+            <Point id="98">
+                <coordinates>114.17196358160987,22.30666687649548,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="101">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街202-204號
+現有層數: 6
+建築年份: 1958</description>
+            <Point id="100">
+                <coordinates>114.1689641249872,22.31709710492686,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="103">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街296-298號
+現有層數: 6
+建築年份: 1958</description>
+            <Point id="102">
+                <coordinates>114.16870190236853,22.31995979071516,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="105">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街300號
+現有層數: 6
+建築年份: 1975</description>
+            <Point id="104">
+                <coordinates>114.16869219164882,22.32004106557135,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="107">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街302號
+現有層數: 6
+建築年份: 1959</description>
+            <Point id="106">
+                <coordinates>114.1686921890309,22.320086218539345,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="109">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街314-316號
+現有層數: 6
+建築年份: 1967</description>
+            <Point id="108">
+                <coordinates>114.16861452028633,22.3204384077653,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="111">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街324號
+現有層數: 6
+建築年份: 1963</description>
+            <Point id="110">
+                <coordinates>114.16849802153088,22.320880900875515,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="113">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街326號
+現有層數: 6
+建築年份: 1959</description>
+            <Point id="112">
+                <coordinates>114.1685077243892,22.32093508492999,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="115">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街364-366號
+現有層數: 6
+建築年份: 1975</description>
+            <Point id="114">
+                <coordinates>114.16805140612423,22.32305724986023,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="117">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街392號-398號
+現有層數: 6
+建築年份: 1973</description>
+            <Point id="116">
+                <coordinates>114.16776982132988,22.324673709868648,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="119">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街438-440號
+現有層數: 6
+建築年份: 1969</description>
+            <Point id="118">
+                <coordinates>114.16750766453056,22.32596506905571,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="121">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 鴉蘭街2-4號
+現有層數: 6
+建築年份: 1979</description>
+            <Point id="120">
+                <coordinates>114.16815817233052,22.323093377967584,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="123">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 石壁道5-7A號
+現有層數: 7
+建築年份: 1970</description>
+            <Point id="122">
+                <coordinates>114.1717744350107,22.310394729627564,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="125">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街336號
+現有層數: 7
+建築年份: 1962</description>
+            <Point id="124">
+                <coordinates>114.16846888825395,22.321133755967864,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="127">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街338號
+現有層數: 7
+建築年份: 1962</description>
+            <Point id="126">
+                <coordinates>114.1684591794723,22.32117890842893,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="129">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 永星里2A號
+現有層數: 8
+建築年份: 1962</description>
+            <Point id="128">
+                <coordinates>114.16950799127692,22.31055897558977,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="131">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 白加士街68-70號
+現有層數: 8
+建築年份: 1970</description>
+            <Point id="130">
+                <coordinates>114.1708475341011,22.30578183949675,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="133">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 西洋菜北街181-185號
+現有層數: 8
+建築年份: 1961</description>
+            <Point id="132">
+                <coordinates>114.1683326869516,22.32635342963912,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="135">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 西洋菜南街55號
+現有層數: 8
+建築年份: 1963</description>
+            <Point id="134">
+                <coordinates>114.16992491839912,22.31875877835409,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="137">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 南京街23-25號
+現有層數: 8
+建築年份: 1960</description>
+            <Point id="136">
+                <coordinates>114.17234210459078,22.30589928564476,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="139">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街282號
+現有層數: 8
+建築年份: 1945</description>
+            <Point id="138">
+                <coordinates>114.16876015450867,22.319679845214036,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="141">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街284-286號
+現有層數: 8
+建築年份: 1959</description>
+            <Point id="140">
+                <coordinates>114.16875044384214,22.31976112007652,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="143">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街288-290號
+現有層數: 8
+建築年份: 1962</description>
+            <Point id="142">
+                <coordinates>114.16874073316436,22.31984239493761,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="145">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街292-294號
+現有層數: 8
+建築年份: 1966</description>
+            <Point id="144">
+                <coordinates>114.16849809497369,22.319643709582987,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="147">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街304-306號
+現有層數: 8
+建築年份: 1965</description>
+            <Point id="146">
+                <coordinates>114.16861452980088,22.32027585708636,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="149">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街310-312號
+現有層數: 8
+建築年份: 1974</description>
+            <Point id="148">
+                <coordinates>114.16864364209506,22.3203751950856,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="151">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街318號
+現有層數: 8
+建築年份: 1964</description>
+            <Point id="150">
+                <coordinates>114.16857569293748,22.320492589352316,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="153">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街328-330號
+現有層數: 8
+建築年份: 1959</description>
+            <Point id="152">
+                <coordinates>114.1681485834183,22.321196953279863,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="155">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 白加士街86-90號
+現有層數: 9
+建築年份: 1962</description>
+            <Point id="154">
+                <coordinates>114.17098339546617,22.30599857907491,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="157">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 西洋菜南街103-109號
+現有層數: 9
+建築年份: 1965</description>
+            <Point id="156">
+                <coordinates>114.16937153962331,22.32141374836684,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="159">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街380-386號
+現有層數: 9
+建築年份: 1965</description>
+            <Point id="158">
+                <coordinates>114.1678280807658,22.3243395813332,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="161">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街414號
+現有層數: 9
+建築年份: 1965</description>
+            <Point id="160">
+                <coordinates>114.16761447136116,22.32541420933402,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="163">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街424-428號
+現有層數: 9
+建築年份: 1966</description>
+            <Point id="162">
+                <coordinates>114.16755621693794,22.32565803187508,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="165">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街442-444號
+現有層數: 9
+建築年份: 1965</description>
+            <Point id="164">
+                <coordinates>114.1674785386416,22.32606440383502,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="167">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 荔枝角道15-21號
+現有層數: 9
+建築年份: 1958</description>
+            <Point id="166">
+                <coordinates>114.1682067511729,22.322316749759786,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="169">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 白加士街66號
+現有層數: 10
+建築年份: 1964</description>
+            <Point id="168">
+                <coordinates>114.17085724411992,22.305664441930023,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="171">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 西洋菜北街175-177號
+現有層數: 10
+建築年份: 1964</description>
+            <Point id="170">
+                <coordinates>114.1683909457465,22.32601930097012,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="173">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 西洋菜北街179-179A號
+現有層數: 10
+建築年份: 1964</description>
+            <Point id="172">
+                <coordinates>114.16839093705602,22.32616379036058,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="175">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 南京街3-5號
+現有層數: 10
+建築年份: 1970</description>
+            <Point id="174">
+                <coordinates>114.17105134116484,22.305745724445632,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="177">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街416-418號
+現有層數: 10
+建築年份: 1969</description>
+            <Point id="176">
+                <coordinates>114.16760476082034,22.32547742289511,0.0</coordinates>
+            </Point>
+        </Placemark><Placemark xmlns="http://www.opengis.net/kml/2.2" id="179">
+            <name/><styleUrl>#style01</styleUrl>
+            <description>地址: 砵蘭街430-436A號
+現有層數: 10
+建築年份: 1966</description>
+            <Point id="178">
+                <coordinates>114.16752708755476,22.32581155019022,0.0</coordinates>
+            </Point>
+        </Placemark></Document></kml>
