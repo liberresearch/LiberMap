@@ -820,89 +820,108 @@ class MapManager {
 	}
 
 
-	createStyleFunction() {
-		return (feature) => {
-			// Check if the feature has KML style information
-			const kmlStyle = feature.getStyleFunction();
-			
-			if (kmlStyle) {
-				// Get the KML style
-				const styles = kmlStyle(feature);
-				const style = Array.isArray(styles) ? styles[0] : styles;
-				
-				// If it's a point feature
-				if (feature.getGeometry().getType() === 'Point') {
-					// Check if the style has an icon
-					const iconStyle = style && style.getImage();
-					
-					// If it has an IconStyle (pin), extract its color and replace with circle
-					if (iconStyle && iconStyle instanceof ol.style.Icon) {
-						// Try to get color from KML style
-						let color = '#3399CC'; // Default color
-						
-						// Extract color from KML if available
-						const properties = feature.getProperties();
-						if (properties.Style && properties.Style.IconStyle && properties.Style.IconStyle.color) {
-							// KML colors are in AABBGGRR format, convert to CSS rgba
-							const kmlColor = properties.Style.IconStyle.color;
-							if (kmlColor && kmlColor.length === 8) {
-								const a = parseInt(kmlColor.substr(0, 2), 16) / 255;
-								const b = parseInt(kmlColor.substr(2, 2), 16);
-								const g = parseInt(kmlColor.substr(4, 2), 16);
-								const r = parseInt(kmlColor.substr(6, 2), 16);
-								color = `rgba(${r}, ${g}, ${b}, ${a})`;
-							}
-						}
-						
-						// Create a new style with circle but keep other style properties
-						return new ol.style.Style({
-							image: new ol.style.Circle({
-								radius: 5,
-								fill: new ol.style.Fill({
-									color: color
-								}),
-								stroke: new ol.style.Stroke({
-									color: '#fff',
-									width: 2
-								})
-							}),
-							text: style.getText()
-						});
-					}
-				}
-				
-				// For non-point features or points with non-icon styles, return the KML style
-				return style;
-			}
-			
-			// Default style if no KML style is found
-			if (feature.getGeometry().getType() === 'Point') {
-				return new ol.style.Style({
-					image: new ol.style.Circle({
-						radius: 5,
-						fill: new ol.style.Fill({
-							color: '#3399CC'
-						}),
-						stroke: new ol.style.Stroke({
-							color: '#fff',
-							width: 2
-						})
-					})
-				});
-			}
-			
-			// Default style for lines and polygons
-			return new ol.style.Style({
-				fill: new ol.style.Fill({
-					color: 'rgba(51, 153, 204, 0.7)'
-				}),
-				stroke: new ol.style.Stroke({
-					color: '#3399CC',
-					width: 2
-				})
-			});
-		};
-	}
+createStyleFunction() {
+  return (feature) => {
+    // Check if the feature has KML style information
+    const kmlStyle = feature.getStyleFunction();
+
+    if (kmlStyle) {
+      // Get the KML styles
+      let styles = kmlStyle(feature);
+      
+      // If we have an array of styles, we'll work with the first one (similar to your original code)
+      styles = Array.isArray(styles) ? styles : [styles];
+      // Clone and override the text style for each KML style so that no label is rendered.
+      const modifiedStyles = styles.map(style => {
+        const newStyle = style.clone();
+        if (newStyle.getText()) {
+          // Replace the text style with one that forces empty text.
+          newStyle.setText(
+            new ol.style.Text({
+              text: '', // Force label to be blank
+              // Optionally, you can preserve other text style properties if needed:
+              font: newStyle.getText().getFont(),
+              fill: newStyle.getText().getFill(),
+              stroke: newStyle.getText().getStroke()
+            })
+          );
+        }
+        return newStyle;
+      });
+
+      // For point features with an Icon style, replace the icon with a circle,
+      // while also ensuring no label is shown.
+      if (feature.getGeometry().getType() === 'Point') {
+        const iconStyle = modifiedStyles[0] && modifiedStyles[0].getImage();
+        if (iconStyle && iconStyle instanceof ol.style.Icon) {
+          // Use a default color, and try to extract the KML color if available.
+          let color = '#3399CC';
+          const properties = feature.getProperties();
+          if (properties.Style && properties.Style.IconStyle && properties.Style.IconStyle.color) {
+            const kmlColor = properties.Style.IconStyle.color;
+            if (kmlColor && kmlColor.length === 8) {
+              const a = parseInt(kmlColor.substr(0, 2), 16) / 255;
+              const b = parseInt(kmlColor.substr(2, 2), 16);
+              const g = parseInt(kmlColor.substr(4, 2), 16);
+              const r = parseInt(kmlColor.substr(6, 2), 16);
+              color = `rgba(${r}, ${g}, ${b}, ${a})`;
+            }
+          }
+          // Return a new style that uses a circle for the point while ensuring empty text.
+          return new ol.style.Style({
+            image: new ol.style.Circle({
+              radius: 5,
+              fill: new ol.style.Fill({
+                color: color
+              }),
+              stroke: new ol.style.Stroke({
+                color: '#fff',
+                width: 2
+              })
+            }),
+            text: new ol.style.Text({
+              text: ''
+            })
+          });
+        }
+      }
+      // Return the modified KML style (without any label text)
+      // If only a single style was defined originally, return the first element.
+      return modifiedStyles.length === 1 ? modifiedStyles[0] : modifiedStyles;
+    }
+
+    // If no KML style is found, create a default style that does not include any text.
+    if (feature.getGeometry().getType() === 'Point') {
+      return new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 5,
+          fill: new ol.style.Fill({
+            color: '#3399CC'
+          }),
+          stroke: new ol.style.Stroke({
+            color: '#fff',
+            width: 2
+          })
+        })
+        // Notice there's no text property here.
+      });
+    }
+
+    // Default style for lines and polygons
+    return new ol.style.Style({
+      fill: new ol.style.Fill({
+        color: 'rgba(51, 153, 204, 0.7)'
+      }),
+      stroke: new ol.style.Stroke({
+        color: '#3399CC',
+        width: 2
+      })
+      // Again, no text property is added.
+    });
+  };
+}
+
+
 
 	// Helper method to convert hex/rgb to rgba
 	convertToRGBA(color, opacity) {
