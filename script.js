@@ -762,13 +762,12 @@ class MapManager {
 
 
 	addLayerToMap() {
-		const inputElement = document.createElement('input');
-		inputElement.type = 'file';
-		inputElement.accept = '.kml'; // Changed from .geojson,.json
-		inputElement.onchange = this.handleFileUpload.bind(this);
-		inputElement.click();
+	    const inputElement = document.createElement('input');
+	    inputElement.type = 'file';
+	    inputElement.accept = '.kml,.geojson,.json,.zip'; // Added support for GeoJSON, JSON, and Shapefiles (as ZIP)
+	    inputElement.onchange = this.handleFileUpload.bind(this);
+	    inputElement.click();
 	}
-
 
 
 	processKML(content) {
@@ -805,93 +804,181 @@ class MapManager {
 
 
 	handleFileUpload(event) {
-		const file = event.target.files[0];
-		if (!file) return;
-
-		this.currentFileName = file.name;
-
-		const reader = new FileReader();
-		reader.onload = (e) => this.processKML(e.target.result);
-		reader.onerror = (error) => {
-			console.error('File reading error: ', error);
-			alert('Error reading file.');
-		};
-		reader.readAsText(file);
+	    const file = event.target.files[0];
+	    if (!file) return;
+	    
+	    this.currentFileName = file.name;
+	    const fileExtension = file.name.split('.').pop().toLowerCase();
+	    
+	    const reader = new FileReader();
+	    
+	    if (fileExtension === 'zip') {
+	        // Handle Shapefile (ZIP)
+	        reader.onload = (e) => this.processShapefile(e.target.result);
+	        reader.readAsArrayBuffer(file);
+	    } else if (fileExtension === 'kml') {
+	        // Handle KML
+	        reader.onload = (e) => this.processKML(e.target.result);
+	        reader.readAsText(file);
+	    } else if (fileExtension === 'geojson' || fileExtension === 'json') {
+	        // Handle GeoJSON/JSON
+	        reader.onload = (e) => this.processGeoJSON(e.target.result);
+	        reader.readAsText(file);
+	    } else {
+	        alert('Unsupported file format. Please upload a KML, GeoJSON, JSON, or Shapefile (ZIP).');
+	    }
+	    
+	    reader.onerror = (error) => {
+	        console.error('File reading error: ', error);
+	        alert('Error reading file.');
+	    };
 	}
 
 
-createStyleFunction() {
-  return (feature) => {
-    const kmlStyleFunc = feature.getStyleFunction();
+	processGeoJSON(content) {
+	    try {
+	        const geojsonData = JSON.parse(content);
+	        
+	        // Create features from GeoJSON
+	        const features = new ol.format.GeoJSON().readFeatures(geojsonData, {
+	            featureProjection: 'EPSG:3857'
+	        });
+	        
+	        const vectorSource = new ol.source.Vector({ features });
+	        const vectorLayer = new ol.layer.Vector({
+	            source: vectorSource,
+	            style: this.createStyleFunction()
+	        });
+	        
+	        const fileName = this.currentFileName || 'uploaded-layer.geojson';
+	        this.map.addLayer(vectorLayer);
+	        this.activeLayers.set(fileName, {
+	            layer: vectorLayer,
+	            button: null
+	        });
+	        
+	        const legendContent = document.querySelector('.legend-content');
+	        if (legendContent) {
+	            this.updateLegend(legendContent);
+	        }
+	        
+	        this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
+	    } catch (error) {
+	        console.error('GeoJSON processing error:', error);
+	        alert('Error processing GeoJSON file. Please check the file format.');
+	    }
+	}
 
-    if (kmlStyleFunc) {
-      // Get the styles extracted from the KML (an array or a single style)
-      let kmlStyles = kmlStyleFunc(feature);
-      let stylesArray = Array.isArray(kmlStyles) ? kmlStyles : [kmlStyles];
-      
-      // Clone and remove any text style so no label is rendered
-      let updatedStyles = stylesArray.map(s => {
-        let style = s.clone();
-        style.setText(null); // Remove the text style entirely.
-        return style;
-      });
-
-      // If it’s a point feature and uses an Icon style, replace it with a circle.
-      if (feature.getGeometry().getType() === 'Point') {
-        const primaryStyle = updatedStyles[0];
-        const image = primaryStyle.getImage();
-        if (image && image instanceof ol.style.Icon) {
-          let color = '#3399CC'; // Default color.
-          const properties = feature.getProperties();
-          if (
-            properties.Style &&
-            properties.Style.IconStyle &&
-            properties.Style.IconStyle.color
-          ) {
-            // Convert KML color (AABBGGRR) to CSS rgba.
-            const kmlColor = properties.Style.IconStyle.color;
-            if (kmlColor && kmlColor.length === 8) {
-              const a = parseInt(kmlColor.substr(0, 2), 16) / 255;
-              const b = parseInt(kmlColor.substr(2, 2), 16);
-              const g = parseInt(kmlColor.substr(4, 2), 16);
-              const r = parseInt(kmlColor.substr(6, 2), 16);
-              color = `rgba(${r}, ${g}, ${b}, ${a})`;
-            }
-          }
-          // Return a new style with a circle that has no label.
-          return new ol.style.Style({
-            image: new ol.style.Circle({
-              radius: 5,
-              fill: new ol.style.Fill({ color: color }),
-              stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
-            }),
-            text: null // Ensure no label is drawn.
-          });
-        }
-      }
-      return updatedStyles.length === 1 ? updatedStyles[0] : updatedStyles;
-    }
-
-    // Fallback default style for point features without KML style.
-    if (feature.getGeometry().getType() === 'Point') {
-      return new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 5,
-          fill: new ol.style.Fill({ color: '#3399CC' }),
-          stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
-        }),
-        text: null
-      });
-    }
-
-    // Fallback default style for lines and polygons.
-    return new ol.style.Style({
-      fill: new ol.style.Fill({ color: 'rgba(51, 153, 204, 0.7)' }),
-      stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
-      text: null
-    });
-  };
-}
+	processShapefile(content) {
+	    try {
+	        // Use shp.js to parse the shapefile
+	        shp(content).then(geojson => {
+	            // Create features from the parsed GeoJSON
+	            const features = new ol.format.GeoJSON().readFeatures(geojson, {
+	                featureProjection: 'EPSG:3857'
+	            });
+	            
+	            const vectorSource = new ol.source.Vector({ features });
+	            const vectorLayer = new ol.layer.Vector({
+	                source: vectorSource,
+	                style: this.createStyleFunction()
+	            });
+	            
+	            const fileName = this.currentFileName || 'uploaded-shapefile.zip';
+	            this.map.addLayer(vectorLayer);
+	            this.activeLayers.set(fileName, {
+	                layer: vectorLayer,
+	                button: null
+	            });
+	            
+	            const legendContent = document.querySelector('.legend-content');
+	            if (legendContent) {
+	                this.updateLegend(legendContent);
+	            }
+	            
+	            this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
+	        }).catch(error => {
+	            console.error('Shapefile processing error:', error);
+	            alert('Error processing Shapefile. Please ensure it contains the required .shp, .dbf, and .prj files.');
+	        });
+	    } catch (error) {
+	        console.error('Shapefile processing error:', error);
+	        alert('Error processing Shapefile. Please check the file format.');
+	    }
+	}
+		
+	createStyleFunction() {
+	  return (feature) => {
+	    const kmlStyleFunc = feature.getStyleFunction();
+	
+	    if (kmlStyleFunc) {
+	      // Get the styles extracted from the KML (an array or a single style)
+	      let kmlStyles = kmlStyleFunc(feature);
+	      let stylesArray = Array.isArray(kmlStyles) ? kmlStyles : [kmlStyles];
+	      
+	      // Clone and remove any text style so no label is rendered
+	      let updatedStyles = stylesArray.map(s => {
+	        let style = s.clone();
+	        style.setText(null); // Remove the text style entirely.
+	        return style;
+	      });
+	
+	      // If it’s a point feature and uses an Icon style, replace it with a circle.
+	      if (feature.getGeometry().getType() === 'Point') {
+	        const primaryStyle = updatedStyles[0];
+	        const image = primaryStyle.getImage();
+	        if (image && image instanceof ol.style.Icon) {
+	          let color = '#3399CC'; // Default color.
+	          const properties = feature.getProperties();
+	          if (
+	            properties.Style &&
+	            properties.Style.IconStyle &&
+	            properties.Style.IconStyle.color
+	          ) {
+	            // Convert KML color (AABBGGRR) to CSS rgba.
+	            const kmlColor = properties.Style.IconStyle.color;
+	            if (kmlColor && kmlColor.length === 8) {
+	              const a = parseInt(kmlColor.substr(0, 2), 16) / 255;
+	              const b = parseInt(kmlColor.substr(2, 2), 16);
+	              const g = parseInt(kmlColor.substr(4, 2), 16);
+	              const r = parseInt(kmlColor.substr(6, 2), 16);
+	              color = `rgba(${r}, ${g}, ${b}, ${a})`;
+	            }
+	          }
+	          // Return a new style with a circle that has no label.
+	          return new ol.style.Style({
+	            image: new ol.style.Circle({
+	              radius: 5,
+	              fill: new ol.style.Fill({ color: color }),
+	              stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
+	            }),
+	            text: null // Ensure no label is drawn.
+	          });
+	        }
+	      }
+	      return updatedStyles.length === 1 ? updatedStyles[0] : updatedStyles;
+	    }
+	
+	    // Fallback default style for point features without KML style.
+	    if (feature.getGeometry().getType() === 'Point') {
+	      return new ol.style.Style({
+	        image: new ol.style.Circle({
+	          radius: 5,
+	          fill: new ol.style.Fill({ color: '#3399CC' }),
+	          stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
+	        }),
+	        text: null
+	      });
+	    }
+	
+	    // Fallback default style for lines and polygons.
+	    return new ol.style.Style({
+	      fill: new ol.style.Fill({ color: 'rgba(51, 153, 204, 0.7)' }),
+	      stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
+	      text: null
+	    });
+	  };
+	}
 
 
 
