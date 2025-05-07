@@ -822,42 +822,33 @@ class MapManager {
 
 createStyleFunction() {
   return (feature) => {
-    // Check if the feature has KML style information
-    const kmlStyle = feature.getStyleFunction();
+    const kmlStyleFunc = feature.getStyleFunction();
 
-    if (kmlStyle) {
-      // Get the KML styles
-      let styles = kmlStyle(feature);
+    if (kmlStyleFunc) {
+      // Get the styles extracted from the KML (an array or a single style)
+      let kmlStyles = kmlStyleFunc(feature);
+      let stylesArray = Array.isArray(kmlStyles) ? kmlStyles : [kmlStyles];
       
-      // If we have an array of styles, we'll work with the first one (similar to your original code)
-      styles = Array.isArray(styles) ? styles : [styles];
-      // Clone and override the text style for each KML style so that no label is rendered.
-      const modifiedStyles = styles.map(style => {
-        const newStyle = style.clone();
-        if (newStyle.getText()) {
-          // Replace the text style with one that forces empty text.
-          newStyle.setText(
-            new ol.style.Text({
-              text: '', // Force label to be blank
-              // Optionally, you can preserve other text style properties if needed:
-              font: newStyle.getText().getFont(),
-              fill: newStyle.getText().getFill(),
-              stroke: newStyle.getText().getStroke()
-            })
-          );
-        }
-        return newStyle;
+      // Clone and remove any text style so no label is rendered
+      let updatedStyles = stylesArray.map(s => {
+        let style = s.clone();
+        style.setText(null); // Remove the text style entirely.
+        return style;
       });
 
-      // For point features with an Icon style, replace the icon with a circle,
-      // while also ensuring no label is shown.
+      // If it’s a point feature and uses an Icon style, replace it with a circle.
       if (feature.getGeometry().getType() === 'Point') {
-        const iconStyle = modifiedStyles[0] && modifiedStyles[0].getImage();
-        if (iconStyle && iconStyle instanceof ol.style.Icon) {
-          // Use a default color, and try to extract the KML color if available.
-          let color = '#3399CC';
+        const primaryStyle = updatedStyles[0];
+        const image = primaryStyle.getImage();
+        if (image && image instanceof ol.style.Icon) {
+          let color = '#3399CC'; // Default color.
           const properties = feature.getProperties();
-          if (properties.Style && properties.Style.IconStyle && properties.Style.IconStyle.color) {
+          if (
+            properties.Style &&
+            properties.Style.IconStyle &&
+            properties.Style.IconStyle.color
+          ) {
+            // Convert KML color (AABBGGRR) to CSS rgba.
             const kmlColor = properties.Style.IconStyle.color;
             if (kmlColor && kmlColor.length === 8) {
               const a = parseInt(kmlColor.substr(0, 2), 16) / 255;
@@ -867,59 +858,41 @@ createStyleFunction() {
               color = `rgba(${r}, ${g}, ${b}, ${a})`;
             }
           }
-          // Return a new style that uses a circle for the point while ensuring empty text.
+          // Return a new style with a circle that has no label.
           return new ol.style.Style({
             image: new ol.style.Circle({
               radius: 5,
-              fill: new ol.style.Fill({
-                color: color
-              }),
-              stroke: new ol.style.Stroke({
-                color: '#fff',
-                width: 2
-              })
+              fill: new ol.style.Fill({ color: color }),
+              stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
             }),
-            text: new ol.style.Text({
-              text: ''
-            })
+            text: null // Ensure no label is drawn.
           });
         }
       }
-      // Return the modified KML style (without any label text)
-      // If only a single style was defined originally, return the first element.
-      return modifiedStyles.length === 1 ? modifiedStyles[0] : modifiedStyles;
+      return updatedStyles.length === 1 ? updatedStyles[0] : updatedStyles;
     }
 
-    // If no KML style is found, create a default style that does not include any text.
+    // Fallback default style for point features without KML style.
     if (feature.getGeometry().getType() === 'Point') {
       return new ol.style.Style({
         image: new ol.style.Circle({
           radius: 5,
-          fill: new ol.style.Fill({
-            color: '#3399CC'
-          }),
-          stroke: new ol.style.Stroke({
-            color: '#fff',
-            width: 2
-          })
-        })
-        // Notice there's no text property here.
+          fill: new ol.style.Fill({ color: '#3399CC' }),
+          stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
+        }),
+        text: null
       });
     }
 
-    // Default style for lines and polygons
+    // Fallback default style for lines and polygons.
     return new ol.style.Style({
-      fill: new ol.style.Fill({
-        color: 'rgba(51, 153, 204, 0.7)'
-      }),
-      stroke: new ol.style.Stroke({
-        color: '#3399CC',
-        width: 2
-      })
-      // Again, no text property is added.
+      fill: new ol.style.Fill({ color: 'rgba(51, 153, 204, 0.7)' }),
+      stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
+      text: null
     });
   };
 }
+
 
 
 
