@@ -12,885 +12,885 @@
 <Schema name="_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__" id="_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 	<SimpleField name="PopupInfo" type="string"></SimpleField>
 </Schema>
-<Folder><name>_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__</name>
+<Folder><name>_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__</name><styleUrl>#customStyle</styleUrl>
   <styleUrl>#customStyle</styleUrl>
   <Placemark>
-	<name>海名軒2座69樓A室</name>
+	<name>海名軒2座69樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">現時持有公司: Best Profit Capital Investment Limited&lt;br&gt;市場交易金額: 4000萬&lt;br&gt;股權交易日期: 5-2011&lt;br&gt;公司舊董事: 蘇鎮西&lt;br&gt;公司舊股東: 蘇鎮西&lt;br&gt;公司新董事: 劉崇清&lt;br&gt;公司新股東: 劉崇清</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.192563299689,22.3034885996958,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>瓏璽1座23樓A室</name>
+	<name>瓏璽1座23樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">現時持有公司: Absolute Charm Limited&lt;br&gt;市場交易金額: 4400萬&lt;br&gt;股權交易日期: 5-2011&lt;br&gt;公司舊董事: Fernside Limited&lt;br&gt;公司舊股東: Blear Services Limited&lt;br&gt;公司新董事: 李惠貞&lt;br&gt;公司新股東: 李惠貞</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.155433299627,22.3186373001761,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>布力徑10B號B室</name>
+	<name>布力徑10B號B室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Better Vision Limited&lt;br&gt;股權交易日期: 8-2011&lt;br&gt;市場交易金額: 5億&lt;br&gt;公司舊董事: 鄭家純, 陳觀展, 歐德昌&lt;br&gt;公司舊股東: New World Development Company Limited&lt;br&gt;公司新董事: Trendline Limited, Seraph</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.191355799555,22.2588650999719,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>布力徑10號D室</name>
+	<name>布力徑10號D室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Luck Genius Limited&lt;br&gt;股權交易日期: 12-2011&lt;br&gt;市場交易金額: 5億&lt;br&gt;公司舊董事: 鄭家純, 陳觀展, 歐德昌&lt;br&gt;公司舊股東: New World Development Company Limited&lt;br&gt;公司新董事:ZELUCK George Michael&lt;br&gt;公</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.191704099747,22.2587884995948,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>御金國峯5座29樓B室</name>
+	<name>御金國峯5座29樓B室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">現時持有公司: Wealth More Investment Limited&lt;br&gt;市場交易金額: 2000萬&lt;br&gt;股權交易日期: 3-2012&lt;br&gt;潛在避稅金額:  300萬&lt;br&gt; 公司舊董事: 麥顯初&lt;br&gt;公司舊股東: 麥顯初&lt;br&gt;公司新董事: 卢清鎮, 陈慎华&lt;br&gt;公</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.165703500217,22.3093155996892,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>瓏璽2座20樓A室</name>
+	<name>瓏璽2座20樓A室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">現時持有公司: Bright Horizons Limited&lt;br&gt;市場交易金額: 2500萬&lt;br&gt;股權交易日期: 3-2012&lt;br&gt;公司舊董事:唐穎耀&lt;br&gt;公司舊股東:唐穎耀&lt;br&gt;公司新董事: 羅寧寧, 羅冠中&lt;br&gt;公司新股東: 羅冠中</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.155656500433,22.3185739000519,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>布力徑10號A室</name>
+	<name>布力徑10號A室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">現時持有公司: Allied Way Limited&lt;br&gt;市場交易金額: 5億&lt;br&gt;股權交易日期: 3-2012&lt;br&gt;公司舊董事:鄭家純, 陳觀展, 歐德昌&lt;br&gt;公司舊股東:New World Development Company Limited&lt;br&gt;公司新董事:張松橋&lt;br&gt;公司新股東:</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.191286199884,22.2586362996914,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>瓏璽8座32樓C室</name>
+	<name>瓏璽8座32樓C室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Join Lucky Trading Limited&lt;br&gt;股權交易日期: 8-2012&lt;br&gt;市場交易金額: 2300萬&lt;br&gt;潛在避稅金額: 400萬&lt;br&gt;公司舊董事: 陳賽鳳&lt;br&gt;公司舊股東: 陳賽鳳&lt;br&gt;公司新董事: 李瑞漢&lt;br&gt;公司新股東: 李瑞漢</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.156375999771,22.3186816998579,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>春暉8號30樓A室</name>
+	<name>春暉8號30樓A室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Wealth Ring Limited&lt;br&gt;股權交易日期: 9-2012&lt;br&gt;市場交易金額: 5400萬&lt;br&gt;公司舊董事: 黃振漢&lt;br&gt;公司新董事: 王大威</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.19453709959,22.2752561997584,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>深灣9號6座18樓A室</name>
+	<name>深灣9號6座18樓A室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Majesty Holdings Limited&lt;br&gt;股權交易日期: 9-2012&lt;br&gt;市場交易金額: 5100萬&lt;br&gt;公司舊董事: 劉錦成, 許碧&lt;br&gt;公司舊股東: 劉錦成, 許碧&lt;br&gt;公司新董事: 何志成, 黃燕芳&lt;br&gt;公司新股東: 何志成, 黃燕</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.163825200213,22.2459911996268,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>瓏璽1座23樓C室</name>
+	<name>瓏璽1座23樓C室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">現時持有公司:King Glorious Limited&lt;br&gt;市場交易金額: 3000萬&lt;br&gt;股權交易日期: 10-2012&lt;br&gt;公司舊董事: Tann Amanda&lt;br&gt;公司舊股東: Tann Amanda&lt;br&gt;公司新董事: Tan Kim Loong&lt;br&gt;公司新股東: Tan Kim Loong</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.155372899602,22.3186421998646,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>陽明山莊04座山景園06樓29室</name>
+	<name>陽明山莊04座山景園06樓29室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Lkfj Consultancy Limited&lt;br&gt;股權交易日期: 6-2013&lt;br&gt;市場交易金額: 3200萬&lt;br&gt;潛在避稅金額: 1100萬&lt;br&gt;公司舊董事: 凌國輝, 廖秀芬&lt;br&gt;公司舊股東: 凌國輝, 廖秀芬&lt;br&gt;公司新董事: 程斌, 向東彤&lt;br&gt;</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.200170099666,22.2584194999672,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>帝景園1座32樓B室</name>
+	<name>帝景園1座32樓B室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Brilliant Cheer Investment Limited&lt;br&gt;股權交易日期:7-2013&lt;br&gt;市場交易金額: 7000萬&lt;br&gt;潛在避稅金額: 1600萬&lt;br&gt;公司舊董事: Main Topable Limited, 伍婉蘭&lt;br&gt;公司舊股東: Pepin Company Limited, 伍婉蘭&lt;br&gt;公司</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.152620999663,22.2761228001905,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>貝沙灣4期南灣7座49樓A室(及50樓A-C室(複式))</name>
+	<name>貝沙灣4期南灣7座49樓A室(及50樓A-C室(複式))</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Rise Honest Trading Limited&lt;br&gt;股權交易日期:09-2013&lt;br&gt;市場交易金額:1.37億&lt;br&gt;潛在避稅金額: 3200萬&lt;br&gt;公司舊董事: 陳隆生, 李曼娜&lt;br&gt;公司舊股東: 陳隆生, 李曼娜&lt;br&gt;公司新董事: 毛燕&lt;br&gt;公司新</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.132942300233,22.2531889996969,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>加多利山09樓A室</name>
+	<name>加多利山09樓A室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Max Capital Holdings Limited&lt;br&gt;股權交易日期:10-2013&lt;br&gt;市場交易金額:2200萬&lt;br&gt;潛在避稅金額: 800萬&lt;br&gt;公司舊董事: 鍾瑞昌&lt;br&gt;公司舊股東: 鍾瑞昌&lt;br&gt;公司新董事: 梁志雄&lt;br&gt;公司新股東: 梁志雄</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.175890199706,22.3226411002848,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>天璽21座-1區(日鑽)79樓B室</name>
+	<name>天璽21座-1區(日鑽)79樓B室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Ease Long Enterprises Limited&lt;br&gt;股權交易日期:12-2013&lt;br&gt;市場交易金額:5800萬&lt;br&gt;潛在避稅金額: 1400萬&lt;br&gt;公司舊董事: 方倩儀&lt;br&gt;公司舊股東: Supreme Lucky Investment Limited (BVI)&lt;br&gt;公司新董事: 蔡永年&lt;</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.161120600166,22.3056091996363,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>貝沙灣4期南灣05座23樓A室</name>
+	<name>貝沙灣4期南灣05座23樓A室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Ace Talent Limited&lt;br&gt;股權交易日期:1-2014&lt;br&gt;市場交易金額:4600萬&lt;br&gt;潛在避稅金額: 1100萬&lt;br&gt;公司舊董事: 伍慧玲&lt;br&gt;公司舊股東: 伍慧玲&lt;br&gt;公司新董事: 鍾思亮, 卓麗娃&lt;br&gt;公司新股東: 鍾思亮,</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.133132600241,22.2532583998203,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>凱旋門朝日閣(1A座)75樓B室</name>
+	<name>凱旋門朝日閣(1A座)75樓B室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Silver Yield Limited&lt;br&gt;股權交易日期: 1-2014&lt;br&gt;市場交易金額: 1.38億&lt;br&gt;潛在避稅金額: 3200萬&lt;br&gt;公司舊董事: 蘇綜和&lt;br&gt;公司舊股東: 蘇綜和&lt;br&gt;公司新董事: 蔡文胜&lt;br&gt;公司新股東: 蔡文胜</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.162991000386,22.3030834000923,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>加列山道27號L樓09室</name>
+	<name>加列山道27號L樓09室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Hugh Leader Investments Limited&lt;br&gt;股權交易日期: 2-2014&lt;br&gt;市場交易金額: 1.3億&lt;br&gt;潛在避稅金額: 3100萬&lt;br&gt;公司舊董事: 韓純&lt;br&gt;公司舊股東: 韓純&lt;br&gt;公司新董事: 吳力&lt;br&gt;公司新股東: Compass Times In</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.151134700194,22.2603978003842,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>牛津道一號2號B室</name>
+	<name>牛津道一號2號B室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Joywell Development Limited&lt;br&gt;股權交易日期: 3-2014&lt;br&gt;市場交易金額: 2.25億&lt;br&gt;潛在避稅金額: 5300萬&lt;br&gt;公司舊董事: 余卓兒, 曾文忠, 鄧偉彬&lt;br&gt;公司舊股東: Fong Chi Hong, Suen Tat Holdings Ltd, Good Opal</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.180557800108,22.3304713996507,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>紅山半島棕櫚徑49室</name>
+	<name>紅山半島棕櫚徑49室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Group Honour Enterprise Limited&lt;br&gt;股權交易日期: 4-2014&lt;br&gt;市場交易金額: 7300萬&lt;br&gt;潛在避稅金額: 5300萬&lt;br&gt;公司舊董事: 張愛字, 張博仁&lt;br&gt;公司舊股東: 江國瑜, Teo Ai Him, Teo Ai Khim, Teo Ai Lay, Teo Ai</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.228901999868,22.2324370001139,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>曉穎花園2樓J室</name>
+	<name>曉穎花園2樓J室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Park Sun Investments Limited&lt;br&gt;股權交易日期: 4-2014&lt;br&gt;市場交易金額: 8000萬&lt;br&gt;潛在避稅金額: 1900萬&lt;br&gt;公司舊董事: Famulak Dow Peter&lt;br&gt;公司新董事:Marcovici Philip</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.179032200244,22.2516821996609,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>南灣道16號A號2室</name>
+	<name>南灣道16號A號2室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Leon Line Development Limited&lt;br&gt;股權交易日期:6-2014&lt;br&gt;市場交易金額:2.45億&lt;br&gt;潛在避稅金額: 5800萬&lt;br&gt;公司舊董事: 關家慧, Luckview Limited&lt;br&gt;公司舊股東: 關家慧, Luckview Limited&lt;br&gt;公司新董事:李</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.198357000283,22.2322939001379,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>瓏璽8座6B室</name>
+	<name>瓏璽8座6B室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Channel Union Limited&lt;br&gt;股權交易日期:1-2015&lt;br&gt;市場交易金額:2200萬&lt;br&gt;潛在避稅金額: 500萬&lt;br&gt;公司舊董事: 黃嘉信&lt;br&gt;公司舊股東:黃嘉信&lt;br&gt;公司新董事:劉嘉豪, 梅小青&lt;br&gt;公司新股東:劉嘉豪,</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.156480599603,22.3186766996174,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>逸瓏2座8樓A室</name>
+	<name>逸瓏2座8樓A室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Million Art International Enterprise Limited&lt;br&gt;股權交易日期: 11-2015&lt;br&gt;市場交易金額: 5900萬&lt;br&gt;潛在避稅金額: 1400萬&lt;br&gt;公司舊董事: 龔國強&lt;br&gt;公司舊股東:李鳳欣, 龔國強&lt;br&gt;公司新董事:李德良&lt;br&gt;</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.182098900402,22.3401049000403,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>天巒加倫大道38室</name>
+	<name>天巒加倫大道38室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Fore Time Development Limited&lt;br&gt;股權交易日期: 11-2015&lt;br&gt;市場交易金額: 2000萬&lt;br&gt;潛在避稅金額: 500萬&lt;br&gt;公司舊董事: 孫穎&lt;br&gt;公司舊股東:孫穎&lt;br&gt;公司新董事:莊錦輝, 黃潔瑩&lt;br&gt;公司新股東:莊錦</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.100804000152,22.5022349998886,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>曉峰9樓B室</name>
+	<name>曉峰9樓B室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Well Host Limited&lt;br&gt;股權交易日期:4-2016&lt;br&gt;市場交易金額: 800萬&lt;br&gt;潛在避稅金額: 200萬&lt;br&gt;公司舊董事: 麥似雲, 蔡松芳&lt;br&gt;公司舊股東:麥似雲, 蔡松芳&lt;br&gt;公司新董事:方郁敏, 曾巧鳳&lt;br&gt;公司新</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.198908999754,22.2895120002887,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>赫蘭道11號</name>
+	<name>赫蘭道11號</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Wealth Develop Limited&lt;br&gt;股權交易日期: 5-2016&lt;br&gt;市場交易金額: 8億&lt;br&gt;潛在避稅金額: 1.8億&lt;br&gt;公司舊董事: 高帆&lt;br&gt;公司舊股東:Best Empire Enterprises Limited (BVI)&lt;br&gt;公司新董事:陳健文&lt;br&gt;公司新股</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.198856200375,22.2274094003899,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>歌賦山道15號</name>
+	<name>歌賦山道15號</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Chateau 15 Investments Limited&lt;br&gt;股權交易日期: 6-2016&lt;br&gt;市場交易金額: 21億&lt;br&gt;潛在避稅金額: 4.94億&lt;br&gt;公司舊董事: 高上智, 莊家彬, 李慧貞, 呂立基&lt;br&gt;公司舊股東:Romantic Ltd (BVI) , General Nominee</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.155229700061,22.2661927996694,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>西貢竹洋路11號屋The Ridings</name>
+	<name>西貢竹洋路11號屋The Ridings</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司:Mingo Properties Limited&lt;br&gt;股權交易日期: 1-2016&lt;br&gt;市場交易金額: 1.15億&lt;br&gt;潛在避稅金額: 2700萬&lt;br&gt;公司舊董事: 何廣基, 賴玉蓮&lt;br&gt;公司舊股東何廣基, 賴玉蓮&lt;br&gt;公司新董事:賴淑賢&lt;br&gt;公司新股</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.275198899568,22.3895191998495,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>蔚然39樓C室</name>
+	<name>蔚然39樓C室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司:Glory Falcon Limited&lt;br&gt;股權交易日期: 11-2016&lt;br&gt;市場交易金額: 3900萬&lt;br&gt;潛在避稅金額: 1200萬&lt;br&gt;公司舊董事: 馮美寶&lt;br&gt;公司舊股東: 馮美寶&lt;br&gt;公司新董事:吳嫄嫄&lt;br&gt;公司新股東:Wu Yuanyuan, Guo Yo</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.149853999941,22.2821542002971,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>赫蘭道12號</name>
+	<name>赫蘭道12號</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司:Glory Falcon Limited&lt;br&gt;股權交易日期: 11-2016&lt;br&gt;市場交易金額: 6.3億&lt;br&gt;潛在避稅金額: 1.89億&lt;br&gt;公司舊董事: 孫玲, 安晉辰, Richsmart Assets Limited (BVI), Wealth Range Limited (BVI), Lucky Palm Limited (BVI)&lt;br&gt;</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.199251000061,22.2272819003749,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>貝沙灣2期南岸6座33樓A室</name>
+	<name>貝沙灣2期南岸6座33樓A室</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司:Forever Bright International Enterprise&lt;br&gt;股權交易日期:12-2016&lt;br&gt;市場交易金額:3300萬&lt;br&gt;潛在避稅金額: 1000萬&lt;br&gt;公司舊董事: 王淼                                                       </SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.132194200332,22.2564959002534,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>沙宣道30號</name>
+	<name>沙宣道30號</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司:Hina Tor Limited&lt;br&gt;股權交易日期:12-2016&lt;br&gt;市場交易金額:5億&lt;br&gt;潛在避稅金額: 1.5億&lt;br&gt;公司舊董事: 周偉淦, 徐建東, 徐靖生, 譚理明, 趙國雄                              公司舊股東:Iam</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.128419599883,22.2664095000636,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>軒德蓀道11,12號</name>
+	<name>軒德蓀道11,12號</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Joyous Era Limited (BVI), Flourish TIme Limited (BVI)&lt;br&gt;股權交易日期: 12-2017&lt;br&gt;市場交易金額: 10億&lt;br&gt;潛在避稅金額: 3億&lt;br&gt;公司舊董事: Faith Prosper Management Limited&lt;br&gt;公司新董事:Wong Chi Keung and Related</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.192967099595,22.2690220997698,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>赤柱舂磡角道44,46,48,50及海天徑1號</name>
+	<name>赤柱舂磡角道44,46,48,50及海天徑1號</name><styleUrl>#customStyle</styleUrl><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Grace Wealth Development Limited&lt;br&gt;股權交易日期: 1-2017&lt;br&gt;市場交易金額: 15億&lt;br&gt;潛在避稅金額: 4.5億&lt;br&gt;公司舊董事: 何超瓊, 何超鳳, 何超蕸, 岑康權, 陳楚松&lt;br&gt;公司舊股東: Shun Tak Development Lim</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.204041199838,22.2191046002834,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>凱旋門映月閣(2A座)68樓B室</name>
+	<name>凱旋門映月閣(2A座)68樓B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Sun Alliance (hong Kong) Limited&lt;br&gt;股權交易日期: 1-2017&lt;br&gt;市場交易金額: 5200萬&lt;br&gt;潛在避稅金額: 1600萬&lt;br&gt;公司舊董事: 周文傑, 鄭雪鶯&lt;br&gt;公司舊股東:周文傑, 鄭雪鶯&lt;br&gt;公司新董事: 柯新華, 林</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.163325700084,22.3033735001561,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>天賦海灣1期6座5樓C室</name>
+	<name>天賦海灣1期6座5樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Graceful Surplus Limited&lt;br&gt;股權交易日期: 1-2017&lt;br&gt;市場交易金額: 1300萬&lt;br&gt;潛在避稅金額: 400萬&lt;br&gt;公司舊董事: 麥家樑&lt;br&gt;公司舊股東: 麥家樑, Ho Kowk Wing, Yeug Chu Fai, Yu Wai Lung&lt;br&gt;公司新董事: </SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.202432200383,22.4341630002939,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>凱旋門映月閣(2A座)68樓C室</name>
+	<name>凱旋門映月閣(2A座)68樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Gold Vantage International Limited&lt;br&gt;股權交易日期: 2-2017&lt;br&gt;市場交易金額: 5200萬&lt;br&gt;潛在避稅金額: 1600萬&lt;br&gt;公司舊董事: 夏微娜&lt;br&gt;公司舊股東: 夏微娜&lt;br&gt;公司新董事: 趙飛鳳&lt;br&gt;公司新股東: 趙</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.163424900143,22.3034803002384,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>太古城高安閣(32座)29樓H室</name>
+	<name>太古城高安閣(32座)29樓H室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Trump Excel Limited&lt;br&gt;股權交易日期: 2-2017&lt;br&gt;市場交易金額: 1100萬&lt;br&gt;潛在避稅金額: 300萬&lt;br&gt;公司舊董事: 黎藹湄&lt;br&gt;公司舊股東: 黎藹湄&lt;br&gt;公司新董事:丁少賢&lt;br&gt;公司新股東:丁少賢</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.214190400054,22.2872866003706,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>貝沙灣05期08室</name>
+	<name>貝沙灣05期08室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Absolute Holdings Limited&lt;br&gt;股權交易日期: 2-2017&lt;br&gt;市場交易金額: 2.4億&lt;br&gt;潛在避稅金額: 7200萬&lt;br&gt;公司舊董事: 游紹賢, 翁秀英&lt;br&gt;公司舊股東: 游紹賢&lt;br&gt;公司新董事:魏薇&lt;br&gt;公司新股東:Bright</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.132672699646,22.255198199709,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>港景峰1座50樓A室</name>
+	<name>港景峰1座50樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: All Well Group Holdings Limited&lt;br&gt;股權交易日期: 2-2017&lt;br&gt;市場交易金額: 1000萬&lt;br&gt;潛在避稅金額: 300萬&lt;br&gt;公司舊董事: 林贊沖, 林旭輝&lt;br&gt;公司舊股東: 林贊沖, 林旭輝&lt;br&gt;公司新董事:金敏燕&lt;br&gt;公</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.168319699751,22.3020791999706,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>渭州道5號B屋</name>
+	<name>渭州道5號B屋</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Ocean Realm Limited&lt;br&gt;股權交易日期: 2-2017&lt;br&gt;市場交易金額: 1.8億&lt;br&gt;潛在避稅金額:5400萬&lt;br&gt;公司舊董事: 李子良, 陳美紅&lt;br&gt;公司舊股東: 李子良, 陳美紅&lt;br&gt;公司新董事:李岸&lt;br&gt;公司新股東:李</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.18009330014,22.3335529003796,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>香島道33號09室</name>
+	<name>香島道33號09室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Great Sky Resources Limited (BVI)&lt;br&gt;股權交易日期: 3-2017&lt;br&gt;市場交易金額: 4.6億&lt;br&gt;潛在避稅金額:1.38億&lt;br&gt;公司舊董事: 高彥明&lt;br&gt;公司新董事:陸晴</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.187800900075,22.2410214001049,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>擎天半島2期1座32樓A室</name>
+	<name>擎天半島2期1座32樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Glory Health Development Limited&lt;br&gt;股權交易日期: 3-2017&lt;br&gt;市場交易金額: 3200萬&lt;br&gt;潛在避稅金額: 1000萬&lt;br&gt;公司舊董事: 鄭振雄, 黃錦蓮&lt;br&gt;公司新董事: 翟俊齊&lt;br&gt;公司新股東: 翟俊齊</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.161690300041,22.3068299996586,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>凱旋門映月閣(2A座)78D室</name>
+	<name>凱旋門映月閣(2A座)78D室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Sunny Fame Investment Limited&lt;br&gt;股權交易日期: 3-2017&lt;br&gt;市場交易金額: 3400萬&lt;br&gt;潛在避稅金額: 1000萬&lt;br&gt;公司舊董事: 許致賢&lt;br&gt;公司新董事: 翟俊齊</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.163375299664,22.3034181997359,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>凱旋門摩天閣(1座)59樓A室</name>
+	<name>凱旋門摩天閣(1座)59樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Multi-Vantage Limited&lt;br&gt;股權交易日期: 3-2017&lt;br&gt;市場交易金額: 1.68億&lt;br&gt;潛在避稅金額: 5000萬&lt;br&gt;公司舊董事: 李一萍&lt;br&gt;公司舊股東: 李一萍&lt;br&gt;公司新董事: 王宝珊&lt;br&gt;公司新股東: 王宝珊</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.162617600366,22.303051099764,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>天巒一期加倫大道06室</name>
+	<name>天巒一期加倫大道06室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Ever Yield Toprich Limited&lt;br&gt;股權交易日期: 3-2017&lt;br&gt;市場交易金額: 3000萬&lt;br&gt;潛在避稅金額: 900萬&lt;br&gt;公司舊董事: 賀承東&lt;br&gt;公司舊股東: 賀承東&lt;br&gt;公司新董事: 吳偉梅&lt;br&gt;公司新股東: 吳偉梅</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.100804000152,22.5022349998886,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>大潭道19號</name>
+	<name>大潭道19號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Dragon Sun Enterprises Limited&lt;br&gt;股權交易日期: 3-2017&lt;br&gt;市場交易金額: 5億&lt;br&gt;潛在避稅金額: 1.5億&lt;br&gt;公司舊董事: 邱英祥&lt;br&gt;公司舊股東: 邱木城, 邱英祥, 邱英康, 邱美欣, 邱英慶&lt;br&gt;公司新董</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.215900000041,22.2259903996654,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>軒德蓀道4號</name>
+	<name>軒德蓀道4號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Glad &amp; Nice Limited&lt;br&gt;股權交易日期: 3-2017&lt;br&gt;市場交易金額: 6.6億&lt;br&gt;潛在避稅金額: 1.98億&lt;br&gt;公司舊董事: 曾文豪, 黎儒鼎&lt;br&gt;公司舊股東: 曾文豪, Smart Billion Limited (BVI)&lt;br&gt;公司新董事: 簡</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.193236700182,22.2685735002903,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>曉穎花園2樓J室</name>
+	<name>曉穎花園2樓J室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Park Sun Investments Limited&lt;br&gt;股權交易日期: 3-2017&lt;br&gt;市場交易金額: 8200萬&lt;br&gt;潛在避稅金額: 3300萬&lt;br&gt;公司舊董事: Marcovici Philip&lt;br&gt;公司新董事: Shaw Claudia Frederica</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.179150099634,22.2516361000641,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>地利根德閣3座65樓C室</name>
+	<name>地利根德閣3座65樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">現時持有公司: Terra Limited&lt;br&gt;市場交易金額: 1.35億&lt;br&gt;潛在避稅金額: 4100萬&lt;br&gt;股權交易日期: 3-2017&lt;br&gt;公司舊董事: 何啟穎, Charter Series Limited&lt;br&gt;公司舊股東: Luna Sol Corp (Vanuato)&lt;br&gt;公司新董事: 關家</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.152620999663,22.2745530996109,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>西浦17樓C室</name>
+	<name>西浦17樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">現時持有公司: Long Golden Luck Limited&lt;br&gt;市場交易金額: 1700萬&lt;br&gt;潛在避稅金額: 500萬&lt;br&gt;股權交易日期: 4-2017&lt;br&gt;公司舊董事: 陳樹林, 陳佩清&lt;br&gt;公司舊股東: 陳樹林, 陳佩清&lt;br&gt;公司新董事: 朱敏&lt;br&gt;公司</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.145026099668,22.2873801001689,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>天巒一期加倫大道21室</name>
+	<name>天巒一期加倫大道21室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Pacific Gain International Limited&lt;br&gt;股權交易日期: 4-2017&lt;br&gt;市場交易金額: 3400萬&lt;br&gt;潛在避稅金額: 1000萬&lt;br&gt;公司舊董事: 郭敏霞&lt;br&gt;公司新董事: 陳沖</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.100804000152,22.5022349998886,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>銀巒路12號04室</name>
+	<name>銀巒路12號04室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Able King Limited&lt;br&gt;股權交易日期: 4-2017&lt;br&gt;市場交易金額: 1.1億&lt;br&gt;潛在避稅金額: 3300萬&lt;br&gt;公司舊董事: 鄭威濤&lt;br&gt;公司舊股東: 鄭威濤, 林盈盈&lt;br&gt;公司新董事: 朱曉霞&lt;br&gt;公司新股東: Xiao</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.269201399982,22.3287461003138,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>凱旋門摩天閣(1座)13樓B室</name>
+	<name>凱旋門摩天閣(1座)13樓B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: HK8 Limited&lt;br&gt;股權交易日期: 4-2017&lt;br&gt;市場交易金額: 2700萬&lt;br&gt;潛在避稅金額: 800萬&lt;br&gt;公司舊董事: 招國昌, 何善洪&lt;br&gt;公司舊股東: 招國昌, Chiu Wing Shing David, 何善洪&lt;br&gt;公司新董事: 鄭璞</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.162715499664,22.303048700344,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>軒德蓀道4號</name>
+	<name>軒德蓀道4號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">現時持有公司: Glad &amp; Nice Limited&lt;br&gt;市場交易金額: 6億&lt;br&gt;潛在避稅金額: 3億&lt;br&gt;股權交易日期: 4-2017&lt;br&gt;公司舊董事: 簡士民, 周厚文  (代表資本策略)&lt;br&gt;公司新董事: 張松橋</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.193236700182,22.2685735002903,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>貝沙灣4期南灣01座48樓C室</name>
+	<name>貝沙灣4期南灣01座48樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Grace Hill Asia Limited&lt;br&gt;股權交易日期: 5-2017&lt;br&gt;市場交易金額: 3600萬&lt;br&gt;潛在避稅金額: 1110萬&lt;br&gt;公司舊董事: 蕭志興, 陳永華&lt;br&gt;公司舊股東: 蕭志興, 陳永華, 蕭德堅&lt;br&gt;公司新董事: 鄔艾</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.132762000271,22.2531826003475,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>君臨天下1座79樓D室(及80樓(複式))</name>
+	<name>君臨天下1座79樓D室(及80樓(複式))</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Easy Rich Transportation Limited&lt;br&gt;股權交易日期: 5-2017&lt;br&gt;市場交易金額: 6700萬&lt;br&gt;潛在避稅金額: 2000萬&lt;br&gt;公司舊董事: 王文香, Xiao Weinan&lt;br&gt;公司新董事: 余傳明</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.162095999885,22.3030596003761,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>漾日居2期6座10樓A室</name>
+	<name>漾日居2期6座10樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Easy Bright Hong Kong Investment Limited&lt;br&gt;股權交易日期: 5-2017&lt;br&gt;市場交易金額: 2300萬&lt;br&gt;潛在避稅金額: 700萬&lt;br&gt;公司舊董事: 李泰夏, 姜沃陳&lt;br&gt;公司舊股東: 李泰夏, 姜沃陳&lt;br&gt;公司新董事: </SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.163356499722,22.3053550001817,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>怡晴軒12樓</name>
+	<name>怡晴軒12樓</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Golden Smart Investment Limited&lt;br&gt;股權交易日期: 5-2017&lt;br&gt;市場交易金額: 5000萬&lt;br&gt;潛在避稅金額: 1500萬&lt;br&gt;公司舊董事: 孫騰章, 陳佩玲&lt;br&gt;公司新董事: 葉朗, 譚頌恩</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.19233030006,22.2753780000978,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>天璽21座-1區(日鑽)73樓A室</name>
+	<name>天璽21座-1區(日鑽)73樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Golden Lucky (Hong Kong) Limited&lt;br&gt;股權交易日期: 6-2017&lt;br&gt;市場交易金額: 7800萬&lt;br&gt;潛在避稅金額: 2300萬&lt;br&gt;公司舊董事: 林偉明&lt;br&gt;公司舊股東: 林偉明&lt;br&gt;公司新董事: 陳燦宏&lt;br&gt;公司新股東: </SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.161196499723,22.3058087000906,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>牛津道46號</name>
+	<name>牛津道46號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Bermuda Consultants Limited&lt;br&gt;股權交易日期: 6-2017&lt;br&gt;市場交易金額: 6.6億&lt;br&gt;潛在避稅金額: 1.98億&lt;br&gt;公司舊董事: 李德義, 姜賜文, 王樹源, MARK Newton, Link Consultants Limtied (Bahamas)&lt;br&gt;公司舊股東</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.18104029962,22.3337808002698,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>深灣9號6座26樓A室</name>
+	<name>深灣9號6座26樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Jade Home Limited&lt;br&gt;股權交易日期: 6-2017&lt;br&gt;市場交易金額: 7000萬&lt;br&gt;潛在避稅金額: 2100萬&lt;br&gt;公司舊董事: 鄭嬋燕&lt;br&gt;公司舊股東: 鄭嬋燕&lt;br&gt;公司新董事: 劉裕興&lt;br&gt;公司新股東: 劉裕興</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.163897599933,22.2459688003356,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>九龍塘林肯道1號</name>
+	<name>九龍塘林肯道1號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Goodview Assets Limited (BVI)&lt;br&gt;股權交易日期: 6-2017&lt;br&gt;市場交易金額: 3.6億&lt;br&gt;潛在避稅金額: 1.08億&lt;br&gt;公司舊股東: Dragon Huge Development Limited&lt;br&gt;公司新股東: Dragon Huge Development Limited (中國軟實</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.177794399936,22.3278774995885,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>君臨天下1座48樓B室</name>
+	<name>君臨天下1座48樓B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: World Linker Industrial Limited&lt;br&gt;股權交易日期: 7-2017&lt;br&gt;市場交易金額: 5500萬&lt;br&gt;潛在避稅金額: 1700萬&lt;br&gt;公司舊董事: 王安妮, 劉華謨, 劉顯廣&lt;br&gt;公司舊股東: 王安妮, 劉華謨&lt;br&gt;公司新董事: Ch</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.161699000225,22.3030298000272,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>銅鑼灣COHO－剩餘業權</name>
+	<name>銅鑼灣COHO－剩餘業權</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">(3,5-12,15-23,25-29/F;A&amp;B室;Except5B,8A,9A)&lt;br&gt;持有公司: School Investment Properties Limited&lt;br&gt;股權交易日期: 7-2017&lt;br&gt;市場交易金額: 4.55億&lt;br&gt;潛在避稅金額: 1.37億&lt;br&gt;公司舊董事: 陳慧苓, 鄺紹民&lt;br&gt;公司新董事:</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.19138370033,22.2785530003108,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>軒德蓀道11號</name>
+	<name>軒德蓀道11號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Joyous Era Limited (BVI)&lt;br&gt;股權交易日期: 7-2017&lt;br&gt;市場交易金額: 6億&lt;br&gt;潛在避稅金額: 2.7億&lt;br&gt;公司舊董事: Wong Chi Keung and Related (代表資本策略）&lt;br&gt;公司新董事: 艾青</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.192859800326,22.2690618997631,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>貝沙灣05期27室</name>
+	<name>貝沙灣05期27室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Winning Base Limited&lt;br&gt;股權交易日期: 7-2017&lt;br&gt;市場交易金額: 2.5億&lt;br&gt;潛在避稅金額: 7500萬&lt;br&gt;公司舊董事: 徐意, 黃光苗&lt;br&gt;公司舊股東: 徐意&lt;br&gt;公司新董事: 連卓釗&lt;br&gt;公司新股東: Great Deal</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.132400399623,22.2550596998221,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>香港赤柱海天徑15號D室</name>
+	<name>香港赤柱海天徑15號D室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Sky South Investments Limited&lt;br&gt;股權交易日期: 7-2017&lt;br&gt;市場交易金額: 1.45億&lt;br&gt;潛在避稅金額: 4400萬&lt;br&gt;公司舊董事: 陳小雲&lt;br&gt;公司舊股東: ACE Belle Limited (BVI)&lt;br&gt;公司新董事: 邢彧&lt;br&gt;公司新</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.202789299573,22.219244699967,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>陽明山莊山景園3座12樓21室</name>
+	<name>陽明山莊山景園3座12樓21室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Profit Triumph Limited&lt;br&gt;股權交易日期: 7-2017&lt;br&gt;市場交易金額: 2400萬&lt;br&gt;潛在避稅金額: 700萬&lt;br&gt;公司舊董事: 趙汝淇&lt;br&gt;公司舊股東: 趙汝淇&lt;br&gt;公司新董事: 申虹, Crown Power International Holdings</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.200239799948,22.2583326002397,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>曉廬44樓A室</name>
+	<name>曉廬44樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Pacific Cheer Development Limited&lt;br&gt;股權交易日期: 7-2017&lt;br&gt;市場交易金額: 1.45億&lt;br&gt;潛在避稅金額: 4400萬&lt;br&gt;公司舊董事: 呂岳枝, 李耀湘, 黃寶華&lt;br&gt;公司舊股東: 李耀湘, 黃寶華, Rainbow Vast Limit</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.184192900279,22.2650006999989,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>懿峰19樓A室</name>
+	<name>懿峰19樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: World King Holdings Limited&lt;br&gt;股權交易日期: 7-2017&lt;br&gt;市場交易金額: 4400萬&lt;br&gt;潛在避稅金額: 1300萬&lt;br&gt;公司舊董事: 廖舒婷, Bruck Michael&lt;br&gt;公司舊股東: 廖舒婷, Bruck Michael&lt;br&gt;公司新董事: 黃毅</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.150885800385,22.2810769997003,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>達之路9號</name>
+	<name>達之路9號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: First Realty Investment Company Limited&lt;br&gt;股權交易日期: 8-2017&lt;br&gt;市場交易金額: 5億&lt;br&gt;潛在避稅金額: 1.5億&lt;br&gt;公司舊董事: 許威忍&lt;br&gt;公司新董事: 馮長革, 馮少侖</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.17488970016,22.3306959998986,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>逸瓏2座8樓A室</name>
+	<name>逸瓏2座8樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Million Art International Enterprise Limited&lt;br&gt;股權交易日期: 8-2017&lt;br&gt;市場交易金額: 6700萬&lt;br&gt;潛在避稅金額: 2700萬&lt;br&gt;公司舊董事: 李德良&lt;br&gt;公司舊股東: 李德良&lt;br&gt;公司新董事: 李雪&lt;br&gt;公司新</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.181980900402,22.3400799998896,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>深水灣道75號</name>
+	<name>深水灣道75號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Propway Limited&lt;br&gt;股權交易日期: 8-2017&lt;br&gt;市場交易金額: 25億&lt;br&gt;潛在避稅金額: 7.5億&lt;br&gt;公司舊董事: 鄭小燕, Millerson Services Limited (BVI)&lt;br&gt;公司舊股東: Golden Valley Resources Limited (BVI), Millerson</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.185712999759,22.2474818003794,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>畢架山一號2期6座2樓B室</name>
+	<name>畢架山一號2期6座2樓B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Ka Yee's Co., Limited&lt;br&gt;股權交易日期: 8-2017&lt;br&gt;市場交易金額: 3200萬&lt;br&gt;潛在避稅金額: 1000萬&lt;br&gt;公司舊董事: 陳家輝, 陳美儀&lt;br&gt;公司新董事: 陳瑜</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.175006400299,22.3412289999452,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>SPYGLASSHILL地下D室((D1室))</name>
+	<name>SPYGLASSHILL地下D室((D1室))</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Pacific Regency Limited&lt;br&gt;股權交易日期: 8-2017&lt;br&gt;市場交易金額: 2700萬&lt;br&gt;潛在避稅金額: 800萬&lt;br&gt;公司舊董事: 林偉康, 歐陽美雪&lt;br&gt;公司舊股東: 林偉康&lt;br&gt;公司新董事: 許漢卿&lt;br&gt;公司新股東:</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.200272699847,22.2344443998461,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>禮頓山6座9樓A室</name>
+	<name>禮頓山6座9樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: New Smart Investment Limited&lt;br&gt;股權交易日期: 9-2017&lt;br&gt;市場交易金額: 7000萬&lt;br&gt;潛在避稅金額: 2100萬&lt;br&gt;公司舊董事: 陳麗映&lt;br&gt;公司舊股東: 陳麗映&lt;br&gt;公司新董事: Lee Young Taik&lt;br&gt;公司新股東:</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.18413389983,22.2761107001946,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>軒德蓀道12號</name>
+	<name>軒德蓀道12號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Flourish Time Limited (BVI)&lt;br&gt;股權交易日期: 9-2017&lt;br&gt;市場交易金額: 6億&lt;br&gt;潛在避稅金額: 2.7億&lt;br&gt;公司舊董事: Wong Chi Keung and Related (代表資本策略&lt;br&gt;公司新董事: 戴永革</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.193097400227,22.2689877997414,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>窩打老道147號屋地</name>
+	<name>窩打老道147號屋地</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Idealtime Holdings Limited&lt;br&gt;股權交易日期: 9-2017&lt;br&gt;市場交易金額: 3億&lt;br&gt;潛在避稅金額: 9000萬&lt;br&gt;公司舊董事: 余劍秋, 張明華, Investment Profiles Limited (BVI)&lt;br&gt;公司舊股東: Investment Profiles Limit</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.178792899833,22.3379432998073,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>浪琴園1座28B室</name>
+	<name>浪琴園1座28B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Wisecal Limited&lt;br&gt;股權交易日期: 9-2017&lt;br&gt;市場交易金額: 2000萬&lt;br&gt;潛在避稅金額: 600萬&lt;br&gt;公司舊董事: 謝兆凱, 王彥寧&lt;br&gt;公司舊股東: 王彥寧, 謝芝琳&lt;br&gt;公司新董事: Koon Ho Ming Peter Douglas&lt;b</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.217989800294,22.2292790003405,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>淺水灣麗景花園6座5號6號洋房</name>
+	<name>淺水灣麗景花園6座5號6號洋房</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Soundrise Pacific Limited&lt;br&gt;股權交易日期: 10-2017&lt;br&gt;市場交易金額: 2.6億&lt;br&gt;潛在避稅金額: 7800萬&lt;br&gt;公司舊董事: 鄭東漢&lt;br&gt;公司新董事: 李志嶸</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.192122100222,22.2384518000526,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>凱旋門觀星閣(2座)5樓C室</name>
+	<name>凱旋門觀星閣(2座)5樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Jet Success Industrial Limited&lt;br&gt;股權交易日期: 10-2017&lt;br&gt;市場交易金額: 1500萬&lt;br&gt;潛在避稅金額: 400萬&lt;br&gt;公司舊董事: 陳子康&lt;br&gt;公司舊股東: Zenhank Group Limited&lt;br&gt;公司新董事: 何建阳&lt;br&gt;公司新</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.163297800208,22.303764099682,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>春暉8號29樓A室</name>
+	<name>春暉8號29樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Antom Investments Limited&lt;br&gt;股權交易日期: 10-2017&lt;br&gt;市場交易金額: 5100萬&lt;br&gt;潛在避稅金額: 1500萬&lt;br&gt;公司舊董事: 凌美秋, 盧定照&lt;br&gt;公司舊股東: 盧偉明, 盧偉泰, 盧定照&lt;br&gt;公司新董事: 高</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.19453709959,22.2752561997584,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>太子道西279號-明寓</name>
+	<name>太子道西279號-明寓</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Able Business Development Limited&lt;br&gt;股權交易日期: 10-2017&lt;br&gt;市場交易金額: 8.8億&lt;br&gt;潛在避稅金額: 2.64億&lt;br&gt;公司舊董事: 歐韶, 史梅, 薛紅英&lt;br&gt;公司新董事: 陳孔明, 劉志華, 袁英偉, 關永和</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.179991900107,22.3257033997486,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>萃峰50樓A,B室</name>
+	<name>萃峰50樓A,B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Well Dragon Asia Investment Limited&lt;br&gt;股權交易日期: 10-2017&lt;br&gt;市場交易金額: 7200萬&lt;br&gt;潛在避稅金額: 2200萬&lt;br&gt;公司舊董事: Bennett Peter William&lt;br&gt;公司舊股東: Bennett Peter William&lt;br&gt;公司新董事: 孔</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.176799000126,22.276450700039,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>禮頓山9座19樓C室</name>
+	<name>禮頓山9座19樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Glorious Creation Limited&lt;br&gt;股權交易日期: 10-2017&lt;br&gt;市場交易金額: 4200萬&lt;br&gt;潛在避稅金額: 1300萬&lt;br&gt;公司舊董事: 謝玫莉, 黃家達&lt;br&gt;公司新董事: 周港成</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.183401499785,22.2765565996486,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>德雲道6號</name>
+	<name>德雲道6號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Regal Great Limited&lt;br&gt;股權交易日期: 10-2017&lt;br&gt;市場交易金額: 3億&lt;br&gt;潛在避稅金額: 9000萬&lt;br&gt;公司舊董事: KERR Keith Graham, 黃翊律, Hills Link Group Limited (BVI)&lt;br&gt;公司新董事: 馬亞木, 馬僑生, 馬</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.176981599776,22.3391446997176,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>御金‧國峰3座36樓A室</name>
+	<name>御金‧國峰3座36樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Easy (HK) Holdings Limited&lt;br&gt;股權交易日期: 10-2017&lt;br&gt;市場交易金額: 5800萬&lt;br&gt;潛在避稅金額: 1700萬&lt;br&gt;公司舊董事: 陳志強, 李美蘭&lt;br&gt;公司新董事: 蘇鎮西</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.165536100062,22.3094289000433,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>君臨天下3座55樓C室</name>
+	<name>君臨天下3座55樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Architecture Grandeur Environment Design Limited&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 6000萬&lt;br&gt;潛在避稅金額: 1800萬&lt;br&gt;公司舊董事: 譚廣發, 隋立平&lt;br&gt;公司新董事: 林斌</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.161259999834,22.3031040997584,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>君臨天下2座43樓C室</name>
+	<name>君臨天下2座43樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Key-tech Microelectronics Limited&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 6000萬&lt;br&gt;潛在避稅金額: 1800萬&lt;br&gt;公司舊董事: 張春薇&lt;br&gt;公司新董事: Ernesto Siao Tamantiong, Susana King Tamantiong, Earl Ericson</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.161551000087,22.3030406003273,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>天巒一期瑞奇大道31室</name>
+	<name>天巒一期瑞奇大道31室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Enrich Land Limited&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 2000萬&lt;br&gt;潛在避稅金額: 600萬&lt;br&gt;公司舊董事: 陳多麗&lt;br&gt;公司新董事: 庞玉芬, 吳海山</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.100251500319,22.5028891998855,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>貝沙灣1期8座26樓B室</name>
+	<name>貝沙灣1期8座26樓B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: More Profit Investment Limtied&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 5600萬&lt;br&gt;潛在避稅金額: 1700萬&lt;br&gt;公司舊董事: 陳善儀, 陳嘉塋, 陳浩然, 陳浩昇&lt;br&gt;公司舊股東: 陳善儀, 陳嘉塋, 陳浩然,</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.132428600434,22.2575058999196,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>海天峰2座17樓B室</name>
+	<name>海天峰2座17樓B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Excel Profit Holdings LImited&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 2800萬&lt;br&gt;潛在避稅金額: 800萬&lt;br&gt;公司舊董事: 何永明&lt;br&gt;公司新董事: 袁圓</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.19641809993,22.2861236997672,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>昇悅居2座53樓A室</name>
+	<name>昇悅居2座53樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Hero Trend Limited&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 800萬&lt;br&gt;潛在避稅金額: 300萬&lt;br&gt;公司舊董事: 王琛&lt;br&gt;公司舊股東: 王琛&lt;br&gt;公司新董事: 楊斌, 侯燕妮&lt;br&gt;公司新股東: 侯燕妮</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.148887400119,22.3341757003388,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>蔚然20B室</name>
+	<name>蔚然20B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Gold Target Development Limited&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 4900萬&lt;br&gt;潛在避稅金額: 1500萬&lt;br&gt;公司舊董事: 田淑真&lt;br&gt;公司新董事: 柯雪芬</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.149687700223,22.2821889002463,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>漾日居2期7座42樓E室(及43樓(複式))</name>
+	<name>漾日居2期7座42樓E室(及43樓(複式))</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Golden Step International Holdings Limited&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 6700萬&lt;br&gt;潛在避稅金額: 2000萬&lt;br&gt;公司舊董事: 黃秀芳&lt;br&gt;公司新董事: 張締江</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.163022400098,22.3054719996396,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>一號銀海8座8樓C室</name>
+	<name>一號銀海8座8樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Dragon (pdl) Co.Limited&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 1500萬&lt;br&gt;潛在避稅金額: 500萬&lt;br&gt;公司舊董事: 何佩兒, 連文勝&lt;br&gt;公司舊股東: 何佩兒, 連文勝&lt;br&gt;公司新董事: 項瑞海&lt;br&gt;公司</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.156391099553,22.3177380997022,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>寶雲道12C號(B屋)</name>
+	<name>寶雲道12C號(B屋)</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Constant Global Investment Limited&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 4億&lt;br&gt;潛在避稅金額: 1.2億&lt;br&gt;公司舊董事: 邱應泉, 邱應傑, 邱冰欣, 邱澤銘&lt;br&gt;公司舊股東: Heng Ngai International Holdings</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.167230000193,22.2739941997852,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>海灣園18號洋房</name>
+	<name>海灣園18號洋房</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Darwin Holdings Limited&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 6400萬&lt;br&gt;潛在避稅金額: 1900萬&lt;br&gt;公司舊董事: 梁志天&lt;br&gt;公司舊股東: 梁志天&lt;br&gt;公司新董事: Diane Brough &amp; Paul Jeremy Brough&lt;br&gt;公</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.21160430037,22.2214144001506,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>山頂道86至88號及90號</name>
+	<name>山頂道86至88號及90號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Carino Ford Limited (山頂道86-88號), Premier Zone Limited (BVI) (山頂道90號)&lt;br&gt;股權交易日期: 11-2017&lt;br&gt;市場交易金額: 20億&lt;br&gt;潛在避稅金額: 6億&lt;br&gt;公司舊董事: 山頂道86-88號 (周偉淦, 徐建東, 譚理</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.155105899639,22.2646787996977,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>漾日居2期5座38樓F室(及39樓(複式))</name>
+	<name>漾日居2期5座38樓F室(及39樓(複式))</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Harbour Enterprise Limited&lt;br&gt;股權交易日期: 12-2017&lt;br&gt;市場交易金額: 6700萬&lt;br&gt;潛在避稅金額: 2000萬&lt;br&gt;公司舊董事: Lau Ka Kwong Laurence&lt;br&gt;公司新董事: 孫袁, 朱晴華</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.163240999733,22.3049384997,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>曼克頓山2座33樓A室</name>
+	<name>曼克頓山2座33樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Metro Concept Engineering Limited&lt;br&gt;股權交易日期: 12-2017&lt;br&gt;市場交易金額: 3600萬&lt;br&gt;潛在避稅金額: 1100萬&lt;br&gt;公司舊董事: 馬美琦, 陳景霞, 梁國威&lt;br&gt;公司新董事: 邵洪利</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.14233119963,22.3343233999495,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>自由道9至11A號，以及13號(*29單位)</name>
+	<name>自由道9至11A號，以及13號(*29單位)</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Max Bright Concept Limited, China Step Corporation Limited, Royal Active Limited, New Advantage Limited, Fortress Ridge (BVI) Limited&lt;br&gt;股權交易日期: 12-2017&lt;br&gt;市場交易金額: 6.8億&lt;br&gt;潛在避稅金額: 2.04億&lt;br&gt;公司舊</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.17450000021,22.3189510003955,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>港景峰1座45樓B室</name>
+	<name>港景峰1座45樓B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: First Global Investments Limited&lt;br&gt;股權交易日期: 12-2017&lt;br&gt;市場交易金額: 2300萬&lt;br&gt;潛在避稅金額: 700萬&lt;br&gt;公司舊董事: 黃育佳&lt;br&gt;公司新董事: 彭敏</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.168319699751,22.3020791999706,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>帝景園1座21樓A室</name>
+	<name>帝景園1座21樓A室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Anson (Hong Kong) Limited&lt;br&gt;股權交易日期: 12-2017&lt;br&gt;市場交易金額: 1.05億&lt;br&gt;潛在避稅金額: 3200萬&lt;br&gt;公司舊董事: 馮順雄, 馮少雲&lt;br&gt;公司舊股東: 馮順雄, 李淑美&lt;br&gt;公司新董事: 郭少明, 羅桂</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.152620999663,22.2761228001905,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>天璽20座2區20樓E室及29樓E室</name>
+	<name>天璽20座2區20樓E室及29樓E室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Most Smart Corporation Limited&lt;br&gt;股權交易日期: 12-2017&lt;br&gt;市場交易金額: 4600萬&lt;br&gt;潛在避稅金額: 1400萬&lt;br&gt;公司舊董事: 蔡文胜&lt;br&gt;公司新董事: Chan Wai Man Raymond, Choy Meage, Li Kit Yee Jenny</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.160893400061,22.30533719972,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>黃埔花園09期10座百合苑15樓E室及F室</name>
+	<name>黃埔花園09期10座百合苑15樓E室及F室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Kindway Corporation Limited&lt;br&gt;股權交易日期: 12-2017&lt;br&gt;市場交易金額: 3800萬&lt;br&gt;潛在避稅金額: 1100萬&lt;br&gt;公司舊董事: 陳素華, 曾祥斌&lt;br&gt;公司舊股東: 陳素華, 曾祥斌&lt;br&gt;公司新董事: 趙慧貞, 關</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.189651000165,22.3033050000564,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>歌賦山道28號3室</name>
+	<name>歌賦山道28號3室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Smart Richest International Limited&lt;br&gt;股權交易日期: 12-2017&lt;br&gt;市場交易金額: 11億&lt;br&gt;潛在避稅金額: 3.3億&lt;br&gt;公司舊董事: 吳錦青, 黃海燕&lt;br&gt;公司新董事: 劉珍伲, 袁建基</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.156150699603,22.2672766998147,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>布力徑10號B室</name>
+	<name>布力徑10號B室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Better VIsion Limited&lt;br&gt;股權交易日期: 12-2017&lt;br&gt;市場交易金額: 7億&lt;br&gt;潛在避稅金額: 2.1億&lt;br&gt;公司舊董事: Thomas Andrew Corkhill, Trendline Limited, Seraph Limited&lt;br&gt;公司新董事: Elman Lim</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.191439200044,22.2588340996746,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>紅山半島C區松柏徑118座</name>
+	<name>紅山半島C區松柏徑118座</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: King Leader Development Limited&lt;br&gt;股權交易日期: 1-2018&lt;br&gt;市場交易金額: 1.15億&lt;br&gt;潛在避稅金額: 3500萬&lt;br&gt;公司舊董事: Gave Louis-Vincent, Tam Tsz Kwan&lt;br&gt;公司新董事: Tai Wee Kuang</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.222427999718,22.2360199998692,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>星悅海灣(Grand Riviera)</name>
+	<name>星悅海灣(Grand Riviera)</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Discreet Limited&lt;br&gt;股權交易日期: 1-2018&lt;br&gt;市場交易金額: 10億&lt;br&gt;潛在避稅金額: 3億&lt;br&gt;公司舊董事: 關秩安, 關秀琼, 官有權&lt;br&gt;公司新董事: 杨振业, 龙学勤</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.075839600115,22.3686949002629,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>御皇庭1座12樓F室</name>
+	<name>御皇庭1座12樓F室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Join Team (H.K) Limited&lt;br&gt;股權交易日期: 1-2018&lt;br&gt;市場交易金額: 600萬&lt;br&gt;潛在避稅金額: 200萬&lt;br&gt;公司舊董事: 劉麗華, 楊海生&lt;br&gt;公司新董事: 朱玉霞</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.127167500192,22.4950274999096,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>麗港城4期12座27樓A,B室(及天台)</name>
+	<name>麗港城4期12座27樓A,B室(及天台)</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Innok Industrial Limited&lt;br&gt;股權交易日期: 1-2018&lt;br&gt;市場交易金額: 2400萬&lt;br&gt;潛在避稅金額: 700萬&lt;br&gt;公司舊董事: 洪清琅&lt;br&gt;公司新董事: 陈国良, 蔡东兴</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.225492000439,22.3059302003776,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>名鑄48樓F室</name>
+	<name>名鑄48樓F室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Global Eagle Holdings Limited&lt;br&gt;股權交易日期: 1-2018&lt;br&gt;市場交易金額: 4200萬&lt;br&gt;潛在避稅金額: 1300萬&lt;br&gt;公司舊董事: 孫力&lt;br&gt;公司新董事: 陸麗麗</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.17388900029,22.2974999998878,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>司徒拔道48號C號洋房</name>
+	<name>司徒拔道48號C號洋房</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Eastern Million Limited&lt;br&gt;股權交易日期: 1-2018&lt;br&gt;市場交易金額: 6.2億&lt;br&gt;潛在避稅金額: 1.86億&lt;br&gt;公司舊董事: 張松僑, 袁永誠&lt;br&gt;公司新董事: 林安娜</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.176173799638,22.2688702002928,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>九龍塘紫藤路12號</name>
+	<name>九龍塘紫藤路12號</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Richest Logistics Limited&lt;br&gt;股權交易日期: 2-2018&lt;br&gt;市場交易金額: 4億&lt;br&gt;潛在避稅金額: 1.2億&lt;br&gt;公司舊董事: 孫燕華, 孫少文&lt;br&gt;公司新董事: 陳玲玲</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.173983699789,22.3319500997983,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>君臨天下2座69,70D室,3座70F室</name>
+	<name>君臨天下2座69,70D室,3座70F室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Power Faith Company Ltd&lt;br&gt;股權交易日期: 2-2018&lt;br&gt;市場交易金額: 1.35億&lt;br&gt;潛在避稅金額: 4100萬&lt;br&gt;公司舊董事: 陳美重, 葉泰海&lt;br&gt;公司舊股東: 陳美重, 葉泰海&lt;br&gt;公司新董事: 黃爱华, 吴靜靜&lt;b</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.161846100251,22.3030182999299,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>壹號雲頂3期頂峰別墅5室</name>
+	<name>壹號雲頂3期頂峰別墅5室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Creative Group International Limited&lt;br&gt;股權交易日期: 2-2018&lt;br&gt;市場交易金額: 7000萬&lt;br&gt;潛在避稅金額: 2100萬&lt;br&gt;公司舊董事: 黃碧茜, 劉國生&lt;br&gt;公司新董事: 劉貴花, 王利輝</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.178476400002,22.3803740000603,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>貝沙灣4期南灣9座46樓A室(及47樓A-C室(複式))</name>
+	<name>貝沙灣4期南灣9座46樓A室(及47樓A-C室(複式))</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Henson (Hong Kong) Limited&lt;br&gt;股權交易日期: 2-2018&lt;br&gt;市場交易金額: 1.8億&lt;br&gt;潛在避稅金額: 5400萬&lt;br&gt;公司舊董事: 范瑋, 寧一海&lt;br&gt;公司新董事: 孔劍威</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.132580100409,22.2532262002226,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>淺水灣道56號洋房42</name>
+	<name>淺水灣道56號洋房42</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Saintfield Limited&lt;br&gt;股權交易日期: 3-2018&lt;br&gt;市場交易金額: 2億&lt;br&gt;潛在避稅金額: 6000萬&lt;br&gt;公司舊董事: 余永焯, 余黃映彰&lt;br&gt;公司新董事: 余金鳳, 容祖兒</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.192889000065,22.237158000041,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>天鑄01期06座28樓C室</name>
+	<name>天鑄01期06座28樓C室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Quality Spirit Limited&lt;br&gt;股權交易日期: 4-2018&lt;br&gt;市場交易金額: 1.13億&lt;br&gt;潛在避稅金額: 3400萬&lt;br&gt;公司舊董事: 張穗民&lt;br&gt;公司新董事: 王丁炎</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.182052300297,22.3118987002552,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>淺水灣道73號洋房</name>
+	<name>淺水灣道73號洋房</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: William Artists Investment Limited (BVI)&lt;br&gt;股權交易日期: 4-2018&lt;br&gt;市場交易金額: 16億&lt;br&gt;潛在避稅金額: 4.8億&lt;br&gt;公司舊董事: 徐振榮, 沃月利&lt;br&gt;公司新董事: 孫粗洪</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.190513799656,22.2380661002533,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>天巒二期萊茵河大道22室</name>
+	<name>天巒二期萊茵河大道22室</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Golden Style Holdings Limited&lt;br&gt;股權交易日期: 4-2018&lt;br&gt;市場交易金額: 2900萬&lt;br&gt;潛在避稅金額: 900萬&lt;br&gt;公司舊董事: 陳文輝&lt;br&gt;公司新董事: 陳擎天</SimpleData>
 	</SchemaData></ExtendedData>
       <Point><coordinates>114.102192899786,22.5004897996625,0</coordinates></Point>
   </Placemark>
   <Placemark>
-	<name>山頂道52號22號洋房</name>
+	<name>山頂道52號22號洋房</name><styleUrl>#customStyle</styleUrl>
 	<ExtendedData><SchemaData schemaUrl="#_「股權轉讓」註冊避稅研究個案_2018____Cases_of_residential_property_tax_avoidance_by_share_transfer__2018__">
 		<SimpleData name="PopupInfo">持有公司: Wearbest Shirts Manufacturing Company Limited&lt;br&gt;股權交易日期: 5-2018&lt;br&gt;市場交易金額: 4.5億&lt;br&gt;潛在避稅金額: 1.35億&lt;br&gt;公司舊董事: 金元章, 馬桂承&lt;br&gt;公司新董事: 龐維新</SimpleData>
 	</SchemaData></ExtendedData>
