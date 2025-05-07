@@ -26,7 +26,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-006064">
@@ -62,7 +62,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-0288D1">
@@ -98,7 +98,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-097138">
@@ -134,7 +134,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-1A237E">
@@ -170,7 +170,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-4E342E">
@@ -206,7 +206,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-558B2F">
@@ -242,7 +242,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-673AB7">
@@ -278,7 +278,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-7CB342">
@@ -314,7 +314,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-AFB42B">
@@ -350,7 +350,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-C2185B">
@@ -386,7 +386,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-E65100">
@@ -422,7 +422,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-FF5252">
@@ -458,7 +458,7 @@
         <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
-        <scale>1</scale>
+        <scale>0</scale>
       </LabelStyle>
     </Style>
     <StyleMap id="icon-1899-FFD600">
