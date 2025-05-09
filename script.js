@@ -762,18 +762,20 @@ class MapManager {
 
 
 	addLayerToMap() {
-	    const inputElement = document.createElement('input');
-	    inputElement.type = 'file';
-	    inputElement.accept = '.kml,.geojson,.json,.zip'; // Added support for GeoJSON, JSON, and Shapefiles (as ZIP)
-	    inputElement.onchange = this.handleFileUpload.bind(this);
-	    inputElement.click();
+		const inputElement = document.createElement('input');
+		inputElement.type = 'file';
+		inputElement.accept = '.kml'; // Changed from .geojson,.json
+		inputElement.onchange = this.handleFileUpload.bind(this);
+		inputElement.click();
 	}
+
 
 
 	processKML(content) {
 		try {
 			const features = new ol.format.KML({
-				extractStyles: true  // Extract styles from KML
+				extractStyles: true,  // Extract styles from KML
+				showPointNames: false
 			}).readFeatures(content, {
 				featureProjection: 'EPSG:3857'
 			});
@@ -804,179 +806,76 @@ class MapManager {
 
 
 	handleFileUpload(event) {
-	    const file = event.target.files[0];
-	    if (!file) return;
-	    
-	    this.currentFileName = file.name;
-	    const fileExtension = file.name.split('.').pop().toLowerCase();
-	    
-	    const reader = new FileReader();
-	    
-	    if (fileExtension === 'zip') {
-	        // Handle Shapefile (ZIP)
-	        reader.onload = (e) => this.processShapefile(e.target.result);
-	        reader.readAsArrayBuffer(file);
-	    } else if (fileExtension === 'kml') {
-	        // Handle KML
-	        reader.onload = (e) => this.processKML(e.target.result);
-	        reader.readAsText(file);
-	    } else if (fileExtension === 'geojson' || fileExtension === 'json') {
-	        // Handle GeoJSON/JSON
-	        reader.onload = (e) => this.processGeoJSON(e.target.result);
-	        reader.readAsText(file);
-	    } else {
-	        alert('Unsupported file format. Please upload a KML, GeoJSON, JSON, or Shapefile (ZIP).');
-	    }
-	    
-	    reader.onerror = (error) => {
-	        console.error('File reading error: ', error);
-	        alert('Error reading file.');
-	    };
+		const file = event.target.files[0];
+		if (!file) return;
+
+		this.currentFileName = file.name;
+
+		const reader = new FileReader();
+		reader.onload = (e) => this.processKML(e.target.result);
+		reader.onerror = (error) => {
+			console.error('File reading error: ', error);
+			alert('Error reading file.');
+		};
+		reader.readAsText(file);
 	}
 
 
-	processGeoJSON(content) {
-	    try {
-	        const geojsonData = JSON.parse(content);
-	        
-	        // Create features from GeoJSON
-	        const features = new ol.format.GeoJSON().readFeatures(geojsonData, {
-	            featureProjection: 'EPSG:3857'
-	        });
-	        
-	        const vectorSource = new ol.source.Vector({ features });
-	        const vectorLayer = new ol.layer.Vector({
-	            source: vectorSource,
-	            style: this.createStyleFunction()
-	        });
-	        
-	        const fileName = this.currentFileName || 'uploaded-layer.geojson';
-	        this.map.addLayer(vectorLayer);
-	        this.activeLayers.set(fileName, {
-	            layer: vectorLayer,
-	            button: null
-	        });
-	        
-	        const legendContent = document.querySelector('.legend-content');
-	        if (legendContent) {
-	            this.updateLegend(legendContent);
-	        }
-	        
-	        this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
-	    } catch (error) {
-	        console.error('GeoJSON processing error:', error);
-	        alert('Error processing GeoJSON file. Please check the file format.');
-	    }
-	}
-
-	processShapefile(content) {
-	    try {
-	        // Use shp.js to parse the shapefile
-	        shp(content).then(geojson => {
-	            // Create features from the parsed GeoJSON
-	            const features = new ol.format.GeoJSON().readFeatures(geojson, {
-	                featureProjection: 'EPSG:3857'
-	            });
-	            
-	            const vectorSource = new ol.source.Vector({ features });
-	            const vectorLayer = new ol.layer.Vector({
-	                source: vectorSource,
-	                style: this.createStyleFunction()
-	            });
-	            
-	            const fileName = this.currentFileName || 'uploaded-shapefile.zip';
-	            this.map.addLayer(vectorLayer);
-	            this.activeLayers.set(fileName, {
-	                layer: vectorLayer,
-	                button: null
-	            });
-	            
-	            const legendContent = document.querySelector('.legend-content');
-	            if (legendContent) {
-	                this.updateLegend(legendContent);
-	            }
-	            
-	            this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
-	        }).catch(error => {
-	            console.error('Shapefile processing error:', error);
-	            alert('Error processing Shapefile. Please ensure it contains the required .shp, .dbf, and .prj files.');
-	        });
-	    } catch (error) {
-	        console.error('Shapefile processing error:', error);
-	        alert('Error processing Shapefile. Please check the file format.');
-	    }
-	}
-		
 	createStyleFunction() {
 	  return (feature) => {
-	    const kmlStyleFunc = feature.getStyleFunction();
-	
-	    if (kmlStyleFunc) {
-	      // Get the styles extracted from the KML (an array or a single style)
-	      let kmlStyles = kmlStyleFunc(feature);
-	      let stylesArray = Array.isArray(kmlStyles) ? kmlStyles : [kmlStyles];
-	      
-	      // Clone and remove any text style so no label is rendered
-	      let updatedStyles = stylesArray.map(s => {
-	        let style = s.clone();
-	        style.setText(null); // Remove the text style entirely.
-	        return style;
-	      });
-	
-	      // If it’s a point feature and uses an Icon style, replace it with a circle.
-	      if (feature.getGeometry().getType() === 'Point') {
-	        const primaryStyle = updatedStyles[0];
-	        const image = primaryStyle.getImage();
-	        if (image && image instanceof ol.style.Icon) {
-	          let color = '#3399CC'; // Default color.
-	          const properties = feature.getProperties();
-	          if (
-	            properties.Style &&
-	            properties.Style.IconStyle &&
-	            properties.Style.IconStyle.color
-	          ) {
-	            // Convert KML color (AABBGGRR) to CSS rgba.
-	            const kmlColor = properties.Style.IconStyle.color;
-	            if (kmlColor && kmlColor.length === 8) {
-	              const a = parseInt(kmlColor.substr(0, 2), 16) / 255;
-	              const b = parseInt(kmlColor.substr(2, 2), 16);
-	              const g = parseInt(kmlColor.substr(4, 2), 16);
-	              const r = parseInt(kmlColor.substr(6, 2), 16);
-	              color = `rgba(${r}, ${g}, ${b}, ${a})`;
-	            }
-	          }
-	          // Return a new style with a circle that has no label.
-	          return new ol.style.Style({
-	            image: new ol.style.Circle({
-	              radius: 5,
-	              fill: new ol.style.Fill({ color: color }),
-	              stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
-	            }),
-	            text: null // Ensure no label is drawn.
-	          });
-	        }
-	      }
-	      return updatedStyles.length === 1 ? updatedStyles[0] : updatedStyles;
-	    }
-	
-	    // Fallback default style for point features without KML style.
-	    if (feature.getGeometry().getType() === 'Point') {
-	      return new ol.style.Style({
-	        image: new ol.style.Circle({
-	          radius: 5,
-	          fill: new ol.style.Fill({ color: '#3399CC' }),
-	          stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
-	        }),
-	        text: null
-	      });
-	    }
-	
-	    // Fallback default style for lines and polygons.
-	    return new ol.style.Style({
-	      fill: new ol.style.Fill({ color: 'rgba(51, 153, 204, 0.7)' }),
-	      stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
-	      text: null
-	    });
+		const kmlStyleFunc = feature.getStyleFunction();
+		if (kmlStyleFunc) {
+		  // Get the styles extracted from the KML (an array or a single style)
+		  let kmlStyles = kmlStyleFunc(feature);
+		  
+		  // Handle null or undefined styles
+		  if (!kmlStyles) return null;
+		  
+		  let stylesArray = Array.isArray(kmlStyles) ? kmlStyles : [kmlStyles];
+		  
+		  // Clone and remove any text style so no label is rendered
+		  let updatedStyles = stylesArray.map(s => {
+			if (!s) return null;
+			let style = s.clone();
+			style.setText(null); // Remove the text style entirely
+			return style;
+		  }).filter(s => s !== null);
+		  
+		  // If no valid styles remain, return a default style
+		  if (updatedStyles.length === 0) {
+			return new ol.style.Style({
+			  fill: new ol.style.Fill({ color: 'rgba(51, 153, 204, 0.7)' }),
+			  stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
+			  text: null
+			});
+		  }
+		  
+		  return updatedStyles.length === 1 ? updatedStyles[0] : updatedStyles;
+		}
+		
+		// Default styles for different geometry types
+		const geomType = feature.getGeometry().getType();
+		if (geomType === 'Point') {
+		  return new ol.style.Style({
+			image: new ol.style.Circle({
+			  radius: 5,
+			  fill: new ol.style.Fill({ color: '#3399CC' }),
+			  stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
+			}),
+			text: null
+		  });
+		} else if (geomType === 'LineString' || geomType === 'MultiLineString') {
+		  return new ol.style.Style({
+			stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
+			text: null
+		  });
+		} else {
+		  return new ol.style.Style({
+			fill: new ol.style.Fill({ color: 'rgba(51, 153, 204, 0.7)' }),
+			stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
+			text: null
+		  });
+		}
 	  };
 	}
 
@@ -1404,41 +1303,42 @@ class MapManager {
 	}
 
 	createFileItem(item) {
-	    const itemContainer = document.createElement('div');
-	    itemContainer.className = 'file-item-container';
-	    
-	    const itemName = document.createElement('span');
-	    // Remove .kml extension from display name
-	    const displayName = item.name.replace(/\.kml$/i, '');
-	    itemName.textContent = displayName;
-	    itemName.className = 'file-name';
-	    
-	    const buttonContainer = document.createElement('div');
-	    buttonContainer.className = 'file-buttons';
-	    
-	    const toggleButton = document.createElement('button');
-	    toggleButton.textContent = '+';
-	    toggleButton.className = 'layer-toggle-button add';
-	    toggleButton.onclick = (e) => {
-	        e.stopPropagation();
-	        this.toggleLayer(item.download_url, toggleButton);
-	    };
-	    
-	    const downloadButton = document.createElement('button');
-	    downloadButton.textContent = '↓';
-	    downloadButton.className = 'download-button';
-	    downloadButton.onclick = (e) => {
-	        e.stopPropagation();
-	        this.downloadKML(item.download_url, item.name);
-	    };
-	    
-	    buttonContainer.appendChild(toggleButton);
-	    buttonContainer.appendChild(downloadButton);
-	    itemContainer.appendChild(itemName);
-	    itemContainer.appendChild(buttonContainer);
-	    
-	    return itemContainer;
+		const itemContainer = document.createElement('div');
+		itemContainer.className = 'file-item-container';
+		
+		const itemName = document.createElement('span');
+		// Remove .kml extension from display name
+		const displayName = item.name.replace(/\.kml$/i, '');
+		itemName.textContent = displayName;
+		itemName.className = 'file-name';
+		
+		const buttonContainer = document.createElement('div');
+		buttonContainer.className = 'file-buttons';
+		
+		const toggleButton = document.createElement('button');
+		toggleButton.textContent = '+';
+		toggleButton.className = 'layer-toggle-button add';
+		toggleButton.onclick = (e) => {
+			e.stopPropagation();
+			this.toggleLayer(item.download_url, toggleButton);
+		};
+		
+		const downloadButton = document.createElement('button');
+		downloadButton.textContent = '↓';
+		downloadButton.className = 'download-button';
+		downloadButton.onclick = (e) => {
+			e.stopPropagation();
+			this.downloadKML(item.download_url, item.name);
+		};
+		
+		buttonContainer.appendChild(toggleButton);
+		buttonContainer.appendChild(downloadButton);
+		itemContainer.appendChild(itemName);
+		itemContainer.appendChild(buttonContainer);
+		
+		return itemContainer;
 	}
+
 
 	async toggleLayer(url, button) {
 		if (this.activeLayers.has(url)) {
@@ -1459,7 +1359,8 @@ class MapManager {
 				
 				// Extract styles from KML
 				const features = new ol.format.KML({
-					extractStyles: true
+					extractStyles: true,
+					showPointNames: false  // Explicitly disable point names/labels
 				}).readFeatures(kmlData, {
 					featureProjection: 'EPSG:3857'
 				});
@@ -1471,7 +1372,7 @@ class MapManager {
 				});
 				
 				this.map.addLayer(vectorLayer);
-				this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
+
 				
 				button.textContent = '-';
 				button.className = 'layer-toggle-button remove';
@@ -1479,6 +1380,9 @@ class MapManager {
 				
 				this.activeLayers.set(url, { layer: vectorLayer, button: button });
 				this.updateLegend(document.querySelector('.legend-content'));
+				
+				// Clean up resources if we have too many layers
+				this.cleanupUnusedResources();
 			} catch (error) {
 				console.error('Error loading KML:', error);
 				button.textContent = '!';
@@ -1491,6 +1395,7 @@ class MapManager {
 	}
 
 
+
 	async loadKMLFile(url) {
 		try {
 			const response = await fetch(url);
@@ -1498,7 +1403,8 @@ class MapManager {
 			
 			// Extract styles from KML
 			const features = new ol.format.KML({
-				extractStyles: true
+				extractStyles: true,
+				showPointNames: false
 			}).readFeatures(kmlData, {
 				featureProjection: 'EPSG:3857'
 			});
@@ -1634,52 +1540,229 @@ class MapManager {
 
 	updateLegend(content) {
 		content.innerHTML = '';
+		
+		if (this.activeLayers.size === 0) {
+			const noLayersMsg = document.createElement('div');
+			noLayersMsg.className = 'legend-no-layers';
+			noLayersMsg.textContent = 'No active layers to display';
+			content.appendChild(noLayersMsg);
+			return;
+		}
+		
 		this.activeLayers.forEach((layerInfo, url) => {
 			const layerItem = document.createElement('div');
 			layerItem.className = 'legend-item';
-
-			// Create container for legend graphics and controls
-			const legendContainer = document.createElement('div');
-			legendContainer.className = 'legend-container';
-
+			
+			// Create layer header with name
+			const layerHeader = document.createElement('div');
+			layerHeader.className = 'legend-layer-header';
+			
+			// Extract layer name from URL and remove extension
+			const layerName = url.split('/').pop().replace(/\.(kml|geojson)$/i, '');
+			
 			// Add checkbox for layer visibility
 			const checkbox = document.createElement('input');
 			checkbox.type = 'checkbox';
 			checkbox.checked = layerInfo.layer.getVisible();
-			checkbox.id = `layer-${url.split('/').pop()}`;
-			checkbox.setAttribute('aria-label', `Toggle ${url.split('/').pop()} layer visibility`);
-
-			// Add label with layer name
-			const label = document.createElement('label');
-			label.htmlFor = checkbox.id;
-			label.textContent = url.split('/').pop().replace('.geojson', '');
-
-			// Create legend graphic container
-			const legendGraphic = document.createElement('div');
-			legendGraphic.className = 'legend-graphic';
-
-			// Get legend graphic from WMS if available
-			if (url.includes('wms')) {
-				const legendUrl = this.getLegendGraphicUrl(url);
-				const img = document.createElement('img');
-				img.src = legendUrl;
-				img.alt = `Legend for ${label.textContent}`;
-				legendGraphic.appendChild(img);
-			} else {
-				// Create custom legend for vector layers
-				this.createVectorLegend(legendGraphic, layerInfo.layer);
-			}
-
+			checkbox.id = `layer-${layerName.replace(/\s+/g, '-')}`;
+			checkbox.setAttribute('aria-label', `Toggle ${layerName} layer visibility`);
 			checkbox.onchange = () => {
 				layerInfo.layer.setVisible(checkbox.checked);
 			};
-
-			legendContainer.appendChild(checkbox);
-			legendContainer.appendChild(label);
-			legendContainer.appendChild(legendGraphic);
-			layerItem.appendChild(legendContainer);
+			
+			// Add label with layer name
+			const label = document.createElement('label');
+			label.htmlFor = checkbox.id;
+			label.textContent = layerName;
+			
+			layerHeader.appendChild(checkbox);
+			layerHeader.appendChild(label);
+			layerItem.appendChild(layerHeader);
+			
+			// Create styles container
+			const stylesContainer = document.createElement('div');
+			stylesContainer.className = 'legend-styles-container';
+			
+			// Extract and display styles from the layer
+			this.extractAndDisplayStyles(stylesContainer, layerInfo.layer);
+			
+			layerItem.appendChild(stylesContainer);
 			content.appendChild(layerItem);
 		});
+	}
+	
+	extractAndDisplayStyles(container, layer) {
+		if (!layer || !layer.getSource) {
+			console.warn('Invalid layer provided to extractAndDisplayStyles');
+			return;
+		}
+
+		const source = layer.getSource();
+		if (!source || !source.getFeatures) {
+			console.warn('Invalid source in layer');
+			return;
+		}
+
+		const features = source.getFeatures();
+		
+		if (!features || features.length === 0) {
+			const noFeaturesMsg = document.createElement('div');
+			noFeaturesMsg.className = 'legend-no-features';
+			noFeaturesMsg.textContent = 'No features in this layer';
+			container.appendChild(noFeaturesMsg);
+			return;
+		}
+		
+		// Collect unique styles
+		const styleMap = new Map();
+		
+		features.forEach(feature => {
+			if (!feature) return;
+			
+			// Try to get style ID from KML
+			let styleId = feature.get('styleUrl');
+			if (styleId) {
+				// Remove # prefix if present
+				styleId = styleId.replace(/^#/, '');
+			} else if (feature.getGeometry && feature.getGeometry()) {
+				// Use feature type as fallback, with null check
+				styleId = feature.getGeometry().getType();
+			} else {
+				// Fallback if no geometry
+				styleId = 'unknown';
+			}
+			
+			if (!styleMap.has(styleId)) {
+				// Get the style for this feature
+				const featureStyleFunc = feature.getStyleFunction();
+				const layerStyleFunc = layer.getStyleFunction ? layer.getStyleFunction() : null;
+				const styleFunc = featureStyleFunc || layerStyleFunc;
+				
+				if (styleFunc) {
+					try {
+						const style = styleFunc(feature);
+						if (style) {
+							styleMap.set(styleId, {
+								style: style,
+								feature: feature,
+								count: 1
+							});
+						}
+					} catch (e) {
+						console.warn('Error getting style for feature:', e);
+					}
+				}
+			} else {
+				// Increment count for this style
+				const entry = styleMap.get(styleId);
+				entry.count++;
+				styleMap.set(styleId, entry);
+			}
+		});
+		
+		// Display each unique style
+		styleMap.forEach((entry, styleId) => {
+			if (!entry || !entry.style) return;
+			
+			const styleItem = document.createElement('div');
+			styleItem.className = 'legend-style-item';
+			
+			// Create style swatch
+			const swatch = document.createElement('div');
+			swatch.className = 'legend-style-swatch';
+			
+			try {
+				this.renderStyleSwatch(swatch, entry.style, entry.feature);
+			} catch (e) {
+				console.warn('Error rendering style swatch:', e);
+				swatch.textContent = '?'; // Fallback display
+			}
+			
+			// Create style label
+			const styleLabel = document.createElement('div');
+			styleLabel.className = 'legend-style-label';
+			styleLabel.textContent = `${styleId} (${entry.count} features)`;
+			
+			styleItem.appendChild(swatch);
+			styleItem.appendChild(styleLabel);
+			container.appendChild(styleItem);
+		});
+	}
+
+	
+	renderStyleSwatch(container, style, feature) {
+		const canvas = document.createElement('canvas');
+		canvas.width = 24;
+		canvas.height = 24;
+		const ctx = canvas.getContext('2d');
+		
+		// Handle array of styles
+		const styles = Array.isArray(style) ? style : [style];
+		
+		// Get geometry type
+		const geomType = feature.getGeometry().getType();
+		
+		// Draw based on geometry type
+		styles.forEach(s => {
+			if (!s) return;
+			
+			if (geomType === 'Point' || geomType === 'MultiPoint') {
+				const image = s.getImage();
+				if (image) {
+					if (image instanceof ol.style.Circle) {
+						ctx.beginPath();
+						ctx.arc(12, 12, image.getRadius(), 0, 2 * Math.PI);
+						const fill = image.getFill();
+						if (fill) {
+							ctx.fillStyle = fill.getColor() || 'rgba(51, 153, 204, 0.7)';
+							ctx.fill();
+						}
+						const stroke = image.getStroke();
+						if (stroke) {
+							ctx.strokeStyle = stroke.getColor() || '#3399CC';
+							ctx.lineWidth = stroke.getWidth() || 1;
+							ctx.stroke();
+						}
+					} else if (image instanceof ol.style.Icon) {
+						// For icons, just draw a square with a border
+						ctx.beginPath();
+						ctx.rect(4, 4, 16, 16);
+						ctx.fillStyle = 'lightgray';
+						ctx.fill();
+						ctx.strokeStyle = 'black';
+						ctx.lineWidth = 1;
+						ctx.stroke();
+					}
+				}
+			} else if (geomType === 'LineString' || geomType === 'MultiLineString') {
+				const stroke = s.getStroke();
+				if (stroke) {
+					ctx.beginPath();
+					ctx.moveTo(4, 12);
+					ctx.lineTo(20, 12);
+					ctx.strokeStyle = stroke.getColor() || '#3399CC';
+					ctx.lineWidth = stroke.getWidth() || 2;
+					ctx.stroke();
+				}
+			} else {
+				// Polygon or MultiPolygon
+				ctx.beginPath();
+				ctx.rect(4, 4, 16, 16);
+				const fill = s.getFill();
+				if (fill) {
+					ctx.fillStyle = fill.getColor() || 'rgba(51, 153, 204, 0.7)';
+					ctx.fill();
+				}
+				const stroke = s.getStroke();
+				if (stroke) {
+					ctx.strokeStyle = stroke.getColor() || '#3399CC';
+					ctx.lineWidth = stroke.getWidth() || 1;
+					ctx.stroke();
+				}
+			}
+		});
+		
+		container.appendChild(canvas);
 	}
 
 	getLegendGraphicUrl(wmsUrl) {
