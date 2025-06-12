@@ -253,7 +253,7 @@ class MapManager {
 		// Define basemap configurations
 		this.basemapConfigs = {
 			topographic_en: {
-				name: 'Topographic - English (Gov)',
+				name: 'Topographic - Eng (Gov)',
 				thumbnail: 'img/topographic.png',
 				layers: [
 					{
@@ -327,7 +327,17 @@ class MapManager {
 					  attribution: '© OpenStreetMap contributors'
 					}
 				]
-			}	
+			},
+			Google_Satellite: {
+				name: 'Google Satellite',
+				thumbnail: 'img/google-satellite.png',
+				layers: [
+					{
+						url: 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+						attribution: '© Google Maps',
+					}
+				]
+			}
 		};
 
 		// Initialize with the default basemap
