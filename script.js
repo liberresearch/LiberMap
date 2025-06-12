@@ -333,7 +333,7 @@ class MapManager {
 				thumbnail: 'img/google-satellite.png',
 				layers: [
 					{
-						url: 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+						url: 'https://mt1.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',
 						attribution: '© Google Maps',
 					}
 				]
