@@ -1,1990 +1,2007 @@
-// Constants and Configurations
 const CONFIG = {
-	HONG_KONG_CENTER: [114.1095, 22.3964],
-	HK80_PROJECTION: 'EPSG:2326',
-	WGS84_PROJECTION: 'EPSG:4326',
-	DEFAULT_ZOOM: 10.3,
-	GITHUB_API_URL: 'https://api.github.com/repos/liberresearch/LiberMap/contents/Data_GML'
+    HONG_KONG_CENTER: [114.1095, 22.3964],
+    HK80_PROJECTION: 'EPSG:2326',
+    WGS84_PROJECTION: 'EPSG:4326',
+    DEFAULT_ZOOM: 10.3,
+    GITHUB_API_URL: 'https://api.github.com/repos/liberresearch/LiberMap/contents/Data_GML'
 };
 
-// Register HK80 projection
 proj4.defs(CONFIG.HK80_PROJECTION, "+proj=tmerc +lat_0=22.31213333333333 +lon_0=114.1785555555556 +k=1 +x_0=836694.05 +y_0=819069.8 +datum=HK80 +units=m +no_defs");
 ol.proj.proj4.register(proj4);
 
 class MapManager {
-	constructor() {
-		this.isMobile = window.innerWidth <= 768 ||
-			navigator.userAgent.match(/Android/i) ||
-			navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		this.basemap = null;
-		this.map = this.initializeMap();
-		this.setupMapAccessibility();
-		this.initializeComponents();
-		this.basemapLayers = [];
-		this.currentBasemapId = 'greyscale';
-		this.initializeBasemapSwitcher();
-	}
-
-	setupOptimizedEventHandlers() {
-		// Use a debounce function for handlers that might fire frequently
-		const debounce = (func, delay) => {
-			let timeout;
-			return function () {
-				const context = this;
-				const args = arguments;
-				clearTimeout(timeout);
-				timeout = setTimeout(() => func.apply(context, args), delay);
-			};
-		};
-
-		// Apply debounced handlers to map events
-		this.map.on('pointermove', debounce((event) => {
-			// Change cursor style when hovering over features
-			const pixel = this.map.getEventPixel(event.originalEvent);
-			const hit = this.map.hasFeatureAtPixel(pixel);
-			this.map.getTargetElement().style.cursor = hit ? 'pointer' : '';
-		}, 50));
-
-		// Optimize map rendering for large datasets
-		this.map.on('movestart', () => {
-			// Reduce rendering quality during map movement for better performance
-			this.map.getLayers().forEach(layer => {
-				if (layer instanceof ol.layer.Vector) {
-					layer.setRenderBuffer(0);
-				}
-			});
-		});
-
-		this.map.on('moveend', () => {
-			// Restore rendering quality after movement stops
-			this.map.getLayers().forEach(layer => {
-				if (layer instanceof ol.layer.Vector) {
-					layer.setRenderBuffer(100);
-				}
-			});
-		});
-	}
-
-	cleanupUnusedResources() {
-		// Remove unused layers if we have too many
-		if (this.activeLayers.size > 5) {
-			// Keep only the 5 most recently used layers
-			const layerEntries = Array.from(this.activeLayers.entries());
-			const oldestLayers = layerEntries.slice(0, layerEntries.length - 5);
-
-			oldestLayers.forEach(([url, layerInfo]) => {
-				this.map.removeLayer(layerInfo.layer);
-				this.activeLayers.delete(url);
-				if (layerInfo.button) {
-					layerInfo.button.textContent = '+';
-					layerInfo.button.className = 'layer-toggle-button add';
-				}
-			});
-
-			// Update legend
-			this.updateLegend(document.querySelector('.legend-content'));
-		}
-	}
-
-	setupMapAccessibility() {
-		this.map.getTargetElement().setAttribute('role', 'application');
-		this.map.getTargetElement().setAttribute('aria-label', 'Interactive map of Hong Kong');
-		this.activeLayers = new Map();
-		this.locationMarker = null;
-		this.vectorSource = null;
-	}
-
-	initializeComponents() {
-		this.initializeSearchTool();
-		this.createLegendPanel();
-		this.createPopupInfo();
-		this.createLiberDataPanel();
-	}
-
-
-	initializeMap() {
-		// Create initial basemap layer
-		this.basemap = new ol.layer.Group({
-			layers: [
-				new ol.layer.Tile({
-					source: new ol.source.XYZ({
-						url: 'https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-						attribution: '© OpenStreetMap contributors, © CARTO'
-					})
-				})
-			]
-		});
-
-		// Create map with default controls
-		const map = new ol.Map({
-			target: 'map',
-			layers: [this.basemap],
-			view: new ol.View({
-				center: ol.proj.fromLonLat(CONFIG.HONG_KONG_CENTER),
-				zoom: CONFIG.DEFAULT_ZOOM
-			})
-		});
-
-		// For mobile optimization, we can selectively remove some controls
-		if (this.isMobile) {
-			// Get all controls
-			const controls = map.getControls().getArray();
-
-			// Keep only essential controls (like zoom)
-			const controlsToKeep = controls.filter(control =>
-				control instanceof ol.control.Zoom
-			);
-
-			// Remove all controls
-			map.getControls().clear();
-
-			// Add back only the ones we want to keep
-			controlsToKeep.forEach(control => {
-				map.addControl(control);
-			});
-		}
-
-		return map;
-	}
-
-	useMyLocation() {
-		if (!navigator.geolocation) {
-			alert('Geolocation is not supported by this browser.');
-			return;
-		}
-
-		navigator.geolocation.getCurrentPosition((position) => {
-			const coords = [position.coords.longitude, position.coords.latitude];
-			const transformedCoords = ol.proj.fromLonLat(coords);
-
-			this.locationMarker = new ol.Feature({
-				geometry: new ol.geom.Point(transformedCoords)
-			});
-
-			const iconStyle = new ol.style.Style({
-				image: new ol.style.Icon({
-					src: './img/pin.png',
-					scale: 0.07,
-					anchor: [0.5, 1]
-				})
-			});
-
-			this.locationMarker.setStyle(iconStyle);
-			this.vectorSource = new ol.source.Vector({
-				features: [this.locationMarker]
-			});
-
-			const vectorLayer = new ol.layer.Vector({
-				source: this.vectorSource
-			});
-
-			this.map.addLayer(vectorLayer);
-			this.animateToLocation(transformedCoords, 15);
-		});
-	}
-
-	goToHome() {
-		this.animateToLocation(ol.proj.fromLonLat(CONFIG.HONG_KONG_CENTER), CONFIG.DEFAULT_ZOOM);
-		if (this.locationMarker && this.vectorSource) {
-			this.vectorSource.removeFeature(this.locationMarker);
-			this.locationMarker = null;
-		}
-	}
-
-	animateToLocation(center, zoom) {
-		this.map.getView().animate({
-			center: center,
-			zoom: zoom,
-			duration: 1500
-		});
-	}
-
-	printMap() {
-		// Create a new map instance for printing
-		const printContainer = document.createElement('div');
-		printContainer.style.width = '800px';
-		printContainer.style.height = '600px';
-		document.body.appendChild(printContainer);
-
-		// Get current basemap layers
-		const basemapLayers = this.basemap.getLayers().getArray();
-
-		// Create a new map with crossOrigin enabled
-		const printMap = new ol.Map({
-			target: printContainer,
-			layers: [
-				...basemapLayers.map(layer => {
-					// Clone the layer with crossOrigin set to anonymous
-					const source = layer.getSource();
-					const newSource = new ol.source.XYZ({
-						url: source.getUrls() ? source.getUrls()[0] : '',
-						crossOrigin: 'anonymous',
-						attributions: source.getAttributions()
-					});
-
-					return new ol.layer.Tile({
-						source: newSource,
-						zIndex: layer.getZIndex()
-					});
-				}),
-				...Array.from(this.activeLayers.values()).map(info => info.layer)
-			],
-			view: new ol.View({
-				center: this.map.getView().getCenter(),
-				zoom: this.map.getView().getZoom(),
-				rotation: this.map.getView().getRotation()
-			})
-		});
-
-		// Wait for the map to render
-		setTimeout(() => {
-			const canvas = printContainer.querySelector('canvas');
-			const link = document.createElement('a');
-			link.download = `map-export-${Date.now()}.png`;
-			link.href = canvas.toDataURL('image/png');
-			link.click();
-
-			// Cleanup
-			document.body.removeChild(printContainer);
-		}, 500);
-	}
-
-	initializeBasemapSwitcher() {
-		// Define basemap configurations
-		this.basemapConfigs = {
-			topographic_en: {
-				name: 'Topographic - Eng (Gov)',
-				thumbnail: 'img/topographic.png',
-				layers: [
-					{
-						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/basemap/wgs84/{z}/{x}/{y}.png',
-						attribution: 'Lands Department © The Government of the Hong Kong SAR'
-					},
-					{
-						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/en/wgs84/{z}/{x}/{y}.png',
-						attribution: 'Lands Department © The Government of the Hong Kong SAR'
-					}
-				]
-			},
-			topographic_tc: {
-				name: 'Topographic - 中文 (Gov)',
-				thumbnail: 'img/topographic.png',
-				layers: [
-					{
-						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/basemap/wgs84/{z}/{x}/{y}.png',
-						attribution: 'Lands Department © The Government of the Hong Kong SAR'
-					},
-					{
-						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/tc/wgs84/{z}/{x}/{y}.png',
-						attribution: 'Lands Department © The Government of the Hong Kong SAR'
-					}
-				]
-			},
-			imagery_en: {
-				name: 'Imagery - Eng (Gov)',
-				thumbnail: 'img/imagery.png',
-				layers: [
-					{
-						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/imagery/wgs84/{z}/{x}/{y}.png',
-						attribution: 'Lands Department © The Government of the Hong Kong SAR'
-					},
-					{
-						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/en/wgs84/{z}/{x}/{y}.png',
-						attribution: 'Lands Department © The Government of the Hong Kong SAR'
-					}
-				]
-			},
-			imagery_tc: {
-				name: 'Imagery - 中文 (Gov)',
-				thumbnail: 'img/imagery.png',
-				layers: [
-					{
-						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/imagery/wgs84/{z}/{x}/{y}.png',
-						attribution: 'Lands Department © The Government of the Hong Kong SAR'
-					},
-					{
-						url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/tc/wgs84/{z}/{x}/{y}.png',
-						attribution: 'Lands Department © The Government of the Hong Kong SAR'
-					}
-				]
-			},
-			greyscale: {
-				name: 'Carto Light (Grayscale)',
-				thumbnail: 'img/carto-light.png',
-				layers: [
-					{
-						url: 'https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-						attribution: '© CARTO'
-					}
-				]
-			},
-			OSM: {
-				name: 'Open Street Map',
-				thumbnail: 'img/osm.png', // Path to your OSM thumbnail image
-				layers: [
-					{
-					  url: 'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-					  attribution: '© OpenStreetMap contributors'
-					}
-				]
-			},
-			Google_Satellite: {
-				name: 'Google Satellite',
-				thumbnail: 'img/google-satellite.png',
-				layers: [
-					{
-						url: 'https://mt1.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',
-						attribution: '© Google Maps',
-					}
-				]
-			}
-		};
-
-		// Initialize with the default basemap
-		this.applyBasemap(this.currentBasemapId);
-
-		// Create basemap switcher button using the same pattern as other buttons
-		const basemapButton = this.createButton(
-			'basemap-button',
-			'img/basemap.png',
-			'Change Basemap',
-			() => {
-				// Toggle dropdown visibility
-				const dropdown = document.getElementById('basemap-dropdown');
-				if (dropdown) {
-					const isVisible = dropdown.style.display !== 'none';
-					dropdown.style.display = isVisible ? 'none' : 'block';
-
-					// Position dropdown relative to button
-					if (!isVisible) {
-						const buttonRect = basemapButton.getBoundingClientRect();
-						dropdown.style.position = 'absolute';
-						dropdown.style.left = `${buttonRect.right + 10}px`;
-						dropdown.style.top = `${buttonRect.top}px`;
-					}
-				}
-			}
-		);
-
-		// Position the button after the other control buttons
-		// This will be properly positioned by the UIManager.adjustButtonPositions method
-		document.body.appendChild(basemapButton);
-
-		// Create dropdown menu
-		const dropdown = document.createElement('div');
-		dropdown.id = 'basemap-dropdown';
-		dropdown.className = 'basemap-dropdown';
-		dropdown.style.display = 'none';
-
-		// Add basemap options to dropdown
-		Object.keys(this.basemapConfigs).forEach(id => {
-			const option = this.basemapConfigs[id];
-			const optionElement = document.createElement('div');
-			optionElement.className = 'basemap-option';
-
-			// Add thumbnail preview
-			const thumbnail = document.createElement('div');
-			thumbnail.className = 'basemap-thumbnail';
-			thumbnail.style.backgroundImage = `url(${option.thumbnail})`;
-			optionElement.appendChild(thumbnail);
-
-			// Add name
-			const name = document.createElement('span');
-			name.textContent = option.name;
-			optionElement.appendChild(name);
-
-			// Set active class for current basemap
-			if (id === this.currentBasemapId) {
-				optionElement.classList.add('active');
-			}
-
-			// Add click handler
-			optionElement.addEventListener('click', () => {
-				this.switchBasemap(id);
-				dropdown.style.display = 'none';
-
-				// Update active class
-				document.querySelectorAll('.basemap-option').forEach(opt => {
-					opt.classList.remove('active');
-				});
-				optionElement.classList.add('active');
-			});
-
-			dropdown.appendChild(optionElement);
-		});
-
-		// Close dropdown when clicking outside
-		document.addEventListener('click', (e) => {
-			if (!basemapButton.contains(e.target) && !dropdown.contains(e.target)) {
-				dropdown.style.display = 'none';
-			}
-		});
-
-		document.body.appendChild(dropdown);
-	}
-
-	// Method to apply a basemap
-	applyBasemap(basemapId) {
-		const config = this.basemapConfigs[basemapId];
-		if (!config) return;
-
-		// Remove existing basemap layers
-		if (this.basemap) {
-			this.map.removeLayer(this.basemap);
-		}
-
-		// Create new basemap layers
-		const newBasemapLayers = [];
-
-		config.layers.forEach((layerConfig, index) => {
-			let layer;
-
-			if (layerConfig.type === 'osm') {
-				// Create OSM layer
-				layer = new ol.layer.Tile({
-					source: new ol.source.OSM(),
-					className: layerConfig.className || '',
-					zIndex: -100 + index // Ensure basemap layers are at the bottom
-				});
-			} else {
-				// Create XYZ layer
-				layer = new ol.layer.Tile({
-					source: new ol.source.XYZ({
-						url: layerConfig.url,
-						attributions: layerConfig.attribution || ''
-					}),
-					zIndex: -100 + index // Ensure basemap layers are at the bottom
-				});
-			}
-
-			newBasemapLayers.push(layer);
-		});
-
-		// Create a new layer group for the basemap
-		this.basemap = new ol.layer.Group({
-			layers: newBasemapLayers
-		});
-
-		// Add the new basemap to the map
-		this.map.addLayer(this.basemap);
-
-		// Update the global basemap layers array for reference
-		this.basemapLayers = newBasemapLayers;
-	}
-
-	// Method to switch basemap
-	switchBasemap(basemapId) {
-		if (!this.basemapConfigs[basemapId] || basemapId === this.currentBasemapId) return;
-
-		// Apply the new basemap
-		this.applyBasemap(basemapId);
-
-		// Update current basemap ID
-		this.currentBasemapId = basemapId;
-
-		console.log(`Switched basemap to: ${basemapId}`);
-
-		// Dispatch a custom event that other tools can listen for
-		const event = new CustomEvent('basemapChanged', {
-			detail: {
-				basemapId: basemapId,
-				basemapLayers: this.basemapLayers
-			}
-		});
-		document.dispatchEvent(event);
-	}
-
-	// Method to get current basemap layers (for other tools to use)
-	getCurrentBasemapLayers() {
-		return this.basemapLayers;
-	}
-
-	// Method to get current basemap ID (for other tools to use)
-	getCurrentBasemapId() {
-		return this.currentBasemapId;
-	}
-
-
-	initializeSearchTool() {
-		// Create main container with dropdown
-		const searchContainer = document.createElement('div');
-		searchContainer.id = 'search-container';
-		searchContainer.className = 'search-container';
-
-		// Create dropdown toggle button
-		const dropdownToggle = document.createElement('div');
-		dropdownToggle.className = 'search-dropdown-toggle';
-		dropdownToggle.innerHTML = '▼';
-		dropdownToggle.setAttribute('role', 'button');
-		dropdownToggle.setAttribute('aria-label', 'Toggle search engines');
-		dropdownToggle.setAttribute('tabindex', '0');
-
-		// Create dropdown menu (initially hidden)
-		const dropdownMenu = document.createElement('div');
-		dropdownMenu.className = 'search-dropdown-menu';
-		dropdownMenu.style.display = 'none';
-
-		// Create search engines options
-		const engines = [
-			{ id: 'google', name: 'Google Places' },
-			{ id: 'locationSearch', name: 'Location Search API' }
-		];
-		engines.forEach(engine => {
-			const option = document.createElement('div');
-			option.className = 'search-engine-option';
-			option.textContent = engine.name;
-			option.setAttribute('data-engine', engine.id);
-			option.onclick = () => {
-				setActiveEngine(engine.id);
-				dropdownMenu.style.display = 'none';
-			};
-			dropdownMenu.appendChild(option);
-		});
-
-		// Create input container
-		const inputContainer = document.createElement('div');
-		inputContainer.className = 'search-input-container';
-
-		// Create search inputs for each engine
-		const googleSearchInput = document.createElement('input');
-		googleSearchInput.id = 'google-search-input';
-		googleSearchInput.className = 'search-input';
-		googleSearchInput.type = 'text';
-		googleSearchInput.placeholder = 'Search Google Places...';
-
-		const locationSearchInput = document.createElement('input');
-		locationSearchInput.id = 'location-search-input';
-		locationSearchInput.className = 'search-input';
-		locationSearchInput.type = 'text';
-		locationSearchInput.placeholder = 'Search Location Search API...';
-		locationSearchInput.style.display = 'none';
-
-		// Add elements to containers
-		inputContainer.appendChild(googleSearchInput);
-		inputContainer.appendChild(locationSearchInput);
-		searchContainer.appendChild(dropdownToggle);
-		searchContainer.appendChild(inputContainer);
-		document.body.appendChild(searchContainer);
-		document.body.appendChild(dropdownMenu);
-
-		// Create results container (initially empty)
-		const resultContainer = document.createElement('div');
-		resultContainer.className = 'search-results-container';
-		resultContainer.style.display = 'none';
-		document.body.appendChild(resultContainer);
-
-		// Create a pin marker layer for search results
-		const pinMarkerSource = new ol.source.Vector();
-		const pinMarkerLayer = new ol.layer.Vector({
-			source: pinMarkerSource,
-			zIndex: 1000 // Ensure it's on top of other layers
-		});
-		this.map.addLayer(pinMarkerLayer);
-
-		// Variable to store the current pin timer
-		let pinTimer = null;
-
-		// Function to add pin marker at a location
-		const addPinMarker = (coordinates) => {
-			// Clear previous markers and any existing timer
-			pinMarkerSource.clear();
-			if (pinTimer) {
-				clearTimeout(pinTimer);
-			}
-
-			// Create marker feature
-			const marker = new ol.Feature({
-				geometry: new ol.geom.Point(coordinates)
-			});
-
-			// Create marker style with pin image
-			const markerStyle = new ol.style.Style({
-				image: new ol.style.Icon({
-					src: 'img/pin.png',
-					anchor: [0.5, 1], // Center bottom of the image
-					scale: 0.05 // Adjust scale as needed
-				})
-			});
-
-			marker.setStyle(markerStyle);
-			pinMarkerSource.addFeature(marker);
-
-			// Set timer to remove the pin after 5 seconds
-			pinTimer = setTimeout(() => {
-				pinMarkerSource.clear();
-				pinTimer = null;
-			}, 5000);
-		};
-
-		// Toggle dropdown when clicking the toggle button
-		dropdownToggle.onclick = () => {
-			const isVisible = dropdownMenu.style.display !== 'none';
-			dropdownMenu.style.display = isVisible ? 'none' : 'block';
-			// Position the dropdown menu below the toggle button
-			if (!isVisible) {
-				const rect = dropdownToggle.getBoundingClientRect();
-				dropdownMenu.style.left = `${rect.left}px`;
-				dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`;
-			}
-		};
-
-		// Keyboard accessibility
-		dropdownToggle.addEventListener('keydown', (e) => {
-			if (e.key === 'Enter' || e.key === ' ') {
-				e.preventDefault();
-				dropdownToggle.click();
-			}
-		});
-
-		// Function to set active search engine
-		const setActiveEngine = (engineId) => {
-			// Hide all inputs
-			googleSearchInput.style.display = 'none';
-			locationSearchInput.style.display = 'none';
-
-			// Show selected input
-			if (engineId === 'google') {
-				googleSearchInput.style.display = 'block';
-				dropdownToggle.setAttribute('aria-label', 'Google Places (click to change)');
-			} else if (engineId === 'locationSearch') {
-				locationSearchInput.style.display = 'block';
-				dropdownToggle.setAttribute('aria-label', 'Location Search API (click to change)');
-			}
-
-			// Clear any existing results
-			resultContainer.style.display = 'none';
-			resultContainer.innerHTML = '';
-
-			// Clear any existing pin markers and timer
-			pinMarkerSource.clear();
-			if (pinTimer) {
-				clearTimeout(pinTimer);
-				pinTimer = null;
-			}
-		};
-
-		// Initialize Google Places search
-		let searchBox;
-		const initGoogleSearch = () => {
-			searchBox = new google.maps.places.SearchBox(googleSearchInput);
-			searchBox.addListener('places_changed', () => {
-				const places = searchBox.getPlaces();
-				if (places.length === 0) return;
-
-				const place = places[0];
-				const coordinates = [place.geometry.location.lng(), place.geometry.location.lat()];
-				const transformedCoords = ol.proj.fromLonLat(coordinates);
-
-				// Add pin marker at the location
-				addPinMarker(transformedCoords);
-
-				// Animate to the location
-				this.map.getView().animate({
-					center: transformedCoords,
-					zoom: 15,
-					duration: 1000
-				});
-			});
-		};
-
-		// Initialize Location Search API
-		locationSearchInput.addEventListener('input', () => {
-			const query = locationSearchInput.value;
-			if (query.length < 2) {
-				resultContainer.style.display = 'none';
-				return;
-			}
-			fetchLocationSearch(query);
-		});
-
-		const fetchLocationSearch = query => {
-			const url = `https://geodata.gov.hk/gs/api/v1.0.0/locationSearch?q=${encodeURIComponent(query)}`;
-			fetch(url)
-				.then(response => response.json())
-				.then(data => {
-					const results = data.slice(0, 5);
-					resultContainer.innerHTML = '';
-
-					if (results.length === 0) {
-						resultContainer.style.display = 'none';
-						return;
-					}
-
-					results.forEach(result => {
-						const resultItem = document.createElement('div');
-						resultItem.className = 'search-result-item';
-						resultItem.textContent = result.nameZH;
-						resultItem.addEventListener('click', () => {
-							const hk1980Projection = 'EPSG:2326';
-							const mapProjection = this.map.getView().getProjection().getCode();
-							const x = result.x;
-							const y = result.y;
-
-							// Transform directly from HK1980 to the map's projection
-							const transformedCoords = ol.proj.transform([x, y], hk1980Projection, mapProjection);
-
-							// Add pin marker at the location
-							addPinMarker(transformedCoords);
-
-							// Animate to the location
-							this.map.getView().animate({
-								center: transformedCoords,
-								zoom: 15,
-								duration: 1000
-							});
-
-							resultContainer.style.display = 'none';
-							locationSearchInput.value = result.nameZH;
-						});
-						resultContainer.appendChild(resultItem);
-					});
-
-					// Position and show results
-					const rect = locationSearchInput.getBoundingClientRect();
-					resultContainer.style.left = `${rect.left}px`;
-					resultContainer.style.top = `${rect.bottom + window.scrollY}px`;
-					resultContainer.style.width = `${rect.width}px`;
-					resultContainer.style.display = 'block';
-				})
-				.catch(error => console.error('Error fetching location search results:', error));
-		};
-
-		// Initialize Google search by default
-		initGoogleSearch();
-		setActiveEngine('google');
-
-		// Close dropdown and results when clicking elsewhere
-		document.addEventListener('click', (e) => {
-			if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
-				dropdownMenu.style.display = 'none';
-			}
-			if (!searchContainer.contains(e.target) && !resultContainer.contains(e.target)) {
-				resultContainer.style.display = 'none';
-			}
-		});
-	}
-
-
-
-
-
-
-
-
-	addLayerToMap() {
-		const inputElement = document.createElement('input');
-		inputElement.type = 'file';
-		inputElement.accept = '.kml'; // Changed from .geojson,.json
-		inputElement.onchange = this.handleFileUpload.bind(this);
-		inputElement.click();
-	}
-
-
-
-	processKML(content) {
-		try {
-			const features = new ol.format.KML({
-				extractStyles: true,  // Extract styles from KML
-				showPointNames: false
-			}).readFeatures(content, {
-				featureProjection: 'EPSG:3857'
-			});
-			
-			const vectorSource = new ol.source.Vector({ features });
-			const vectorLayer = new ol.layer.Vector({
-				source: vectorSource,
-				style: this.createStyleFunction()
-			});
-			
-			const fileName = this.currentFileName || 'uploaded-layer.kml';
-			this.map.addLayer(vectorLayer);
-			this.activeLayers.set(fileName, {
-				layer: vectorLayer,
-				button: null
-			});
-			
-			const legendContent = document.querySelector('.legend-content');
-			if (legendContent) {
-				this.updateLegend(legendContent);
-			}
-			
-			this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
-		} catch (error) {
-			console.error('KML processing error:', error);
-		}
-	}
-
-
-	handleFileUpload(event) {
-		const file = event.target.files[0];
-		if (!file) return;
-
-		this.currentFileName = file.name;
-
-		const reader = new FileReader();
-		reader.onload = (e) => this.processKML(e.target.result);
-		reader.onerror = (error) => {
-			console.error('File reading error: ', error);
-			alert('Error reading file.');
-		};
-		reader.readAsText(file);
-	}
-
-
-	createStyleFunction() {
-	  return (feature) => {
-		const kmlStyleFunc = feature.getStyleFunction();
-		if (kmlStyleFunc) {
-		  // Get the styles extracted from the KML (an array or a single style)
-		  let kmlStyles = kmlStyleFunc(feature);
-		  
-		  // Handle null or undefined styles
-		  if (!kmlStyles) return null;
-		  
-		  let stylesArray = Array.isArray(kmlStyles) ? kmlStyles : [kmlStyles];
-		  
-		  // Clone and remove any text style so no label is rendered
-		  let updatedStyles = stylesArray.map(s => {
-			if (!s) return null;
-			let style = s.clone();
-			style.setText(null); // Remove the text style entirely
-			return style;
-		  }).filter(s => s !== null);
-		  
-		  // If no valid styles remain, return a default style
-		  if (updatedStyles.length === 0) {
-			return new ol.style.Style({
-			  fill: new ol.style.Fill({ color: 'rgba(51, 153, 204, 0.7)' }),
-			  stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
-			  text: null
-			});
-		  }
-		  
-		  return updatedStyles.length === 1 ? updatedStyles[0] : updatedStyles;
-		}
-		
-		// Default styles for different geometry types
-		const geomType = feature.getGeometry().getType();
-		if (geomType === 'Point') {
-		  return new ol.style.Style({
-			image: new ol.style.Circle({
-			  radius: 5,
-			  fill: new ol.style.Fill({ color: '#3399CC' }),
-			  stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
-			}),
-			text: null
-		  });
-		} else if (geomType === 'LineString' || geomType === 'MultiLineString') {
-		  return new ol.style.Style({
-			stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
-			text: null
-		  });
-		} else {
-		  return new ol.style.Style({
-			fill: new ol.style.Fill({ color: 'rgba(51, 153, 204, 0.7)' }),
-			stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
-			text: null
-		  });
-		}
-	  };
-	}
-
-
-
-
-	// Helper method to convert hex/rgb to rgba
-	convertToRGBA(color, opacity) {
-		// If already rgba, return as is
-		if (color.startsWith('rgba')) return color;
-
-		// If rgb, convert to rgba
-		if (color.startsWith('rgb')) {
-			return color.replace('rgb', 'rgba').replace(')', `, ${opacity})`);
-		}
-
-		// Convert hex to rgba
-		const hex = color.replace('#', '');
-		const r = parseInt(hex.substring(0, 2), 16);
-		const g = parseInt(hex.substring(2, 4), 16);
-		const b = parseInt(hex.substring(4, 6), 16);
-
-		return `rgba(${r}, ${g}, ${b}, ${opacity})`;
-	}
-
-
-
-	createPopupInfo() {
-		// Create popup container with improved styling
-		const overlayContainerElement = document.createElement('div');
-		overlayContainerElement.className = 'popup-container';
-		overlayContainerElement.style.display = 'none';
-		document.body.appendChild(overlayContainerElement);
-	
-		// Create header with title and close button
-		const popupHeader = document.createElement('div');
-		popupHeader.className = 'popup-header';
-		const popupTitle = document.createElement('div');
-		popupTitle.className = 'popup-title';
-		popupHeader.appendChild(popupTitle);
-		const closeButton = document.createElement('div');
-		closeButton.className = 'popup-close-button';
-		closeButton.innerHTML = '&times;';
-		closeButton.setAttribute('aria-label', 'Close popup');
-		closeButton.onclick = () => {
-			overlayContainerElement.style.display = 'none';
-		};
-		popupHeader.appendChild(closeButton);
-		overlayContainerElement.appendChild(popupHeader);
-	
-		// Create content container
-		const popupContent = document.createElement('div');
-		popupContent.className = 'popup-content';
-		overlayContainerElement.appendChild(popupContent);
-	
-		// Add overlay to map
-		this.popupOverlay = new ol.Overlay({
-			element: overlayContainerElement,
-			positioning: 'bottom-center',
-			stopEvent: true,
-			offset: [0, -10],
-			autoPan: true,
-			autoPanAnimation: {
-				duration: 250
-			}
-		});
-		this.map.addOverlay(this.popupOverlay);
-	
-		// Store references to popup elements for reuse
-		this.popupElement = overlayContainerElement;
-		this.popupTitle = popupTitle;
-		this.popupContent = popupContent;
-		this.popupInitialized = true;
-	
-		// Handle map clicks with improved feature detection
-		this.map.on('click', (event) => {
-			// Hide popup initially
-			overlayContainerElement.style.display = 'none';
-			
-			// Use forEachFeatureAtPixel with a pixel buffer for easier clicking
-			let clickedFeature = null;
-			const pixel = event.pixel;
-			this.map.forEachFeatureAtPixel(pixel, (feature, layer) => {
-				if (!clickedFeature) {
-					clickedFeature = feature;
-					return true; // Stop after finding first feature
-				}
-			}, {
-				hitTolerance: 5 // Make it easier to click on features
-			});
-			
-			if (clickedFeature) {
-				const properties = clickedFeature.getProperties();
-				// Set popup title from name or title property
-				const title = properties['name'] || properties['title'] || properties['NAME'] || 'Feature Information';
-				popupTitle.textContent = title;
-				
-				// Clear previous content
-				popupContent.innerHTML = '';
-				
-				// Handle description HTML if available
-				if (properties['description']) {
-					const descriptionElement = document.createElement('div');
-					descriptionElement.className = 'popup-description';
-					// Safely render HTML content
-					const sanitizedHTML = DOMPurify ? DOMPurify.sanitize(properties['description']) : properties['description'];
-					descriptionElement.innerHTML = sanitizedHTML;
-					popupContent.appendChild(descriptionElement);
-				} else {
-					// Create properties table for other attributes
-					popupContent.appendChild(this.createPropertiesTable(properties));
-				}
-				
-				// Position and show popup
-				this.popupOverlay.setPosition(event.coordinate);
-				overlayContainerElement.style.display = 'block';
-			}
-		});
-	}
-
-	createPopupContent(feature) {
-		const properties = feature.getProperties();
-		const content = document.createElement('div');
-		content.className = 'popup-content';
-		
-		// Add title if name property exists
-		if (properties.name) {
-			const title = document.createElement('h3');
-			title.className = 'popup-title';
-			title.textContent = properties.name;
-			content.appendChild(title);
-		}
-		
-		// Handle description - KML files often have HTML in descriptions
-		if (properties.description) {
-			const descriptionDiv = document.createElement('div');
-			descriptionDiv.className = 'popup-description';
-			
-			// Use DOMPurify to sanitize the HTML content
-			const sanitizedDescription = DOMPurify.sanitize(properties.description);
-			descriptionDiv.innerHTML = sanitizedDescription;
-			
-			content.appendChild(descriptionDiv);
-		}
-		
-		// Add other properties in a table
-		const table = this.createPropertiesTable(properties);
-		content.appendChild(table);
-		
-		return content;
-	}
-
-	createPropertiesTable(properties) {
-		const table = document.createElement('table');
-		table.className = 'popup-table';
-		
-		// Define columns to exclude (expanded list)
-		const excludedColumns = [
-			'geometry', 'GlobalID', 'Shape__Are', 'Shape__Len', 
-			'boundedBy', 'styleUrl', 'styleHash', 'Style', 'description',
-			'name' // Exclude name as we display it as title
-		];
-		
-		// Get all property keys and sort them alphabetically
-		const keys = Object.keys(properties).filter(key => 
-			!excludedColumns.includes(key) && 
-			properties[key] !== undefined && 
-			properties[key] !== null &&
-			properties[key] !== ''
-		).sort();
-		
-		// Create table rows for each property
-		keys.forEach(key => {
-			const row = document.createElement('tr');
-			
-			const keyCell = document.createElement('th');
-			keyCell.className = 'popup-table-key';
-			keyCell.textContent = this.formatPropertyName(key);
-			
-			const valueCell = document.createElement('td');
-			valueCell.className = 'popup-table-value';
-			
-			// Format value based on type
-			const value = properties[key];
-			if (typeof value === 'number') {
-				valueCell.textContent = this.formatNumber(value);
-			} else if (value instanceof Date) {
-				valueCell.textContent = value.toLocaleDateString();
-			} else if (typeof value === 'boolean') {
-				valueCell.textContent = value ? 'Yes' : 'No';
-			} else if (typeof value === 'string' && value.startsWith('http')) {
-				const link = document.createElement('a');
-				link.href = value;
-				link.textContent = 'Link';
-				link.target = '_blank';
-				link.rel = 'noopener noreferrer';
-				valueCell.appendChild(link);
-			} else {
-				valueCell.textContent = value;
-			}
-			
-			row.appendChild(keyCell);
-			row.appendChild(valueCell);
-			table.appendChild(row);
-		});
-		
-		return table;
-	}
-	
-	// Helper method to format property names - moved outside of createPropertiesTable
-	formatPropertyName(name) {
-		// Convert camelCase or snake_case to Title Case With Spaces
-		return name
-			.replace(/_/g, ' ')
-			.replace(/([A-Z])/g, ' $1')
-			.replace(/^./, str => str.toUpperCase())
-			.trim();
-	}
-	
-	// Helper method to format numbers - moved outside of createPropertiesTable
-	formatNumber(num) {
-		if (Number.isInteger(num)) {
-			return num.toString();
-		} else {
-			return num.toFixed(2);
-		}
-	}
-		
-
-	async fetchGithubContents(path) {
-		const baseUrl = 'https://api.github.com/repos/liberresearch/LiberMap/contents/';
-		const response = await fetch(baseUrl + path);
-		if (!response.ok) {
-			throw new Error('Error fetching contents');
-		}
-		return await response.json();
-	}
-
-
-	createLiberDataPanel() {
-		const liberDataButton = document.createElement('div');
-		liberDataButton.id = 'liber-data-button';
-		liberDataButton.className = 'liber-data-button';
-		liberDataButton.textContent = 'LiberData';
-
-		// Add accessibility attributes
-		liberDataButton.setAttribute('role', 'button');
-		liberDataButton.setAttribute('aria-expanded', 'false');
-		liberDataButton.setAttribute('tabindex', '0');  // Make it focusable with tab
-
-		const categoryList = document.createElement('div');
-		categoryList.className = 'category-list';
-		categoryList.style.display = 'none';
-		categoryList.setAttribute('aria-label', 'LiberData categories');
-
-		const categories = [
-			{
-				name: '土地房屋 Land & Housing',
-				path: 'Data_GML/土地房屋%20Land%20%26%20Housing'
-			},
-			{
-				name: '保育 Conservation',
-				path: 'Data_GML/保育%20Conservation'
-			},
-			{
-				name: '規劃資料 (資料源自香港政府）Planning data from HK Government',
-				path: 'Data_GML/規劃資料%20(資料源自香港政府）Planning%20data%20from%20HK%20Government'
-			}
-		];
-
-		categories.forEach(category => {
-			const categoryItem = this.createCategoryItem(category);
-			categoryList.appendChild(categoryItem);
-		});
-
-		// Add click handler
-		liberDataButton.onclick = () => {
-			const isExpanded = categoryList.style.display !== 'none';
-			liberDataButton.setAttribute('aria-expanded', !isExpanded);
-			categoryList.style.display = isExpanded ? 'none' : 'block';
-		};
-
-		// Add keyboard handler for accessibility
-		liberDataButton.addEventListener('keydown', (e) => {
-			if (e.key === 'Enter' || e.key === ' ') {
-				e.preventDefault();
-				liberDataButton.click();
-			}
-		});
-
-		document.body.appendChild(liberDataButton);
-		document.body.appendChild(categoryList);
-	}
-
-	createCategoryItem(category) {
-		const item = document.createElement('div');
-		item.className = 'category-item';
-
-		const header = document.createElement('div');
-		header.className = 'category-header';
-		header.setAttribute('role', 'button');
-		header.setAttribute('tabindex', '0');
-		header.setAttribute('aria-expanded', 'false');
-
-		// Add indicator for better UX
-		const indicator = document.createElement('span');
-		indicator.className = 'category-indicator';
-		indicator.textContent = '▶';
-		indicator.setAttribute('aria-hidden', 'true');
-
-		const titleText = document.createElement('span');
-		titleText.textContent = category.name;
-
-		header.appendChild(indicator);
-		header.appendChild(titleText);
-
-		const content = document.createElement('div');
-		content.className = 'category-content';
-		content.style.display = 'none';
-		content.setAttribute('aria-label', `${category.name} content`);
-
-		// Add click handler
-		header.onclick = (e) => {
-			e.stopPropagation();
-			const isExpanded = content.style.display !== 'none';
-			content.style.display = isExpanded ? 'none' : 'block';
-			indicator.textContent = isExpanded ? '▶' : '▼';
-			header.setAttribute('aria-expanded', !isExpanded);
-
-			// Load content if it's empty and being expanded
-			if (!isExpanded && content.children.length === 0) {
-				this.loadFolderContents(category.path, content);
-			}
-		};
-
-		// Add keyboard handler
-		header.addEventListener('keydown', (e) => {
-			if (e.key === 'Enter' || e.key === ' ') {
-				e.preventDefault();
-				header.click();
-			}
-		});
-
-		item.appendChild(header);
-		item.appendChild(content);
-		return item;
-	}
-
-	async createCategorySection(name, path, container) {
-		const section = document.createElement('div');
-		section.className = 'category-section';
-
-		const header = document.createElement('div');
-		header.className = 'category-header';
-		header.textContent = name;
-
-		const content = document.createElement('div');
-		content.className = 'category-content';
-		content.style.display = 'none';
-
-		header.onclick = () => {
-			content.style.display = content.style.display === 'none' ? 'block' : 'none';
-			if (content.children.length === 0) {
-				this.loadFolderContents(path, content);
-			}
-		};
-
-		section.appendChild(header);
-		section.appendChild(content);
-		container.appendChild(section);
-	}
-
-	async loadFolderContents(path, container) {
-		try {
-			const contents = await this.fetchGithubContents(path);
-			const list = document.createElement('ul');
-			list.className = 'folder-list';
-
-			for (const item of contents) {
-				const listItem = document.createElement('li');
-				listItem.className = 'folder-item';
-
-				if (item.type === 'dir') {
-					// Create expandable folder
-					const folderHeader = document.createElement('div');
-					folderHeader.className = 'folder-header';
-					folderHeader.textContent = item.name;
-
-					const folderContent = document.createElement('div');
-					folderContent.className = 'folder-content';
-					folderContent.style.display = 'none';
-
-					// Add expand/collapse indicator
-					const indicator = document.createElement('span');
-					indicator.className = 'folder-indicator';
-					indicator.textContent = '▶';
-					folderHeader.insertBefore(indicator, folderHeader.firstChild);
-
-					folderHeader.onclick = (e) => {
-						e.stopPropagation();
-						const isExpanded = folderContent.style.display !== 'none';
-						folderContent.style.display = isExpanded ? 'none' : 'block';
-						indicator.textContent = isExpanded ? '▶' : '▼';
-
-						if (!isExpanded && folderContent.children.length === 0) {
-							this.loadFolderContents(item.path, folderContent);
-						}
-					};
-
-					listItem.appendChild(folderHeader);
-					listItem.appendChild(folderContent);
-				} else {
-					// Create file item
-					const fileItem = this.createFileItem(item);
-					listItem.appendChild(fileItem);
-				}
-
-				list.appendChild(listItem);
-			}
-
-			container.appendChild(list);
-		} catch (error) {
-			console.error('Error loading folder contents:', error);
-		}
-	}
-
-	createFileItem(item) {
-		const itemContainer = document.createElement('div');
-		itemContainer.className = 'file-item-container';
-		
-		const itemName = document.createElement('span');
-		// Remove .kml extension from display name
-		const displayName = item.name.replace(/\.kml$/i, '');
-		itemName.textContent = displayName;
-		itemName.className = 'file-name';
-		
-		const buttonContainer = document.createElement('div');
-		buttonContainer.className = 'file-buttons';
-		
-		const toggleButton = document.createElement('button');
-		toggleButton.textContent = '+';
-		toggleButton.className = 'layer-toggle-button add';
-		toggleButton.onclick = (e) => {
-			e.stopPropagation();
-			this.toggleLayer(item.download_url, toggleButton);
-		};
-		
-		const downloadButton = document.createElement('button');
-		downloadButton.textContent = '↓';
-		downloadButton.className = 'download-button';
-		downloadButton.onclick = (e) => {
-			e.stopPropagation();
-			this.downloadKML(item.download_url, item.name);
-		};
-		
-		buttonContainer.appendChild(toggleButton);
-		buttonContainer.appendChild(downloadButton);
-		itemContainer.appendChild(itemName);
-		itemContainer.appendChild(buttonContainer);
-		
-		return itemContainer;
-	}
-
-
-	async toggleLayer(url, button) {
-		if (this.activeLayers.has(url)) {
-			const layerInfo = this.activeLayers.get(url);
-			this.map.removeLayer(layerInfo.layer);
-			this.activeLayers.delete(url);
-			button.textContent = '+';
-			button.className = 'layer-toggle-button add';
-			this.updateLegend(document.querySelector('.legend-content'));
-		} else {
-			try {
-				// Show loading indicator
-				button.textContent = '⏳';
-				button.disabled = true;
-				
-				const response = await fetch(url);
-				const kmlData = await response.text();
-				
-				// Extract styles from KML
-				const features = new ol.format.KML({
-					extractStyles: true,
-					showPointNames: false  // Explicitly disable point names/labels
-				}).readFeatures(kmlData, {
-					featureProjection: 'EPSG:3857'
-				});
-				
-				const vectorSource = new ol.source.Vector({ features });
-				const vectorLayer = new ol.layer.Vector({
-					source: vectorSource,
-					style: this.createStyleFunction()
-				});
-				
-				this.map.addLayer(vectorLayer);
-
-				
-				button.textContent = '-';
-				button.className = 'layer-toggle-button remove';
-				button.disabled = false;
-				
-				this.activeLayers.set(url, { layer: vectorLayer, button: button });
-				this.updateLegend(document.querySelector('.legend-content'));
-				
-				// Clean up resources if we have too many layers
-				this.cleanupUnusedResources();
-			} catch (error) {
-				console.error('Error loading KML:', error);
-				button.textContent = '!';
-				setTimeout(() => {
-					button.textContent = '+';
-					button.disabled = false;
-				}, 2000);
-			}
-		}
-	}
-
-
-
-	async loadKMLFile(url) {
-		try {
-			const response = await fetch(url);
-			const kmlData = await response.text();
-			
-			// Extract styles from KML
-			const features = new ol.format.KML({
-				extractStyles: true,
-				showPointNames: false
-			}).readFeatures(kmlData, {
-				featureProjection: 'EPSG:3857'
-			});
-			
-			const vectorSource = new ol.source.Vector({ features });
-			const vectorLayer = new ol.layer.Vector({
-				source: vectorSource,
-				style: this.createStyleFunction()
-			});
-			
-			this.map.addLayer(vectorLayer);
-			this.map.getView().fit(vectorSource.getExtent(), { duration: 1000 });
-			
-			return vectorLayer;
-		} catch (error) {
-			console.error('Error loading KML:', error);
-		}
-	}
-
-
-	// downloadKML
-	async downloadKML(url, filename) {
-		try {
-			const response = await fetch(url);
-			const data = await response.text();
-			const blob = new Blob([data], { type: 'application/vnd.google-earth.kml+xml' });
-			const downloadUrl = URL.createObjectURL(blob);
-			const link = document.createElement('a');
-			link.href = downloadUrl;
-			link.download = filename;
-			document.body.appendChild(link);
-			link.click();
-			document.body.removeChild(link);
-			URL.revokeObjectURL(downloadUrl);
-		} catch (error) {
-			console.error('Error downloading file:', error);
-		}
-	}
-
-	async downloadGeoJSON(url, filename) {
-		try {
-			const response = await fetch(url);
-			const data = await response.json();
-			const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-			const downloadUrl = URL.createObjectURL(blob);
-			const link = document.createElement('a');
-			link.href = downloadUrl;
-			link.download = filename;
-			document.body.appendChild(link);
-			link.click();
-			document.body.removeChild(link);
-			URL.revokeObjectURL(downloadUrl);
-		} catch (error) {
-			console.error('Error downloading file:', error);
-		}
-	}
-
-	createLegendPanel() {
-		// Create the legend button with circular background
-		const legendButton = document.createElement('div');
-		legendButton.id = 'legend-button';
-		legendButton.className = 'legend-button';
-		legendButton.setAttribute('role', 'button');
-		legendButton.setAttribute('aria-label', 'Toggle map legend');
-		legendButton.setAttribute('tabindex', '0');
-
-		// Add the icon
-		const legendIcon = document.createElement('img');
-		legendIcon.src = 'img/legend.png';
-		legendIcon.alt = '';
-		legendIcon.setAttribute('role', 'presentation');
-		legendButton.appendChild(legendIcon);
-
-		// Create the legend panel
-		const legendPanel = document.createElement('div');
-		legendPanel.id = 'legend-panel';
-		legendPanel.className = 'legend-panel';
-		legendPanel.style.display = 'none';
-		legendPanel.setAttribute('role', 'complementary');
-		legendPanel.setAttribute('aria-label', 'Map legend');
-
-		// Create legend content
-		const content = document.createElement('div');
-		content.className = 'legend-content';
-		content.setAttribute('role', 'region');
-		content.setAttribute('aria-label', 'Legend content');
-
-		// Add close button to the legend panel
-		const closeButton = document.createElement('div');
-		closeButton.className = 'legend-close-button';
-		closeButton.innerHTML = '&times;';
-		closeButton.setAttribute('aria-label', 'Close legend');
-		closeButton.setAttribute('role', 'button');
-		closeButton.setAttribute('tabindex', '0');
-
-		// Add event listeners
-		legendButton.addEventListener('click', () => {
-			const isVisible = legendPanel.style.display !== 'none';
-			legendPanel.style.display = isVisible ? 'none' : 'block';
-			legendButton.setAttribute('aria-expanded', !isVisible);
-		});
-
-		legendButton.addEventListener('keydown', (e) => {
-			if (e.key === 'Enter' || e.key === ' ') {
-				e.preventDefault();
-				legendButton.click();
-			}
-		});
-
-		closeButton.addEventListener('click', () => {
-			legendPanel.style.display = 'none';
-			legendButton.setAttribute('aria-expanded', false);
-		});
-
-		closeButton.addEventListener('keydown', (e) => {
-			if (e.key === 'Enter' || e.key === ' ') {
-				e.preventDefault();
-				closeButton.click();
-			}
-		});
-
-		// Assemble the legend panel
-		legendPanel.appendChild(closeButton);
-		legendPanel.appendChild(content);
-
-		// Update the legend content
-		this.updateLegend(content);
-
-		// Add to the document
-		document.body.appendChild(legendButton);
-		document.body.appendChild(legendPanel);
-	}
-
-	updateLegend(content) {
-		content.innerHTML = '';
-		
-		if (this.activeLayers.size === 0) {
-			const noLayersMsg = document.createElement('div');
-			noLayersMsg.className = 'legend-no-layers';
-			noLayersMsg.textContent = 'No active layers to display';
-			content.appendChild(noLayersMsg);
-			return;
-		}
-		
-		this.activeLayers.forEach((layerInfo, url) => {
-			const layerItem = document.createElement('div');
-			layerItem.className = 'legend-item';
-			
-			// Create layer header with name
-			const layerHeader = document.createElement('div');
-			layerHeader.className = 'legend-layer-header';
-			
-			// Extract layer name from URL and remove extension
-			const layerName = url.split('/').pop().replace(/\.(kml|geojson)$/i, '');
-			
-			// Add checkbox for layer visibility
-			const checkbox = document.createElement('input');
-			checkbox.type = 'checkbox';
-			checkbox.checked = layerInfo.layer.getVisible();
-			checkbox.id = `layer-${layerName.replace(/\s+/g, '-')}`;
-			checkbox.setAttribute('aria-label', `Toggle ${layerName} layer visibility`);
-			checkbox.onchange = () => {
-				layerInfo.layer.setVisible(checkbox.checked);
-			};
-			
-			// Add label with layer name
-			const label = document.createElement('label');
-			label.htmlFor = checkbox.id;
-			label.textContent = layerName;
-			
-			layerHeader.appendChild(checkbox);
-			layerHeader.appendChild(label);
-			layerItem.appendChild(layerHeader);
-			
-			// Create styles container
-			const stylesContainer = document.createElement('div');
-			stylesContainer.className = 'legend-styles-container';
-			
-			// Extract and display styles from the layer
-			this.extractAndDisplayStyles(stylesContainer, layerInfo.layer);
-			
-			layerItem.appendChild(stylesContainer);
-			content.appendChild(layerItem);
-		});
-	}
-	
-	extractAndDisplayStyles(container, layer) {
-		if (!layer || !layer.getSource) {
-			console.warn('Invalid layer provided to extractAndDisplayStyles');
-			return;
-		}
-
-		const source = layer.getSource();
-		if (!source || !source.getFeatures) {
-			console.warn('Invalid source in layer');
-			return;
-		}
-
-		const features = source.getFeatures();
-		
-		if (!features || features.length === 0) {
-			const noFeaturesMsg = document.createElement('div');
-			noFeaturesMsg.className = 'legend-no-features';
-			noFeaturesMsg.textContent = 'No features in this layer';
-			container.appendChild(noFeaturesMsg);
-			return;
-		}
-		
-		// Collect unique styles
-		const styleMap = new Map();
-		
-		features.forEach(feature => {
-			if (!feature) return;
-			
-			// Try to get style ID from KML
-			let styleId = feature.get('styleUrl');
-			if (styleId) {
-				// Remove # prefix if present
-				styleId = styleId.replace(/^#/, '');
-			} else if (feature.getGeometry && feature.getGeometry()) {
-				// Use feature type as fallback, with null check
-				styleId = feature.getGeometry().getType();
-			} else {
-				// Fallback if no geometry
-				styleId = 'unknown';
-			}
-			
-			if (!styleMap.has(styleId)) {
-				// Get the style for this feature
-				const featureStyleFunc = feature.getStyleFunction();
-				const layerStyleFunc = layer.getStyleFunction ? layer.getStyleFunction() : null;
-				const styleFunc = featureStyleFunc || layerStyleFunc;
-				
-				if (styleFunc) {
-					try {
-						const style = styleFunc(feature);
-						if (style) {
-							styleMap.set(styleId, {
-								style: style,
-								feature: feature,
-								count: 1
-							});
-						}
-					} catch (e) {
-						console.warn('Error getting style for feature:', e);
-					}
-				}
-			} else {
-				// Increment count for this style
-				const entry = styleMap.get(styleId);
-				entry.count++;
-				styleMap.set(styleId, entry);
-			}
-		});
-		
-		// Display each unique style
-		styleMap.forEach((entry, styleId) => {
-			if (!entry || !entry.style) return;
-			
-			const styleItem = document.createElement('div');
-			styleItem.className = 'legend-style-item';
-			
-			// Create style swatch
-			const swatch = document.createElement('div');
-			swatch.className = 'legend-style-swatch';
-			
-			try {
-				this.renderStyleSwatch(swatch, entry.style, entry.feature);
-			} catch (e) {
-				console.warn('Error rendering style swatch:', e);
-				swatch.textContent = '?'; // Fallback display
-			}
-			
-			// Create style label
-			const styleLabel = document.createElement('div');
-			styleLabel.className = 'legend-style-label';
-			styleLabel.textContent = `${styleId} (${entry.count} features)`;
-			
-			styleItem.appendChild(swatch);
-			styleItem.appendChild(styleLabel);
-			container.appendChild(styleItem);
-		});
-	}
-
-	
-	renderStyleSwatch(container, style, feature) {
-		const canvas = document.createElement('canvas');
-		canvas.width = 24;
-		canvas.height = 24;
-		const ctx = canvas.getContext('2d');
-		
-		// Handle array of styles
-		const styles = Array.isArray(style) ? style : [style];
-		
-		// Get geometry type
-		const geomType = feature.getGeometry().getType();
-		
-		// Draw based on geometry type
-		styles.forEach(s => {
-			if (!s) return;
-			
-			if (geomType === 'Point' || geomType === 'MultiPoint') {
-				const image = s.getImage();
-				if (image) {
-					if (image instanceof ol.style.Circle) {
-						ctx.beginPath();
-						ctx.arc(12, 12, image.getRadius(), 0, 2 * Math.PI);
-						const fill = image.getFill();
-						if (fill) {
-							ctx.fillStyle = fill.getColor() || 'rgba(51, 153, 204, 0.7)';
-							ctx.fill();
-						}
-						const stroke = image.getStroke();
-						if (stroke) {
-							ctx.strokeStyle = stroke.getColor() || '#3399CC';
-							ctx.lineWidth = stroke.getWidth() || 1;
-							ctx.stroke();
-						}
-					} else if (image instanceof ol.style.Icon) {
-						// For icons, just draw a square with a border
-						ctx.beginPath();
-						ctx.rect(4, 4, 16, 16);
-						ctx.fillStyle = 'lightgray';
-						ctx.fill();
-						ctx.strokeStyle = 'black';
-						ctx.lineWidth = 1;
-						ctx.stroke();
-					}
-				}
-			} else if (geomType === 'LineString' || geomType === 'MultiLineString') {
-				const stroke = s.getStroke();
-				if (stroke) {
-					ctx.beginPath();
-					ctx.moveTo(4, 12);
-					ctx.lineTo(20, 12);
-					ctx.strokeStyle = stroke.getColor() || '#3399CC';
-					ctx.lineWidth = stroke.getWidth() || 2;
-					ctx.stroke();
-				}
-			} else {
-				// Polygon or MultiPolygon
-				ctx.beginPath();
-				ctx.rect(4, 4, 16, 16);
-				const fill = s.getFill();
-				if (fill) {
-					ctx.fillStyle = fill.getColor() || 'rgba(51, 153, 204, 0.7)';
-					ctx.fill();
-				}
-				const stroke = s.getStroke();
-				if (stroke) {
-					ctx.strokeStyle = stroke.getColor() || '#3399CC';
-					ctx.lineWidth = stroke.getWidth() || 1;
-					ctx.stroke();
-				}
-			}
-		});
-		
-		container.appendChild(canvas);
-	}
-
-	getLegendGraphicUrl(wmsUrl) {
-		const url = new URL(wmsUrl);
-		url.searchParams.set('SERVICE', 'WMS');
-		url.searchParams.set('VERSION', '1.3.0');
-		url.searchParams.set('REQUEST', 'GetLegendGraphic');
-		url.searchParams.set('FORMAT', 'image/png');
-		url.searchParams.set('LAYER', url.searchParams.get('LAYERS'));
-		url.searchParams.set('STYLE', url.searchParams.get('STYLES') || '');
-		return url.toString();
-	}
-
-	createVectorLegend(container, layer) {
-		const styleFunction = layer.getStyle();
-		const canvas = document.createElement('canvas');
-		canvas.width = 20;
-		canvas.height = 20;
-		const ctx = canvas.getContext('2d');
-
-		// Get the actual style from the style function
-		let style;
-		if (typeof styleFunction === 'function') {
-			const features = layer.getSource().getFeatures();
-			if (features.length > 0) {
-				style = styleFunction(features[0]);
-			}
-		} else {
-			style = styleFunction;
-		}
-
-		// Draw vector style representation
-		if (style) {
-			const fill = style.getFill();
-			const stroke = style.getStroke();
-
-			ctx.beginPath();
-			ctx.rect(2, 2, 16, 16);
-
-			if (fill) {
-				ctx.fillStyle = fill.getColor() || 'rgba(255, 255, 255, 0.4)';
-				ctx.fill();
-			}
-
-			if (stroke) {
-				ctx.strokeStyle = stroke.getColor() || '#3399CC';
-				ctx.lineWidth = stroke.getWidth() || 1.25;
-				ctx.stroke();
-			}
-		}
-
-		container.appendChild(canvas);
-	}
-
-
-
-	createButton(id, src, alt, onClick) {
-		const button = document.createElement('button');
-		button.id = id;
-		button.className = 'map-control-button';
-		button.setAttribute('aria-label', alt);
-
-		const img = document.createElement('img');
-		img.src = src;
-		img.alt = '';
-		img.setAttribute('role', 'presentation');
-
-		button.appendChild(img);
-		button.onclick = onClick;
-
-		button.addEventListener('keydown', (e) => {
-			if (e.key === 'Enter' || e.key === ' ') {
-				e.preventDefault();
-				onClick();
-			}
-		});
-
-		return button;
-	}
-
-
-
+    constructor() {
+        this.isMobile = window.innerWidth <= 768 ||
+            navigator.userAgent.match(/Android/i) ||
+            navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        this.basemap = null;
+        this.map = this.initializeMap();
+        this.setupMapAccessibility();
+        this.initializeComponents();
+        this.basemapLayers = [];
+        this.currentBasemapId = 'Google_Satellite';
+        this.initializeBasemapSwitcher();
+        this.highlightedFeature = null;
+        this.originalStyle = null;
+    }
+
+    setupOptimizedEventHandlers() {
+        const debounce = (func, delay) => {
+            let timeout;
+            return function () {
+                const context = this;
+                const args = arguments;
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(context, args), delay);
+            };
+        };
+
+        this.map.on('pointermove', debounce((event) => {
+            const pixel = this.map.getEventPixel(event.originalEvent);
+            const hit = this.map.hasFeatureAtPixel(pixel);
+            this.map.getTargetElement().style.cursor = hit ? 'pointer' : '';
+        }, 50));
+
+        this.map.on('movestart', () => {
+            this.map.getLayers().forEach(layer => {
+                if (layer instanceof ol.layer.Vector) {
+                    layer.setRenderBuffer(0);
+                }
+            });
+        });
+
+        this.map.on('moveend', () => {
+            this.map.getLayers().forEach(layer => {
+                if (layer instanceof ol.layer.Vector) {
+                    layer.setRenderBuffer(100);
+                }
+            });
+        });
+    }
+
+    cleanupUnusedResources() {
+        if (this.activeLayers.size > 5) {
+            const layerEntries = Array.from(this.activeLayers.entries());
+            const oldestLayers = layerEntries.slice(0, layerEntries.length - 5);
+
+            oldestLayers.forEach(([url, layerInfo]) => {
+                this.map.removeLayer(layerInfo.layer);
+                this.activeLayers.delete(url);
+                if (layerInfo.button) {
+                    layerInfo.button.textContent = '+';
+                    layerInfo.button.className = 'layer-toggle-button add';
+                }
+            });
+
+            this.updateLegend(document.querySelector('.legend-content'));
+        }
+    }
+
+    setupMapAccessibility() {
+        this.map.getTargetElement().setAttribute('role', 'application');
+        this.map.getTargetElement().setAttribute('aria-label', 'Interactive map of Hong Kong');
+        this.activeLayers = new Map();
+        this.locationMarker = null;
+        this.vectorSource = null;
+    }
+
+    initializeComponents() {
+        this.initializeSearchTool();
+        this.createLegendPanel();
+        this.createPopupInfo();
+        this.createLiberDataPanel();
+    }
+
+    initializeMap() {
+        this.basemap = new ol.layer.Group({
+            layers: [
+                new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        url: 'https://mt1.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',
+                        attribution: '© Google Maps'
+                    })
+                })
+            ]
+        });
+
+        const map = new ol.Map({
+            target: 'map',
+            layers: [this.basemap],
+            view: new ol.View({
+                center: ol.proj.fromLonLat(CONFIG.HONG_KONG_CENTER),
+                zoom: CONFIG.DEFAULT_ZOOM
+            }),
+            controls: [
+                new ol.control.Zoom()
+            ]
+        });
+
+        if (this.isMobile) {
+            const controls = map.getControls().getArray();
+            const controlsToKeep = controls.filter(control =>
+                control instanceof ol.control.Zoom
+            );
+            map.getControls().clear();
+            controlsToKeep.forEach(control => {
+                map.addControl(control);
+            });
+        }
+
+        return map;
+    }
+
+    useMyLocation() {
+        if (!navigator.geolocation) {
+            alert('Geolocation is not supported by this browser.');
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition((position) => {
+            const coords = [position.coords.longitude, position.coords.latitude];
+            const transformedCoords = ol.proj.fromLonLat(coords);
+
+            this.locationMarker = new ol.Feature({
+                geometry: new ol.geom.Point(transformedCoords)
+            });
+
+            const iconStyle = new ol.style.Style({
+                image: new ol.style.Icon({
+                    src: './img/pin.png',
+                    scale: 0.07,
+                    anchor: [0.5, 1]
+                })
+            });
+
+            this.locationMarker.setStyle(iconStyle);
+            this.vectorSource = new ol.source.Vector({
+                features: [this.locationMarker]
+            });
+
+            const vectorLayer = new ol.layer.Vector({
+                source: this.vectorSource
+            });
+
+            this.map.addLayer(vectorLayer);
+            this.animateToLocation(transformedCoords, 15);
+
+            setTimeout(() => {
+                if (this.vectorSource && this.locationMarker) {
+                    this.vectorSource.removeFeature(this.locationMarker);
+                    this.map.removeLayer(vectorLayer);
+                    this.locationMarker = null;
+                    this.vectorSource = null;
+                }
+            }, 3000);
+        });
+    }
+
+    goToHome() {
+        this.animateToLocation(ol.proj.fromLonLat(CONFIG.HONG_KONG_CENTER), CONFIG.DEFAULT_ZOOM);
+        if (this.locationMarker && this.vectorSource) {
+            this.vectorSource.removeFeature(this.locationMarker);
+            this.locationMarker = null;
+        }
+    }
+
+    animateToLocation(center, zoom) {
+        this.map.getView().animate({
+            center: center,
+            zoom: zoom,
+            duration: 1500
+        });
+    }
+
+    printMap() {
+        const printContainer = document.createElement('div');
+        printContainer.style.width = '1200px'; // Increased resolution
+        printContainer.style.height = '900px';
+        printContainer.style.position = 'absolute';
+        printContainer.style.left = '-9999px'; // Render off-screen
+        document.body.appendChild(printContainer);
+
+        const basemapLayers = this.basemap.getLayers().getArray();
+
+        // Create a new map for printing
+        const printMap = new ol.Map({
+            target: printContainer,
+            layers: [
+                ...basemapLayers.map((layer, index) => {
+                    const source = layer.getSource();
+                    return new ol.layer.Tile({
+                        source: new ol.source.XYZ({
+                            url: source.getUrls() ? source.getUrls()[0] : '',
+                            crossOrigin: 'anonymous',
+                            attributions: source.getAttributions()
+                        }),
+                        zIndex: -100 + index
+                    });
+                }),
+                ...Array.from(this.activeLayers.values()).map((info, index) => {
+                    const source = info.layer.getSource();
+                    const features = source.getFeatures().map(f => {
+                        const clonedFeature = f.clone();
+                        // Ensure style is preserved
+                        const originalStyle = f.getStyle() || info.layer.getStyle();
+                        if (originalStyle) {
+                            clonedFeature.setStyle(originalStyle);
+                        }
+                        return clonedFeature;
+                    });
+                    return new ol.layer.Vector({
+                        source: new ol.source.Vector({ features }),
+                        style: info.layer.getStyle(),
+                        zIndex: 1000 + index
+                    });
+                })
+            ],
+            view: new ol.View({
+                center: this.map.getView().getCenter(),
+                zoom: this.map.getView().getZoom(),
+                rotation: this.map.getView().getRotation(),
+                projection: this.map.getView().getProjection()
+            })
+        });
+
+        // Force render and wait for all layers to be ready
+        printMap.renderSync();
+
+        // Use setTimeout to ensure vector layers are fully rendered
+        setTimeout(() => {
+            const mapCanvas = printContainer.querySelector('canvas');
+            if (mapCanvas) {
+                try {
+                    const dataUrl = mapCanvas.toDataURL('image/png');
+                    const link = document.createElement('a');
+                    link.href = dataUrl;
+                    link.download = 'map_export.png';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } catch (error) {
+                    console.error('Error generating map image:', error);
+                    alert('Failed to generate map image. Please try again.');
+                }
+            } else {
+                console.error('Canvas not found for printing');
+                alert('Failed to generate map image. Canvas not found.');
+            }
+
+            // Clean up
+            printMap.setTarget(null);
+            document.body.removeChild(printContainer);
+        }, 1000); // Delay to allow vector layers to render
+    }
+
+    initializeBasemapSwitcher() {
+        this.basemapConfigs = {
+            topographic_en: {
+                name: 'Topographic - Eng (Gov)',
+                thumbnail: 'img/topographic.png',
+                layers: [
+                    {
+                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/basemap/wgs84/{z}/{x}/{y}.png',
+                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
+                    },
+                    {
+                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/en/wgs84/{z}/{x}/{y}.png',
+                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
+                    }
+                ]
+            },
+            topographic_tc: {
+                name: 'Topographic - 中文 (Gov)',
+                thumbnail: 'img/topographic.png',
+                layers: [
+                    {
+                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/basemap/wgs84/{z}/{x}/{y}.png',
+                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
+                    },
+                    {
+                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/tc/wgs84/{z}/{x}/{y}.png',
+                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
+                    }
+                ]
+            },
+            imagery_en: {
+                name: 'Imagery - Eng (Gov)',
+                thumbnail: 'img/imagery.png',
+                layers: [
+                    {
+                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/imagery/wgs84/{z}/{x}/{y}.png',
+                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
+                    },
+                    {
+                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/en/wgs84/{z}/{x}/{y}.png',
+                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
+                    }
+                ]
+            },
+            imagery_tc: {
+                name: 'Imagery - 中文 (Gov)',
+                thumbnail: 'img/imagery.png',
+                layers: [
+                    {
+                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/imagery/wgs84/{z}/{x}/{y}.png',
+                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
+                    },
+                    {
+                        url: 'https://mapapi.geodata.gov.hk/gs/api/v1.0.0/xyz/label/hk/tc/wgs84/{z}/{x}/{y}.png',
+                        attribution: 'Lands Department © The Government of the Hong Kong SAR'
+                    }
+                ]
+            },
+            greyscale: {
+                name: 'Carto Light (Grayscale)',
+                thumbnail: 'img/carto-light.png',
+                layers: [
+                    {
+                        url: 'https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+                        attribution: '© CARTO'
+                    }
+                ]
+            },
+            OSM: {
+                name: 'Open Street Map',
+                thumbnail: 'img/osm.png',
+                layers: [
+                    {
+                        url: 'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                        attribution: '© OpenStreetMap contributors'
+                    }
+                ]
+            },
+            Google_Satellite: {
+                name: 'Google Satellite',
+                thumbnail: 'img/google-satellite.png',
+                layers: [
+                    {
+                        url: 'https://mt1.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}',
+                        attribution: '© Google Maps'
+                    }
+                ]
+            }
+        };
+
+        this.applyBasemap(this.currentBasemapId);
+
+        const basemapButton = this.createButton(
+            'basemap-button',
+            'img/basemap.png',
+            'Change Basemap',
+            () => {
+                const dropdown = document.getElementById('basemap-dropdown');
+                if (dropdown) {
+                    const isVisible = dropdown.style.display !== 'none';
+                    dropdown.style.display = isVisible ? 'none' : 'block';
+                    if (!isVisible) {
+                        const buttonRect = basemapButton.getBoundingClientRect();
+                        dropdown.style.position = 'absolute';
+                        dropdown.style.left = `${buttonRect.right + 10}px`;
+                        dropdown.style.top = `${buttonRect.top}px`;
+                    }
+                }
+            }
+        );
+
+        document.body.appendChild(basemapButton);
+
+        const dropdown = document.createElement('div');
+        dropdown.id = 'basemap-dropdown';
+        dropdown.className = 'basemap-dropdown';
+        dropdown.style.display = 'none';
+
+        Object.keys(this.basemapConfigs).forEach(id => {
+            const option = this.basemapConfigs[id];
+            const optionElement = document.createElement('div');
+            optionElement.className = 'basemap-option';
+
+            const thumbnail = document.createElement('div');
+            thumbnail.className = 'basemap-thumbnail';
+            thumbnail.style.backgroundImage = `url(${option.thumbnail})`;
+            optionElement.appendChild(thumbnail);
+
+            const name = document.createElement('span');
+            name.textContent = option.name;
+            optionElement.appendChild(name);
+
+            if (id === this.currentBasemapId) {
+                optionElement.classList.add('active');
+            }
+
+            optionElement.addEventListener('click', () => {
+                this.switchBasemap(id);
+                dropdown.style.display = 'none';
+                document.querySelectorAll('.basemap-option').forEach(opt => {
+                    opt.classList.remove('active');
+                });
+                optionElement.classList.add('active');
+            });
+
+            dropdown.appendChild(optionElement);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!basemapButton.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+
+        document.body.appendChild(dropdown);
+    }
+
+    applyBasemap(basemapId) {
+        const config = this.basemapConfigs[basemapId];
+        if (!config) return;
+
+        if (this.basemap) {
+            this.map.removeLayer(this.basemap);
+        }
+
+        const newBasemapLayers = [];
+
+        config.layers.forEach((layerConfig, index) => {
+            let layer;
+
+            if (layerConfig.type === 'osm') {
+                layer = new ol.layer.Tile({
+                    source: new ol.source.OSM(),
+                    className: layerConfig.className || '',
+                    zIndex: -100 + index
+                });
+            } else {
+                layer = new ol.layer.Tile({
+                    source: new ol.source.XYZ({
+                        url: layerConfig.url,
+                        attributions: layerConfig.attribution || ''
+                    }),
+                    zIndex: -100 + index
+                });
+            }
+
+            newBasemapLayers.push(layer);
+        });
+
+        this.basemap = new ol.layer.Group({
+            layers: newBasemapLayers
+        });
+
+        this.map.addLayer(this.basemap);
+        this.basemapLayers = newBasemapLayers;
+    }
+
+    switchBasemap(basemapId) {
+        if (!this.basemapConfigs[basemapId] || basemapId === this.currentBasemapId) return;
+
+        this.applyBasemap(basemapId);
+        this.currentBasemapId = basemapId;
+
+        console.log(`Switched basemap to: ${basemapId}`);
+
+        const event = new CustomEvent('basemapChanged', {
+            detail: {
+                basemapId: basemapId,
+                basemapLayers: this.basemapLayers
+            }
+        });
+        document.dispatchEvent(event);
+    }
+
+    getCurrentBasemapLayers() {
+        return this.basemapLayers;
+    }
+
+    getCurrentBasemapId() {
+        return this.currentBasemapId;
+    }
+
+    initializeSearchTool() {
+        const searchContainer = document.createElement('div');
+        searchContainer.id = 'search-container';
+        searchContainer.className = 'search-container';
+
+        const dropdownToggle = document.createElement('div');
+        dropdownToggle.className = 'search-dropdown-toggle';
+        dropdownToggle.innerHTML = '▼';
+        dropdownToggle.setAttribute('role', 'button');
+        dropdownToggle.setAttribute('aria-label', 'Toggle search engines');
+        dropdownToggle.setAttribute('tabindex', '0');
+
+        const dropdownMenu = document.createElement('div');
+        dropdownMenu.className = 'search-dropdown-menu';
+        dropdownMenu.style.display = 'none';
+
+        const engines = [
+            { id: 'google', name: 'Google Places' },
+            { id: 'locationSearch', name: 'Location Search API' }
+        ];
+        engines.forEach(engine => {
+            const option = document.createElement('div');
+            option.className = 'search-engine-option';
+            option.textContent = engine.name;
+            option.setAttribute('data-engine', engine.id);
+            option.onclick = () => {
+                setActiveEngine(engine.id);
+                dropdownMenu.style.display = 'none';
+            };
+            dropdownMenu.appendChild(option);
+        });
+
+        const inputContainer = document.createElement('div');
+        inputContainer.className = 'search-input-container';
+
+        const googleSearchInput = document.createElement('input');
+        googleSearchInput.id = 'google-search-input';
+        googleSearchInput.className = 'search-input';
+        googleSearchInput.type = 'text';
+        googleSearchInput.placeholder = 'Search Google Places...';
+
+        const locationSearchInput = document.createElement('input');
+        locationSearchInput.id = 'location-search-input';
+        locationSearchInput.className = 'search-input';
+        locationSearchInput.type = 'text';
+        locationSearchInput.placeholder = 'Search Location Search API...';
+        locationSearchInput.style.display = 'none';
+
+        inputContainer.appendChild(googleSearchInput);
+        inputContainer.appendChild(locationSearchInput);
+        searchContainer.appendChild(dropdownToggle);
+        searchContainer.appendChild(inputContainer);
+        document.body.appendChild(searchContainer);
+        document.body.appendChild(dropdownMenu);
+
+        const resultContainer = document.createElement('div');
+        resultContainer.className = 'search-results-container';
+        resultContainer.style.display = 'none';
+        document.body.appendChild(resultContainer);
+
+        const pinMarkerSource = new ol.source.Vector();
+        const pinMarkerLayer = new ol.layer.Vector({
+            source: pinMarkerSource,
+            zIndex: 1000
+        });
+        this.map.addLayer(pinMarkerLayer);
+
+        let pinTimer = null;
+
+        const addPinMarker = (coordinates) => {
+            pinMarkerSource.clear();
+            if (pinTimer) {
+                clearTimeout(pinTimer);
+            }
+
+            const marker = new ol.Feature({
+                geometry: new ol.geom.Point(coordinates)
+            });
+
+            const markerStyle = new ol.style.Style({
+                image: new ol.style.Icon({
+                    src: 'img/pin.png',
+                    anchor: [0.5, 1],
+                    scale: 0.05
+                })
+            });
+
+            marker.setStyle(markerStyle);
+            pinMarkerSource.addFeature(marker);
+
+            pinTimer = setTimeout(() => {
+                pinMarkerSource.clear();
+                pinTimer = null;
+            }, 5000);
+        };
+
+        dropdownToggle.onclick = () => {
+            const isVisible = dropdownMenu.style.display !== 'none';
+            dropdownMenu.style.display = isVisible ? 'none' : 'block';
+            if (!isVisible) {
+                const rect = dropdownToggle.getBoundingClientRect();
+                dropdownMenu.style.left = `${rect.left}px`;
+                dropdownMenu.style.top = `${rect.bottom + window.scrollY}px`;
+            }
+        };
+
+        dropdownToggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                dropdownToggle.click();
+            }
+        });
+
+        const setActiveEngine = (engineId) => {
+            googleSearchInput.style.display = 'none';
+            locationSearchInput.style.display = 'none';
+
+            if (engineId === 'google') {
+                googleSearchInput.style.display = 'block';
+                dropdownToggle.setAttribute('aria-label', 'Google Places (click to change)');
+            } else if (engineId === 'locationSearch') {
+                locationSearchInput.style.display = 'block';
+                dropdownToggle.setAttribute('aria-label', 'Location Search API (click to change)');
+            }
+
+            resultContainer.style.display = 'none';
+            resultContainer.innerHTML = '';
+
+            pinMarkerSource.clear();
+            if (pinTimer) {
+                clearTimeout(pinTimer);
+                pinTimer = null;
+            }
+        };
+
+        let searchBox;
+        const initGoogleSearch = () => {
+            searchBox = new google.maps.places.SearchBox(googleSearchInput);
+            searchBox.addListener('places_changed', () => {
+                const places = searchBox.getPlaces();
+                if (places.length === 0) return;
+
+                const place = places[0];
+                const coordinates = [place.geometry.location.lng(), place.geometry.location.lat()];
+                const transformedCoords = ol.proj.fromLonLat(coordinates);
+
+                addPinMarker(transformedCoords);
+
+                this.map.getView().animate({
+                    center: transformedCoords,
+                    zoom: 15,
+                    duration: 1000
+                });
+            });
+        };
+
+        locationSearchInput.addEventListener('input', () => {
+            const query = locationSearchInput.value;
+            if (query.length < 2) {
+                resultContainer.style.display = 'none';
+                return;
+            }
+            fetchLocationSearch(query);
+        });
+
+        const fetchLocationSearch = query => {
+            const url = `https://geodata.gov.hk/gs/api/v1.0.0/locationSearch?q=${encodeURIComponent(query)}`;
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const results = data.slice(0, 5);
+                    resultContainer.innerHTML = '';
+
+                    if (results.length === 0) {
+                        resultContainer.style.display = 'none';
+                        return;
+                    }
+
+                    results.forEach(result => {
+                        const resultItem = document.createElement('div');
+                        resultItem.className = 'search-result-item';
+                        resultItem.textContent = result.nameZH;
+                        resultItem.addEventListener('click', () => {
+                            const hk1980Projection = 'EPSG:2326';
+                            const mapProjection = this.map.getView().getProjection().getCode();
+                            const x = result.x;
+                            const y = result.y;
+
+                            const transformedCoords = ol.proj.transform([x, y], hk1980Projection, mapProjection);
+
+                            addPinMarker(transformedCoords);
+
+                            this.map.getView().animate({
+                                center: transformedCoords,
+                                zoom: 15,
+                                duration: 1000
+                            });
+
+                            resultContainer.style.display = 'none';
+                            locationSearchInput.value = result.nameZH;
+                        });
+                        resultContainer.appendChild(resultItem);
+                    });
+
+                    const rect = locationSearchInput.getBoundingClientRect();
+                    resultContainer.style.left = `${rect.left}px`;
+                    resultContainer.style.top = `${rect.bottom + window.scrollY}px`;
+                    resultContainer.style.width = `${rect.width}px`;
+                    resultContainer.style.display = 'block';
+                })
+                .catch(error => console.error('Error fetching location search results:', error));
+        };
+
+        initGoogleSearch();
+        setActiveEngine('google');
+
+        document.addEventListener('click', (e) => {
+            if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.style.display = 'none';
+            }
+            if (!searchContainer.contains(e.target) && !resultContainer.contains(e.target)) {
+                resultContainer.style.display = 'none';
+            }
+        });
+    }
+
+    addLayerToMap() {
+        const inputElement = document.createElement('input');
+        inputElement.type = 'file';
+        inputElement.accept = '.kml,.geojson,.json';
+        inputElement.onchange = this.handleFileUpload.bind(this);
+        inputElement.click();
+    }
+
+    processKML(content, fileName) {
+        try {
+            const features = new ol.format.KML({
+                extractStyles: true,
+                showPointNames: false
+            }).readFeatures(content, {
+                featureProjection: 'EPSG:3857'
+            });
+
+            const vectorSource = new ol.source.Vector({ features });
+            const vectorLayer = new ol.layer.Vector({
+                source: vectorSource,
+                style: this.createStyleFunction()
+            });
+
+            vectorLayer.setZIndex(1000 + this.activeLayers.size);
+
+            this.map.addLayer(vectorLayer);
+            this.activeLayers.set(fileName, {
+                layer: vectorLayer,
+                button: null
+            });
+
+            const legendContent = document.querySelector('.legend-content');
+            if (legendContent) {
+                this.updateLegend(legendContent);
+            }
+
+            this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
+        } catch (error) {
+            console.error('KML processing error:', error);
+            alert('Error processing KML file.');
+        }
+    }
+
+    processGeoJSON(content, fileName) {
+        try {
+            const features = new ol.format.GeoJSON().readFeatures(content, {
+                featureProjection: 'EPSG:3857'
+            });
+
+            const vectorSource = new ol.source.Vector({ features });
+            const vectorLayer = new ol.layer.Vector({
+                source: vectorSource,
+                style: this.createStyleFunction()
+            });
+
+            vectorLayer.setZIndex(1000 + this.activeLayers.size);
+
+            this.map.addLayer(vectorLayer);
+            this.activeLayers.set(fileName, {
+                layer: vectorLayer,
+                button: null
+            });
+
+            const legendContent = document.querySelector('.legend-content');
+            if (legendContent) {
+                this.updateLegend(legendContent);
+            }
+
+            this.map.getView().fit(vectorSource.getExtent(), { duration: 1500 });
+        } catch (error) {
+            console.error('GeoJSON processing error:', error);
+            alert('Error processing GeoJSON file.');
+        }
+    }
+
+    handleFileUpload(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+
+        this.currentFileName = file.name;
+        const fileExtension = file.name.split('.').pop().toLowerCase();
+
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            const content = e.target.result;
+            if (fileExtension === 'kml') {
+                this.processKML(content, file.name);
+            } else if (fileExtension === 'geojson' || fileExtension === 'json') {
+                this.processGeoJSON(content, file.name);
+            } else {
+                alert('Unsupported file format. Please upload a KML or GeoJSON file.');
+            }
+        };
+        reader.onerror = (error) => {
+            console.error('File reading error: ', error);
+            alert('Error reading file.');
+        };
+        reader.readAsText(file);
+    }
+
+    createStyleFunction() {
+        return (feature) => {
+            const kmlStyleFunc = feature.getStyleFunction();
+            if (kmlStyleFunc) {
+                let kmlStyles = kmlStyleFunc(feature);
+                if (!kmlStyles) return null;
+                let stylesArray = Array.isArray(kmlStyles) ? kmlStyles : [kmlStyles];
+                let updatedStyles = stylesArray.map(s => {
+                    if (!s) return null;
+                    let style = s.clone();
+                    style.setText(null);
+                    return style;
+                }).filter(s => s !== null);
+
+                if (updatedStyles.length === 0) {
+                    return new ol.style.Style({
+                        fill: new ol.style.Fill({ color: 'rgba(51, 153, 204, 0.7)' }),
+                        stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
+                        text: null
+                    });
+                }
+                return updatedStyles.length === 1 ? updatedStyles[0] : updatedStyles;
+            }
+
+            const geomType = feature.getGeometry().getType();
+            if (geomType === 'Point') {
+                return new ol.style.Style({
+                    image: new ol.style.Circle({
+                        radius: 5,
+                        fill: new ol.style.Fill({ color: '#3399CC' }),
+                        stroke: new ol.style.Stroke({ color: '#fff', width: 2 })
+                    }),
+                    text: null
+                });
+            } else if (geomType === 'LineString' || geomType === 'MultiLineString') {
+                return new ol.style.Style({
+                    stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
+                    text: null
+                });
+            } else {
+                return new ol.style.Style({
+                    fill: new ol.style.Fill({ color: 'rgba(51, 153, 204, 0.7)' }),
+                    stroke: new ol.style.Stroke({ color: '#3399CC', width: 2 }),
+                    text: null
+                });
+            }
+        };
+    }
+
+    convertToRGBA(color, opacity) {
+        if (color.startsWith('rgba')) return color;
+        if (color.startsWith('rgb')) {
+            return color.replace('rgb', 'rgba').replace(')', `, ${opacity})`);
+        }
+        const hex = color.replace('#', '');
+        const r = parseInt(hex.substring(0, 2), 16);
+        const g = parseInt(hex.substring(2, 4), 16);
+        const b = parseInt(hex.substring(4, 6), 16);
+        return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+    }
+
+    highlightFeature(feature) {
+        if (this.highlightedFeature && this.originalStyle) {
+            this.highlightedFeature.setStyle(this.originalStyle);
+        }
+
+        this.highlightedFeature = feature;
+        this.originalStyle = feature.getStyle();
+
+        const geomType = feature.getGeometry().getType();
+        let highlightStyle;
+
+        if (geomType === 'Point' || geomType === 'MultiPoint') {
+            highlightStyle = new ol.style.Style({
+                image: new ol.style.Circle({
+                    radius: 7,
+                    fill: new ol.style.Fill({ color: 'rgba(255, 255, 0, 0.7)' }),
+                    stroke: new ol.style.Stroke({ color: '#ff0', width: 3 })
+                })
+            });
+        } else if (geomType === 'LineString' || geomType === 'MultiLineString') {
+            highlightStyle = new ol.style.Style({
+                stroke: new ol.style.Stroke({
+                    color: '#ff0',
+                    width: 4
+                })
+            });
+        } else {
+            highlightStyle = new ol.style.Style({
+                fill: new ol.style.Fill({ color: 'rgba(255, 255, 0, 0.3)' }),
+                stroke: new ol.style.Stroke({ color: '#ff0', width: 3 })
+            });
+        }
+
+        feature.setStyle(highlightStyle);
+    }
+
+    clearHighlight() {
+        if (this.highlightedFeature && this.originalStyle) {
+            this.highlightedFeature.setStyle(this.originalStyle);
+            this.highlightedFeature = null;
+            this.originalStyle = null;
+        }
+    }
+
+    createPopupInfo() {
+        const overlayContainerElement = document.createElement('div');
+        overlayContainerElement.className = 'popup-container';
+        overlayContainerElement.style.display = 'none';
+        document.body.appendChild(overlayContainerElement);
+
+        const popupHeader = document.createElement('div');
+        popupHeader.className = 'popup-header';
+        const popupTitle = document.createElement('div');
+        popupTitle.className = 'popup-title';
+        popupHeader.appendChild(popupTitle);
+
+        const featureCounter = document.createElement('div');
+        featureCounter.className = 'popup-feature-counter';
+        featureCounter.style.fontSize = '14px';
+        featureCounter.style.color = '#666';
+        popupHeader.appendChild(featureCounter);
+
+        const prevButton = document.createElement('div');
+        prevButton.className = 'popup-prev-button';
+        prevButton.innerHTML = '<';
+        prevButton.style.cursor = 'pointer';
+        prevButton.style.fontSize = '20px';
+        prevButton.style.color = '#666';
+        prevButton.style.width = '24px';
+        prevButton.style.height = '24px';
+        prevButton.style.display = 'flex';
+        prevButton.style.alignItems = 'center';
+        prevButton.style.justifyContent = 'center';
+        prevButton.style.borderRadius = '50%';
+        prevButton.setAttribute('aria-label', 'Previous feature');
+        prevButton.style.display = 'none';
+        prevButton.addEventListener('mouseenter', () => {
+            prevButton.style.backgroundColor = '#e0e0e0';
+        });
+        prevButton.addEventListener('mouseleave', () => {
+            prevButton.style.backgroundColor = 'transparent';
+        });
+        popupHeader.appendChild(prevButton);
+
+        const nextButton = document.createElement('div');
+        nextButton.className = 'popup-next-button';
+        nextButton.innerHTML = '>';
+        nextButton.style.cursor = 'pointer';
+        nextButton.style.fontSize = '20px';
+        nextButton.style.color = '#666';
+        nextButton.style.width = '24px';
+        nextButton.style.height = '24px';
+        nextButton.style.display = 'flex';
+        nextButton.style.alignItems = 'center';
+        nextButton.style.justifyContent = 'center';
+        nextButton.style.borderRadius = '50%';
+        nextButton.setAttribute('aria-label', 'Next feature');
+        nextButton.style.display = 'none';
+        nextButton.addEventListener('mouseenter', () => {
+            nextButton.style.backgroundColor = '#e0e0e0';
+        });
+        nextButton.addEventListener('mouseleave', () => {
+            nextButton.style.backgroundColor = 'transparent';
+        });
+        popupHeader.appendChild(nextButton);
+
+        const closeButton = document.createElement('div');
+        closeButton.className = 'popup-close-button';
+        closeButton.innerHTML = '×';
+        closeButton.setAttribute('aria-label', 'Close popup');
+        closeButton.onclick = () => {
+            overlayContainerElement.style.display = 'none';
+            this.clearHighlight();
+        };
+        popupHeader.appendChild(closeButton);
+        overlayContainerElement.appendChild(popupHeader);
+
+        const popupContent = document.createElement('div');
+        popupContent.className = 'popup-content';
+        overlayContainerElement.appendChild(popupContent);
+
+        this.popupOverlay = new ol.Overlay({
+            element: overlayContainerElement,
+            positioning: 'bottom-center',
+            stopEvent: true,
+            offset: [0, -10],
+            autoPan: false
+        });
+        this.map.addOverlay(this.popupOverlay);
+
+        this.popupElement = overlayContainerElement;
+        this.popupTitle = popupTitle;
+        this.popupContent = popupContent;
+        this.popupInitialized = true;
+        this.currentFeatureIndex = 0;
+        this.clickedFeatures = [];
+
+        let isDragging = false;
+        let startCoord;
+
+        popupHeader.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            const pixel = [e.clientX, e.clientY];
+            startCoord = this.map.getCoordinateFromPixel(pixel);
+            e.preventDefault();
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+
+            const pixel = [e.clientX, e.clientY];
+            const currentCoord = this.map.getCoordinateFromPixel(pixel);
+            if (!startCoord || !currentCoord) return;
+
+            const dx = currentCoord[0] - startCoord[0];
+            const dy = currentCoord[1] - startCoord[1];
+
+            const currentPos = this.popupOverlay.getPosition();
+            if (currentPos) {
+                const newPos = [
+                    currentPos[0] + dx,
+                    currentPos[1] + dy
+                ];
+                this.popupOverlay.setPosition(newPos);
+                startCoord = currentCoord;
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            startCoord = null;
+        });
+
+        this.map.on('click', (event) => {
+            overlayContainerElement.style.display = 'none';
+            this.clearHighlight();
+            this.clickedFeatures = [];
+            this.currentFeatureIndex = 0;
+
+            const pixel = event.pixel;
+            this.map.forEachFeatureAtPixel(pixel, (feature, layer) => {
+                this.clickedFeatures.push({ feature, layer });
+            }, {
+                hitTolerance: 5
+            });
+
+            if (this.clickedFeatures.length > 0) {
+                this.showFeatureInfo(this.currentFeatureIndex);
+                this.highlightFeature(this.clickedFeatures[this.currentFeatureIndex].feature);
+                overlayContainerElement.style.display = 'block';
+                this.popupOverlay.setPosition(event.coordinate);
+
+                featureCounter.textContent = this.clickedFeatures.length > 1
+                    ? `${this.currentFeatureIndex + 1}/${this.clickedFeatures.length} features`
+                    : '';
+                prevButton.style.display = this.clickedFeatures.length > 1 ? 'block' : 'none';
+                nextButton.style.display = this.clickedFeatures.length > 1 ? 'block' : 'none';
+
+                prevButton.onclick = () => {
+                    this.currentFeatureIndex = (this.currentFeatureIndex - 1 + this.clickedFeatures.length) % this.clickedFeatures.length;
+                    this.showFeatureInfo(this.currentFeatureIndex);
+                    this.highlightFeature(this.clickedFeatures[this.currentFeatureIndex].feature);
+                };
+
+                nextButton.onclick = () => {
+                    this.currentFeatureIndex = (this.currentFeatureIndex + 1) % this.clickedFeatures.length;
+                    this.showFeatureInfo(this.currentFeatureIndex);
+                    this.highlightFeature(this.clickedFeatures[this.currentFeatureIndex].feature);
+                };
+            }
+        });
+
+        this.showFeatureInfo = (index) => {
+            const { feature } = this.clickedFeatures[index];
+            const properties = feature.getProperties();
+            const title = properties['name'] || properties['title'] || properties['NAME'] || 'Feature Information';
+            this.popupTitle.textContent = title;
+            this.popupContent.innerHTML = '';
+
+            if (properties['description']) {
+                const descriptionElement = document.createElement('div');
+                descriptionElement.className = 'popup-description';
+                const sanitizedHTML = DOMPurify ? DOMPurify.sanitize(properties['description']) : properties['description'];
+                descriptionElement.innerHTML = sanitizedHTML;
+                this.popupContent.appendChild(descriptionElement);
+            } else {
+                this.popupContent.appendChild(this.createPropertiesTable(properties));
+            }
+
+            featureCounter.textContent = this.clickedFeatures.length > 1
+                ? `${this.currentFeatureIndex + 1}/${this.clickedFeatures.length} features`
+                : '';
+        };
+    }
+
+    createPropertiesTable(properties) {
+        const table = document.createElement('table');
+        table.className = 'popup-table';
+
+        const excludedColumns = [
+            'geometry', 'GlobalID', 'Shape__Are', 'Shape__Len',
+            'boundedBy', 'styleUrl', 'styleHash', 'Style', 'description',
+            'name'
+        ];
+
+        const keys = Object.keys(properties).filter(key =>
+            !excludedColumns.includes(key) &&
+            properties[key] !== undefined &&
+            properties[key] !== null &&
+            properties[key] !== ''
+        ).sort();
+
+        keys.forEach(key => {
+            const row = document.createElement('tr');
+            const keyCell = document.createElement('th');
+            keyCell.className = 'popup-table-key';
+            keyCell.textContent = this.formatPropertyName(key);
+
+            const valueCell = document.createElement('td');
+            valueCell.className = 'popup-table-value';
+
+            const value = properties[key];
+            if (typeof value === 'number') {
+                valueCell.textContent = this.formatNumber(value);
+            } else if (value instanceof Date) {
+                valueCell.textContent = value.toLocaleDateString();
+            } else if (typeof value === 'boolean') {
+                valueCell.textContent = value ? 'Yes' : 'No';
+            } else if (typeof value === 'string' && value.startsWith('http')) {
+                const link = document.createElement('a');
+                link.href = value;
+                link.textContent = 'Link';
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+                valueCell.appendChild(link);
+            } else {
+                valueCell.textContent = value;
+            }
+
+            row.appendChild(keyCell);
+            row.appendChild(valueCell);
+            table.appendChild(row);
+        });
+
+        return table;
+    }
+
+    formatPropertyName(name) {
+        return name
+            .replace(/_/g, ' ')
+            .replace(/([A-Z])/g, ' $1')
+            .replace(/^./, str => str.toUpperCase())
+            .trim();
+    }
+
+    formatNumber(num) {
+        if (Number.isInteger(num)) {
+            return num.toString();
+        } else {
+            return num.toFixed(2);
+        }
+    }
+
+    async fetchGithubContents(path) {
+        const baseUrl = 'https://api.github.com/repos/liberresearch/LiberMap/contents/';
+        const response = await fetch(baseUrl + path);
+        if (!response.ok) {
+            throw new Error('Error fetching contents');
+        }
+        return await response.json();
+    }
+
+    createLiberDataPanel() {
+        const liberDataButton = document.createElement('div');
+        liberDataButton.id = 'liber-data-button';
+        liberDataButton.className = 'liber-data-button';
+        liberDataButton.textContent = '本研空間資料庫 LiberData';
+        liberDataButton.setAttribute('role', 'button');
+        liberDataButton.setAttribute('aria-expanded', 'false');
+        liberDataButton.setAttribute('tabindex', '0');
+
+        const categoryList = document.createElement('div');
+        categoryList.className = 'category-list';
+        categoryList.style.display = 'none';
+        categoryList.setAttribute('aria-label', 'LiberData categories');
+
+        const categoryListHeader = document.createElement('div');
+        categoryListHeader.className = 'category-list-header';
+        categoryListHeader.textContent = '本研空間資料庫 LiberData';
+
+        const downloadAllButton = document.createElement('div');
+        downloadAllButton.id = 'download-all-button';
+        downloadAllButton.className = 'download-all-button';
+        downloadAllButton.textContent = 'Download All';
+        downloadAllButton.setAttribute('role', 'button');
+        downloadAllButton.setAttribute('tabindex', '0');
+        downloadAllButton.onclick = () => {
+            window.location.href = 'https://s3.licson.net/libreresearch/LibreMap-Dataset.zip';
+        };
+        downloadAllButton.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                downloadAllButton.click();
+            }
+        });
+
+        categoryListHeader.appendChild(downloadAllButton);
+        categoryList.appendChild(categoryListHeader);
+
+        const categories = [
+            {
+                name: '土地房屋 Land & Housing',
+                path: 'Data_GML/土地房屋%20Land%20%26%20Housing'
+            },
+            {
+                name: '保育 Conservation',
+                path: 'Data_GML/保育%20Conservation'
+            },
+            {
+                name: '規劃資料 (資料源自香港政府）Planning data from HK Government',
+                path: 'Data_GML/規劃資料%20(資料源自香港政府）Planning%20data%20from%20HK%20Government'
+            }
+        ];
+
+        categories.forEach(category => {
+            const categoryItem = this.createCategoryItem(category);
+            categoryList.appendChild(categoryItem);
+        });
+
+        liberDataButton.onclick = () => {
+            const isExpanded = categoryList.style.display !== 'none';
+            liberDataButton.setAttribute('aria-expanded', !isExpanded);
+            categoryList.style.display = isExpanded ? 'none' : 'block';
+        };
+
+        liberDataButton.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                liberDataButton.click();
+            }
+        });
+
+        document.body.appendChild(liberDataButton);
+        document.body.appendChild(categoryList);
+    }
+
+    createCategoryItem(category) {
+        const item = document.createElement('div');
+        item.className = 'category-item';
+
+        const header = document.createElement('div');
+        header.className = 'category-header';
+        header.setAttribute('role', 'button');
+        header.setAttribute('tabindex', '0');
+        header.setAttribute('aria-expanded', 'false');
+
+        const indicator = document.createElement('span');
+        indicator.className = 'category-indicator';
+        indicator.textContent = '▶';
+        indicator.setAttribute('aria-hidden', 'true');
+
+        const titleText = document.createElement('span');
+        titleText.textContent = category.name;
+
+        header.appendChild(indicator);
+        header.appendChild(titleText);
+
+        const content = document.createElement('div');
+        content.className = 'category-content';
+        content.style.display = 'none';
+        content.setAttribute('aria-label', `${category.name} content`);
+
+        header.onclick = (e) => {
+            e.stopPropagation();
+            const isExpanded = content.style.display !== 'none';
+            content.style.display = isExpanded ? 'none' : 'block';
+            indicator.textContent = isExpanded ? '▶' : '▼';
+            header.setAttribute('aria-expanded', !isExpanded);
+
+            if (!isExpanded && content.children.length === 0) {
+                this.loadFolderContents(category.path, content);
+            }
+        };
+
+        header.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                header.click();
+            }
+        });
+
+        item.appendChild(header);
+        item.appendChild(content);
+        return item;
+    }
+
+    async loadFolderContents(path, container) {
+        try {
+            const contents = await this.fetchGithubContents(path);
+            const list = document.createElement('ul');
+            list.className = 'folder-list';
+
+            for (const item of contents) {
+                const listItem = document.createElement('li');
+                listItem.className = 'folder-item';
+
+                if (item.type === 'dir') {
+                    const folderHeader = document.createElement('div');
+                    folderHeader.className = 'folder-header';
+                    folderHeader.textContent = item.name;
+
+                    const folderContent = document.createElement('div');
+                    folderContent.className = 'folder-content';
+                    folderContent.style.display = 'none';
+
+                    const indicator = document.createElement('span');
+                    indicator.className = 'folder-indicator';
+                    indicator.textContent = '▶';
+                    folderHeader.prepend(indicator);
+
+                    folderHeader.onclick = (e) => {
+                        e.stopPropagation();
+                        const isExpanded = folderContent.style.display !== 'none';
+                        folderContent.style.display = isExpanded ? 'none' : 'block';
+                        indicator.textContent = isExpanded ? '▶' : '▼';
+
+                        if (!isExpanded && folderContent.children.length === 0) {
+                            this.loadFolderContents(item.path, folderContent);
+                        }
+                    };
+
+                    listItem.appendChild(folderHeader);
+                    listItem.appendChild(folderContent);
+                } else {
+                    const fileItem = this.createFileItem(item);
+                    listItem.appendChild(fileItem);
+                }
+
+                list.appendChild(listItem);
+            }
+
+            container.appendChild(list);
+        } catch (error) {
+            console.error('Error loading folder contents:', error);
+        }
+    }
+
+    createFileItem(item) {
+        const itemContainer = document.createElement('div');
+        itemContainer.className = 'file-item-container';
+
+        const itemName = document.createElement('span');
+        const displayName = item.name.replace(/\.(kml|geojson|json)$/i, '');
+        itemName.textContent = displayName;
+        itemName.className = 'file-name';
+
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'file-buttons';
+
+        const toggleButton = document.createElement('button');
+        toggleButton.textContent = '+';
+        toggleButton.className = 'layer-toggle-button add';
+        toggleButton.onclick = (e) => {
+            e.stopPropagation();
+            this.toggleLayer(item.download_url, toggleButton, item.name);
+        };
+
+        const downloadButton = document.createElement('button');
+        downloadButton.textContent = '↓';
+        downloadButton.className = 'download-button';
+        downloadButton.onclick = (e) => {
+            e.stopPropagation();
+            if (item.name.toLowerCase().endsWith('.kml')) {
+                this.downloadKML(item.download_url, item.name);
+            } else if (item.name.toLowerCase().endsWith('.geojson') || item.name.toLowerCase().endsWith('.json')) {
+                this.downloadGeoJSON(item.download_url, item.name);
+            }
+        };
+
+        buttonContainer.appendChild(toggleButton);
+        buttonContainer.appendChild(downloadButton);
+        itemContainer.appendChild(itemName);
+        itemContainer.appendChild(buttonContainer);
+
+        return itemContainer;
+    }
+
+    async toggleLayer(url, button, fileName) {
+        if (this.activeLayers.has(url)) {
+            const layerInfo = this.activeLayers.get(url);
+            this.map.removeLayer(layerInfo.layer);
+            this.activeLayers.delete(url);
+            button.textContent = '+';
+            button.className = 'layer-toggle-button add';
+            this.updateLegend(document.querySelector('.legend-content'));
+        } else {
+            try {
+                button.textContent = '⏳';
+                button.disabled = true;
+
+                const response = await fetch(url);
+                const fileExtension = fileName.split('.').pop().toLowerCase();
+
+                if (fileExtension === 'kml') {
+                    const kmlData = await response.text();
+                    const features = new ol.format.KML({
+                        extractStyles: true,
+                        showPointNames: false
+                    }).readFeatures(kmlData, {
+                        featureProjection: 'EPSG:3857'
+                    });
+
+                    const vectorSource = new ol.source.Vector({ features });
+                    const vectorLayer = new ol.layer.Vector({
+                        source: vectorSource,
+                        style: this.createStyleFunction(),
+                        zIndex: 1000 + this.activeLayers.size
+                    });
+
+                    this.map.addLayer(vectorLayer);
+                    button.textContent = '-';
+                    button.className = 'layer-toggle-button remove';
+                    button.disabled = false;
+
+                    this.activeLayers.set(url, { layer: vectorLayer, button: button });
+                    this.updateLegend(document.querySelector('.legend-content'));
+                } else if (fileExtension === 'geojson' || fileExtension === 'json') {
+                    const geojsonData = await response.json();
+                    const features = new ol.format.GeoJSON().readFeatures(geojsonData, {
+                        featureProjection: 'EPSG:3857'
+                    });
+
+                    const vectorSource = new ol.source.Vector({ features });
+                    const vectorLayer = new ol.layer.Vector({
+                        source: vectorSource,
+                        style: this.createStyleFunction(),
+                        zIndex: 1000 + this.activeLayers.size
+                    });
+
+                    this.map.addLayer(vectorLayer);
+                    button.textContent = '-';
+                    button.className = 'layer-toggle-button remove';
+                    button.disabled = false;
+
+                    this.activeLayers.set(url, { layer: vectorLayer, button: button });
+                    this.updateLegend(document.querySelector('.legend-content'));
+                }
+
+                this.cleanupUnusedResources();
+            } catch (error) {
+                console.error('Error loading layer:', error);
+                button.textContent = '!';
+                setTimeout(() => {
+                    button.textContent = '+';
+                    button.disabled = false;
+                }, 2000);
+            }
+        }
+    }
+
+    async downloadKML(url, filename) {
+        try {
+            const response = await fetch(url);
+            const data = await response.text();
+            const blob = new Blob([data], { type: 'application/vnd.google-earth.kml+xml' });
+            const downloadUrl = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = downloadUrl;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(downloadUrl);
+        } catch (error) {
+            console.error('Error downloading file:', error);
+        }
+    }
+
+    async downloadGeoJSON(url, filename) {
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const downloadUrl = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = downloadUrl;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(downloadUrl);
+        } catch (error) {
+            console.error('Error downloading file:', error);
+        }
+    }
+
+    createLegendPanel() {
+        const legendButton = document.createElement('div');
+        legendButton.id = 'legend-button';
+        legendButton.className = 'legend-button';
+        legendButton.setAttribute('role', 'button');
+        legendButton.setAttribute('aria-label', 'Toggle map legend');
+        legendButton.setAttribute('tabindex', '0');
+
+        const legendIcon = document.createElement('img');
+        legendIcon.src = 'img/legend.png';
+        legendIcon.alt = '';
+        legendIcon.setAttribute('role', 'presentation');
+        legendButton.appendChild(legendIcon);
+
+        const legendPanel = document.createElement('div');
+        legendPanel.id = 'legend-panel';
+        legendPanel.className = 'legend-panel';
+        legendPanel.style.display = 'none';
+        legendPanel.setAttribute('role', 'complementary');
+        legendPanel.setAttribute('aria-label', 'Map legend');
+
+        const legendHeader = document.createElement('div');
+        legendHeader.className = 'legend-header';
+        legendHeader.textContent = 'Legend';
+
+        const content = document.createElement('div');
+        content.className = 'legend-content';
+        content.setAttribute('role', 'region');
+        content.setAttribute('aria-label', 'Legend content');
+
+        const closeButton = document.createElement('div');
+        closeButton.className = 'legend-close-button';
+        closeButton.innerHTML = '×';
+        closeButton.setAttribute('aria-label', 'Close legend');
+        closeButton.setAttribute('role', 'button');
+        closeButton.setAttribute('tabindex', '0');
+
+        legendButton.addEventListener('click', () => {
+            const isVisible = legendPanel.style.display !== 'none';
+            legendPanel.style.display = isVisible ? 'none' : 'block';
+            legendButton.setAttribute('aria-expanded', !isVisible);
+        });
+
+        legendButton.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                legendButton.click();
+            }
+        });
+
+        closeButton.addEventListener('click', () => {
+            legendPanel.style.display = 'none';
+            legendButton.setAttribute('aria-expanded', false);
+        });
+
+        closeButton.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                closeButton.click();
+            }
+        });
+
+        legendPanel.appendChild(legendHeader);
+        legendPanel.appendChild(closeButton);
+        legendPanel.appendChild(content);
+
+        this.updateLegend(content);
+
+        document.body.appendChild(legendButton);
+        document.body.appendChild(legendPanel);
+    }
+
+    updateLegend(content) {
+        content.innerHTML = '';
+
+        if (this.activeLayers.size === 0) {
+            const noLayersMsg = document.createElement('div');
+            noLayersMsg.className = 'legend-no-layers';
+            noLayersMsg.textContent = 'No active layers to display';
+            content.appendChild(noLayersMsg);
+            return;
+        }
+
+        const layerEntries = Array.from(this.activeLayers.entries());
+
+        layerEntries.forEach(([url, layerInfo], index) => {
+            const layerItem = document.createElement('div');
+            layerItem.className = 'legend-item';
+            layerItem.setAttribute('draggable', 'true');
+            layerItem.setAttribute('data-url', url);
+
+            const layerHeader = document.createElement('div');
+            layerHeader.className = 'legend-layer-header';
+
+            const layerName = url.split('/').pop().replace(/\.(kml|geojson|json)$/i, '');
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = layerInfo.layer.getVisible();
+            checkbox.id = `layer-${layerName.replace(/\s+/g, '-')}`;
+            checkbox.setAttribute('aria-label', `Toggle ${layerName} layer visibility`);
+            checkbox.onchange = () => {
+                layerInfo.layer.setVisible(checkbox.checked);
+            };
+
+            const label = document.createElement('label');
+            label.htmlFor = checkbox.id;
+            label.textContent = layerName;
+
+            layerHeader.appendChild(checkbox);
+            layerHeader.appendChild(label);
+            layerItem.appendChild(layerHeader);
+
+            const stylesContainer = document.createElement('div');
+            stylesContainer.className = 'legend-styles-container';
+
+            this.extractAndDisplayStyles(stylesContainer, layerInfo.layer);
+
+            layerItem.appendChild(stylesContainer);
+            content.appendChild(layerItem);
+
+            layerItem.addEventListener('dragstart', (e) => {
+                e.dataTransfer.setData('text/plain', url);
+                layerItem.classList.add('dragging');
+            });
+
+            layerItem.addEventListener('dragend', () => {
+                layerItem.classList.remove('dragging');
+            });
+
+            layerItem.addEventListener('dragover', (e) => {
+                e.preventDefault();
+            });
+
+            layerItem.addEventListener('drop', (e) => {
+                e.preventDefault();
+                const draggedUrl = e.dataTransfer.getData('text/plain');
+                if (draggedUrl === url) return;
+
+                const newLayerEntries = [];
+                const draggedEntry = layerEntries.find(entry => entry[0] === draggedUrl);
+                const targetIndex = layerEntries.findIndex(entry => entry[0] === url);
+
+                layerEntries.forEach((entry, i) => {
+                    if (entry[0] === draggedUrl) return;
+                    if (i === targetIndex) {
+                        newLayerEntries.push(draggedEntry);
+                    }
+                    newLayerEntries.push(entry);
+                });
+
+                if (targetIndex === layerEntries.length - 1 && draggedUrl !== url) {
+                    newLayerEntries.push(draggedEntry);
+                }
+
+                this.activeLayers.clear();
+                newLayerEntries.forEach(([u, info], i) => {
+                    this.activeLayers.set(u, info);
+                    info.layer.setZIndex(1000 + i);
+                });
+
+                this.updateLegend(content);
+            });
+        });
+    }
+
+    extractAndDisplayStyles(container, layer) {
+        if (!layer || !layer.getSource) {
+            console.warn('Invalid layer provided to extractAndDisplayStyles');
+            return;
+        }
+
+        const source = layer.getSource();
+        if (!source || !source.getFeatures) {
+            console.warn('Invalid source in layer');
+            return;
+        }
+
+        const features = source.getFeatures();
+
+        if (!features || features.length === 0) {
+            const noFeaturesMsg = document.createElement('div');
+            noFeaturesMsg.className = 'legend-no-features';
+            noFeaturesMsg.textContent = 'No features in this layer';
+            container.appendChild(noFeaturesMsg);
+            return;
+        }
+
+        const styleMap = new Map();
+
+        features.forEach(feature => {
+            if (!feature) return;
+
+            let styleId = feature.get('styleUrl');
+            if (styleId) {
+                styleId = styleId.replace(/^#/, '');
+            } else if (feature.getGeometry && feature.getGeometry()) {
+                styleId = feature.getGeometry().getType();
+            } else {
+                styleId = 'unknown';
+            }
+
+            if (!styleMap.has(styleId)) {
+                const featureStyleFunc = feature.getStyleFunction();
+                const layerStyleFunc = layer.getStyleFunction ? layer.getStyleFunction() : null;
+                const styleFunc = featureStyleFunc || layerStyleFunc;
+
+                if (styleFunc) {
+                    try {
+                        const style = styleFunc(feature);
+                        if (style) {
+                            styleMap.set(styleId, {
+                                style: style,
+                                feature: feature,
+                                count: 1
+                            });
+                        }
+                    } catch (e) {
+                        console.warn('Error getting style for feature:', e);
+                    }
+                }
+            } else {
+                const entry = styleMap.get(styleId);
+                entry.count++;
+                styleMap.set(styleId, entry);
+            }
+        });
+
+        styleMap.forEach((entry, styleId) => {
+            if (!entry || !entry.style) return;
+
+            const styleItem = document.createElement('div');
+            styleItem.className = 'legend-style-item';
+
+            const swatch = document.createElement('div');
+            swatch.className = 'legend-style-swatch';
+
+            try {
+                this.renderStyleSwatch(swatch, entry.style, entry.feature);
+            } catch (e) {
+                console.warn('Error rendering style swatch:', e);
+                swatch.textContent = '?';
+            }
+
+            const styleLabel = document.createElement('div');
+            styleLabel.className = 'legend-style-label';
+            styleLabel.textContent = `${styleId} (${entry.count} features)`;
+
+            styleItem.appendChild(swatch);
+            styleItem.appendChild(styleLabel);
+            container.appendChild(styleItem);
+        });
+    }
+
+    renderStyleSwatch(container, style, feature) {
+        const canvas = document.createElement('canvas');
+        canvas.width = 24;
+        canvas.height = 24;
+        const ctx = canvas.getContext('2d');
+
+        const styles = Array.isArray(style) ? style : [style];
+        const geomType = feature.getGeometry().getType();
+
+        styles.forEach(s => {
+            if (!s) return;
+
+            if (geomType === 'Point' || geomType === 'MultiPoint') {
+                const image = s.getImage();
+                if (image) {
+                    if (image instanceof ol.style.Circle) {
+                        ctx.beginPath();
+                        ctx.arc(12, 12, image.getRadius(), 0, 2 * Math.PI);
+                        const fill = image.getFill();
+                        if (fill) {
+                            ctx.fillStyle = fill.getColor() || 'rgba(51, 153, 204, 0.7)';
+                            ctx.fill();
+                        }
+                        const stroke = image.getStroke();
+                        if (stroke) {
+                            ctx.strokeStyle = stroke.getColor() || '#3399CC';
+                            ctx.lineWidth = stroke.getWidth() || 1;
+                            ctx.stroke();
+                        }
+                    } else if (image instanceof ol.style.Icon) {
+                        ctx.beginPath();
+                        ctx.rect(4, 4, 16, 16);
+                        ctx.fillStyle = 'lightgray';
+                        ctx.fill();
+                        ctx.strokeStyle = 'black';
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
+                }
+            } else if (geomType === 'LineString' || geomType === 'MultiLineString') {
+                const stroke = s.getStroke();
+                if (stroke) {
+                    ctx.beginPath();
+                    ctx.moveTo(4, 12);
+                    ctx.lineTo(20, 12);
+                    ctx.strokeStyle = stroke.getColor() || '#3399CC';
+                    ctx.lineWidth = stroke.getWidth() || 2;
+                    ctx.stroke();
+                }
+            } else {
+                ctx.beginPath();
+                ctx.rect(4, 4, 16, 16);
+                const fill = s.getFill();
+                if (fill) {
+                    ctx.fillStyle = fill.getColor() || 'rgba(51, 153, 204, 0.7)';
+                    ctx.fill();
+                }
+                const stroke = s.getStroke();
+                if (stroke) {
+                    ctx.strokeStyle = stroke.getColor() || '#3399CC';
+                    ctx.lineWidth = stroke.getWidth() || 1;
+                    ctx.stroke();
+                }
+            }
+        });
+
+        container.appendChild(canvas);
+    }
+
+    getLegendGraphicUrl(wmsUrl) {
+        const url = new URL(wmsUrl);
+        url.searchParams.set('SERVICE', 'WMS');
+        url.searchParams.set('VERSION', '1.3.0');
+        url.searchParams.set('REQUEST', 'GetLegendGraphic');
+        url.searchParams.set('FORMAT', 'image/png');
+        url.searchParams.set('LAYER', url.searchParams.get('LAYERS'));
+        url.searchParams.set('STYLE', url.searchParams.get('STYLES') || '');
+        return url.toString();
+    }
+
+    createVectorLegend(container, layer) {
+        const styleFunction = layer.getStyle();
+        const canvas = document.createElement('canvas');
+        canvas.width = 20;
+        canvas.height = 20;
+        const ctx = canvas.getContext('2d');
+
+        let style;
+        if (typeof styleFunction === 'function') {
+            const features = layer.getSource().getFeatures();
+            if (features.length > 0) {
+                style = styleFunction(features[0]);
+            }
+        } else {
+            style = styleFunction;
+        }
+
+        if (style) {
+            const fill = style.getFill();
+            const stroke = style.getStroke();
+
+            ctx.beginPath();
+            ctx.rect(2, 2, 16, 16);
+
+            if (fill) {
+                ctx.fillStyle = fill.getColor() || 'rgba(255, 255, 255, 0.4)';
+                ctx.fill();
+            }
+
+            if (stroke) {
+                ctx.strokeStyle = stroke.getColor() || '#3399CC';
+                ctx.lineWidth = stroke.getWidth() || 1.25;
+                ctx.stroke();
+            }
+        }
+
+        container.appendChild(canvas);
+    }
+
+    createButton(id, src, alt, onClick) {
+        const button = document.createElement('button');
+        button.id = id;
+        button.className = 'map-control-button';
+        button.setAttribute('aria-label', alt);
+
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = '';
+        img.setAttribute('role', 'presentation');
+
+        button.appendChild(img);
+        button.onclick = onClick;
+
+        button.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                onClick();
+            }
+        });
+
+        return button;
+    }
 }
 
 function createDownloadAllButton() {
-	const downloadAllButton = document.createElement('div');
-	downloadAllButton.id = 'download-all-button';
-	downloadAllButton.className = 'download-all-button';
-	downloadAllButton.textContent = 'Download All';
-
-	// Add accessibility attributes
-	downloadAllButton.setAttribute('role', 'button');
-	downloadAllButton.setAttribute('tabindex', '0');
-
-	// Add click handler
-	downloadAllButton.onclick = () => {
-		window.location.href = 'https://s3.licson.net/libreresearch/LibreMap-Dataset.zip';
-	};
-
-	// Add keyboard handler for accessibility
-	downloadAllButton.addEventListener('keydown', (e) => {
-		if (e.key === 'Enter' || e.key === ' ') {
-			e.preventDefault();
-			downloadAllButton.click();
-		}
-	});
-
-	document.body.appendChild(downloadAllButton);
-
-	// Position the button next to liber-data-button
-	const liberDataButton = document.getElementById('liber-data-button');
-	if (liberDataButton) {
-		const liberRect = liberDataButton.getBoundingClientRect();
-		downloadAllButton.style.position = 'absolute';
-		downloadAllButton.style.bottom = '20px';
-		downloadAllButton.style.left = (liberRect.right + 10) + 'px';
-	}
 }
 
-
-
-
-
-
-// UI Manager
 class UIManager {
-	constructor(mapManager) {
-		this.mapManager = mapManager;
-		this.createButtons();
-	}
+    constructor(mapManager) {
+        this.mapManager = mapManager;
+        this.createButtons();
+    }
 
-	createButtons() {
-		const buttons = [
-			{
-				id: 'mylocation-button',
-				src: './img/myLocation.png',
-				alt: 'My Location',
-				onClick: () => this.mapManager.useMyLocation()
-			},
-			{
-				id: 'home-button',
-				src: './img/home.png',
-				alt: 'Home',
-				onClick: () => this.mapManager.goToHome()
-			},
-			{
-				id: 'addLayer-button',
-				src: './img/addLayer.png',
-				alt: 'Add Layer',
-				onClick: () => this.mapManager.addLayerToMap()
-			},
-			{
-				id: 'print-button',
-				src: './img/print.png',
-				alt: 'Print Map',
-				onClick: () => this.mapManager.printMap()
-			}
-		];
+    createButtons() {
+        const buttons = [
+            {
+                id: 'mylocation-button',
+                src: './img/myLocation.png',
+                alt: 'My Location',
+                onClick: () => this.mapManager.useMyLocation()
+            },
+            {
+                id: 'home-button',
+                src: './img/home.png',
+                alt: 'Home',
+                onClick: () => this.mapManager.goToHome()
+            },
+            {
+                id: 'addLayer-button',
+                src: './img/addLayer.png',
+                alt: 'Add Layer',
+                onClick: () => this.mapManager.addLayerToMap()
+            },
+            {
+                id: 'print-button',
+                src: './img/print.png',
+                alt: 'Print Map',
+                onClick: () => this.mapManager.printMap()
+            }
+        ];
 
-		buttons.forEach(buttonConfig => {
-			const button = this.mapManager.createButton(
-				buttonConfig.id,
-				buttonConfig.src,
-				buttonConfig.alt,
-				buttonConfig.onClick
-			);
-			document.body.appendChild(button);
-		});
-	}
+        buttons.forEach(buttonConfig => {
+            const button = this.mapManager.createButton(
+                buttonConfig.id,
+                buttonConfig.src,
+                buttonConfig.alt,
+                buttonConfig.onClick
+            );
+            document.body.appendChild(button);
+        });
+    }
 
-	adjustButtonPositions() {
-		const checkControls = () => {
-			const zoomInButton = document.querySelector('.ol-zoom-in');
-			const zoomOutButton = document.querySelector('.ol-zoom-out');
+    adjustButtonPositions() {
+        const checkControls = () => {
+            const zoomInButton = document.querySelector('.ol-zoom-in');
+            const zoomOutButton = document.querySelector('.ol-zoom-out');
 
-			if (!zoomInButton || !zoomOutButton) {
-				setTimeout(checkControls, 100);
-				return;
-			}
+            if (!zoomInButton || !zoomOutButton) {
+                setTimeout(checkControls, 100);
+                return;
+            }
 
-			const buttons = [
-				document.getElementById('mylocation-button'),
-				document.getElementById('home-button'),
-				document.getElementById('addLayer-button'),
-				document.getElementById('print-button'),
-				document.getElementById('basemap-button')
-			];
+            const buttons = [
+                document.getElementById('mylocation-button'),
+                document.getElementById('home-button'),
+                document.getElementById('addLayer-button'),
+                document.getElementById('print-button'),
+                document.getElementById('basemap-button')
+            ];
 
-			const buttonWidth = (zoomOutButton.getBoundingClientRect().width) + 'px';
-			const buttonHeight = (zoomOutButton.getBoundingClientRect().height) + 'px';
-			let previousBottom = zoomOutButton.getBoundingClientRect().bottom;
+            const buttonWidth = zoomOutButton.getBoundingClientRect().width + 'px';
+            const buttonHeight = zoomOutButton.getBoundingClientRect().height + 'px';
+            let previousBottom = zoomOutButton.getBoundingClientRect().bottom;
 
-			buttons.forEach(button => {
-				if (button) {
-					button.style.width = buttonWidth;
-					button.style.height = buttonHeight;
-					button.style.top = (previousBottom + 2) + 'px';
-					previousBottom = button.getBoundingClientRect().bottom;
-				}
-			});
-		};
+            buttons.forEach(button => {
+                if (button) {
+                    button.style.width = buttonWidth;
+                    button.style.height = buttonHeight;
+                    button.style.top = (previousBottom + 2) + 'px';
+                    previousBottom = button.getBoundingClientRect().bottom;
+                }
+            });
+        };
 
-		checkControls();
-	}
+        checkControls();
+    }
 }
 
-// Update initialization
 document.addEventListener('DOMContentLoaded', () => {
-	const mapManager = new MapManager();
-	const uiManager = new UIManager(mapManager);
-	uiManager.adjustButtonPositions();
-	mapManager.createPopupInfo();
-	createDownloadAllButton();
-
+    const mapManager = new MapManager();
+    const uiManager = new UIManager(mapManager);
+    uiManager.adjustButtonPositions();
+    mapManager.createPopupInfo();
 });
