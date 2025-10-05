@@ -25,6 +25,22 @@ class MapManager {
         this.originalStyle = null;
     }
 
+
+	splitBilingualName(name) {
+		// Find the boundary between Chinese and English: the first "] [" sequence
+		const splitIndex = name.indexOf('] [');
+		if (splitIndex > -1) {
+			// Chinese part: up to and including the ] before the space
+			const chinese = name.substring(0, splitIndex + 1);
+			// English part: from after the space to end
+			const english = name.substring(splitIndex + 2);
+			return `${chinese}
+			${english}`;
+		}
+		// Fallback: return as-is if no boundary found (or wrap if single-line needed)
+		return name.replace(/\s+/g, ' ');  // Clean up extra spaces as bonus
+	}
+	
     setupOptimizedEventHandlers() {
         const debounce = (func, delay) => {
             let timeout;
@@ -411,9 +427,15 @@ class MapManager {
             optionElement.addEventListener('click', () => {
                 this.switchBasemap(id);
                 dropdown.style.display = 'none';
-                document.querySelectorAll('.basemap-option').forEach(opt => {
-                    opt.classList.remove('active');
-                });
+                document.querySelectorAll('.file-item-container').forEach(container => {
+					const fileName = container.querySelector('.file-name');
+					if (fileName) {
+						// Temporarily show to measure
+						container.style.minHeight = 'auto';
+						const measuredHeight = fileName.scrollHeight + 16; // + padding
+						container.style.minHeight = `${measuredHeight}px`;
+					}
+				});
                 optionElement.classList.add('active');
             });
 
@@ -1204,7 +1226,7 @@ class MapManager {
 
         const categoryList = document.createElement('div');
         categoryList.className = 'category-list';
-        categoryList.style.display = 'none';
+        categoryList.style.display = 'block';
         categoryList.setAttribute('aria-label', 'LiberData categories');
 
         const categoryListHeader = document.createElement('div');
@@ -1266,7 +1288,7 @@ class MapManager {
         document.body.appendChild(liberDataButton);
         document.body.appendChild(categoryList);
     }
-
+	
     createCategoryItem(category) {
         const item = document.createElement('div');
         item.className = 'category-item';
@@ -1327,6 +1349,7 @@ class MapManager {
                 const listItem = document.createElement('li');
                 listItem.className = 'folder-item';
 
+
                 if (item.type === 'dir') {
                     const folderHeader = document.createElement('div');
                     folderHeader.className = 'folder-header';
@@ -1374,7 +1397,7 @@ class MapManager {
 
         const itemName = document.createElement('span');
         const displayName = item.name.replace(/\.(kml|geojson|json)$/i, '');
-        itemName.textContent = displayName;
+        itemName.textContent = this.splitBilingualName(displayName);
         itemName.className = 'file-name';
 
         const buttonContainer = document.createElement('div');
