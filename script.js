@@ -1264,7 +1264,11 @@ class MapManager {
             {
                 name: '規劃資料 (資料源自香港政府）Planning data from HK Government',
                 path: 'Data_GML/規劃資料%20(資料源自香港政府）Planning%20data%20from%20HK%20Government'
-            }
+            },
+			{
+				name: '社區資源 Community Resources',
+				path: 'Data_GML/社區資源%20Community%20Resources'
+			}
         ];
 
         categories.forEach(category => {
