@@ -7,12 +7,12 @@
 <Style id="greyPolygonStyle">
   <LineStyle>
 	<!-- Grey outline -->
-	<color>80808080</color>
+	<color>ff808080</color>
 	<width>1</width>
   </LineStyle>
   <PolyStyle>
 	<!-- Grey fill -->
-	<color>80808080</color>
+	<color>B3808080</color>
 	<fill>1</fill>
 	<outline>1</outline>
   </PolyStyle>
