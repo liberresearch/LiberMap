@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
-<Schema name="_丁屋政策下的「認可鄉村村界範圍」___Village_Environ”under_Small_House_Policy_" id="_丁屋政策下的「認可鄉村村界範圍」___Village_Environ”under_Small_House_Policy_">
+<Schema name="丁屋政策下的「認可鄉村村界範圍」___Village_Environ”under_Small_House_Policy" id="_丁屋政策下的「認可鄉村村界範圍」___Village_Environ”under_Small_House_Policy_">
 	<SimpleField name="timestamp" type="string"></SimpleField>
 	<SimpleField name="begin" type="string"></SimpleField>
 	<SimpleField name="end" type="string"></SimpleField>
