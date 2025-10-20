@@ -384,194 +384,112 @@ html, body {
     outline: none;
 }
 
-/* Search Results Container */
 .search-results-container {
     position: absolute;
+    top: 100%;
+    left: 0;
     background: white;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1001;
+    width: 100%;
     max-height: 300px;
     overflow-y: auto;
 }
 
-/* Search Result Item */
-.search-result-item {
+.search-result {
     padding: 10px 12px;
     cursor: pointer;
-    border-bottom: 1px solid #eee;
     transition: background 0.2s ease;
 }
 
-.search-result-item:hover {
+.search-result:hover {
     background: #f5f5f5;
-}
-
-.search-result-item:last-child {
-    border-bottom: none;
-}
-
-/* Legend Button */
-.legend-button {
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    width: 40px; /* Match size of other controls */
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.7); /* Black background */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 1000;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
-}
-
-.legend-button:hover {
-    background: rgba(0, 0, 0, 0.9); /* Darker black on hover */
-}
-
-.legend-button img {
-    width: 24px;
-    height: 24px;
-    filter: brightness(0) invert(1); /* White icon */
 }
 
 /* Legend Panel */
 .legend-panel {
     position: absolute;
-    bottom: 40px;
-    right: 30px;
+    top: 10px;
+    right: 10px;
     background: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    width: 250px;
     z-index: 1000;
 }
 
 .legend-header {
-    padding: 8px;
-    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: #f5f5f5;
     border-bottom: 1px solid #ddd;
     font-weight: bold;
+    font-size: 16px;
+    color: #333;
 }
 
 .legend-content {
     padding: 8px;
-    max-height: 400px;
+    max-height: 300px;
     overflow-y: auto;
-}
-
-.legend-close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 18px;
-    z-index: 1001;
-}
-
-.legend-close-button:hover {
-    background: #e0e0e0;
 }
 
 .legend-item {
     margin-bottom: 10px;
-    cursor: move; /* Make legend items draggable */
 }
 
-.legend-item.dragging {
-    opacity: 0.5;
-}
-
-.legend-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.legend-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.legend-graphic {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-}
-
-.legend-layer-header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.legend-no-layers, .legend-no-features {
-    color: #666;
-    font-style: italic;
+.legend-item-header {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .legend-style-item {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-top: 4px;
+    margin-bottom: 5px;
 }
 
 .legend-style-swatch {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    background-size: cover;
 }
 
 .legend-style-label {
-    font-size: 12px;
-}
-
-
-/* Accessibility Focus Styles */
-.map-control-button:focus,
-.ol-zoom-in:focus,
-.ol-zoom-out:focus,
-.search-dropdown-toggle:focus,
-.search-input:focus,
-.search-engine-option:focus,
-.search-result-item:focus,
-.category-header:focus-visible,
-.folder-header:focus-visible,
-.legend-button:focus,
-.legend-close-button:focus {
-    outline: 3px solid #4A90E2;
-    outline-offset: 2px;
+    font-size: 14px;
 }
 
 /* Basemap Button */
 .basemap-button {
-    background: rgba(0, 0, 0, 0.7); /* Black background */
+    position: absolute;
+    left: 10px;
+    border: none;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 4px;
+    border-radius: 3px;
+    cursor: pointer;
     width: 32px;
     height: 32px;
-    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 .basemap-button:hover {
-    background: rgba(0, 0, 0, 0.9); /* Darker black on hover */
+    background: rgba(0, 0, 0, 0.9);
 }
 
 .basemap-button img {
     width: 24px;
     height: 24px;
-    filter: brightness(0) invert(1); /* White icon */
+    filter: brightness(0) invert(1);
 }
 
 /* Basemap Dropdown */
@@ -579,20 +497,18 @@ html, body {
     position: absolute;
     background: white;
     border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1001;
     width: 200px;
-    z-index: 3001;
-    overflow: hidden;
 }
 
-/* Basemap Option */
 .basemap-option {
-    padding: 10px;
-    cursor: pointer;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #eee;
+    padding: 8px 12px;
+    cursor: pointer;
     transition: background 0.2s ease;
+    border-bottom: 1px solid #eee;
 }
 
 .basemap-option:last-child {
@@ -705,4 +621,237 @@ html, body {
 
 .category-content {
     margin-left: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    html, body {
+        font-size: 16px;
+        overflow: hidden;
+    }
+
+    #map {
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+    }
+
+    /* Hide unnecessary elements */
+    #addLayer-button,
+    #print-button,
+    #legend-button,
+    #legend-panel,
+    .download-all-button,
+    .ol-zoom,
+    .ol-zoom-in,
+    .ol-zoom-out {
+        display: none !important;
+    }
+
+    .category-container {
+        position: static !important;
+        bottom: auto;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+        width: 100%;
+        margin: 0 0 10px 0;
+        box-shadow: none;
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .folder-header {
+        font-size: 16px;
+        padding: 5px; /* Reduced padding */
+        white-space: normal;
+        word-wrap: break-word;
+    }
+
+	.folder-item, .file-name {
+		font-size: 16px;
+        padding: 0px; /* Reduced padding */
+        white-space: normal;
+        word-wrap: break-word;
+	}
+    .file-item-container {
+        min-height: auto;
+        flex-direction: row; /* Change to row to place toggle next to name */
+        align-items: center; /* Center vertically */
+        padding: 8px 10px;
+    }
+
+    .file-buttons {
+        margin-top: 0; /* Remove top margin since now in row */
+        margin-left: 8px; /* Space from name */
+    }
+
+    .layer-toggle-button, .download-button {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    /* Search: Left-aligned, full-width minus padding */
+    .search-container {
+        top: 10px;
+        left: 10px;
+        right: 90px; /* Space for buttons on right */
+        width: auto;
+        z-index: 3000;
+    }
+
+    .search-input {
+        width: 100%;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+
+    .search-results-container {
+        width: 100%;
+        max-height: 25vh; /* Smaller to show map */
+        top: calc(100% + 5px);
+        left: 0;
+    }
+
+    /* Popup: Centered, smaller */
+    .popup-container {
+        max-width: 85vw;
+        max-height: 50vh;
+        overflow-y: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+        padding: 10px;
+        z-index: 4000;
+    }
+
+    .popup-close-button, .popup-next-button, .popup-prev-button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .popup-table th, .popup-table td {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    /* Buttons: Right-aligned, match desktop size */
+    .map-control-button, .basemap-button {
+        width: 32px;
+        height: 32px;
+        right: 10px; /* Align to right */
+        left: auto;
+        padding: 4px;
+        z-index: 3000;
+    }
+
+    #mylocation-button {
+        top: 10px;
+    }
+
+    #home-button {
+        top: 44px;
+    }
+
+    #basemap-button {
+        top: 78px;
+    }
+
+    .basemap-dropdown {
+        width: 85vw;
+        right: 10px !important;
+        left: auto !important;
+        top: 112px !important;
+        bottom: auto;
+        z-index: 3001;
+    }
+
+    .basemap-option {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .basemap-thumbnail {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Liber Data Button: Bottom-left */
+    .liber-data-button {
+        bottom: 10px;
+        left: 10px;
+        right: auto;
+        transform: none;
+        padding: 8px 16px;
+        font-size: 16px;
+        z-index: 1001;
+    }
+	
+	/* Category List */
+	.category-list {
+		position: absolute;
+		bottom: 50px;
+		left: 10px;
+		background: white;
+		border-radius: 4px;
+		box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+		width: 95%;
+		max-height: 500px;
+		overflow-y: auto;
+		z-index: 2000;
+	}
+
+	/* Category List Header */
+	.category-list-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 8px 12px;
+		background: #f5f5f5;
+		border-bottom: 1px solid #ddd;
+		font-weight: bold;
+		font-size: 16px;
+		color: #333;
+	}
+
+	.category-item {
+		margin: 2px; /* Reduce margin for smaller space between items */
+	}
+
+	.category-header {
+		white-space: pre-line;
+		word-wrap: break-word;
+		line-height: 1.1; /* Smaller line height */
+		padding: 6px; /* Reduce padding */
+		cursor: pointer;
+		background: #f5f5f5;
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+	}
+
+	.category-indicator {
+		margin-right: 8px;
+	}
+
+	.category-content {
+		margin-left: 20px;
+	}
+
+	.layer-toggle-button {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+		right: 0px;
+    }
+
+	.download-button {
+		visibility:hidden;
+	}
 }
