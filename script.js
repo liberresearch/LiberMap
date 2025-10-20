@@ -3,7 +3,6 @@ const CONFIG = {
     HK80_PROJECTION: 'EPSG:2326',
     WGS84_PROJECTION: 'EPSG:4326',
     DEFAULT_ZOOM: 10.3,
-    GITHUB_API_URL: 'https://api.github.com/repos/liberresearch/LiberMap/contents/Data_GML'
 };
 
 proj4.defs(CONFIG.HK80_PROJECTION, "+proj=tmerc +lat_0=22.31213333333333 +lon_0=114.1785555555556 +k=1 +x_0=836694.05 +y_0=819069.8 +datum=HK80 +units=m +no_defs");
@@ -2029,6 +2028,8 @@ class UIManager {
 document.addEventListener('DOMContentLoaded', () => {
     const mapManager = new MapManager();
     const uiManager = new UIManager(mapManager);
-    uiManager.adjustButtonPositions();
+    if (!mapManager.isMobile) {
+        uiManager.adjustButtonPositions();
+    }
     mapManager.createPopupInfo();
 });
