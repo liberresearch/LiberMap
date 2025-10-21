@@ -1239,7 +1239,7 @@ class MapManager {
         downloadAllButton.setAttribute('role', 'button');
         downloadAllButton.setAttribute('tabindex', '0');
         downloadAllButton.onclick = () => {
-            window.location.href = 'https://s3.licson.net/libreresearch/LibreMap-Dataset.zip';
+            window.location.href = 'https://s3.liscon.net/liberdata/LiberData_GML.rar';
         };
         downloadAllButton.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
@@ -2033,3 +2033,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     mapManager.createPopupInfo();
 });
+
