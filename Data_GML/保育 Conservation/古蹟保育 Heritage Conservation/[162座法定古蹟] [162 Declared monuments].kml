@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
+<name>現有已評級古蹟地圖 2021*</name>
+<description>N/A</description>
 <Schema name="_162座法定古蹟___162_Declared_monuments_" id="_162座法定古蹟___162_Declared_monuments_">
 	<SimpleField name="FolderPath" type="string"></SimpleField>
 	<SimpleField name="PopupInfo" type="string"></SimpleField>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
+<name>后海灣濕地保育及緩衝區界線(2022)</name>
+<description>N/A</description>
 <Schema name="_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022__" id="_后海灣濕地保育及緩衝區界線_2022____Boundaries_of_Wetland_Conservation_Area___Wetland_Buffer_Area__2022__">
 	<SimpleField name="timestamp" type="string"></SimpleField>
 	<SimpleField name="begin" type="string"></SimpleField>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>尋寶開始：全港8800座隱藏歷史建築首度曝光</name>
-    <description/>
+    <name>全港8803座隱藏歷史建築（1996－2000年間普查名單）</name>
+    <description><![CDATA[ <a href="https://liber-research.com/%E3%80%90%E5%85%AC%E9%96%8B%E5%9C%B0%E5%9C%96%E5%90%8D%E5%96%AE%E3%80%91%E5%85%A8%E6%B8%AF8803%E9%A0%85%E6%AD%B7%E5%8F%B2%E5%BB%BA%E7%AF%89%E5%90%8D%E5%96%AE%E3%80%80%E7%8F%BE%E6%AD%A3%E5%8E%9F/" target="_blank">【公開地圖+名單】全港8803項歷史建築名單　現正原汁解封!</a><br><a>1996年政府委託顧問普查全港的歷史建築分佈，研究社將其轉為地圖形式展示</a>]]></description>
     <Style id="icon-1899-006064-normal">
       <IconStyle>
         <color>ff646000</color>

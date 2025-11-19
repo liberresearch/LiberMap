@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>問題島途：從全球大型填海工程看明日大嶼計劃的危機 Map of Large Scale Reclamation Projects Worldwide</name>
-    <description>是次研究在全球一共發現52個用途為居住、商業或旅遊、填海8 面積達100公頃的人工島或填海面積達400公頃的近岸填海項目。52個填海項目之中，38個為人工島項目，10個為近岸填海/湖/河項目，4個項目為混合類型，即同時有人工島及近岸填海的部分。這些項目的填海面積及性質分佈如下：</description>
+    <name>國際大型填海發展（含失敗案例, 1986-2022)</name>
+    <description><![CDATA[ <a href="https://liber-research.com/uncertainfatesreclamationmegaprojectsworldwide/" target="_blank">《問題島途：從全球大型填海工程看明日大嶼計劃的危機》 </a><br><a>分析近30多年來全球各地與明日大嶼性質和規模相若的填海計劃的情況，以探視推進明日大嶼的風險。</a>]]></description>
     <Style id="icon-1899-01579B-normal">
       <IconStyle>
         <color>ff9b5701</color>

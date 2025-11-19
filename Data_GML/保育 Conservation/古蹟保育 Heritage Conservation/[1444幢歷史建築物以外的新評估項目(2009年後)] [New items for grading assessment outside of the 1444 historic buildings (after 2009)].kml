@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
+<name>現有已評級古蹟地圖 2021*</name>
+<description>N/A</description>
 <Schema name="_1444幢歷史建築物以外的新評估項目_2009年後____New_items_for_grading_assessment_outside_of_the_1444_historic_buildings__after_2009__" id="_1444幢歷史建築物以外的新評估項目_2009年後____New_items_for_grading_assessment_outside_of_the_1444_historic_buildings__after_2009__">
 	<SimpleField name="FolderPath" type="string"></SimpleField>
 	<SimpleField name="PopupInfo" type="string"></SimpleField>

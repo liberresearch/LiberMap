@@ -1406,6 +1406,18 @@ class MapManager {
         const buttonContainer = document.createElement('div');
         buttonContainer.className = 'file-buttons';
 
+		// Information button
+		const infoButton = document.createElement('div');
+		infoButton.className = 'file-info-button';
+		infoButton.textContent = 'i';
+		infoButton.title = 'Show file information';
+		infoButton.addEventListener('click', (e) => {
+			e.stopPropagation();
+			this.showFileInfo(item);
+		});
+		
+		buttonContainer.appendChild(infoButton);
+
         const toggleButton = document.createElement('button');
         toggleButton.textContent = '+';
         toggleButton.className = 'layer-toggle-button add';
@@ -1433,6 +1445,83 @@ class MapManager {
 
         return itemContainer;
     }
+
+	showFileInfo(item) {
+		fetch(item.path)
+			.then(response => response.text())
+			.then(kmlContent => {
+				const parser = new DOMParser();
+				const kmlDoc = parser.parseFromString(kmlContent, 'text/xml');
+				
+				// Try multiple possible tags for title
+				let title = item.name.replace(/\.(kml|geojson|json)$/i, '');
+				
+				// Try <title> first (your KML structure), then <name> as fallback
+				const titleElement = kmlDoc.querySelector('title') || kmlDoc.querySelector('name');
+				const descElement = kmlDoc.querySelector('description') || kmlDoc.querySelector('Description') || kmlDoc.querySelector('info');
+				
+				if (titleElement && titleElement.textContent) {
+					title = titleElement.innerHTML || titleElement.textContent;
+					// Clean up CDATA if present
+					if (title.includes('<![CDATA[')) {
+						title = title.replace(/<!\[CDATA\[(.*?)\]\]>/gs, '$1');
+					}
+				}
+				
+				let descriptionContent = 'No description available';
+				if (descElement) {
+					descriptionContent = descElement.innerHTML || descElement.textContent || 'No description available';
+					if (descriptionContent.includes('<![CDATA[')) {
+						descriptionContent = descriptionContent.replace(/<!\[CDATA\[(.*?)\]\]>/gs, '$1');
+					}
+				}
+
+				this.showInfoPopup(title, descriptionContent, true, true);
+			})
+			.catch(error => {
+				console.error('Error loading file info:', error);
+				this.showInfoPopup(item.name, 'Error loading file information.', false, false);
+			});
+	}
+	
+	showInfoPopup(title, content, titleIsHTML = false, contentIsHTML = false) {
+		const existingPopup = document.querySelector('.file-info-popup');
+		if (existingPopup) {
+			existingPopup.remove();
+		}
+
+		const popup = document.createElement('div');
+		popup.className = 'file-info-popup';
+		
+		// Use innerHTML for the title and content to render links
+		popup.innerHTML = `
+			<div class="popup-header">
+				<div class="popup-title">${titleIsHTML ? title : this.escapeHtml(title)}</div>
+				<div class="popup-close-button">×</div>
+			</div>
+			<div class="popup-content">
+				<div class="popup-description">${contentIsHTML ? content : this.escapeHtml(content)}</div>
+			</div>
+		`;
+
+		// Add close functionality
+		const closeButton = popup.querySelector('.popup-close-button');
+		closeButton.addEventListener('click', () => {
+			popup.remove();
+		});
+
+		document.body.appendChild(popup);
+	}
+
+	// Add HTML escaping utility method
+	escapeHtml(unsafe) {
+		return unsafe
+			.replace(/&/g, "&amp;")
+			.replace(/</g, "&lt;")
+			.replace(/>/g, "&gt;")
+			.replace(/"/g, "&quot;")
+			.replace(/'/g, "&#039;");
+	}
 
     async toggleLayer(url, button, fileName) {
         if (this.activeLayers.has(url)) {

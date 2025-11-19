@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
+<name>「股權轉讓」註冊避稅研究個案(2018)</name>
+<description><![CDATA[ <a href="https://liber-research.com/%e3%80%8a%e5%af%8c%e7%a8%85%e9%9b%a3%e6%94%b6%ef%bc%9a%e9%a6%99%e6%b8%af%e8%82%a1%e6%ac%8a%e8%bd%89%e8%ae%93%e4%bd%8f%e5%ae%85%e9%81%bf%e7%a8%85%e7%a0%94%e7%a9%b6%e3%80%8b/" target="_blank">《富稅難收：香港股權轉讓住宅避稅研究》</a><br><a>分析以股權轉讓方式購買房產以規避樓市辣招的情況</a>]]></description>
 <Document id="root_doc">
     <Style id="customStyle">
         <IconStyle>

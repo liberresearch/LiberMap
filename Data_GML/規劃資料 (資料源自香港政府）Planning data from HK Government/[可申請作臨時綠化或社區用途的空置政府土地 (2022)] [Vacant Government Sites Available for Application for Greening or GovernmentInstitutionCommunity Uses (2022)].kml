@@ -2,7 +2,8 @@
 
 <kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<name>VacantGovernmentSite</name>
+<name>可申請作臨時綠化或社區用途的空置政府土地 (2022)</name>
+<description>N/A</description>
 <visibility>1</visibility>
 
 <Style id="brownStyle">

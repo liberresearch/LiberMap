@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
+<name>北部都會區中具發展潛力的棕地 (2022)</name>
+<description><![CDATA[ <a href="https://liber-research.com/oven-ready-brownfields/" target="_blank">《快熟棕地 北部都會區具發展潛力的棕地研究》</a><br><a>點算位於北部都會區範圍內的棕地，優先發展，避免開發生態敏感地</a>]]></description>
   <Document>
     <name>快熟棕地</name>
     <Style id="poly-FF5252-1200-76-normal">

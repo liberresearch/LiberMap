@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
+<name>未有落實規劃的棕地(2021)</name>
+<description><![CDATA[a href="https://liber-research.com/%E7%85%A5%E7%84%B6%E4%B8%80%E6%96%B0%EF%BC%9A%E6%9C%AA%E4%BE%86%E5%9C%9F%E5%9C%B0%E5%92%8C%E6%88%BF%E5%B1%8B%E7%99%BC%E5%B1%95%E9%A0%85%E7%9B%AE%E7%9A%84%E4%BA%92%E8%A3%9C%E7%99%BC%E5%B1%95%E5%80%A1/" target="_blank">《煥然一新：未來土地和房屋發展項目的互補發展倡議》 </a><br><a>政府一直指尋找新的土地興建可負擔房屋相當困難，而在新界卻有達1336公頃未有落實規劃的棕地作為潛在土地來源</a>]]></description>
 <Schema name="_未有落實規劃的棕地_2021____Brownfields_not_covered_by_long_term_town_planning__2021__" id="_未有落實規劃的棕地_2021____Brownfields_not_covered_by_long_term_town_planning__2021__">
 	<SimpleField name="Area" type="float"></SimpleField>
 	<SimpleField name="TYP" type="string"></SimpleField>

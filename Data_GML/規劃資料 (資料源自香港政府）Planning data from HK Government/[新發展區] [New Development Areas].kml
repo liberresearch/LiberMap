@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
+<name>新發展區</name>
+<description>N/A</description>
 <Schema name="_新發展區___New_Development_Areas_" id="_新發展區___New_Development_Areas_">
 	<SimpleField name="Id" type="int"></SimpleField>
 	<SimpleField name="area" type="float"></SimpleField>

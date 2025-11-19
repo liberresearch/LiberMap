@@ -2,7 +2,8 @@
 
 <kml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns="http://www.opengis.net/kml/2.2">
 <Document>
-<name>Distribution_of_Brownfield_Sites</name>
+<name>官方棕地資料 (2019)</name>
+<description><![CDATA[a href="https://data.gov.hk/tc-data/dataset/hk-pland-pland1-profile-and-operations-of-brownfield-sites-in-nt" target="_blank">規劃署於2019年11月完成的《新界棕地使用及作業現況研究—可行性研究》當中的棕地分佈範圍</a>]]></description>
 
 <Style id="greyPolygonStyle">
   <LineStyle>
