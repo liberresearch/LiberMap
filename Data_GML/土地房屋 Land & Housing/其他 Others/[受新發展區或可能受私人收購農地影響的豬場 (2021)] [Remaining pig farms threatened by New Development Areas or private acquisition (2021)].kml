@@ -3,9 +3,9 @@
   <Document>
     <name>受新發展區或可能受私人收購農地影響的豬場 (2021)</name>
     <description>N/A</description>
-    <Style id="icon-1507-673AB7-normal">
+    <Style id="香港豬場資料-由公司或由投資公司持有-normal">
       <IconStyle>
-        <color></color>
+        <color>800080A6</color>
         <scale>1</scale>
         <Icon>
           <href>https://maps.google.com/mapfiles/kml/paddle/wht-stars.png</href>
@@ -15,9 +15,9 @@
         <scale>0</scale>
       </LabelStyle>
     </Style>
-    <Style id="icon-1507-673AB7-highlight">
+    <Style id="香港豬場資料-由公司或由投資公司持有-highlight">
       <IconStyle>
-        <color></color>
+        <color>800080A6</color>
         <scale>1</scale>
         <Icon>
           <href>https://maps.google.com/mapfiles/kml/paddle/wht-stars.png</href>
@@ -27,17 +27,17 @@
         <scale>1</scale>
       </LabelStyle>
     </Style>
-    <StyleMap id="icon-1507-673AB7">
+    <StyleMap id="香港豬場資料-由公司或由投資公司持有">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1507-673AB7-normal</styleUrl>
+        <styleUrl>#香港豬場資料-由公司或由投資公司持有-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1507-673AB7-highlight</styleUrl>
+        <styleUrl>#香港豬場資料-由公司或由投資公司持有-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1507-A52714-normal">
+    <Style id="香港豬場資料-normal">
       <IconStyle>
         <color>ff1427a5</color>
         <scale>1</scale>
@@ -49,7 +49,7 @@
         <scale>0</scale>
       </LabelStyle>
     </Style>
-    <Style id="icon-1507-A52714-highlight">
+    <Style id="香港豬場資料-highlight">
       <IconStyle>
         <color>ff1427a5</color>
         <scale>1</scale>
@@ -61,17 +61,17 @@
         <scale>1</scale>
       </LabelStyle>
     </Style>
-    <StyleMap id="icon-1507-A52714">
+    <StyleMap id="香港豬場資料">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1507-A52714-normal</styleUrl>
+        <styleUrl>#香港豬場資料-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1507-A52714-highlight</styleUrl>
+        <styleUrl>#香港豬場資料-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1899-0288D1-nodesc-normal">
+    <Style id="缸瓦甫警察設施工地-normal">
       <IconStyle>
         <color>ffd18802</color>
         <scale>1</scale>
@@ -87,7 +87,7 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="icon-1899-0288D1-nodesc-highlight">
+    <Style id="缸瓦甫警察設施工地-highlight">
       <IconStyle>
         <color>ffd18802</color>
         <scale>1</scale>
@@ -103,14 +103,14 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1899-0288D1-nodesc">
+    <StyleMap id="缸瓦甫警察設施工地">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+        <styleUrl>#缸瓦甫警察設施工地-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+        <styleUrl>#缸瓦甫警察設施工地-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Style id="poly-0288D1-1000-102-normal">
@@ -177,7 +177,7 @@
         <styleUrl>#poly-0288D1-1000-105-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="poly-0288D1-1000-84-normal">
+    <Style id="所在之新發展區或牽涉的發展計劃-normal">
       <LineStyle>
         <color>ffd18802</color>
         <width>1</width>
@@ -188,7 +188,7 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-0288D1-1000-84-highlight">
+    <Style id="所在之新發展區或牽涉的發展計劃-highlight">
       <LineStyle>
         <color>ffd18802</color>
         <width>1.5</width>
@@ -199,14 +199,14 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-0288D1-1000-84">
+    <StyleMap id="所在之新發展區或牽涉的發展計劃">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-0288D1-1000-84-normal</styleUrl>
+        <styleUrl>#所在之新發展區或牽涉的發展計劃-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-0288D1-1000-84-highlight</styleUrl>
+        <styleUrl>#所在之新發展區或牽涉的發展計劃-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Style id="poly-0288D1-1000-87-normal">
@@ -310,7 +310,7 @@
       <Placemark>
         <name>瓊業豬場</name>
         <description><![CDATA[Farm: 15<br>說明: 農場名稱 瓊業豬場 <br> 地區 八鄉 <br> 鄉村 馬鞍崗 <br> 備註 實地考察 <br> 網站連結 https://www.google.com/maps/@22.4124078,114.0629884,3a,15y,25.39h,85.32t/data=!3m6!1e1!3m4!1seswDYbmZVWlha1gkyY4HKQ!2e0!7i16384!8i8192 <br>由公司或由投資公司持有<br>Before: 彩豐投資有限公司 <br>Fillson Investment Limited (簡慧賢)<br>After: WU WAI LING<br>胡慧玲<br>pig_no: 2000]]></description>
-        <styleUrl>#icon-1507-673AB7</styleUrl>
+        <styleUrl>#香港豬場資料-由公司或由投資公司持有</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>15.0</value>
@@ -340,7 +340,7 @@ After: WU WAI LING
       <Placemark>
         <name>元朗公庵路 無名豬場</name>
         <description><![CDATA[Farm: 12<br>說明: 農場名稱 現場沒有水牌<br> 地區 元朗 <br> 鄉村 白沙村 <br> 備註 實地考察確認<br> 網站連結 <br> 網站連結 <br>pig_no: 1500]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>12.0</value>
@@ -366,7 +366,7 @@ After: WU WAI LING
       <Placemark>
         <name>鴻圖農場</name>
         <description><![CDATA[Farm: 19<br>說明: 農場名稱 鴻圖農場 <br> 地區 元朗 <br> 鄉村 木橋頭村 <br> 備註 <br> 網站連結 https://www.facebook.com/greenlionfarm/posts/1466859000076897/ <br> 網站連結 <br>pig_no: 1600]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>19.0</value>
@@ -392,7 +392,7 @@ After: WU WAI LING
       <Placemark>
         <name>永生農場</name>
         <description><![CDATA[Farm: 40<br>說明: 農場名稱 永生農場 <br> 地區 元朗 <br> 鄉村 白沙村 <br> 備註 實地考察 <br> 網站連結 https://www.google.com/maps/@22.4129137,114.0164875,3a,75y,356.55h,91.42t/data=!3m6!1e1!3m4!1sZX9WrZllzMiJ4OoCcP3teA!2e0!7i13312!8i6656 <br> 網站連結 <br>pig_no: 4000]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>40.0</value>
@@ -418,7 +418,7 @@ After: WU WAI LING
       <Placemark>
         <name>協和農場</name>
         <description><![CDATA[Farm: 26<br>說明: 農場名稱 協和農場 <br> 地區 廈村 <br> 鄉村 下白坭村 <br> 備註 實地考察 <br> 網站連結 http://greeninnet.blogspot.com/2011/11/blog-post_21.html <br> 網站連結 <br><br>由公司或由投資公司持有<br>合福投資有限公司<br>UNITED FORTUNE INVESTMENT LIMITED<br><br>pig_no: 3500]]></description>
-        <styleUrl>#icon-1507-673AB7</styleUrl>
+        <styleUrl>#香港豬場資料-由公司或由投資公司持有</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>26.0</value>
@@ -449,7 +449,7 @@ UNITED FORTUNE INVESTMENT LIMITED
       <Placemark>
         <name>桂生農場</name>
         <description><![CDATA[Farm: 38<br>說明: 農場名稱 桂生農場 <br> 地區 廈村 <br> 鄉村 下白坭村 <br> 備註 實地考察 <br> 網站連結 https://www.google.com/maps/@22.4270253,113.9462285,3a,15y,325.08h,78.4t/data=!3m6!1e1!3m4!1shfkL0oebHEyucLI_vjzMjA!2e0!7i16384!8i8192 <br> 網站連結 <br><br>由公司或由投資公司持有<br>Before:<br>WELL COLOUR INVESTMENTS LIMITED<br>After:<br>FULLAND INTERNATIONAL LIMITED<br>富安國際有限公司<br><br>pig_no: 450]]></description>
-        <styleUrl>#icon-1507-673AB7</styleUrl>
+        <styleUrl>#香港豬場資料-由公司或由投資公司持有</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>38.0</value>
@@ -483,7 +483,7 @@ FULLAND INTERNATIONAL LIMITED
       <Placemark>
         <name>曾偉光農場</name>
         <description><![CDATA[Farm: 21<br>說明: 農場名稱 曾偉光農場 <br> 地區 新田 <br> 鄉村 彭龍地 <br> 備註 實地考察 <br>由公司或由投資公司持有<br>麒偉有限公司<br><br> 網站連結 https://www.google.com/maps/@22.4905343,114.0893089,3a,37.6y,191.26h,88.36t/data=!3m6!1e1!3m4!1sz4vNyUl82atZ0-fhPLnyCA!2e0!7i16384!8i8192 <br> 網站連結 https://www.google.com/maps/d/u/0/viewer?ie=UTF8&hl=zh-CN&msa=0&t=h&z=17&mid=1wyuSiHQhTJq3nf9j-FHH-ZBKSNs&ll=22.491290352793424%2C114.09228522084561<br> <br>pig_no: 1000]]></description>
-        <styleUrl>#icon-1507-673AB7</styleUrl>
+        <styleUrl>#香港豬場資料-由公司或由投資公司持有</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>21.0</value>
@@ -513,7 +513,7 @@ FULLAND INTERNATIONAL LIMITED
       <Placemark>
         <name>陳裕發農場</name>
         <description><![CDATA[Farm: 23<br>說明: 農場名稱 陳裕發農場 <br> 地區 新田 <br> 鄉村 石湖圍 <br> 備註 實地考察 <br> 網站連結 http://www.healthychoicehk.com/hk_farm.html <br> 網站連結 <br>pig_no: 1500]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>23.0</value>
@@ -539,7 +539,7 @@ FULLAND INTERNATIONAL LIMITED
       <Placemark>
         <name>桂園農場</name>
         <description><![CDATA[Farm: 25<br>說明: 受新界北發展威脅<br>農場名稱 桂園農場 <br> 地區 新田 <br> 鄉村 小磡村 <br> 備註 實地考察 <br> 網站連結 https://www.google.com/maps/@22.4942719,114.0777877,3a,15.7y,6.46h,87.23t/data=!3m6!1e1!3m4!1sYctEjeSoGzZmDkgOmcR4ew!2e0!7i16384!8i8192 <br> 網站連結 https://www.google.com/maps/d/u/0/viewer?ie=UTF8&hl=zh-CN&msa=0&t=h&z=17&mid=1wyuSiHQhTJq3nf9j-FHH-ZBKSNs&ll=22.486825000000003%2C114.07829799999998<br> <br>pig_no: 1000]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>25.0</value>
@@ -567,7 +567,7 @@ FULLAND INTERNATIONAL LIMITED
       <Placemark>
         <name>坤記農場</name>
         <description><![CDATA[Farm: 27<br>說明: 農場名稱 坤記農場 <br> 地區 新田 <br> 鄉村 麒麟山 <br> 備註 實地考察冇名 <br> 網站連結 <br> 網站連結 <br><br>由公司或由投資公司持有<br>麒偉有限公司<br>KING WIN INC LIMITED <br><br>pig_no: 1000]]></description>
-        <styleUrl>#icon-1507-673AB7</styleUrl>
+        <styleUrl>#香港豬場資料-由公司或由投資公司持有</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>27.0</value>
@@ -598,7 +598,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>上水古洞 無名豬場</name>
         <description><![CDATA[Farm: 1<br>說明: 農場名稱 現場沒有名稱<br> 地區 上水 <br> 鄉村 古洞 <br> 備註 <br> 網站連結 https://www.google.com/maps/@22.5099533,114.1007583,3a,15y,17.1h,84.42t/data=!3m7!1e1!3m5!1sywxAdiufhx9W6B1tnUhbIw!2e0!6s%2F%2Fgeo2.ggpht.com%2Fcbk%3Fpanoid%3DywxAdiufhx9W6B1tnUhbIw%26output%3Dthumbnail%26cb_client%3Dmaps_sv.tactile.gps%26thumb%3D2%26w%3D203%26h%3D100%26yaw%3D0.87451965%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192<br> 網站連結 <br>pig_no: 500]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>1.0</value>
@@ -624,7 +624,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>恒寶農場</name>
         <description><![CDATA[Farm: 3<br>說明: 農場名稱 恒寶農場 <br> 地區 打鼓嶺 <br> 鄉村 坪輋村 <br> 備註 位置不相同但新的是正確 <br> 網站連結 http://www.35941.com/rcmb/iframe.asp?id=12289 <br> 網站連結 <br>pig_no: 2000]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>3.0</value>
@@ -650,7 +650,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>運成農場</name>
         <description><![CDATA[Farm: 4<br>說明: 農場名稱 運成農場 <br> 地區 打鼓嶺 <br> 鄉村 李屋村 <br> 備註 實地考察 <br> 網站連結 https://www.google.com/maps/@22.5248336,114.1371725,3a,75y,321.99h,74.32t/data=!3m6!1e1!3m4!1sj23CneqnWCNKp7ytqbEhKQ!2e0!7i16384!8i8192 <br> 網站連結 <br>pig_no: 4000]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>4.0</value>
@@ -676,7 +676,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>曾記農場</name>
         <description><![CDATA[Farm: 5<br>說明: 農場名稱 曾記農場 <br> 地區 打鼓嶺 <br> 鄉村 東風坳 <br> 備註 位置相約 <br> 網站連結 https://hk.appledaily.com/ETW/20160818/6FSVJVT25YIOCBB6FNNQAL2SAU/ <br> 網站連結 <br>pig_no: 800]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>5.0</value>
@@ -703,7 +703,7 @@ KING WIN INC LIMITED
         <name>打鼓嶺恐龍坑 無名豬場 #1
 </name>
         <description><![CDATA[Farm: 6<br>說明: 農場名稱 現場沒有名稱<br> 地區 打鼓嶺 <br> 鄉村 恐龍坑 <br> 備註 新彊嶺環評報告表示要求清拆<br> 網站連結 https://www.google.com/maps/@22.5249141,114.1346156,3a,75y,44.94h,76.49t/data=!3m6!1e1!3m4!1s_qLWqggPDte6FMMTQShRbA!2e0!7i16384!8i8192 <br> 網站連結 <br>pig_no: 600]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>6.0</value>
@@ -729,7 +729,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>合興農場</name>
         <description><![CDATA[Farm: 34<br>說明: 農場名稱 合興農場 <br> 地區 打鼓嶺 <br> 鄉村 東風坳 <br> 備註 <br> 網站連結 https://orientaldaily.on.cc/cnt/news/20140611/mobile/odn-20140611-0611_00176_145.html <br> 網站連結 <br>pig_no: 1500]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>34.0</value>
@@ -756,7 +756,7 @@ KING WIN INC LIMITED
         <name>打鼓嶺恐龍坑 無名豬場 #2
 </name>
         <description><![CDATA[Farm: 36<br>說明: 農場名稱 現場沒有名稱<br> 地區 打鼓嶺 <br> 鄉村 恐龍坑 <br> 備註 實地考察 <br> 網站連結 https://www.google.com/maps/@22.525375,114.1385724,3a,15y,28.01h,88.03t/data=!3m6!1e1!3m4!1sRVSr1y3HAcdA5LdwephV-g!2e0!7i16384!8i8192 <br> 網站連結 <br>pig_no: 250]]></description>
-        <styleUrl>#icon-1507-A52714</styleUrl>
+        <styleUrl>#香港豬場資料</styleUrl>
         <ExtendedData>
           <Data name="Farm">
             <value>36.0</value>
@@ -785,7 +785,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>新田落馬洲發展樞紐</name>
         <description>新田落馬洲發展樞紐</description>
-        <styleUrl>#poly-0288D1-1000-84</styleUrl>
+        <styleUrl>#所在之新發展區或牽涉的發展計劃</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1001,7 +1001,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>新界北新市鎮</name>
         <description>新界北新市鎮</description>
-        <styleUrl>#poly-0288D1-1000-102</styleUrl>
+        <styleUrl>#所在之新發展區或牽涉的發展計劃</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1672,7 +1672,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>洪水橋新發展區</name>
         <description>洪水橋新發展區</description>
-        <styleUrl>#poly-0288D1-1000-105</styleUrl>
+        <styleUrl>#所在之新發展區或牽涉的發展計劃</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1882,7 +1882,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>錦田南及八鄉的土地用途檢討</name>
         <description>錦田南</description>
-        <styleUrl>#poly-0288D1-1000-97</styleUrl>
+        <styleUrl>#所在之新發展區或牽涉的發展計劃</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1913,7 +1913,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>錦田南及八鄉的土地用途檢討</name>
         <description>錦田南</description>
-        <styleUrl>#poly-0288D1-1000-105</styleUrl>
+        <styleUrl>#所在之新發展區或牽涉的發展計劃</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -2056,7 +2056,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>古洞北新發展區</name>
         <description>古洞北新發展區</description>
-        <styleUrl>#poly-0288D1-1000-92</styleUrl>
+        <styleUrl>#所在之新發展區或牽涉的發展計劃</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -2636,7 +2636,7 @@ KING WIN INC LIMITED
       </Placemark>
       <Placemark>
         <name>缸瓦甫警察設施工地</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <styleUrl>#缸瓦甫警察設施工地</styleUrl>
         <Point>
           <coordinates>
             114.1347205,22.5297009,0

@@ -407,61 +407,131 @@ html, body {
     background: #f5f5f5;
 }
 
+/* Legend button */
+.legend-button {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    width: 40px; /* Match size of other controls */
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7); /* Black background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.legend-button:hover {
+    background: rgba(0, 0, 0, 0.9); /* Darker black on hover */
+}
+
+.legend-button img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1); /* White icon */
+}
 /* Legend Panel */
 .legend-panel {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    bottom: 40px;
+    right: 30px;
     background: white;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    width: 250px;
-    z-index: 1000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    z-index: 5000;
 }
 
 .legend-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 12px;
-    background: #f5f5f5;
+    padding: 8px;
+    background: #f8f8f8;
     border-bottom: 1px solid #ddd;
     font-weight: bold;
-    font-size: 16px;
-    color: #333;
 }
 
 .legend-content {
     padding: 8px;
-    max-height: 300px;
+    max-height: 400px;
     overflow-y: auto;
+}
+
+.legend-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1001;
+}
+
+.legend-close-button:hover {
+    background: #e0e0e0;
 }
 
 .legend-item {
     margin-bottom: 10px;
+    cursor: move; /* Make legend items draggable */
 }
 
-.legend-item-header {
-    font-weight: bold;
-    margin-bottom: 5px;
+.legend-item.dragging {
+    opacity: 0.5;
+}
+
+.legend-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.legend-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legend-graphic {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.legend-layer-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-no-layers, .legend-no-features {
+    color: #666;
+    font-style: italic;
 }
 
 .legend-style-item {
     display: flex;
     align-items: center;
-    margin-bottom: 5px;
+    gap: 8px;
+    margin-top: 4px;
 }
 
 .legend-style-swatch {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    border: 1px solid #ddd;
-    background-size: cover;
+    width: 24px;
+    height: 24px;
 }
 
 .legend-style-label {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* Basemap Button */
@@ -687,15 +757,14 @@ html, body {
 
 .file-info-popup {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	bottom:56%;
+	left:10px;
     background: white;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     min-width: 300px;
-    max-width: 500px;
+    max-width: 400px;
     max-height: 400px;
     z-index: 10000;
 }
@@ -760,8 +829,6 @@ html, body {
     /* Hide unnecessary elements */
     #addLayer-button,
     #print-button,
-    #legend-button,
-    #legend-panel,
     .download-all-button,
     .ol-zoom,
     .ol-zoom-in,

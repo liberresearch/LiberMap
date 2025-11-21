@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
 <name>實際棕地範圍 (2021)</name>
-<description><![CDATA[a href="https://liber-research.com/%E3%80%8A%E5%A4%B1%E6%A3%95%E7%BD%AA-%E9%A6%99%E6%B8%AF%E6%A3%95%E5%9C%B0%E7%8F%BE%E6%B3%81%E5%A0%B1%E5%91%8A2021%E3%80%8B/" target="_blank">《失棕罪-香港棕地現況報告2021》</a><br><a>與官方棕地資料 (2019)對比，民間的點算要比官方的齊全</a>]]></description>
+<description><![CDATA[<a href="https://liber-research.com/%E3%80%8A%E5%A4%B1%E6%A3%95%E7%BD%AA-%E9%A6%99%E6%B8%AF%E6%A3%95%E5%9C%B0%E7%8F%BE%E6%B3%81%E5%A0%B1%E5%91%8A2021%E3%80%8B/" target="_blank">《失棕罪-香港棕地現況報告2021》</a><br><a>與官方棕地資料 (2019)對比，民間的點算要比官方的齊全</a>]]></description>
 <Schema name="_實際棕地範圍__2021____Actual_extent_of_brownfields__2021__" id="_實際棕地範圍__2021____Actual_extent_of_brownfields__2021__">
 	<SimpleField name="Area" type="float"></SimpleField>
 	<SimpleField name="Shape__Are" type="float"></SimpleField>

@@ -4,7 +4,7 @@
 <description><![CDATA[ <a href="https://liber-research.com/oven-ready-brownfields/" target="_blank">《快熟棕地 北部都會區具發展潛力的棕地研究》</a><br><a>點算位於北部都會區範圍內的棕地，優先發展，避免開發生態敏感地</a>]]></description>
   <Document>
     <name>快熟棕地</name>
-    <Style id="poly-FF5252-1200-76-normal">
+    <Style id="所有項目-normal">
       <LineStyle>
         <color>ff5252ff</color>
         <width>1.2</width>
@@ -15,7 +15,7 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-FF5252-1200-76-highlight">
+    <Style id="所有項目-highlight">
       <LineStyle>
         <color>ff5252ff</color>
         <width>1.8</width>
@@ -26,17 +26,17 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-FF5252-1200-76">
+    <StyleMap id="所有項目">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-FF5252-1200-76-normal</styleUrl>
+        <styleUrl>#所有項目-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-FF5252-1200-76-highlight</styleUrl>
+        <styleUrl>#所有項目-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="poly-FF5252-1200-76-nodesc-normal">
+    <Style id="所有項目-nodesc-normal">
       <LineStyle>
         <color>ff5252ff</color>
         <width>1.2</width>
@@ -50,7 +50,7 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="poly-FF5252-1200-76-nodesc-highlight">
+    <Style id="所有項目-nodesc-highlight">
       <LineStyle>
         <color>ff5252ff</color>
         <width>1.8</width>
@@ -64,20 +64,20 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="poly-FF5252-1200-76-nodesc">
+    <StyleMap id="所有項目-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-FF5252-1200-76-nodesc-normal</styleUrl>
+        <styleUrl>#所有項目-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-FF5252-1200-76-nodesc-highlight</styleUrl>
+        <styleUrl>#所有項目-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
       <name>7</name>
       <description><![CDATA[7    <br>       <br>   FID   2    <br>   Shape_Leng   1445.488745    <br>   Area__ha_   2.418445]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -181,7 +181,7 @@
     <Placemark>
       <name>9</name>
       <description><![CDATA[9    <br>       <br>   FID   3    <br>   Shape_Leng   2654.469441    <br>   Area__ha_   9.645072]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -346,7 +346,7 @@
     <Placemark>
       <name>17</name>
       <description><![CDATA[17    <br>       <br>   FID   4    <br>   Shape_Leng   795.609984    <br>   Area__ha_   2.212482]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -408,7 +408,7 @@
     <Placemark>
       <name>18</name>
       <description><![CDATA[18    <br>       <br>   FID   5    <br>   Shape_Leng   1851.66509    <br>   Area__ha_   5.008066]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -580,7 +580,7 @@
     <Placemark>
       <name>21</name>
       <description><![CDATA[21    <br>       <br>   FID   6    <br>   Shape_Leng   7937.238683    <br>   Area__ha_   35.928823]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1354,7 +1354,7 @@
     <Placemark>
       <name>27</name>
       <description><![CDATA[27    <br>       <br>   FID   7    <br>   Shape_Leng   1835.541813    <br>   Area__ha_   4.342327]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1518,7 +1518,7 @@
     <Placemark>
       <name>28</name>
       <description><![CDATA[28    <br>       <br>   FID   8    <br>   Shape_Leng   3487.021567    <br>   Area__ha_   7.196818]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1864,7 +1864,7 @@
     <Placemark>
       <name>43</name>
       <description><![CDATA[43    <br>       <br>   FID   10    <br>   Shape_Leng   1531.579082    <br>   Area__ha_   3.536172]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1971,7 +1971,7 @@
     <Placemark>
       <name>49</name>
       <description><![CDATA[49    <br>       <br>   FID   11    <br>   Shape_Leng   965.795869    <br>   Area__ha_   2.049073]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2062,7 +2062,7 @@
     <Placemark>
       <name>50</name>
       <description><![CDATA[50    <br>       <br>   FID   12    <br>   Shape_Leng   2397.813992    <br>   Area__ha_   3.430343]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2237,7 +2237,7 @@
     <Placemark>
       <name>51</name>
       <description><![CDATA[51    <br>       <br>   FID   13    <br>   Shape_Leng   1087.795099    <br>   Area__ha_   5.078662]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2265,7 +2265,7 @@
     <Placemark>
       <name>52</name>
       <description><![CDATA[52    <br>       <br>   FID   14    <br>   Shape_Leng   1252.456618    <br>   Area__ha_   3.229352]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2345,7 +2345,7 @@
     <Placemark>
       <name>55</name>
       <description><![CDATA[55    <br>       <br>   FID   15    <br>   Shape_Leng   5157.101438    <br>   Area__ha_   24.777878]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2737,7 +2737,7 @@
     <Placemark>
       <name>60</name>
       <description><![CDATA[60    <br>       <br>   FID   16    <br>   Shape_Leng   1382.987591    <br>   Area__ha_   3.169826]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2878,7 +2878,7 @@
     <Placemark>
       <name>67</name>
       <description><![CDATA[67    <br>       <br>   FID   17    <br>   Shape_Leng   1222.874653    <br>   Area__ha_   2.072567]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3039,7 +3039,7 @@
     <Placemark>
       <name>75</name>
       <description><![CDATA[75    <br>       <br>   FID   18    <br>   Shape_Leng   1676.42176    <br>   Area__ha_   3.897539]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3182,7 +3182,7 @@
     <Placemark>
       <name>78</name>
       <description><![CDATA[78    <br>       <br>   FID   19    <br>   Shape_Leng   1251.716335    <br>   Area__ha_   3.798329]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3261,7 +3261,7 @@
     <Placemark>
       <name>81</name>
       <description><![CDATA[81    <br>       <br>   FID   20    <br>   Shape_Leng   1787.907726    <br>   Area__ha_   3.910532]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3463,7 +3463,7 @@
     <Placemark>
       <name>89</name>
       <description><![CDATA[89    <br>       <br>   FID   21    <br>   Shape_Leng   2801.545613    <br>   Area__ha_   6.421273]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3723,7 +3723,7 @@
     <Placemark>
       <name>92</name>
       <description><![CDATA[92    <br>       <br>   FID   22    <br>   Shape_Leng   1418.808303    <br>   Area__ha_   3.538445]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3879,7 +3879,7 @@
     <Placemark>
       <name>95</name>
       <description><![CDATA[95    <br>       <br>   FID   23    <br>   Shape_Leng   1902.483147    <br>   Area__ha_   3.247617]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4061,7 +4061,7 @@
     <Placemark>
       <name>100</name>
       <description><![CDATA[100    <br>       <br>   FID   24    <br>   Shape_Leng   1020.722659    <br>   Area__ha_   2.06694]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4209,7 +4209,7 @@
     <Placemark>
       <name>110</name>
       <description><![CDATA[110    <br>       <br>   FID   25    <br>   Shape_Leng   1093.870995    <br>   Area__ha_   2.744665]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4314,7 +4314,7 @@
     <Placemark>
       <name>120</name>
       <description><![CDATA[120    <br>       <br>   FID   26    <br>   Shape_Leng   1780.030227    <br>   Area__ha_   5.836799]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4472,7 +4472,7 @@
     <Placemark>
       <name>122</name>
       <description><![CDATA[122    <br>       <br>   FID   27    <br>   Shape_Leng   1561.330076    <br>   Area__ha_   3.446622]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4613,7 +4613,7 @@
     <Placemark>
       <name>124</name>
       <description><![CDATA[124    <br>       <br>   FID   28    <br>   Shape_Leng   2884.126888    <br>   Area__ha_   6.662636]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4911,7 +4911,7 @@
     <Placemark>
       <name>125</name>
       <description><![CDATA[125    <br>       <br>   FID   29    <br>   Shape_Leng   1501.459284    <br>   Area__ha_   2.676509]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5069,7 +5069,7 @@
     <Placemark>
       <name>130</name>
       <description><![CDATA[130    <br>       <br>   FID   30    <br>   Shape_Leng   1803.377808    <br>   Area__ha_   5.942385]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5288,7 +5288,7 @@
     <Placemark>
       <name>132</name>
       <description><![CDATA[132    <br>       <br>   FID   31    <br>   Shape_Leng   2330.826615    <br>   Area__ha_   4.947353]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5437,7 +5437,7 @@
     <Placemark>
       <name>135</name>
       <description><![CDATA[135    <br>       <br>   FID   32    <br>   Shape_Leng   1403.934863    <br>   Area__ha_   5.178265]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5587,7 +5587,7 @@
     <Placemark>
       <name>138</name>
       <description><![CDATA[138    <br>       <br>   FID   33    <br>   Shape_Leng   4511.512398    <br>   Area__ha_   11.379451]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5970,7 +5970,7 @@
     <Placemark>
       <name>139</name>
       <description><![CDATA[139    <br>       <br>   FID   34    <br>   Shape_Leng   1401.288364    <br>   Area__ha_   2.141892]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6115,7 +6115,7 @@
     <Placemark>
       <name>143</name>
       <description><![CDATA[143    <br>       <br>   FID   35    <br>   Shape_Leng   4920.051057    <br>   Area__ha_   10.524048]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6849,7 +6849,7 @@
     <Placemark>
       <name>144</name>
       <description><![CDATA[144    <br>       <br>   FID   36    <br>   Shape_Leng   1431.827927    <br>   Area__ha_   4.451114]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7030,7 +7030,7 @@
     <Placemark>
       <name>154</name>
       <description><![CDATA[154    <br>       <br>   FID   37    <br>   Shape_Leng   913.063349    <br>   Area__ha_   2.428759]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7102,7 +7102,7 @@
     <Placemark>
       <name>159</name>
       <description><![CDATA[159    <br>       <br>   FID   38    <br>   Shape_Leng   972.676304    <br>   Area__ha_   2.501312]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7142,7 +7142,7 @@
     <Placemark>
       <name>160</name>
       <description><![CDATA[160    <br>       <br>   FID   39    <br>   Shape_Leng   799.207992    <br>   Area__ha_   2.21519]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7226,7 +7226,7 @@
     <Placemark>
       <name>162</name>
       <description><![CDATA[162    <br>       <br>   FID   40    <br>   Shape_Leng   765.764977    <br>   Area__ha_   3.054912]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7305,7 +7305,7 @@
     <Placemark>
       <name>193</name>
       <description><![CDATA[193    <br>       <br>   FID   41    <br>   Shape_Leng   1355.021217    <br>   Area__ha_   4.097812]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7442,7 +7442,7 @@
     <Placemark>
       <name>232</name>
       <description><![CDATA[232    <br>       <br>   FID   42    <br>   Shape_Leng   994.286783    <br>   Area__ha_   2.379287]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7544,7 +7544,7 @@
     <Placemark>
       <name>260</name>
       <description><![CDATA[260    <br>       <br>   FID   43    <br>   Shape_Leng   982.684731    <br>   Area__ha_   3.296547]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7656,7 +7656,7 @@
     <Placemark>
       <name>264</name>
       <description><![CDATA[264    <br>       <br>   FID   44    <br>   Shape_Leng   1378.661264    <br>   Area__ha_   3.230322]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7825,7 +7825,7 @@
     <Placemark>
       <name>283</name>
       <description><![CDATA[283    <br>       <br>   FID   45    <br>   Shape_Leng   1513.106983    <br>   Area__ha_   9.943161]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7944,7 +7944,7 @@
     <Placemark>
       <name>289</name>
       <description><![CDATA[289    <br>       <br>   FID   47    <br>   Shape_Leng   1213.077192    <br>   Area__ha_   2.306211]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8070,7 +8070,7 @@
     <Placemark>
       <name>296</name>
       <description><![CDATA[296    <br>       <br>   FID   48    <br>   Shape_Leng   1494.656172    <br>   Area__ha_   4.581715]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8196,7 +8196,7 @@
     <Placemark>
       <name>297</name>
       <description><![CDATA[297    <br>       <br>   FID   49    <br>   Shape_Leng   1555.794498    <br>   Area__ha_   4.179912]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8358,7 +8358,7 @@
     <Placemark>
       <name>311</name>
       <description><![CDATA[311    <br>       <br>   FID   50    <br>   Shape_Leng   1306.475664    <br>   Area__ha_   3.234656]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8468,7 +8468,7 @@
     <Placemark>
       <name>318</name>
       <description><![CDATA[318    <br>       <br>   FID   51    <br>   Shape_Leng   1714.652633    <br>   Area__ha_   4.961369]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8652,7 +8652,7 @@
     <Placemark>
       <name>322</name>
       <description><![CDATA[322    <br>       <br>   FID   52    <br>   Shape_Leng   1314.750113    <br>   Area__ha_   2.859415]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8828,7 +8828,7 @@
     <Placemark>
       <name>325</name>
       <description><![CDATA[325    <br>       <br>   FID   53    <br>   Shape_Leng   938.813437    <br>   Area__ha_   4.534366]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8915,7 +8915,7 @@
     <Placemark>
       <name>326</name>
       <description><![CDATA[326    <br>       <br>   FID   54    <br>   Shape_Leng   1284.194573    <br>   Area__ha_   2.816887]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9133,7 +9133,7 @@
     <Placemark>
       <name>331</name>
       <description><![CDATA[331    <br>       <br>   FID   55    <br>   Shape_Leng   3366.642284    <br>   Area__ha_   14.209701]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9502,7 +9502,7 @@
     <Placemark>
       <name>345</name>
       <description><![CDATA[345    <br>       <br>   FID   56    <br>   Shape_Leng   1605.148768    <br>   Area__ha_   3.440874]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9652,7 +9652,7 @@
     <Placemark>
       <name>346</name>
       <description><![CDATA[346    <br>       <br>   FID   57    <br>   Shape_Leng   1146.92811    <br>   Area__ha_   2.613099]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9767,7 +9767,7 @@
     <Placemark>
       <name>348</name>
       <description><![CDATA[348    <br>       <br>   FID   58    <br>   Shape_Leng   2836.059931    <br>   Area__ha_   6.118342]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -10037,7 +10037,7 @@
     <Placemark>
       <name>354</name>
       <description><![CDATA[354    <br>       <br>   FID   60    <br>   Shape_Leng   1660.98663    <br>   Area__ha_   4.416181]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -10192,7 +10192,7 @@
     <Placemark>
       <name>377</name>
       <description><![CDATA[377    <br>       <br>   FID   61    <br>   Shape_Leng   1303.53687    <br>   Area__ha_   5.10144]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -10277,7 +10277,7 @@
     <Placemark>
       <name>383</name>
       <description><![CDATA[383    <br>       <br>   FID   62    <br>   Shape_Leng   2139.572077    <br>   Area__ha_   6.519614]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -10589,7 +10589,7 @@
     <Placemark>
       <name>389</name>
       <description><![CDATA[389    <br>       <br>   FID   63    <br>   Shape_Leng   983.716976    <br>   Area__ha_   2.697119]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -10650,7 +10650,7 @@
     <Placemark>
       <name>397</name>
       <description><![CDATA[397    <br>       <br>   FID   64    <br>   Shape_Leng   3471.594555    <br>   Area__ha_   10.677141]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -10882,7 +10882,7 @@
     <Placemark>
       <name>398</name>
       <description><![CDATA[398    <br>       <br>   FID   65    <br>   Shape_Leng   1494.554323    <br>   Area__ha_   3.339957]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11036,7 +11036,7 @@
     <Placemark>
       <name>417</name>
       <description><![CDATA[417    <br>       <br>   FID   66    <br>   Shape_Leng   2102.605532    <br>   Area__ha_   5.119153]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11240,7 +11240,7 @@
     <Placemark>
       <name>430</name>
       <description><![CDATA[430    <br>       <br>   FID   67    <br>   Shape_Leng   1682.940474    <br>   Area__ha_   3.299073]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11389,7 +11389,7 @@
     <Placemark>
       <name>439</name>
       <description><![CDATA[439    <br>       <br>   FID   68    <br>   Shape_Leng   818.517919    <br>   Area__ha_   2.313358]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11469,7 +11469,7 @@
     <Placemark>
       <name>447</name>
       <description><![CDATA[447    <br>       <br>   FID   69    <br>   Shape_Leng   1258.189372    <br>   Area__ha_   7.105789]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11528,7 +11528,7 @@
     <Placemark>
       <name>450</name>
       <description><![CDATA[450    <br>       <br>   FID   70    <br>   Shape_Leng   2387.544186    <br>   Area__ha_   7.08369]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11680,7 +11680,7 @@
     <Placemark>
       <name>464</name>
       <description><![CDATA[464    <br>       <br>   FID   71    <br>   Shape_Leng   1127.040695    <br>   Area__ha_   2.306804]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11783,7 +11783,7 @@
     <Placemark>
       <name>510</name>
       <description><![CDATA[510    <br>       <br>   FID   72    <br>   Shape_Leng   1340.508374    <br>   Area__ha_   3.308353]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11857,7 +11857,7 @@
     <Placemark>
       <name>547</name>
       <description><![CDATA[547    <br>       <br>   FID   73    <br>   Shape_Leng   1340.190321    <br>   Area__ha_   2.668696]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -12032,7 +12032,7 @@
     <Placemark>
       <name>549</name>
       <description><![CDATA[549    <br>       <br>   FID   74    <br>   Shape_Leng   935.774861    <br>   Area__ha_   2.292212]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -12172,7 +12172,7 @@
     <Placemark>
       <name>604</name>
       <description><![CDATA[604    <br>       <br>   FID   75    <br>   Shape_Leng   952.77184    <br>   Area__ha_   2.369538]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -12270,7 +12270,7 @@
     <Placemark>
       <name>608</name>
       <description><![CDATA[608    <br>       <br>   FID   76    <br>   Shape_Leng   1129.76372    <br>   Area__ha_   2.666175]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -12375,7 +12375,7 @@
     <Placemark>
       <name>663</name>
       <description><![CDATA[663    <br>       <br>   FID   77    <br>   Shape_Leng   1606.500199    <br>   Area__ha_   3.085602]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -12657,7 +12657,7 @@
     <Placemark>
       <name>720</name>
       <description><![CDATA[720    <br>       <br>   FID   78    <br>   Shape_Leng   4103.49869    <br>   Area__ha_   15.593993]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -12950,7 +12950,7 @@
     <Placemark>
       <name>722</name>
       <description><![CDATA[722    <br>       <br>   FID   79    <br>   Shape_Leng   979.630416    <br>   Area__ha_   2.409471]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -13029,7 +13029,7 @@
     <Placemark>
       <name>733</name>
       <description><![CDATA[733    <br>       <br>   FID   80    <br>   Shape_Leng   1706.370656    <br>   Area__ha_   3.125225]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -13240,7 +13240,7 @@
     <Placemark>
       <name>760</name>
       <description><![CDATA[760    <br>       <br>   FID   81    <br>   Shape_Leng   892.514198    <br>   Area__ha_   2.923434]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -13364,7 +13364,7 @@
     <Placemark>
       <name>847</name>
       <description><![CDATA[847    <br>       <br>   FID   82    <br>   Shape_Leng   2186.087358    <br>   Area__ha_   4.031083]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -13597,7 +13597,7 @@
     <Placemark>
       <name>892</name>
       <description><![CDATA[892    <br>       <br>   FID   83    <br>   Shape_Leng   1676.467713    <br>   Area__ha_   3.619807]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -13893,7 +13893,7 @@
     <Placemark>
       <name>284</name>
       <description><![CDATA[284    <br>       <br>   FID   46    <br>   Shape_Leng   953.356151    <br>   Area__ha_   2.05739]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -13983,7 +13983,7 @@
     <Placemark>
       <name>2</name>
       <description><![CDATA[2 <br> <br> FID 1 <br> Shape_Leng 919.449537 <br> Area__ha_ 2.335295]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -14017,7 +14017,7 @@
     <Placemark>
       <name>37</name>
       <description><![CDATA[37    <br>       <br>   FID   9    <br>   Shape_Leng   6041.715016    <br>   Area__ha_   18.951634]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -14583,7 +14583,7 @@
     <Placemark>
       <name>1</name>
       <description><![CDATA[1 <br> <br> FID 0 <br> Shape_Leng 4500.309399 <br> Area__ha_ 18.954944]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -14886,7 +14886,7 @@
     <Placemark>
       <name>352</name>
       <description><![CDATA[352    <br>       <br>   FID   59    <br>   Shape_Leng   3300.706934    <br>   Area__ha_   8.348727]]></description>
-      <styleUrl>#poly-FF5252-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -15210,7 +15210,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 85</name>
-      <styleUrl>#poly-FF5252-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>

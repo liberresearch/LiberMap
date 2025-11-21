@@ -40,6 +40,15 @@ class MapManager {
 		return name.replace(/\s+/g, ' ');  // Clean up extra spaces as bonus
 	}
 	
+	toCssColor(color) {
+		if (!color) return '#000000';
+		if (Array.isArray(color)) {
+			const [r, g, b, a = 1] = color;
+			return `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, ${a})`;
+		}
+		return color;
+	}
+	
     setupOptimizedEventHandlers() {
         const debounce = (func, delay) => {
             let timeout;
@@ -1798,162 +1807,188 @@ class MapManager {
         });
     }
 
-    extractAndDisplayStyles(container, layer) {
-        if (!layer || !layer.getSource) {
-            console.warn('Invalid layer provided to extractAndDisplayStyles');
-            return;
-        }
+	extractAndDisplayStyles(container, layer) {
+		const source = layer.getSource();
+		if (!source || source.getFeatures().length === 0) return;
 
-        const source = layer.getSource();
-        if (!source || !source.getFeatures) {
-            console.warn('Invalid source in layer');
-            return;
-        }
+		const features = source.getFeatures();
 
-        const features = source.getFeatures();
+		// 儲存：StyleMap id → { count, sampleFeature }
+		const styleMapInfo = new Map();
 
-        if (!features || features.length === 0) {
-            const noFeaturesMsg = document.createElement('div');
-            noFeaturesMsg.className = 'legend-no-features';
-            noFeaturesMsg.textContent = 'No features in this layer';
-            container.appendChild(noFeaturesMsg);
-            return;
-        }
+		features.forEach(feature => {
+			let styles = layer.getStyle();
+			if (typeof styles === 'function') styles = styles(feature);
+			if (!styles) return;
+			if (!Array.isArray(styles)) styles = [styles];
 
-        const styleMap = new Map();
+			let foundStyleMapId = null;
 
-        features.forEach(feature => {
-            if (!feature) return;
+			styles.forEach(style => {
+				let styleUrl = '';
 
-            let styleId = feature.get('styleUrl');
-            if (styleId) {
-                styleId = styleId.replace(/^#/, '');
-            } else if (feature.getGeometry && feature.getGeometry()) {
-                styleId = feature.getGeometry().getType();
-            } else {
-                styleId = 'unknown';
-            }
+				// 1. 從 feature 的 styleUrl 取得（最準確）
+				if (feature.get('styleUrl')) {
+					styleUrl = feature.get('styleUrl');
+				}
+				// 2. 從 style 物件本身
+				else if (style.styleUrl) {
+					styleUrl = style.styleUrl;
+				}
+				else if (typeof style.getStyleUrl === 'function') {
+					styleUrl = style.getStyleUrl();
+				}
 
-            if (!styleMap.has(styleId)) {
-                const featureStyleFunc = feature.getStyleFunction();
-                const layerStyleFunc = layer.getStyleFunction ? layer.getStyleFunction() : null;
-                const styleFunc = featureStyleFunc || layerStyleFunc;
+				if (styleUrl && styleUrl.includes('#')) {
+					foundStyleMapId = styleUrl.split('#')[1];
+				}
+			});
 
-                if (styleFunc) {
-                    try {
-                        const style = styleFunc(feature);
-                        if (style) {
-                            styleMap.set(styleId, {
-                                style: style,
-                                feature: feature,
-                                count: 1
-                            });
-                        }
-                    } catch (e) {
-                        console.warn('Error getting style for feature:', e);
-                    }
-                }
-            } else {
-                const entry = styleMap.get(styleId);
-                entry.count++;
-                styleMap.set(styleId, entry);
-            }
-        });
+			// 如果上面都拿不到，嘗試從 KML 內建的 StyleMap id 推斷（最後手段）
+			if (!foundStyleMapId) {
+				const styleFunctionResult = layer.getStyle()(feature);
+				const styleArray = Array.isArray(styleFunctionResult) ? styleFunctionResult : [styleFunctionResult];
+				for (const s of styleArray) {
+					if (s && s.getImage) {
+						const img = s.getImage();
+						if (img && img.getColor) {
+							const color = img.getColor();
+							if (color && typeof color === 'string' && color.length === 8) {
+								// KML color 是 AABBGGRR → 轉成 RRGGBB
+								const aabbggrr = color;
+								const rr = aabbggrr.substr(6, 2);
+								const gg = aabbggrr.substr(4, 2);
+								const bb = aabbggrr.substr(2, 2);
+								foundStyleMapId = `icon-1507-${rr}${gg}${bb}`.toUpperCase();
+								break;
+							}
+						}
+					}
+				}
+			}
 
-        styleMap.forEach((entry, styleId) => {
-            if (!entry || !entry.style) return;
+			if (foundStyleMapId) {
+				if (!styleMapInfo.has(foundStyleMapId)) {
+					styleMapInfo.set(foundStyleMapId, { count: 0, feature: feature });
+				}
+				styleMapInfo.get(foundStyleMapId).count++;
+			}
+		});
 
-            const styleItem = document.createElement('div');
-            styleItem.className = 'legend-style-item';
+		// 若完全無任何 style → 顯示「所有項目」+ 總數
+		if (styleMapInfo.size === 0) {
+			const row = document.createElement('div');
+			row.style.cssText = 'display:flex;align-items:center;margin:6px 0;font-size:14px;';
 
-            const swatch = document.createElement('div');
-            swatch.className = 'legend-style-swatch';
+			const swatch = document.createElement('div');
+			swatch.className = 'legend-swatch';
+			this.renderStyleSwatch(swatch, layer.getStyle()(features[0]), features[0]);
 
-            try {
-                this.renderStyleSwatch(swatch, entry.style, entry.feature);
-            } catch (e) {
-                console.warn('Error rendering style swatch:', e);
-                swatch.textContent = '?';
-            }
+			const label = document.createElement('span');
+			label.textContent = `所有項目（${features.length} 個）`;
+			label.style.marginLeft = '8px';
+			label.style.color = '#333';
+			label.style.fontWeight = '500';
 
-            const styleLabel = document.createElement('div');
-            styleLabel.className = 'legend-style-label';
-            styleLabel.textContent = `${styleId} (${entry.count} features)`;
+			row.appendChild(swatch);
+			row.appendChild(label);
+			container.appendChild(row);
+			return;
+		}
 
-            styleItem.appendChild(swatch);
-            styleItem.appendChild(styleLabel);
-            container.appendChild(styleItem);
-        });
-    }
+		// 正常情況：按 StyleMap id 顯示，並排序（可選：按數量或字母）
+		const sortedEntries = Array.from(styleMapInfo.entries())
+			.sort((a, b) => b[1].count - a[1].count); // 數量多排前面
 
-    renderStyleSwatch(container, style, feature) {
-        const canvas = document.createElement('canvas');
-        canvas.width = 24;
-        canvas.height = 24;
-        const ctx = canvas.getContext('2d');
+		sortedEntries.forEach(([styleMapId, info]) => {
+			const row = document.createElement('div');
+			row.style.cssText = 'display:flex;align-items:center;margin:6px 0;font-size:14px;';
 
-        const styles = Array.isArray(style) ? style : [style];
-        const geomType = feature.getGeometry().getType();
+			const swatch = document.createElement('div');
+			swatch.className = 'legend-swatch';
+			this.renderStyleSwatch(swatch, layer.getStyle()(info.feature), info.feature);
 
-        styles.forEach(s => {
-            if (!s) return;
+			// 主要：用 StyleMap id 作為名稱（你豬場 KML 就是這樣寫的）
+			let displayName = styleMapId;
 
-            if (geomType === 'Point' || geomType === 'MultiPoint') {
-                const image = s.getImage();
-                if (image) {
-                    if (image instanceof ol.style.Circle) {
-                        ctx.beginPath();
-                        ctx.arc(12, 12, image.getRadius(), 0, 2 * Math.PI);
-                        const fill = image.getFill();
-                        if (fill) {
-                            ctx.fillStyle = fill.getColor() || 'rgba(51, 153, 204, 0.7)';
-                            ctx.fill();
-                        }
-                        const stroke = image.getStroke();
-                        if (stroke) {
-                            ctx.strokeStyle = stroke.getColor() || '#3399CC';
-                            ctx.lineWidth = stroke.getWidth() || 1;
-                            ctx.stroke();
-                        }
-                    } else if (image instanceof ol.style.Icon) {
-                        ctx.beginPath();
-                        ctx.rect(4, 4, 16, 16);
-                        ctx.fillStyle = 'lightgray';
-                        ctx.fill();
-                        ctx.strokeStyle = 'black';
-                        ctx.lineWidth = 1;
-                        ctx.stroke();
-                    }
-                }
-            } else if (geomType === 'LineString' || geomType === 'MultiLineString') {
-                const stroke = s.getStroke();
-                if (stroke) {
-                    ctx.beginPath();
-                    ctx.moveTo(4, 12);
-                    ctx.lineTo(20, 12);
-                    ctx.strokeStyle = stroke.getColor() || '#3399CC';
-                    ctx.lineWidth = stroke.getWidth() || 2;
-                    ctx.stroke();
-                }
-            } else {
-                ctx.beginPath();
-                ctx.rect(4, 4, 16, 16);
-                const fill = s.getFill();
-                if (fill) {
-                    ctx.fillStyle = fill.getColor() || 'rgba(51, 153, 204, 0.7)';
-                    ctx.fill();
-                }
-                const stroke = s.getStroke();
-                if (stroke) {
-                    ctx.strokeStyle = stroke.getColor() || '#3399CC';
-                    ctx.lineWidth = stroke.getWidth() || 1;
-                    ctx.stroke();
-                }
-            }
-        });
+			// 可選美化：只保留顏色碼（去掉 icon-1507- 前綴）
+			// displayName = styleMapId.replace(/^icon-\d+-/, '#');
 
-        container.appendChild(canvas);
-    }
+			const label = document.createElement('span');
+			label.textContent = `${displayName}（${info.count} 個）`;
+			label.style.marginLeft = '8px';
+			label.style.color = '#333';
+
+			row.appendChild(swatch);
+			row.appendChild(label);
+			container.appendChild(row);
+		});
+	}
+
+	renderStyleSwatch(container, style, feature) {
+		const canvas = document.createElement('canvas');
+		canvas.width = 28;
+		canvas.height = 28;
+		const ctx = canvas.getContext('2d');
+
+		let styles = Array.isArray(style) ? style : [style];
+		if (typeof style === 'function') {
+			styles = [style(feature)];
+		}
+
+		let hasFill = false;
+		let hasStroke = false;
+		let fillColor = '#FF5252';
+		let strokeColor = '#D50000';
+		let strokeWidth = 2;
+
+		// Extract colors from all styles (support KML shared styles, GeoJSON, etc.)
+		for (const s of styles) {
+			if (!s) continue;
+
+			const fill = s.getFill?.();
+			if (fill && fill.getColor?.()) {
+				fillColor = this.toCssColor(fill.getColor());
+				hasFill = true;
+			}
+
+			const stroke = s.getStroke?.();
+			if (stroke && stroke.getColor?.()) {
+				strokeColor = this.toCssColor(stroke.getColor());
+				hasStroke = true;
+				strokeWidth = stroke.getWidth() || 2;
+			}
+
+			// If it's an icon with color tint, use that color
+			const image = s.getImage?.();
+			if (image?.getColor && image.getColor() && image.getColor() !== '#ffffff') {
+				fillColor = this.toCssColor(image.getColor());
+				hasFill = true;
+			}
+		}
+
+		// Draw simple colored square (your users understand this best)
+		ctx.clearRect(0, 0, 28, 28);
+
+		if (hasFill) {
+			ctx.fillStyle = fillColor;
+			ctx.fillRect(6, 6, 16, 16);
+		}
+
+		if (hasStroke) {
+			ctx.strokeStyle = strokeColor;
+			ctx.lineWidth = strokeWidth;
+			ctx.strokeRect(6, 6, 16, 16);
+		}
+
+		// If no fill and no stroke → fallback red
+		if (!hasFill && !hasStroke) {
+			ctx.fillStyle = '#FF5252';
+			ctx.fillRect(6, 6, 16, 16);
+		}
+
+		container.appendChild(canvas);
+	}
 
     getLegendGraphicUrl(wmsUrl) {
         const url = new URL(wmsUrl);
@@ -1966,38 +2001,33 @@ class MapManager {
         return url.toString();
     }
 
-    createVectorLegend(container, layer) {
-        const styleFunction = layer.getStyle();
+	createVectorLegend(container, layer) {
         const canvas = document.createElement('canvas');
         canvas.width = 20;
         canvas.height = 20;
         const ctx = canvas.getContext('2d');
 
-        let style;
-        if (typeof styleFunction === 'function') {
+        let style = layer.getStyle();
+        if (typeof style === 'function') {
             const features = layer.getSource().getFeatures();
-            if (features.length > 0) {
-                style = styleFunction(features[0]);
-            }
-        } else {
-            style = styleFunction;
+            if (features.length > 0) style = style(features[0]);
         }
 
         if (style) {
-            const fill = style.getFill();
-            const stroke = style.getStroke();
+            const fill = style.getFill?.(); // style can be array or function
+            const stroke = style.getStroke?.();
 
             ctx.beginPath();
             ctx.rect(2, 2, 16, 16);
 
             if (fill) {
-                ctx.fillStyle = fill.getColor() || 'rgba(255, 255, 255, 0.4)';
+                ctx.fillStyle = this.toCssColor(fill.getColor?.() || fill.getColor?.());
                 ctx.fill();
             }
 
             if (stroke) {
-                ctx.strokeStyle = stroke.getColor() || '#3399CC';
-                ctx.lineWidth = stroke.getWidth() || 1.25;
+                ctx.strokeStyle = this.toCssColor(stroke.getColor?.() || stroke.getColor?.());
+                ctx.lineWidth = stroke.getWidth?.() || 1.25;
                 ctx.stroke();
             }
         }
