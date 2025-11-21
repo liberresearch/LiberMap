@@ -41,13 +41,112 @@ class MapManager {
 	}
 	
 	toCssColor(color) {
-		if (!color) return '#000000';
-		if (Array.isArray(color)) {
-			const [r, g, b, a = 1] = color;
-			return `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, ${a})`;
-		}
-		return color;
-	}
+        if (!color) return '#000000';
+        if (Array.isArray(color)) {
+            const [r, g, b, a = 1] = color;
+            return `rgba(${Math.round(r)}, ${Math.round(g)}, ${Math.round(b)}, ${a})`;
+        }
+        return color;
+    }
+
+    // 強力解碼 OpenLayers 對中文 StyleMap ID 的多重編碼
+    decodeKmlStyleId(id) {
+        if (!id) return '未知類別';
+        let result = id;
+        // 一直解到不能再解為止（有時會三重甚至四重 %25%25%25E6...）
+        while (/%[0-9A-Fa-f]{2}/.test(result)) {
+            try {
+                result = decodeURIComponent(result.replace(/%25/g, '%'));
+            } catch (e) {
+                break;
+            }
+        }
+        return result;
+    }
+
+    // 從 feature 正確取得中文 StyleMap 名稱
+    getStyleMapIdFromFeature(feature, layer) {
+        // 方法1：最常見，OpenLayers 會放在 styleUrl
+        let id = feature.get('styleUrl');
+        if (id && id.startsWith('#')) {
+            return this.decodeKmlStyleId(id.substring(1));
+        }
+
+        // 方法2：從實際 style 物件挖
+        const styleFn = layer.getStyle();
+        if (typeof styleFn === 'function') {
+            const styles = styleFn(feature);
+            const arr = Array.isArray(styles) ? styles : [styles];
+            for (const s of arr) {
+                if (s?.styleUrl?.startsWith('#')) {
+                    return this.decodeKmlStyleId(s.styleUrl.substring(1));
+                }
+            }
+        }
+        return null;
+    }
+
+    // 最終無敵版圖例（直接取代舊的 extractAndDisplayStyles）
+    extractAndDisplayStyles(container, layer) {
+        const source = layer.getSource();
+        if (!source || source.getFeatures().length === 0) return;
+
+        const features = source.getFeatures();
+        const legendData = new Map();
+
+        features.forEach(feature => {
+            const name = this.getStyleMapIdFromFeature(feature, layer) || '所有項目';
+
+            if (!legendData.has(name)) {
+                legendData.set(name, { count: 0, feature: feature });
+            }
+            legendData.get(name).count++;
+        });
+
+        // 只有「所有項目」→ 顯示總數
+        if (legendData.size === 1 && legendData.has('所有項目')) {
+            const info = legendData.get('所有項目');
+            const row = document.createElement('div');
+            row.style.cssText = 'display:flex;align-items:center;margin:6px 0;font-size:14px;';
+
+            const swatch = document.createElement('div');
+            swatch.className = 'legend-swatch';
+            this.renderStyleSwatch(swatch, layer.getStyle()(info.feature), info.feature);
+
+            const label = document.createElement('span');
+            label.textContent = `所有項目（${features.length} 個）`;
+            label.style.marginLeft = '8px';
+            label.style.color = '#333';
+            label.style.fontWeight = '500';
+
+            row.appendChild(swatch);
+            row.appendChild(label);
+            container.appendChild(row);
+            return;
+        }
+
+        // 多個類別 → 正常顯示
+        Array.from(legendData.entries())
+            .sort((a, b) => b[1].count - a[1].count)
+            .forEach(([name, info]) => {
+                const row = document.createElement('div');
+                row.style.cssText = 'display:flex;align-items:center;margin:6px 0;font-size:14px;';
+
+                const swatch = document.createElement('div');
+                swatch.className = 'legend-swatch';
+                this.renderStyleSwatch(swatch, layer.getStyle()(info.feature), info.feature);
+
+                const label = document.createElement('span');
+                label.textContent = `${name}（${info.count} 個）`;
+                label.style.marginLeft = '8px';
+                label.style.color = '#333';
+                label.style.fontFamily = 'system-ui, -apple-system, "Noto Sans HK", sans-serif';
+
+                row.appendChild(swatch);
+                row.appendChild(label);
+                container.appendChild(row);
+            });
+    }
 	
     setupOptimizedEventHandlers() {
         const debounce = (func, delay) => {
@@ -82,7 +181,7 @@ class MapManager {
             });
         });
     }
-
+		
     cleanupUnusedResources() {
         if (this.activeLayers.size > 5) {
             const layerEntries = Array.from(this.activeLayers.entries());
@@ -1806,124 +1905,6 @@ class MapManager {
             });
         });
     }
-
-	extractAndDisplayStyles(container, layer) {
-		const source = layer.getSource();
-		if (!source || source.getFeatures().length === 0) return;
-
-		const features = source.getFeatures();
-
-		// 儲存：StyleMap id → { count, sampleFeature }
-		const styleMapInfo = new Map();
-
-		features.forEach(feature => {
-			let styles = layer.getStyle();
-			if (typeof styles === 'function') styles = styles(feature);
-			if (!styles) return;
-			if (!Array.isArray(styles)) styles = [styles];
-
-			let foundStyleMapId = null;
-
-			styles.forEach(style => {
-				let styleUrl = '';
-
-				// 1. 從 feature 的 styleUrl 取得（最準確）
-				if (feature.get('styleUrl')) {
-					styleUrl = feature.get('styleUrl');
-				}
-				// 2. 從 style 物件本身
-				else if (style.styleUrl) {
-					styleUrl = style.styleUrl;
-				}
-				else if (typeof style.getStyleUrl === 'function') {
-					styleUrl = style.getStyleUrl();
-				}
-
-				if (styleUrl && styleUrl.includes('#')) {
-					foundStyleMapId = styleUrl.split('#')[1];
-				}
-			});
-
-			// 如果上面都拿不到，嘗試從 KML 內建的 StyleMap id 推斷（最後手段）
-			if (!foundStyleMapId) {
-				const styleFunctionResult = layer.getStyle()(feature);
-				const styleArray = Array.isArray(styleFunctionResult) ? styleFunctionResult : [styleFunctionResult];
-				for (const s of styleArray) {
-					if (s && s.getImage) {
-						const img = s.getImage();
-						if (img && img.getColor) {
-							const color = img.getColor();
-							if (color && typeof color === 'string' && color.length === 8) {
-								// KML color 是 AABBGGRR → 轉成 RRGGBB
-								const aabbggrr = color;
-								const rr = aabbggrr.substr(6, 2);
-								const gg = aabbggrr.substr(4, 2);
-								const bb = aabbggrr.substr(2, 2);
-								foundStyleMapId = `icon-1507-${rr}${gg}${bb}`.toUpperCase();
-								break;
-							}
-						}
-					}
-				}
-			}
-
-			if (foundStyleMapId) {
-				if (!styleMapInfo.has(foundStyleMapId)) {
-					styleMapInfo.set(foundStyleMapId, { count: 0, feature: feature });
-				}
-				styleMapInfo.get(foundStyleMapId).count++;
-			}
-		});
-
-		// 若完全無任何 style → 顯示「所有項目」+ 總數
-		if (styleMapInfo.size === 0) {
-			const row = document.createElement('div');
-			row.style.cssText = 'display:flex;align-items:center;margin:6px 0;font-size:14px;';
-
-			const swatch = document.createElement('div');
-			swatch.className = 'legend-swatch';
-			this.renderStyleSwatch(swatch, layer.getStyle()(features[0]), features[0]);
-
-			const label = document.createElement('span');
-			label.textContent = `所有項目（${features.length} 個）`;
-			label.style.marginLeft = '8px';
-			label.style.color = '#333';
-			label.style.fontWeight = '500';
-
-			row.appendChild(swatch);
-			row.appendChild(label);
-			container.appendChild(row);
-			return;
-		}
-
-		// 正常情況：按 StyleMap id 顯示，並排序（可選：按數量或字母）
-		const sortedEntries = Array.from(styleMapInfo.entries())
-			.sort((a, b) => b[1].count - a[1].count); // 數量多排前面
-
-		sortedEntries.forEach(([styleMapId, info]) => {
-			const row = document.createElement('div');
-			row.style.cssText = 'display:flex;align-items:center;margin:6px 0;font-size:14px;';
-
-			const swatch = document.createElement('div');
-			swatch.className = 'legend-swatch';
-			this.renderStyleSwatch(swatch, layer.getStyle()(info.feature), info.feature);
-
-			// 主要：用 StyleMap id 作為名稱（你豬場 KML 就是這樣寫的）
-			let displayName = styleMapId;
-
-			// 可選美化：只保留顏色碼（去掉 icon-1507- 前綴）
-			// displayName = styleMapId.replace(/^icon-\d+-/, '#');
-
-			const label = document.createElement('span');
-			label.textContent = `${displayName}（${info.count} 個）`;
-			label.style.marginLeft = '8px';
-			label.style.color = '#333';
-
-			row.appendChild(swatch);
-			row.appendChild(label);
-			container.appendChild(row);
-		});
-	}
 
 	renderStyleSwatch(container, style, feature) {
 		const canvas = document.createElement('canvas');
