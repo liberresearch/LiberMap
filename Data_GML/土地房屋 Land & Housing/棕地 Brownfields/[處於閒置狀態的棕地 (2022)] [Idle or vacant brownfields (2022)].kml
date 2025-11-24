@@ -64,7 +64,7 @@
         <styleUrl>#poly-000000-1200-76-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="poly-000000-1200-76-nodesc-normal">
+    <Style id="所有項目-normal">
       <LineStyle>
         <color>ff000000</color>
         <width>1.2</width>
@@ -78,7 +78,7 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="poly-000000-1200-76-nodesc-highlight">
+    <Style id="所有項目-highlight">
       <LineStyle>
         <color>ff000000</color>
         <width>1.8</width>
@@ -92,19 +92,19 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="poly-000000-1200-76-nodesc">
+    <StyleMap id="所有項目">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-000000-1200-76-nodesc-normal</styleUrl>
+        <styleUrl>#所有項目-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-000000-1200-76-nodesc-highlight</styleUrl>
+        <styleUrl>#所有項目-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
       <name>多邊形 2</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -126,7 +126,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 3</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -153,7 +153,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 5</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -203,7 +203,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 6</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -221,7 +221,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 7</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -245,7 +245,7 @@
     <Placemark>
       <name>八鄉車廠外</name>
       <description>-大塊空置</description>
-      <styleUrl>#poly-000000-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -286,7 +286,7 @@
     </Placemark>
     <Placemark>
       <name>泥圍</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -306,7 +306,7 @@
     </Placemark>
     <Placemark>
       <name>泥圍2</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -332,7 +332,7 @@
     </Placemark>
     <Placemark>
       <name>泥圍3</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -354,7 +354,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 12</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -376,7 +376,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 13</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -401,7 +401,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 14</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -422,7 +422,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 15</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -440,7 +440,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 16</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -462,7 +462,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 18</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -486,7 +486,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 19</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -508,7 +508,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 20</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -533,7 +533,7 @@
     </Placemark>
     <Placemark>
       <name>粉錦公路</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -553,7 +553,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 21</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -573,7 +573,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 22</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -603,7 +603,7 @@
     </Placemark>
     <Placemark>
       <name>鹿尾村01</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -626,7 +626,7 @@
     </Placemark>
     <Placemark>
       <name>鹿尾村02</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -651,7 +651,7 @@
     </Placemark>
     <Placemark>
       <name>鹿尾村03</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -673,7 +673,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 25</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -699,7 +699,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 26</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -719,7 +719,7 @@
     </Placemark>
     <Placemark>
       <name>大棠村</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -750,7 +750,7 @@
     </Placemark>
     <Placemark>
       <name>Polygon 20</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -781,7 +781,7 @@
     </Placemark>
     <Placemark>
       <name>Polygon 21</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -812,7 +812,7 @@
     </Placemark>
     <Placemark>
       <name>Polygon 22</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -837,7 +837,7 @@
     </Placemark>
     <Placemark>
       <name>Polygon 23</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -875,7 +875,7 @@
     </Placemark>
     <Placemark>
       <name>Polygon 25</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -908,7 +908,7 @@
     </Placemark>
     <Placemark>
       <name>潘屋村</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1010,7 +1010,7 @@
     </Placemark>
     <Placemark>
       <name>濕地旁</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1034,7 +1034,7 @@
     </Placemark>
     <Placemark>
       <name>Polygon 29</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1063,7 +1063,7 @@
     </Placemark>
     <Placemark>
       <name>Polygon 30</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1107,7 +1107,7 @@
     </Placemark>
     <Placemark>
       <name>Polygon 31</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1132,7 +1132,7 @@
     </Placemark>
     <Placemark>
       <name>空置過廿年</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1165,7 +1165,7 @@
     </Placemark>
     <Placemark>
       <name>閒置近十年</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1201,7 +1201,7 @@
     </Placemark>
     <Placemark>
       <name>閒置近十年</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1229,7 +1229,7 @@
     </Placemark>
     <Placemark>
       <name>米埔</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1261,7 +1261,7 @@
     </Placemark>
     <Placemark>
       <name>Polygon 35</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1291,7 +1291,7 @@
     <Placemark>
       <name>Polygon 36</name>
       <description>呢幅是擴散CASE , 如果看planet.com 應該有作業</description>
-      <styleUrl>#poly-000000-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1319,7 +1319,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 45</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1348,7 +1348,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 46</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1371,7 +1371,7 @@
     <Placemark>
       <name>灰沙圍</name>
       <description>之前為農地，2008年起被鏟，空置至今</description>
-      <styleUrl>#poly-000000-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1407,7 +1407,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 47</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1438,7 +1438,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 48</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1472,7 +1472,7 @@
     <Placemark>
       <name>天水圍01</name>
       <description>2020年起空置,</description>
-      <styleUrl>#poly-000000-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1495,7 +1495,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 50</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1516,7 +1516,7 @@
     </Placemark>
     <Placemark>
       <name>天水圍泥頭山位置</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1550,7 +1550,7 @@
     </Placemark>
     <Placemark>
       <name>閒置過廿年</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1581,7 +1581,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 53</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1603,7 +1603,7 @@
     <Placemark>
       <name>朗天路</name>
       <description>2012年起空置</description>
-      <styleUrl>#poly-000000-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1637,7 +1637,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 50</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1666,7 +1666,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 51</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1687,7 +1687,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 55</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1707,7 +1707,7 @@
     </Placemark>
     <Placemark>
       <name>自18年起陸續被破壞後一直未有明顯作業</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1774,7 +1774,7 @@
       <name>多邊形 58 (自2019年9月開始閒置)
 </name>
       <description>自2019年9月開始閒置</description>
-      <styleUrl>#poly-000000-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1840,7 +1840,7 @@
     <Placemark>
       <name>多邊形 60</name>
       <description>2020年10月被破壞後未有作業</description>
-      <styleUrl>#poly-000000-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1878,7 +1878,7 @@
     </Placemark>
     <Placemark>
       <name>線條 61</name>
-      <styleUrl>#line-000000-1200-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <LineString>
         <tessellate>1</tessellate>
         <coordinates>
@@ -1898,7 +1898,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 61</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1926,7 +1926,7 @@
     </Placemark>
     <Placemark>
       <name>閒置過廿年</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1951,7 +1951,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 63</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1997,7 +1997,7 @@
     <Placemark>
       <name>逢吉鄉</name>
       <description><![CDATA[逢吉鄉 >3公頃，最長閒置過廿年]]></description>
-      <styleUrl>#poly-000000-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2109,7 +2109,7 @@
     </Placemark>
     <Placemark>
       <name><![CDATA[>2公頃，最長閒置過廿年]]></name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2187,7 +2187,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 68</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2231,7 +2231,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 69</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2262,7 +2262,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 71</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2327,7 +2327,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 73</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2357,7 +2357,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 74</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2405,7 +2405,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 72</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2468,7 +2468,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 73</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2507,7 +2507,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 74</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2539,7 +2539,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 75</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2567,7 +2567,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 76</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2651,7 +2651,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 79</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2703,7 +2703,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 80</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2764,7 +2764,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 81</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2794,7 +2794,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 82</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2833,7 +2833,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 83</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2869,7 +2869,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 84</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2890,7 +2890,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 85</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2927,7 +2927,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 86</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2991,7 +2991,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 87</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3035,7 +3035,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 88</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3068,7 +3068,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 89</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3116,7 +3116,7 @@
     </Placemark>
     <Placemark>
       <name>過5公頃，大部分自2000年頭一直閒置</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3225,7 +3225,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 90</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3245,7 +3245,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 91</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3295,7 +3295,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 92</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3339,7 +3339,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 93</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3360,7 +3360,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 94</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3385,7 +3385,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 95</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3410,7 +3410,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 96</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3431,7 +3431,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 97</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3459,7 +3459,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 98</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3519,7 +3519,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 99</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3561,7 +3561,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 100</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3585,7 +3585,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 101</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3612,7 +3612,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 102</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3648,7 +3648,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 103</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3675,7 +3675,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 104</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3696,7 +3696,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 105</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3726,7 +3726,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 106</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3747,7 +3747,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 107</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3770,7 +3770,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 108</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3793,7 +3793,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 109</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3820,7 +3820,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 110</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3856,7 +3856,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 111</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3881,7 +3881,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 112</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3913,7 +3913,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 113</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3941,7 +3941,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 114</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3968,7 +3968,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 115</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3987,7 +3987,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 116</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4013,7 +4013,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 117</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4040,7 +4040,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 118</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4121,7 +4121,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 119</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4147,7 +4147,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 120</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4171,7 +4171,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 121</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4195,7 +4195,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 122</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4217,7 +4217,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 123</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4250,7 +4250,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 124</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4275,7 +4275,7 @@
     </Placemark>
     <Placemark>
       <name>多邊形 126</name>
-      <styleUrl>#poly-000000-1200-76-nodesc</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>

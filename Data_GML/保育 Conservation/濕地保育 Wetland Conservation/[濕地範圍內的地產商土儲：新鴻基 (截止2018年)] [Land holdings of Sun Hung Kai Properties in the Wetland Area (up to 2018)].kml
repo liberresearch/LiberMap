@@ -3,7 +3,7 @@
   <Document>
     <name>濕地範圍內的地產商土儲：新鴻基 (截止2018年)</name>
 	<description><![CDATA[ <a href="https://liber-research.com/%E3%80%8A%E7%AB%AD%E6%BE%A4%E8%80%8C%E7%AF%89%EF%BC%9A%E6%96%B0%E7%95%8C%E8%A5%BF%E5%8C%97%E9%AD%9A%E5%A1%98%E6%A5%AD%E6%AC%8A%E8%AA%BF%E6%9F%A5%E3%80%8B/" target="_blank">《竭澤而築：新界西北魚塘業權調查》 </a>]]></description>
-    <Style id="poly-E65100-1200-76-normal">
+    <Style id="所有項目-normal">
       <LineStyle>
         <color>ff0051e6</color>
         <width>1.2</width>
@@ -14,7 +14,7 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-E65100-1200-76-highlight">
+    <Style id="所有項目-highlight">
       <LineStyle>
         <color>ff0051e6</color>
         <width>1.8</width>
@@ -25,20 +25,20 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-E65100-1200-76">
+    <StyleMap id="所有項目">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-E65100-1200-76-normal</styleUrl>
+        <styleUrl>#所有項目-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-E65100-1200-76-highlight</styleUrl>
+        <styleUrl>#所有項目-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
       <name>DD101 51 B</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 0 <br> LOTLOTNO 51 <br> LOTSECTCD B <br> LOTABBR DD101 <br> SHAPEAREA 0.080935 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> INSTRUME_2 16/9/1959 <br> REGISTRA_2 11/2/1960]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -58,7 +58,7 @@
     <Placemark>
       <name>DD126 13</name>
       <description><![CDATA[MILLION LINE LIMITED 文隆有限公司 <br> <br> FID 1 <br> LOTLOTNO 13 <br> LOTSECTCD <br> LOTABBR DD126 <br> SHAPEAREA 0.064193 <br> NAME_OF__2 MILLION LINE LIMITED 文隆有限公司 <br> INSTRUME_2 22/8/2005 <br> REGISTRA_2 8/12/2014]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -217,7 +217,7 @@
     <Placemark>
       <name>DD115 1212 B RP</name>
       <description><![CDATA[GEOFFREY HOLDINGS LIMITED <br> <br> FID 2 <br> LOTLOTNO 1212 <br> LOTSECTCD B,RP <br> LOTABBR DD115 <br> SHAPEAREA 1.236193 <br> NAME_OF__2 GEOFFREY HOLDINGS LIMITED <br> INSTRUME_2 3/4/1990 <br> REGISTRA_2 1/5/1990]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -243,7 +243,7 @@
     <Placemark>
       <name>DD115 1212 C 3 RP</name>
       <description><![CDATA[GEOFFREY HOLDINGS LIMITED <br> <br> FID 3 <br> LOTLOTNO 1212 <br> LOTSECTCD C,3,RP <br> LOTABBR DD115 <br> SHAPEAREA 1.232757 <br> NAME_OF__2 GEOFFREY HOLDINGS LIMITED <br> INSTRUME_2 3/4/1990 <br> REGISTRA_2 30/4/1990]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -264,7 +264,7 @@
     <Placemark>
       <name>DD115 1252 C</name>
       <description><![CDATA[RICHDUTY DEVELOPMENT LIMITED <br> <br> FID 4 <br> LOTLOTNO 1252 <br> LOTSECTCD C <br> LOTABBR DD115 <br> SHAPEAREA 0.485769 <br> NAME_OF__2 RICHDUTY DEVELOPMENT LIMITED <br> INSTRUME_2 5/2/1997 <br> REGISTRA_2 28/2/1997]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -296,7 +296,7 @@
     <Placemark>
       <name>DD115 1288 B RP</name>
       <description><![CDATA[SUCCESS KING LIMITED <br> <br> FID 5 <br> LOTLOTNO 1288 <br> LOTSECTCD B,RP <br> LOTABBR DD115 <br> SHAPEAREA 0.7177 <br> NAME_OF__2 SUCCESS KING LIMITED <br> INSTRUME_2 12/6/2004 <br> REGISTRA_2 2/7/2004]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -361,7 +361,7 @@
     <Placemark>
       <name>DD115 1288 G RP</name>
       <description><![CDATA[SUCCESS KING LIMITED <br> <br> FID 6 <br> LOTLOTNO 1288 <br> LOTSECTCD G,RP <br> LOTABBR DD115 <br> SHAPEAREA 0.654684 <br> NAME_OF__2 SUCCESS KING LIMITED <br> INSTRUME_2 12/6/2004 <br> REGISTRA_2 2/7/2004]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -397,7 +397,7 @@
     <Placemark>
       <name>DD115 1289 B RP</name>
       <description><![CDATA[SUCCESS KING LIMITED <br> <br> FID 7 <br> LOTLOTNO 1289 <br> LOTSECTCD B,RP <br> LOTABBR DD115 <br> SHAPEAREA 3.061416 <br> NAME_OF__2 SUCCESS KING LIMITED <br> INSTRUME_2 12/6/2004 <br> REGISTRA_2 2/7/2004]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -645,7 +645,7 @@
     <Placemark>
       <name>DD115 592 C 1 A</name>
       <description><![CDATA[RICHDUTY DEVELOPMENT LIMITED <br> <br> FID 8 <br> LOTLOTNO 592 <br> LOTSECTCD C,1,A <br> LOTABBR DD115 <br> SHAPEAREA 1.166151 <br> NAME_OF__2 RICHDUTY DEVELOPMENT LIMITED <br> INSTRUME_2 20/1/1992 <br> REGISTRA_2 3/3/1992]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -676,7 +676,7 @@
     <Placemark>
       <name>DD115 592 C 1 RP</name>
       <description><![CDATA[RICHDUTY DEVELOPMENT LIMITED <br> <br> FID 9 <br> LOTLOTNO 592 <br> LOTSECTCD C,1,RP <br> LOTABBR DD115 <br> SHAPEAREA 0.811284 <br> NAME_OF__2 RICHDUTY DEVELOPMENT LIMITED <br> INSTRUME_2 20/1/1992 <br> REGISTRA_2 3/3/1992]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -722,7 +722,7 @@
     <Placemark>
       <name>DD115 592 C 4</name>
       <description><![CDATA[RICHDUTY DEVELOPMENT LIMITED <br> <br> FID 10 <br> LOTLOTNO 592 <br> LOTSECTCD C,4 <br> LOTABBR DD115 <br> SHAPEAREA 1.619355 <br> NAME_OF__2 RICHDUTY DEVELOPMENT LIMITED <br> INSTRUME_2 31/7/2004 <br> REGISTRA_2 26/8/2004]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -760,7 +760,7 @@
     <Placemark>
       <name>DD115 1292 B RP</name>
       <description><![CDATA[SUCCESS KING LIMITED <br> <br> FID 11 <br> LOTLOTNO 1292 <br> LOTSECTCD B,RP <br> LOTABBR DD115 <br> SHAPEAREA 3.513823 <br> NAME_OF__2 SUCCESS KING LIMITED <br> INSTRUME_2 12/6/2004 <br> REGISTRA_2 2/7/2004]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -819,7 +819,7 @@
     <Placemark>
       <name>DD107 8 RP</name>
       <description><![CDATA[KING GARDEN LIMITED 京嘉有限公司 <br> <br> FID 12 <br> LOTLOTNO 8 <br> LOTSECTCD RP <br> LOTABBR DD107 <br> SHAPEAREA 9.465312 <br> NAME_OF__2 KING GARDEN LIMITED 京嘉有限公司 <br> INSTRUME_2 25/6/2010 <br> REGISTRA_2 15/4/2011]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2429,7 +2429,7 @@
     <Placemark>
       <name>DD107 16</name>
       <description><![CDATA[KING GARDEN LIMITED 京嘉有限公司 <br> <br> FID 13 <br> LOTLOTNO 16 <br> LOTSECTCD <br> LOTABBR DD107 <br> SHAPEAREA 0.01151 <br> NAME_OF__2 KING GARDEN LIMITED 京嘉有限公司 <br> INSTRUME_2 30/4/2014 <br> REGISTRA_2 4/12/2014]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2503,7 +2503,7 @@
     <Placemark>
       <name>DD107 17</name>
       <description><![CDATA[KING GARDEN LIMITED 京嘉有限公司 <br> <br> FID 14 <br> LOTLOTNO 17 <br> LOTSECTCD <br> LOTABBR DD107 <br> SHAPEAREA 0.08434 <br> NAME_OF__2 KING GARDEN LIMITED 京嘉有限公司 <br> INSTRUME_2 30/4/2014 <br> REGISTRA_2 4/12/2014]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2673,7 +2673,7 @@
     <Placemark>
       <name>DD107 33 RP</name>
       <description><![CDATA[KING GARDEN LIMITED 京嘉有限公司 <br> <br> FID 15 <br> LOTLOTNO 33 <br> LOTSECTCD RP <br> LOTABBR DD107 <br> SHAPEAREA 0.029477 <br> NAME_OF__2 KING GARDEN LIMITED 京嘉有限公司 <br> INSTRUME_2 22/11/2010 <br> REGISTRA_2 20/1/2015]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2707,7 +2707,7 @@
     <Placemark>
       <name>DD107 45</name>
       <description><![CDATA[KING GARDEN LIMITED 京嘉有限公司 <br> <br> FID 16 <br> LOTLOTNO 45 <br> LOTSECTCD <br> LOTABBR DD107 <br> SHAPEAREA 0.031573 <br> NAME_OF__2 KING GARDEN LIMITED 京嘉有限公司 <br> INSTRUME_2 8/11/2010 <br> REGISTRA_2 22/12/2010]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2811,7 +2811,7 @@
     <Placemark>
       <name>DD104 3663 </name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 17 <br> LOTLOTNO 3663 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.245737 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3034,7 +3034,7 @@
     <Placemark>
       <name>DD104 3664</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 18 <br> LOTLOTNO 3664 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.252966 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3246,7 +3246,7 @@
     <Placemark>
       <name>DD107 1740 A RP</name>
       <description><![CDATA[KING GARDEN LIMITED 京嘉有限公司 <br> <br> FID 19 <br> LOTLOTNO 1740 <br> LOTSECTCD A,RP <br> LOTABBR DD107 <br> SHAPEAREA 0.150526 <br> NAME_OF__2 KING GARDEN LIMITED 京嘉有限公司 <br> INSTRUME_2 25/6/2010 <br> REGISTRA_2 15/4/2011]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3322,7 +3322,7 @@
     <Placemark>
       <name>DD104 3666 RP</name>
       <description><![CDATA[Yam Kwok Estates Company Limited <br> <br> FID 20 <br> LOTLOTNO 3666 <br> LOTSECTCD RP <br> LOTABBR DD104 <br> SHAPEAREA 0.149471 <br> NAME_OF__2 Yam Kwok Estates Company Limited <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3507,7 +3507,7 @@
     <Placemark>
       <name>DD104 3676</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 21 <br> LOTLOTNO 3676 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.363287 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3726,7 +3726,7 @@
     <Placemark>
       <name>DD104 3678</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 22 <br> LOTLOTNO 3678 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.115223 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3779,7 +3779,7 @@
     <Placemark>
       <name>DD104 3682</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 23 <br> LOTLOTNO 3682 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.325458 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3937,7 +3937,7 @@
     <Placemark>
       <name>DD104 3683</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 24 <br> LOTLOTNO 3683 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.302364 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4100,7 +4100,7 @@
     <Placemark>
       <name>DD104 3684</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 25 <br> LOTLOTNO 3684 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.275647 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4320,7 +4320,7 @@
     <Placemark>
       <name>DD104 3686</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 26 <br> LOTLOTNO 3686 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.023308 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4419,7 +4419,7 @@
     <Placemark>
       <name>DD104 3692</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 27 <br> LOTLOTNO 3692 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.031826 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4508,7 +4508,7 @@
     <Placemark>
       <name>DD104 3704</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 28 <br> LOTLOTNO 3704 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.104048 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4608,7 +4608,7 @@
     <Placemark>
       <name>DD104 3706</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 29 <br> LOTLOTNO 3706 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.118909 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4700,7 +4700,7 @@
     <Placemark>
       <name>DD104 3722 B 5 RP</name>
       <description><![CDATA[KING GARDEN LIMITED 京嘉有限公司 <br> <br> FID 30 <br> LOTLOTNO 3722 <br> LOTSECTCD B,5,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.542396 <br> NAME_OF__2 KING GARDEN LIMITED 京嘉有限公司 <br> INSTRUME_2 8/11/2010 <br> REGISTRA_2 22/12/2010]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4725,7 +4725,7 @@
     <Placemark>
       <name>DD104 3653</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 31 <br> LOTLOTNO 3653 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.032805 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4937,7 +4937,7 @@
     <Placemark>
       <name>DD104 3659</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 32 <br> LOTLOTNO 3659 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.055368 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> INSTRUME_2 14/9/1985 <br> REGISTRA_2 29/10/1985]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5131,7 +5131,7 @@
     <Placemark>
       <name>DD101 48 RP</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 33 <br> LOTLOTNO 48 <br> LOTSECTCD RP <br> LOTABBR DD101 <br> SHAPEAREA 4.991592 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> INSTRUME_2 16/9/1959 <br> REGISTRA_2 11/2/1960]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5778,7 +5778,7 @@
     <Placemark>
       <name>DD101 49 RP</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 34 <br> LOTLOTNO 49 <br> LOTSECTCD RP <br> LOTABBR DD101 <br> SHAPEAREA 23.374831 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> INSTRUME_2 16/9/1959 <br> REGISTRA_2 11/2/1960]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8741,7 +8741,7 @@
     <Placemark>
       <name>DD101 51 A</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 35 <br> LOTLOTNO 51 <br> LOTSECTCD A <br> LOTABBR DD101 <br> SHAPEAREA 0.239209 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> INSTRUME_2 16/9/1959 <br> REGISTRA_2 11/2/1960]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8893,7 +8893,7 @@
     <Placemark>
       <name>DD101 52 A</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 36 <br> LOTLOTNO 52 <br> LOTSECTCD A <br> LOTABBR DD101 <br> SHAPEAREA 0.323764 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> INSTRUME_2 16/9/1959 <br> REGISTRA_2 11/2/1960]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8923,7 +8923,7 @@
     <Placemark>
       <name>DD101 52 B</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 37 <br> LOTLOTNO 52 <br> LOTSECTCD B <br> LOTABBR DD101 <br> SHAPEAREA 0.212236 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> INSTRUME_2 16/9/1959 <br> REGISTRA_2 11/2/1960]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9106,7 +9106,7 @@
     <Placemark>
       <name>DD101 53 A</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 38 <br> LOTLOTNO 53 <br> LOTSECTCD A <br> LOTABBR DD101 <br> SHAPEAREA 0.178458 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> INSTRUME_2 16/9/1959 <br> REGISTRA_2 11/2/1960]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9313,7 +9313,7 @@
     <Placemark>
       <name>DD101 53 B</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 39 <br> LOTLOTNO 53 <br> LOTSECTCD B <br> LOTABBR DD101 <br> SHAPEAREA 0.190711 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> INSTRUME_2 16/9/1959 <br> REGISTRA_2 11/2/1960]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9497,7 +9497,7 @@
     <Placemark>
       <name>DD101 54 </name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 40 <br> LOTLOTNO 54 <br> LOTSECTCD <br> LOTABBR DD101 <br> SHAPEAREA 0.148077 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> INSTRUME_2 16/9/1959 <br> REGISTRA_2 11/2/1960]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9710,7 +9710,7 @@
     <Placemark>
       <name>DD101 55</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 41 <br> LOTLOTNO 55 <br> LOTSECTCD <br> LOTABBR DD101 <br> SHAPEAREA 0.184845 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> INSTRUME_2 16/9/1959 <br> REGISTRA_2 11/2/1960]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9737,7 +9737,7 @@
     <Placemark>
       <name>DD104 2876</name>
       <description><![CDATA[SPLENDID KENT LIMITED <br> <br> FID 42 <br> LOTLOTNO 2876 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.099225 <br> NAME_OF__2 SPLENDID KENT LIMITED <br> INSTRUME_2 15/3/1990 <br> REGISTRA_2 4/4/1990]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9854,7 +9854,7 @@
     <Placemark>
       <name>DD99 763</name>
       <description><![CDATA[SYSTEM LINK DEVELOPMENT LIMITED <br> <br> FID 43 <br> LOTLOTNO 763 <br> LOTSECTCD <br> LOTABBR DD 99 <br> SHAPEAREA 31.341613 <br> NAME_OF__2 SYSTEM LINK DEVELOPMENT LIMITED <br> INSTRUME_2 9/12/1997 <br> REGISTRA_2 23/1/1998]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>

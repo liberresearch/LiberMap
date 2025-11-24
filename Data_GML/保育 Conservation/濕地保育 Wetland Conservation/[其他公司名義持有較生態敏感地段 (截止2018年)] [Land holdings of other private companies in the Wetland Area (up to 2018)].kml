@@ -3,7 +3,7 @@
   <Document>
     <name>其他公司名義持有較生態敏感地段 (截止2018年)</name>
 	<description><![CDATA[ <a href="https://liber-research.com/%E3%80%8A%E7%AB%AD%E6%BE%A4%E8%80%8C%E7%AF%89%EF%BC%9A%E6%96%B0%E7%95%8C%E8%A5%BF%E5%8C%97%E9%AD%9A%E5%A1%98%E6%A5%AD%E6%AC%8A%E8%AA%BF%E6%9F%A5%E3%80%8B/" target="_blank">《竭澤而築：新界西北魚塘業權調查》 </a>]]></description>
-    <Style id="poly-A52714-1200-76-normal">
+    <Style id="所有項目-normal">
       <LineStyle>
         <color>ff1427a5</color>
         <width>1.2</width>
@@ -14,7 +14,7 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-A52714-1200-76-highlight">
+    <Style id="所有項目-highlight">
       <LineStyle>
         <color>ff1427a5</color>
         <width>1.8</width>
@@ -25,20 +25,20 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-A52714-1200-76">
+    <StyleMap id="所有項目">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-A52714-1200-76-normal</styleUrl>
+        <styleUrl>#所有項目-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-A52714-1200-76-highlight</styleUrl>
+        <styleUrl>#所有項目-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
       <name>Enforcement Notice DD105 1885 RP</name>
       <description><![CDATA[NEW MARKET DEVELOPMENT LIMITED <br> <br> FID 0 <br> LOTLOTNO 1885 <br> LOTSECTCD RP <br> LOTABBR DD105 <br> SHAPEAREA 1.657282 <br> NAME_OF__2 NEW MARKET DEVELOPMENT LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-MP/058 <br> Issue_date 18/11/1997 <br> Expiry_Dat 18/2/1998 <br> Predominan Land/Pond Filling, Dumping & Site Formation <br> Schedule_2 Pond Filling <br> With_Compl Y <br> Issue_da_1 14/9/1998 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -113,7 +113,7 @@
     <Placemark>
       <name>Enforcement Notice DD126 1 A</name>
       <description><![CDATA[STAR GENIUS DEVELOPMENT LIMITED <br> <br> FID 1 <br> LOTLOTNO 1 <br> LOTSECTCD A <br> LOTABBR DD126 <br> SHAPEAREA 1.31058 <br> NAME_OF__2 STAR GENIUS DEVELOPMENT LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-LFS/012 <br> Issue_date 3/1/1996 <br> Expiry_Dat 10/1/1996 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 1. pond filling 2.land filling 3.site formation <br> With_Compl y <br> Issue_da_1 4/2/1997 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -405,7 +405,7 @@
     <Placemark>
       <name>Enforcement Notice DD126 20 </name>
       <description><![CDATA[LUCID LUCK LIMITED 瑞朗有限公司 <br> <br> FID 2 <br> LOTLOTNO 20 <br> LOTSECTCD <br> LOTABBR DD126 <br> SHAPEAREA 0.243196 <br> NAME_OF__2 LUCID LUCK LIMITED 瑞朗有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-LFS/012 <br> Issue_date 3/1/1996 <br> Expiry_Dat 10/1/1996 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 1. pond filling 2.land filling 3.site formation <br> With_Compl y <br> Issue_da_1 4/2/1997 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -743,7 +743,7 @@
     <Placemark>
       <name>Enforcement Notice DD115 1212 A3</name>
       <description><![CDATA[CHAMPION TOP INVESTMENT DEVELOPMENT LIMITED 寰冠投資發展有限公司 <br> <br> FID 3 <br> LOTLOTNO 1212 <br> LOTSECTCD A,3 <br> LOTABBR DD115 <br> SHAPEAREA 0.904331 <br> NAME_OF__2 CHAMPION TOP INVESTMENT DEVELOPMENT LIMITED 寰冠投資發展有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/229 <br> Issue_date 4/7/2016 <br> Expiry_Dat 4/9/2016 <br> Predominan Car Park <br> Schedule_2 Parking of vehicles <br> With_Compl Y <br> Issue_da_1 29/3/2017 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -778,7 +778,7 @@
     <Placemark>
       <name>Enforcement Notice DD115 1212 B RP</name>
       <description><![CDATA[GEOFFREY HOLDINGS LIMITED <br> <br> FID 4 <br> LOTLOTNO 1212 <br> LOTSECTCD B,RP <br> LOTABBR DD115 <br> SHAPEAREA 1.236193 <br> NAME_OF__2 GEOFFREY HOLDINGS LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/192 <br> Issue_date 4/5/2009 <br> Expiry_Dat 11/5/2009 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 Filling of land <br> With_Compl y <br> Issue_da_1 11/9/2009 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -804,7 +804,7 @@
     <Placemark>
       <name>Enforcement Notice DD115 1212 C 3 RP</name>
       <description><![CDATA[GEOFFREY HOLDINGS LIMITED <br> <br> FID 5 <br> LOTLOTNO 1212 <br> LOTSECTCD C,3,RP <br> LOTABBR DD115 <br> SHAPEAREA 1.232757 <br> NAME_OF__2 GEOFFREY HOLDINGS LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/192 <br> Issue_date 4/5/2009 <br> Expiry_Dat 11/5/2009 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 Filling of land <br> With_Compl y <br> Issue_da_1 11/9/2009 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -825,7 +825,7 @@
     <Placemark>
       <name>Enforcement Notice DD115 1212 E RP</name>
       <description><![CDATA[TOPUP ROUGE ENTERPRISE LIMITED 紅昇企業有限公司 <br> <br> FID 6 <br> LOTLOTNO 1212 <br> LOTSECTCD E,RP <br> LOTABBR DD115 <br> SHAPEAREA 1.334274 <br> NAME_OF__2 TOPUP ROUGE ENTERPRISE LIMITED 紅昇企業有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/107 <br> Issue_date 13/7/2000 <br> Expiry_Dat 13/10/2000 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 Pond filling <br> With_Compl Y <br> Issue_da_1 21/11/2002 <br> Prosecutio P <br> Summon_No_ STS1993/01 <br> Total_fine 10000 <br> Date_of_la 19/3/2001 <br> Notice_Typ Enforcement Notice <br> First_date 13/10/2000 <br> Latest_typ 19/1/2001 <br> Decision Plea <br> Decision_D Convicted on its own plea <br> Date_of_se 24/4/2001 <br> F20 24/4/2001]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -870,7 +870,7 @@
     <Placemark>
       <name>Enforcement Notice DD115 1288 G RP</name>
       <description><![CDATA[SUCCESS KING LIMITED <br> <br> FID 7 <br> LOTLOTNO 1288 <br> LOTSECTCD G,RP <br> LOTABBR DD115 <br> SHAPEAREA 0.654684 <br> NAME_OF__2 SUCCESS KING LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/111 <br> Issue_date 26/9/2000 <br> Expiry_Dat 26/12/2000 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 Pond filling <br> With_Compl Y <br> Issue_da_1 17/7/2002 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -906,7 +906,7 @@
     <Placemark>
       <name>Enforcement Notice DD107 2</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 8 <br> LOTLOTNO 2 <br> LOTSECTCD <br> LOTABBR DD107 <br> SHAPEAREA 0.658457 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/240 <br> Issue_date 23/10/2017 <br> Expiry_Dat 23/12/2017 <br> Predominan open storage <br> Schedule_2 storage use and parking of vehicles <br> With_Compl y <br> Issue_da_1 18/4/2018 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1280,7 +1280,7 @@
     <Placemark>
       <name>Enforcement Notice DD 107 8 RP</name>
       <description><![CDATA[KING GARDEN LIMITED 京嘉有限公司 <br> <br> FID 9 <br> LOTLOTNO 8 <br> LOTSECTCD RP <br> LOTABBR DD107 <br> SHAPEAREA 9.465312 <br> NAME_OF__2 KING GARDEN LIMITED 京嘉有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/196 <br> Issue_date 12/5/2011 <br> Expiry_Dat 19/5/2011 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 filling of land and filling of pond <br> With_Compl y <br> Issue_da_1 27/6/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2890,7 +2890,7 @@
     <Placemark>
       <name>Enforcement Notice DD107 25</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 10 <br> LOTLOTNO 25 <br> LOTSECTCD <br> LOTABBR DD107 <br> SHAPEAREA 0.039274 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/025 <br> Issue_date 24/6/1996 <br> Expiry_Dat 24/8/1996 <br> Predominan Workshop <br> Schedule_2 1.open storage or machinery 2.Workshop <br> With_Compl y <br> Issue_da_1 9/1/1997 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3031,7 +3031,7 @@
     <Placemark>
       <name>Enforcement Notice DD 107 26 B</name>
       <description><![CDATA[HENFORD HOLDINGS LIMITED 漢豐集團有限公司 <br> <br> FID 11 <br> LOTLOTNO 26 <br> LOTSECTCD B <br> LOTABBR DD107 <br> SHAPEAREA 0.016827 <br> NAME_OF__2 HENFORD HOLDINGS LIMITED 漢豐集團有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/025 <br> Issue_date 24/6/1996 <br> Expiry_Dat 24/8/1996 <br> Predominan Workshop <br> Schedule_2 1.open storage or machinery 2.Workshop <br> With_Compl y <br> Issue_da_1 9/1/1997 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3116,7 +3116,7 @@
     <Placemark>
       <name>Enforcement Notice DD107 45</name>
       <description><![CDATA[KING GARDEN LIMITED 京嘉有限公司 <br> <br> FID 12 <br> LOTLOTNO 45 <br> LOTSECTCD <br> LOTABBR DD107 <br> SHAPEAREA 0.031573 <br> NAME_OF__2 KING GARDEN LIMITED 京嘉有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/026 <br> Issue_date 22/5/1996 <br> Expiry_Dat 22/7/1996 <br> Predominan CONTAINER VEHICLE/ TRAILER PARK <br> Schedule_2 1.container tractor/trailer park 2.open storage <br> With_Compl y <br> Issue_da_1 3/2/1997 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3220,7 +3220,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3660</name>
       <description><![CDATA[GAIN FORUM LIMITED 佳富利有限公司 <br> <br> FID 13 <br> LOTLOTNO 3660 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.059429 <br> NAME_OF__2 GAIN FORUM LIMITED 佳富利有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3418,7 +3418,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3661</name>
       <description><![CDATA[WELL LOYAL LIMITED 偉萊有限公司 <br> <br> FID 14 <br> LOTLOTNO 3661 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.042104 <br> NAME_OF__2 WELL LOYAL LIMITED 偉萊有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3648,7 +3648,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719</name>
       <description><![CDATA[ETERNAL WAY CAPITAL RESOURCES LIMITED 恆旺資本有限公司 <br> <br> FID 15 <br> LOTLOTNO 3719 <br> LOTSECTCD O <br> LOTABBR DD104 <br> SHAPEAREA 0.917546 <br> NAME_OF__2 ETERNAL WAY CAPITAL RESOURCES LIMITED 恆旺資本有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/157 <br> Issue_date 30/8/2005 <br> Expiry_Dat 30/11/2005 <br> Predominan OPEN STORAGE <br> Schedule_2 1.storage use 2.parking of vehicles 3.workshop use <br> With_Compl y <br> Issue_da_1 18/7/2008 <br> Prosecutio P <br> Summon_No_ STS3909/06, 9503/07 <br> Total_fine 24860+25000 <br> Date_of_la 22/05/2006 , 7/11/2007 <br> Notice_Typ enforcement notice, reinstatement notice <br> First_date 30/11/2005, 8/5/2007 <br> Latest_typ 12/5/2006, 16/6/2007 <br> Decision pre-trial review, mention <br> Decision_D convicted on its own plea <br> Date_of_se 23/8/2006, 9/1/2008 <br> F20 23/8/2006, 9/1/2008]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3671,7 +3671,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 P 1 A</name>
       <description><![CDATA[STAND FAITH DEVELOPMENT LIMITED <br> <br> FID 16 <br> LOTLOTNO 3719 <br> LOTSECTCD P,1,A <br> LOTABBR DD104 <br> SHAPEAREA 0.253574 <br> NAME_OF__2 STAND FAITH DEVELOPMENT LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/194 <br> Issue_date 14/1/2010 <br> Expiry_Dat 14/4/2010 <br> Predominan others <br> Schedule_2 storage use <br> With_Compl y <br> Issue_da_1 21/12/2011 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3692,7 +3692,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 P 1 B</name>
       <description><![CDATA[ABSOLUTE EXPERT LIMITED 世群有限公司 <br> <br> FID 17 <br> LOTLOTNO 3719 <br> LOTSECTCD P,1,B <br> LOTABBR DD104 <br> SHAPEAREA 0.064425 <br> NAME_OF__2 ABSOLUTE EXPERT LIMITED 世群有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/042 <br> Issue_date 19/1/1999 <br> Expiry_Dat 19/4/1999 <br> Predominan OPEN STORAGE <br> Schedule_2 1.setting up of converted container 2.storage use, 3.deposit of containers <br> With_Compl y <br> Issue_da_1 24/11/1999 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3712,7 +3712,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 P 2 A</name>
       <description><![CDATA[ABSOLUTE EXPERT LIMITED 世群有限公司 <br> <br> FID 18 <br> LOTLOTNO 3719 <br> LOTSECTCD P,2,A <br> LOTABBR DD104 <br> SHAPEAREA 0.027311 <br> NAME_OF__2 ABSOLUTE EXPERT LIMITED 世群有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/157 <br> Issue_date 30/8/2005 <br> Expiry_Dat 30/11/2005 <br> Predominan OPEN STORAGE <br> Schedule_2 1.storage use 2.parking of vehicles 3.workshop use <br> With_Compl y <br> Issue_da_1 18/7/2008 <br> Prosecutio P <br> Summon_No_ STS3909/06, 9503/07 <br> Total_fine 24860+25000 <br> Date_of_la 22/05/2006 , 7/11/2007 <br> Notice_Typ enforcement notice, reinstatement notice <br> First_date 30/11/2005, 8/5/2007 <br> Latest_typ 12/5/2006, 16/6/2007 <br> Decision pre-trial review, mention <br> Decision_D convicted on its own plea <br> Date_of_se 23/8/2006, 9/1/2008 <br> F20 23/8/2006, 9/1/2008]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3731,7 +3731,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 P 2 RP</name>
       <description><![CDATA[ABSOLUTE EXPERT LIMITED 世群有限公司 <br> <br> FID 19 <br> LOTLOTNO 3719 <br> LOTSECTCD P,2,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.320153 <br> NAME_OF__2 ABSOLUTE EXPERT LIMITED 世群有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/157 <br> Issue_date 30/8/2005 <br> Expiry_Dat 30/11/2005 <br> Predominan OPEN STORAGE <br> Schedule_2 1.storage use 2.parking of vehicles 3.workshop use <br> With_Compl y <br> Issue_da_1 18/7/2008 <br> Prosecutio P <br> Summon_No_ STS3909/06, 9503/07 <br> Total_fine 24860+25000 <br> Date_of_la 22/05/2006 , 7/11/2007 <br> Notice_Typ enforcement notice, reinstatement notice <br> First_date 30/11/2005, 8/5/2007 <br> Latest_typ 12/5/2006, 16/6/2007 <br> Decision pre-trial review, mention <br> Decision_D convicted on its own plea <br> Date_of_se 23/8/2006, 9/1/2008 <br> F20 23/8/2006, 9/1/2008]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3753,7 +3753,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 P 3</name>
       <description><![CDATA[STAND FAITH DEVELOPMENT LIMITED <br> <br> FID 20 <br> LOTLOTNO 3719 <br> LOTSECTCD P,3 <br> LOTABBR DD104 <br> SHAPEAREA 0.035774 <br> NAME_OF__2 STAND FAITH DEVELOPMENT LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/194 <br> Issue_date 14/1/2010 <br> Expiry_Dat 14/4/2010 <br> Predominan others <br> Schedule_2 storage use <br> With_Compl y <br> Issue_da_1 21/12/2011 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3787,7 +3787,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 Q 1 A</name>
       <description><![CDATA[SHING TAK TYRE POLYTECHNIC COMPANY 成達膠輪有限公司 <br> <br> FID 21 <br> LOTLOTNO 3719 <br> LOTSECTCD Q,1,A <br> LOTABBR DD104 <br> SHAPEAREA 0.28983 <br> NAME_OF__2 SHING TAK TYRE POLYTECHNIC COMPANY 成達膠輪有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/003[2] <br> Issue_date 24/7/1997 <br> Expiry_Dat 24/10/1997 <br> Predominan workshop <br> Schedule_2 1.pond filling and site formation 2.setting up of converted container 3.container trailer/tractor park <br> With_Compl y <br> Issue_da_1 21/9/1998 <br> Prosecutio P <br> Summon_No_ FLS3898,3899/98 <br> Total_fine 15000+15000 <br> Date_of_la 9/4/1998 <br> Notice_Typ enforcement notice <br> First_date 24/10/1997 <br> Latest_typ 1/4/1998 <br> Decision plea <br> Decision_D convicted on its own plea <br> Date_of_se 12/5/1998 <br> F20 12/5/1998]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3930,7 +3930,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 Q 1 E</name>
       <description><![CDATA[LONG BENEFIT INTERNATIONAL LIMITED <br> <br> FID 22 <br> LOTLOTNO 3719 <br> LOTSECTCD Q,1,E <br> LOTABBR DD104 <br> SHAPEAREA 0.068718 <br> NAME_OF__2 LONG BENEFIT INTERNATIONAL LIMITED <br> Lastest_En vEnforcement Notice <br> Case_No_ E/YL-NSW/063 <br> Issue_date 10/3/1999 <br> Expiry_Dat 10/6/1999 <br> Predominan OPEN STORAGE <br> Schedule_2 1.erection of structure 2.storage use 3.deposit of containers <br> With_Compl y <br> Issue_da_1 31/8/2000 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3953,7 +3953,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 Q 1 RP</name>
       <description><![CDATA[PERFECT INFLOW INDUSTRIES LIMITED <br> <br> FID 23 <br> LOTLOTNO 3719 <br> LOTSECTCD Q,1,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.65666 <br> NAME_OF__2 PERFECT INFLOW INDUSTRIES LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/071 <br> Issue_date 7/7/1998 <br> Expiry_Dat 7/10/1998 <br> Predominan container vehicle/trailer park <br> Schedule_2 1.parking of container tractors and trailers 2.deposit of containers <br> With_Compl y <br> Issue_da_1 20/1/1999 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3996,7 +3996,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 4024 </name>
       <description><![CDATA[HANFORD HOLDINGS LIMITED 漢豐集團有限公司 <br> <br> FID 24 <br> LOTLOTNO 4024 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.08077 <br> NAME_OF__2 HANFORD HOLDINGS LIMITED 漢豐集團有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/205 <br> Issue_date 20/1/2012 <br> Expiry_Dat 27/1/2012 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 filling of land <br> With_Compl y <br> Issue_da_1 28/2/2013 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4023,7 +4023,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 4026 C</name>
       <description><![CDATA[HENFORD HOLDINGS LIMITED 漢豐集團有限公司 <br> <br> FID 25 <br> LOTLOTNO 4026 <br> LOTSECTCD C <br> LOTABBR DD104 <br> SHAPEAREA 0.08795 <br> NAME_OF__2 HENFORD HOLDINGS LIMITED 漢豐集團有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/205 <br> Issue_date 20/1/2012 <br> Expiry_Dat 27/1/2012 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 filling of land <br> With_Compl y <br> Issue_da_1 28/2/2013 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -4218,7 +4218,7 @@
     <Placemark>
       <name>Enforcement Notice DD107 1740 A RP</name>
       <description><![CDATA[KING GARDEN LIMITED 京嘉有限公司 <br> <br> FID 26 <br> LOTLOTNO 1740 <br> LOTSECTCD A,RP <br> LOTABBR DD107 <br> SHAPEAREA 0.150526 <br> NAME_OF__2 KING GARDEN LIMITED 京嘉有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/196 <br> Issue_date 12/5/2011 <br> Expiry_Dat 19/5/2011 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 filling of land and filling of pond <br> With_Compl y <br> Issue_da_1 27/6/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4294,7 +4294,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3666 RP</name>
       <description><![CDATA[Yam Kwok Estates Company Limited <br> <br> FID 27 <br> LOTLOTNO 3666 <br> LOTSECTCD RP <br> LOTABBR DD104 <br> SHAPEAREA 0.149471 <br> NAME_OF__2 Yam Kwok Estates Company Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/226 <br> Issue_date 12/12/2014 <br> Expiry_Dat 19/12/2014 <br> Predominan AND/PONG filling, dumping & site formation <br> Schedule_2 filling of land <br> With_Compl y <br> Issue_da_1 29/4/2016 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4479,7 +4479,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3675 A</name>
       <description><![CDATA[PACIFIC SUNNY LIMITED 坤耀有限公司 <br> <br> FID 28 <br> LOTLOTNO 3675 <br> LOTSECTCD A <br> LOTABBR DD104 <br> SHAPEAREA 0.197259 <br> NAME_OF__2 PACIFIC SUNNY LIMITED 坤耀有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4627,7 +4627,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3675 B</name>
       <description><![CDATA[SPEEDY FAITH LIMITED 守信有限公司 <br> <br> FID 29 <br> LOTLOTNO 3675 <br> LOTSECTCD B <br> LOTABBR DD104 <br> SHAPEAREA 0.123793 <br> NAME_OF__2 SPEEDY FAITH LIMITED 守信有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4810,7 +4810,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 Q 2 A</name>
       <description><![CDATA[Dragages Hong Kong Limited 香港寶嘉建築有限公司 <br> <br> FID 30 <br> LOTLOTNO 3719 <br> LOTSECTCD Q,2,A <br> LOTABBR DD104 <br> SHAPEAREA 0.364019 <br> NAME_OF__2 Dragages Hong Kong Limited 香港寶嘉建築有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/078 <br> Issue_date 17/9/1998 <br> Expiry_Dat 17/12/1998 <br> Predominan OPEN STORAGE <br> Schedule_2 1.pond filling 2.open storage <br> With_Compl y <br> Issue_da_1 8/3/1999 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4945,7 +4945,7 @@
     <Placemark>
       <name>Enforcement Notice DD104  3719 Q 2 B</name>
       <description><![CDATA[Dragages Hong Kong Limited 香港寶嘉建築有限公司 <br> <br> FID 31 <br> LOTLOTNO 3719 <br> LOTSECTCD Q,2,B <br> LOTABBR DD104 <br> SHAPEAREA 0.195307 <br> NAME_OF__2 Dragages Hong Kong Limited 香港寶嘉建築有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/078 <br> Issue_date 17/9/1998 <br> Expiry_Dat 17/12/1998 <br> Predominan OPEN STORAGE <br> Schedule_2 1.pond filling 2.open storage <br> With_Compl y <br> Issue_da_1 8/3/1999 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4969,7 +4969,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 Q 2 C 1</name>
       <description><![CDATA[Double Honour Developments Limited <br> <br> FID 32 <br> LOTLOTNO 3719 <br> LOTSECTCD Q,2,C,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.090967 <br> NAME_OF__2 Double Honour Developments Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/078 <br> Issue_date 17/9/1998 <br> Expiry_Dat 17/12/1998 <br> Predominan OPEN STORAGE <br> Schedule_2 1.pond filling 2.open storage <br> With_Compl y <br> Issue_da_1 8/3/1999 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4988,7 +4988,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 Q 2 C RP</name>
       <description><![CDATA[Dragages Hong Kong Limited 香港寶嘉建築有限公司 <br> <br> FID 33 <br> LOTLOTNO 3719 <br> LOTSECTCD Q,2,C,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.17782 <br> NAME_OF__2 Dragages Hong Kong Limited 香港寶嘉建築有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/078 <br> Issue_date 17/9/1998 <br> Expiry_Dat 17/12/1998 <br> Predominan OPEN STORAGE <br> Schedule_2 1.pond filling 2.open storage <br> With_Compl y <br> Issue_da_1 8/3/1999 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5007,7 +5007,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 Q 2 RP</name>
       <description><![CDATA[Double Honour Developments Limited 特好發展有限公司 <br> <br> FID 34 <br> LOTLOTNO 3719 <br> LOTSECTCD Q,2,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.407816 <br> NAME_OF__2 Double Honour Developments Limited 特好發展有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/069 <br> Issue_date 13/1/1998 <br> Expiry_Dat 13/4/1998 <br> Predominan container vehicle/trailer park <br> Schedule_2 1.setting up of converted containers 2.parking of container trailers <br> With_Compl y <br> Issue_da_1 3/8/1998 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5034,7 +5034,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 Q RP</name>
       <description><![CDATA[Double Honour Developments Limited <br> <br> FID 35 <br> LOTLOTNO 3719 <br> LOTSECTCD Q,RP <br> LOTABBR DD104 <br> SHAPEAREA 1.331469 <br> NAME_OF__2 Double Honour Developments Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/236 <br> Issue_date 20/10/2016 <br> Expiry_Dat 20/12/2016 <br> Predominan container vehicle/trailer park <br> Schedule_2 parking of vehicles <br> With_Compl y <br> Issue_da_1 29/3/2017 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5069,7 +5069,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R 1</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 36 <br> LOTLOTNO 3719 <br> LOTSECTCD R,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.293706 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/198 <br> Issue_date 25/7/2011 <br> Expiry_Dat 25/9/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 parking of vehicles <br> With_Compl y <br> Issue_da_1 23/9/2014 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5100,7 +5100,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R 2 A</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 37 <br> LOTLOTNO 3719 <br> LOTSECTCD R,2,A <br> LOTABBR DD104 <br> SHAPEAREA 0.118575 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/198 <br> Issue_date 25/7/2011 <br> Expiry_Dat 25/9/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 parking of vehicles <br> With_Compl y <br> Issue_da_1 23/9/2014 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5127,7 +5127,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R 2 RP</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 38 <br> LOTLOTNO 3719 <br> LOTSECTCD R,2,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.12044 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/198 <br> Issue_date 25/7/2011 <br> Expiry_Dat 25/9/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 parking of vehicles <br> With_Compl y <br> Issue_da_1 23/9/2014 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5175,7 +5175,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R 3</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 39 <br> LOTLOTNO 3719 <br> LOTSECTCD R,3 <br> LOTABBR DD104 <br> SHAPEAREA 0.070243 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/198 <br> Issue_date 25/7/2011 <br> Expiry_Dat 25/9/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 parking of vehicles <br> With_Compl y <br> Issue_da_1 23/9/2014 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5224,7 +5224,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R 4 A</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 40 <br> LOTLOTNO 3719 <br> LOTSECTCD R,4,A <br> LOTABBR DD104 <br> SHAPEAREA 0.972394 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/028[4] <br> Issue_date 26/2/2003 <br> Expiry_Dat 26/5/2003 <br> Predominan container storage <br> Schedule_2 1.site formation 2.setting up of shelters and converted containers 3.container freight station including loading and unloading activities and deposit of containers <br> With_Compl y <br> Issue_da_1 7/2/2005 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5323,7 +5323,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R 4 B</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 41 <br> LOTLOTNO 3719 <br> LOTSECTCD R,4,B <br> LOTABBR DD104 <br> SHAPEAREA 0.240005 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/028[4] <br> Issue_date 26/2/2003 <br> Expiry_Dat 26/5/2003 <br> Predominan container storage <br> Schedule_2 1.site formation 2.setting up of shelters and converted containers 3.container freight station including loading and unloading activities and deposit of containers <br> With_Compl y <br> Issue_da_1 7/2/2005 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5404,7 +5404,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R 4 C</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 42 <br> LOTLOTNO 3719 <br> LOTSECTCD R,4,C <br> LOTABBR DD104 <br> SHAPEAREA 0.135054 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/028[4] <br> Issue_date 26/2/2003 <br> Expiry_Dat 26/5/2003 <br> Predominan container storage <br> Schedule_2 1.site formation 2.setting up of shelters and converted containers 3.container freight station including loading and unloading activities and deposit of containers <br> With_Compl y <br> Issue_da_1 7/2/2005 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5431,7 +5431,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R 4 D</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 43 <br> LOTLOTNO 3719 <br> LOTSECTCD R,4,D <br> LOTABBR DD104 <br> SHAPEAREA 0.110899 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/028[4] <br> Issue_date 26/2/2003 <br> Expiry_Dat 26/5/2003 <br> Predominan container storage <br> Schedule_2 1.site formation 2.setting up of shelters and converted containers 3.container freight station including loading and unloading activities and deposit of containers <br> With_Compl y <br> Issue_da_1 7/2/2005 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5456,7 +5456,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R 4 E</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 44 <br> LOTLOTNO 3719 <br> LOTSECTCD R,4,E <br> LOTABBR DD104 <br> SHAPEAREA 0.111245 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/028[4] <br> Issue_date 26/2/2003 <br> Expiry_Dat 26/5/2003 <br> Predominan container storage <br> Schedule_2 1.site formation 2.setting up of shelters and converted containers 3.container freight station including loading and unloading activities and deposit of containers <br> With_Compl y <br> Issue_da_1 7/2/2005 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5481,7 +5481,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R 4 RP</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 45 <br> LOTLOTNO 3719 <br> LOTSECTCD R,4,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.268464 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/028[4] <br> Issue_date 26/2/2003 <br> Expiry_Dat 26/5/2003 <br> Predominan container storage <br> Schedule_2 1.site formation 2.setting up of shelters and converted containers 3.container freight station including loading and unloading activities and deposit of containers <br> With_Compl y <br> Issue_da_1 7/2/2005 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5511,7 +5511,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 R RP</name>
       <description><![CDATA[Perfect Inflow Idustries Limited <br> <br> FID 46 <br> LOTLOTNO 3719 <br> LOTSECTCD R,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.629235 <br> NAME_OF__2 Perfect Inflow Idustries Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/198 <br> Issue_date 25/7/2011 <br> Expiry_Dat 25/9/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 parking of vehicles <br> With_Compl y <br> Issue_da_1 23/9/2014 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5603,7 +5603,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3720 B 2</name>
       <description><![CDATA[YEUNG KONG INVESTMENT LIMITED <br> <br> FID 47 <br> LOTLOTNO 3720 <br> LOTSECTCD B,2 <br> LOTABBR DD104 <br> SHAPEAREA 0.445886 <br> NAME_OF__2 YEUNG KONG INVESTMENT LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/044 <br> Issue_date 26/8/1997 <br> Expiry_Dat 26/11/1997 <br> Predominan container vehicle / trailer park <br> Schedule_2 1.setting up of converted containers 2.container trailer and tractor park <br> With_Compl y <br> Issue_da_1 19/1/1999 <br> Prosecutio P <br> Summon_No_ STS4202,4203,4204,4205/98 <br> Total_fine 81320 <br> Date_of_la 22/5/1998 <br> Notice_Typ enforcement notice <br> First_date 26/11/1997 <br> Latest_typ 20/5/1998 <br> Decision sentence <br> Decision_D convicted after trial, 4205convicted on its own plea <br> Date_of_se 2/9/1998, 4205(31/7/1998) <br> F20 2/9/1998, 4205(31/7/1998)]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5677,7 +5677,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3688 </name>
       <description><![CDATA[PACIFIC SUNNY LIMITED 坤耀有限公司 <br> <br> FID 48 <br> LOTLOTNO 3688 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.052929 <br> NAME_OF__2 PACIFIC SUNNY LIMITED 坤耀有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5765,7 +5765,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3689</name>
       <description><![CDATA[WORLD KINETIC LIMITED 運堅有限公司 <br> <br> FID 49 <br> LOTLOTNO 3689 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.023405 <br> NAME_OF__2 WORLD KINETIC LIMITED 運堅有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5842,7 +5842,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3720 D 5</name>
       <description><![CDATA[Allied Dynasty Limited 和宇有限公司 <br> <br> FID 50 <br> LOTLOTNO 3720 <br> LOTSECTCD D,5 <br> LOTABBR DD104 <br> SHAPEAREA 0.488428 <br> NAME_OF__2 Allied Dynasty Limited 和宇有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/160 <br> Issue_date 13/7/2005 <br> Expiry_Dat 13/10/2005 <br> Predominan container vehicle / trailer park <br> Schedule_2 parking of vehicles <br> With_Compl y <br> Issue_da_1 17/4/2008 <br> Prosecutio P <br> Summon_No_ STS2146/06 <br> Total_fine 91900 <br> Date_of_la 20/3/2006 <br> Notice_Typ ENFORCEMENT NOTICE <br> First_date 13/10/2005 <br> Latest_typ 10/2/2006 <br> Decision magistracy appeal <br> Decision_D convicted after trial <br> Date_of_se 19/9/2006 <br> F20 19/9/2006]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5901,7 +5901,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3720 D RP</name>
       <description><![CDATA[Vily Field Investment Limited <br> <br> FID 51 <br> LOTLOTNO 3720 <br> LOTSECTCD D,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.753013 <br> NAME_OF__2 Vily Field Investment Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/160 <br> Issue_date 13/7/2005 <br> Expiry_Dat 13/10/2005 <br> Predominan container vehicle / trailer park <br> Schedule_2 parking of vehicles <br> With_Compl y <br> Issue_da_1 17/4/2008 <br> Prosecutio P <br> Summon_No_ STS2146/06 <br> Total_fine 91900 <br> Date_of_la 20/3/2006 <br> Notice_Typ ENFORCEMENT NOTICE <br> First_date 13/10/2005 <br> Latest_typ 10/2/2006 <br> Decision magistracy appeal <br> Decision_D convicted after trial <br> Date_of_se 19/9/2006 <br> F20 19/9/2006]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6038,7 +6038,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3721 A 2 A</name>
       <description><![CDATA[Grand Auto Motors Limited 賓寶汽車有限公司 <br> <br> FID 52 <br> LOTLOTNO 3721 <br> LOTSECTCD A,2,A <br> LOTABBR DD104 <br> SHAPEAREA 0.609893 <br> NAME_OF__2 Grand Auto Motors Limited 賓寶汽車有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/162 <br> Issue_date 13/7/2005 <br> Expiry_Dat 13/10/2005 <br> Predominan OPEN STORAGE <br> Schedule_2 open storage <br> With_Compl y <br> Issue_da_1 31/8/2006 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6264,7 +6264,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3721 A 2 RP</name>
       <description><![CDATA[Asia Direct Source Limited 亞洲得利有限公司 <br> <br> FID 53 <br> LOTLOTNO 3721 <br> LOTSECTCD A,2,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.950427 <br> NAME_OF__2 Asia Direct Source Limited 亞洲得利有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/162 <br> Issue_date 13/7/2005 <br> Expiry_Dat 13/10/2005 <br> Predominan OPEN STORAGE <br> Schedule_2 open storage <br> With_Compl y <br> Issue_da_1 31/8/2006 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6350,7 +6350,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3690</name>
       <description><![CDATA[WELL LOYAL LIMITED 偉萊有限公司 <br> <br> FID 54 <br> LOTLOTNO 3690 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.02531 <br> NAME_OF__2 WELL LOYAL LIMITED 偉萊有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6438,7 +6438,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3691</name>
       <description><![CDATA[KING COME LIMITED 君臨有限公司 <br> <br> FID 55 <br> LOTLOTNO 3691 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.052217 <br> NAME_OF__2 KING COME LIMITED 君臨有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6529,7 +6529,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3692</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 56 <br> LOTLOTNO 3692 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.031826 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6618,7 +6618,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3693</name>
       <description><![CDATA[WELL LOYAL LIMITED 偉萊有限公司 <br> <br> FID 57 <br> LOTLOTNO 3693 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.019154 <br> NAME_OF__2 WELL LOYAL LIMITED 偉萊有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6716,7 +6716,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3694</name>
       <description><![CDATA[MAIN PACIFIC LIMITED 亨僑有限公司 <br> <br> FID 58 <br> LOTLOTNO 3694 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.048375 <br> NAME_OF__2 MAIN PACIFIC LIMITED 亨僑有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6811,7 +6811,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3695</name>
       <description><![CDATA[WELL LOYAL LIMITED 偉萊有限公司 <br> <br> FID 59 <br> LOTLOTNO 3695 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.052165 <br> NAME_OF__2 WELL LOYAL LIMITED 偉萊有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6875,7 +6875,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3696</name>
       <description><![CDATA[MAIN PACIFIC LIMITED 亨僑有限公司 <br> <br> FID 60 <br> LOTLOTNO 3696 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.039654 <br> NAME_OF__2 MAIN PACIFIC LIMITED 亨僑有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6942,7 +6942,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3697</name>
       <description><![CDATA[MAIN PACIFIC LIMITED 亨僑有限公司 <br> <br> FID 61 <br> LOTLOTNO 3697 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.048328 <br> NAME_OF__2 MAIN PACIFIC LIMITED 亨僑有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7025,7 +7025,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3698</name>
       <description><![CDATA[WIDE ASSETS LIMITED 置弘有限公司 <br> <br> FID 62 <br> LOTLOTNO 3698 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.022831 <br> NAME_OF__2 WIDE ASSETS LIMITED 置弘有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7076,7 +7076,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3699</name>
       <description><![CDATA[PACIFIC SUNNY LIMITED 坤耀有限公司 <br> <br> FID 63 <br> LOTLOTNO 3699 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.058316 <br> NAME_OF__2 PACIFIC SUNNY LIMITED 坤耀有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7126,7 +7126,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3700</name>
       <description><![CDATA[EVERSTAND LIMITED 威信行有限公司 <br> <br> FID 64 <br> LOTLOTNO 3700 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.051287 <br> NAME_OF__2 EVERSTAND LIMITED 威信行有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7183,7 +7183,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3701</name>
       <description><![CDATA[CHINA UNIQUE CORPORATION LIMITED 尊華有限公司 <br> <br> FID 65 <br> LOTLOTNO 3701 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.056229 <br> NAME_OF__2 CHINA UNIQUE CORPORATION LIMITED 尊華有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7284,7 +7284,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3702</name>
       <description><![CDATA[MAIN PACIFIC LIMITED 亨僑有限公司 <br> <br> FID 66 <br> LOTLOTNO 3702 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.057753 <br> NAME_OF__2 MAIN PACIFIC LIMITED 亨僑有限公司 <br> Lastest_En Enforcement Noticee <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7433,7 +7433,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3703</name>
       <description><![CDATA[WORLD KINETIC LIMITED 運堅有限公司 <br> <br> FID 67 <br> LOTLOTNO 3703 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.091704 <br> NAME_OF__2 WORLD KINETIC LIMITED 運堅有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7590,7 +7590,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3704</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 68 <br> LOTLOTNO 3704 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.104048 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7690,7 +7690,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3721 C 5 A RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 69 <br> LOTLOTNO 3721 <br> LOTSECTCD C,5,A,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.063174 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/044 <br> Issue_date 26/8/1997 <br> Expiry_Dat 26/11/1997 <br> Predominan container vehicle / trailer park <br> Schedule_2 1.setting up of converted containers 2.container trailer and tractor park <br> With_Compl y <br> Issue_da_1 19/1/1999 <br> Prosecutio P <br> Summon_No_ STS4202,4203,4204,4205/98 <br> Total_fine 81320 <br> Date_of_la 22/5/1998 <br> Notice_Typ enforcement notice <br> First_date 26/11/1997 <br> Latest_typ 20/5/1998 <br> Decision sentence <br> Decision_D convicted after trial, 4205convicted on its own plea <br> Date_of_se 2/9/1998, 4205(31/7/1998) <br> F20 2/9/1998, 4205(31/7/1998)]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -7744,7 +7744,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 B 1</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 70 <br> LOTLOTNO 3722 <br> LOTSECTCD B,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.542032 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/052 <br> Issue_date 15/12/1997 <br> Expiry_Dat 15/3/1998 <br> Predominan OPEN STORAGE <br> Schedule_2 1.setting up of converted containers 2.open storage of vehicles <br> With_Compl y <br> Issue_da_1 21/9/1998 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8044,7 +8044,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 B 2</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 71 <br> LOTLOTNO 3722 <br> LOTSECTCD B,2 <br> LOTABBR DD104 <br> SHAPEAREA 0.780329 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/206 <br> Issue_date 27/7/2012 <br> Expiry_Dat 3/8/2012 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of land <br> With_Compl y <br> Issue_da_1 24/1/2013 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8110,7 +8110,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 B 3</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 72 <br> LOTLOTNO 3722 <br> LOTSECTCD B,3 <br> LOTABBR DD104 <br> SHAPEAREA 0.435954 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/052 <br> Issue_date 15/12/1997 <br> Expiry_Dat 15/3/1998 <br> Predominan OPEN STORAGE <br> Schedule_2 1.setting up of converted containers 2.open storage of vehicles <br> With_Compl y <br> Issue_da_1 21/9/1998 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8176,7 +8176,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 B4</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 73 <br> LOTLOTNO 3722 <br> LOTSECTCD B,4 <br> LOTABBR DD104 <br> SHAPEAREA 0.510573 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/195 <br> Issue_date 3/3/2010 <br> Expiry_Dat 10/3/2010 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond and filling of land <br> With_Compl y <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8264,7 +8264,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 B RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 74 <br> LOTLOTNO 3722 <br> LOTSECTCD B,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.275934 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/195 <br> Issue_date 3/3/2010 <br> Expiry_Dat 10/3/2010 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond and filling of land <br> With_Compl y <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8424,7 +8424,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 C 1</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 75 <br> LOTLOTNO 3722 <br> LOTSECTCD C,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.579035 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/169 <br> Issue_date 30/5/2006 <br> Expiry_Dat 30/8/2006 <br> Predominan OPEN STORAGE <br> Schedule_2 1.parking of vehicles <br> With_Compl y <br> Issue_da_1 8/12/2006 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8613,7 +8613,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 C 2</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 76 <br> LOTLOTNO 3722 <br> LOTSECTCD C,2 <br> LOTABBR DD104 <br> SHAPEAREA 0.903849 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/167 <br> Issue_date 23/3/2005 <br> Expiry_Dat 23/6/2005 <br> Predominan car park <br> Schedule_2 parking of vehicles <br> With_Compl y <br> Issue_da_1 23/9/2005 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8678,7 +8678,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 C 3</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 77 <br> LOTLOTNO 3722 <br> LOTSECTCD C,3 <br> LOTABBR DD104 <br> SHAPEAREA 0.484166 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/243 <br> Issue_date 26/3/2018 <br> Expiry_Dat 26/5/2018 <br> Predominan OPEN STORAGE <br> Schedule_2 storage use <br> With_Compl n <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8710,7 +8710,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 C 4</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 78 <br> LOTLOTNO 3722 <br> LOTSECTCD C,4 <br> LOTABBR DD104 <br> SHAPEAREA 0.544489 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/245 <br> Issue_date 26/3/2018 <br> Expiry_Dat 26/5/2018 <br> Predominan container vehicle/ trailer park <br> Schedule_2 parking of vehicles and storage use <br> With_Compl n <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8757,7 +8757,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 C 5 RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 79 <br> LOTLOTNO 3722 <br> LOTSECTCD C,5,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.651444 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/245 <br> Issue_date 26/3/2018 <br> Expiry_Dat 26/5/2018 <br> Predominan container vehicle/ trailer park <br> Schedule_2 parking of vehicles and storage use <br> With_Compl n <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -8816,7 +8816,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 C RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 80 <br> LOTLOTNO 3722 <br> LOTSECTCD C,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.370197 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/245 <br> Issue_date 26/3/2018 <br> Expiry_Dat 26/5/2018 <br> Predominan container vehicle/ trailer park <br> Schedule_2 parking of vehicles and storage use <br> With_Compl n <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -9023,7 +9023,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 E</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 81 <br> LOTLOTNO 3722 <br> LOTSECTCD E <br> LOTABBR DD104 <br> SHAPEAREA 0.103447 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/243 <br> Issue_date 26/3/2018 <br> Expiry_Dat 26/5/2018 <br> Predominan OPEN STORAGE <br> Schedule_2 storage use <br> With_Compl n <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9077,7 +9077,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 F</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 82 <br> LOTLOTNO 3722 <br> LOTSECTCD F <br> LOTABBR DD104 <br> SHAPEAREA 0.048282 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/243 <br> Issue_date 26/3/2018 <br> Expiry_Dat 26/5/2018 <br> Predominan OPEN STORAGE <br> Schedule_2 storage use <br> With_Compl n <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9098,7 +9098,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 G RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 83 <br> LOTLOTNO 3722 <br> LOTSECTCD G,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.070061 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/243 <br> Issue_date 26/3/2018 <br> Expiry_Dat 26/5/2018 <br> Predominan OPEN STORAGE <br> Schedule_2 storage use <br> With_Compl n <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9120,7 +9120,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3722 RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 84 <br> LOTLOTNO 3722 <br> LOTSECTCD RP <br> LOTABBR DD104 <br> SHAPEAREA 0.117349 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/243 <br> Issue_date 26/3/2018 <br> Expiry_Dat 26/5/2018 <br> Predominan OPEN STORAGE <br> Schedule_2 storage use <br> With_Compl n <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -9163,7 +9163,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3723 B1</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 85 <br> LOTLOTNO 3723 <br> LOTSECTCD B,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.426022 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/074 <br> Issue_date 11/5/1998 <br> Expiry_Dat 11/8/1998 <br> Predominan OPEN STORAGE <br> Schedule_2 1.site formation 2.setting up of shelters 3.open storage of vehicles <br> With_Compl y <br> Issue_da_1 8/12/1998 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9245,7 +9245,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3723 B2</name>
       <description><![CDATA[Vily Field Investment Limited <br> <br> FID 86 <br> LOTLOTNO 3723 <br> LOTSECTCD B,2 <br> LOTABBR DD104 <br> SHAPEAREA 0.996475 <br> NAME_OF__2 Vily Field Investment Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/044 <br> Issue_date 26/8/1997 <br> Expiry_Dat 26/11/1997 <br> Predominan container vehicle / trailer park <br> Schedule_2 1.setting up of converted containers 2.container trailer and tractor park <br> With_Compl y <br> Issue_da_1 19/1/1999 <br> Prosecutio P <br> Summon_No_ STS4202,4203,4204,4205/98 <br> Total_fine 81320 <br> Date_of_la 22/5/1998 <br> Notice_Typ enforcement notice <br> First_date 26/11/1997 <br> Latest_typ 20/5/1998 <br> Decision sentence <br> Decision_D convicted after trial, 4205convicted on its own plea <br> Date_of_se 2/9/1998, 4205(31/7/1998) <br> F20 2/9/1998, 4205(31/7/1998)]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9404,7 +9404,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3723 B 3 RP</name>
       <description><![CDATA[Woon Lee Construction Company Limited <br> <br> FID 87 <br> LOTLOTNO 3723 <br> LOTSECTCD B,3,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.427493 <br> NAME_OF__2 Woon Lee Construction Company Limited <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/044 <br> Issue_date 26/8/1997 <br> Expiry_Dat 26/11/1997 <br> Predominan container vehicle / trailer park <br> Schedule_2 1.setting up of converted containers 2.container trailer and tractor park <br> With_Compl y <br> Issue_da_1 19/1/1999 <br> Prosecutio P <br> Summon_No_ STS4202,4203,4204,4205/98 <br> Total_fine 81320 <br> Date_of_la 22/5/1998 <br> Notice_Typ enforcement notice <br> First_date 26/11/1997 <br> Latest_typ 20/5/1998 <br> Decision sentence <br> Decision_D convicted after trial, 4205convicted on its own plea <br> Date_of_se 2/9/1998, 4205(31/7/1998) <br> F20 2/9/1998, 4205(31/7/1998)]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9566,7 +9566,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3723 C 1</name>
       <description><![CDATA[WEISHENG TRANSPORTATION & ENTERPRISES COMPANY LIMITED <br> <br> FID 88 <br> LOTLOTNO 3723 <br> LOTSECTCD C,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.925326 <br> NAME_OF__2 WEISHENG TRANSPORTATION & ENTERPRISES COMPANY LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/132 <br> Issue_date 19/11/2003 <br> Expiry_Dat 19/2/2004 <br> Predominan container vehicle /trailer park <br> Schedule_2 1.parking of vehicles <br> With_Compl y <br> Issue_da_1 26/7/2004 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9759,7 +9759,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3723 C RP</name>
       <description><![CDATA[SHENZHEN HUA KONG TRANSPORT ENTERPRISE COMPANY LIMITED <br> <br> FID 89 <br> LOTLOTNO 3723 <br> LOTSECTCD C,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.799349 <br> NAME_OF__2 SHENZHEN HUA KONG TRANSPORT ENTERPRISE COMPANY LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/132 <br> Issue_date 19/11/2003 <br> Expiry_Dat 19/2/2004 <br> Predominan container vehicle /trailer park <br> Schedule_2 1.parking of vehicles <br> With_Compl y <br> Issue_da_1 26/7/2004 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9878,7 +9878,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3723 D RP</name>
       <description><![CDATA[PROFIT POINT ENTERPRISES LIMITED <br> <br> FID 90 <br> LOTLOTNO 3723 <br> LOTSECTCD D,RP <br> LOTABBR DD104 <br> SHAPEAREA 1.286679 <br> NAME_OF__2 PROFIT POINT ENTERPRISES LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/203 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond and filling of land <br> With_Compl y <br> Issue_da_1 20/9/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -10074,7 +10074,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3723 E RP</name>
       <description><![CDATA[THE HONG KONG AND CHINA GAS COMPANY LIMITED <br> <br> FID 91 <br> LOTLOTNO 3723 <br> LOTSECTCD E,RP <br> LOTABBR DD104 <br> SHAPEAREA 1.077534 <br> NAME_OF__2 THE HONG KONG AND CHINA GAS COMPANY LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/053 <br> Issue_date 1/12/1997 <br> Expiry_Dat 1/3/1998 <br> Predominan OPEN STORAGE <br> Schedule_2 1.increase in depositing matter on the land from 90-97, setting up of converted containers <br> With_Compl y <br> Issue_da_1 19/10/2001 <br> Prosecutio P <br> Summon_No_ STS6823/98 <br> Total_fine 115500 <br> Date_of_la 11/8/1998 <br> Notice_Typ enforcement notice <br> First_date 1/3/1998 <br> Latest_typ 15/7/1998 <br> Decision plea <br> Decision_D convicted on its own plea <br> Date_of_se 22/9/1998 <br> F20 22/9/1998]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -10442,7 +10442,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3723 F RP</name>
       <description><![CDATA[SIME DARBY MOTOR SERVICES LIMITED 森那美汽車服務有限公司 <br> <br> FID 92 <br> LOTLOTNO 3723 <br> LOTSECTCD F,RP <br> LOTABBR DD104 <br> SHAPEAREA 1.157709 <br> NAME_OF__2 SIME DARBY MOTOR SERVICES LIMITED 森那美汽車服務有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/132 <br> Issue_date 19/11/2003 <br> Expiry_Dat 19/2/2004 <br> Predominan container vehicle /trailer park <br> Schedule_2 1.parking of vehicles <br> With_Compl y <br> Issue_da_1 26/7/2004 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -10578,7 +10578,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3723 RP</name>
       <description><![CDATA[WEISHENG TRANSPORTATION & ENTERPRISES COMPANY LIMITED <br> <br> FID 93 <br> LOTLOTNO 3723 <br> LOTSECTCD RP <br> LOTABBR DD104 <br> SHAPEAREA 0.527177 <br> NAME_OF__2 WEISHENG TRANSPORTATION & ENTERPRISES COMPANY LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/132 <br> Issue_date 19/11/2003 <br> Expiry_Dat 19/2/2004 <br> Predominan container vehicle /trailer park <br> Schedule_2 1.parking of vehicles <br> With_Compl y <br> Issue_da_1 26/7/2004 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -10678,7 +10678,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3655</name>
       <description><![CDATA[WELL LOYAL LIMITED 偉萊有限公司 <br> <br> FID 94 <br> LOTLOTNO 3655 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.081014 <br> NAME_OF__2 WELL LOYAL LIMITED 偉萊有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -10890,7 +10890,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3656</name>
       <description><![CDATA[SPEEDY FAITH LIMITED 守信有限公司 <br> <br> FID 95 <br> LOTLOTNO 3656 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.082315 <br> NAME_OF__2 SPEEDY FAITH LIMITED 守信有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11136,7 +11136,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3657</name>
       <description><![CDATA[MAIN PACIFIC LIMITED 亨僑有限公司 <br> <br> FID 96 <br> LOTLOTNO 3657 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.077405 <br> NAME_OF__2 MAIN PACIFIC LIMITED 亨僑有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11324,7 +11324,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3659</name>
       <description><![CDATA[YAM KWOK ESTATES COMPANY LIMITED <br> <br> FID 97 <br> LOTLOTNO 3659 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.055368 <br> NAME_OF__2 YAM KWOK ESTATES COMPANY LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/202 <br> Issue_date 2/11/2011 <br> Expiry_Dat 9/11/2011 <br> Predominan land/pond filling, dumping & site formation <br> Schedule_2 filling of pond <br> With_Compl y <br> Issue_da_1 30/7/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11518,7 +11518,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 C RP</name>
       <description><![CDATA[RICH VALLEY LIMITED 富谷有限公司 <br> <br> FID 98 <br> LOTLOTNO 3719 <br> LOTSECTCD C,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.785109 <br> NAME_OF__2 RICH VALLEY LIMITED 富谷有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/232 <br> Issue_date 3/6/2016 <br> Expiry_Dat 3/8/2016 <br> Predominan CAR PARK <br> Schedule_2 parking of vehicles <br> With_Compl y <br> Issue_da_1 9/1/2017 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11687,7 +11687,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 G 10</name>
       <description><![CDATA[GALA GROWTH COMPANY LIMITED <br> <br> FID 99 <br> LOTLOTNO 3719 <br> LOTSECTCD G,10 <br> LOTABBR DD104 <br> SHAPEAREA 0.091363 <br> NAME_OF__2 GALA GROWTH COMPANY LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/197 <br> Issue_date 13/7/2011 <br> Expiry_Dat 13/9/2011 <br> Predominan OTHERS <br> Schedule_2 use for eating place <br> With_Compl y <br> Issue_da_1 31/8/2011 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11743,7 +11743,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 G 9 RP</name>
       <description><![CDATA[GALA GROWTH COMPANY LIMITED <br> <br> FID 100 <br> LOTLOTNO 3719 <br> LOTSECTCD G,9,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.007615 <br> NAME_OF__2 GALA GROWTH COMPANY LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/197 <br> Issue_date 13/7/2011 <br> Expiry_Dat 13/9/2011 <br> Predominan OTHERS <br> Schedule_2 use for eating place <br> With_Compl y <br> Issue_da_1 31/8/2011 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11765,7 +11765,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 H 1 RP</name>
       <description><![CDATA[RICH TOWN PROPERTIES LIMITED <br> <br> FID 101 <br> LOTLOTNO 3719 <br> LOTSECTCD H,1,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.143721 <br> NAME_OF__2 RICH TOWN PROPERTIES LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/049 <br> Issue_date 23/4/1997 <br> Expiry_Dat 23/7/1997 <br> Predominan container vehicle /trailer park <br> Schedule_2 1.site formation 2.container trailer park <br> With_Compl y <br> Issue_da_1 7/11/1997 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11820,7 +11820,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 H 4</name>
       <description><![CDATA[PROSPEROUS CAPITAL RESOURCES LIMITED 恒昌資本有限公司 <br> <br> FID 102 <br> LOTLOTNO 3719 <br> LOTSECTCD H,4 <br> LOTABBR DD104 <br> SHAPEAREA 0.192659 <br> NAME_OF__2 PROSPEROUS CAPITAL RESOURCES LIMITED 恒昌資本有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/091 <br> Issue_date 6/5/2003 <br> Expiry_Dat 6/8/2003 <br> Predominan container vehicle/trailer park <br> Schedule_2 1.pond filling 2.site formation 3.storage use 4.parking of vehicles <br> With_Compl y <br> Issue_da_1 25/1/2005 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11900,7 +11900,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 I RP</name>
       <description><![CDATA[SIME DARBY MOTOR SERVICES LIMITED 森那美汽車服務有限公司 <br> <br> FID 103 <br> LOTLOTNO 3719 <br> LOTSECTCD I,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.183114 <br> NAME_OF__2 SIME DARBY MOTOR SERVICES LIMITED 森那美汽車服務有限公司 <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/091 <br> Issue_date 6/5/2003 <br> Expiry_Dat 6/8/2003 <br> Predominan container vehicle/trailer park <br> Schedule_2 1.pond filling 2.site formation 3.storage use 4.parking of vehicles <br> With_Compl y <br> Issue_da_1 25/1/2005 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -11958,7 +11958,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3719 N RP</name>
       <description><![CDATA[BUN KEE (H.K.) LIMITED <br> <br> FID 104 <br> LOTLOTNO 3719 <br> LOTSECTCD N,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.881582 <br> NAME_OF__2 BUN KEE (H.K.) LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-NSW/157 <br> Issue_date 30/8/2005 <br> Expiry_Dat 30/11/2005 <br> Predominan OPEN STORAGE <br> Schedule_2 1.storage use 2.parking of vehicles 3.workshop use <br> With_Compl y <br> Issue_da_1 18/7/2008 <br> Prosecutio P <br> Summon_No_ STS3909/06, 9503/07 <br> Total_fine 24860+25000 <br> Date_of_la 22/05/2006 , 7/11/2007 <br> Notice_Typ enforcement notice, reinstatement notice <br> First_date 30/11/2005, 8/5/2007 <br> Latest_typ 12/5/2006, 16/6/2007 <br> Decision pre-trial review, mention <br> Decision_D convicted on its own plea <br> Date_of_se 23/8/2006, 9/1/2008 <br> F20 23/8/2006, 9/1/2008]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -12074,7 +12074,7 @@
     <Placemark>
       <name>Enforcement Notice DD101 47 RP</name>
       <description><![CDATA[NEW MARKET DEVELOPMENT LIMITED <br> <br> FID 105 <br> LOTLOTNO 47 <br> LOTSECTCD RP <br> LOTABBR DD101 <br> SHAPEAREA 1.256625 <br> NAME_OF__2 NEW MARKET DEVELOPMENT LIMITED <br> Lastest_En Warning Letter <br> Case_No_ E/YL-MP/215 <br> Issue_date 11/12/2015 <br> Expiry_Dat <Null> <br> Predominan Others <br> Schedule_2 <br> With_Compl <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -12516,7 +12516,7 @@
     <Placemark>
       <name>Enforcement Notice DD101 48 RP</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 106 <br> LOTLOTNO 48 <br> LOTSECTCD RP <br> LOTABBR DD101 <br> SHAPEAREA 4.991592 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> Lastest_En Warning Letter <br> Case_No_ E/YL-MP/215 <br> Issue_date 11/12/2015 <br> Expiry_Dat <Null> <br> Predominan Others <br> Schedule_2 <br> With_Compl <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -13163,7 +13163,7 @@
     <Placemark>
       <name>Enforcement Notice DD101 49 RP</name>
       <description><![CDATA[THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> <br> FID 107 <br> LOTLOTNO 49 <br> LOTSECTCD RP <br> LOTABBR DD101 <br> SHAPEAREA 23.374831 <br> NAME_OF__2 THE YIN NIN SAVINGS MORTGAGE LOAN AND LAND INVESTMENT COMPANY LIMITED <br> Lastest_En Warning Letter <br> Case_No_ E/YL-MP/215 <br> Issue_date 11/12/2015 <br> Expiry_Dat <Null> <br> Predominan Others <br> Schedule_2 <br> With_Compl <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -16126,7 +16126,7 @@
     <Placemark>
       <name>Enforcement Notice DD99 661 C RP</name>
       <description><![CDATA[TOPCYCLE DEVELOPMENT LIMITED 旋高發展有限公司 <br> <br> FID 108 <br> LOTLOTNO 661 <br> LOTSECTCD C,RP <br> LOTABBR DD 99 <br> SHAPEAREA 0.83043 <br> NAME_OF__2 TOPCYCLE DEVELOPMENT LIMITED 旋高發展有限公司 <br> Lastest_En Warning Letter <br> Case_No_ E/YL-ST/326 <br> Issue_date 2/8/2013 <br> Expiry_Dat <Null> <br> Predominan Others <br> Schedule_2 <br> With_Compl <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -16637,7 +16637,7 @@
     <Placemark>
       <name>Enforcement Notice DD99 674 RP</name>
       <description><![CDATA[TOPCYCLE DEVELOPMENT LIMITED 旋高發展有限公司 <br> <br> FID 109 <br> LOTLOTNO 674 <br> LOTSECTCD RP <br> LOTABBR DD 99 <br> SHAPEAREA 2.216161 <br> NAME_OF__2 TOPCYCLE DEVELOPMENT LIMITED 旋高發展有限公司 <br> Lastest_En Warning Letter <br> Case_No_ E/YL-ST/326 <br> Issue_date 2/8/2013 <br> Expiry_Dat <Null> <br> Predominan Others <br> Schedule_2 <br> With_Compl <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -17489,7 +17489,7 @@
     <Placemark>
       <name>Enforcement Notice DD99 733 RP</name>
       <description><![CDATA[TOPCYCLE DEVELOPMENT LIMITED 旋高發展有限公司 <br> <br> FID 110 <br> LOTLOTNO 733 <br> LOTSECTCD RP <br> LOTABBR DD 99 <br> SHAPEAREA 60.166149 <br> NAME_OF__2 TOPCYCLE DEVELOPMENT LIMITED 旋高發展有限公司 <br> Lastest_En Warning Letter <br> Case_No_ E/YL-ST/326 <br> Issue_date 2/8/2013 <br> Expiry_Dat <Null> <br> Predominan Others <br> Schedule_2 <br> With_Compl <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -19966,7 +19966,7 @@
     <Placemark>
       <name>Enforcement Notice DD99 736</name>
       <description><![CDATA[MASS OCEAN INTERNATIONAL LIMITED <br> <br> FID 111 <br> LOTLOTNO 736 <br> LOTSECTCD <br> LOTABBR DD 99 <br> SHAPEAREA 0.108765 <br> NAME_OF__2 MASS OCEAN INTERNATIONAL LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-ST/174 <br> Issue_date 31/5/2005 <br> Expiry_Dat 31/8/2005 <br> Predominan Workshop <br> Schedule_2 1. Workshop use 2. Parking of vehicles 3. Storage use 4. Canteen <br> With_Compl Y <br> Issue_da_1 5/10/2016 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -19999,7 +19999,7 @@
     <Placemark>
       <name>Enforcement Notice DD99 743 RP</name>
       <description><![CDATA[MASS OCEAN INTERNATIONAL LIMITED <br> <br> FID 112 <br> LOTLOTNO 743 <br> LOTSECTCD RP <br> LOTABBR DD 99 <br> SHAPEAREA 1.128355 <br> NAME_OF__2 MASS OCEAN INTERNATIONAL LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-ST/174 <br> Issue_date 31/5/2005 <br> Expiry_Dat 31/8/2005 <br> Predominan Workshop <br> Schedule_2 1. Workshop use 2. Parking of vehicles 3. Storage use 4. Canteen <br> With_Compl Y <br> Issue_da_1 5/10/2016 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -20086,7 +20086,7 @@
     <Placemark>
       <name>Enforcement Notice DD99 750 RP</name>
       <description><![CDATA[TOP FIELD INTERNATIONAL LIMITED 茂宏國際有限公司 <br> <br> FID 113 <br> LOTLOTNO 750 <br> LOTSECTCD RP <br> LOTABBR DD 99 <br> SHAPEAREA 17.097952 <br> NAME_OF__2 TOP FIELD INTERNATIONAL LIMITED 茂宏國際有限公司 <br> Lastest_En Reinstatement Notice <br> Case_No_ E/YL-ST/362 <br> Issue_date 25/10/2017 <br> Expiry_Dat 25/1/2018 <br> Predominan <br> Schedule_2 1. To remove all fill materials (including hard paving) deposited in the pond as shown coloured and that deposited on the land as shown colured on the attached plan; and 2. to grass the area as shown coloured on the attached plan. <br> With_Compl N <br> Issue_da_1 <Null> <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -20611,7 +20611,7 @@
     <Placemark>
       <name>Enforcement Notice DD99 769 RP</name>
       <description><![CDATA[BIRKENHEAD PROPERTIES AND INVESTMENTS LIMITED <br> <br> FID 114 <br> LOTLOTNO 769 <br> LOTSECTCD RP <br> LOTABBR DD 99 <br> SHAPEAREA 25.954154 <br> NAME_OF__2 BIRKENHEAD PROPERTIES AND INVESTMENTS LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-ST/354 <br> Issue_date 13/4/2015 <br> Expiry_Dat 13/7/2015 <br> Predominan Open Storage <br> Schedule_2 Parking of vehicles and Storage use <br> With_Compl Y <br> Issue_da_1 9/10/2015 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -22963,7 +22963,7 @@
     <Placemark>
       <name>Enforcement Notice DD101 76 RP</name>
       <description><![CDATA[CHIEF MAKER LIMITED 志禧有限公司 <br> <br> FID 115 <br> LOTLOTNO 76 <br> LOTSECTCD RP <br> LOTABBR DD101 <br> SHAPEAREA 3.778545 <br> NAME_OF__2 CHIEF MAKER LIMITED 志禧有限公司 <br> Lastest_En Reinstatement Notice <br> Case_No_ E/YL-MP/165 <br> Issue_date <Null> <br> Expiry_Dat 4/2/2009 <br> Predominan Land/Pond Filling, Dumping & Site Formation <br> Schedule_2 Filling of land <br> With_Compl Y <br> Issue_da_1 12/11/2009 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -23145,7 +23145,7 @@
     <Placemark>
       <name>Enforcement Notice DD96 1621</name>
       <description><![CDATA[FU HOP YICK INVESTMENT LIMITED <br> <br> FID 116 <br> LOTLOTNO 1621 <br> LOTSECTCD <br> LOTABBR DD 96 <br> SHAPEAREA 0.101304 <br> NAME_OF__2 FU HOP YICK INVESTMENT LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-ST/328 <br> Issue_date 18/12/2013 <br> Expiry_Dat 25/12/2013 <br> Predominan Land/Pond Filling, Dumping & Site Formation <br> Schedule_2 Filling of land <br> With_Compl Y <br> Issue_da_1 26/6/2015 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -23392,7 +23392,7 @@
     <Placemark>
       <name>Enforcement Notice DD96 1752</name>
       <description><![CDATA[SILVER CENTURY INVESTMENT LIMITED <br> <br> FID 117 <br> LOTLOTNO 1752 <br> LOTSECTCD <br> LOTABBR DD 96 <br> SHAPEAREA 0.023422 <br> NAME_OF__2 SILVER CENTURY INVESTMENT LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-ST/87 <br> Issue_date 19/7/2017 <br> Expiry_Dat 26/7/2017 <br> Predominan Land/Pond Filling, Dumping & Site Formation <br> Schedule_2 Filling of land and filling of pond <br> With_Compl N <br> Issue_da_1 <Null> <br> Prosecutio P <br> Summon_No_ STS6762/18 <br> Total_fine 0 <br> Date_of_la 27/8/2018 <br> Notice_Typ Reinstatement Notice <br> First_date 10/1/2018 <br> Latest_typ 9/3/2018 <br> Decision Plea <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -23497,7 +23497,7 @@
     <Placemark>
       <name>Enforcement Notice DD96 1754</name>
       <description><![CDATA[LOFT BUSINESS REAL ESTATE LIMITED <br> <br> FID 118 <br> LOTLOTNO 1754 <br> LOTSECTCD <br> LOTABBR DD 96 <br> SHAPEAREA 0.020079 <br> NAME_OF__2 LOFT BUSINESS REAL ESTATE LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-ST/87 <br> Issue_date 19/7/2017 <br> Expiry_Dat 26/7/2017 <br> Predominan Land/Pond Filling, Dumping & Site Formation <br> Schedule_2 Filling of land and filling of pond <br> With_Compl N <br> Issue_da_1 <Null> <br> Prosecutio P <br> Summon_No_ STS6762/18 <br> Total_fine 0 <br> Date_of_la 27/8/2018 <br> Notice_Typ Reinstatement Notice <br> First_date 10/1/2018 <br> Latest_typ 9/3/2018 <br> Decision Plea <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -23545,7 +23545,7 @@
     <Placemark>
       <name>Enforcement Notice DD96 1806</name>
       <description><![CDATA[CENTRAL GRAND REAL ESTATE LIMITED <br> <br> FID 119 <br> LOTLOTNO 1806 <br> LOTSECTCD <br> LOTABBR DD 96 <br> SHAPEAREA 0.040663 <br> NAME_OF__2 CENTRAL GRAND REAL ESTATE LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-ST/87 <br> Issue_date 19/7/2017 <br> Expiry_Dat 26/7/2017 <br> Predominan Land/Pond Filling, Dumping & Site Formation <br> Schedule_2 Filling of land and filling of pond <br> With_Compl N <br> Issue_da_1 <Null> <br> Prosecutio P <br> Summon_No_ STS6762/18 <br> Total_fine 0 <br> Date_of_la 27/8/2018 <br> Notice_Typ Reinstatement Notice <br> First_date 10/1/2018 <br> Latest_typ 9/3/2018 <br> Decision Plea <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -23711,7 +23711,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 3010 B</name>
       <description><![CDATA[JENSEN LIMITED <br> <br> FID 120 <br> LOTLOTNO 3010 <br> LOTSECTCD B <br> LOTABBR DD104 <br> SHAPEAREA 0.085487 <br> NAME_OF__2 JENSEN LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-MP/218 <br> Issue_date 16/2/2017 <br> Expiry_Dat 16/5/2017 <br> Predominan Open Storage <br> Schedule_2 Storage use (including deposit of containers) <br> With_Compl Y <br> Issue_da_1 4/12/2017 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -24027,7 +24027,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 2942 A RP</name>
       <description><![CDATA[LUCKWAY PROPERTIES LIMITED <br> <br> FID 121 <br> LOTLOTNO 2942 <br> LOTSECTCD A,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.248425 <br> NAME_OF__2 LUCKWAY PROPERTIES LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-MP/125 <br> Issue_date 24/8/2004 <br> Expiry_Dat 24/11/2004 <br> Predominan Workshop <br> Schedule_2 1. Storage use 2. Parking of vehicles 3. Workshop <br> With_Compl Y <br> Issue_da_1 22/8/2012 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -24257,7 +24257,7 @@
     <Placemark>
       <name>Enforcement Notice DD104 2951 B 1</name>
       <description><![CDATA[RICH GLORY LIMITED <br> <br> FID 122 <br> LOTLOTNO 2951 <br> LOTSECTCD B,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.117366 <br> NAME_OF__2 RICH GLORY LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-MP/102 <br> Issue_date 17/4/2001 <br> Expiry_Dat 17/7/2001 <br> Predominan Workshop <br> Schedule_2 1. Setting up of converted containers 2. Erecetion of Structure 3. Vehicle workshop 4. Deposit of lorry compartment <br> With_Compl Y <br> Issue_da_1 24/10/2001 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -24294,7 +24294,7 @@
     <Placemark>
       <name>Enforcement Notice DD126 62 D RP</name>
       <description><![CDATA[LUCID LUCK LIMITED <br> <br> FID 123 <br> LOTLOTNO 62 <br> LOTSECTCD D,RP <br> LOTABBR DD126 <br> SHAPEAREA 0.129222 <br> NAME_OF__2 LUCID LUCK LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL-PS/094 <br> Issue_date 4/3/1999 <br> Expiry_Dat 4/6/1999 <br> Predominan LAND/PONG filling, dumping & site formation <br> Schedule_2 1.SITE formation, 2 pond filling <br> With_Compl y <br> Issue_da_1 20/9/1999 <br> Prosecutio <br> Summon_No_ <br> Total_fine <br> Date_of_la <br> Notice_Typ <br> First_date <br> Latest_typ <br> Decision <br> Decision_D <br> Date_of_se <br> F20]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -24378,7 +24378,7 @@
     <Placemark>
       <name>Enforcement Notice DD129 1557 RP</name>
       <description><![CDATA[BLOOMSWAY ENTERPRISES LIMITED <br> <br> FID 124 <br> LOTLOTNO 1557 <br> LOTSECTCD RP <br> LOTABBR DD129 <br> SHAPEAREA 0.197603 <br> NAME_OF__2 BLOOMSWAY ENTERPRISES LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL/LFS/427 <br> Issue_date 14/8/2017 <br> Expiry_Dat 14/10/2017 <br> Predominan OTHERS <br> Schedule_2 recreation use <br> With_Compl y <br> Issue_da_1 19/4/2018 <br> Prosecutio P <br> Summon_No_ STS5967, 5968, 5970, 5969/18 <br> Total_fine 25000 (STS5969/18) <br> Date_of_la 3/8/2018 <br> Notice_Typ enforcement notice <br> First_date 14/10/2017 <br> Latest_typ 24/2/2018 <br> Decision 5967,68,70 MENTION 5969 Plea <br> Decision_D convicted on his own plea <br> Date_of_se 12/9/2018 <br> F20 12/9/2018]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -24505,7 +24505,7 @@
     <Placemark>
       <name>Enforcement Notice DD129 1554 RP</name>
       <description><![CDATA[CONG YUE DEVELOPMENT LIMITED <br> <br> FID 125 <br> LOTLOTNO 1554 <br> LOTSECTCD RP <br> LOTABBR DD129 <br> SHAPEAREA 0.104748 <br> NAME_OF__2 CONG YUE DEVELOPMENT LIMITED <br> Lastest_En Enforcement Notice <br> Case_No_ E/YL/LFS/427 <br> Issue_date 14/8/2017 <br> Expiry_Dat 14/10/2017 <br> Predominan OTHERS <br> Schedule_2 recreation use <br> With_Compl y <br> Issue_da_1 19/4/2018 <br> Prosecutio P <br> Summon_No_ STS5967, 5968, 5970, 5969/18 <br> Total_fine 25000 (STS5969/18) <br> Date_of_la 3/8/2018 <br> Notice_Typ enforcement notice <br> First_date 14/10/2017 <br> Latest_typ 24/2/2018 <br> Decision 5967,68,70 MENTION 5969 Plea <br> Decision_D convicted on his own plea <br> Date_of_se 12/9/2018 <br> F20 12/9/2018]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>

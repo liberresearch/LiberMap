@@ -3,7 +3,7 @@
   <Document>
     <name>【九龍城重建收購調查地圖】</name>
     <description><![CDATA[ <a href="https://liber-research.com/kowloon_city_private_acquisition/" target="_blank">【地權現身】剖析九龍城重建收購狀況</a><br><a>市建局九龍城重建範圍疑有選擇性避開私人發展商落釘位置之嫌，無助市建局聲稱介入九龍城重建範圍能避免「見縫插針」式單幢式住宅的問題</a>]]></description>
-    <Style id="poly-01579B-1200-77-nodesc-normal">
+    <Style id="市建局重建衙前圍道範圍-normal">
       <LineStyle>
         <color>ff9b5701</color>
         <width>1.2</width>
@@ -17,7 +17,7 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="poly-01579B-1200-77-nodesc-highlight">
+    <Style id="市建局重建衙前圍道範圍-highlight">
       <LineStyle>
         <color>ff9b5701</color>
         <width>1.8</width>
@@ -31,17 +31,17 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="poly-01579B-1200-77-nodesc">
+    <StyleMap id="市建局重建衙前圍道範圍">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-01579B-1200-77-nodesc-normal</styleUrl>
+        <styleUrl>#市建局重建衙前圍道範圍-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-01579B-1200-77-nodesc-highlight</styleUrl>
+        <styleUrl>#市建局重建衙前圍道範圍-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="poly-A52714-1200-76-normal">
+    <Style id="九龍城重建-normal">
       <LineStyle>
         <color>ff1427a5</color>
         <width>1.2</width>
@@ -52,7 +52,7 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-A52714-1200-76-highlight">
+    <Style id="九龍城重建-highlight">
       <LineStyle>
         <color>ff1427a5</color>
         <width>1.8</width>
@@ -63,17 +63,17 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-A52714-1200-76">
+    <StyleMap id="九龍城重建">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-A52714-1200-76-normal</styleUrl>
+        <styleUrl>#九龍城重建-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-A52714-1200-76-highlight</styleUrl>
+        <styleUrl>#九龍城重建-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="poly-A52714-5701-23-nodesc-normal">
+    <Style id="研究範圍-normal">
       <LineStyle>
         <color>ff1427a5</color>
         <width>5.701</width>
@@ -87,7 +87,7 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="poly-A52714-5701-23-nodesc-highlight">
+    <Style id="研究範圍-highlight">
       <LineStyle>
         <color>ff1427a5</color>
         <width>8.5515</width>
@@ -101,17 +101,17 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="poly-A52714-5701-23-nodesc">
+    <StyleMap id="研究範圍">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-A52714-5701-23-nodesc-normal</styleUrl>
+        <styleUrl>#研究範圍-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-A52714-5701-23-nodesc-highlight</styleUrl>
+        <styleUrl>#研究範圍-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="poly-FF5252-3401-0-nodesc-normal">
+    <Style id="九龍城區界-normal">
       <LineStyle>
         <color>ff5252ff</color>
         <width>3.401</width>
@@ -125,7 +125,7 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="poly-FF5252-3401-0-nodesc-highlight">
+    <Style id="九龍城區界-highlight">
       <LineStyle>
         <color>ff5252ff</color>
         <width>5.1015</width>
@@ -139,21 +139,21 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="poly-FF5252-3401-0-nodesc">
+    <StyleMap id="九龍城區界">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-FF5252-3401-0-nodesc-normal</styleUrl>
+        <styleUrl>#九龍城區界-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-FF5252-3401-0-nodesc-highlight</styleUrl>
+        <styleUrl>#九龍城區界-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Folder>
       <name>九龍城區界</name>
       <Placemark>
         <name>九龍城區</name>
-        <styleUrl>#poly-FF5252-3401-0-nodesc</styleUrl>
+        <styleUrl>#九龍城區界</styleUrl>
         <MultiGeometry>
           <Polygon>
             <outerBoundaryIs>
@@ -1296,7 +1296,7 @@
       <Placemark>
         <name>南角道4-22號</name>
         <description><![CDATA[南角道4-22號 <br> <br> Name 南角道4-22號 <br> 發展商： 恒基地產 <br> 備註：]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1315,7 +1315,7 @@
       <Placemark>
         <name>嘉林邊道26號A-B號</name>
         <description><![CDATA[嘉林邊道26號A-B號 <br> <br> Name 嘉林邊道26號A-B號 <br> 發展商： 南悅投資（香港） <br> 備註：]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1344,7 +1344,7 @@
       <Placemark>
         <name>聯合道13A-B號</name>
         <description><![CDATA[聯合道13A-B號    <br>       <br>   Name   聯合道13A-B號    <br>   發展商：   南悅投資（香港）    <br>   備註：]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1363,7 +1363,7 @@
       <Placemark>
         <name>嘉林邊道嘉皇花園</name>
         <description><![CDATA[嘉林邊道嘉皇花園 <br> <br> Name 嘉林邊道嘉皇花園 <br> 發展商： 行捷發展有限公司 <br> 備註： 嘉林邊道 42號<br>(地下、3樓及6樓共3個住宅單位，連同一個車位售出)]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1382,7 +1382,7 @@
       <Placemark>
         <name>福佬村道67號</name>
         <description><![CDATA[福佬村道67號 <br> <br> Name 福佬村道67號 <br> 發展商： 恒基<br> 備註： 老字號豆品廠]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1401,7 +1401,7 @@
       <Placemark>
         <name>衙前圍道31-33號</name>
         <description><![CDATA[衙前圍道31-33號    <br>       <br>   Name   衙前圍道31-33號    <br>   發展商：   劉綺婷（鄧成波家族相關人士）    <br>   備註：   有旺角收購新聞]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1420,7 +1420,7 @@
       <Placemark>
         <name>獅子石道73-75號</name>
         <description><![CDATA[獅子石道73-75號    <br>       <br>   Name   獅子石道73-75號    <br>   發展商：   寶聲集團    <br>   備註：]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1439,7 +1439,7 @@
       <Placemark>
         <name>獅子石道67-71號</name>
         <description><![CDATA[獅子石道67-71號    <br>       <br>   Name   獅子石道67-71號    <br>   發展商：   寶聲集團    <br>   備註：]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1458,7 +1458,7 @@
       <Placemark>
         <name>衙前塱道大華樓</name>
         <description><![CDATA[衙前塱道大華樓    <br>       <br>   Name   衙前塱道大華樓    <br>   發展商：   鄧成波    <br>   備註：   3至13號]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1477,7 +1477,7 @@
       <Placemark>
         <name>福佬村道89號</name>
         <description><![CDATA[福佬村道89號 <br> <br> Name 福佬村道89號 <br> 發展商： 九建 <br> 備註：收購89號 (三樓) ，福佬村道89號 共有3層，提供3個單位]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1496,7 +1496,7 @@
       <Placemark>
         <name>賈炳達道128號</name>
         <description><![CDATA[賈炳達道128號 <br> <br> Name 賈炳達道128號 <br> 發展商：中資富元地產控股高層楊立君等 <br> 備註：2017收購，2020/8獲批重建。]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1523,7 +1523,7 @@
       <Placemark>
         <name>嘉林邊道30號</name>
         <description><![CDATA[嘉林邊道30號 <br> <br> Name 嘉林邊道30號 <br> 發展商： RITZY SOAR（H.K.）LTD <br> 備註：多宗買賣登記，涉共1.05億元，新買家為RITZY SOAR（H.K.）LTD。該公司董事為星星地產(01560)主席陳文輝。]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1542,7 +1542,7 @@
       <Placemark>
         <name>嘉林邊道28A,28B號</name>
         <description><![CDATA[嘉林邊道28A,28B號 <br> <br> Name 嘉林邊道28A,28B號 <br> 發展商： 和昌物業 <br> 備註：(已經佔整個地段的3成業權)]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1561,7 +1561,7 @@
       <Placemark>
         <name>獅子石道58號</name>
         <description><![CDATA[獅子石道58號 <br> <br> Name 獅子石道58號 <br> 發展商： 金宜貿易 <br> 備註：收購1樓及2樓住宅單位]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1580,7 +1580,7 @@
       <Placemark>
         <name>獅子石道62號</name>
         <description><![CDATA[獅子石道62號    <br>       <br>   Name   獅子石道62號    <br>   發展商：   金宜貿易    <br>   備註：]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1599,7 +1599,7 @@
       <Placemark>
         <name>嘉林邊道嘉福閣</name>
         <description><![CDATA[嘉林邊道嘉福閣    <br>       <br>   Name   嘉林邊道嘉福閣    <br>   發展商：   行捷發展有限公司    <br>   備註：]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1618,7 +1618,7 @@
       <Placemark>
         <name>聯合道84-98號</name>
         <description><![CDATA[聯合道84-98號 <br> <br> Name 聯合道84-98號 <br> 發展商： 裕泰興 <br> 備註： ]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1637,7 +1637,7 @@
       <Placemark>
         <name>南角道43-51號</name>
         <description><![CDATA[南角道43-51號    <br>       <br>   Name   南角道43-51號    <br>   發展商：   盧華家族    <br>   備註：]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1658,7 +1658,7 @@
       <Placemark>
         <name>南角道42號</name>
         <description><![CDATA[南角道42號 <br> <br> Name 南角道42號 <br> 發展商： 盧華家族 <br> 備註：該地舖連1樓]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1678,7 +1678,7 @@
       <Placemark>
         <name>九龍城福佬村道79-83號</name>
         <description><![CDATA[九龍城福佬村道69至83號 <br> <br> Name 九龍城福佬村道69至83號 <br> 發展商： 恒地 <br> 備註： 重建地盤]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1698,7 +1698,7 @@
       <Placemark>
         <name>嘉林邊道20號及20號A</name>
         <description><![CDATA[嘉林邊道20號及20號A<br><br>Name 嘉林邊道20號及20號A<br>發展商：傅老榕家族<br>備註： ]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1717,7 +1717,7 @@
       <Placemark>
         <name>侯王道93號及95號</name>
         <description><![CDATA[侯王道93號及95號<br><br>Name 侯王道93號及95號<br>發展商：盧華家族<br>備註：]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1736,7 +1736,7 @@
       <Placemark>
         <name>龍崗道34號</name>
         <description><![CDATA[龍崗道34號<br><br>Name 龍崗道34號<br>發展商：unknown<br>備註：]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1755,7 +1755,7 @@
       <Placemark>
         <name>聯合道 2-16號</name>
         <description><![CDATA[Name 聯合道 2-16號<br>發展商： 中資財團<br>業權份數已上升至逾50%<br>備註： 收購一籃子物業]]></description>
-        <styleUrl>#poly-A52714-1200-76</styleUrl>
+        <styleUrl>#九龍城重建</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1776,7 +1776,7 @@
       <name>研究範圍</name>
       <Placemark>
         <name>研究範圍</name>
-        <styleUrl>#poly-A52714-5701-23-nodesc</styleUrl>
+        <styleUrl>#研究範圍</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1902,7 +1902,7 @@
       <name>市建局重建衙前圍道範圍</name>
       <Placemark>
         <name>「主地盤」(不包括御門前地盤)</name>
-        <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <styleUrl>#市建局重建衙前圍道範圍</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1925,7 +1925,7 @@
       </Placemark>
       <Placemark>
         <name>北面地盤</name>
-        <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <styleUrl>#市建局重建衙前圍道範圍</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -1945,7 +1945,7 @@
       </Placemark>
       <Placemark>
         <name>東面地盤</name>
-        <styleUrl>#poly-01579B-1200-77-nodesc</styleUrl>
+        <styleUrl>#市建局重建衙前圍道範圍</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>

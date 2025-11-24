@@ -6,7 +6,7 @@
 <description>N/A</description>
 <visibility>1</visibility>
 
-<Style id="brownStyle">
+<Style id="所有項目">
   <LineStyle>
 	<color>ff214365</color>
 	<width>2</width>
@@ -196,7 +196,7 @@
 <th>SHAPE_Area</th>
 <td>104.35532376787273</td>
 </tr></table></center>]]></description>
-<styleUrl>#brownStyle</styleUrl>
+<styleUrl>#所有項目</styleUrl>
 <ExtendedData>
 <SchemaData schemaUrl="#kml_schema_ft_VacantGovernmentSite">
 <SimpleData name="OBJECTID">1</SimpleData>

@@ -3,7 +3,7 @@
   <Document>
     <name>濕地範圍內的地產商土儲：新世界 (截止2018年)</name>
 	<description><![CDATA[ <a href="https://liber-research.com/%E3%80%8A%E7%AB%AD%E6%BE%A4%E8%80%8C%E7%AF%89%EF%BC%9A%E6%96%B0%E7%95%8C%E8%A5%BF%E5%8C%97%E9%AD%9A%E5%A1%98%E6%A5%AD%E6%AC%8A%E8%AA%BF%E6%9F%A5%E3%80%8B/" target="_blank">《竭澤而築：新界西北魚塘業權調查》 </a>]]></description>
-    <Style id="poly-0288D1-1200-76-normal">
+    <Style id="所有項目-normal">
       <LineStyle>
         <color>ffd18802</color>
         <width>1.2</width>
@@ -14,7 +14,7 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-0288D1-1200-76-highlight">
+    <Style id="所有項目-highlight">
       <LineStyle>
         <color>ffd18802</color>
         <width>1.8</width>
@@ -25,20 +25,20 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-0288D1-1200-76">
+    <StyleMap id="所有項目">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-0288D1-1200-76-normal</styleUrl>
+        <styleUrl>#所有項目-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-0288D1-1200-76-highlight</styleUrl>
+        <styleUrl>#所有項目-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
       <name>DD 99 769 A</name>
       <description><![CDATA[BIRKENHEAD PROPERTIES AND INVESTMENTS LIMITED <br> <br> FID 0 <br> LOTLOTNO 769 <br> LOTSECTCD A <br> LOTABBR DD 99 <br> SHAPEAREA 0.24923 <br> NAME_OF__2 BIRKENHEAD PROPERTIES AND INVESTMENTS LIMITED <br> INSTRUME_2 25/5/1978 <br> REGISTRA_2 31/5/1978]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -131,7 +131,7 @@
     <Placemark>
       <name>DD115 1290 A</name>
       <description><![CDATA[SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> <br> FID 1 <br> LOTLOTNO 1290 <br> LOTSECTCD A <br> LOTABBR DD115 <br> SHAPEAREA 0.034466 <br> NAME_OF__2 SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> INSTRUME_2 14/11/2017 <br> REGISTRA_2 5/12/2017]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -154,7 +154,7 @@
     <Placemark>
       <name>DD115 1290 AB</name>
       <description><![CDATA[GOLDEN FIELD LIMITED 金德豐有限公司 <br> <br> FID 2 <br> LOTLOTNO 1290 <br> LOTSECTCD AB <br> LOTABBR DD115 <br> SHAPEAREA 0.02545 <br> NAME_OF__2 GOLDEN FIELD LIMITED 金德豐有限公司 <br> INSTRUME_2 9/11/2015 <br> REGISTRA_2 8/12/2015]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -174,7 +174,7 @@
     <Placemark>
       <name>DD115 1290 AF</name>
       <description><![CDATA[SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> <br> FID 3 <br> LOTLOTNO 1290 <br> LOTSECTCD AF <br> LOTABBR DD115 <br> SHAPEAREA 0.035734 <br> NAME_OF__2 SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> INSTRUME_2 7/8/2017 <br> REGISTRA_2 1/9/2017]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -197,7 +197,7 @@
     <Placemark>
       <name>DD115 1290 AG</name>
       <description><![CDATA[GOLDEN FIELD LIMITED 金德豐有限公司 <br> <br> FID 4 <br> LOTLOTNO 1290 <br> LOTSECTCD AG <br> LOTABBR DD115 <br> SHAPEAREA 0.023757 <br> NAME_OF__2 GOLDEN FIELD LIMITED 金德豐有限公司 <br> INSTRUME_2 18/4/2016 <br> REGISTRA_2 10/5/2016]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -218,7 +218,7 @@
     <Placemark>
       <name>DD115 1290 B</name>
       <description><![CDATA[SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> <br> FID 5 <br> LOTLOTNO 1290 <br> LOTSECTCD B <br> LOTABBR DD115 <br> SHAPEAREA 0.028916 <br> NAME_OF__2 SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> INSTRUME_2 11/4/2017 <br> REGISTRA_2 5/5/2017]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -238,7 +238,7 @@
     <Placemark>
       <name>DD115 1290 C</name>
       <description><![CDATA[SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> <br> FID 6 <br> LOTLOTNO 1290 <br> LOTSECTCD C <br> LOTABBR DD115 <br> SHAPEAREA 0.022453 <br> NAME_OF__2 SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> INSTRUME_2 14/11/2017 <br> REGISTRA_2 5/12/2017]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -258,7 +258,7 @@
     <Placemark>
       <name>DD115 1290 F</name>
       <description><![CDATA[GOLDEN FIELD LIMITED 金德豐有限公司 <br> <br> FID 7 <br> LOTLOTNO 1290 <br> LOTSECTCD F <br> LOTABBR DD115 <br> SHAPEAREA 0.025592 <br> NAME_OF__2 GOLDEN FIELD LIMITED 金德豐有限公司 <br> INSTRUME_2 10/5/2016 <br> REGISTRA_2 8/6/2016]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -277,7 +277,7 @@
     <Placemark>
       <name>DD115 1290 G</name>
       <description><![CDATA[SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> <br> FID 8 <br> LOTLOTNO 1290 <br> LOTSECTCD G <br> LOTABBR DD115 <br> SHAPEAREA 0.028963 <br> NAME_OF__2 SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> INSTRUME_2 14/12/2017 <br> REGISTRA_2 9/1/2018]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -297,7 +297,7 @@
     <Placemark>
       <name>DD115 1290 H</name>
       <description><![CDATA[GOLDEN FIELD LIMITED 金德豐有限公司 <br> <br> FID 9 <br> LOTLOTNO 1290 <br> LOTSECTCD H <br> LOTABBR DD115 <br> SHAPEAREA 0.025577 <br> NAME_OF__2 GOLDEN FIELD LIMITED 金德豐有限公司 <br> INSTRUME_2 29/7/2016 <br> REGISTRA_2 23/8/2016]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -317,7 +317,7 @@
     <Placemark>
       <name>DD1151290 J</name>
       <description><![CDATA[SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> <br> FID 10 <br> LOTLOTNO 1290 <br> LOTSECTCD J <br> LOTABBR DD115 <br> SHAPEAREA 0.022628 <br> NAME_OF__2 SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> INSTRUME_2 31/7/2017 <br> REGISTRA_2 25/8/2017]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -337,7 +337,7 @@
     <Placemark>
       <name>DD115 1290 K</name>
       <description><![CDATA[GOLDEN FIELD LIMITED 金德豐有限公司 <br> <br> FID 11 <br> LOTLOTNO 1290 <br> LOTSECTCD K <br> LOTABBR DD115 <br> SHAPEAREA 0.025174 <br> NAME_OF__2 GOLDEN FIELD LIMITED 金德豐有限公司 <br> INSTRUME_2 29/7/2016 <br> REGISTRA_2 23/8/2016]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -357,7 +357,7 @@
     <Placemark>
       <name>DD115 1290 L</name>
       <description><![CDATA[GOLDEN FIELD LIMITED 金德豐有限公司 <br> <br> FID 12 <br> LOTLOTNO 1290 <br> LOTSECTCD L <br> LOTABBR DD115 <br> SHAPEAREA 0.027276 <br> NAME_OF__2 GOLDEN FIELD LIMITED 金德豐有限公司 <br> INSTRUME_2 19/4/2016 <br> REGISTRA_2 10/5/2016]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -377,7 +377,7 @@
     <Placemark>
       <name>DD115 1290 M</name>
       <description><![CDATA[SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> <br> FID 13 <br> LOTLOTNO 1290 <br> LOTSECTCD M <br> LOTABBR DD115 <br> SHAPEAREA 0.026859 <br> NAME_OF__2 SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> INSTRUME_2 14/11/2017 <br> REGISTRA_2 5/12/2017]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -396,7 +396,7 @@
     <Placemark>
       <name>DD115 1290 P</name>
       <description><![CDATA[SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> <br> FID 14 <br> LOTLOTNO 1290 <br> LOTSECTCD P <br> LOTABBR DD115 <br> SHAPEAREA 0.025546 <br> NAME_OF__2 SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> INSTRUME_2 8/8/2017 <br> REGISTRA_2 25/8/2017]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -416,7 +416,7 @@
     <Placemark>
       <name>DD115 1290 S</name>
       <description><![CDATA[GOLDEN FIELD LIMITED 金德豐有限公司 <br> <br> FID 15 <br> LOTLOTNO 1290 <br> LOTSECTCD S <br> LOTABBR DD115 <br> SHAPEAREA 0.023299 <br> NAME_OF__2 GOLDEN FIELD LIMITED 金德豐有限公司 <br> INSTRUME_2 19/4/2016 <br> REGISTRA_2 10/5/2016]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -436,7 +436,7 @@
     <Placemark>
       <name>DD115 1290 T</name>
       <description><![CDATA[GOLDEN FIELD LIMITED 金德豐有限公司 <br> <br> FID 16 <br> LOTLOTNO 1290 <br> LOTSECTCD T <br> LOTABBR DD115 <br> SHAPEAREA 0.022711 <br> NAME_OF__2 GOLDEN FIELD LIMITED 金德豐有限公司 <br> INSTRUME_2 29/7/2016 <br> REGISTRA_2 23/8/2016]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -457,7 +457,7 @@
     <Placemark>
       <name>DD115 1290 U</name>
       <description><![CDATA[SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> <br> FID 17 <br> LOTLOTNO 1290 <br> LOTSECTCD U <br> LOTABBR DD115 <br> SHAPEAREA 0.023205 <br> NAME_OF__2 SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> INSTRUME_2 23/8/2017 <br> REGISTRA_2 15/9/2017]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -477,7 +477,7 @@
     <Placemark>
       <name>DD115 1290 W</name>
       <description><![CDATA[GOLDEN FIELD LIMITED 金德豐有限公司 <br> <br> FID 18 <br> LOTLOTNO 1290 <br> LOTSECTCD W <br> LOTABBR DD115 <br> SHAPEAREA 0.025866 <br> NAME_OF__2 GOLDEN FIELD LIMITED 金德豐有限公司 <br> INSTRUME_2 22/6/2016 <br> REGISTRA_2 15/7/2016]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -498,7 +498,7 @@
     <Placemark>
       <name>DD115 1290 Y</name>
       <description><![CDATA[SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> <br> FID 19 <br> LOTLOTNO 1290 <br> LOTSECTCD Y <br> LOTABBR DD115 <br> SHAPEAREA 0.026719 <br> NAME_OF__2 SINO BLOOM INVESTMENTS LIMITED 勝邦投資有限公司 <br> INSTRUME_2 28/3/2017 <br> REGISTRA_2 25/4/2017]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -518,7 +518,7 @@
     <Placemark>
       <name>DD107 2</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 20 <br> LOTLOTNO 2 <br> LOTSECTCD <br> LOTABBR DD107 <br> SHAPEAREA 0.658457 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 18/5/1992 <br> REGISTRA_2 18/5/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -892,7 +892,7 @@
     <Placemark>
       <name>DD107 3</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 21 <br> LOTLOTNO 3 <br> LOTSECTCD <br> LOTABBR DD107 <br> SHAPEAREA 0.014187 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 18/5/1992 <br> REGISTRA_2 18/5/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -989,7 +989,7 @@
     <Placemark>
       <name>DD107 18</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 22 <br> LOTLOTNO 18 <br> LOTSECTCD <br> LOTABBR DD107 <br> SHAPEAREA 0.039407 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 28/5/1992 <br> REGISTRA_2 24/6/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1102,7 +1102,7 @@
     <Placemark>
       <name>DD107 23 B</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 23 <br> LOTLOTNO 23 <br> LOTSECTCD B <br> LOTABBR DD107 <br> SHAPEAREA 0.044712 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 28/5/1992 <br> REGISTRA_2 24/6/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1203,7 +1203,7 @@
     <Placemark>
       <name>DD107 25</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 24 <br> LOTLOTNO 25 <br> LOTSECTCD <br> LOTABBR DD107 <br> SHAPEAREA 0.039274 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 22/7/1992 <br> REGISTRA_2 18/8/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1344,7 +1344,7 @@
     <Placemark>
       <name>DD104 4025</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 25 <br> LOTLOTNO 4025 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.015817 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 20/9/1992 <br> REGISTRA_2 26/10/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1424,7 +1424,7 @@
     <Placemark>
       <name>DD104 4027 A</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 26 <br> LOTLOTNO 4027 <br> LOTSECTCD A <br> LOTABBR DD104 <br> SHAPEAREA 0.034798 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 24/2/1994 <br> REGISTRA_2 24/2/1994]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1502,7 +1502,7 @@
     <Placemark>
       <name>DD104 4027 B</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 27 <br> LOTLOTNO 4027 <br> LOTSECTCD B <br> LOTABBR DD104 <br> SHAPEAREA 0.027843 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 4/2/1994 <br> REGISTRA_2 24/2/1994]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1541,7 +1541,7 @@
     <Placemark>
       <name>DD104 4028</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 28 <br> LOTLOTNO 4028 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.023784 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 4/2/1994 <br> REGISTRA_2 24/2/1994]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1593,7 +1593,7 @@
     <Placemark>
       <name>DD104 3720 A 1</name>
       <description><![CDATA[Infinity View Limited <br> <br> FID 29 <br> LOTLOTNO 3720 <br> LOTSECTCD A,1 <br> LOTABBR DD104 <br> SHAPEAREA 1.103198 <br> NAME_OF__2 Infinity View Limited <br> INSTRUME_2 12/2/1992 <br> REGISTRA_2 5/3/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1971,7 +1971,7 @@
     <Placemark>
       <name>DD104 3720 A RP</name>
       <description><![CDATA[Infinity View Limited <br> <br> FID 30 <br> LOTLOTNO 3720 <br> LOTSECTCD A,RP <br> LOTABBR DD104 <br> SHAPEAREA 1.074168 <br> NAME_OF__2 Infinity View Limited <br> INSTRUME_2 8/2/1992 <br> REGISTRA_2 20/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2047,7 +2047,7 @@
     <Placemark>
       <name>DD104 3720 B 1</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 31 <br> LOTLOTNO 3720 <br> LOTSECTCD B,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.37346 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 14/1/1992 <br> REGISTRA_2 7/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2151,7 +2151,7 @@
     <Placemark>
       <name>DD104 3720 C RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 32 <br> LOTLOTNO 3720 <br> LOTSECTCD C,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.036824 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 24/1/1992 <br> REGISTRA_2 11/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2228,7 +2228,7 @@
     <Placemark>
       <name>DD104 4033 A RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 33 <br> LOTLOTNO 4033 <br> LOTSECTCD A,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.187746 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 29/4/1994 <br> REGISTRA_2 9/6/1994]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2451,7 +2451,7 @@
     <Placemark>
       <name>DD104 3720 D 1 RP</name>
       <description><![CDATA[Infinity View Limited <br> <br> FID 34 <br> LOTLOTNO 3720 <br> LOTSECTCD D,1,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.6149 <br> NAME_OF__2 Infinity View Limited <br> INSTRUME_2 24/1/1992 <br> REGISTRA_2 11/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -2823,7 +2823,7 @@
     <Placemark>
       <name>DD104 3720 D 2 RP</name>
       <description><![CDATA[Infinity View Limited <br> <br> FID 35 <br> LOTLOTNO 3720 <br> LOTSECTCD D,2,RP <br> LOTABBR DD104 <br> SHAPEAREA 1.472439 <br> NAME_OF__2 Infinity View Limited <br> INSTRUME_2 8/2/1992 <br> REGISTRA_2 20/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3049,7 +3049,7 @@
     <Placemark>
       <name>DD104 3720 D 3 RP</name>
       <description><![CDATA[Infinity View Limited <br> <br> FID 36 <br> LOTLOTNO 3720 <br> LOTSECTCD D,3,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.672307 <br> NAME_OF__2 Infinity View Limited <br> INSTRUME_2 8/2/1992 <br> REGISTRA_2 20/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3149,7 +3149,7 @@
     <Placemark>
       <name>DD104 3720 E RP</name>
       <description><![CDATA[Infinity View Limited <br> <br> FID 37 <br> LOTLOTNO 3720 <br> LOTSECTCD E,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.09587 <br> NAME_OF__2 Infinity View Limited <br> INSTRUME_2 14/10/1992 <br> REGISTRA_2 6/11/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3180,7 +3180,7 @@
     <Placemark>
       <name>DD104 3721 A 1</name>
       <description><![CDATA[Plant Universal Limited <br> <br> FID 38 <br> LOTLOTNO 3721 <br> LOTSECTCD A,1 <br> LOTABBR DD104 <br> SHAPEAREA 2.322044 <br> NAME_OF__2 Plant Universal Limited <br> INSTRUME_2 18/11/1992 <br> REGISTRA_2 3/12/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3432,7 +3432,7 @@
     <Placemark>
       <name>DD104 3721 A 3</name>
       <description><![CDATA[Infinity View Limited <br> <br> FID 39 <br> LOTLOTNO 3721 <br> LOTSECTCD A,3 <br> LOTABBR DD104 <br> SHAPEAREA 0.973984 <br> NAME_OF__2 Infinity View Limited <br> INSTRUME_2 16/3/1992 <br> REGISTRA_2 10/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -3713,7 +3713,7 @@
     <Placemark>
       <name>DD104 3721 B 1 A</name>
       <description><![CDATA[Infinity View Limited <br> <br> FID 40 <br> LOTLOTNO 3721 <br> LOTSECTCD B,1,A <br> LOTABBR DD104 <br> SHAPEAREA 2.793441 <br> NAME_OF__2 Infinity View Limited <br> INSTRUME_2 16/3/1992 <br> REGISTRA_2 10/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4002,7 +4002,7 @@
     <Placemark>
       <name>DD104 3721 B 1 B RP</name>
       <description><![CDATA[Infinity View Limited <br> <br> FID 41 <br> LOTLOTNO 3721 <br> LOTSECTCD B,1,B,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.455185 <br> NAME_OF__2 Infinity View Limited <br> INSTRUME_2 31/1/1992 <br> REGISTRA_2 20/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4064,7 +4064,7 @@
     <Placemark>
       <name>DD104 3721 B 1 RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 42 <br> LOTLOTNO 3721 <br> LOTSECTCD B,1,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.890593 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 7/5/1993 <br> REGISTRA_2 5/6/1993]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4165,7 +4165,7 @@
     <Placemark>
       <name>DD104 3721 B RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 43 <br> LOTLOTNO 3721 <br> LOTSECTCD B,RP <br> LOTABBR DD104 <br> SHAPEAREA 2.366243 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 18/11/1992 <br> REGISTRA_2 3/12/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4357,7 +4357,7 @@
     <Placemark>
       <name>DD104 3721 C 1 RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 44 <br> LOTLOTNO 3721 <br> LOTSECTCD C,1,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.447085 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 24/1/1992 <br> REGISTRA_2 11/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -4475,7 +4475,7 @@
     <Placemark>
       <name>DD104 3721 C 2 RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 45 <br> LOTLOTNO 3721 <br> LOTSECTCD C,2,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.699699 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 16/11/1992 <br> REGISTRA_2 7/12/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -4555,7 +4555,7 @@
     <Placemark>
       <name>DD104 3721 C 3 A</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 46 <br> LOTLOTNO 3721 <br> LOTSECTCD C,3,A <br> LOTABBR DD104 <br> SHAPEAREA 0.155069 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 14/1/1992 <br> REGISTRA_2 7/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4677,7 +4677,7 @@
     <Placemark>
       <name>DD104 3721 C 4 B RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 47 <br> LOTLOTNO 3721 <br> LOTSECTCD C,4,B,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.064081 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 11/3/1992 <br> REGISTRA_2 27/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4699,7 +4699,7 @@
     <Placemark>
       <name>DD104 3721 C 4 C</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 48 <br> LOTLOTNO 3721 <br> LOTSECTCD C,4,C <br> LOTABBR DD104 <br> SHAPEAREA 0.085652 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 11/3/1992 <br> REGISTRA_2 27/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4720,7 +4720,7 @@
     <Placemark>
       <name>DD104 3721 C 4 RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 49 <br> LOTLOTNO 3721 <br> LOTSECTCD C,4,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.084314 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 11/3/1992 <br> REGISTRA_2 27/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -4751,7 +4751,7 @@
     <Placemark>
       <name>DD104 3721 C 5 A 1 RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 50 <br> LOTLOTNO 3721 <br> LOTSECTCD C,5,A,1,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.130756 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 21/1/1993 <br> REGISTRA_2 19/2/1993]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -4813,7 +4813,7 @@
     <Placemark>
       <name>DD104 3721 C 5 A RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 51 <br> LOTLOTNO 3721 <br> LOTSECTCD C,5,A,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.063174 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 29/12/1992 <br> REGISTRA_2 30/1/1993]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -4867,7 +4867,7 @@
     <Placemark>
       <name>DD104 3721 C 5 B RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 52 <br> LOTLOTNO 3721 <br> LOTSECTCD C,5,B,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.310425 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 21/12/1993 <br> REGISTRA_2 17/1/1994]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -4913,7 +4913,7 @@
     <Placemark>
       <name>DD104 3721 C 5 C RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 53 <br> LOTLOTNO 3721 <br> LOTSECTCD C,5,C,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.129713 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 11/3/1993 <br> REGISTRA_2 16/4/1993]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -4952,7 +4952,7 @@
     <Placemark>
       <name>DD104 3721 C 5 D RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 54 <br> LOTLOTNO 3721 <br> LOTSECTCD C,5,D,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.094044 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 16/11/1992 <br> REGISTRA_2 8/12/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -4988,7 +4988,7 @@
     <Placemark>
       <name>DD104 3721 C 5 E RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 55 <br> LOTLOTNO 3721 <br> LOTSECTCD C,5,E,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.07256 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 15/4/1993 <br> REGISTRA_2 30/4/1993]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -5027,7 +5027,7 @@
     <Placemark>
       <name>DD104 3721 C 5 F RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 56 <br> LOTLOTNO 3721 <br> LOTSECTCD C,5,F,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.034612 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 4/5/2000 <br> REGISTRA_2 2/6/2000]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -5064,7 +5064,7 @@
     <Placemark>
       <name>DD104 3721 C 5 G RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 57 <br> LOTLOTNO 3721 <br> LOTSECTCD C,5,G,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.039185 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 20/7/1993 <br> REGISTRA_2 12/8/1993]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -5100,7 +5100,7 @@
     <Placemark>
       <name>DD104 3721 C 5 RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 58 <br> LOTLOTNO 3721 <br> LOTSECTCD C,5,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.115084 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 16/11/1992 <br> REGISTRA_2 8/12/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -5143,7 +5143,7 @@
     <Placemark>
       <name>DD104 3721 C 6</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 59 <br> LOTLOTNO 3721 <br> LOTSECTCD C,6 <br> LOTABBR DD104 <br> SHAPEAREA 0.308988 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 14/1/1992 <br> REGISTRA_2 7/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5311,7 +5311,7 @@
     <Placemark>
       <name>DD104 3721 RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 60 <br> LOTLOTNO 3721 <br> LOTSECTCD RP <br> LOTABBR DD104 <br> SHAPEAREA 0.016444 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 24/1/1992 <br> REGISTRA_2 11/2/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5388,7 +5388,7 @@
     <Placemark>
       <name>DD104 3722 B 1</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 61 <br> LOTLOTNO 3722 <br> LOTSECTCD B,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.542032 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 16/3/1992 <br> REGISTRA_2 10/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5688,7 +5688,7 @@
     <Placemark>
       <name>DD104 3722 B 2</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 62 <br> LOTLOTNO 3722 <br> LOTSECTCD B,2 <br> LOTABBR DD104 <br> SHAPEAREA 0.780329 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 1/2/1992 <br> REGISTRA_2 12/3/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5754,7 +5754,7 @@
     <Placemark>
       <name>DD104 3722 B 3</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 63 <br> LOTLOTNO 3722 <br> LOTSECTCD B,3 <br> LOTABBR DD104 <br> SHAPEAREA 0.435954 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 14/10/1992 <br> REGISTRA_2 6/11/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5820,7 +5820,7 @@
     <Placemark>
       <name>DD104 3722 B 4</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 64 <br> LOTLOTNO 3722 <br> LOTSECTCD B,4 <br> LOTABBR DD104 <br> SHAPEAREA 0.510573 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 16/3/1992 <br> REGISTRA_2 14/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -5908,7 +5908,7 @@
     <Placemark>
       <name>DD104 3722 B RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 65 <br> LOTLOTNO 3722 <br> LOTSECTCD B,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.275934 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 1/2/1992 <br> REGISTRA_2 5/3/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6068,7 +6068,7 @@
     <Placemark>
       <name>DD104 3722 C 1</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 66 <br> LOTLOTNO 3722 <br> LOTSECTCD C,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.579035 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 16/3/1992 <br> REGISTRA_2 10/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6257,7 +6257,7 @@
     <Placemark>
       <name>DD104 3722 C 2</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 67 <br> LOTLOTNO 3722 <br> LOTSECTCD C,2 <br> LOTABBR DD104 <br> SHAPEAREA 0.903849 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 1/2/1992 <br> REGISTRA_2 12/3/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6322,7 +6322,7 @@
     <Placemark>
       <name>DD104 3722 C 3</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 68 <br> LOTLOTNO 3722 <br> LOTSECTCD C,3 <br> LOTABBR DD104 <br> SHAPEAREA 0.484166 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 14/10/1992 <br> REGISTRA_2 6/11/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6354,7 +6354,7 @@
     <Placemark>
       <name>DD104 3722 C 4</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 69 <br> LOTLOTNO 3722 <br> LOTSECTCD C,4 <br> LOTABBR DD104 <br> SHAPEAREA 0.544489 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 16/3/1992 <br> REGISTRA_2 14/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6401,7 +6401,7 @@
     <Placemark>
       <name>DD104 3722 C 5 RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 70 <br> LOTLOTNO 3722 <br> LOTSECTCD C,5,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.651444 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 1/2/1992 <br> REGISTRA_2 5/3/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6460,7 +6460,7 @@
     <Placemark>
       <name>DD104 3722 C RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 71 <br> LOTLOTNO 3722 <br> LOTSECTCD C,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.370197 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 1/2/1992 <br> REGISTRA_2 5/3/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -6667,7 +6667,7 @@
     <Placemark>
       <name>DD104 3722 D RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 72 <br> LOTLOTNO 3722 <br> LOTSECTCD D,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.030603 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 16/3/1992 <br> REGISTRA_2 10/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6698,7 +6698,7 @@
     <Placemark>
       <name>DD104 3722 E</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 73 <br> LOTLOTNO 3722 <br> LOTSECTCD E <br> LOTABBR DD104 <br> SHAPEAREA 0.103447 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 1/2/1992 <br> REGISTRA_2 12/3/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6752,7 +6752,7 @@
     <Placemark>
       <name>DD104 3722 F</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 74 <br> LOTLOTNO 3722 <br> LOTSECTCD F <br> LOTABBR DD104 <br> SHAPEAREA 0.048282 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 14/10/1992 <br> REGISTRA_2 6/11/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6773,7 +6773,7 @@
     <Placemark>
       <name>DD104 3722 G RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 75 <br> LOTLOTNO 3722 <br> LOTSECTCD G,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.070061 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 16/3/1992 <br> REGISTRA_2 14/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6795,7 +6795,7 @@
     <Placemark>
       <name>DD104 3722 RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 76 <br> LOTLOTNO 3722 <br> LOTSECTCD RP <br> LOTABBR DD104 <br> SHAPEAREA 0.117349 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 16/3/1992 <br> REGISTRA_2 10/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>
@@ -6838,7 +6838,7 @@
     <Placemark>
       <name>DD104 3723 B 1</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 77 <br> LOTLOTNO 3723 <br> LOTSECTCD B,1 <br> LOTABBR DD104 <br> SHAPEAREA 0.426022 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 14/10/1992 <br> REGISTRA_2 6/11/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6920,7 +6920,7 @@
     <Placemark>
       <name>DD104 3723 B RP</name>
       <description><![CDATA[INFINITY VIEW LIMITED <br> <br> FID 78 <br> LOTLOTNO 3723 <br> LOTSECTCD B,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.305621 <br> NAME_OF__2 INFINITY VIEW LIMITED <br> INSTRUME_2 16/3/1992 <br> REGISTRA_2 10/4/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -6950,7 +6950,7 @@
     <Placemark>
       <name>DD104 4021 RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 79 <br> LOTLOTNO 4021 <br> LOTSECTCD RP <br> LOTABBR DD104 <br> SHAPEAREA 0.022163 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 16/4/1992 <br> REGISTRA_2 19/5/1992]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7040,7 +7040,7 @@
     <Placemark>
       <name>DD104 4022 A RP</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 80 <br> LOTLOTNO 4022 <br> LOTSECTCD A,RP <br> LOTABBR DD104 <br> SHAPEAREA 0.056987 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 4/2/1994 <br> REGISTRA_2 24/2/1994]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7147,7 +7147,7 @@
     <Placemark>
       <name>DD104 4022 B</name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 81 <br> LOTLOTNO 4022 <br> LOTSECTCD B <br> LOTABBR DD104 <br> SHAPEAREA 0.062574 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 4/2/1994 <br> REGISTRA_2 24/2/1994]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7286,7 +7286,7 @@
     <Placemark>
       <name>DD104 4023 </name>
       <description><![CDATA[PLANET UNIVERSAL LIMITED <br> <br> FID 82 <br> LOTLOTNO 4023 <br> LOTSECTCD <br> LOTABBR DD104 <br> SHAPEAREA 0.056564 <br> NAME_OF__2 PLANET UNIVERSAL LIMITED <br> INSTRUME_2 4/2/1994 <br> REGISTRA_2 24/2/1994]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -7415,7 +7415,7 @@
     <Placemark>
       <name>DD99 769 RP</name>
       <description><![CDATA[BIRKENHEAD PROPERTIES AND INVESTMENTS LIMITED <br> <br> FID 83 <br> LOTLOTNO 769 <br> LOTSECTCD RP <br> LOTABBR DD 99 <br> SHAPEAREA 25.954154 <br> NAME_OF__2 BIRKENHEAD PROPERTIES AND INVESTMENTS LIMITED <br> INSTRUME_2 25/5/1978 <br> REGISTRA_2 31/5/1978]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -9767,7 +9767,7 @@
     <Placemark>
       <name>DD129 1557 RP</name>
       <description><![CDATA[BLOOMSWAY ENTERPRISES LIMITED <br> <br> FID 84 <br> LOTLOTNO 1557 <br> LOTSECTCD RP <br> LOTABBR DD129 <br> SHAPEAREA 0.197603 <br> NAME_OF__2 BLOOMSWAY ENTERPRISES LIMITED <br> INSTRUME_2 31/12/2015 <br> REGISTRA_2 28/1/2016]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <MultiGeometry>
         <Polygon>
           <outerBoundaryIs>

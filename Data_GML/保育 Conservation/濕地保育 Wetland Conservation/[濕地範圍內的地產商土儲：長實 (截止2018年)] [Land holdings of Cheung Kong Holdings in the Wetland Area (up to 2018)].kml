@@ -3,7 +3,7 @@
   <Document>
     <name>濕地範圍內的地產商土儲：長實 (截止2018年)</name>
 	<description><![CDATA[ <a href="https://liber-research.com/%E3%80%8A%E7%AB%AD%E6%BE%A4%E8%80%8C%E7%AF%89%EF%BC%9A%E6%96%B0%E7%95%8C%E8%A5%BF%E5%8C%97%E9%AD%9A%E5%A1%98%E6%A5%AD%E6%AC%8A%E8%AA%BF%E6%9F%A5%E3%80%8B/" target="_blank">《竭澤而築：新界西北魚塘業權調查》 </a>]]></description>
-    <Style id="poly-FFD600-1200-76-normal">
+    <Style id="所有項目-normal">
       <LineStyle>
         <color>ff00d6ff</color>
         <width>1.2</width>
@@ -14,7 +14,7 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <Style id="poly-FFD600-1200-76-highlight">
+    <Style id="所有項目-highlight">
       <LineStyle>
         <color>ff00d6ff</color>
         <width>1.8</width>
@@ -25,20 +25,20 @@
         <outline>1</outline>
       </PolyStyle>
     </Style>
-    <StyleMap id="poly-FFD600-1200-76">
+    <StyleMap id="所有項目">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-FFD600-1200-76-normal</styleUrl>
+        <styleUrl>#所有項目-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-FFD600-1200-76-highlight</styleUrl>
+        <styleUrl>#所有項目-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
       <name>DD123 1457 RP </name>
       <description><![CDATA[MUTUAL LUCK INVESTMENT <br><br>FID 0 <br> LOTLOTNO 1457 <br> LOTSECTCD RP <br> LOTABBR DD123 <br> SHAPEAREA 79.76837 <br> NAME_OF__2 MUTUAL LUCK INVESTMENT LIMITED <br> INSTRUME_2 8/5/1989 <br> REGISTRA_2 2/6/1989 <br> Big_Four_W Cheung Kong]]></description>
-      <styleUrl>#poly-FFD600-1200-76</styleUrl>
+      <styleUrl>#所有項目</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
