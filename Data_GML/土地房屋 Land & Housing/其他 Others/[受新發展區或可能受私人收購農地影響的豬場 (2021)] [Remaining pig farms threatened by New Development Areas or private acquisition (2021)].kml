@@ -1410,7 +1410,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>粉嶺北新發展區</name>
         <description>粉嶺北新發展區</description>
-        <styleUrl>#poly-0288D1-1000-87</styleUrl>
+        <styleUrl>#所在之新發展區或牽涉的發展計劃</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
@@ -2287,7 +2287,7 @@ KING WIN INC LIMITED
       <Placemark>
         <name>元朗南房屋用地規劃及工程研究</name>
         <description>元朗南</description>
-        <styleUrl>#poly-0288D1-1000-87</styleUrl>
+        <styleUrl>#所在之新發展區或牽涉的發展計劃</styleUrl>
         <Polygon>
           <outerBoundaryIs>
             <LinearRing>
