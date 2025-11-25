@@ -2,8 +2,8 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>2025 尚存傳統粥店地圖</name>
-	<description> &lt;a href="https://www.facebook.com/photo.php?fbid=1138701121628325&amp;id=100064653431413&amp;set=a.630338522464590" target="_blank"&gt;【「粥」襟見肘】想幫襯傳統老粥舖仲可以去邊度？ &lt;/a&gt;</description>
-    <Style id="icon-1577-FF5252-normal">
+	<description><![CDATA[ <a href="https://www.facebook.com/photo.php?fbid=1138701121628325&id=100064653431413&set=a.630338522464590" target="_blank">【「粥」襟見肘】想幫襯傳統老粥舖仲可以去邊度？ </a>]]></description>
+    <Style id="所有項目-normal">
       <IconStyle>
         <color>ff5252ff</color>
         <scale>1</scale>
@@ -15,7 +15,7 @@
         <scale>0</scale>
       </LabelStyle>
     </Style>
-    <Style id="icon-1577-FF5252-highlight">
+    <Style id="所有項目-highlight">
       <IconStyle>
         <color>ff5252ff</color>
         <scale>1</scale>
@@ -27,14 +27,14 @@
         <scale>1</scale>
       </LabelStyle>
     </Style>
-    <StyleMap id="icon-1577-FF5252">
+    <StyleMap id="所有項目">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1577-FF5252-normal</styleUrl>
+        <styleUrl>#所有項目-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1577-FF5252-highlight</styleUrl>
+        <styleUrl>#所有項目-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Folder>
@@ -43,7 +43,7 @@
         <name>成興粥品</name>
         <address>西環西營盤德輔道西408號地下D號舖</address>
         <description>地址: 西環西營盤德輔道西408號地下D號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西環西營盤德輔道西408號地下D號舖</value>
@@ -63,7 +63,7 @@
         <name>順利粥品</name>
         <address>柴灣怡豐街33號漁灣街市1樓熟食中心1號舖</address>
         <description>地址: 柴灣怡豐街33號漁灣街市1樓熟食中心1號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>柴灣怡豐街33號漁灣街市1樓熟食中心1號舖</value>
@@ -83,7 +83,7 @@
         <name>嘉潤粥店</name>
         <address>西環西營盤皇后大道西275號地舖</address>
         <description>地址: 西環西營盤皇后大道西275號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾10年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西環西營盤皇后大道西275號地舖</value>
@@ -103,7 +103,7 @@
         <name>得園</name>
         <address>香港仔漁光道熟食街市5樓</address>
         <description>地址: 香港仔漁光道熟食街市5樓&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>香港仔漁光道熟食街市5樓</value>
@@ -123,7 +123,7 @@
         <name>百好粥品</name>
         <address>筲箕灣筲箕灣東大街59-99號東威大廈3座地下2號舖</address>
         <description>地址: 筲箕灣筲箕灣東大街59-99號東威大廈3座地下2號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>筲箕灣筲箕灣東大街59-99號東威大廈3座地下2號舖</value>
@@ -143,7 +143,7 @@
         <name>君記粥店</name>
         <address>筲箕灣筲箕灣道314號地下B號舖</address>
         <description>地址: 筲箕灣筲箕灣道314號地下B號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>筲箕灣筲箕灣道314號地下B號舖</value>
@@ -163,7 +163,7 @@
         <name>海亮粥店</name>
         <address>西環石塘咀德輔道西356號地舖</address>
         <description>地址: 西環石塘咀德輔道西356號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西環石塘咀德輔道西356號地舖</value>
@@ -183,7 +183,7 @@
         <name>金豐粥店</name>
         <address>西環西營盤皇后大道西260號地舖</address>
         <description>地址: 西環西營盤皇后大道西260號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西環西營盤皇后大道西260號地舖</value>
@@ -203,7 +203,7 @@
         <name>明粥麵飯</name>
         <address>柴灣小西灣道10號小西灣廣場地下本灣市場24-25號舖</address>
         <description>地址: 柴灣小西灣道10號小西灣廣場地下本灣市場24-25號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 20:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>柴灣小西灣道10號小西灣廣場地下本灣市場24-25號舖</value>
@@ -223,7 +223,7 @@
         <name>新深粥店</name>
         <address>灣仔軒尼詩道168號地舖</address>
         <description>地址: 灣仔軒尼詩道168號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 00:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>灣仔軒尼詩道168號地舖</value>
@@ -243,7 +243,7 @@
         <name>蓮園粥粉麵</name>
         <address>跑馬地成和道51A地下D號舖</address>
         <description>地址: 跑馬地成和道51A地下D號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 10:30 - 02:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 40年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>跑馬地成和道51A地下D號舖</value>
@@ -263,7 +263,7 @@
         <name>合利粥品店</name>
         <address>香港仔東勝道21號地舖</address>
         <description>地址: 香港仔東勝道21號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 05:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾30年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>香港仔東勝道21號地舖</value>
@@ -283,7 +283,7 @@
         <name>新合記</name>
         <address>北角渣華道市政大廈2樓</address>
         <description>地址: 北角渣華道市政大廈2樓&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 15:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>北角渣華道市政大廈2樓</value>
@@ -303,7 +303,7 @@
         <name>新榮興粥店</name>
         <address>西灣河筲箕灣道152號地舖</address>
         <description>地址: 西灣河筲箕灣道152號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 21:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西灣河筲箕灣道152號地舖</value>
@@ -323,7 +323,7 @@
         <name>鮮味園粥麵</name>
         <address>香港仔東勝道19號地舖</address>
         <description>地址: 香港仔東勝道19號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 23:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>香港仔東勝道19號地舖</value>
@@ -343,7 +343,7 @@
         <name>新康記粥店</name>
         <address>大坑京街9號地舖</address>
         <description>地址: 大坑京街9號地舖&lt;br&gt;營業時間 (Openrice): 星期一 07:00 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 約45年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大坑京街9號地舖</value>
@@ -363,7 +363,7 @@
         <name>生記粥店</name>
         <address>天后電氣道126號榮華大廈地舖</address>
         <description>地址: 天后電氣道126號榮華大廈地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>天后電氣道126號榮華大廈地舖</value>
@@ -383,7 +383,7 @@
         <name>大發粥粉麵</name>
         <address>銅鑼灣堅拿道西10號地舖</address>
         <description>地址: 銅鑼灣堅拿道西10號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>銅鑼灣堅拿道西10號地舖</value>
@@ -403,7 +403,7 @@
         <name>財記粥麵</name>
         <address>柴灣吉勝街10號吉勝街熟食市場7號舖</address>
         <description>地址: 柴灣吉勝街10號吉勝街熟食市場7號舖&lt;br&gt;營業時間 (Openrice): 星期日 07:00 - 13:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 65年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>柴灣吉勝街10號吉勝街熟食市場7號舖</value>
@@ -423,7 +423,7 @@
         <name>大誠餐廳</name>
         <address>筲箕灣筲箕灣道372號地舖</address>
         <description>地址: 筲箕灣筲箕灣道372號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 18:00 - 03:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>筲箕灣筲箕灣道372號地舖</value>
@@ -443,7 +443,7 @@
         <name>海匯粥品</name>
         <address>鰂魚涌英皇道1010-1056號東匯中心地庫Z1號舖</address>
         <description>地址: 鰂魚涌英皇道1010-1056號東匯中心地庫Z1號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 20:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>鰂魚涌英皇道1010-1056號東匯中心地庫Z1號舖</value>
@@ -463,7 +463,7 @@
         <name>新發記腸粉粥品</name>
         <address>灣仔灣仔道148號地舖</address>
         <description>地址: 灣仔灣仔道148號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 08:00 - 22:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>灣仔灣仔道148號地舖</value>
@@ -483,7 +483,7 @@
         <name>粥君好</name>
         <address>西環堅尼地城卑路乍街32號地下A號舖</address>
         <description>地址: 西環堅尼地城卑路乍街32號地下A號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西環堅尼地城卑路乍街32號地下A號舖</value>
@@ -503,7 +503,7 @@
         <name>生記粥麵</name>
         <address>鰂魚涌英皇道955-957號惠芳閣地下B號舖</address>
         <description>地址: 鰂魚涌英皇道955-957號惠芳閣地下B號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>鰂魚涌英皇道955-957號惠芳閣地下B號舖</value>
@@ -523,7 +523,7 @@
         <name>新九記粥麵</name>
         <address>灣仔大王東街9號地舖</address>
         <description>地址: 灣仔大王東街9號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>灣仔大王東街9號地舖</value>
@@ -543,7 +543,7 @@
         <name>生記粥品專家</name>
         <address>上環畢街7-9號地舖</address>
         <description>地址: 上環畢街7-9號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>上環畢街7-9號地舖</value>
@@ -563,7 +563,7 @@
         <name>新生粥店</name>
         <address>深水埗北河街22號地舖</address>
         <description>地址: 深水埗北河街22號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗北河街22號地舖</value>
@@ -583,7 +583,7 @@
         <name>強記粥店</name>
         <address>土瓜灣貴州街2號地下8號舖</address>
         <description>地址: 土瓜灣貴州街2號地下8號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>土瓜灣貴州街2號地下8號舖</value>
@@ -603,7 +603,7 @@
         <name>采頤粥店</name>
         <address>新蒲崗彩虹道242號采頤花園商場地下106號舖</address>
         <description>地址: 新蒲崗彩虹道242號采頤花園商場地下106號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>新蒲崗彩虹道242號采頤花園商場地下106號舖</value>
@@ -623,7 +623,7 @@
         <name>新榮記粥店</name>
         <address>深水埗桂林街46A號地舖</address>
         <description>地址: 深水埗桂林街46A號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗桂林街46A號地舖</value>
@@ -643,7 +643,7 @@
         <name>金香一品</name>
         <address>石硤尾偉智里1-3號白田購物中心地下23號舖</address>
         <description>地址: 石硤尾偉智里1-3號白田購物中心地下23號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>石硤尾偉智里1-3號白田購物中心地下23號舖</value>
@@ -663,7 +663,7 @@
         <name>心悅美食</name>
         <address>藍田碧雲道168號廣田商場1樓37號舖</address>
         <description>地址: 藍田碧雲道168號廣田商場1樓37號舖&lt;br&gt;營業時間 (Openrice): 星期一 06:30 - 15:00；星期六至日 06:30 - 16:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>藍田碧雲道168號廣田商場1樓37號舖</value>
@@ -683,7 +683,7 @@
         <name>祺記</name>
         <address>深水埗基隆街333號北河街市政大廈2樓熟食中心13號舖</address>
         <description>地址: 深水埗基隆街333號北河街市政大廈2樓熟食中心13號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗基隆街333號北河街市政大廈2樓熟食中心13號舖</value>
@@ -703,7 +703,7 @@
         <name>粥點</name>
         <address>觀塘協和街121號仁富大廈地舖</address>
         <description>地址: 觀塘協和街121號仁富大廈地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>觀塘協和街121號仁富大廈地舖</value>
@@ -723,7 +723,7 @@
         <name>袋記粥店</name>
         <address>長沙灣長沙灣道76號地舖</address>
         <description>地址: 長沙灣長沙灣道76號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 22:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>長沙灣長沙灣道76號地舖</value>
@@ -743,7 +743,7 @@
         <name>幸福粥店</name>
         <address>慈雲山毓華里28號萬寶大廈2號地舖</address>
         <description>地址: 慈雲山毓華里28號萬寶大廈2號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 20:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>慈雲山毓華里28號萬寶大廈2號地舖</value>
@@ -763,7 +763,7 @@
         <name>豪仔記生滾粥</name>
         <address>太子砵蘭街369號地舖</address>
         <description>地址: 太子砵蘭街369號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 17:00 - 02:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>太子砵蘭街369號地舖</value>
@@ -783,7 +783,7 @@
         <name>樂聚</name>
         <address>觀塘安秀道20號安泰邨安泰商場地下高層107號舖</address>
         <description>地址: 觀塘安秀道20號安泰邨安泰商場地下高層107號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>觀塘安秀道20號安泰邨安泰商場地下高層107號舖</value>
@@ -803,7 +803,7 @@
         <name>興華粥麵</name>
         <address>深水埗石硤尾邨20座116號舖</address>
         <description>地址: 深水埗石硤尾邨20座116號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗石硤尾邨20座116號舖</value>
@@ -823,7 +823,7 @@
         <name>西記粥店</name>
         <address>旺角旺角道25號地舖</address>
         <description>地址: 旺角旺角道25號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 02:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>旺角旺角道25號地舖</value>
@@ -843,7 +843,7 @@
         <name>明粥粉麵</name>
         <address>藍田啟田道50號啟田市場地下1088號舖</address>
         <description>地址: 藍田啟田道50號啟田市場地下1088號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:30 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>藍田啟田道50號啟田市場地下1088號舖</value>
@@ -863,7 +863,7 @@
         <name>豐粥粉麵飯</name>
         <address>九龍城啟德沐泰街11號尚．珒溋地下4號舖</address>
         <description>地址: 九龍城啟德沐泰街11號尚．珒溋地下4號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>九龍城啟德沐泰街11號尚．珒溋地下4號舖</value>
@@ -883,7 +883,7 @@
         <name>一品生記粥店</name>
         <address>旺角上海街512號地舖</address>
         <description>地址: 旺角上海街512號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>旺角上海街512號地舖</value>
@@ -903,7 +903,7 @@
         <name>新光粥店</name>
         <address>佐敦寶靈街44號地舖</address>
         <description>地址: 佐敦寶靈街44號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 55年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>佐敦寶靈街44號地舖</value>
@@ -923,7 +923,7 @@
         <name>坤記粥店</name>
         <address>深水埗元州街39A號地舖</address>
         <description>地址: 深水埗元州街39A號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾70年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗元州街39A號地舖</value>
@@ -943,7 +943,7 @@
         <name>坤記粥店</name>
         <address>深水埗北河街56號地舖</address>
         <description>地址: 深水埗北河街56號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 19:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾70年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗北河街56號地舖</value>
@@ -963,7 +963,7 @@
         <name>輝記雞粥檔</name>
         <address>旺角旺角道53A號地舖</address>
         <description>地址: 旺角旺角道53A號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 20:00 - 06:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>旺角旺角道53A號地舖</value>
@@ -983,7 +983,7 @@
         <name>宏興美食館廟街豬骨粥</name>
         <address>油麻地廟街2號地舖</address>
         <description>地址: 油麻地廟街2號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 12:00 - 22:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 56年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>油麻地廟街2號地舖</value>
@@ -1003,7 +1003,7 @@
         <name>粥盛</name>
         <address>土瓜灣落山道9B號地舖</address>
         <description>地址: 土瓜灣落山道9B號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>土瓜灣落山道9B號地舖</value>
@@ -1023,7 +1023,7 @@
         <name>粥滿家</name>
         <address>新蒲崗錦榮街10號地舖</address>
         <description>地址: 新蒲崗錦榮街10號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 21:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>新蒲崗錦榮街10號地舖</value>
@@ -1043,7 +1043,7 @@
         <name>新興發粥店</name>
         <address>土瓜灣馬頭角道5號</address>
         <description>地址: 土瓜灣馬頭角道5號&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 01:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>土瓜灣馬頭角道5號</value>
@@ -1063,7 +1063,7 @@
         <name>新貴記粥品店</name>
         <address>深水埗營盤街136A號地舖</address>
         <description>地址: 深水埗營盤街136A號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗營盤街136A號地舖</value>
@@ -1083,7 +1083,7 @@
         <name>生記粥店</name>
         <address>旺角上海街421號地舖</address>
         <description>地址: 旺角上海街421號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>旺角上海街421號地舖</value>
@@ -1103,7 +1103,7 @@
         <name>蘇記粥品店</name>
         <address>新蒲崗錦榮街24號地舖</address>
         <description>地址: 新蒲崗錦榮街24號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>新蒲崗錦榮街24號地舖</value>
@@ -1123,7 +1123,7 @@
         <name>東海粥店</name>
         <address>佐敦上海街106號地舖</address>
         <description>地址: 佐敦上海街106號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>佐敦上海街106號地舖</value>
@@ -1143,7 +1143,7 @@
         <name>新慶粥店</name>
         <address>油麻地廣東道835-845號地下H&amp;I號舖</address>
         <description>地址: 油麻地廣東道835-845號地下H&amp;I號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 20:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>油麻地廣東道835-845號地下H&amp;I號舖</value>
@@ -1163,7 +1163,7 @@
         <name>壹海城粥麵店</name>
         <address>大角咀海庭道16號富榮花園地下M號舖</address>
         <description>地址: 大角咀海庭道16號富榮花園地下M號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 01:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大角咀海庭道16號富榮花園地下M號舖</value>
@@ -1183,7 +1183,7 @@
         <name>冠華粥品店</name>
         <address>長沙灣青山道255號地下8-9號舖</address>
         <description>地址: 長沙灣青山道255號地下8-9號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>長沙灣青山道255號地下8-9號舖</value>
@@ -1203,7 +1203,7 @@
         <name>永明粥店</name>
         <address>紅磡寶其利街2號聯盛大廈地下18A號舖</address>
         <description>地址: 紅磡寶其利街2號聯盛大廈地下18A號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>紅磡寶其利街2號聯盛大廈地下18A號舖</value>
@@ -1223,7 +1223,7 @@
         <name>鑑記粥品</name>
         <address>牛頭角牛頭角道183號牛頭角市政大廈2樓熟食中心</address>
         <description>地址: 牛頭角牛頭角道183號牛頭角市政大廈2樓熟食中心&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>牛頭角牛頭角道183號牛頭角市政大廈2樓熟食中心</value>
@@ -1243,7 +1243,7 @@
         <name>粥世家</name>
         <address>九龍城福佬村道95號地舖</address>
         <description>地址: 九龍城福佬村道95號地舖&lt;br&gt;營業時間 (Openrice): 星期一 07:00 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>九龍城福佬村道95號地舖</value>
@@ -1263,7 +1263,7 @@
         <name>佳豪粥店</name>
         <address>旺角新填地街427號地下A號舖</address>
         <description>地址: 旺角新填地街427號地下A號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>旺角新填地街427號地下A號舖</value>
@@ -1283,7 +1283,7 @@
         <name>粥家莊</name>
         <address>土瓜灣北帝街55號地舖</address>
         <description>地址: 土瓜灣北帝街55號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>土瓜灣北帝街55號地舖</value>
@@ -1303,7 +1303,7 @@
         <name>發記腸粉粥品</name>
         <address>深水埗元州街163號地舖</address>
         <description>地址: 深水埗元州街163號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 11:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾30年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗元州街163號地舖</value>
@@ -1323,7 +1323,7 @@
         <name>榮利粥店</name>
         <address>旺角洗衣街147號榮梅大廈地舖</address>
         <description>地址: 旺角洗衣街147號榮梅大廈地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 09:00 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>旺角洗衣街147號榮梅大廈地舖</value>
@@ -1343,7 +1343,7 @@
         <name>卓記粥麵小館</name>
         <address>土瓜灣漆咸道北435-439號寶暉大廈地舖</address>
         <description>地址: 土瓜灣漆咸道北435-439號寶暉大廈地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>土瓜灣漆咸道北435-439號寶暉大廈地舖</value>
@@ -1363,7 +1363,7 @@
         <name>威記粥品</name>
         <address>深水埗汝州街226號地下C號舖</address>
         <description>地址: 深水埗汝州街226號地下C號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗汝州街226號地下C號舖</value>
@@ -1383,7 +1383,7 @@
         <name>生記粥店</name>
         <address>紅磡差館里3號</address>
         <description>地址: 紅磡差館里3號&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 20:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>紅磡差館里3號</value>
@@ -1403,7 +1403,7 @@
         <name>生記粥店</name>
         <address>新蒲崗衍慶街9號地下5號舖</address>
         <description>地址: 新蒲崗衍慶街9號地下5號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>新蒲崗衍慶街9號地下5號舖</value>
@@ -1423,7 +1423,7 @@
         <name>南龍粥店</name>
         <address>旺角花園街1號鴻禧大廈地下3號舖</address>
         <description>地址: 旺角花園街1號鴻禧大廈地下3號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>旺角花園街1號鴻禧大廈地下3號舖</value>
@@ -1443,7 +1443,7 @@
         <name>富粥</name>
         <address>土瓜灣鶴齡街1A號地舖</address>
         <description>地址: 土瓜灣鶴齡街1A號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>土瓜灣鶴齡街1A號地舖</value>
@@ -1463,7 +1463,7 @@
         <name>礦記生滾粥</name>
         <address>太子塘尾道209號榮基樓地下B號舖</address>
         <description>地址: 太子塘尾道209號榮基樓地下B號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 13:00 - 23:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>太子塘尾道209號榮基樓地下B號舖</value>
@@ -1483,7 +1483,7 @@
         <name>新耀榮粥店</name>
         <address>長沙灣青山道310號地舖</address>
         <description>地址: 長沙灣青山道310號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>長沙灣青山道310號地舖</value>
@@ -1503,7 +1503,7 @@
         <name>新興棧食家</name>
         <address>佐敦寧波街23號地舖</address>
         <description>地址: 佐敦寧波街23號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 08:00 - 01:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾50年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>佐敦寧波街23號地舖</value>
@@ -1523,7 +1523,7 @@
         <name>妹記生滾粥品</name>
         <address>旺角花園街123A號花園街市政大廈3樓熟食中心11-12號舖</address>
         <description>地址: 旺角花園街123A號花園街市政大廈3樓熟食中心11-12號舖&lt;br&gt;營業時間 (Openrice): 星期一 07:15 - 15:15&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>旺角花園街123A號花園街市政大廈3樓熟食中心11-12號舖</value>
@@ -1543,7 +1543,7 @@
         <name>盛記粥麵</name>
         <address>旺角花園街3-5號鴻威大廈地下11號舖</address>
         <description>地址: 旺角花園街3-5號鴻威大廈地下11號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 10:00 - 00:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>旺角花園街3-5號鴻威大廈地下11號舖</value>
@@ -1563,7 +1563,7 @@
         <name>盛記粥麵</name>
         <address>佐敦白加士街11號地舖</address>
         <description>地址: 佐敦白加士街11號地舖&lt;br&gt;營業時間 (Openrice): 星期一至五 10:00 - 23:00；星期六至日 09:30 - 23:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>佐敦白加士街11號地舖</value>
@@ -1583,7 +1583,7 @@
         <name>欣輝粥店</name>
         <address>葵涌象山村熟食檔地下2號舖</address>
         <description>地址: 葵涌象山村熟食檔地下2號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 04:30 - 14:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>葵涌象山村熟食檔地下2號舖</value>
@@ -1603,7 +1603,7 @@
         <name>心滿意粥</name>
         <address>元朗建業街熟食中心C3號舖</address>
         <description>地址: 元朗建業街熟食中心C3號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>元朗建業街熟食中心C3號舖</value>
@@ -1623,7 +1623,7 @@
         <name>新利粥店</name>
         <address>元朗紅棉圍25-29號牡丹樓地下F號舖</address>
         <description>地址: 元朗紅棉圍25-29號牡丹樓地下F號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 22:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>元朗紅棉圍25-29號牡丹樓地下F號舖</value>
@@ -1643,7 +1643,7 @@
         <name>原味香</name>
         <address>將軍澳調景嶺彩明街1號彩明商場1樓彩明街市CM60號舖</address>
         <description>地址: 將軍澳調景嶺彩明街1號彩明商場1樓彩明街市CM60號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>將軍澳調景嶺彩明街1號彩明商場1樓彩明街市CM60號舖</value>
@@ -1663,7 +1663,7 @@
         <name>一品生記粥店</name>
         <address>上水新康街88號地舖</address>
         <description>地址: 上水新康街88號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>上水新康街88號地舖</value>
@@ -1683,7 +1683,7 @@
         <name>廣興粥店</name>
         <address>葵涌葵涌道1001號德昌大廈地下26D1號舖</address>
         <description>地址: 葵涌葵涌道1001號德昌大廈地下26D1號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 21:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>葵涌葵涌道1001號德昌大廈地下26D1號舖</value>
@@ -1703,7 +1703,7 @@
         <name>善心粥品店</name>
         <address>元朗大棠路24號地舖</address>
         <description>地址: 元朗大棠路24號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 13:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>元朗大棠路24號地舖</value>
@@ -1723,7 +1723,7 @@
         <name>成天粥品點心</name>
         <address>屯門啟發徑15-19號柏苑地下7號舖</address>
         <description>地址: 屯門啟發徑15-19號柏苑地下7號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>屯門啟發徑15-19號柏苑地下7號舖</value>
@@ -1743,7 +1743,7 @@
         <name>天天粥粉面店</name>
         <address>屯門青河坊3號利寶商場地下1號舖</address>
         <description>地址: 屯門青河坊3號利寶商場地下1號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 15:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>屯門青河坊3號利寶商場地下1號舖</value>
@@ -1763,7 +1763,7 @@
         <name>德發龍粥麵店</name>
         <address>荃灣四陂坊11號地舖</address>
         <description>地址: 荃灣四陂坊11號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 20:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 30年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣四陂坊11號地舖</value>
@@ -1783,7 +1783,7 @@
         <name>廣記粥店</name>
         <address>粉嶺聯和墟聯安街市政大廈2樓熟食中心13號舖</address>
         <description>地址: 粉嶺聯和墟聯安街市政大廈2樓熟食中心13號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 05:00 - 18:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 76年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>粉嶺聯和墟聯安街市政大廈2樓熟食中心13號舖</value>
@@ -1803,7 +1803,7 @@
         <name>輝記粥品</name>
         <address>葵芳禮芳街21號地舖</address>
         <description>地址: 葵芳禮芳街21號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 21:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>葵芳禮芳街21號地舖</value>
@@ -1823,7 +1823,7 @@
         <name>國記</name>
         <address>元朗炮仗坊29號地舖</address>
         <description>地址: 元朗炮仗坊29號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾55年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>元朗炮仗坊29號地舖</value>
@@ -1843,7 +1843,7 @@
         <name>新生記粥店</name>
         <address>荃灣沙咀道238號地下G號舖</address>
         <description>地址: 荃灣沙咀道238號地下G號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣沙咀道238號地下G號舖</value>
@@ -1863,7 +1863,7 @@
         <name>德發鳳凰粥麵專家</name>
         <address>荃灣德士古道25號地舖</address>
         <description>地址: 荃灣德士古道25號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 05:00 - 22:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣德士古道25號地舖</value>
@@ -1883,7 +1883,7 @@
         <name>坤記粥店</name>
         <address>葵涌石蔭路94號地舖</address>
         <description>地址: 葵涌石蔭路94號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 19:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>葵涌石蔭路94號地舖</value>
@@ -1903,7 +1903,7 @@
         <name>潮興旺生滾粥</name>
         <address>粉嶺聯安街39號地舖</address>
         <description>地址: 粉嶺聯安街39號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>粉嶺聯安街39號地舖</value>
@@ -1923,7 +1923,7 @@
         <name>發記腸粉粥品 (寶鄉街)</name>
         <address>大埔寶鄉街110號地舖</address>
         <description>地址: 大埔寶鄉街110號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大埔寶鄉街110號地舖</value>
@@ -1943,7 +1943,7 @@
         <name>發記腸粉粥品</name>
         <address>元朗教育路81-85C號元達樓地下2號舖</address>
         <description>地址: 元朗教育路81-85C號元達樓地下2號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 09:00 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>元朗教育路81-85C號元達樓地下2號舖</value>
@@ -1963,7 +1963,7 @@
         <name>坤記粥店</name>
         <address>屯門屯門鄉事會路10號地舖</address>
         <description>地址: 屯門屯門鄉事會路10號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 11:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>屯門屯門鄉事會路10號地舖</value>
@@ -1983,7 +1983,7 @@
         <name>松記粥品</name>
         <address>元朗又新街17號元新大廈地下6及13號舖</address>
         <description>地址: 元朗又新街17號元新大廈地下6及13號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>元朗又新街17號元新大廈地下6及13號舖</value>
@@ -2003,7 +2003,7 @@
         <name>池記</name>
         <address>元朗擊壤路熟食市場地下C10號舖</address>
         <description>地址: 元朗擊壤路熟食市場地下C10號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 05:00 - 02:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>元朗擊壤路熟食市場地下C10號舖</value>
@@ -2023,7 +2023,7 @@
         <name>萬記粥品</name>
         <address>大埔安泰路1號大埔廣場地下4號舖</address>
         <description>地址: 大埔安泰路1號大埔廣場地下4號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大埔安泰路1號大埔廣場地下4號舖</value>
@@ -2043,7 +2043,7 @@
         <name>廣式石磨腸粉</name>
         <address>上水新成路88號海禧華庭地下37號舖</address>
         <description>地址: 上水新成路88號海禧華庭地下37號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>上水新成路88號海禧華庭地下37號舖</value>
@@ -2063,7 +2063,7 @@
         <name>德發粥品專家</name>
         <address>荃灣四陂坊9B號地舖</address>
         <description>地址: 荃灣四陂坊9B號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 20:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣四陂坊9B號地舖</value>
@@ -2083,7 +2083,7 @@
         <name>廣記粥店</name>
         <address>大埔安慈路1號海寶花園地下13號舖</address>
         <description>地址: 大埔安慈路1號海寶花園地下13號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 25年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大埔安慈路1號海寶花園地下13號舖</value>
@@ -2103,7 +2103,7 @@
         <name>新宏利粥麵</name>
         <address>荃灣路德圍75號</address>
         <description>地址: 荃灣路德圍75號&lt;br&gt;營業時間 (Openrice): 星期一至日 05:30 - 23:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 60年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣路德圍75號</value>
@@ -2123,7 +2123,7 @@
         <name>東莞佬粥店</name>
         <address>上水石湖墟市政大廈2樓9號舖</address>
         <description>地址: 上水石湖墟市政大廈2樓9號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 16:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 50年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>上水石湖墟市政大廈2樓9號舖</value>
@@ -2143,7 +2143,7 @@
         <name>新記 (康麗花園)</name>
         <address>屯門屯門鄉事會路117-157號康麗花園地下6號舖</address>
         <description>地址: 屯門屯門鄉事會路117-157號康麗花園地下6號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: 逾30年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>屯門屯門鄉事會路117-157號康麗花園地下6號舖</value>
@@ -2163,7 +2163,7 @@
         <name>金山粥店</name>
         <address>西貢西貢正街21號地舖</address>
         <description>地址: 西貢西貢正街21號地舖&lt;br&gt;營業時間 (Openrice): 星期一至五 06:00 - 14:00；星期六至日 06:00 - 17:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 44年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西貢西貢正街21號地舖</value>
@@ -2183,7 +2183,7 @@
         <name>發記腸粉粥品</name>
         <address>元朗建業街67號地舖</address>
         <description>地址: 元朗建業街67號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 02:15&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 35年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>元朗建業街67號地舖</value>
@@ -2203,7 +2203,7 @@
         <name>元朗新記 (鴻運樓)</name>
         <address>元朗元朗安寧路21-35號鴻運樓地下7號舖</address>
         <description>地址: 元朗元朗安寧路21-35號鴻運樓地下7號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾30年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>元朗元朗安寧路21-35號鴻運樓地下7號舖</value>
@@ -2223,7 +2223,7 @@
         <name>榮仔粥店</name>
         <address>坪洲坪洲永安街35號地舖</address>
         <description>地址: 坪洲坪洲永安街35號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 17:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>坪洲坪洲永安街35號地舖</value>
@@ -2243,7 +2243,7 @@
         <name>根記粥麵店</name>
         <address>長洲海傍街2號</address>
         <description>地址: 長洲海傍街2號&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>長洲海傍街2號</value>
@@ -2263,7 +2263,7 @@
         <name>黎恩記</name>
         <address>長洲大興堤路2號長洲市政大廈地下熟食中心9及11號舖</address>
         <description>地址: 長洲大興堤路2號長洲市政大廈地下熟食中心9及11號舖&lt;br&gt;營業時間 (Openrice): 星期日 06:15 - 13:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 87年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>長洲大興堤路2號長洲市政大廈地下熟食中心9及11號舖</value>
@@ -2283,7 +2283,7 @@
         <name>卓記</name>
         <address>西環堅尼地城士美菲路12K號士美菲路市政大廈2樓熟食中心</address>
         <description>地址: 西環堅尼地城士美菲路12K號士美菲路市政大廈2樓熟食中心&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 15:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 60年</description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西環堅尼地城士美菲路12K號士美菲路市政大廈2樓熟食中心</value>
@@ -2303,7 +2303,7 @@
         <name>好運粥麵家</name>
         <address>太子柏樹街8號地舖</address>
         <description>地址: 太子柏樹街8號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 18:00 - 04:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
-        <styleUrl>#icon-1577-FF5252</styleUrl>
+        <styleUrl>#所有項目</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>太子柏樹街8號地舖</value>
