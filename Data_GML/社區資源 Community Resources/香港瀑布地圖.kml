@@ -3,7 +3,7 @@
   <Document>
     <name>香港瀑布地圖</name>
 	<description><![CDATA[ <a href="https://www.facebook.com/localresearch/posts/%E6%80%A5%E6%BE%A4%E5%90%8D%E7%80%91%E9%A6%99%E6%B8%AF%E7%A9%B6%E7%AB%9F%E6%9C%89%E5%B9%BE%E5%A4%9A%E6%A2%9D%E7%80%91%E5%B8%83%E7%8F%BE%E5%9C%A8%E6%B5%81%E8%A1%8C%E7%84%A1%E8%99%95%E4%B8%8D%E6%97%85%E9%81%8A%E4%BD%86%E8%A6%81%E7%9C%8B%E5%90%8D%E7%80%91%E7%BE%8E%E6%99%AF%E5%A4%9A%E6%95%B8%E9%A6%99%E6%B8%AF%E4%BA%BA%E5%8F%AA%E6%9C%83%E6%83%B3%E5%88%B0%E5%87%BA%E5%A4%96%E6%97%85%E9%81%8A%E8%80%8C%E4%B8%8D%E6%9C%83%E7%AC%AC%E4%B8%80%E6%99%82%E9%96%93%E6%83%B3%E8%B5%B7%E9%A6%99%E6%B8%AF%E6%9C%89%E4%B9%9D%E5%A4%A7%E7%9F%B3%E6%BE%97%E5%92%8C%E7%84%A1%E6%95%B8%E7%9A%84%E7%80%91%E5%B8%83%E5%9C%A8%E9%A6%99%E6%B8%AF%E6%AF%94%E8%BC%83%E8%91%97%E5%90%8D%E7%9A%84%E7%80%91%E5%B8%83%E6%9C%89%E6%A2%A7%E6%A1%90%E5%AF%A8%E7%80%91/1233110492187387/" target="_blank">【急澤名瀑】香港究竟有幾多條瀑布？ </a>]]></description>
-    <Style id="icon-1892-0288D1-nodesc-normal">
+    <Style id="瀑布1-normal">
       <IconStyle>
         <color>ffd18802</color>
         <scale>1</scale>
@@ -18,7 +18,7 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="icon-1892-0288D1-nodesc-highlight">
+    <Style id="瀑布1-highlight">
       <IconStyle>
         <color>ffd18802</color>
         <scale>1</scale>
@@ -33,17 +33,17 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1892-0288D1-nodesc">
+    <StyleMap id="瀑布1">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1892-0288D1-nodesc-normal</styleUrl>
+        <styleUrl>#瀑布1-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1892-0288D1-nodesc-highlight</styleUrl>
+        <styleUrl>#瀑布1-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1892-0F9D58-nodesc-normal">
+    <Style id="瀑布2-normal">
       <IconStyle>
         <color>ff589d0f</color>
         <scale>1</scale>
@@ -58,7 +58,7 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <Style id="icon-1892-0F9D58-nodesc-highlight">
+    <Style id="瀑布2-highlight">
       <IconStyle>
         <color>ff589d0f</color>
         <scale>1</scale>
@@ -73,21 +73,21 @@
         <text><![CDATA[<h3>$[name]</h3>]]></text>
       </BalloonStyle>
     </Style>
-    <StyleMap id="icon-1892-0F9D58-nodesc">
+    <StyleMap id="瀑布2">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1892-0F9D58-nodesc-normal</styleUrl>
+        <styleUrl>#瀑布2-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1892-0F9D58-nodesc-highlight</styleUrl>
+        <styleUrl>#瀑布2-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Folder>
       <name>瀑布</name>
       <Placemark>
         <name>雙龍石澗龍尾朝天</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.971868,22.259392,0
@@ -96,7 +96,7 @@
       </Placemark>
       <Placemark>
         <name>銀龍石澗銀礦瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.991553,22.27379,0
@@ -105,7 +105,7 @@
       </Placemark>
       <Placemark>
         <name>小赤沙溪日出康城瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.274572,22.301105,0
@@ -114,7 +114,7 @@
       </Placemark>
       <Placemark>
         <name>屏嘉石澗石板潭</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.210701,22.514984,0
@@ -123,7 +123,7 @@
       </Placemark>
       <Placemark>
         <name>銀龍石澗銀龍瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.988343,22.276265,0
@@ -132,7 +132,7 @@
       </Placemark>
       <Placemark>
         <name>大埔尾坑鹿山飛瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.19532,22.420275,0
@@ -141,7 +141,7 @@
       </Placemark>
       <Placemark>
         <name>瀑布灣瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.133275,22.252647,0
@@ -150,7 +150,7 @@
       </Placemark>
       <Placemark>
         <name>屏南石澗草裙瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.205948,22.510983,0
@@ -159,7 +159,7 @@
       </Placemark>
       <Placemark>
         <name>水澇漕石澗四疊潭</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.853771,22.232138,0
@@ -168,7 +168,7 @@
       </Placemark>
       <Placemark>
         <name>青龍石澗青龍瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.964666,22.242152,0
@@ -177,7 +177,7 @@
       </Placemark>
       <Placemark>
         <name>牙鷹北坑鷹泊崖</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.860928,22.243165,0
@@ -186,7 +186,7 @@
       </Placemark>
       <Placemark>
         <name>大坪坑右源大坪坑尾瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.853401,22.217861,0
@@ -195,7 +195,7 @@
       </Placemark>
       <Placemark>
         <name>彌散石澗十三層連瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.913817,22.279516,0
@@ -204,7 +204,7 @@
       </Placemark>
       <Placemark>
         <name>九肚坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.21036,22.41079,0
@@ -213,7 +213,7 @@
       </Placemark>
       <Placemark>
         <name>蝴蝶谷坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.143805,22.344375,0
@@ -222,7 +222,7 @@
       </Placemark>
       <Placemark>
         <name>小馬坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.203096,22.282502,0
@@ -231,7 +231,7 @@
       </Placemark>
       <Placemark>
         <name>虎白石澗無名石澗</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.010039,22.292802,0
@@ -240,7 +240,7 @@
       </Placemark>
       <Placemark>
         <name>烏洲塘東坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.305262,22.494909,0
@@ -249,7 +249,7 @@
       </Placemark>
       <Placemark>
         <name>花籃坑烏洲瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.303085,22.497916,0
@@ -258,7 +258,7 @@
       </Placemark>
       <Placemark>
         <name>花籃坑花籃瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.302718,22.498111,0
@@ -267,7 +267,7 @@
       </Placemark>
       <Placemark>
         <name>牛角涌無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.292166,22.501376,0
@@ -276,7 +276,7 @@
       </Placemark>
       <Placemark>
         <name>馬尿河無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.278368,22.508443,0
@@ -285,7 +285,7 @@
       </Placemark>
       <Placemark>
         <name>屏嘉石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.211,22.514713,0
@@ -294,7 +294,7 @@
       </Placemark>
       <Placemark>
         <name>四肚坑四肚飛瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.240022,22.524323,0
@@ -303,7 +303,7 @@
       </Placemark>
       <Placemark>
         <name>担水坑右源無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.214493,22.55069,0
@@ -312,7 +312,7 @@
       </Placemark>
       <Placemark>
         <name>担水坑左源無名瀑布01</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.210743,22.54814,0
@@ -321,7 +321,7 @@
       </Placemark>
       <Placemark>
         <name>担水坑左源無名瀑布02</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.210991,22.547989,0
@@ -330,7 +330,7 @@
       </Placemark>
       <Placemark>
         <name>亞公頂北坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.202733,22.553019,0
@@ -339,7 +339,7 @@
       </Placemark>
       <Placemark>
         <name>大朗坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.194594,22.536452,0
@@ -348,7 +348,7 @@
       </Placemark>
       <Placemark>
         <name>崇山石澗崇山飛瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.043416,22.418218,0
@@ -357,7 +357,7 @@
       </Placemark>
       <Placemark>
         <name>上乾下左源無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.949747,22.417545,0
@@ -366,7 +366,7 @@
       </Placemark>
       <Placemark>
         <name>太墩南坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.314461,22.39646,0
@@ -375,7 +375,7 @@
       </Placemark>
       <Placemark>
         <name>白水碗瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.261865,22.339904,0
@@ -384,7 +384,7 @@
       </Placemark>
       <Placemark>
         <name>鬼氹右澗東龍飛瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.292037,22.243222,0
@@ -393,7 +393,7 @@
       </Placemark>
       <Placemark>
         <name>芽菜坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.248669,22.207447,0
@@ -402,7 +402,7 @@
       </Placemark>
       <Placemark>
         <name>流白水</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.382312,22.391313,0
@@ -411,7 +411,7 @@
       </Placemark>
       <Placemark>
         <name>雙龍石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.974733,22.256087,0
@@ -420,7 +420,7 @@
       </Placemark>
       <Placemark>
         <name>雙龍石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.974363,22.256443,0
@@ -429,7 +429,7 @@
       </Placemark>
       <Placemark>
         <name>蒼龍右源金無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.974881,22.264436,0
@@ -438,7 +438,7 @@
       </Placemark>
       <Placemark>
         <name>蓮龍石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.975655,22.267086,0
@@ -447,7 +447,7 @@
       </Placemark>
       <Placemark>
         <name>蓮龍石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.976932,22.267204,0
@@ -456,7 +456,7 @@
       </Placemark>
       <Placemark>
         <name>銀龍石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.988186,22.27711,0
@@ -465,7 +465,7 @@
       </Placemark>
       <Placemark>
         <name>銀龍石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.988327,22.276901,0
@@ -474,7 +474,7 @@
       </Placemark>
       <Placemark>
         <name>銀龍石澗無名瀑布03</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.988353,22.276708,0
@@ -483,7 +483,7 @@
       </Placemark>
       <Placemark>
         <name>田寮坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.9884,22.287833,0
@@ -492,7 +492,7 @@
       </Placemark>
       <Placemark>
         <name>田寮坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.982178,22.288022,0
@@ -501,7 +501,7 @@
       </Placemark>
       <Placemark>
         <name>田寮坑右源無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.988532,22.285946,0
@@ -510,7 +510,7 @@
       </Placemark>
       <Placemark>
         <name>龍尾坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.977874,22.272577,0
@@ -519,7 +519,7 @@
       </Placemark>
       <Placemark>
         <name>狗虱坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.015491,22.274164,0
@@ -528,7 +528,7 @@
       </Placemark>
       <Placemark>
         <name>神樂院左坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.019885,22.276255,0
@@ -537,7 +537,7 @@
       </Placemark>
       <Placemark>
         <name>水澇漕石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.853991,22.231964,0
@@ -546,7 +546,7 @@
       </Placemark>
       <Placemark>
         <name>水澇漕石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.854172,22.231866,0
@@ -555,7 +555,7 @@
       </Placemark>
       <Placemark>
         <name>企角坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.960423,22.295181,0
@@ -564,7 +564,7 @@
       </Placemark>
       <Placemark>
         <name>青大石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.942627,22.404218,0
@@ -573,7 +573,7 @@
       </Placemark>
       <Placemark>
         <name>青大石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.942709,22.404988,0
@@ -582,7 +582,7 @@
       </Placemark>
       <Placemark>
         <name>青大石澗無名瀑布03</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.942688,22.405997,0
@@ -591,7 +591,7 @@
       </Placemark>
       <Placemark>
         <name>凌風石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.872701,22.241945,0
@@ -600,7 +600,7 @@
       </Placemark>
       <Placemark>
         <name>田字坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.98702,22.297235,0
@@ -609,7 +609,7 @@
       </Placemark>
       <Placemark>
         <name>靈鰲石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             113.9702,22.440586,0
@@ -618,7 +618,7 @@
       </Placemark>
       <Placemark>
         <name>西高山北坑龍虎山瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.132703,22.276228,0
@@ -627,7 +627,7 @@
       </Placemark>
       <Placemark>
         <name>西高山北坑無名瀑布</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.133499,22.275941,0
@@ -636,7 +636,7 @@
       </Placemark>
       <Placemark>
         <name>西高山北坑主瀑</name>
-        <styleUrl>#icon-1892-0F9D58-nodesc</styleUrl>
+        <styleUrl>#瀑布2</styleUrl>
         <Point>
           <coordinates>
             114.133797,22.275884,0
@@ -645,7 +645,7 @@
       </Placemark>
       <Placemark>
         <name>友愛坑左源友愛飛瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.175662,22.388535,0
@@ -654,7 +654,7 @@
       </Placemark>
       <Placemark>
         <name>隱龍右澗飛花瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.278875,22.41471,0
@@ -663,7 +663,7 @@
       </Placemark>
       <Placemark>
         <name>青龍石澗雙獅觀瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.96208,22.251487,0
@@ -672,7 +672,7 @@
       </Placemark>
       <Placemark>
         <name>左龍石澗左龍瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.960886,22.267661,0
@@ -681,7 +681,7 @@
       </Placemark>
       <Placemark>
         <name>黃龍石澗龍尾瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.961947,22.266737,0
@@ -690,7 +690,7 @@
       </Placemark>
       <Placemark>
         <name>黃龍石澗右龍瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.961448,22.266924,0
@@ -699,7 +699,7 @@
       </Placemark>
       <Placemark>
         <name>龍嚎石澗龍嘯瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.966485,22.267388,0
@@ -708,7 +708,7 @@
       </Placemark>
       <Placemark>
         <name>臥龍石澗絕龍谷</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.96273,22.275236,0
@@ -717,7 +717,7 @@
       </Placemark>
       <Placemark>
         <name>龍顎石澗龍顎主瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.962408,22.272066,0
@@ -726,7 +726,7 @@
       </Placemark>
       <Placemark>
         <name>東龍石澗鷹領瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.949176,22.265565,0
@@ -735,7 +735,7 @@
       </Placemark>
       <Placemark>
         <name>東龍石澗伏虎潭一線瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.948643,22.265942,0
@@ -744,7 +744,7 @@
       </Placemark>
       <Placemark>
         <name>藏天瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.955704,22.26027,0
@@ -753,7 +753,7 @@
       </Placemark>
       <Placemark>
         <name>梧桐石澗主瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.131695,22.424048,0
@@ -762,7 +762,7 @@
       </Placemark>
       <Placemark>
         <name>梧桐石澗井底瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.131875,22.427185,0
@@ -771,7 +771,7 @@
       </Placemark>
       <Placemark>
         <name>梧桐石澗中瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.131751,22.426579,0
@@ -780,7 +780,7 @@
       </Placemark>
       <Placemark>
         <name>梧桐石澗散髮瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.131536,22.423659,0
@@ -789,7 +789,7 @@
       </Placemark>
       <Placemark>
         <name>梧桐石澗馬尾瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.131888,22.427298,0
@@ -798,7 +798,7 @@
       </Placemark>
       <Placemark>
         <name>梧桐石澗彩虹瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.131568,22.424569,0
@@ -807,7 +807,7 @@
       </Placemark>
       <Placemark>
         <name>梧桐石澗玉女瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.130891,22.422961,0
@@ -816,7 +816,7 @@
       </Placemark>
       <Placemark>
         <name>橫涌石澗橫瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.236103,22.496809,0
@@ -825,7 +825,7 @@
       </Placemark>
       <Placemark>
         <name>橫涌石澗三角瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.238308,22.498503,0
@@ -834,7 +834,7 @@
       </Placemark>
       <Placemark>
         <name>橫涌石澗雙瀑潭</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.233127,22.496665,0
@@ -843,7 +843,7 @@
       </Placemark>
       <Placemark>
         <name>橫涌石澗繞絲溪</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.234746,22.495714,0
@@ -852,7 +852,7 @@
       </Placemark>
       <Placemark>
         <name>橫涌石澗龍珠瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.237449,22.49744,0
@@ -861,7 +861,7 @@
       </Placemark>
       <Placemark>
         <name>新娘潭瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.236941,22.503284,0
@@ -870,7 +870,7 @@
       </Placemark>
       <Placemark>
         <name>照鏡潭瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.241603,22.504329,0
@@ -879,7 +879,7 @@
       </Placemark>
       <Placemark>
         <name>大曹石澗大帽山瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.119147,22.407611,0
@@ -888,7 +888,7 @@
       </Placemark>
       <Placemark>
         <name>潭崗石澗潭崗飛瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.21768,22.251881,0
@@ -897,7 +897,7 @@
       </Placemark>
       <Placemark>
         <name>將軍澳石澗小夏威夷瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.246683,22.33126,0
@@ -906,7 +906,7 @@
       </Placemark>
       <Placemark>
         <name>將軍澳石澗蓮苑臺瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.24759,22.330918,0
@@ -915,7 +915,7 @@
       </Placemark>
       <Placemark>
         <name>馬大石澗英雄瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.232245,22.405538,0
@@ -924,7 +924,7 @@
       </Placemark>
       <Placemark>
         <name>盧吉飛瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.147058,22.271743,0
@@ -933,7 +933,7 @@
       </Placemark>
       <Placemark>
         <name>雙鹿石澗一線天</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.352898,22.404723,0
@@ -942,7 +942,7 @@
       </Placemark>
       <Placemark>
         <name>雙鹿石澗千絲瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.361141,22.40173,0
@@ -951,7 +951,7 @@
       </Placemark>
       <Placemark>
         <name>雙鹿石澗鳴幽瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.358134,22.402092,0
@@ -960,7 +960,7 @@
       </Placemark>
       <Placemark>
         <name>雙鹿石澗四疊潭</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.366822,22.402564,0
@@ -969,7 +969,7 @@
       </Placemark>
       <Placemark>
         <name>城門峽瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.149891,22.375849,0
@@ -978,7 +978,7 @@
       </Placemark>
       <Placemark>
         <name>大圓左澗左源迎山谷</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.119849,22.399782,0
@@ -987,7 +987,7 @@
       </Placemark>
       <Placemark>
         <name>大曹石澗小九寨溝</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.114763,22.405656,0
@@ -996,7 +996,7 @@
       </Placemark>
       <Placemark>
         <name>曹公潭瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.10589,22.381553,0
@@ -1005,7 +1005,7 @@
       </Placemark>
       <Placemark>
         <name>大雷石澗主瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.116296,22.41767,0
@@ -1014,7 +1014,7 @@
       </Placemark>
       <Placemark>
         <name>大圓石澗銀花潭</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.123449,22.396967,0
@@ -1023,7 +1023,7 @@
       </Placemark>
       <Placemark>
         <name>大圓石澗九龍吐珠</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.123783,22.397199,0
@@ -1032,7 +1032,7 @@
       </Placemark>
       <Placemark>
         <name>大圓石澗長槽瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.124062,22.397357,0
@@ -1041,7 +1041,7 @@
       </Placemark>
       <Placemark>
         <name>大圓石澗飛猿峽</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.12502,22.398741,0
@@ -1050,7 +1050,7 @@
       </Placemark>
       <Placemark>
         <name>大圓右澗一線瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.12692,22.394219,0
@@ -1059,7 +1059,7 @@
       </Placemark>
       <Placemark>
         <name>雙鹿石澗奔槽瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.351282,22.40502,0
@@ -1068,7 +1068,7 @@
       </Placemark>
       <Placemark>
         <name>雙鹿石澗井底瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.351959,22.404886,0
@@ -1077,7 +1077,7 @@
       </Placemark>
       <Placemark>
         <name>雙鹿石澗藏幽瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.35422,22.404633,0
@@ -1086,7 +1086,7 @@
       </Placemark>
       <Placemark>
         <name>秋楓石澗碧扇瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.328973,22.408296,0
@@ -1095,7 +1095,7 @@
       </Placemark>
       <Placemark>
         <name>秋楓石澗一線瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.332953,22.409255,0
@@ -1104,7 +1104,7 @@
       </Placemark>
       <Placemark>
         <name>嘉道理農場近彩虹徑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.120374,22.430009,0
@@ -1113,7 +1113,7 @@
       </Placemark>
       <Placemark>
         <name>蝴蝶坑蝴蝶瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.072674,22.382663,0
@@ -1122,7 +1122,7 @@
       </Placemark>
       <Placemark>
         <name>石龍坑石室瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.074533,22.375143,0
@@ -1131,7 +1131,7 @@
       </Placemark>
       <Placemark>
         <name>石龍坑石龍飛瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.075851,22.375539,0
@@ -1140,7 +1140,7 @@
       </Placemark>
       <Placemark>
         <name>鹿湖北坑兩源交匯處</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.3542,22.413673,0
@@ -1149,7 +1149,7 @@
       </Placemark>
       <Placemark>
         <name>狗嶺涌石澗狗嶺涌瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.86073,22.212266,0
@@ -1158,7 +1158,7 @@
       </Placemark>
       <Placemark>
         <name>昂深石澗彌昂飛瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.897296,22.260842,0
@@ -1167,7 +1167,7 @@
       </Placemark>
       <Placemark>
         <name>北天門石澗北天門尾瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.921132,22.250738,0
@@ -1176,7 +1176,7 @@
       </Placemark>
       <Placemark>
         <name>南天門石澗南天門尾瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.925823,22.248151,0
@@ -1185,7 +1185,7 @@
       </Placemark>
       <Placemark>
         <name>彌東坑彌東飛瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.917749,22.259353,0
@@ -1194,7 +1194,7 @@
       </Placemark>
       <Placemark>
         <name>鳳彌石澗心碎瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.921086,22.261023,0
@@ -1203,7 +1203,7 @@
       </Placemark>
       <Placemark>
         <name>黃龍石澗黃龍瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.958322,22.268107,0
@@ -1212,7 +1212,7 @@
       </Placemark>
       <Placemark>
         <name>藏龍石澗格仔瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.956483,22.266167,0
@@ -1221,7 +1221,7 @@
       </Placemark>
       <Placemark>
         <name>藏龍左澗飛絮瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.956943,22.265766,0
@@ -1230,7 +1230,7 @@
       </Placemark>
       <Placemark>
         <name>東馬肚坑撲樹崖</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.253661,22.415472,0
@@ -1239,7 +1239,7 @@
       </Placemark>
       <Placemark>
         <name>石水澗烏龜潭石墜下瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.249941,22.496556,0
@@ -1248,7 +1248,7 @@
       </Placemark>
       <Placemark>
         <name>北龍石澗天書瀑（期間限定）</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.960037,22.280785,0
@@ -1257,7 +1257,7 @@
       </Placemark>
       <Placemark>
         <name>大城石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.140317,22.405082,0
@@ -1266,7 +1266,7 @@
       </Placemark>
       <Placemark>
         <name>玉女溪無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.131038,22.421987,0
@@ -1275,7 +1275,7 @@
       </Placemark>
       <Placemark>
         <name>雞公頭東坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.130195,22.425034,0
@@ -1284,7 +1284,7 @@
       </Placemark>
       <Placemark>
         <name>梧桐石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.131787,22.426239,0
@@ -1293,7 +1293,7 @@
       </Placemark>
       <Placemark>
         <name>雞公坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.127389,22.426034,0
@@ -1302,7 +1302,7 @@
       </Placemark>
       <Placemark>
         <name>蕉坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.138485,22.423762,0
@@ -1311,7 +1311,7 @@
       </Placemark>
       <Placemark>
         <name>觀石坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.11612,22.423364,0
@@ -1320,7 +1320,7 @@
       </Placemark>
       <Placemark>
         <name>大石左左無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.121107,22.421189,0
@@ -1329,7 +1329,7 @@
       </Placemark>
       <Placemark>
         <name>大石石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.120185,22.420576,0
@@ -1338,7 +1338,7 @@
       </Placemark>
       <Placemark>
         <name>石水澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.249892,22.497116,0
@@ -1347,7 +1347,7 @@
       </Placemark>
       <Placemark>
         <name>犁橫石澗下右源無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.217868,22.495971,0
@@ -1356,7 +1356,7 @@
       </Placemark>
       <Placemark>
         <name>犁橫石澗右源無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.218159,22.494166,0
@@ -1365,7 +1365,7 @@
       </Placemark>
       <Placemark>
         <name>犁橫石澗右源無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.218444,22.494066,0
@@ -1374,7 +1374,7 @@
       </Placemark>
       <Placemark>
         <name>犁壁中坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.216307,22.485297,0
@@ -1383,7 +1383,7 @@
       </Placemark>
       <Placemark>
         <name>䃟頭角坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.206628,22.477971,0
@@ -1392,7 +1392,7 @@
       </Placemark>
       <Placemark>
         <name>洞梓坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.199647,22.477099,0
@@ -1401,7 +1401,7 @@
       </Placemark>
       <Placemark>
         <name>洞梓坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.199439,22.477186,0
@@ -1410,7 +1410,7 @@
       </Placemark>
       <Placemark>
         <name>洞梓坑無名瀑布03</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.200028,22.477122,0
@@ -1419,7 +1419,7 @@
       </Placemark>
       <Placemark>
         <name>指尖東南坑洞梓坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.189241,22.470552,0
@@ -1428,7 +1428,7 @@
       </Placemark>
       <Placemark>
         <name>黃嘉石澗石源無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.208823,22.498421,0
@@ -1437,7 +1437,7 @@
       </Placemark>
       <Placemark>
         <name>黃嘉石澗石源無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.208104,22.497541,0
@@ -1446,7 +1446,7 @@
       </Placemark>
       <Placemark>
         <name>丹竹坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.184292,22.512723,0
@@ -1455,7 +1455,7 @@
       </Placemark>
       <Placemark>
         <name>紅萬坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.187171,22.533158,0
@@ -1464,7 +1464,7 @@
       </Placemark>
       <Placemark>
         <name>白牛石坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.119802,22.447012,0
@@ -1473,7 +1473,7 @@
       </Placemark>
       <Placemark>
         <name>白牛石坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.120645,22.444593,0
@@ -1482,7 +1482,7 @@
       </Placemark>
       <Placemark>
         <name>橫台山坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.109451,22.440547,0
@@ -1491,7 +1491,7 @@
       </Placemark>
       <Placemark>
         <name>甲龍左澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.112736,22.414393,0
@@ -1500,7 +1500,7 @@
       </Placemark>
       <Placemark>
         <name>甲龍左澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.112899,22.41394,0
@@ -1509,7 +1509,7 @@
       </Placemark>
       <Placemark>
         <name>甲龍左澗無名瀑布03</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.113287,22.413462,0
@@ -1518,7 +1518,7 @@
       </Placemark>
       <Placemark>
         <name>甲龍左澗左支無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.113032,22.414001,0
@@ -1527,7 +1527,7 @@
       </Placemark>
       <Placemark>
         <name>大雷右澗右源無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.117114,22.416174,0
@@ -1536,7 +1536,7 @@
       </Placemark>
       <Placemark>
         <name>大雷右澗右源無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.118499,22.412509,0
@@ -1545,7 +1545,7 @@
       </Placemark>
       <Placemark>
         <name>楓葉潭左坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.138423,22.406564,0
@@ -1554,7 +1554,7 @@
       </Placemark>
       <Placemark>
         <name>相思坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.126325,22.399906,0
@@ -1563,7 +1563,7 @@
       </Placemark>
       <Placemark>
         <name>相思坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.125759,22.399196,0
@@ -1572,7 +1572,7 @@
       </Placemark>
       <Placemark>
         <name>相思坑無名瀑布03</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.125462,22.398751,0
@@ -1581,7 +1581,7 @@
       </Placemark>
       <Placemark>
         <name>大圓石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.124184,22.397425,0
@@ -1590,7 +1590,7 @@
       </Placemark>
       <Placemark>
         <name>梨木樹坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.133666,22.38861,0
@@ -1599,7 +1599,7 @@
       </Placemark>
       <Placemark>
         <name>梨木樹坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.13345,22.387477,0
@@ -1608,7 +1608,7 @@
       </Placemark>
       <Placemark>
         <name>蝴蝶園坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.144274,22.392108,0
@@ -1617,7 +1617,7 @@
       </Placemark>
       <Placemark>
         <name>蝴蝶園坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.146712,22.389668,0
@@ -1626,7 +1626,7 @@
       </Placemark>
       <Placemark>
         <name>蝴蝶園坑無名瀑布03</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.146839,22.389613,0
@@ -1635,7 +1635,7 @@
       </Placemark>
       <Placemark>
         <name>石龍坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.079058,22.378258,0
@@ -1644,7 +1644,7 @@
       </Placemark>
       <Placemark>
         <name>石龍坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.074414,22.374122,0
@@ -1653,7 +1653,7 @@
       </Placemark>
       <Placemark>
         <name>蝴蝶坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.075369,22.383461,0
@@ -1662,7 +1662,7 @@
       </Placemark>
       <Placemark>
         <name>蝴蝶坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.075393,22.383383,0
@@ -1671,7 +1671,7 @@
       </Placemark>
       <Placemark>
         <name>蝴蝶坑無名瀑布03</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.073357,22.382608,0
@@ -1680,7 +1680,7 @@
       </Placemark>
       <Placemark>
         <name>鬼怒坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.060216,22.379776,0
@@ -1689,7 +1689,7 @@
       </Placemark>
       <Placemark>
         <name>蓮䲔坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.072201,22.388724,0
@@ -1698,7 +1698,7 @@
       </Placemark>
       <Placemark>
         <name>蓮䲔坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.082998,22.396435,0
@@ -1707,7 +1707,7 @@
       </Placemark>
       <Placemark>
         <name>蓮䲔坑無名瀑布03</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.086088,22.397216,0
@@ -1716,7 +1716,7 @@
       </Placemark>
       <Placemark>
         <name>蓮䲔坑無名瀑布04</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.08003,22.392985,0
@@ -1725,7 +1725,7 @@
       </Placemark>
       <Placemark>
         <name>蓮花石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.05992,22.38635,0
@@ -1734,7 +1734,7 @@
       </Placemark>
       <Placemark>
         <name>蓮花石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.059599,22.386336,0
@@ -1743,7 +1743,7 @@
       </Placemark>
       <Placemark>
         <name>河背右坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.065714,22.404571,0
@@ -1752,7 +1752,7 @@
       </Placemark>
       <Placemark>
         <name>九管左坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.997049,22.386047,0
@@ -1761,7 +1761,7 @@
       </Placemark>
       <Placemark>
         <name>吹筒坳坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.364373,22.391433,0
@@ -1770,7 +1770,7 @@
       </Placemark>
       <Placemark>
         <name>雙鹿石澗奔槽瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.350468,22.404966,0
@@ -1779,7 +1779,7 @@
       </Placemark>
       <Placemark>
         <name>大蚊南坑左源無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.36294,22.409199,0
@@ -1788,7 +1788,7 @@
       </Placemark>
       <Placemark>
         <name>牌北中坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.353754,22.413092,0
@@ -1797,7 +1797,7 @@
       </Placemark>
       <Placemark>
         <name>牌北右坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.35352,22.413314,0
@@ -1806,7 +1806,7 @@
       </Placemark>
       <Placemark>
         <name>牛湖墩東坑左源無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.344589,22.417466,0
@@ -1815,7 +1815,7 @@
       </Placemark>
       <Placemark>
         <name>牌額西坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.336852,22.412964,0
@@ -1824,7 +1824,7 @@
       </Placemark>
       <Placemark>
         <name>秋楓石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.328731,22.407918,0
@@ -1833,7 +1833,7 @@
       </Placemark>
       <Placemark>
         <name>雞榕中澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.296382,22.418054,0
@@ -1842,7 +1842,7 @@
       </Placemark>
       <Placemark>
         <name>雞石坑左源無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.289824,22.410633,0
@@ -1851,7 +1851,7 @@
       </Placemark>
       <Placemark>
         <name>馬甲崙坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.291891,22.421401,0
@@ -1860,7 +1860,7 @@
       </Placemark>
       <Placemark>
         <name>飛龍右源無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.286563,22.420269,0
@@ -1869,7 +1869,7 @@
       </Placemark>
       <Placemark>
         <name>飛龍無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.28759,22.420342,0
@@ -1878,7 +1878,7 @@
       </Placemark>
       <Placemark>
         <name>飛龍無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.287319,22.42061,0
@@ -1887,7 +1887,7 @@
       </Placemark>
       <Placemark>
         <name>飛鳳無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.2844,22.418733,0
@@ -1896,7 +1896,7 @@
       </Placemark>
       <Placemark>
         <name>飛鳳無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.284421,22.420061,0
@@ -1905,7 +1905,7 @@
       </Placemark>
       <Placemark>
         <name>小隱龍石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.281622,22.41923,0
@@ -1914,7 +1914,7 @@
       </Placemark>
       <Placemark>
         <name>隱龍右源飛花瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.279172,22.415238,0
@@ -1923,7 +1923,7 @@
       </Placemark>
       <Placemark>
         <name>長情坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.270407,22.410799,0
@@ -1932,7 +1932,7 @@
       </Placemark>
       <Placemark>
         <name>西徑左坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.266731,22.413934,0
@@ -1941,7 +1941,7 @@
       </Placemark>
       <Placemark>
         <name>西徑坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.26396,22.414498,0
@@ -1950,7 +1950,7 @@
       </Placemark>
       <Placemark>
         <name>西徑坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.262947,22.412544,0
@@ -1959,7 +1959,7 @@
       </Placemark>
       <Placemark>
         <name>東馬肚坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.253303,22.414682,0
@@ -1968,7 +1968,7 @@
       </Placemark>
       <Placemark>
         <name>東馬肚坑左源無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.253161,22.414026,0
@@ -1977,7 +1977,7 @@
       </Placemark>
       <Placemark>
         <name>東馬肚坑左源無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.252967,22.413779,0
@@ -1986,7 +1986,7 @@
       </Placemark>
       <Placemark>
         <name>靈象石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.255317,22.410833,0
@@ -1995,7 +1995,7 @@
       </Placemark>
       <Placemark>
         <name>馬頭坑燈籠瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.249085,22.410205,0
@@ -2004,7 +2004,7 @@
       </Placemark>
       <Placemark>
         <name>吊手岩南坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.245595,22.410815,0
@@ -2013,7 +2013,7 @@
       </Placemark>
       <Placemark>
         <name>折雁坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.242184,22.41673,0
@@ -2022,7 +2022,7 @@
       </Placemark>
       <Placemark>
         <name>牛樟石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.250093,22.418848,0
@@ -2031,7 +2031,7 @@
       </Placemark>
       <Placemark>
         <name>茅坪坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.238247,22.387597,0
@@ -2040,7 +2040,7 @@
       </Placemark>
       <Placemark>
         <name>大腦石澗大腦飛瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.23281,22.36388,0
@@ -2049,7 +2049,7 @@
       </Placemark>
       <Placemark>
         <name>風門石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.240849,22.249974,0
@@ -2058,7 +2058,7 @@
       </Placemark>
       <Placemark>
         <name>紫潭石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.208398,22.251728,0
@@ -2067,7 +2067,7 @@
       </Placemark>
       <Placemark>
         <name>紫深石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.194387,22.25358,0
@@ -2076,7 +2076,7 @@
       </Placemark>
       <Placemark>
         <name>草城右澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.154269,22.394612,0
@@ -2085,7 +2085,7 @@
       </Placemark>
       <Placemark>
         <name>蝦公坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.160034,22.39228,0
@@ -2094,7 +2094,7 @@
       </Placemark>
       <Placemark>
         <name>神秀坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.16448,22.384246,0
@@ -2103,7 +2103,7 @@
       </Placemark>
       <Placemark>
         <name>香粉寮坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.163546,22.378163,0
@@ -2112,7 +2112,7 @@
       </Placemark>
       <Placemark>
         <name>近香粉寮新村無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.163589,22.376149,0
@@ -2121,7 +2121,7 @@
       </Placemark>
       <Placemark>
         <name>雙鹿石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.350024,22.405135,0
@@ -2130,7 +2130,7 @@
       </Placemark>
       <Placemark>
         <name>臥龍石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.962197,22.274138,0
@@ -2139,7 +2139,7 @@
       </Placemark>
       <Placemark>
         <name>臥龍石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.961278,22.273163,0
@@ -2148,7 +2148,7 @@
       </Placemark>
       <Placemark>
         <name>龍嚎石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.96244,22.266783,0
@@ -2157,7 +2157,7 @@
       </Placemark>
       <Placemark>
         <name>黃龍石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.962684,22.266442,0
@@ -2166,7 +2166,7 @@
       </Placemark>
       <Placemark>
         <name>黃龍石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.963005,22.266241,0
@@ -2175,7 +2175,7 @@
       </Placemark>
       <Placemark>
         <name>黃龍石澗無名瀑布03</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.96553,22.263778,0
@@ -2184,7 +2184,7 @@
       </Placemark>
       <Placemark>
         <name>黃龍石澗無名瀑布04</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.965523,22.263468,0
@@ -2193,7 +2193,7 @@
       </Placemark>
       <Placemark>
         <name>黃龍石澗無名瀑布05</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.965608,22.263495,0
@@ -2202,7 +2202,7 @@
       </Placemark>
       <Placemark>
         <name>右龍石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.961143,22.262429,0
@@ -2211,7 +2211,7 @@
       </Placemark>
       <Placemark>
         <name>右龍石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.961261,22.262123,0
@@ -2220,7 +2220,7 @@
       </Placemark>
       <Placemark>
         <name>小藏龍無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.956745,22.268844,0
@@ -2229,7 +2229,7 @@
       </Placemark>
       <Placemark>
         <name>藏龍石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.957027,22.267962,0
@@ -2238,7 +2238,7 @@
       </Placemark>
       <Placemark>
         <name>藏龍石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.956891,22.267283,0
@@ -2247,7 +2247,7 @@
       </Placemark>
       <Placemark>
         <name>藏龍石澗無名瀑布03</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.956748,22.267112,0
@@ -2256,7 +2256,7 @@
       </Placemark>
       <Placemark>
         <name>藏龍石澗無名瀑布04</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.955662,22.264205,0
@@ -2265,7 +2265,7 @@
       </Placemark>
       <Placemark>
         <name>藏龍中源無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.956644,22.265601,0
@@ -2274,7 +2274,7 @@
       </Placemark>
       <Placemark>
         <name>牛塘北坑左源無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.938254,22.249335,0
@@ -2283,7 +2283,7 @@
       </Placemark>
       <Placemark>
         <name>西龍石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.946871,22.252278,0
@@ -2292,7 +2292,7 @@
       </Placemark>
       <Placemark>
         <name>石獅西右坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.940606,22.262016,0
@@ -2301,7 +2301,7 @@
       </Placemark>
       <Placemark>
         <name>東龍石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.949371,22.264974,0
@@ -2310,7 +2310,7 @@
       </Placemark>
       <Placemark>
         <name>東龍石澗虎嘯峽第一瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.948175,22.26647,0
@@ -2319,7 +2319,7 @@
       </Placemark>
       <Placemark>
         <name>東龍石澗虎嘯峽第二瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.948289,22.266351,0
@@ -2328,7 +2328,7 @@
       </Placemark>
       <Placemark>
         <name>東龍石澗虎嘯峽第三瀑</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.948398,22.266242,0
@@ -2337,7 +2337,7 @@
       </Placemark>
       <Placemark>
         <name>降龍石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.943842,22.257654,0
@@ -2346,7 +2346,7 @@
       </Placemark>
       <Placemark>
         <name>降龍石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.944711,22.257516,0
@@ -2355,7 +2355,7 @@
       </Placemark>
       <Placemark>
         <name>小青龍石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.966669,22.246102,0
@@ -2364,7 +2364,7 @@
       </Placemark>
       <Placemark>
         <name>北天門石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.925551,22.254441,0
@@ -2373,7 +2373,7 @@
       </Placemark>
       <Placemark>
         <name>北天門石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.925155,22.253825,0
@@ -2382,7 +2382,7 @@
       </Placemark>
       <Placemark>
         <name>北天門石澗無名瀑布03</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.924725,22.253047,0
@@ -2391,7 +2391,7 @@
       </Placemark>
       <Placemark>
         <name>北天門石澗無名瀑布04</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.92218,22.250848,0
@@ -2400,7 +2400,7 @@
       </Placemark>
       <Placemark>
         <name>鳳峰北坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.919662,22.254772,0
@@ -2409,7 +2409,7 @@
       </Placemark>
       <Placemark>
         <name>彌東坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.917091,22.259787,0
@@ -2418,7 +2418,7 @@
       </Placemark>
       <Placemark>
         <name>彌東坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.918793,22.259061,0
@@ -2427,7 +2427,7 @@
       </Placemark>
       <Placemark>
         <name>彌間石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.916873,22.266811,0
@@ -2436,7 +2436,7 @@
       </Placemark>
       <Placemark>
         <name>彌深石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.90504,22.263771,0
@@ -2445,7 +2445,7 @@
       </Placemark>
       <Placemark>
         <name>彌深石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.905562,22.264414,0
@@ -2454,7 +2454,7 @@
       </Placemark>
       <Placemark>
         <name>萬丈布石澗無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.859178,22.23084,0
@@ -2463,7 +2463,7 @@
       </Placemark>
       <Placemark>
         <name>萬丈布石澗無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.859604,22.230886,0
@@ -2472,7 +2472,7 @@
       </Placemark>
       <Placemark>
         <name>萬丈布石澗無名瀑布03</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.860195,22.230805,0
@@ -2481,7 +2481,7 @@
       </Placemark>
       <Placemark>
         <name>羌山東坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.886025,22.231486,0
@@ -2490,7 +2490,7 @@
       </Placemark>
       <Placemark>
         <name>羌山東坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.887735,22.230146,0
@@ -2499,7 +2499,7 @@
       </Placemark>
       <Placemark>
         <name>靈白中澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.869936,22.215741,0
@@ -2508,7 +2508,7 @@
       </Placemark>
       <Placemark>
         <name>苗笛竹坑無名瀑布01</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.877378,22.218183,0
@@ -2517,7 +2517,7 @@
       </Placemark>
       <Placemark>
         <name>苗笛竹坑無名瀑布02</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             113.877675,22.217858,0
@@ -2526,7 +2526,7 @@
       </Placemark>
       <Placemark>
         <name>猴塘溪無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.321762,22.439045,0
@@ -2535,7 +2535,7 @@
       </Placemark>
       <Placemark>
         <name>大藍湖石澗無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.230883,22.352151,0
@@ -2544,7 +2544,7 @@
       </Placemark>
       <Placemark>
         <name>壁山溪無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.250228,22.3719,0
@@ -2553,7 +2553,7 @@
       </Placemark>
       <Placemark>
         <name>石花坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.22832,22.38135,0
@@ -2562,7 +2562,7 @@
       </Placemark>
       <Placemark>
         <name>長連坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.215149,22.238593,0
@@ -2571,7 +2571,7 @@
       </Placemark>
       <Placemark>
         <name>老虎坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.211801,22.230867,0
@@ -2580,7 +2580,7 @@
       </Placemark>
       <Placemark>
         <name>金馬倫南坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.174033,22.254149,0
@@ -2589,7 +2589,7 @@
       </Placemark>
       <Placemark>
         <name>石壟仔坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.23953,22.394071,0
@@ -2598,7 +2598,7 @@
       </Placemark>
       <Placemark>
         <name>彎曲東坑無名瀑布</name>
-        <styleUrl>#icon-1892-0288D1-nodesc</styleUrl>
+        <styleUrl>#瀑布1</styleUrl>
         <Point>
           <coordinates>
             114.259273,22.402568,0

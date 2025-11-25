@@ -3,7 +3,7 @@
   <Document>
     <name>香港海灘大整合</name>
 	<description><![CDATA[ <a href="https://liber-research.com/onheat_heattoweak-3/" target="_blank">【探熱專題】唔止康文署泳灘 全港究竟有幾多座海灘？ </a>]]></description>
-    <Style id="icon-1521-E65100-normal">
+    <Style id="香港康文署泳灘-normal">
       <IconStyle>
         <color>ff0051e6</color>
         <scale>1</scale>
@@ -15,7 +15,7 @@
         <scale>0</scale>
       </LabelStyle>
     </Style>
-    <Style id="icon-1521-E65100-highlight">
+    <Style id="香港康文署泳灘-highlight">
       <IconStyle>
         <color>ff0051e6</color>
         <scale>1</scale>
@@ -27,17 +27,17 @@
         <scale>1</scale>
       </LabelStyle>
     </Style>
-    <StyleMap id="icon-1521-E65100">
+    <StyleMap id="香港康文署泳灘">
       <Pair>
         <key>normal</key>
-        <styleUrl>#icon-1521-E65100-normal</styleUrl>
+        <styleUrl>#香港康文署泳灘-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#icon-1521-E65100-highlight</styleUrl>
+        <styleUrl>#香港康文署泳灘-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="icon-1899-0288D1-labelson">
+    <Style id="香港其他海灘">
       <IconStyle>
         <color>ffd18802</color>
         <scale>1</scale>
@@ -53,7 +53,7 @@
         <name>蝴蝶灣泳灘 </name>
         <address>蝴蝶灣泳灘 </address>
         <description><![CDATA[地址: 屯門龍門路<br><br>類別: 600米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>屯門龍門路
@@ -67,7 +67,7 @@
       <Placemark>
         <name>青山灣泳灘</name>
         <description><![CDATA[地址: 青山公路-青山灣段<br>類別: 700米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>青山公路-青山灣段</value>
@@ -86,7 +86,7 @@
         <name>加多利灣泳灘</name>
         <address>加多利灣泳灘</address>
         <description><![CDATA[地址: 屯門青山公路青山灣段18¾咪<br>類別: 155米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>屯門青山公路青山灣段18¾咪</value>
@@ -99,7 +99,7 @@
       <Placemark>
         <name>舊咖啡灣泳灘</name>
         <description><![CDATA[地址: 屯門青山公路青山灣段18¾咪<br>類別: 199米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>屯門青山公路青山灣段18¾咪</value>
@@ -117,7 +117,7 @@
       <Placemark>
         <name>新咖啡灣泳灘</name>
         <description><![CDATA[地址: 屯門青山公路青山灣段18咪半<br>類別: 226米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>屯門青山公路青山灣段18咪半</value>
@@ -136,7 +136,7 @@
         <name>黃金泳灘</name>
         <address>黃金泳灘</address>
         <description><![CDATA[地址: 屯門青山公路青山灣段18咪半<br>類別: 1200米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>屯門青山公路青山灣段18咪半</value>
@@ -150,7 +150,7 @@
         <name>馬灣東灣泳灘</name>
         <address>馬灣東灣泳灘</address>
         <description><![CDATA[地址: 馬灣珀麗路<br>類別: 375米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>馬灣珀麗路</value>
@@ -163,7 +163,7 @@
       <Placemark>
         <name>釣魚灣泳灘</name>
         <description><![CDATA[地址: 荃灣青山公路深井段13咪<br>類別: 324米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣青山公路深井段13咪</value>
@@ -181,7 +181,7 @@
       <Placemark>
         <name>雙仙灣泳灘</name>
         <description><![CDATA[地址: 荃灣青山公路深井段12咪<br>類別: 31米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣青山公路深井段12咪</value>
@@ -200,7 +200,7 @@
         <name>海美灣泳灘</name>
         <address>海美灣泳灘</address>
         <description><![CDATA[地址: 荃灣青山公路汀九段11¾咪<br>類別: 99米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣青山公路汀九段11¾咪</value>
@@ -214,7 +214,7 @@
         <name>更生灣泳灘</name>
         <address>更生灣泳灘</address>
         <description><![CDATA[地址: 荃灣青山公路汀九段11咪半<br>類別: 69米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣青山公路汀九段11咪半</value>
@@ -228,7 +228,7 @@
         <name>麗都灣泳灘</name>
         <address>麗都灣泳灘</address>
         <description><![CDATA[地址: 荃灣青山公路汀九段11咪半<br>類別: 189米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣青山公路汀九段11咪半</value>
@@ -242,7 +242,7 @@
         <name>汀九灣泳灘</name>
         <address>汀九灣泳灘</address>
         <description><![CDATA[地址: 荃灣青山公路汀九段11咪<br>類別: 227米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣青山公路汀九段11咪</value>
@@ -256,7 +256,7 @@
         <name>近水灣泳灘</name>
         <address>近水灣泳灘</address>
         <description><![CDATA[地址: 荃灣青山公路汀九段10咪半<br>類別: 128米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣青山公路汀九段10咪半</value>
@@ -270,7 +270,7 @@
         <name>銀礦灣泳灘</name>
         <address>銀礦灣泳灘</address>
         <description><![CDATA[地址: 大嶼山梅窩東灣頭路<br>類別: 924米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大嶼山梅窩東灣頭路</value>
@@ -284,7 +284,7 @@
         <name>貝澳泳灘</name>
         <address>貝澳泳灘</address>
         <description><![CDATA[地址: 大嶼山貝澳<br>類別: 1000米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大嶼山貝澳</value>
@@ -298,7 +298,7 @@
         <name>上長沙泳灘</name>
         <address>上長沙泳灘</address>
         <description><![CDATA[地址: 大嶼山嶼南路<br>類別: 1400米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大嶼山嶼南路</value>
@@ -312,7 +312,7 @@
         <name>下長沙泳灘</name>
         <address>下長沙泳灘</address>
         <description><![CDATA[地址: 大嶼山嶼南路<br>類別: 460米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大嶼山嶼南路</value>
@@ -326,7 +326,7 @@
         <name>塘福泳灘</name>
         <address>塘福泳灘</address>
         <description><![CDATA[地址: 大嶼山嶼南路<br>類別: 372米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大嶼山嶼南路</value>
@@ -340,7 +340,7 @@
         <name>長洲東灣泳灘</name>
         <address>長洲東灣泳灘</address>
         <description><![CDATA[地址: 長洲東堤路<br>類別: 748米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>長洲東堤路</value>
@@ -354,7 +354,7 @@
         <name>觀音灣泳灘</name>
         <address>觀音灣泳灘</address>
         <description><![CDATA[地址: 長洲黑排路<br>類別: 224米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>長洲黑排路</value>
@@ -368,7 +368,7 @@
         <name>洪聖爺灣泳灘</name>
         <address>洪聖爺灣泳灘</address>
         <description><![CDATA[地址: 南丫島榕樹灣<br>類別: 151米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>南丫島榕樹灣</value>
@@ -381,7 +381,7 @@
       <Placemark>
         <name>蘆鬚城泳灘</name>
         <description><![CDATA[地址: 南丫島索罟灣<br>類別: 174米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>南丫島索罟灣</value>
@@ -400,7 +400,7 @@
         <name>大埔龍尾泳灘</name>
         <address>大埔龍尾泳灘</address>
         <description><![CDATA[地址: 大埔汀角路168號<br>類別: 195米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大埔汀角路168號</value>
@@ -413,7 +413,7 @@
       <Placemark>
         <name>橋咀泳灘</name>
         <description><![CDATA[地址: 西貢橋咀洲<br>類別: 109米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西貢橋咀洲</value>
@@ -431,7 +431,7 @@
       <Placemark>
         <name>廈門灣泳灘</name>
         <description><![CDATA[地址: 西貢橋咀洲<br>類別: 126米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西貢橋咀洲</value>
@@ -450,7 +450,7 @@
         <name>三星灣泳灘</name>
         <address>三星灣泳灘</address>
         <description><![CDATA[地址: 西貢三星灣(白沙灣區)<br>類別: 164米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西貢三星灣(白沙灣區)</value>
@@ -464,7 +464,7 @@
         <name>銀線灣泳灘</name>
         <address>銀線灣泳灘</address>
         <description><![CDATA[地址: 西貢清水灣道<br>類別: 117米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西貢清水灣道</value>
@@ -478,7 +478,7 @@
         <name>清水灣第一灣泳灘</name>
         <address>清水灣第一灣泳灘</address>
         <description><![CDATA[地址: 西貢大環頭清水灣道<br>類別: 114米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西貢大環頭清水灣道</value>
@@ -492,7 +492,7 @@
         <name>清水灣第二灣泳灘</name>
         <address>清水灣第二灣泳灘</address>
         <description><![CDATA[地址: 清水灣大坳門路<br>類別: 288米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>清水灣大坳門路</value>
@@ -506,7 +506,7 @@
         <name>深水灣泳灘</name>
         <address>深水灣泳灘</address>
         <description><![CDATA[地址: 深水灣香島道<br>類別: 414米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水灣香島道</value>
@@ -520,7 +520,7 @@
         <name>淺水灣泳灘</name>
         <address>淺水灣泳灘</address>
         <description><![CDATA[地址: 淺水灣海灘道<br>類別: 558米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>淺水灣海灘道</value>
@@ -534,7 +534,7 @@
         <name>中灣泳灘</name>
         <address>中灣泳灘</address>
         <description><![CDATA[地址: 淺水灣南灣道<br>類別: 88米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>淺水灣南灣道</value>
@@ -548,7 +548,7 @@
         <name>南灣泳灘</name>
         <address>南灣泳灘</address>
         <description><![CDATA[地址: 淺水灣南灣道<br>類別: 216米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>淺水灣南灣道</value>
@@ -562,7 +562,7 @@
         <name>舂坎角泳灘</name>
         <address>舂坎角泳灘</address>
         <description><![CDATA[地址: 舂坎角舂坎角道<br>類別: 176米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>舂坎角舂坎角道</value>
@@ -575,7 +575,7 @@
       <Placemark>
         <name>聖士提反灣泳灘</name>
         <description><![CDATA[地址: 赤柱黃麻角徑<br>類別: 153米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>赤柱黃麻角徑</value>
@@ -594,7 +594,7 @@
         <name>赤柱正灘泳灘</name>
         <address>赤柱正灘泳灘</address>
         <description><![CDATA[地址: 赤柱赤柱灘道<br>類別: 450米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>赤柱赤柱灘道</value>
@@ -608,7 +608,7 @@
         <name>夏萍灣泳灘</name>
         <address>夏萍灣泳灘</address>
         <description><![CDATA[地址: 赤柱赤柱灘道<br>類別: 60米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>赤柱赤柱灘道</value>
@@ -622,7 +622,7 @@
         <name>龜背灣泳灘</name>
         <address>龜背灣泳灘</address>
         <description><![CDATA[地址: 赤柱大潭道<br>類別: 115米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>赤柱大潭道</value>
@@ -635,7 +635,7 @@
       <Placemark>
         <name>石澳泳灘 </name>
         <description><![CDATA[地址: 石澳石澳道<br>類別: 373米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>石澳石澳道</value>
@@ -653,7 +653,7 @@
       <Placemark>
         <name>石澳後灘泳灘</name>
         <description><![CDATA[地址: 石澳石澳道<br>類別: 167米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>石澳石澳道</value>
@@ -672,7 +672,7 @@
         <name>大浪灣泳灘</name>
         <address>大浪灣泳灘</address>
         <description><![CDATA[地址: 石澳大浪灣道<br>類別: 170米]]></description>
-        <styleUrl>#icon-1521-E65100</styleUrl>
+        <styleUrl>#香港康文署泳灘</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>石澳大浪灣道</value>
@@ -688,7 +688,7 @@
       <Placemark>
         <name>沙頭角外島無名海灘（1）</name>
         <description><![CDATA[23米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -706,7 +706,7 @@
       <Placemark>
         <name>沙頭角外島無名海灘（2）</name>
         <description><![CDATA[106米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -724,7 +724,7 @@
       <Placemark>
         <name>大環大魚角無名海灘（2）</name>
         <description><![CDATA[42米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -742,7 +742,7 @@
       <Placemark>
         <name>大環海下無名海灘（1）</name>
         <description><![CDATA[60米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -760,7 +760,7 @@
       <Placemark>
         <name>谷埔排無名海灘（1）</name>
         <description><![CDATA[32米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -779,7 +779,7 @@
         <name>谷埔排無名海灘（2）
 </name>
         <description><![CDATA[22米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -798,7 +798,7 @@
         <name>谷埔排無名海灘（3）
 </name>
         <description><![CDATA[43米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -816,7 +816,7 @@
       <Placemark>
         <name>亞公坳無名海灘</name>
         <description><![CDATA[43米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -834,7 +834,7 @@
       <Placemark>
         <name>亞公咀無名海灘</name>
         <description><![CDATA[42米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -852,7 +852,7 @@
       <Placemark>
         <name>亞公灣無名海灘（3）</name>
         <description><![CDATA[20米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -870,7 +870,7 @@
       <Placemark>
         <name>亞公灣無名海灘（2）</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -888,7 +888,7 @@
       <Placemark>
         <name>亞公灣無名海灘（1）</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -906,7 +906,7 @@
       <Placemark>
         <name>芝麻籠無名海灘（1）</name>
         <description><![CDATA[54米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -924,7 +924,7 @@
       <Placemark>
         <name>榕樹凹灣無名海灘（4）</name>
         <description><![CDATA[46米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -942,7 +942,7 @@
       <Placemark>
         <name>芝麻籠無名海灘（2）</name>
         <description><![CDATA[31米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -960,7 +960,7 @@
       <Placemark>
         <name>榕樹凹村碼頭無名海灘</name>
         <description><![CDATA[94米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -978,7 +978,7 @@
       <Placemark>
         <name>榕樹凹灣無名海灘（1）</name>
         <description><![CDATA[83米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -996,7 +996,7 @@
       <Placemark>
         <name>榕樹凹灣無名海灘（2）</name>
         <description><![CDATA[35米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1014,7 +1014,7 @@
       <Placemark>
         <name>榕樹凹灣無名海灘（3）</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1032,7 +1032,7 @@
       <Placemark>
         <name>三角咀無名海灘</name>
         <description><![CDATA[57米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1050,7 +1050,7 @@
       <Placemark>
         <name>大深涌無名海灘</name>
         <description><![CDATA[56米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1068,7 +1068,7 @@
       <Placemark>
         <name>長排頭無名海灘</name>
         <description><![CDATA[38米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1086,7 +1086,7 @@
       <Placemark>
         <name>新舅埔角無名海灘</name>
         <description><![CDATA[117米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1104,7 +1104,7 @@
       <Placemark>
         <name>細鴨洲無名海灘</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1122,7 +1122,7 @@
       <Placemark>
         <name>鴨螺春無名海灘</name>
         <description><![CDATA[32米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1140,7 +1140,7 @@
       <Placemark>
         <name>鴨洲無名海灘（2）</name>
         <description><![CDATA[41米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1158,7 +1158,7 @@
       <Placemark>
         <name>鴨洲無名海灘（1）</name>
         <description><![CDATA[196米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1176,7 +1176,7 @@
       <Placemark>
         <name>鴨洲無名海灘（3）</name>
         <description><![CDATA[38米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1194,7 +1194,7 @@
       <Placemark>
         <name>上角咀無名海灘</name>
         <description><![CDATA[153米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1212,7 +1212,7 @@
       <Placemark>
         <name>鎖羅盤灣無名海灘</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1230,7 +1230,7 @@
       <Placemark>
         <name>荔枝窩無名海沙灘（2）</name>
         <description><![CDATA[48米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1248,7 +1248,7 @@
       <Placemark>
         <name>荔枝窩無名海灘（1）</name>
         <description><![CDATA[93米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1266,7 +1266,7 @@
       <Placemark>
         <name>墳洲無名海灘（1）</name>
         <description><![CDATA[115米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1284,7 +1284,7 @@
       <Placemark>
         <name>青洲無名海灘（1）</name>
         <description><![CDATA[40米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1302,7 +1302,7 @@
       <Placemark>
         <name>青洲無名海灘（2）</name>
         <description><![CDATA[54米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1320,7 +1320,7 @@
       <Placemark>
         <name>吉澳白沙頭咀無名海灘（5）</name>
         <description><![CDATA[282米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1338,7 +1338,7 @@
       <Placemark>
         <name>吉澳白沙頭灣無名海灘（4）</name>
         <description><![CDATA[100米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1356,7 +1356,7 @@
       <Placemark>
         <name>吉澳無名海灘（6）</name>
         <description><![CDATA[300米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1374,7 +1374,7 @@
       <Placemark>
         <name>吉澳無名海灘（7）</name>
         <description><![CDATA[162米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1392,7 +1392,7 @@
       <Placemark>
         <name>吉澳凹背塘無名海灘（10）</name>
         <description><![CDATA[100米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1410,7 +1410,7 @@
       <Placemark>
         <name>蒲魚排無名海灘</name>
         <description><![CDATA[26米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1428,7 +1428,7 @@
       <Placemark>
         <name>吉澳碼頭無名海灘（19）</name>
         <description><![CDATA[300米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1446,7 +1446,7 @@
       <Placemark>
         <name>吉澳漁民村無名海灘（18）</name>
         <description><![CDATA[246米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1464,7 +1464,7 @@
       <Placemark>
         <name>吉澳赤頭角無名海灘（17）</name>
         <description><![CDATA[173米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1482,7 +1482,7 @@
       <Placemark>
         <name>東澳灣</name>
         <description><![CDATA[233米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1500,7 +1500,7 @@
       <Placemark>
         <name>吉澳無名海灘（14）</name>
         <description><![CDATA[88米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1518,7 +1518,7 @@
       <Placemark>
         <name>吉澳無名海灘（15）</name>
         <description><![CDATA[42米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1536,7 +1536,7 @@
       <Placemark>
         <name>吉澳無名海灘（13）</name>
         <description><![CDATA[38米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1554,7 +1554,7 @@
       <Placemark>
         <name>吉澳涌灣無名灘（12）</name>
         <description><![CDATA[101米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1572,7 +1572,7 @@
       <Placemark>
         <name>吉澳無名海灘（11）</name>
         <description><![CDATA[57米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1590,7 +1590,7 @@
       <Placemark>
         <name>吉澳無名海灘（9）</name>
         <description><![CDATA[32米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1608,7 +1608,7 @@
       <Placemark>
         <name>吉澳無名海灘（8）</name>
         <description><![CDATA[37米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1626,7 +1626,7 @@
       <Placemark>
         <name>吉澳白沙頭灣無名海灘（2）</name>
         <description><![CDATA[66米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1644,7 +1644,7 @@
       <Placemark>
         <name>吉澳白沙頭灣無名海灘（3）</name>
         <description><![CDATA[77米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1662,7 +1662,7 @@
       <Placemark>
         <name>吉澳王角尾無名海灘（1）</name>
         <description><![CDATA[33米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1680,7 +1680,7 @@
       <Placemark>
         <name>墳洲寸灣咀無名海灘（2）</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1698,7 +1698,7 @@
       <Placemark>
         <name>三椏村涌灣咀無名海灘（13）</name>
         <description><![CDATA[117米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1716,7 +1716,7 @@
       <Placemark>
         <name>三椏村青洲瀝無名海灘（11）</name>
         <description><![CDATA[121米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1734,7 +1734,7 @@
       <Placemark>
         <name>三椏村青洲瀝無名海灘（12）</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1752,7 +1752,7 @@
       <Placemark>
         <name>三椏村牛屎湖灣了哥岩無名海灘（10）</name>
         <description><![CDATA[24米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1770,7 +1770,7 @@
       <Placemark>
         <name>三椏村牛屎湖灣無名海灘（8）</name>
         <description><![CDATA[140米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1788,7 +1788,7 @@
       <Placemark>
         <name>三椏村牛屎湖灣無名海灘（9）</name>
         <description><![CDATA[155米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1806,7 +1806,7 @@
       <Placemark>
         <name>三椏村牛屎湖灣無名海灘（7）</name>
         <description><![CDATA[62米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1824,7 +1824,7 @@
       <Placemark>
         <name>三椏村牛屎湖灣無名海灘（6）</name>
         <description><![CDATA[60米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1842,7 +1842,7 @@
       <Placemark>
         <name>三椏村牛屎湖灣無名海灘（5）</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1860,7 +1860,7 @@
       <Placemark>
         <name>三椏村牛屎湖灣無名海灘（4）</name>
         <description><![CDATA[124米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1878,7 +1878,7 @@
       <Placemark>
         <name>三椏村西流灣無名海灘（3）</name>
         <description><![CDATA[57米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1896,7 +1896,7 @@
       <Placemark>
         <name>三椏村屎湖背無名海灘（2）</name>
         <description><![CDATA[68米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1914,7 +1914,7 @@
       <Placemark>
         <name>印洲無名海灘</name>
         <description><![CDATA[29米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1932,7 +1932,7 @@
       <Placemark>
         <name>三椏村印洲塘無名海灘（1）</name>
         <description><![CDATA[177米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1950,7 +1950,7 @@
       <Placemark>
         <name>三椏村龍井灣無名海灘（16）</name>
         <description><![CDATA[75米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1968,7 +1968,7 @@
       <Placemark>
         <name>三椏村大龍井三椏灣無名海灘（15）</name>
         <description><![CDATA[57米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -1986,7 +1986,7 @@
       <Placemark>
         <name>三椏村三椏灣無名海灘（14）</name>
         <description><![CDATA[48米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2004,7 +2004,7 @@
       <Placemark>
         <name>扁咀三椏灣無名海灘（1）</name>
         <description><![CDATA[63米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2022,7 +2022,7 @@
       <Placemark>
         <name>虎王洲無名海灘（1）</name>
         <description><![CDATA[79米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2040,7 +2040,7 @@
       <Placemark>
         <name>虎王洲無名海灘（3）</name>
         <description><![CDATA[100米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2058,7 +2058,7 @@
       <Placemark>
         <name>虎王洲無名海灘（2）</name>
         <description><![CDATA[54米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2076,7 +2076,7 @@
       <Placemark>
         <name>娥眉灣無名海灘（5）</name>
         <description><![CDATA[54米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2094,7 +2094,7 @@
       <Placemark>
         <name>娥眉灣無名海灘（4）</name>
         <description><![CDATA[75米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2112,7 +2112,7 @@
       <Placemark>
         <name>娥眉洲無名海灘（3）</name>
         <description><![CDATA[157米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2130,7 +2130,7 @@
       <Placemark>
         <name>娥眉洲籮箕灣無名海灘（1）</name>
         <description><![CDATA[580米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2148,7 +2148,7 @@
       <Placemark>
         <name>娥眉洲奧士角咀無名海灘（2）</name>
         <description><![CDATA[76米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2166,7 +2166,7 @@
       <Placemark>
         <name>往灣洲沙岩頭無名海灘（6）</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2184,7 +2184,7 @@
       <Placemark>
         <name>往灣洲東灣無名海灘（1）</name>
         <description><![CDATA[226米；俗稱「督爺灣」<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2202,7 +2202,7 @@
       <Placemark>
         <name>往灣洲無名海灘（5）</name>
         <description><![CDATA[191米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2220,7 +2220,7 @@
       <Placemark>
         <name>往灣洲無名海灘（4）</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2238,7 +2238,7 @@
       <Placemark>
         <name>往灣洲無名海灘（3）</name>
         <description><![CDATA[72米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2256,7 +2256,7 @@
       <Placemark>
         <name>往灣洲無名海灘（2）</name>
         <description><![CDATA[27米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2274,7 +2274,7 @@
       <Placemark>
         <name>往灣洲無名海灘（1）</name>
         <description><![CDATA[900米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2292,7 +2292,7 @@
       <Placemark>
         <name>赤沙環</name>
         <description><![CDATA[73米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2310,7 +2310,7 @@
       <Placemark>
         <name>塘瀝仔無名海灘</name>
         <description><![CDATA[83米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2328,7 +2328,7 @@
       <Placemark>
         <name>黃竹角海無名海灘</name>
         <description><![CDATA[100米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2346,7 +2346,7 @@
       <Placemark>
         <name>東平洲亞媽灣無名海灘（3）</name>
         <description><![CDATA[505米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2364,7 +2364,7 @@
       <Placemark>
         <name>白角山無名海灘（1）</name>
         <description><![CDATA[72米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2382,7 +2382,7 @@
       <Placemark>
         <name>白角山無名海灘（2）</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2400,7 +2400,7 @@
       <Placemark>
         <name>東平洲王爺角無名海灘（2）</name>
         <description><![CDATA[270米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2418,7 +2418,7 @@
       <Placemark>
         <name>赤洲大環海灘（2）</name>
         <description><![CDATA[102米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2436,7 +2436,7 @@
       <Placemark>
         <name>赤洲無名海灘（1）</name>
         <description><![CDATA[75米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2454,7 +2454,7 @@
       <Placemark>
         <name>白角山無名海海灘（3）</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2472,7 +2472,7 @@
       <Placemark>
         <name>東平洲洲尾無名海灘（1）</name>
         <description><![CDATA[1150米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2490,7 +2490,7 @@
       <Placemark>
         <name>鳳凰笏無名海灘（1）</name>
         <description><![CDATA[38米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2508,7 +2508,7 @@
       <Placemark>
         <name>鳳凰笏無名海灘（2）</name>
         <description><![CDATA[75米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2526,7 +2526,7 @@
       <Placemark>
         <name>燈籠洲無名海灘</name>
         <description><![CDATA[70米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2544,7 +2544,7 @@
       <Placemark>
         <name>三門山無名海灘</name>
         <description><![CDATA[93米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2562,7 +2562,7 @@
       <Placemark>
         <name>老虎笏無名海灘（1）</name>
         <description><![CDATA[38米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2581,7 +2581,7 @@
         <name>老虎笏無名海灘（2）
 </name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2599,7 +2599,7 @@
       <Placemark>
         <name>白沙頭洲海灘（1）</name>
         <description><![CDATA[158米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2617,7 +2617,7 @@
       <Placemark>
         <name>沙欄無名海灘（3）</name>
         <description><![CDATA[242米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2635,7 +2635,7 @@
       <Placemark>
         <name>雅景花園旁無名海灘</name>
         <description><![CDATA[199米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2653,7 +2653,7 @@
       <Placemark>
         <name>沙欄無名海灘（2）</name>
         <description><![CDATA[234米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2671,7 +2671,7 @@
       <Placemark>
         <name>沙欄無名海灘（1）</name>
         <description><![CDATA[57米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2689,7 +2689,7 @@
       <Placemark>
         <name>鹽田仔無名海灘</name>
         <description><![CDATA[125米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2707,7 +2707,7 @@
       <Placemark>
         <name>門柳頸無名海灘</name>
         <description><![CDATA[59米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2725,7 +2725,7 @@
       <Placemark>
         <name>馬屎洲無名海灘（2）</name>
         <description><![CDATA[147米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2743,7 +2743,7 @@
       <Placemark>
         <name>馬屎洲無名海灘（1）</name>
         <description><![CDATA[60米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2761,7 +2761,7 @@
       <Placemark>
         <name>船灣羊洲無名海灘</name>
         <description><![CDATA[40米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2779,7 +2779,7 @@
       <Placemark>
         <name>丫洲無名海灘（1）</name>
         <description><![CDATA[100米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2797,7 +2797,7 @@
       <Placemark>
         <name>丫洲無名海灘（3）</name>
         <description><![CDATA[62米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2815,7 +2815,7 @@
       <Placemark>
         <name>井頭碼頭無名海灘</name>
         <description><![CDATA[41米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2833,7 +2833,7 @@
       <Placemark>
         <name>三杯酒無名海灘（1）</name>
         <description><![CDATA[39米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2851,7 +2851,7 @@
       <Placemark>
         <name>烏洲無名海灘</name>
         <description><![CDATA[233米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2869,7 +2869,7 @@
       <Placemark>
         <name>深涌灣無名海灘</name>
         <description><![CDATA[32米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2887,7 +2887,7 @@
       <Placemark>
         <name>丫洲無名海灘（2）</name>
         <description><![CDATA[176米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2905,7 +2905,7 @@
       <Placemark>
         <name>扯排無名沙灘</name>
         <description><![CDATA[71米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2923,7 +2923,7 @@
       <Placemark>
         <name>崩沙排無名海灘</name>
         <description><![CDATA[44米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2941,7 +2941,7 @@
       <Placemark>
         <name>白角仔沙灘</name>
         <description><![CDATA[61米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2959,7 +2959,7 @@
       <Placemark>
         <name>深屈灣無名海灘</name>
         <description><![CDATA[53米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2977,7 +2977,7 @@
       <Placemark>
         <name>荔枝莊無名海灘（1）</name>
         <description><![CDATA[78米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -2995,7 +2995,7 @@
       <Placemark>
         <name>鵝頸咀無名海灘（1）</name>
         <description><![CDATA[52米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3013,7 +3013,7 @@
       <Placemark>
         <name>白沙仔</name>
         <description><![CDATA[58米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3031,7 +3031,7 @@
       <Placemark>
         <name>串螺角無名海灘</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3049,7 +3049,7 @@
       <Placemark>
         <name>海下灣無名海灘（1）</name>
         <description><![CDATA[95米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3067,7 +3067,7 @@
       <Placemark>
         <name>海下灣無名海灘（2）</name>
         <description><![CDATA[64米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3085,7 +3085,7 @@
       <Placemark>
         <name>三抱石無名海灘（2）</name>
         <description><![CDATA[23米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3103,7 +3103,7 @@
       <Placemark>
         <name>塔門無名海灘</name>
         <description><![CDATA[41米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3121,7 +3121,7 @@
       <Placemark>
         <name>海下灣無名海灘（4）</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3139,7 +3139,7 @@
       <Placemark>
         <name>南風灣無名海灘</name>
         <description><![CDATA[148米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3157,7 +3157,7 @@
       <Placemark>
         <name>大涌沙海灘</name>
         <description><![CDATA[59米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3175,7 +3175,7 @@
       <Placemark>
         <name>黃茅角無名海灘（1）</name>
         <description><![CDATA[52米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3193,7 +3193,7 @@
       <Placemark>
         <name>黃茅角無名海灘（2）</name>
         <description><![CDATA[53米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3211,7 +3211,7 @@
       <Placemark>
         <name>蛋家灣</name>
         <description><![CDATA[174米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3229,7 +3229,7 @@
       <Placemark>
         <name>燈洲無名沙灘</name>
         <description><![CDATA[99米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3247,7 +3247,7 @@
       <Placemark>
         <name>烏溪沙青年新村沙灘</name>
         <description><![CDATA[188米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3265,7 +3265,7 @@
       <Placemark>
         <name>烏溪沙沙灘</name>
         <description><![CDATA[461米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3283,7 +3283,7 @@
       <Placemark>
         <name>海星灣沙灘（1）</name>
         <description><![CDATA[206米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3301,7 +3301,7 @@
       <Placemark>
         <name>海星灣沙灘（2）</name>
         <description><![CDATA[45米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3319,7 +3319,7 @@
       <Placemark>
         <name>馬鞍山白石沙灘</name>
         <description><![CDATA[220米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3337,7 +3337,7 @@
       <Placemark>
         <name>年華沙灘</name>
         <description><![CDATA[72米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3355,7 +3355,7 @@
       <Placemark>
         <name>牛湖塘無名海灘（2）</name>
         <description><![CDATA[365米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3373,7 +3373,7 @@
       <Placemark>
         <name>蚺蛇灣</name>
         <description><![CDATA[280米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3391,7 +3391,7 @@
       <Placemark>
         <name>千溪海岸</name>
         <description><![CDATA[800米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3409,7 +3409,7 @@
       <Placemark>
         <name>黃茅洲無名海灘</name>
         <description><![CDATA[38米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3427,7 +3427,7 @@
       <Placemark>
         <name>深灣</name>
         <description><![CDATA[97米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3445,7 +3445,7 @@
       <Placemark>
         <name>沉船灣</name>
         <description><![CDATA[79米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3463,7 +3463,7 @@
       <Placemark>
         <name>東灣</name>
         <description><![CDATA[284米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3481,7 +3481,7 @@
       <Placemark>
         <name>鹹田無名沙灘(1)</name>
         <description><![CDATA[80米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3499,7 +3499,7 @@
       <Placemark>
         <name>螺灣</name>
         <description><![CDATA[75米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3517,7 +3517,7 @@
       <Placemark>
         <name>咸田灣</name>
         <description><![CDATA[385米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3535,7 +3535,7 @@
       <Placemark>
         <name>西灣</name>
         <description><![CDATA[549米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3553,7 +3553,7 @@
       <Placemark>
         <name>大灣</name>
         <description><![CDATA[719米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3571,7 +3571,7 @@
       <Placemark>
         <name>浪茄仔</name>
         <description><![CDATA[77米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3589,7 +3589,7 @@
       <Placemark>
         <name>浪茄灣沙灘</name>
         <description><![CDATA[393米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3607,7 +3607,7 @@
       <Placemark>
         <name>撿豬灣</name>
         <description><![CDATA[145米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3625,7 +3625,7 @@
       <Placemark>
         <name>黃鮎灣</name>
         <description><![CDATA[119米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3643,7 +3643,7 @@
       <Placemark>
         <name>白臘灣無名海灘</name>
         <description><![CDATA[56米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3661,7 +3661,7 @@
       <Placemark>
         <name>七重石灘</name>
         <description><![CDATA[122米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3679,7 +3679,7 @@
       <Placemark>
         <name>白腊仔</name>
         <description><![CDATA[102米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3698,7 +3698,7 @@
         <name>蠄蟧灣
 </name>
         <description><![CDATA[89米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3716,7 +3716,7 @@
       <Placemark>
         <name>木棉洞無名海灘</name>
         <description><![CDATA[97米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3734,7 +3734,7 @@
       <Placemark>
         <name>沙橋頭無名海灘（2）</name>
         <description><![CDATA[70米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3752,7 +3752,7 @@
       <Placemark>
         <name>白腊灣沙灘</name>
         <description><![CDATA[265米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3770,7 +3770,7 @@
       <Placemark>
         <name>馬罅肚</name>
         <description><![CDATA[77米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3789,7 +3789,7 @@
         <name>東丫無名海灘
 </name>
         <description><![CDATA[29米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3807,7 +3807,7 @@
       <Placemark>
         <name>伙頭墳洲小沙灘</name>
         <description><![CDATA[57米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3825,7 +3825,7 @@
       <Placemark>
         <name>伙頭墳洲沙灘</name>
         <description><![CDATA[100米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3843,7 +3843,7 @@
       <Placemark>
         <name>晨曦會碼頭沙灘</name>
         <description><![CDATA[104米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3861,7 +3861,7 @@
       <Placemark>
         <name>鑰匙門沙灘</name>
         <description><![CDATA[177米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3879,7 +3879,7 @@
       <Placemark>
         <name>甕缸灣</name>
         <description><![CDATA[128米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3897,7 +3897,7 @@
       <Placemark>
         <name>企頭角頂無名海灘</name>
         <description><![CDATA[52米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3915,7 +3915,7 @@
       <Placemark>
         <name>火石洲無名海灘（1）</name>
         <description><![CDATA[230米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3933,7 +3933,7 @@
       <Placemark>
         <name>欖灣</name>
         <description><![CDATA[117米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3952,7 +3952,7 @@
         <name>馬頭環沙灘
 </name>
         <description><![CDATA[85米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3971,7 +3971,7 @@
         <name>沙橋頭無名海灘（1）
 </name>
         <description><![CDATA[39米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -3990,7 +3990,7 @@
         <name>北丫無名海灘（1）
 </name>
         <description><![CDATA[130米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4009,7 +4009,7 @@
         <name>石仔灣
 </name>
         <description><![CDATA[32米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4027,7 +4027,7 @@
       <Placemark>
         <name>大頭洲咀無名海灘</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4045,7 +4045,7 @@
       <Placemark>
         <name>青洲無名海灘</name>
         <description><![CDATA[53米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4064,7 +4064,7 @@
         <name>斬竹灣碼頭沙灘
 </name>
         <description><![CDATA[27米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4082,7 +4082,7 @@
       <Placemark>
         <name>黄泥洲仔</name>
         <description><![CDATA[66米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4100,7 +4100,7 @@
       <Placemark>
         <name>斬竹灣無名海灘（1）</name>
         <description><![CDATA[24米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4118,7 +4118,7 @@
       <Placemark>
         <name>斬竹灣無名海灘（2）</name>
         <description><![CDATA[20米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4136,7 +4136,7 @@
       <Placemark>
         <name>斬竹灣無名海灘（3）</name>
         <description><![CDATA[55米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4154,7 +4154,7 @@
       <Placemark>
         <name>斬竹灣無名海灘（4）</name>
         <description><![CDATA[48米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4172,7 +4172,7 @@
       <Placemark>
         <name>西貢戶外訓練營無名海灘</name>
         <description><![CDATA[61米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4190,7 +4190,7 @@
       <Placemark>
         <name>大網仔無名海灘</name>
         <description><![CDATA[48米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4208,7 +4208,7 @@
       <Placemark>
         <name>大網仔外展訓練學校無名海灘（1）</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4226,7 +4226,7 @@
       <Placemark>
         <name>大網仔外展訓練學校無名海灘（1）</name>
         <description><![CDATA[47米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4244,7 +4244,7 @@
       <Placemark>
         <name>域多利遊樂會無名海灘</name>
         <description><![CDATA[25米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4262,7 +4262,7 @@
       <Placemark>
         <name>早禾坑碼頭無名海灘</name>
         <description><![CDATA[27米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4280,7 +4280,7 @@
       <Placemark>
         <name>沙下灘</name>
         <description><![CDATA[254米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4298,7 +4298,7 @@
       <Placemark>
         <name>垃圾洲無名海灘</name>
         <description><![CDATA[20米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4316,7 +4316,7 @@
       <Placemark>
         <name>羊洲無名海灘（1）</name>
         <description><![CDATA[136米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4334,7 +4334,7 @@
       <Placemark>
         <name>羊洲無名海灘（2）</name>
         <description><![CDATA[109米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4352,7 +4352,7 @@
       <Placemark>
         <name>枕頭洲海灘</name>
         <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AKcrxGStQ6kfXmGSlrdhmCZx14FqnSvo86pH7NB_XhrfiPl-heLKxE2wbEcuYxFPXMGYYllXuKEoOYf7XSpFjAYIY-lCRHofKbjY10pM0Y60Tpu8Bfuvm3EDZebPRTjEgKqIOHxGj2yU5O9mwaDNTYPsw-cQy_UyOnr5yqP1ep7Sd9po0qPzGCpW7qTM0o6cLQ2rASgGCsDndQbe69rUVxR9wm6xx1po2NHdQLgPOCpWUOzzRZjCzrRdE1SwOro?authuser=0&fife=s16383" height="200" width="auto" /><br><br>537米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4373,7 +4373,7 @@
       <Placemark>
         <name>橋咀無名海灘（1）</name>
         <description><![CDATA[76米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4391,7 +4391,7 @@
       <Placemark>
         <name>橋咀無名海灘（2）</name>
         <description><![CDATA[150米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4409,7 +4409,7 @@
       <Placemark>
         <name>鹽田仔碼頭無名海灘</name>
         <description><![CDATA[28米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4427,7 +4427,7 @@
       <Placemark>
         <name>橋咀無名沙灘（3）</name>
         <description><![CDATA[37米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4445,7 +4445,7 @@
       <Placemark>
         <name>橋咀無名海灘（10）</name>
         <description><![CDATA[48米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4463,7 +4463,7 @@
       <Placemark>
         <name>罐杉環無名海灘</name>
         <description><![CDATA[38米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4481,7 +4481,7 @@
       <Placemark>
         <name>滘西洲碼頭無名海灘(1)</name>
         <description><![CDATA[121米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4499,7 +4499,7 @@
       <Placemark>
         <name>滘西洲碼頭無名海灘(2)</name>
         <description><![CDATA[76米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4517,7 +4517,7 @@
       <Placemark>
         <name>滘西洲碼頭無名海灘(3)</name>
         <description><![CDATA[33米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4535,7 +4535,7 @@
       <Placemark>
         <name>浪芒灣</name>
         <description><![CDATA[110米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4553,7 +4553,7 @@
       <Placemark>
         <name>鸕兹排無名海灘</name>
         <description><![CDATA[65米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4571,7 +4571,7 @@
       <Placemark>
         <name>石鼓環無名海灘（1）</name>
         <description><![CDATA[45米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4589,7 +4589,7 @@
       <Placemark>
         <name>石鼓環無名海灘（2）</name>
         <description><![CDATA[53米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4607,7 +4607,7 @@
       <Placemark>
         <name>橋咀無名海灘（9）</name>
         <description><![CDATA[42米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4625,7 +4625,7 @@
       <Placemark>
         <name>橋咀無名海灘（8）</name>
         <description><![CDATA[56米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4643,7 +4643,7 @@
       <Placemark>
         <name>白沙咀無名海灘</name>
         <description><![CDATA[47米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4661,7 +4661,7 @@
       <Placemark>
         <name>白環／威士忌灣</name>
         <description><![CDATA[106米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4679,7 +4679,7 @@
       <Placemark>
         <name>滘西灣</name>
         <description><![CDATA[130米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4697,7 +4697,7 @@
       <Placemark>
         <name>滘中灣</name>
         <description><![CDATA[61米； Google Map 「滘東灣」一名為誤植，實為「滘中灣」<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4715,7 +4715,7 @@
       <Placemark>
         <name>打蠔墩無名海灘</name>
         <description><![CDATA[64米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4733,7 +4733,7 @@
       <Placemark>
         <name>老虎岩海灘</name>
         <description><![CDATA[111米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4751,7 +4751,7 @@
       <Placemark>
         <name>沙咀無名海灘</name>
         <description><![CDATA[57米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4769,7 +4769,7 @@
       <Placemark>
         <name>萬頭咀無名海灘</name>
         <description><![CDATA[25米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4787,7 +4787,7 @@
       <Placemark>
         <name>南圍無名沙灘</name>
         <description><![CDATA[94米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4805,7 +4805,7 @@
       <Placemark>
         <name>張公山無名海灘（1）</name>
         <description><![CDATA[81米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4823,7 +4823,7 @@
       <Placemark>
         <name>張公山無名海灘（2）</name>
         <description><![CDATA[102米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4841,7 +4841,7 @@
       <Placemark>
         <name>露營灣</name>
         <description><![CDATA[53米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4859,7 +4859,7 @@
       <Placemark>
         <name>白水碗</name>
         <description><![CDATA[163米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4877,7 +4877,7 @@
       <Placemark>
         <name>香港科技大學無名海灘（1）</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4895,7 +4895,7 @@
       <Placemark>
         <name>香港科技大學無名海灘（2）</name>
         <description><![CDATA[39米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4913,7 +4913,7 @@
       <Placemark>
         <name>阿公灣無名海灘（2）</name>
         <description><![CDATA[103米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4931,7 +4931,7 @@
       <Placemark>
         <name>銀臺路無名沙灘</name>
         <description><![CDATA[101米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4949,7 +4949,7 @@
       <Placemark>
         <name>碧沙灣海灘</name>
         <description><![CDATA[114米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4967,7 +4967,7 @@
       <Placemark>
         <name>大王灣沙灘</name>
         <description><![CDATA[113米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -4985,7 +4985,7 @@
       <Placemark>
         <name>小棕林海灘</name>
         <description><![CDATA[140米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5003,7 +5003,7 @@
       <Placemark>
         <name>岩頭沙無名海灘（1）</name>
         <description><![CDATA[141米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5021,7 +5021,7 @@
       <Placemark>
         <name>岩頭沙無名海灘（2）</name>
         <description><![CDATA[63米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5039,7 +5039,7 @@
       <Placemark>
         <name>檳榔灣</name>
         <description><![CDATA[198米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5057,7 +5057,7 @@
       <Placemark>
         <name>相思灣第二灘</name>
         <description><![CDATA[51米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5075,7 +5075,7 @@
       <Placemark>
         <name>相思灣</name>
         <description><![CDATA[131米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5093,7 +5093,7 @@
       <Placemark>
         <name>龍蝦灣沙灘</name>
         <description><![CDATA[78米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5111,7 +5111,7 @@
       <Placemark>
         <name>綠蛋島海灘</name>
         <description><![CDATA[25米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5129,7 +5129,7 @@
       <Placemark>
         <name>大環頭無名海灘</name>
         <description><![CDATA[121米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5147,7 +5147,7 @@
       <Placemark>
         <name>鹹田無名沙灘(2)</name>
         <description><![CDATA[84米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5165,7 +5165,7 @@
       <Placemark>
         <name>蚊灣</name>
         <description><![CDATA[25米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5183,7 +5183,7 @@
       <Placemark>
         <name>芒洲仔沙灘</name>
         <description><![CDATA[43米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5201,7 +5201,7 @@
       <Placemark>
         <name>平托坑山無名海灘</name>
         <description><![CDATA[236米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5219,7 +5219,7 @@
       <Placemark>
         <name>果洲群島大洲無名海灘</name>
         <description><![CDATA[27米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5237,7 +5237,7 @@
       <Placemark>
         <name>鹿頸灣</name>
         <description><![CDATA[332米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5255,7 +5255,7 @@
       <Placemark>
         <name>南堂灣</name>
         <description><![CDATA[77米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5273,7 +5273,7 @@
       <Placemark>
         <name>藍塘</name>
         <description><![CDATA[43米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5291,7 +5291,7 @@
       <Placemark>
         <name>東龍洲北碼頭無名海灘（2）</name>
         <description><![CDATA[166米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5309,7 +5309,7 @@
       <Placemark>
         <name>大廟灣天后古廟海灘</name>
         <description><![CDATA[132米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5327,7 +5327,7 @@
       <Placemark>
         <name>大廟灣(2)</name>
         <description><![CDATA[82米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5345,7 +5345,7 @@
       <Placemark>
         <name>佛堂洲無名海灘(2)</name>
         <description><![CDATA[20米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5363,7 +5363,7 @@
       <Placemark>
         <name>鯉魚門三角咀</name>
         <description><![CDATA[59米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5381,7 +5381,7 @@
       <Placemark>
         <name>佛堂洲無名海灘(1)</name>
         <description><![CDATA[105米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5399,7 +5399,7 @@
       <Placemark>
         <name>將軍澳龍舟灣</name>
         <description><![CDATA[48米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5417,7 +5417,7 @@
       <Placemark>
         <name>照鏡環</name>
         <description><![CDATA[38米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5435,7 +5435,7 @@
       <Placemark>
         <name>照鏡環無名海灘（2）</name>
         <description><![CDATA[74米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5453,7 +5453,7 @@
       <Placemark>
         <name>銀灣</name>
         <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AKcrxGSB1sQqUUqCHTkaxMPNzJHhDAojV6Ln4AbSyaicWS1CdpdFA32bVBx7mPklYmp2G8wpTQzJB1RsJGdL0AOOXIhxgetcEFqQRiW6XSbi3UNKjPZnH1I777uIZo3T1tI2m9_fTqnemlmsOeECtsdBubQJzkxzXyYdmc2-gzVJtzVSbQ7U-e0gs6gxaEj7CInH9k1FCgKzA5N1pRjRJ2nHYkdFxBjGbfphctw_nypeCHDEIt1sdNes_agb5Ec?authuser=0&fife=s16383" height="200" width="auto" /><br><br>152米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5474,7 +5474,7 @@
       <Placemark>
         <name>大浪灣無名海灘（1）</name>
         <description><![CDATA[32米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5492,7 +5492,7 @@
       <Placemark>
         <name>石澳灣沙灘</name>
         <description><![CDATA[67米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5510,7 +5510,7 @@
       <Placemark>
         <name>垃圾灣</name>
         <description><![CDATA[146米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5528,7 +5528,7 @@
       <Placemark>
         <name>鶴咀灣 （限制地區）</name>
         <description><![CDATA[126 米； 鶴咀海岸保護區，不准進入<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5546,7 +5546,7 @@
       <Placemark>
         <name>土地灣</name>
         <description><![CDATA[133米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5564,7 +5564,7 @@
       <Placemark>
         <name>石澳石礦場無名海灘（2）</name>
         <description><![CDATA[162米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5582,7 +5582,7 @@
       <Placemark>
         <name>銀坑村無名海灘</name>
         <description><![CDATA[57米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5600,7 +5600,7 @@
       <Placemark>
         <name>東丫背村無名海灘（1）</name>
         <description><![CDATA[197米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5618,7 +5618,7 @@
       <Placemark>
         <name>東丫村無名海灘</name>
         <description><![CDATA[94米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5636,7 +5636,7 @@
       <Placemark>
         <name>大潭港無名海灘（1）</name>
         <description><![CDATA[52米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5654,7 +5654,7 @@
       <Placemark>
         <name>大潭道無名海灘（4）</name>
         <description><![CDATA[21米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5672,7 +5672,7 @@
       <Placemark>
         <name>大潭道無名海灘（3）</name>
         <description><![CDATA[20米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5690,7 +5690,7 @@
       <Placemark>
         <name>大潭道無名海灘（2）</name>
         <description><![CDATA[44米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5708,7 +5708,7 @@
       <Placemark>
         <name>大潭道無名海灘（1）</name>
         <description><![CDATA[53米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5727,7 +5727,7 @@
         <name>赤柱正灘</name>
         <address/>
         <description><![CDATA[461米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5740,7 +5740,7 @@
       <Placemark>
         <name>東頭灣無名海灘(2)</name>
         <description><![CDATA[40米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5758,7 +5758,7 @@
       <Placemark>
         <name>東頭灣無名海灘(1)</name>
         <description><![CDATA[152米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5776,7 +5776,7 @@
       <Placemark>
         <name>白沙灣</name>
         <description><![CDATA[144米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5795,7 +5795,7 @@
         <name>赤柱後灘</name>
         <address/>
         <description><![CDATA[64米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5808,7 +5808,7 @@
       <Placemark>
         <name>赤柱馬坑公園無名海灘</name>
         <description><![CDATA[69米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5826,7 +5826,7 @@
       <Placemark>
         <name>銀洲無名海灘</name>
         <description><![CDATA[118米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5844,7 +5844,7 @@
       <Placemark>
         <name>麗海堤岸路無名海灘</name>
         <description><![CDATA[27米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5862,7 +5862,7 @@
       <Placemark>
         <name>熨波洲無名沙灘(1)</name>
         <description><![CDATA[40米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5880,7 +5880,7 @@
       <Placemark>
         <name>苗鍾徑無名海灘（2）</name>
         <description><![CDATA[40米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5898,7 +5898,7 @@
       <Placemark>
         <name>苗鍾徑無名海灘（1）</name>
         <description><![CDATA[25米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5916,7 +5916,7 @@
       <Placemark>
         <name>海洋公園無名海灘</name>
         <description><![CDATA[39米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5934,7 +5934,7 @@
       <Placemark>
         <name>瀑布灣</name>
         <description><![CDATA[28米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5952,7 +5952,7 @@
       <Placemark>
         <name>沙灣</name>
         <description><![CDATA[240米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5970,7 +5970,7 @@
       <Placemark>
         <name>三白灣泳灘</name>
         <description><![CDATA[198米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -5988,7 +5988,7 @@
       <Placemark>
         <name>三白灣無名海灘</name>
         <description><![CDATA[189米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6006,7 +6006,7 @@
       <Placemark>
         <name>蟹鉗咀無名海灘 (1)</name>
         <description><![CDATA[72米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6024,7 +6024,7 @@
       <Placemark>
         <name>大白灣沙灘</name>
         <description><![CDATA[411米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6042,7 +6042,7 @@
       <Placemark>
         <name>大白咀無名沙灘(2)</name>
         <description><![CDATA[128米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6060,7 +6060,7 @@
       <Placemark>
         <name>稔樹灣沙灘 (1)</name>
         <description><![CDATA[178米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6078,7 +6078,7 @@
       <Placemark>
         <name>轉排咀無名海灘 (1)</name>
         <description><![CDATA[223米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6096,7 +6096,7 @@
       <Placemark>
         <name>聖母神樂院碼頭無名海灘 (1)</name>
         <description><![CDATA[89米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6114,7 +6114,7 @@
       <Placemark>
         <name>聖母神樂院碼頭無名海灘 (2)</name>
         <description><![CDATA[79米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6132,7 +6132,7 @@
       <Placemark>
         <name>萬角無名海灘 (1)</name>
         <description><![CDATA[201米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6150,7 +6150,7 @@
       <Placemark>
         <name>萬角無名海灘 (2)</name>
         <description><![CDATA[129米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6168,7 +6168,7 @@
       <Placemark>
         <name>竹仔灣沙灘</name>
         <description><![CDATA[170米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6187,7 +6187,7 @@
         <name>梅窩銀礦灣後灘</name>
         <address/>
         <description><![CDATA[447米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6200,7 +6200,7 @@
       <Placemark>
         <name>梅窩碼頭無名海灘</name>
         <description><![CDATA[35米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6218,7 +6218,7 @@
       <Placemark>
         <name>銀礦灣無名海灘 (1)</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6236,7 +6236,7 @@
       <Placemark>
         <name>銀礦灣無名海灘 (2)</name>
         <description><![CDATA[32米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6254,7 +6254,7 @@
       <Placemark>
         <name>水井灣無名海灘</name>
         <description><![CDATA[25米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6272,7 +6272,7 @@
       <Placemark>
         <name>水井無名海灘</name>
         <description><![CDATA[72米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6290,7 +6290,7 @@
       <Placemark>
         <name>牛牯灣無名海灘 (1)</name>
         <description><![CDATA[130米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6308,7 +6308,7 @@
       <Placemark>
         <name>牛牯灣無名海灘 (2)</name>
         <description><![CDATA[82米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6326,7 +6326,7 @@
       <Placemark>
         <name>芝麻灣沙灘</name>
         <description><![CDATA[426米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6344,7 +6344,7 @@
       <Placemark>
         <name>十塱涌口無名海灘 (2)</name>
         <description><![CDATA[76米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6362,7 +6362,7 @@
       <Placemark>
         <name>芝麻灣碼頭海灘</name>
         <description><![CDATA[99米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6380,7 +6380,7 @@
       <Placemark>
         <name>芝麻灣懲教所無名海灘 (1)</name>
         <description><![CDATA[52米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6398,7 +6398,7 @@
       <Placemark>
         <name>芝麻灣懲教所無名海灘 (2)</name>
         <description><![CDATA[59米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6416,7 +6416,7 @@
       <Placemark>
         <name>長沙灣無名海灘 (1)</name>
         <description><![CDATA[249米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6434,7 +6434,7 @@
       <Placemark>
         <name>長沙灣無名海灘 (2)</name>
         <description><![CDATA[129米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6452,7 +6452,7 @@
       <Placemark>
         <name>長沙灣無名海灘 (3)</name>
         <description><![CDATA[126米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6470,7 +6470,7 @@
       <Placemark>
         <name>長沙灣無名海灘 (4)</name>
         <description><![CDATA[60米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6488,7 +6488,7 @@
       <Placemark>
         <name>二塱石無名海灘（1）</name>
         <description><![CDATA[82米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6506,7 +6506,7 @@
       <Placemark>
         <name>二塱石無名海灘（2）</name>
         <description><![CDATA[89米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6524,7 +6524,7 @@
       <Placemark>
         <name>蝦鬚排無名海灘</name>
         <description><![CDATA[42米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6542,7 +6542,7 @@
       <Placemark>
         <name>下徑無名海灘</name>
         <description><![CDATA[33米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6560,7 +6560,7 @@
       <Placemark>
         <name>大浪灣沙灘</name>
         <description><![CDATA[518米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6578,7 +6578,7 @@
       <Placemark>
         <name>二浪灣</name>
         <description><![CDATA[313米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6596,7 +6596,7 @@
       <Placemark>
         <name>二浪灣無名海灘</name>
         <description><![CDATA[63米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6614,7 +6614,7 @@
       <Placemark>
         <name>望東灣</name>
         <description><![CDATA[353米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6633,7 +6633,7 @@
         <name>大嶼山貝澳沙灘</name>
         <address/>
         <description><![CDATA[991米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6646,7 +6646,7 @@
       <Placemark>
         <name>塘福廟灣</name>
         <description><![CDATA[292米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6664,7 +6664,7 @@
       <Placemark>
         <name>契爺灣</name>
         <description><![CDATA[52米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6682,7 +6682,7 @@
       <Placemark>
         <name>籮箕灣</name>
         <description><![CDATA[169米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6700,7 +6700,7 @@
       <Placemark>
         <name>出水灣</name>
         <description><![CDATA[107米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6718,7 +6718,7 @@
       <Placemark>
         <name>東灣無名海灘（3）</name>
         <description><![CDATA[187米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6736,7 +6736,7 @@
       <Placemark>
         <name>東灣無名海灘（2）</name>
         <description><![CDATA[65米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6754,7 +6754,7 @@
       <Placemark>
         <name>東灣無名海灘（1）</name>
         <description><![CDATA[80米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6772,7 +6772,7 @@
       <Placemark>
         <name>沙咀懲教所無名海灘（2）</name>
         <description><![CDATA[74米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6790,7 +6790,7 @@
       <Placemark>
         <name>大浪灣</name>
         <description><![CDATA[618米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6808,7 +6808,7 @@
       <Placemark>
         <name>大浪灣營地無名海灘（1）</name>
         <description><![CDATA[136米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6826,7 +6826,7 @@
       <Placemark>
         <name>鳳凰徑第8段無名海灘</name>
         <description><![CDATA[35米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6844,7 +6844,7 @@
       <Placemark>
         <name>狗嶺涌無名海灘（1）</name>
         <description><![CDATA[191米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6862,7 +6862,7 @@
       <Placemark>
         <name>分流東灣無名海灘</name>
         <description><![CDATA[577米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6880,7 +6880,7 @@
       <Placemark>
         <name>分流西灣</name>
         <description><![CDATA[365米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6898,7 +6898,7 @@
       <Placemark>
         <name>煎魚灣</name>
         <description><![CDATA[667米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6916,7 +6916,7 @@
       <Placemark>
         <name>二澳碼頭無名海灘</name>
         <description><![CDATA[107米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6934,7 +6934,7 @@
       <Placemark>
         <name>南涌邨無名海灘</name>
         <description><![CDATA[45米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6952,7 +6952,7 @@
       <Placemark>
         <name>大澳公眾碼頭海灘</name>
         <description><![CDATA[28米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6970,7 +6970,7 @@
       <Placemark>
         <name>深屈灣無名海灘</name>
         <description><![CDATA[61米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -6988,7 +6988,7 @@
       <Placemark>
         <name>深石灣無名海灘</name>
         <description><![CDATA[440米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7006,7 +7006,7 @@
       <Placemark>
         <name>曱甴肚灣無名海灘</name>
         <description><![CDATA[104米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7024,7 +7024,7 @@
       <Placemark>
         <name>沙螺灣無名海灘（1）</name>
         <description><![CDATA[68米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7042,7 +7042,7 @@
       <Placemark>
         <name>沙螺灣無名海灘（2）</name>
         <description><![CDATA[101米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7060,7 +7060,7 @@
       <Placemark>
         <name>鱟殼灣無名海灘</name>
         <description><![CDATA[51米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7078,7 +7078,7 @@
       <Placemark>
         <name>南灣</name>
         <description><![CDATA[68米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7096,7 +7096,7 @@
       <Placemark>
         <name>大利無名海灘</name>
         <description><![CDATA[46米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7114,7 +7114,7 @@
       <Placemark>
         <name>坪愉徑無名海灘（3）</name>
         <description><![CDATA[68米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7132,7 +7132,7 @@
       <Placemark>
         <name>坪愉徑無名海灘（2）</name>
         <description><![CDATA[99米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7150,7 +7150,7 @@
       <Placemark>
         <name>坪愉徑無名海灘（1）</name>
         <description><![CDATA[70米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7168,7 +7168,7 @@
       <Placemark>
         <name>坪洲發射站無名海灘</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7186,7 +7186,7 @@
       <Placemark>
         <name>坪洲東灣無名海灘</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7204,7 +7204,7 @@
       <Placemark>
         <name>坪洲東灣</name>
         <description><![CDATA[408米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7222,7 +7222,7 @@
       <Placemark>
         <name>坪洲配水庫無名海灘</name>
         <description><![CDATA[73米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7240,7 +7240,7 @@
       <Placemark>
         <name>銀洲仔亭無名海灘</name>
         <description><![CDATA[56米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7258,7 +7258,7 @@
       <Placemark>
         <name>坪洲食水抽水站無名海灘</name>
         <description><![CDATA[63米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7276,7 +7276,7 @@
       <Placemark>
         <name>坪洲安樂新村無名海灘</name>
         <description><![CDATA[27米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7294,7 +7294,7 @@
       <Placemark>
         <name>周公島無名海灘（2）</name>
         <description><![CDATA[64米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7312,7 +7312,7 @@
       <Placemark>
         <name>周公島無名海灘（1）</name>
         <description><![CDATA[162米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7330,7 +7330,7 @@
       <Placemark>
         <name>喜靈洲無名海灘（1）（限制區域）</name>
         <description><![CDATA[205米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7348,7 +7348,7 @@
       <Placemark>
         <name>喜靈洲三號瞭望所無名海灘（限制區域）</name>
         <description><![CDATA[79米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7366,7 +7366,7 @@
       <Placemark>
         <name>喜靈洲碼頭無名海灘（限制區域）</name>
         <description><![CDATA[73米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7384,7 +7384,7 @@
       <Placemark>
         <name>喜靈洲無名海灘（2）（限制區域）</name>
         <description><![CDATA[233米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7402,7 +7402,7 @@
       <Placemark>
         <name>長洲無名海灘</name>
         <description><![CDATA[81米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7420,7 +7420,7 @@
       <Placemark>
         <name>東灣仔</name>
         <description><![CDATA[122米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7438,7 +7438,7 @@
       <Placemark>
         <name>白鰽灣</name>
         <description><![CDATA[78米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7456,7 +7456,7 @@
       <Placemark>
         <name>長貴路無名海灘</name>
         <description><![CDATA[104米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7474,7 +7474,7 @@
       <Placemark>
         <name>大貴灣</name>
         <description><![CDATA[222米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7492,7 +7492,7 @@
       <Placemark>
         <name>模達灣灘</name>
         <description><![CDATA[185米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7510,7 +7510,7 @@
       <Placemark>
         <name>石鼓洲碼頭無名海灘（1）</name>
         <description><![CDATA[46米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7528,7 +7528,7 @@
       <Placemark>
         <name>石鼓洲碼頭無名海灘（2）</name>
         <description><![CDATA[26米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7546,7 +7546,7 @@
       <Placemark>
         <name>白沙灣無名海灘</name>
         <description><![CDATA[227米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7564,7 +7564,7 @@
       <Placemark>
         <name>小鴉洲灣無名海灘（1）</name>
         <description><![CDATA[527米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7582,7 +7582,7 @@
       <Placemark>
         <name>鹿洲無名海灘</name>
         <description><![CDATA[96米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7600,7 +7600,7 @@
       <Placemark>
         <name>東灣無名海灘</name>
         <description><![CDATA[116米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7618,7 +7618,7 @@
       <Placemark>
         <name>白曹灣無名海灘（1）</name>
         <description><![CDATA[66米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7636,7 +7636,7 @@
       <Placemark>
         <name>塘仔灣無名海灘</name>
         <description><![CDATA[65米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7654,7 +7654,7 @@
       <Placemark>
         <name>大坪灘</name>
         <description><![CDATA[118米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7672,7 +7672,7 @@
       <Placemark>
         <name>深灣無名海灘</name>
         <description><![CDATA[270米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7690,7 +7690,7 @@
       <Placemark>
         <name>蘆荻灣</name>
         <description><![CDATA[161米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7708,7 +7708,7 @@
       <Placemark>
         <name>鹿洲無名海灘（3）</name>
         <description><![CDATA[75米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7726,7 +7726,7 @@
       <Placemark>
         <name>鹿洲無名海灘（2）</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7744,7 +7744,7 @@
       <Placemark>
         <name>鹿洲無名海灘（1）</name>
         <description><![CDATA[31米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7762,7 +7762,7 @@
       <Placemark>
         <name>鹿洲天后廟</name>
         <description><![CDATA[28米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7780,7 +7780,7 @@
       <Placemark>
         <name>葫蘆咀無名海灘</name>
         <description><![CDATA[165米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7798,7 +7798,7 @@
       <Placemark>
         <name>南丫島前石礦場無名海灘</name>
         <description><![CDATA[72米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7816,7 +7816,7 @@
       <Placemark>
         <name>蘆鬚城無名海灘（2）</name>
         <description><![CDATA[66米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7834,7 +7834,7 @@
       <Placemark>
         <name>北角咀無名海灘（2）</name>
         <description><![CDATA[125米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7852,7 +7852,7 @@
       <Placemark>
         <name>蘆鬚城無名海灘（1）</name>
         <description><![CDATA[101米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7870,7 +7870,7 @@
       <Placemark>
         <name>索罟灣無名海灘</name>
         <description><![CDATA[70米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7888,7 +7888,7 @@
       <Placemark>
         <name>模達灣無名海灘</name>
         <description><![CDATA[46米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7906,7 +7906,7 @@
       <Placemark>
         <name>崖頭無名海灘</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7924,7 +7924,7 @@
       <Placemark>
         <name>石排灣無名海灘（1）</name>
         <description><![CDATA[602米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7942,7 +7942,7 @@
       <Placemark>
         <name>深灣 （限制地區）</name>
         <description><![CDATA[177米 ； 漁護署呼籲市民切勿於限制期內進入深灣限制地區<br>https://www.info.gov.hk/gia/general/202404/01/P2024032800291.htm<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7960,7 +7960,7 @@
       <Placemark>
         <name>山地塘無名海灘</name>
         <description><![CDATA[106米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7978,7 +7978,7 @@
       <Placemark>
         <name>下尾灣無名海灘</name>
         <description><![CDATA[40米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -7996,7 +7996,7 @@
       <Placemark>
         <name>鐵砂塑無名海灘</name>
         <description><![CDATA[145米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8014,7 +8014,7 @@
       <Placemark>
         <name>大灣肚沙灘</name>
         <description><![CDATA[227米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8032,7 +8032,7 @@
       <Placemark>
         <name>蠄蟧磡無名海灘（2）</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8050,7 +8050,7 @@
       <Placemark>
         <name>蠄蟧磡無名海灘（1）</name>
         <description><![CDATA[25米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8068,7 +8068,7 @@
       <Placemark>
         <name>榕樹灣廣場無名海灘</name>
         <description><![CDATA[34米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8086,7 +8086,7 @@
       <Placemark>
         <name>榕樹灣</name>
         <description><![CDATA[64米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8104,7 +8104,7 @@
       <Placemark>
         <name>澳仔無名海灘</name>
         <description><![CDATA[53米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8122,7 +8122,7 @@
       <Placemark>
         <name>牙較灣</name>
         <description><![CDATA[207米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8140,7 +8140,7 @@
       <Placemark>
         <name>石梨無名海灘</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8158,7 +8158,7 @@
       <Placemark>
         <name>石角咀無名海灘</name>
         <description><![CDATA[49米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8176,7 +8176,7 @@
       <Placemark>
         <name>北角村碼頭無名海灘</name>
         <description><![CDATA[90米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8194,7 +8194,7 @@
       <Placemark>
         <name>大灣</name>
         <description><![CDATA[106米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8212,7 +8212,7 @@
       <Placemark>
         <name>大交椅洲無名海灘（1）</name>
         <description><![CDATA[68米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8230,7 +8230,7 @@
       <Placemark>
         <name>大交椅洲無名海灘（3）</name>
         <description><![CDATA[47米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8248,7 +8248,7 @@
       <Placemark>
         <name>小交椅洲無名海灘（1）</name>
         <description><![CDATA[45米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8266,7 +8266,7 @@
       <Placemark>
         <name>小交椅洲無名海灘（2）</name>
         <description><![CDATA[54米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8284,7 +8284,7 @@
       <Placemark>
         <name>大排咀海灘</name>
         <description><![CDATA[106米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8302,7 +8302,7 @@
       <Placemark>
         <name>燈籠洲無名海灘（1）</name>
         <description><![CDATA[108米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8320,7 +8320,7 @@
       <Placemark>
         <name>青馬大橋觀景點旁無名海灘</name>
         <description><![CDATA[56米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8338,7 +8338,7 @@
       <Placemark>
         <name>燈籠洲無名海灘（2）</name>
         <description><![CDATA[41米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8357,7 +8357,7 @@
         <name>龍蝦灣海灘
 </name>
         <description><![CDATA[72米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8375,7 +8375,7 @@
       <Placemark>
         <name>馬灣碼頭海灘</name>
         <description><![CDATA[31米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8393,7 +8393,7 @@
       <Placemark>
         <name>北灣無名海灘</name>
         <description><![CDATA[98米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8411,7 +8411,7 @@
       <Placemark>
         <name>馬灣東灣泳灘</name>
         <description><![CDATA[118米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8429,7 +8429,7 @@
       <Placemark>
         <name>牛欄咀無名沙灘 (1)</name>
         <description><![CDATA[26米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8447,7 +8447,7 @@
       <Placemark>
         <name>草灣無名海灘（2）</name>
         <description><![CDATA[70米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8465,7 +8465,7 @@
       <Placemark>
         <name>花坪海灘</name>
         <description><![CDATA[90米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8483,7 +8483,7 @@
       <Placemark>
         <name>扒頭鼓北灣無名海灘 (1)</name>
         <description><![CDATA[120米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8501,7 +8501,7 @@
       <Placemark>
         <name>彩濤花園無名海灘</name>
         <description><![CDATA[179米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8519,7 +8519,7 @@
       <Placemark>
         <name>扒頭鼓南灣無名沙灘</name>
         <description><![CDATA[42米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8537,7 +8537,7 @@
       <Placemark>
         <name>四白灣海灘</name>
         <description><![CDATA[141米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8555,7 +8555,7 @@
       <Placemark>
         <name>陰澳沙灘</name>
         <description><![CDATA[56米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8573,7 +8573,7 @@
       <Placemark>
         <name>陰澳灣無名海灘</name>
         <description><![CDATA[64米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8591,7 +8591,7 @@
       <Placemark>
         <name>青龍灣無名海灘(1)</name>
         <description><![CDATA[114米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8609,7 +8609,7 @@
       <Placemark>
         <name>青龍灣無名海灘(2)</name>
         <description><![CDATA[32米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8627,7 +8627,7 @@
       <Placemark>
         <name>小欖海灘</name>
         <description><![CDATA[138米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8645,7 +8645,7 @@
       <Placemark>
         <name>小欖無名海灘(2)</name>
         <description><![CDATA[35米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8663,7 +8663,7 @@
       <Placemark>
         <name>小欖無名海灘(3)</name>
         <description><![CDATA[64米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8681,7 +8681,7 @@
       <Placemark>
         <name>大磨刀無名海灘（1）</name>
         <description><![CDATA[344米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8699,7 +8699,7 @@
       <Placemark>
         <name>小欖無名海灘(1)</name>
         <description><![CDATA[54米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8717,7 +8717,7 @@
       <Placemark>
         <name>青龍角珞小石灘</name>
         <description><![CDATA[213米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8735,7 +8735,7 @@
       <Placemark>
         <name>蟠龍半島無名海灘</name>
         <description><![CDATA[57米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8753,7 +8753,7 @@
       <Placemark>
         <name>小磨刀無名海灘</name>
         <description><![CDATA[115米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8771,7 +8771,7 @@
       <Placemark>
         <name>蝴蝶灣望海觀音無名海灘</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8789,7 +8789,7 @@
       <Placemark>
         <name>龍鼓灘</name>
         <description><![CDATA[610米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8807,7 +8807,7 @@
       <Placemark>
         <name>沙洲無名海灘(4)</name>
         <description><![CDATA[481米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8825,7 +8825,7 @@
       <Placemark>
         <name>沙洲無名海灘(5)</name>
         <description><![CDATA[141米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8843,7 +8843,7 @@
       <Placemark>
         <name>沙洲無名海灘（3）</name>
         <description><![CDATA[373米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8861,7 +8861,7 @@
       <Placemark>
         <name>沙洲無名海灘（2）</name>
         <description><![CDATA[308米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8879,7 +8879,7 @@
       <Placemark>
         <name>沙洲無名海灘（1）</name>
         <description><![CDATA[39米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8897,7 +8897,7 @@
       <Placemark>
         <name>龍鼓洲無名海灘(1)</name>
         <description><![CDATA[544米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8915,7 +8915,7 @@
       <Placemark>
         <name>龍鼓洲無名海灘(2)</name>
         <description><![CDATA[85米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8933,7 +8933,7 @@
       <Placemark>
         <name>龍鼓洲無名海灘(3)</name>
         <description><![CDATA[115米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8951,7 +8951,7 @@
       <Placemark>
         <name>白泥灘(1)</name>
         <description><![CDATA[450米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8969,7 +8969,7 @@
       <Placemark>
         <name>昂船洲無名海灘(5)</name>
         <description><![CDATA[111米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -8987,7 +8987,7 @@
       <Placemark>
         <name>昂船洲無名海灘(2)</name>
         <description><![CDATA[190米； 軍事禁區，請勿進入<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9005,7 +9005,7 @@
       <Placemark>
         <name>大白角海灘</name>
         <description><![CDATA[37米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9023,7 +9023,7 @@
       <Placemark>
         <name>荔枝莊無名海灘（2）</name>
         <description><![CDATA[63米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9041,7 +9041,7 @@
       <Placemark>
         <name>荔枝莊小塘海灘</name>
         <description><![CDATA[68米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9059,7 +9059,7 @@
       <Placemark>
         <name>鵝頸咀無名海灘（2）</name>
         <description><![CDATA[42米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9077,7 +9077,7 @@
       <Placemark>
         <name>鵝頸咀無名海灘（3）</name>
         <description><![CDATA[21米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9095,7 +9095,7 @@
       <Placemark>
         <name>鵝頸咀無名海灘（4）</name>
         <description><![CDATA[24米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9113,7 +9113,7 @@
       <Placemark>
         <name>海下灣無名海灘（3）</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9131,7 +9131,7 @@
       <Placemark>
         <name>三抱石無名海灘（1）</name>
         <description><![CDATA[44米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9149,7 +9149,7 @@
       <Placemark>
         <name>灣仔南營地海灘</name>
         <description><![CDATA[56米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9167,7 +9167,7 @@
       <Placemark>
         <name>大灘無名海灘</name>
         <description><![CDATA[118米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9185,7 +9185,7 @@
       <Placemark>
         <name>赤徑口海灘</name>
         <description><![CDATA[61米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9203,7 +9203,7 @@
       <Placemark>
         <name>牛湖塘無名海灘（1）</name>
         <description><![CDATA[530米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9221,7 +9221,7 @@
       <Placemark>
         <name>鹹田無名海灘（3）</name>
         <description><![CDATA[39米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9239,7 +9239,7 @@
       <Placemark>
         <name>雞髀灣</name>
         <description><![CDATA[34米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9257,7 +9257,7 @@
       <Placemark>
         <name>白臘灣無名海灘（2）</name>
         <description><![CDATA[84米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9275,7 +9275,7 @@
       <Placemark>
         <name>白臘灣無名海灘（1）</name>
         <description><![CDATA[23米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9293,7 +9293,7 @@
       <Placemark>
         <name>北丫無名海灘（2）</name>
         <description><![CDATA[46米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9311,7 +9311,7 @@
       <Placemark>
         <name>北丫無名海灘（3）</name>
         <description><![CDATA[49米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9329,7 +9329,7 @@
       <Placemark>
         <name>淡水灣</name>
         <description><![CDATA[43米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9347,7 +9347,7 @@
       <Placemark>
         <name>大網仔外展訓練學校無名海灘（2）</name>
         <description><![CDATA[28米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9365,7 +9365,7 @@
       <Placemark>
         <name>黃竹灣無名海灘</name>
         <description><![CDATA[65米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9383,7 +9383,7 @@
       <Placemark>
         <name>大環村無名海灘</name>
         <description><![CDATA[86米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9401,7 +9401,7 @@
       <Placemark>
         <name>羊洲無名海灘（3）</name>
         <description><![CDATA[48米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9419,7 +9419,7 @@
       <Placemark>
         <name>羊洲無名海灘（4）</name>
         <description><![CDATA[20米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9437,7 +9437,7 @@
       <Placemark>
         <name>羊洲無名海灘（5）</name>
         <description><![CDATA[67米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9455,7 +9455,7 @@
       <Placemark>
         <name>大鏟洲無名海灘</name>
         <description><![CDATA[23米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9473,7 +9473,7 @@
       <Placemark>
         <name>橋咀無名沙灘（4）</name>
         <description><![CDATA[40米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9491,7 +9491,7 @@
       <Placemark>
         <name>橋咀無名海灘（5）</name>
         <description><![CDATA[74米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9509,7 +9509,7 @@
       <Placemark>
         <name>橋咀無名海灘（6）</name>
         <description><![CDATA[394米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9527,7 +9527,7 @@
       <Placemark>
         <name>橋咀無名海灘（7）</name>
         <description><![CDATA[160米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9545,7 +9545,7 @@
       <Placemark>
         <name>滘東灣</name>
         <description><![CDATA[52米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9563,7 +9563,7 @@
       <Placemark>
         <name>大往灣</name>
         <description><![CDATA[40米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9581,7 +9581,7 @@
       <Placemark>
         <name>沙塘口山無名海灘</name>
         <description><![CDATA[176米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9599,7 +9599,7 @@
       <Placemark>
         <name>火石洲無名海灘（2）</name>
         <description><![CDATA[48米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9617,7 +9617,7 @@
       <Placemark>
         <name>火石洲無名海灘（3）</name>
         <description><![CDATA[21米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9635,7 +9635,7 @@
       <Placemark>
         <name>東平洲龍落水無名海灘（4）</name>
         <description><![CDATA[174米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9653,7 +9653,7 @@
       <Placemark>
         <name>東平洲斬頸洲無名海灘（5）</name>
         <description><![CDATA[89米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9671,7 +9671,7 @@
       <Placemark>
         <name>牛欄咀無名海灘 (2)</name>
         <description><![CDATA[31米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9689,7 +9689,7 @@
       <Placemark>
         <name>白沙頭洲白沙頭咀無名海灘（2）</name>
         <description><![CDATA[389米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9707,7 +9707,7 @@
       <Placemark>
         <name>南灣無名海灘</name>
         <description><![CDATA[38米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9725,7 +9725,7 @@
       <Placemark>
         <name>草灣無名海灘（1）</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9743,7 +9743,7 @@
       <Placemark>
         <name>苗田灣無名海灘</name>
         <description><![CDATA[60米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9761,7 +9761,7 @@
       <Placemark>
         <name>扒頭鼓北灣無名海灘 (2)</name>
         <description><![CDATA[39米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9779,7 +9779,7 @@
       <Placemark>
         <name>鴨洲海無名海灘</name>
         <description><![CDATA[69米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9797,7 +9797,7 @@
       <Placemark>
         <name>阿公灣無名海灘（1）</name>
         <description><![CDATA[43米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9815,7 +9815,7 @@
       <Placemark>
         <name>四白無名海灘</name>
         <description><![CDATA[67米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9833,7 +9833,7 @@
       <Placemark>
         <name>四白咀無名海灘</name>
         <description><![CDATA[43米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9851,7 +9851,7 @@
       <Placemark>
         <name>四白灣無名沙灘</name>
         <description><![CDATA[20米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9869,7 +9869,7 @@
       <Placemark>
         <name>相思灣無名海灘（1）</name>
         <description><![CDATA[95米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9887,7 +9887,7 @@
       <Placemark>
         <name>蟹鉗咀無名海灘 (2)</name>
         <description><![CDATA[23米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9905,7 +9905,7 @@
       <Placemark>
         <name>大白咀無名沙灘(1)</name>
         <description><![CDATA[90米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9923,7 +9923,7 @@
       <Placemark>
         <name>龍蝦灣無名海灘</name>
         <description><![CDATA[78米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9941,7 +9941,7 @@
       <Placemark>
         <name>稔樹灣沙灘 (2)</name>
         <description><![CDATA[124米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9959,7 +9959,7 @@
       <Placemark>
         <name>轉排咀無名海灘 (2)</name>
         <description><![CDATA[197米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9977,7 +9977,7 @@
       <Placemark>
         <name>聖母神樂院無名海灘(1)</name>
         <description><![CDATA[74米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -9995,7 +9995,7 @@
       <Placemark>
         <name>聖母神樂院無名海灘(2)</name>
         <description><![CDATA[112米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10013,7 +10013,7 @@
       <Placemark>
         <name>狗虱灣無名海灘 </name>
         <description><![CDATA[78米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10031,7 +10031,7 @@
       <Placemark>
         <name>萬角無名海灘 (3)</name>
         <description><![CDATA[55米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10049,7 +10049,7 @@
       <Placemark>
         <name>竹仔灣無名海灘 (2)</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10067,7 +10067,7 @@
       <Placemark>
         <name>貞姑井無名海灘</name>
         <description><![CDATA[72米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10085,7 +10085,7 @@
       <Placemark>
         <name>東龍洲洪聖古廟無名海灘</name>
         <description><![CDATA[55米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10103,7 +10103,7 @@
       <Placemark>
         <name>東龍洲北碼頭無名海灘（1）</name>
         <description><![CDATA[29米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10121,7 +10121,7 @@
       <Placemark>
         <name>昂船洲無名海灘(1)</name>
         <description><![CDATA[54米，軍事禁區，請勿進入<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10139,7 +10139,7 @@
       <Placemark>
         <name>昂船洲無名海灘(3)</name>
         <description><![CDATA[117米 軍事禁區，請勿進入<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10157,7 +10157,7 @@
       <Placemark>
         <name>東南大嶼無名沙灘</name>
         <description><![CDATA[45米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10175,7 +10175,7 @@
       <Placemark>
         <name>昂船洲無名海灘(4)</name>
         <description><![CDATA[119米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10193,7 +10193,7 @@
       <Placemark>
         <name>十塱涌口無名海灘 (1)</name>
         <description><![CDATA[82米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10211,7 +10211,7 @@
       <Placemark>
         <name>西環港島西廢物轉運站無名海灘</name>
         <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AKcrxGSfmdceoKXSLlfdKJsClGLsFkNtoKuPY_o35_DuG_q4n7hqj2LOEze3Gew_pAQFQaxOOT4iewhKvlUGb0PjzW_6Mkzn7VpAnflxjwCLz9i-76re4Bvkt-FDKpkro-94HYMymItc5HtWpdmHIzWk4Bm1adRaoQhU9dYcRQu28kF3dVA8LFobFZUgPKfKyBcLn1EO2a1bMAnGqa4e_4l7DMh2cQo6VkDA3UsbFSxYnLXvh3b5GXznQzRae68?authuser=0&fife=s16383" height="200" width="auto" /><br><br>40米；《船舶及港口管制規例》：除非獲得海事處長的許可，不得在維多利亞港游泳<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10232,7 +10232,7 @@
       <Placemark>
         <name>香島道無名海灘</name>
         <description><![CDATA[58米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10250,7 +10250,7 @@
       <Placemark>
         <name>熨波洲無名海灘(2)</name>
         <description><![CDATA[43米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10268,7 +10268,7 @@
       <Placemark>
         <name>淺水灣天后廟無名海灘</name>
         <description><![CDATA[25米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10286,7 +10286,7 @@
       <Placemark>
         <name>沙石灘</name>
         <description><![CDATA[59米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10304,7 +10304,7 @@
       <Placemark>
         <name>香港航海學校無名海灘</name>
         <description><![CDATA[74米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10322,7 +10322,7 @@
       <Placemark>
         <name>紅山半島無名海灘（1）</name>
         <description><![CDATA[24米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10340,7 +10340,7 @@
       <Placemark>
         <name>紅山半島無名海灘（2）</name>
         <description><![CDATA[100米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10358,7 +10358,7 @@
       <Placemark>
         <name>大潭篤抽水站無名海灘</name>
         <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AKcrxGR76zhYKRHtdB_tnWGMiqjcW-FWeTCes-_H60vAfyXLWoIt6mEHiBjljNVtWLU1a7nQmhCr3MI2EurgTDaPn2_F0XUpynmqinJkvzgZsomwxI2AnEaxR2xfK6aFHHR7rdMggWSg4AN2Fe6U-A2Ir5tLgk7iaKGWzgdhYWC5GboFa6PykTzWyvV-SMrhh1vCi9EpS3Ccsj-H3SQkOFzQqauREC0XgzIQ0_glLMwNxYI9yssumuurBY3AOGk?authuser=0&fife=s16383" height="200" width="auto" /><br><br>150米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10379,7 +10379,7 @@
       <Placemark>
         <name>大潭港無名海灘（2）</name>
         <description><![CDATA[32米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10397,7 +10397,7 @@
       <Placemark>
         <name>爛泥灣無名海灘</name>
         <description><![CDATA[37米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10415,7 +10415,7 @@
       <Placemark>
         <name>石澳石礦場無名海灘（1）</name>
         <description><![CDATA[93米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10433,7 +10433,7 @@
       <Placemark>
         <name>大浪灣無名海灘（2）</name>
         <description><![CDATA[27米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10451,7 +10451,7 @@
       <Placemark>
         <name>銅鑼灣消防局無名海灘</name>
         <description><![CDATA[<img src="https://mymaps.usercontent.google.com/hostedimage/m/*/3AKcrxGSR0UPtzhBC1DCI-0RK_BbUWJg5XLz-HIWW7unNrwBwxmdqygxPO_pnzeAmY4UJLgdlYl5flKUF_GZIfA-De6bVxdi5rxu7_siDENLghuG-OK1xKft70oxFb3w8Hh6De3kO5kBFYeHobmy4009shoSI84_UZZVBlmu69xuDNFB4rx3Dn21aJvn6YwaoDojR4dBDtNJdFutLl6J4wPisj98_d-rxVrZkNk64yXvmiKyIj1CTMCSUVb7sKks?authuser=0&fife=s16383" height="200" width="auto" /><br><br>23米 《船舶及港口管制規例》：除非獲得海事處長的許可，不得在維多利亞港游泳<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10472,7 +10472,7 @@
       <Placemark>
         <name>螺洲門無名海灘</name>
         <description><![CDATA[20米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10490,7 +10490,7 @@
       <Placemark>
         <name>北角咀無名海灘（1）</name>
         <description><![CDATA[23米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10508,7 +10508,7 @@
       <Placemark>
         <name>桔仔灣無名海灘</name>
         <description><![CDATA[57米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10526,7 +10526,7 @@
       <Placemark>
         <name>石排灣無名海灘（2）</name>
         <description><![CDATA[73米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10544,7 +10544,7 @@
       <Placemark>
         <name>南氹灣無名海灘</name>
         <description><![CDATA[37米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10562,7 +10562,7 @@
       <Placemark>
         <name>勵顧懲教所無名海灘 （限制區域）</name>
         <description><![CDATA[76米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10580,7 +10580,7 @@
       <Placemark>
         <name>喜靈洲無名海灘（2）（限制區域）</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10598,7 +10598,7 @@
       <Placemark>
         <name>周公島無名海灘（3）</name>
         <description><![CDATA[102米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10616,7 +10616,7 @@
       <Placemark>
         <name>釣魚公石無名海灘</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10634,7 +10634,7 @@
       <Placemark>
         <name>大交椅洲無名海灘（2）</name>
         <description><![CDATA[125米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10652,7 +10652,7 @@
       <Placemark>
         <name>石鼓洲無名海灘</name>
         <description><![CDATA[68米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10670,7 +10670,7 @@
       <Placemark>
         <name>小鴉洲灣無名海灘（2）</name>
         <description><![CDATA[36米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10688,7 +10688,7 @@
       <Placemark>
         <name>小鴉洲無名海灘（1）</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10706,7 +10706,7 @@
       <Placemark>
         <name>貝澳天后廟無名海灘</name>
         <description><![CDATA[81米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10724,7 +10724,7 @@
       <Placemark>
         <name>䃟石灣無名海灘</name>
         <description><![CDATA[48米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10742,7 +10742,7 @@
       <Placemark>
         <name>塘福無名海灘</name>
         <description><![CDATA[200米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10760,7 +10760,7 @@
       <Placemark>
         <name>流浮山無名海灘</name>
         <description><![CDATA[330米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10778,7 +10778,7 @@
       <Placemark>
         <name>龍鼓上灘</name>
         <description><![CDATA[530米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10796,7 +10796,7 @@
       <Placemark>
         <name>龍鼓灘無名海灘</name>
         <description><![CDATA[240米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10814,7 +10814,7 @@
       <Placemark>
         <name>屯門路無名海灘</name>
         <description><![CDATA[80米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10832,7 +10832,7 @@
       <Placemark>
         <name>沙咀懲教所無名海灘（1）</name>
         <description><![CDATA[157米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10850,7 +10850,7 @@
       <Placemark>
         <name>三杯酒無名海灘（2）</name>
         <description><![CDATA[30米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10868,7 +10868,7 @@
       <Placemark>
         <name>大磨刀無名海灘（2）</name>
         <description><![CDATA[39米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10886,7 +10886,7 @@
       <Placemark>
         <name>白鰽灣無名海灘（2）</name>
         <description><![CDATA[136米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10904,7 +10904,7 @@
       <Placemark>
         <name>大浪灣營地無名海灘（2）</name>
         <description><![CDATA[70米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10922,7 +10922,7 @@
       <Placemark>
         <name>狗嶺涌無名海灘（2）</name>
         <description><![CDATA[75米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10940,7 +10940,7 @@
       <Placemark>
         <name>分流郊遊徑無名海灘</name>
         <description><![CDATA[31米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10958,7 +10958,7 @@
       <Placemark>
         <name>分流炮台無名海灘</name>
         <description><![CDATA[35米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10976,7 +10976,7 @@
       <Placemark>
         <name>石圓環無名海灘</name>
         <description><![CDATA[64米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -10994,7 +10994,7 @@
       <Placemark>
         <name>分流廟灣</name>
         <description><![CDATA[91米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -11012,7 +11012,7 @@
       <Placemark>
         <name>煎魚灣營地無名海灘</name>
         <description><![CDATA[100米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -11030,7 +11030,7 @@
       <Placemark>
         <name>雞公山無名海灘</name>
         <description><![CDATA[51米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -11048,7 +11048,7 @@
       <Placemark>
         <name>青林角無名海灘</name>
         <description><![CDATA[50米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
@@ -11066,7 +11066,7 @@
       <Placemark>
         <name>白泥灘(2)</name>
         <description><![CDATA[700米<br><br>名: <br>類別: ]]></description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#香港其他海灘</styleUrl>
         <ExtendedData>
           <Data name="名">
             <value/>
