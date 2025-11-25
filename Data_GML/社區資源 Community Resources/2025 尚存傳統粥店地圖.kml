@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>2025 尚存傳統粥店地圖</name>
-	<description><![CDATA[ <a href="https://www.facebook.com/photo.php?fbid=1138701121628325&id=100064653431413&set=a.630338522464590" target="_blank">【「粥」襟見肘】想幫襯傳統老粥舖仲可以去邊度？ </a>]]></description>
+	<description> &lt;a href="https://www.facebook.com/photo.php?fbid=1138701121628325&amp;id=100064653431413&amp;set=a.630338522464590" target="_blank"&gt;【「粥」襟見肘】想幫襯傳統老粥舖仲可以去邊度？ &lt;/a&gt;</description>
     <Style id="icon-1577-FF5252-normal">
       <IconStyle>
         <color>ff5252ff</color>
@@ -42,47 +42,47 @@
       <Placemark>
         <name>成興粥品</name>
         <address>西環西營盤德輔道西408號地下D號舖</address>
-        <description><![CDATA[地址: 西環西營盤德輔道西408號地下D號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 西環西營盤德輔道西408號地下D號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>西環西營盤德輔道西408號地下D號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1362715,22.2864557,0</coordinates></Point></Placemark>
       <Placemark>
         <name>順利粥品</name>
         <address>柴灣怡豐街33號漁灣街市1樓熟食中心1號舖</address>
-        <description><![CDATA[地址: 柴灣怡豐街33號漁灣街市1樓熟食中心1號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 柴灣怡豐街33號漁灣街市1樓熟食中心1號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>柴灣怡豐街33號漁灣街市1樓熟食中心1號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2402785,22.2651717,0</coordinates></Point></Placemark>
       <Placemark>
         <name>嘉潤粥店</name>
         <address>西環西營盤皇后大道西275號地舖</address>
-        <description><![CDATA[地址: 西環西營盤皇后大道西275號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 23:00<br>價錢 (Openrice): $50以下<br>歷史: 逾10年]]></description>
+        <description>地址: 西環西營盤皇后大道西275號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾10年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -98,31 +98,31 @@
             <value>逾10年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1428046,22.2870584,0</coordinates></Point></Placemark>
       <Placemark>
         <name>得園</name>
         <address>香港仔漁光道熟食街市5樓</address>
-        <description><![CDATA[地址: 香港仔漁光道熟食街市5樓<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 香港仔漁光道熟食街市5樓&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>香港仔漁光道熟食街市5樓</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1546082,22.2492572,0</coordinates></Point></Placemark>
       <Placemark>
         <name>百好粥品</name>
         <address>筲箕灣筲箕灣東大街59-99號東威大廈3座地下2號舖</address>
-        <description><![CDATA[地址: 筲箕灣筲箕灣東大街59-99號東威大廈3座地下2號舖<br>營業時間 (Openrice): 星期一至日 07:00 - 23:00<br>價錢 (Openrice): $51-100<br>歷史: ]]></description>
+        <description>地址: 筲箕灣筲箕灣東大街59-99號東威大廈3座地下2號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -135,34 +135,34 @@
             <value>$51-100</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2304021,22.2794877,0</coordinates></Point></Placemark>
       <Placemark>
         <name>君記粥店</name>
         <address>筲箕灣筲箕灣道314號地下B號舖</address>
-        <description><![CDATA[地址: 筲箕灣筲箕灣道314號地下B號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 筲箕灣筲箕灣道314號地下B號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>筲箕灣筲箕灣道314號地下B號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2258467,22.2790798,0</coordinates></Point></Placemark>
       <Placemark>
         <name>海亮粥店</name>
         <address>西環石塘咀德輔道西356號地舖</address>
-        <description><![CDATA[地址: 西環石塘咀德輔道西356號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 23:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 西環石塘咀德輔道西356號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -175,14 +175,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1378389,22.287026,0</coordinates></Point></Placemark>
       <Placemark>
         <name>金豐粥店</name>
         <address>西環西營盤皇后大道西260號地舖</address>
-        <description><![CDATA[地址: 西環西營盤皇后大道西260號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 23:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 西環西營盤皇后大道西260號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -195,14 +195,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1429789,22.2867987,0</coordinates></Point></Placemark>
       <Placemark>
         <name>明粥麵飯</name>
         <address>柴灣小西灣道10號小西灣廣場地下本灣市場24-25號舖</address>
-        <description><![CDATA[地址: 柴灣小西灣道10號小西灣廣場地下本灣市場24-25號舖<br>營業時間 (Openrice): 星期一至日 06:30 - 20:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 柴灣小西灣道10號小西灣廣場地下本灣市場24-25號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 20:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -215,14 +215,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2490296,22.2625908,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新深粥店</name>
         <address>灣仔軒尼詩道168號地舖</address>
-        <description><![CDATA[地址: 灣仔軒尼詩道168號地舖<br>營業時間 (Openrice): 星期一至日 06:30 - 00:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 灣仔軒尼詩道168號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 00:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -235,14 +235,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1737769,22.2774803,0</coordinates></Point></Placemark>
       <Placemark>
         <name>蓮園粥粉麵</name>
         <address>跑馬地成和道51A地下D號舖</address>
-        <description><![CDATA[地址: 跑馬地成和道51A地下D號舖<br>營業時間 (Openrice): 星期一至日 10:30 - 02:00<br>價錢 (Openrice): $50以下<br>歷史: 40年]]></description>
+        <description>地址: 跑馬地成和道51A地下D號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 10:30 - 02:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 40年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -258,11 +258,11 @@
             <value>40年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.186549,22.2685807,0</coordinates></Point></Placemark>
       <Placemark>
         <name>合利粥品店</name>
         <address>香港仔東勝道21號地舖</address>
-        <description><![CDATA[地址: 香港仔東勝道21號地舖<br>營業時間 (Openrice): 星期一至日 05:00 - 00:00<br>價錢 (Openrice): $50以下<br>歷史: 逾30年]]></description>
+        <description>地址: 香港仔東勝道21號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 05:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾30年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -278,11 +278,11 @@
             <value>逾30年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1551611,22.2486434,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新合記</name>
         <address>北角渣華道市政大廈2樓</address>
-        <description><![CDATA[地址: 北角渣華道市政大廈2樓<br>營業時間 (Openrice): 星期一至日 06:00 - 15:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 北角渣華道市政大廈2樓&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 15:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -295,14 +295,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.199478,22.292286,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新榮興粥店</name>
         <address>西灣河筲箕灣道152號地舖</address>
-        <description><![CDATA[地址: 西灣河筲箕灣道152號地舖<br>營業時間 (Openrice): 星期一至日 07:00 - 21:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 西灣河筲箕灣道152號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 21:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -315,14 +315,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2224522,22.2811513,0</coordinates></Point></Placemark>
       <Placemark>
         <name>鮮味園粥麵</name>
         <address>香港仔東勝道19號地舖</address>
-        <description><![CDATA[地址: 香港仔東勝道19號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 23:00<br>價錢 (Openrice): $51-100<br>歷史: ]]></description>
+        <description>地址: 香港仔東勝道19號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 23:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -335,14 +335,14 @@
             <value>$51-100</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1551735,22.2486444,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新康記粥店</name>
         <address>大坑京街9號地舖</address>
-        <description><![CDATA[地址: 大坑京街9號地舖<br>營業時間 (Openrice): 星期一 07:00 - 21:00<br>價錢 (Openrice): $50以下<br>歷史: 約45年]]></description>
+        <description>地址: 大坑京街9號地舖&lt;br&gt;營業時間 (Openrice): 星期一 07:00 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 約45年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -358,11 +358,11 @@
             <value>約45年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1919839,22.2786265,0</coordinates></Point></Placemark>
       <Placemark>
         <name>生記粥店</name>
         <address>天后電氣道126號榮華大廈地舖</address>
-        <description><![CDATA[地址: 天后電氣道126號榮華大廈地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 00:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 天后電氣道126號榮華大廈地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -375,34 +375,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1916934,22.285553,0</coordinates></Point></Placemark>
       <Placemark>
         <name>大發粥粉麵</name>
         <address>銅鑼灣堅拿道西10號地舖</address>
-        <description><![CDATA[地址: 銅鑼灣堅拿道西10號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 銅鑼灣堅拿道西10號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>銅鑼灣堅拿道西10號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1810131,22.2786279,0</coordinates></Point></Placemark>
       <Placemark>
         <name>財記粥麵</name>
         <address>柴灣吉勝街10號吉勝街熟食市場7號舖</address>
-        <description><![CDATA[地址: 柴灣吉勝街10號吉勝街熟食市場7號舖<br>營業時間 (Openrice): 星期日 07:00 - 13:30<br>價錢 (Openrice): $50以下<br>歷史: 65年]]></description>
+        <description>地址: 柴灣吉勝街10號吉勝街熟食市場7號舖&lt;br&gt;營業時間 (Openrice): 星期日 07:00 - 13:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 65年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -418,11 +418,11 @@
             <value>65年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2354801,22.2647966,0</coordinates></Point></Placemark>
       <Placemark>
         <name>大誠餐廳</name>
         <address>筲箕灣筲箕灣道372號地舖</address>
-        <description><![CDATA[地址: 筲箕灣筲箕灣道372號地舖<br>營業時間 (Openrice): 星期一至日 18:00 - 03:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 筲箕灣筲箕灣道372號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 18:00 - 03:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -435,14 +435,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2266836,22.2778999,0</coordinates></Point></Placemark>
       <Placemark>
         <name>海匯粥品</name>
         <address>鰂魚涌英皇道1010-1056號東匯中心地庫Z1號舖</address>
-        <description><![CDATA[地址: 鰂魚涌英皇道1010-1056號東匯中心地庫Z1號舖<br>營業時間 (Openrice): 星期一至日 07:00 - 20:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 鰂魚涌英皇道1010-1056號東匯中心地庫Z1號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 20:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -455,14 +455,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2117583,22.2847533,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新發記腸粉粥品</name>
         <address>灣仔灣仔道148號地舖</address>
-        <description><![CDATA[地址: 灣仔灣仔道148號地舖<br>營業時間 (Openrice): 星期一至日 08:00 - 22:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 灣仔灣仔道148號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 08:00 - 22:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -475,14 +475,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.176384,22.2769825,0</coordinates></Point></Placemark>
       <Placemark>
         <name>粥君好</name>
         <address>西環堅尼地城卑路乍街32號地下A號舖</address>
-        <description><![CDATA[地址: 西環堅尼地城卑路乍街32號地下A號舖<br>營業時間 (Openrice): 星期一至日 07:00 - 22:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 西環堅尼地城卑路乍街32號地下A號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -495,174 +495,174 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1302321,22.2829238,0</coordinates></Point></Placemark>
       <Placemark>
         <name>生記粥麵</name>
         <address>鰂魚涌英皇道955-957號惠芳閣地下B號舖</address>
-        <description><![CDATA[地址: 鰂魚涌英皇道955-957號惠芳閣地下B號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 鰂魚涌英皇道955-957號惠芳閣地下B號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>鰂魚涌英皇道955-957號惠芳閣地下B號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.210069,22.288529,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新九記粥麵</name>
         <address>灣仔大王東街9號地舖</address>
-        <description><![CDATA[地址: 灣仔大王東街9號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $51-100<br>歷史: ]]></description>
+        <description>地址: 灣仔大王東街9號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>灣仔大王東街9號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$51-100</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1712275,22.275822,0</coordinates></Point></Placemark>
       <Placemark>
         <name>生記粥品專家</name>
         <address>上環畢街7-9號地舖</address>
-        <description><![CDATA[地址: 上環畢街7-9號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 上環畢街7-9號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>上環畢街7-9號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1516802,22.2852812,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新生粥店</name>
         <address>深水埗北河街22號地舖</address>
-        <description><![CDATA[地址: 深水埗北河街22號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 深水埗北河街22號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗北河街22號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1603215,22.3274182,0</coordinates></Point></Placemark>
       <Placemark>
         <name>強記粥店</name>
         <address>土瓜灣貴州街2號地下8號舖</address>
-        <description><![CDATA[地址: 土瓜灣貴州街2號地下8號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 土瓜灣貴州街2號地下8號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>土瓜灣貴州街2號地下8號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1912629,22.3175564,0</coordinates></Point></Placemark>
       <Placemark>
         <name>采頤粥店</name>
         <address>新蒲崗彩虹道242號采頤花園商場地下106號舖</address>
-        <description><![CDATA[地址: 新蒲崗彩虹道242號采頤花園商場地下106號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 新蒲崗彩虹道242號采頤花園商場地下106號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>新蒲崗彩虹道242號采頤花園商場地下106號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2029439,22.3368729,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新榮記粥店</name>
         <address>深水埗桂林街46A號地舖</address>
-        <description><![CDATA[地址: 深水埗桂林街46A號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 深水埗桂林街46A號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗桂林街46A號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.162888,22.3320261,0</coordinates></Point></Placemark>
       <Placemark>
         <name>金香一品</name>
         <address>石硤尾偉智里1-3號白田購物中心地下23號舖</address>
-        <description><![CDATA[地址: 石硤尾偉智里1-3號白田購物中心地下23號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 石硤尾偉智里1-3號白田購物中心地下23號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>石硤尾偉智里1-3號白田購物中心地下23號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1672979,22.3347651,0</coordinates></Point></Placemark>
       <Placemark>
         <name>心悅美食</name>
         <address>藍田碧雲道168號廣田商場1樓37號舖</address>
-        <description><![CDATA[地址: 藍田碧雲道168號廣田商場1樓37號舖<br>營業時間 (Openrice): 星期一 06:30 - 15:00；星期六至日 06:30 - 16:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 藍田碧雲道168號廣田商場1樓37號舖&lt;br&gt;營業時間 (Openrice): 星期一 06:30 - 15:00；星期六至日 06:30 - 16:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -675,34 +675,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2396428,22.3029441,0</coordinates></Point></Placemark>
       <Placemark>
         <name>祺記</name>
         <address>深水埗基隆街333號北河街市政大廈2樓熟食中心13號舖</address>
-        <description><![CDATA[地址: 深水埗基隆街333號北河街市政大廈2樓熟食中心13號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 深水埗基隆街333號北河街市政大廈2樓熟食中心13號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗基隆街333號北河街市政大廈2樓熟食中心13號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1608116,22.3295078,0</coordinates></Point></Placemark>
       <Placemark>
         <name>粥點</name>
         <address>觀塘協和街121號仁富大廈地舖</address>
-        <description><![CDATA[地址: 觀塘協和街121號仁富大廈地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 00:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 觀塘協和街121號仁富大廈地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -715,14 +715,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2259078,22.3160949,0</coordinates></Point></Placemark>
       <Placemark>
         <name>袋記粥店</name>
         <address>長沙灣長沙灣道76號地舖</address>
-        <description><![CDATA[地址: 長沙灣長沙灣道76號地舖<br>營業時間 (Openrice): 星期一至日 07:00 - 22:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 長沙灣長沙灣道76號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 22:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -735,14 +735,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1656026,22.3284708,0</coordinates></Point></Placemark>
       <Placemark>
         <name>幸福粥店</name>
         <address>慈雲山毓華里28號萬寶大廈2號地舖</address>
-        <description><![CDATA[地址: 慈雲山毓華里28號萬寶大廈2號地舖<br>營業時間 (Openrice): 星期一至日 06:30 - 20:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 慈雲山毓華里28號萬寶大廈2號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 20:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -755,14 +755,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2028133,22.3469016,0</coordinates></Point></Placemark>
       <Placemark>
         <name>豪仔記生滾粥</name>
         <address>太子砵蘭街369號地舖</address>
-        <description><![CDATA[地址: 太子砵蘭街369號地舖<br>營業時間 (Openrice): 星期一至日 17:00 - 02:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 太子砵蘭街369號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 17:00 - 02:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -775,54 +775,54 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1675417,22.3243174,0</coordinates></Point></Placemark>
       <Placemark>
         <name>樂聚</name>
         <address>觀塘安秀道20號安泰邨安泰商場地下高層107號舖</address>
-        <description><![CDATA[地址: 觀塘安秀道20號安泰邨安泰商場地下高層107號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 觀塘安秀道20號安泰邨安泰商場地下高層107號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>觀塘安秀道20號安泰邨安泰商場地下高層107號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2291585,22.3287435,0</coordinates></Point></Placemark>
       <Placemark>
         <name>興華粥麵</name>
         <address>深水埗石硤尾邨20座116號舖</address>
-        <description><![CDATA[地址: 深水埗石硤尾邨20座116號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 深水埗石硤尾邨20座116號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>深水埗石硤尾邨20座116號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1668334,22.3323968,0</coordinates></Point></Placemark>
       <Placemark>
         <name>西記粥店</name>
         <address>旺角旺角道25號地舖</address>
-        <description><![CDATA[地址: 旺角旺角道25號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 02:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 旺角旺角道25號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 02:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -835,14 +835,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1672303,22.3202889,0</coordinates></Point></Placemark>
       <Placemark>
         <name>明粥粉麵</name>
         <address>藍田啟田道50號啟田市場地下1088號舖</address>
-        <description><![CDATA[地址: 藍田啟田道50號啟田市場地下1088號舖<br>營業時間 (Openrice): 星期一至日 07:30 - 21:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 藍田啟田道50號啟田市場地下1088號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:30 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -855,34 +855,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2349547,22.3085362,0</coordinates></Point></Placemark>
       <Placemark>
         <name>豐粥粉麵飯</name>
         <address>九龍城啟德沐泰街11號尚．珒溋地下4號舖</address>
-        <description><![CDATA[地址: 九龍城啟德沐泰街11號尚．珒溋地下4號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 九龍城啟德沐泰街11號尚．珒溋地下4號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>九龍城啟德沐泰街11號尚．珒溋地下4號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1993497,22.3274232,0</coordinates></Point></Placemark>
       <Placemark>
         <name>一品生記粥店</name>
         <address>旺角上海街512號地舖</address>
-        <description><![CDATA[地址: 旺角上海街512號地舖<br>營業時間 (Openrice): 星期一至日 07:00 - 23:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 旺角上海街512號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -895,14 +895,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1687609,22.317073,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新光粥店</name>
         <address>佐敦寶靈街44號地舖</address>
-        <description><![CDATA[地址: 佐敦寶靈街44號地舖<br>營業時間 (Openrice): 星期一至日 07:00 - 21:00<br>價錢 (Openrice): $50以下<br>歷史: 55年]]></description>
+        <description>地址: 佐敦寶靈街44號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 55年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -918,11 +918,11 @@
             <value>55年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.169504,22.3040943,0</coordinates></Point></Placemark>
       <Placemark>
         <name>坤記粥店</name>
         <address>深水埗元州街39A號地舖</address>
-        <description><![CDATA[地址: 深水埗元州街39A號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 22:00<br>價錢 (Openrice): $50以下<br>歷史: 逾70年]]></description>
+        <description>地址: 深水埗元州街39A號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾70年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -938,11 +938,11 @@
             <value>逾70年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.164063,22.3315827,0</coordinates></Point></Placemark>
       <Placemark>
         <name>坤記粥店</name>
         <address>深水埗北河街56號地舖</address>
-        <description><![CDATA[地址: 深水埗北河街56號地舖<br>營業時間 (Openrice): 星期一至日 06:30 - 19:00<br>價錢 (Openrice): $50以下<br>歷史: 逾70年]]></description>
+        <description>地址: 深水埗北河街56號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 19:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾70年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -958,11 +958,11 @@
             <value>逾70年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1612865,22.3284924,0</coordinates></Point></Placemark>
       <Placemark>
         <name>輝記雞粥檔</name>
         <address>旺角旺角道53A號地舖</address>
-        <description><![CDATA[地址: 旺角旺角道53A號地舖<br>營業時間 (Openrice): 星期一至日 20:00 - 06:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 旺角旺角道53A號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 20:00 - 06:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -975,14 +975,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1689757,22.3208241,0</coordinates></Point></Placemark>
       <Placemark>
         <name>宏興美食館廟街豬骨粥</name>
         <address>油麻地廟街2號地舖</address>
-        <description><![CDATA[地址: 油麻地廟街2號地舖<br>營業時間 (Openrice): 星期一至日 12:00 - 22:30<br>價錢 (Openrice): $50以下<br>歷史: 56年]]></description>
+        <description>地址: 油麻地廟街2號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 12:00 - 22:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 56年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -998,11 +998,11 @@
             <value>56年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1719285,22.3075778,0</coordinates></Point></Placemark>
       <Placemark>
         <name>粥盛</name>
         <address>土瓜灣落山道9B號地舖</address>
-        <description><![CDATA[地址: 土瓜灣落山道9B號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 21:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 土瓜灣落山道9B號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1015,14 +1015,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.189447,22.317,0</coordinates></Point></Placemark>
       <Placemark>
         <name>粥滿家</name>
         <address>新蒲崗錦榮街10號地舖</address>
-        <description><![CDATA[地址: 新蒲崗錦榮街10號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 21:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 新蒲崗錦榮街10號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 21:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1035,14 +1035,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1954304,22.3359866,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新興發粥店</name>
         <address>土瓜灣馬頭角道5號</address>
-        <description><![CDATA[地址: 土瓜灣馬頭角道5號<br>營業時間 (Openrice): 星期一至日 06:00 - 01:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 土瓜灣馬頭角道5號&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 01:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1055,14 +1055,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1886086,22.3223645,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新貴記粥品店</name>
         <address>深水埗營盤街136A號地舖</address>
-        <description><![CDATA[地址: 深水埗營盤街136A號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 00:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 深水埗營盤街136A號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1075,14 +1075,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.160832,22.334726,0</coordinates></Point></Placemark>
       <Placemark>
         <name>生記粥店</name>
         <address>旺角上海街421號地舖</address>
-        <description><![CDATA[地址: 旺角上海街421號地舖<br>營業時間 (Openrice): 星期一至日 07:00 - 23:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 旺角上海街421號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1095,34 +1095,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1689016,22.3146932,0</coordinates></Point></Placemark>
       <Placemark>
         <name>蘇記粥品店</name>
         <address>新蒲崗錦榮街24號地舖</address>
-        <description><![CDATA[地址: 新蒲崗錦榮街24號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 新蒲崗錦榮街24號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>新蒲崗錦榮街24號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1958626,22.3357786,0</coordinates></Point></Placemark>
       <Placemark>
         <name>東海粥店</name>
         <address>佐敦上海街106號地舖</address>
-        <description><![CDATA[地址: 佐敦上海街106號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 00:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 佐敦上海街106號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1135,18 +1135,18 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1694629,22.3057108,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新慶粥店</name>
-        <address><![CDATA[油麻地廣東道835-845號地下H&I號舖]]></address>
-        <description><![CDATA[地址: 油麻地廣東道835-845號地下H&I號舖<br>營業時間 (Openrice): 星期一至日 06:00 - 20:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <address>油麻地廣東道835-845號地下H&amp;I號舖</address>
+        <description>地址: 油麻地廣東道835-845號地下H&amp;I號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 20:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
-            <value><![CDATA[油麻地廣東道835-845號地下H&I號舖]]></value>
+            <value>油麻地廣東道835-845號地下H&amp;I號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
             <value>星期一至日 06:00 - 20:30</value>
@@ -1155,14 +1155,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1681107,22.313862,0</coordinates></Point></Placemark>
       <Placemark>
         <name>壹海城粥麵店</name>
         <address>大角咀海庭道16號富榮花園地下M號舖</address>
-        <description><![CDATA[地址: 大角咀海庭道16號富榮花園地下M號舖<br>營業時間 (Openrice): 星期一至日 07:00 - 01:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 大角咀海庭道16號富榮花園地下M號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 01:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1175,34 +1175,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1634429,22.3146631,0</coordinates></Point></Placemark>
       <Placemark>
         <name>冠華粥品店</name>
         <address>長沙灣青山道255號地下8-9號舖</address>
-        <description><![CDATA[地址: 長沙灣青山道255號地下8-9號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 長沙灣青山道255號地下8-9號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>長沙灣青山道255號地下8-9號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1580088,22.3369277,0</coordinates></Point></Placemark>
       <Placemark>
         <name>永明粥店</name>
         <address>紅磡寶其利街2號聯盛大廈地下18A號舖</address>
-        <description><![CDATA[地址: 紅磡寶其利街2號聯盛大廈地下18A號舖<br>營業時間 (Openrice): 星期一至日 06:00 - 00:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 紅磡寶其利街2號聯盛大廈地下18A號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1215,34 +1215,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1854111,22.3068836,0</coordinates></Point></Placemark>
       <Placemark>
         <name>鑑記粥品</name>
         <address>牛頭角牛頭角道183號牛頭角市政大廈2樓熟食中心</address>
-        <description><![CDATA[地址: 牛頭角牛頭角道183號牛頭角市政大廈2樓熟食中心<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 牛頭角牛頭角道183號牛頭角市政大廈2樓熟食中心&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>牛頭角牛頭角道183號牛頭角市政大廈2樓熟食中心</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2163412,22.3215296,0</coordinates></Point></Placemark>
       <Placemark>
         <name>粥世家</name>
         <address>九龍城福佬村道95號地舖</address>
-        <description><![CDATA[地址: 九龍城福佬村道95號地舖<br>營業時間 (Openrice): 星期一 07:00 - 21:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 九龍城福佬村道95號地舖&lt;br&gt;營業時間 (Openrice): 星期一 07:00 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1255,14 +1255,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1875472,22.3304046,0</coordinates></Point></Placemark>
       <Placemark>
         <name>佳豪粥店</name>
         <address>旺角新填地街427號地下A號舖</address>
-        <description><![CDATA[地址: 旺角新填地街427號地下A號舖<br>營業時間 (Openrice): 星期一至日 06:00 - 00:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 旺角新填地街427號地下A號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1275,34 +1275,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1675846,22.3187221,0</coordinates></Point></Placemark>
       <Placemark>
         <name>粥家莊</name>
         <address>土瓜灣北帝街55號地舖</address>
-        <description><![CDATA[地址: 土瓜灣北帝街55號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 土瓜灣北帝街55號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>土瓜灣北帝街55號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1884482,22.3215027,0</coordinates></Point></Placemark>
       <Placemark>
         <name>發記腸粉粥品</name>
         <address>深水埗元州街163號地舖</address>
-        <description><![CDATA[地址: 深水埗元州街163號地舖<br>營業時間 (Openrice): 星期一至日 11:00 - 00:00<br>價錢 (Openrice): $50以下<br>歷史: 逾30年]]></description>
+        <description>地址: 深水埗元州街163號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 11:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾30年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1318,11 +1318,11 @@
             <value>逾30年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1605401,22.3342395,0</coordinates></Point></Placemark>
       <Placemark>
         <name>榮利粥店</name>
         <address>旺角洗衣街147號榮梅大廈地舖</address>
-        <description><![CDATA[地址: 旺角洗衣街147號榮梅大廈地舖<br>營業時間 (Openrice): 星期一至日 09:00 - 21:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 旺角洗衣街147號榮梅大廈地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 09:00 - 21:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1335,34 +1335,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1709903,22.3218226,0</coordinates></Point></Placemark>
       <Placemark>
         <name>卓記粥麵小館</name>
         <address>土瓜灣漆咸道北435-439號寶暉大廈地舖</address>
-        <description><![CDATA[地址: 土瓜灣漆咸道北435-439號寶暉大廈地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 土瓜灣漆咸道北435-439號寶暉大廈地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>土瓜灣漆咸道北435-439號寶暉大廈地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.186315,22.3127564,0</coordinates></Point></Placemark>
       <Placemark>
         <name>威記粥品</name>
         <address>深水埗汝州街226號地下C號舖</address>
-        <description><![CDATA[地址: 深水埗汝州街226號地下C號舖<br>營業時間 (Openrice): 星期一至日 06:30 - 22:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 深水埗汝州街226號地下C號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1375,14 +1375,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1617312,22.3299232,0</coordinates></Point></Placemark>
       <Placemark>
         <name>生記粥店</name>
         <address>紅磡差館里3號</address>
-        <description><![CDATA[地址: 紅磡差館里3號<br>營業時間 (Openrice): 星期一至日 06:00 - 20:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 紅磡差館里3號&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 20:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1395,34 +1395,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1869725,22.3070486,0</coordinates></Point></Placemark>
       <Placemark>
         <name>生記粥店</name>
         <address>新蒲崗衍慶街9號地下5號舖</address>
-        <description><![CDATA[地址: 新蒲崗衍慶街9號地下5號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 新蒲崗衍慶街9號地下5號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>新蒲崗衍慶街9號地下5號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.195184,22.3361,0</coordinates></Point></Placemark>
       <Placemark>
         <name>南龍粥店</name>
         <address>旺角花園街1號鴻禧大廈地下3號舖</address>
-        <description><![CDATA[地址: 旺角花園街1號鴻禧大廈地下3號舖<br>營業時間 (Openrice): 星期一至日 07:00 - 23:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 旺角花園街1號鴻禧大廈地下3號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1435,34 +1435,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.17162,22.3159566,0</coordinates></Point></Placemark>
       <Placemark>
         <name>富粥</name>
         <address>土瓜灣鶴齡街1A號地舖</address>
-        <description><![CDATA[地址: 土瓜灣鶴齡街1A號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 土瓜灣鶴齡街1A號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>土瓜灣鶴齡街1A號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1931463,22.3205832,0</coordinates></Point></Placemark>
       <Placemark>
         <name>礦記生滾粥</name>
         <address>太子塘尾道209號榮基樓地下B號舖</address>
-        <description><![CDATA[地址: 太子塘尾道209號榮基樓地下B號舖<br>營業時間 (Openrice): 星期一至日 13:00 - 23:00<br>價錢 (Openrice): $51-100<br>歷史: ]]></description>
+        <description>地址: 太子塘尾道209號榮基樓地下B號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 13:00 - 23:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1475,14 +1475,14 @@
             <value>$51-100</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1645808,22.3251439,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新耀榮粥店</name>
         <address>長沙灣青山道310號地舖</address>
-        <description><![CDATA[地址: 長沙灣青山道310號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 23:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 長沙灣青山道310號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1495,14 +1495,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.156778,22.338305,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新興棧食家</name>
         <address>佐敦寧波街23號地舖</address>
-        <description><![CDATA[地址: 佐敦寧波街23號地舖<br>營業時間 (Openrice): 星期一至日 08:00 - 01:00<br>價錢 (Openrice): $50以下<br>歷史: 逾50年]]></description>
+        <description>地址: 佐敦寧波街23號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 08:00 - 01:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾50年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1518,11 +1518,11 @@
             <value>逾50年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.170767,22.3065971,0</coordinates></Point></Placemark>
       <Placemark>
         <name>妹記生滾粥品</name>
         <address>旺角花園街123A號花園街市政大廈3樓熟食中心11-12號舖</address>
-        <description><![CDATA[地址: 旺角花園街123A號花園街市政大廈3樓熟食中心11-12號舖<br>營業時間 (Openrice): 星期一 07:15 - 15:15<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 旺角花園街123A號花園街市政大廈3樓熟食中心11-12號舖&lt;br&gt;營業時間 (Openrice): 星期一 07:15 - 15:15&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1535,14 +1535,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.169773,22.3203648,0</coordinates></Point></Placemark>
       <Placemark>
         <name>盛記粥麵</name>
         <address>旺角花園街3-5號鴻威大廈地下11號舖</address>
-        <description><![CDATA[地址: 旺角花園街3-5號鴻威大廈地下11號舖<br>營業時間 (Openrice): 星期一至日 10:00 - 00:00<br>價錢 (Openrice): $51-100<br>歷史: ]]></description>
+        <description>地址: 旺角花園街3-5號鴻威大廈地下11號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 10:00 - 00:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1555,14 +1555,14 @@
             <value>$51-100</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.171385,22.3166811,0</coordinates></Point></Placemark>
       <Placemark>
         <name>盛記粥麵</name>
         <address>佐敦白加士街11號地舖</address>
-        <description><![CDATA[地址: 佐敦白加士街11號地舖<br>營業時間 (Openrice): 星期一至五 10:00 - 23:00；星期六至日 09:30 - 23:00<br>價錢 (Openrice): $51-100<br>歷史: ]]></description>
+        <description>地址: 佐敦白加士街11號地舖&lt;br&gt;營業時間 (Openrice): 星期一至五 10:00 - 23:00；星期六至日 09:30 - 23:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1575,14 +1575,14 @@
             <value>$51-100</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1706032,22.3037309,0</coordinates></Point></Placemark>
       <Placemark>
         <name>欣輝粥店</name>
         <address>葵涌象山村熟食檔地下2號舖</address>
-        <description><![CDATA[地址: 葵涌象山村熟食檔地下2號舖<br>營業時間 (Openrice): 星期一至日 04:30 - 14:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 葵涌象山村熟食檔地下2號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 04:30 - 14:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1595,14 +1595,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1300676,22.3783367,0</coordinates></Point></Placemark>
       <Placemark>
         <name>心滿意粥</name>
         <address>元朗建業街熟食中心C3號舖</address>
-        <description><![CDATA[地址: 元朗建業街熟食中心C3號舖<br>營業時間 (Openrice): 星期一至日 07:00 - 23:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 元朗建業街熟食中心C3號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1615,14 +1615,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.0330129,22.4439104,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新利粥店</name>
         <address>元朗紅棉圍25-29號牡丹樓地下F號舖</address>
-        <description><![CDATA[地址: 元朗紅棉圍25-29號牡丹樓地下F號舖<br>營業時間 (Openrice): 星期一至日 06:30 - 22:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 元朗紅棉圍25-29號牡丹樓地下F號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 22:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1635,54 +1635,54 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.029138,22.4427119,0</coordinates></Point></Placemark>
       <Placemark>
         <name>原味香</name>
         <address>將軍澳調景嶺彩明街1號彩明商場1樓彩明街市CM60號舖</address>
-        <description><![CDATA[地址: 將軍澳調景嶺彩明街1號彩明商場1樓彩明街市CM60號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 將軍澳調景嶺彩明街1號彩明商場1樓彩明街市CM60號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>將軍澳調景嶺彩明街1號彩明商場1樓彩明街市CM60號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2524929,22.3064277,0</coordinates></Point></Placemark>
       <Placemark>
         <name>一品生記粥店</name>
         <address>上水新康街88號地舖</address>
-        <description><![CDATA[地址: 上水新康街88號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 上水新康街88號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>上水新康街88號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.12917,22.503597,0</coordinates></Point></Placemark>
       <Placemark>
         <name>廣興粥店</name>
         <address>葵涌葵涌道1001號德昌大廈地下26D1號舖</address>
-        <description><![CDATA[地址: 葵涌葵涌道1001號德昌大廈地下26D1號舖<br>營業時間 (Openrice): 星期一至日 06:30 - 21:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 葵涌葵涌道1001號德昌大廈地下26D1號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 21:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1695,14 +1695,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1332523,22.3672988,0</coordinates></Point></Placemark>
       <Placemark>
         <name>善心粥品店</name>
         <address>元朗大棠路24號地舖</address>
-        <description><![CDATA[地址: 元朗大棠路24號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 13:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 元朗大棠路24號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 13:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1715,34 +1715,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.0284752,22.4436245,0</coordinates></Point></Placemark>
       <Placemark>
         <name>成天粥品點心</name>
         <address>屯門啟發徑15-19號柏苑地下7號舖</address>
-        <description><![CDATA[地址: 屯門啟發徑15-19號柏苑地下7號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $51-100<br>歷史: ]]></description>
+        <description>地址: 屯門啟發徑15-19號柏苑地下7號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>屯門啟發徑15-19號柏苑地下7號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$51-100</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>113.9757177,22.3952417,0</coordinates></Point></Placemark>
       <Placemark>
         <name>天天粥粉面店</name>
         <address>屯門青河坊3號利寶商場地下1號舖</address>
-        <description><![CDATA[地址: 屯門青河坊3號利寶商場地下1號舖<br>營業時間 (Openrice): 星期一至日 06:00 - 15:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 屯門青河坊3號利寶商場地下1號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 15:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1755,14 +1755,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>113.9792722,22.3883782,0</coordinates></Point></Placemark>
       <Placemark>
         <name>德發龍粥麵店</name>
         <address>荃灣四陂坊11號地舖</address>
-        <description><![CDATA[地址: 荃灣四陂坊11號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 20:00<br>價錢 (Openrice): $50以下<br>歷史: 30年]]></description>
+        <description>地址: 荃灣四陂坊11號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 20:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 30年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1778,11 +1778,11 @@
             <value>30年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1175022,22.3697989,0</coordinates></Point></Placemark>
       <Placemark>
         <name>廣記粥店</name>
         <address>粉嶺聯和墟聯安街市政大廈2樓熟食中心13號舖</address>
-        <description><![CDATA[地址: 粉嶺聯和墟聯安街市政大廈2樓熟食中心13號舖<br>營業時間 (Openrice): 星期一至日 05:00 - 18:00<br>價錢 (Openrice): $50以下<br>歷史: 76年]]></description>
+        <description>地址: 粉嶺聯和墟聯安街市政大廈2樓熟食中心13號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 05:00 - 18:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 76年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1798,11 +1798,11 @@
             <value>76年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1444572,22.4997312,0</coordinates></Point></Placemark>
       <Placemark>
         <name>輝記粥品</name>
         <address>葵芳禮芳街21號地舖</address>
-        <description><![CDATA[地址: 葵芳禮芳街21號地舖<br>營業時間 (Openrice): 星期一至日 06:30 - 21:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 葵芳禮芳街21號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 21:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1815,21 +1815,21 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.126743,22.359676,0</coordinates></Point></Placemark>
       <Placemark>
         <name>國記</name>
         <address>元朗炮仗坊29號地舖</address>
-        <description><![CDATA[地址: 元朗炮仗坊29號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: 逾55年]]></description>
+        <description>地址: 元朗炮仗坊29號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾55年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>元朗炮仗坊29號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
@@ -1838,31 +1838,31 @@
             <value>逾55年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.0293073,22.445603,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新生記粥店</name>
         <address>荃灣沙咀道238號地下G號舖</address>
-        <description><![CDATA[地址: 荃灣沙咀道238號地下G號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 荃灣沙咀道238號地下G號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>荃灣沙咀道238號地下G號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1154339,22.3702895,0</coordinates></Point></Placemark>
       <Placemark>
         <name>德發鳳凰粥麵專家</name>
         <address>荃灣德士古道25號地舖</address>
-        <description><![CDATA[地址: 荃灣德士古道25號地舖<br>營業時間 (Openrice): 星期一至日 05:00 - 22:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 荃灣德士古道25號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 05:00 - 22:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1875,14 +1875,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.123223,22.369476,0</coordinates></Point></Placemark>
       <Placemark>
         <name>坤記粥店</name>
         <address>葵涌石蔭路94號地舖</address>
-        <description><![CDATA[地址: 葵涌石蔭路94號地舖<br>營業時間 (Openrice): 星期一至日 06:30 - 19:30<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 葵涌石蔭路94號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 19:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1895,14 +1895,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1394938,22.3698024,0</coordinates></Point></Placemark>
       <Placemark>
         <name>潮興旺生滾粥</name>
         <address>粉嶺聯安街39號地舖</address>
-        <description><![CDATA[地址: 粉嶺聯安街39號地舖<br>營業時間 (Openrice): 星期一至日 07:00 - 00:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 粉嶺聯安街39號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1915,34 +1915,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1436584,22.4996973,0</coordinates></Point></Placemark>
       <Placemark>
         <name>發記腸粉粥品 (寶鄉街)</name>
         <address>大埔寶鄉街110號地舖</address>
-        <description><![CDATA[地址: 大埔寶鄉街110號地舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 大埔寶鄉街110號地舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>大埔寶鄉街110號地舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.167043,22.44925,0</coordinates></Point></Placemark>
       <Placemark>
         <name>發記腸粉粥品</name>
         <address>元朗教育路81-85C號元達樓地下2號舖</address>
-        <description><![CDATA[地址: 元朗教育路81-85C號元達樓地下2號舖<br>營業時間 (Openrice): 星期一至日 09:00 - 22:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 元朗教育路81-85C號元達樓地下2號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 09:00 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1955,14 +1955,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.0245726,22.4428421,0</coordinates></Point></Placemark>
       <Placemark>
         <name>坤記粥店</name>
         <address>屯門屯門鄉事會路10號地舖</address>
-        <description><![CDATA[地址: 屯門屯門鄉事會路10號地舖<br>營業時間 (Openrice): 星期一至日 11:00 - 00:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 屯門屯門鄉事會路10號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 11:00 - 00:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1975,14 +1975,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>113.9739945,22.3953961,0</coordinates></Point></Placemark>
       <Placemark>
         <name>松記粥品</name>
         <address>元朗又新街17號元新大廈地下6及13號舖</address>
-        <description><![CDATA[地址: 元朗又新街17號元新大廈地下6及13號舖<br>營業時間 (Openrice): 星期一至日 07:00 - 22:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 元朗又新街17號元新大廈地下6及13號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -1995,14 +1995,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.0310791,22.4437415,0</coordinates></Point></Placemark>
       <Placemark>
         <name>池記</name>
         <address>元朗擊壤路熟食市場地下C10號舖</address>
-        <description><![CDATA[地址: 元朗擊壤路熟食市場地下C10號舖<br>營業時間 (Openrice): 星期一至日 05:00 - 02:00<br>價錢 (Openrice): $51-100<br>歷史: ]]></description>
+        <description>地址: 元朗擊壤路熟食市場地下C10號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 05:00 - 02:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2015,14 +2015,14 @@
             <value>$51-100</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.0245371,22.4451721,0</coordinates></Point></Placemark>
       <Placemark>
         <name>萬記粥品</name>
         <address>大埔安泰路1號大埔廣場地下4號舖</address>
-        <description><![CDATA[地址: 大埔安泰路1號大埔廣場地下4號舖<br>營業時間 (Openrice): 星期一至日 06:30 - 23:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 大埔安泰路1號大埔廣場地下4號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:30 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2035,34 +2035,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.170445,22.452909,0</coordinates></Point></Placemark>
       <Placemark>
         <name>廣式石磨腸粉</name>
         <address>上水新成路88號海禧華庭地下37號舖</address>
-        <description><![CDATA[地址: 上水新成路88號海禧華庭地下37號舖<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 上水新成路88號海禧華庭地下37號舖&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>上水新成路88號海禧華庭地下37號舖</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1286898,22.5049793,0</coordinates></Point></Placemark>
       <Placemark>
         <name>德發粥品專家</name>
         <address>荃灣四陂坊9B號地舖</address>
-        <description><![CDATA[地址: 荃灣四陂坊9B號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 20:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 荃灣四陂坊9B號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 20:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2075,14 +2075,14 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1175022,22.3697989,0</coordinates></Point></Placemark>
       <Placemark>
         <name>廣記粥店</name>
         <address>大埔安慈路1號海寶花園地下13號舖</address>
-        <description><![CDATA[地址: 大埔安慈路1號海寶花園地下13號舖<br>營業時間 (Openrice): 星期一至日 06:00 - 22:00<br>價錢 (Openrice): $50以下<br>歷史: 25年]]></description>
+        <description>地址: 大埔安慈路1號海寶花園地下13號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 22:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 25年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2098,11 +2098,11 @@
             <value>25年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.166369,22.4533267,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新宏利粥麵</name>
         <address>荃灣路德圍75號</address>
-        <description><![CDATA[地址: 荃灣路德圍75號<br>營業時間 (Openrice): 星期一至日 05:30 - 23:30<br>價錢 (Openrice): $50以下<br>歷史: 60年]]></description>
+        <description>地址: 荃灣路德圍75號&lt;br&gt;營業時間 (Openrice): 星期一至日 05:30 - 23:30&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 60年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2118,11 +2118,11 @@
             <value>60年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.115959,22.37323,0</coordinates></Point></Placemark>
       <Placemark>
         <name>東莞佬粥店</name>
         <address>上水石湖墟市政大廈2樓9號舖</address>
-        <description><![CDATA[地址: 上水石湖墟市政大廈2樓9號舖<br>營業時間 (Openrice): 星期一至日 06:00 - 16:00<br>價錢 (Openrice): $50以下<br>歷史: 50年]]></description>
+        <description>地址: 上水石湖墟市政大廈2樓9號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 16:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 50年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2138,11 +2138,11 @@
             <value>50年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.130402,22.502011,0</coordinates></Point></Placemark>
       <Placemark>
         <name>新記 (康麗花園)</name>
         <address>屯門屯門鄉事會路117-157號康麗花園地下6號舖</address>
-        <description><![CDATA[地址: 屯門屯門鄉事會路117-157號康麗花園地下6號舖<br>營業時間 (Openrice): 星期一至日 07:00 - 23:00<br>價錢 (Openrice): $51-100<br>歷史: 逾30年]]></description>
+        <description>地址: 屯門屯門鄉事會路117-157號康麗花園地下6號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $51-100&lt;br&gt;歷史: 逾30年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2158,11 +2158,11 @@
             <value>逾30年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>113.974742,22.3984934,0</coordinates></Point></Placemark>
       <Placemark>
         <name>金山粥店</name>
         <address>西貢西貢正街21號地舖</address>
-        <description><![CDATA[地址: 西貢西貢正街21號地舖<br>營業時間 (Openrice): 星期一至五 06:00 - 14:00；星期六至日 06:00 - 17:00<br>價錢 (Openrice): $50以下<br>歷史: 44年]]></description>
+        <description>地址: 西貢西貢正街21號地舖&lt;br&gt;營業時間 (Openrice): 星期一至五 06:00 - 14:00；星期六至日 06:00 - 17:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 44年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2178,11 +2178,11 @@
             <value>44年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.2706826,22.3800074,0</coordinates></Point></Placemark>
       <Placemark>
         <name>發記腸粉粥品</name>
         <address>元朗建業街67號地舖</address>
-        <description><![CDATA[地址: 元朗建業街67號地舖<br>營業時間 (Openrice): 星期一至日 06:00 - 02:15<br>價錢 (Openrice): $50以下<br>歷史: 35年]]></description>
+        <description>地址: 元朗建業街67號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 02:15&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 35年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2198,11 +2198,11 @@
             <value>35年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.0311752,22.4420781,0</coordinates></Point></Placemark>
       <Placemark>
         <name>元朗新記 (鴻運樓)</name>
         <address>元朗元朗安寧路21-35號鴻運樓地下7號舖</address>
-        <description><![CDATA[地址: 元朗元朗安寧路21-35號鴻運樓地下7號舖<br>營業時間 (Openrice): 星期一至日 07:00 - 23:00<br>價錢 (Openrice): $50以下<br>歷史: 逾30年]]></description>
+        <description>地址: 元朗元朗安寧路21-35號鴻運樓地下7號舖&lt;br&gt;營業時間 (Openrice): 星期一至日 07:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 逾30年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2218,11 +2218,11 @@
             <value>逾30年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.0285914,22.4459405,0</coordinates></Point></Placemark>
       <Placemark>
         <name>榮仔粥店</name>
         <address>坪洲坪洲永安街35號地舖</address>
-        <description><![CDATA[地址: 坪洲坪洲永安街35號地舖<br>營業時間 (Openrice): 星期一至日 17:00 - 23:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 坪洲坪洲永安街35號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 17:00 - 23:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2235,34 +2235,34 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.0386777,22.2850951,0</coordinates></Point></Placemark>
       <Placemark>
         <name>根記粥麵店</name>
         <address>長洲海傍街2號</address>
-        <description><![CDATA[地址: 長洲海傍街2號<br>營業時間 (Openrice): <br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 長洲海傍街2號&lt;br&gt;營業時間 (Openrice): &lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
             <value>長洲海傍街2號</value>
           </Data>
           <Data name="營業時間 (Openrice)">
-            <value/>
+            <value />
           </Data>
           <Data name="價錢 (Openrice)">
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.0287914,22.2074128,0</coordinates></Point></Placemark>
       <Placemark>
         <name>黎恩記</name>
         <address>長洲大興堤路2號長洲市政大廈地下熟食中心9及11號舖</address>
-        <description><![CDATA[地址: 長洲大興堤路2號長洲市政大廈地下熟食中心9及11號舖<br>營業時間 (Openrice): 星期日 06:15 - 13:00<br>價錢 (Openrice): $50以下<br>歷史: 87年]]></description>
+        <description>地址: 長洲大興堤路2號長洲市政大廈地下熟食中心9及11號舖&lt;br&gt;營業時間 (Openrice): 星期日 06:15 - 13:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 87年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2278,11 +2278,11 @@
             <value>87年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.028452,22.2068114,0</coordinates></Point></Placemark>
       <Placemark>
         <name>卓記</name>
         <address>西環堅尼地城士美菲路12K號士美菲路市政大廈2樓熟食中心</address>
-        <description><![CDATA[地址: 西環堅尼地城士美菲路12K號士美菲路市政大廈2樓熟食中心<br>營業時間 (Openrice): 星期一至日 06:00 - 15:00<br>價錢 (Openrice): $50以下<br>歷史: 60年]]></description>
+        <description>地址: 西環堅尼地城士美菲路12K號士美菲路市政大廈2樓熟食中心&lt;br&gt;營業時間 (Openrice): 星期一至日 06:00 - 15:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: 60年</description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2298,11 +2298,11 @@
             <value>60年</value>
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1286074,22.2816862,0</coordinates></Point></Placemark>
       <Placemark>
         <name>好運粥麵家</name>
         <address>太子柏樹街8號地舖</address>
-        <description><![CDATA[地址: 太子柏樹街8號地舖<br>營業時間 (Openrice): 星期一至日 18:00 - 04:00<br>價錢 (Openrice): $50以下<br>歷史: ]]></description>
+        <description>地址: 太子柏樹街8號地舖&lt;br&gt;營業時間 (Openrice): 星期一至日 18:00 - 04:00&lt;br&gt;價錢 (Openrice): $50以下&lt;br&gt;歷史: </description>
         <styleUrl>#icon-1577-FF5252</styleUrl>
         <ExtendedData>
           <Data name="地址">
@@ -2315,10 +2315,10 @@
             <value>$50以下</value>
           </Data>
           <Data name="歷史">
-            <value/>
+            <value />
           </Data>
         </ExtendedData>
-      </Placemark>
+      <Point><coordinates>114.1663217,22.324631,0</coordinates></Point></Placemark>
     </Folder>
   </Document>
 </kml>
